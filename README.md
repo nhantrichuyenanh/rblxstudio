@@ -28,15 +28,11 @@
 
 ## Bookmarks 
 - DevForum:
-    - https://roblox.github.io/lua-style-guide/#guiding-principles
-    - https://create.roblox.com/store/models?creatorName=Roblox%20Code%20Samples
-    - https://devforum.roblox.com/t/exploiting-explained/170977
-    - https://github.com/PhoenixCausesOof/awesome-roblox#applications
-    - https://devforum.roblox.com/t/custom-npc-customizing-npcs-just-got-a-lot-easier/2560183
-    - https://devforum.roblox.com/t/cmdr-a-fully-extensible-and-type-safe-command-console-for-roblox-developers/182815
-    - https://devforum.roblox.com/t/neohotbar-a-modern-flexible-hotbar-for-roblox/2738850
-    - https://devforum.roblox.com/t/social-chat-v2-robloxs-1-open-sourced-chatting-resource/2290658
-    - https://devforum.roblox.com/t/better-chat-v3-feature-rich-custom-chat-with-replies-rich-text-message-editing-and-more/1756348
+    - [Roblox Lua Style Guide](https://roblox.github.io/lua-style-guide)
+    - [Roblox Code Samples](https://create.roblox.com/store/models?creatorName=Roblox%20Code%20Samples)
+    - [Exploiting Explained](https://devforum.roblox.com/t/exploiting-explained/170977)
+    - [Cmdr: A fully extensible and type safe command console for Roblox Developers](https://devforum.roblox.com/t/cmdr-a-fully-extensible-and-type-safe-command-console-for-roblox-developers/182815)
+    - [NeoHotbar - A modern, customizable backpack](https://devforum.roblox.com/t/neohotbar-a-modern-flexible-hotbar-for-roblox/2738850)
     - https://devforum.roblox.com/t/knightmare-server-side-anti-cheat-service-updated-182024/2223732
     - https://devforum.roblox.com/t/bridgenet2-v100-a-blazing-fast-networking-library-for-roblox/2189165
     - https://devforum.roblox.com/t/warp-very-fast-powerful-networking-library/2779813
