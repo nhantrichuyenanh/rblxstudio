@@ -33,52 +33,51 @@
     - [Exploiting Explained](https://devforum.roblox.com/t/exploiting-explained/170977)
     - [Cmdr: A fully extensible and type safe command console for Roblox Developers](https://devforum.roblox.com/t/cmdr-a-fully-extensible-and-type-safe-command-console-for-roblox-developers/182815)
     - [NeoHotbar - A modern, customizable backpack](https://devforum.roblox.com/t/neohotbar-a-modern-flexible-hotbar-for-roblox/2738850)
-    - https://devforum.roblox.com/t/knightmare-server-side-anti-cheat-service-updated-182024/2223732
-    - https://devforum.roblox.com/t/bridgenet2-v100-a-blazing-fast-networking-library-for-roblox/2189165
-    - https://devforum.roblox.com/t/warp-very-fast-powerful-networking-library/2779813
-    - https://devforum.roblox.com/t/release-113curiosity-stimulation-datapredict-machine-and-deep-learning-library-learning-ais-and-more/2196446
-    - https://devforum.roblox.com/t/neural-network-library-20/869557
-    - https://devforum.roblox.com/t/bezierpath-an-easy-to-use-and-optimized-spline-path-module-for-td-games-and-general-paths/2742194
-    - https://devforum.roblox.com/t/ui-design-starter-guide/53461/1
-    - https://devforum.roblox.com/t/mobilecontrols-module-for-editing-mobile-controls/1856926
+    - [Knightmare Server-side Anti-Cheat Service](https://devforum.roblox.com/t/knightmare-server-side-anti-cheat-service-updated-182024/2223732)
+    - [BridgeNet2, v1.0.0 | A blazing fast networking library for Roblox](https://devforum.roblox.com/t/bridgenet2-v100-a-blazing-fast-networking-library-for-roblox/2189165)
+    - [Warp - very fast & powerful networking library](https://devforum.roblox.com/t/warp-very-fast-powerful-networking-library/2779813)
+    - [DataPredict™ - Revenue & Game Optimizations Using Machine Learning, Deep Learning And Reinforcement Learning (100 Models)](https://devforum.roblox.com/t/release-113curiosity-stimulation-datapredict-machine-and-deep-learning-library-learning-ais-and-more/2196446)
+    - [Neural Network Library 2.0](https://devforum.roblox.com/t/neural-network-library-20/869557)
+    - [BezierPath, an easy to use and optimized spline path module for TD games and general paths](https://devforum.roblox.com/t/bezierpath-an-easy-to-use-and-optimized-spline-path-module-for-td-games-and-general-paths/2742194)
+    - [UI Design Starter Guide](https://devforum.roblox.com/t/ui-design-starter-guide/53461/1)
+    - [MobileControls - Module for editing mobile controls](https://devforum.roblox.com/t/mobilecontrols-module-for-editing-mobile-controls/1856926)
 - Metatables & OOP:
-    - https://www.wikiwand.com/en/Object_(computer_science)
-    - https://www.wikiwand.com/en/Object-oriented_programming
-    - https://create.roblox.com/docs/luau/metatables
-    - https://www.lua.org/pil/13.html
-    - https://www.lua.org/pil/16.html
-    - https://www.lua.org/pil/11.html
-    - https://www.tutorialspoint.com/lua/lua_object_oriented.htm
-    - https://www.tutorialspoint.com/lua/lua_metatables.htm
-    - https://create.roblox.com/docs/luau/tables
-    - https://create.roblox.com/docs/reference/engine/libraries/table
-    - https://devforum.roblox.com/t/all-you-need-to-know-about-metatables-and-metamethods/503259
-    - https://stackoverflow.com/questions/37653693/how-to-understand-metatable-in-lua
-    - https://www.lua.org/pil/2.5.html
-    - https://devforum.roblox.com/t/tables-a-better-understanding-perspective-on-how-to-use-them/1138100
-    - https://www.lualearning.org/tutorials/AED06AF1-3FC9-4B95-BBB9-D201EDEC8D42/global-metatable-functions
-    - https://www.lualearning.org/tutorials/3CA23C8C-B08F-4B9F-B12E-3A4EED260073/classes-in-lua
-    - https://devforum.roblox.com/t/how-can-i-run-a-function-from-a-table/1725269/3
+    - [Object (computer science)](https://wikipedia.org/wiki/Object_(computer_science))
+    - [Object-oriented programming](https://wikipedia.org/wiki/Object-oriented_programming)
+    - [Metatables](https://create.roblox.com/docs/luau/metatables)
+    - [13 – Metatables and Metamethods](https://www.lua.org/pil/13.html)
+    - [16 – Object-Oriented Programming](https://www.lua.org/pil/16.html)
+    - [11 – Data Structures](https://www.lua.org/pil/11.html)
+    - [Lua - Object Oriented Programming](https://www.tutorialspoint.com/lua/lua_object_oriented.htm)
+    - [Lua - Metatables](https://www.tutorialspoint.com/lua/lua_metatables.htm)
+    - [Tables](https://create.roblox.com/docs/luau/tables)
+    - [table](https://create.roblox.com/docs/reference/engine/libraries/table)
+    - [All you need to know about Metatables and Metamethods](https://devforum.roblox.com/t/all-you-need-to-know-about-metatables-and-metamethods/503259)
+    - [How to understand metatable in Lua?](https://stackoverflow.com/questions/37653693/how-to-understand-metatable-in-lua)
+    - [2.5 – Tables](https://www.lua.org/pil/2.5.html)
+    - [Tables - A better understanding & perspective on how to use them](https://devforum.roblox.com/t/tables-a-better-understanding-perspective-on-how-to-use-them/1138100)
+    - [Global Metatable Functions](https://www.lualearning.org/tutorials/AED06AF1-3FC9-4B95-BBB9-D201EDEC8D42/global-metatable-functions)
+    - [Classes in Lua](https://www.lualearning.org/tutorials/3CA23C8C-B08F-4B9F-B12E-3A4EED260073/classes-in-lua)
+    - [How can I run a function from a table?](https://devforum.roblox.com/t/how-can-i-run-a-function-from-a-table/1725269/3)
 - Rblx Studio:
-    - https://create.roblox.com/docs/assistant
-    - https://rbxtax.com/
-    - https://luau-lang.org/getting-started
-    - https://www.inf.puc-rio.br/~roberto/book/code.html
-    - https://www.lualearning.org/tutorials/discover
-    - https://nomi.dev/posts/lua-in-30min#7-l%E1%BB%9Bp-v%C3%A0-k%E1%BA%BF-th%E1%BB%ABa
-    - https://create.roblox.com/docs/mechanics/in-experience-tools
-    - https://create.roblox.com/docs/education/coding-2/using-parameters-and-events
-    - https://create.roblox.com/docs/reference/engine/classes/ServiceProvider
-    - https://create.roblox.com/docs/scripting/scripts/debounce
-    - https://create.roblox.com/docs/reference/engine/enums/ProximityPromptExclusivity
-    - https://create.roblox.com/docs/workspace/cframes
-    - https://create.roblox.com/docs/reference/engine/classes/Tween
-    - https://create.roblox.com/docs/ui/rich-text
-    - https://devforum.roblox.com/t/the-correct-way-to-design-mobile-buttons/2494558
-    - https://devforum.roblox.com/t/custom-inventory-or-backpack/1941903/72
-    - https://devforum.roblox.com/t/satchel-open-source-backpack-system/2451549
-    - https://devforum.roblox.com/t/how-to-use-datastore2-data-store-caching-and-data-loss-prevention/136317
-    - https://devforum.roblox.com/t/save-your-player-data-with-profileservice-datastore-module/667805
-    - https://devforum.roblox.com/t/suphis-datastore-module/2425597
-    - https://devforum.roblox.com/t/how-to-save-parts-and-the-idea-of-serialization/524311
-    - https://create.roblox.com/docs/reference/engine/classes/DataModel#summary-properties
+    - [RBXTax](https://rbxtax.com/)
+    - [An introduction to Luau](https://luau-lang.org/getting-started)
+    - [Programming in Lua](https://www.inf.puc-rio.br/~roberto/book/code.html)
+    - [Tutorials](https://www.lualearning.org/tutorials/discover)
+    - [7 Lớp và kế thừa](https://nomi.dev/posts/lua-in-30min#7-l%E1%BB%9Bp-v%C3%A0-k%E1%BA%BF-th%E1%BB%ABa)
+    - [In-experience tools](https://create.roblox.com/docs/mechanics/in-experience-tools)
+    - [Use parameters and events](https://create.roblox.com/docs/education/coding-2/using-parameters-and-events)
+    - [ServiceProvider](https://create.roblox.com/docs/reference/engine/classes/ServiceProvider)
+    - [Debounce patterns](https://create.roblox.com/docs/scripting/scripts/debounce)
+    - [ProximityPromptExclusivity](https://create.roblox.com/docs/reference/engine/enums/ProximityPromptExclusivity)
+    - [CFrames](https://create.roblox.com/docs/workspace/cframes)
+    - [Tween](https://create.roblox.com/docs/reference/engine/classes/Tween)
+    - [Rich text markup](https://create.roblox.com/docs/ui/rich-text)
+    - [The Correct Way to Design Mobile Buttons](https://devforum.roblox.com/t/the-correct-way-to-design-mobile-buttons/2494558)
+    - [Custom Inventory or Backpack](https://devforum.roblox.com/t/custom-inventory-or-backpack/1941903/72)
+    - [Satchel - Open-source modern backpack system](https://devforum.roblox.com/t/satchel-open-source-backpack-system/2451549)
+    - [How to use DataStore2 - Data Store caching and data loss prevention](https://devforum.roblox.com/t/how-to-use-datastore2-data-store-caching-and-data-loss-prevention/136317)
+    - [Save your player data with ProfileService! (DataStore Module)](https://devforum.roblox.com/t/save-your-player-data-with-profileservice-datastore-module/667805)
+    - [Suphi’s DataStore Module](https://devforum.roblox.com/t/suphis-datastore-module/2425597)
+    - [How to save parts, and the idea of Serialization](https://devforum.roblox.com/t/how-to-save-parts-and-the-idea-of-serialization/524311)
+    - [DataModel](https://create.roblox.com/docs/reference/engine/classes/DataModel#summary-properties)
