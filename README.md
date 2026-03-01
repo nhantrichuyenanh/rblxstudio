@@ -12,7 +12,7 @@
         - [`[Vanguard] TEST GAME`](https://roblox.com/games/5440514469)
         - [`[Viethin] TEST GAME`](https://roblox.com/games/5615704198)
     - 2023:
-        - [💸 roux land](https://roblox.com/games/6129595366)
+        - August: [💸 roux land](https://roblox.com/games/6129595366)
         - [🌆 Modern City](https://roblox.com/games/5623057966)
         - [☃️ Coolin'](https:/roblox.com/games/5376010497)
         - [`[WB] Tutorials`](https://roblox.com/games/5440874968)
