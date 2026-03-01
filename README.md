@@ -1,6 +1,6 @@
 ## Lua Learning
 | .md file | lualearning.org |
-| --- | --- |
+| - | - |
 | [Player Joined/Left Message](md/PlayerJoinedorLeftMessage.md) | https://www.lualearning.org/tutorials/043d2777-1297-43bf-bc8b-434418e92658/player-joinedleft-message |
 | [Everything about Tables (seriously)](md/EverythingaboutTables(seriously).md) | https://www.lualearning.org/tutorials/7c77db98-b155-4ac3-a252-0d6e5b3919b9/tables |
 
