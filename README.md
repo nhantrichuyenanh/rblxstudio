@@ -28,7 +28,6 @@
 
 ## Bookmarks 
 - DevForum:
-    - https://create.roblox.com/docs/studio/shortcuts
     - https://roblox.github.io/lua-style-guide/#guiding-principles
     - https://create.roblox.com/store/models?creatorName=Roblox%20Code%20Samples
     - https://devforum.roblox.com/t/exploiting-explained/170977
