@@ -1,0 +1,543 @@
+<roblox xmlns:xmime="http://www.w3.org/2005/05/xmlmime" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.roblox.com/roblox.xsd" version="4">
+	<External>null</External>
+	<External>nil</External>
+	<Item class="Tool" referent="RBX2D7CBDAB116A4FFD860778419F2AEF17">
+		<Properties>
+			<bool name="CanBeDropped">true</bool>
+			<bool name="Enabled">true</bool>
+			<CoordinateFrame name="Grip">
+				<X>0.25</X>
+				<Y>-0.5</Y>
+				<Z>0.25</Z>
+				<R00>1</R00>
+				<R01>0</R01>
+				<R02>0</R02>
+				<R10>0</R10>
+				<R11>1</R11>
+				<R12>0</R12>
+				<R20>0</R20>
+				<R21>0</R21>
+				<R22>1</R22>
+			</CoordinateFrame>
+			<bool name="ManualActivationOnly">false</bool>
+			<string name="Name">BitFairy</string>
+			<bool name="RequiresHandle">true</bool>
+			<BinaryString name="Tags"></BinaryString>
+			<Content name="TextureId"><url>rbxassetid://2098377474</url></Content>
+			<string name="ToolTip"></string>
+		</Properties>
+		<Item class="Part" referent="RBXC9724E49797441C986D18B64F815B46D">
+			<Properties>
+				<bool name="Anchored">false</bool>
+				<float name="BackParamA">-0.5</float>
+				<float name="BackParamB">0.5</float>
+				<token name="BackSurface">0</token>
+				<token name="BackSurfaceInput">0</token>
+				<float name="BottomParamA">-0.5</float>
+				<float name="BottomParamB">0.5</float>
+				<token name="BottomSurface">0</token>
+				<token name="BottomSurfaceInput">0</token>
+				<CoordinateFrame name="CFrame">
+					<X>1.50999999</X>
+					<Y>0.899999976</Y>
+					<Z>5.78999996</Z>
+					<R00>-0.859610319</R00>
+					<R01>0</R01>
+					<R02>0.510950148</R02>
+					<R10>0</R10>
+					<R11>1</R11>
+					<R12>0</R12>
+					<R20>-0.510950148</R20>
+					<R21>0</R21>
+					<R22>-0.859610319</R22>
+				</CoordinateFrame>
+				<bool name="CanCollide">true</bool>
+				<int name="CollisionGroupId">0</int>
+				<Color3uint8 name="Color3uint8">4288914085</Color3uint8>
+				<PhysicalProperties name="CustomPhysicalProperties">
+					<CustomPhysics>false</CustomPhysics>
+				</PhysicalProperties>
+				<float name="Elasticity">0.5</float>
+				<float name="Friction">0.300000012</float>
+				<float name="FrontParamA">-0.5</float>
+				<float name="FrontParamB">0.5</float>
+				<token name="FrontSurface">0</token>
+				<token name="FrontSurfaceInput">0</token>
+				<float name="LeftParamA">-0.5</float>
+				<float name="LeftParamB">0.5</float>
+				<token name="LeftSurface">0</token>
+				<token name="LeftSurfaceInput">0</token>
+				<bool name="Locked">false</bool>
+				<token name="Material">256</token>
+				<string name="Name">Handle</string>
+				<float name="Reflectance">0</float>
+				<float name="RightParamA">-0.5</float>
+				<float name="RightParamB">0.5</float>
+				<token name="RightSurface">0</token>
+				<token name="RightSurfaceInput">0</token>
+				<Vector3 name="RotVelocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<BinaryString name="Tags"></BinaryString>
+				<float name="TopParamA">-0.5</float>
+				<float name="TopParamB">0.5</float>
+				<token name="TopSurface">0</token>
+				<token name="TopSurfaceInput">0</token>
+				<float name="Transparency">0</float>
+				<Vector3 name="Velocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<token name="formFactorRaw">1</token>
+				<token name="shape">0</token>
+				<Vector3 name="size">
+					<X>1.25</X>
+					<Y>1.25</Y>
+					<Z>1.25</Z>
+				</Vector3>
+			</Properties>
+			<Item class="SpecialMesh" referent="RBX84E83A3A62444320B2E411D19B40AD88">
+				<Properties>
+					<token name="LODX">2</token>
+					<token name="LODY">2</token>
+					<Content name="MeshId"><url>rbxassetid://2098375979</url></Content>
+					<token name="MeshType">5</token>
+					<string name="Name">Mesh</string>
+					<Vector3 name="Offset">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+					</Vector3>
+					<Vector3 name="Scale">
+						<X>1.5</X>
+						<Y>1.5</Y>
+						<Z>1.5</Z>
+					</Vector3>
+					<BinaryString name="Tags"></BinaryString>
+					<Content name="TextureId"><url>rbxassetid://2098377090</url></Content>
+					<Vector3 name="VertexColor">
+						<X>1</X>
+						<Y>1</Y>
+						<Z>1</Z>
+					</Vector3>
+				</Properties>
+			</Item>
+		</Item>
+		<Item class="Script" referent="RBX1D8AF688D3BC4539AD4AE4840B3CBD1E">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">FairyToolScript</string>
+				<string name="ScriptGuid">{D39D8B4F-823D-4A15-BCAF-760A1A29D7BF}</string>
+				<ProtectedString name="Source"><![CDATA[--Stickmasterluke (7/18/18)
+
+
+tool = script.Parent
+handle = tool:WaitForChild("Handle")
+local fairyScript = script:WaitForChild('FairyScript')
+local bitParticleEmitter = script:WaitForChild('BitParticleEmitter')
+local healingParticleEmitter = script:WaitForChild('BitHealingParticleEmitter')
+
+
+local BASE_URL = "http://www.roblox.com/asset/?id="
+local TEXTUREID = "2098377090"
+local SCALE = 5--2.5
+local MESH_SCALE = .75
+
+local created = false
+
+
+local partTemplate = Instance.new('Part')
+partTemplate.CanCollide = false
+partTemplate.TopSurface = 'Smooth'
+partTemplate.BottomSurface = 'Smooth'
+
+
+tool.Equipped:connect(function()
+	local character = tool.Parent
+	if not created and character and character.Parent == workspace then
+		local humanoid = character:FindFirstChild('Humanoid')
+		local hrp = character:FindFirstChild('HumanoidRootPart')
+		if humanoid and humanoid.Health > 0 and hrp then
+			created = true
+			handle.Transparency = 1
+
+			local fairy = partTemplate:clone()
+			fairy.Name = character.Name.."'s".."Fairy"
+			fairy.Size = Vector3.new(.6,1,.6) * SCALE
+			fairy.CFrame = hrp.CFrame
+
+			bitParticleEmitter:clone().Parent = fairy
+			healingParticleEmitter:clone().Parent = fairy
+
+			local fairyMesh = Instance.new('SpecialMesh')
+			fairyMesh.MeshType = Enum.MeshType.FileMesh
+			fairyMesh.MeshId = BASE_URL..'2098375558'
+			fairyMesh.Scale = Vector3.new(1,1,1) * SCALE/MESH_SCALE
+			fairyMesh.TextureId = BASE_URL..TEXTUREID
+			fairyMesh.Parent = fairy
+
+
+			-------------------------------------------------
+			-------------------Left Wing---------------------
+			local leftWing = partTemplate:clone()
+			leftWing.Name = 'LeftWing'
+			leftWing.Size = Vector3.new(.5,.5,.2) * SCALE
+
+			local wingMesh = Instance.new('SpecialMesh')
+			wingMesh.MeshType = Enum.MeshType.FileMesh
+			wingMesh.MeshId = BASE_URL..'2098376327'
+			wingMesh.Scale = Vector3.new(1,1,1) * SCALE/MESH_SCALE
+			wingMesh.TextureId = BASE_URL..TEXTUREID
+			wingMesh.Parent = leftWing
+
+			local jointLW = Instance.new('Motor')
+			jointLW.Name = 'LeftWingJoint'
+			jointLW.Part0 = fairy
+			jointLW.Part1 = leftWing
+			jointLW.C0 = CFrame.new(Vector3.new(-.15,0,0)*SCALE) * CFrame.Angles(math.pi*.5,0,0)
+			jointLW.C1 = CFrame.new(Vector3.new(.15,-.07,-.25)*SCALE) * CFrame.Angles(math.pi*.5,0,0)
+			jointLW.MaxVelocity = .1
+			jointLW.Parent = leftWing
+
+			leftWing.Parent = fairy
+			-------------------------------------------------
+
+			-------------------------------------------------
+			-------------------Right Wing--------------------
+			local rightWing = partTemplate:clone()
+			rightWing.Name = 'RightWing'
+			rightWing.Size = Vector3.new(.5,.5,.2) * SCALE
+
+			local wingMesh = Instance.new('SpecialMesh')
+			wingMesh.MeshType = Enum.MeshType.FileMesh
+			wingMesh.MeshId = BASE_URL..'2098376725'
+			wingMesh.Scale = Vector3.new(1,1,1) * SCALE/MESH_SCALE
+			wingMesh.TextureId = BASE_URL..TEXTUREID
+			wingMesh.Parent = rightWing
+
+			local jointRW = Instance.new('Motor')
+			jointRW.Name = 'RightWingJoint'
+			jointRW.Part0 = fairy
+			jointRW.Part1 = rightWing
+			jointRW.C0 = CFrame.new(Vector3.new(.15,0,0)*SCALE) * CFrame.Angles(math.pi*.5,0,0)
+			jointRW.C1 = CFrame.new(Vector3.new(-.15,-.07,-.25)*SCALE) * CFrame.Angles(math.pi*.5,0,0)
+			jointRW.MaxVelocity = .1
+			jointRW.Parent = rightWing
+
+			rightWing.Parent = fairy
+			-------------------------------------------------
+
+
+			-------------------------------------------------
+			---------------------Navi 1----------------------
+			local navi1 = partTemplate:clone()
+			navi1.Name = 'Navi1'
+			navi1.Size = Vector3.new(.5,.4,.4) * SCALE
+
+			local navi1Mesh = Instance.new('SpecialMesh')
+			navi1Mesh.MeshType = Enum.MeshType.FileMesh
+			navi1Mesh.MeshId = BASE_URL..'2098375051'
+			navi1Mesh.Scale = Vector3.new(1,1,1) * SCALE/MESH_SCALE
+			navi1Mesh.TextureId = BASE_URL..TEXTUREID
+			navi1Mesh.Parent = navi1
+
+			local jointN1 = Instance.new('Motor')
+			jointN1.Name = 'NaviJoint'
+			jointN1.Part0 = fairy
+			jointN1.Part1 = navi1
+			jointN1.C0 = CFrame.new(Vector3.new(.5, .5, .5)*SCALE)
+			jointN1.C1 = CFrame.new(0,0,0)
+			jointN1.MaxVelocity = .01
+			jointN1.Parent = navi1
+
+			navi1.Parent = fairy
+			-------------------------------------------------
+
+			-------------------------------------------------
+			---------------------Navi 2----------------------
+			local navi2 = partTemplate:clone()
+			navi2.Name = 'Navi2'
+			navi2.Size = Vector3.new(.5,.4,.4) * SCALE
+
+			local navi2Mesh = Instance.new('SpecialMesh')
+			navi2Mesh.MeshType = Enum.MeshType.FileMesh
+			navi2Mesh.MeshId = BASE_URL..'2098375051'
+			navi2Mesh.Scale = Vector3.new(1,1,1) * SCALE/MESH_SCALE
+			navi2Mesh.TextureId = BASE_URL..TEXTUREID
+			navi2Mesh.Parent = navi2
+
+			local jointN2 = Instance.new('Motor')
+			jointN2.Name = 'NaviJoint'
+			jointN2.Part0 = fairy
+			jointN2.Part1 = navi2
+			jointN2.C0 = CFrame.new(Vector3.new(-.25, .75, .25)*SCALE)
+			jointN2.C1 = CFrame.new(0,0,0)
+			jointN2.MaxVelocity = .01
+			jointN2.Parent = navi2
+
+			navi2.Parent = fairy
+			-------------------------------------------------
+
+
+			local bp = Instance.new('BodyPosition')
+			bp.Name = 'BodyPosition'
+			bp.MaxForce = Vector3.new(1,1,1)*20000
+			bp.Position = hrp.Position + Vector3.new(0,3 + SCALE,0)
+			bp.Parent = fairy
+
+			local bg = Instance.new('BodyGyro')
+			bg.Name = 'BodyGyro'
+			bg.MaxTorque = Vector3.new(1,1,1) * 400000
+			bg.CFrame = hrp.CFrame
+			bg.Parent = fairy
+
+			local objectTag = Instance.new('ObjectValue')
+			objectTag.Name = 'TargetTag'
+			objectTag.Value = character
+			objectTag.Parent = fairy
+
+			local newFairyScript = fairyScript:clone()
+			newFairyScript.Parent = fairy
+			newFairyScript.Disabled = false
+
+			fairy.Parent = workspace
+
+			tool:Destroy()
+		end
+	end
+end)
+
+
+
+
+
+
+
+
+
+
+
+
+
+]]></ProtectedString>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+			<Item class="Script" referent="RBX13EAC7BA3FFC40DDAE87B288DEFC2D5B">
+				<Properties>
+					<bool name="Disabled">true</bool>
+					<Content name="LinkedSource"><null></null></Content>
+					<string name="Name">FairyScript</string>
+					<string name="ScriptGuid">{4A69782A-0183-4F7F-96DD-375FBA8389AA}</string>
+					<ProtectedString name="Source"><![CDATA[--Stickmasterluke
+
+local fairy = script.Parent
+local targetTag = fairy:WaitForChild('TargetTag', 1)
+local bodyPosition = fairy:WaitForChild('BodyPosition', 1)
+local bodyGyro = fairy:WaitForChild('BodyGyro', 1)
+local healingParticleEmitter = fairy:WaitForChild('BitHealingParticleEmitter')
+local leftWing = fairy:WaitForChild('LeftWing', 1)
+local leftWingJoint = leftWing:WaitForChild('LeftWingJoint', 1)
+local rightWing = fairy:WaitForChild('RightWing', 1)
+local rightWingJoint = rightWing:WaitForChild('RightWingJoint', 1)
+local navi1 = fairy:WaitForChild('Navi1', 1)
+local navi1Joint = navi1:WaitForChild('NaviJoint', 1)
+local navi2 = fairy:WaitForChild('Navi2', 1)
+local navi2Joint = navi2:WaitForChild('NaviJoint', 1)
+local characterHealingParticles = nil
+
+
+local HEALING_RATE = 2
+local flapRate = 3	--1/2
+local waveRange = math.pi*.25
+
+
+local flapCount = 0
+
+spawn(function()
+	local startTime = tick()
+	while true do
+		if fairy and fairy.Parent and navi1 and navi1.Parent and navi1Joint and navi1Joint.Parent and navi2 and navi2.Parent and navi2Joint and navi2Joint.Parent then
+			local wiggle1 = math.sin((tick()-startTime)*math.pi*2*.8)
+			local wiggle2 = math.sin((tick()-startTime)*math.pi*2*.8*.618)
+			navi1Joint.DesiredAngle = wiggle1 * math.pi*.1
+			navi2Joint.DesiredAngle = wiggle2 * math.pi*.1
+		else
+			break
+		end
+		wait(.1)
+	end
+end)
+
+while true do
+	if fairy and fairy.Parent and leftWingJoint and leftWingJoint.Parent and rightWingJoint and rightWingJoint.Parent then
+		flapCount = flapCount + 1
+		local wave = (flapCount%2) *2 - 1
+		leftWingJoint.DesiredAngle = wave * waveRange
+		rightWingJoint.DesiredAngle = -wave * waveRange
+	else
+		break
+	end
+
+	if targetTag and targetTag.Parent and targetTag.Value and targetTag.Value.Parent and bodyPosition and bodyGyro then
+		local hrp = targetTag.Value:FindFirstChild('HumanoidRootPart')
+		local humanoid = targetTag.Value:FindFirstChild('Humanoid')
+		if hrp and humanoid and humanoid.Health > 0 then
+			bodyPosition.position = (hrp.CFrame * CFrame.new(3, 4, 2)).p
+			bodyGyro.CFrame = hrp.CFrame
+			local healing = humanoid.Health < humanoid.MaxHealth
+			healingParticleEmitter.Enabled = healing
+			if healing then
+				humanoid.Health = math.min(humanoid.Health+(.5/flapRate)*HEALING_RATE, humanoid.MaxHealth)
+			end
+			if lastHealing ~= healing then
+				if healing then
+					-- Starting Healing
+					if not (characterHealingParticles and characterHealingParticles.Parent) then
+						characterHealingParticles = healingParticleEmitter:clone()
+						characterHealingParticles.Parent = hrp
+					end
+					characterHealingParticles.Enabled = true
+				else
+					-- Ending Healing
+					if characterHealingParticles and characterHealingParticles.Parent then
+						characterHealingParticles.Enabled = false
+					end
+				end
+			end
+			lastHealing = healing
+		else
+			break
+		end
+	else
+		break
+	end
+
+	wait(.5/flapRate)
+end
+
+if characterHealingParticles and characterHealingParticles.Parent then
+	characterHealingParticles:Destroy()
+end
+
+
+if fairy and fairy.Parent then
+	fairy:Destroy()
+end
+
+
+
+
+]]></ProtectedString>
+					<BinaryString name="Tags"></BinaryString>
+				</Properties>
+			</Item>
+			<Item class="ParticleEmitter" referent="RBXEB29BDF63AA045BC8BE89784B22EE559">
+				<Properties>
+					<Vector3 name="Acceleration">
+						<X>0</X>
+						<Y>-2</Y>
+						<Z>0</Z>
+					</Vector3>
+					<ColorSequence name="Color">0 1 1 1 0 1 1 1 1 0 </ColorSequence>
+					<float name="Drag">2</float>
+					<token name="EmissionDirection">1</token>
+					<bool name="Enabled">true</bool>
+					<NumberRange name="Lifetime">2 4 </NumberRange>
+					<float name="LightEmission">1</float>
+					<float name="LightInfluence">1</float>
+					<bool name="LockedToPart">false</bool>
+					<string name="Name">BitParticleEmitter</string>
+					<float name="Rate">20</float>
+					<NumberRange name="RotSpeed">0 0 </NumberRange>
+					<NumberRange name="Rotation">0 0 </NumberRange>
+					<NumberSequence name="Size">0 0.0701261 0.0701261 0.601113 0.0420761 0.0420761 1 0 0 </NumberSequence>
+					<NumberRange name="Speed">2 2 </NumberRange>
+					<Vector2 name="SpreadAngle">
+						<X>-180</X>
+						<Y>180</Y>
+					</Vector2>
+					<BinaryString name="Tags"></BinaryString>
+					<Content name="Texture"><url>rbxassetid://2070896802</url></Content>
+					<NumberSequence name="Transparency">0 1 0 0.200328 0.491803 0 0.400657 1 0 0.460591 1 0 0.599343 0.497268 0 0.758621 1 0 0.899015 0.737705 0 1 1 0 </NumberSequence>
+					<float name="VelocityInheritance">0.5</float>
+					<float name="ZOffset">0</float>
+				</Properties>
+			</Item>
+			<Item class="ParticleEmitter" referent="RBX1B412EDCE4D24E42BCA0E573B304C319">
+				<Properties>
+					<Vector3 name="Acceleration">
+						<X>0</X>
+						<Y>1</Y>
+						<Z>0</Z>
+					</Vector3>
+					<ColorSequence name="Color">0 0.239216 1 0.364706 0 0.821963 0.184314 1 0.345098 0 1 0.67451 1 0.827451 0 </ColorSequence>
+					<float name="Drag">2</float>
+					<token name="EmissionDirection">1</token>
+					<bool name="Enabled">false</bool>
+					<NumberRange name="Lifetime">2 4 </NumberRange>
+					<float name="LightEmission">0.200000003</float>
+					<float name="LightInfluence">1</float>
+					<bool name="LockedToPart">false</bool>
+					<string name="Name">BitHealingParticleEmitter</string>
+					<float name="Rate">10</float>
+					<NumberRange name="RotSpeed">0 0 </NumberRange>
+					<NumberRange name="Rotation">0 0 </NumberRange>
+					<NumberSequence name="Size">0 0.154278 0.0701261 0.59833 0.140253 0.0420761 1 0 0 </NumberSequence>
+					<NumberRange name="Speed">2 2 </NumberRange>
+					<Vector2 name="SpreadAngle">
+						<X>-180</X>
+						<Y>180</Y>
+					</Vector2>
+					<BinaryString name="Tags"></BinaryString>
+					<Content name="Texture"><url>rbxassetid://2102160916</url></Content>
+					<NumberSequence name="Transparency">0 0 0 0.799672 0 0 1 1 0 </NumberSequence>
+					<float name="VelocityInheritance">0.5</float>
+					<float name="ZOffset">0</float>
+				</Properties>
+			</Item>
+		</Item>
+		<Item class="Camera" referent="RBXB482B7C2B375455B8712E9B14E183B0D">
+			<Properties>
+				<CoordinateFrame name="CFrame">
+					<X>1.27282524</X>
+					<Y>0.973081231</Y>
+					<Z>7.77191353</Z>
+					<R00>0.99276495</R00>
+					<R01>0.0043461672</R01>
+					<R02>-0.119995706</R02>
+					<R10>-4.65661232e-10</R10>
+					<R11>0.999344826</R11>
+					<R12>0.0361956209</R12>
+					<R20>0.120074384</R20>
+					<R21>-0.0359337442</R21>
+					<R22>0.992114425</R22>
+				</CoordinateFrame>
+				<Ref name="CameraSubject">null</Ref>
+				<token name="CameraType">0</token>
+				<float name="FieldOfView">70</float>
+				<CoordinateFrame name="Focus">
+					<X>1.51281714</X>
+					<Y>0.90068984</Y>
+					<Z>5.78768063</Z>
+					<R00>1</R00>
+					<R01>0</R01>
+					<R02>0</R02>
+					<R10>0</R10>
+					<R11>1</R11>
+					<R12>0</R12>
+					<R20>0</R20>
+					<R21>0</R21>
+					<R22>1</R22>
+				</CoordinateFrame>
+				<bool name="HeadLocked">true</bool>
+				<float name="HeadScale">1</float>
+				<string name="Name">ThumbnailCamera</string>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+		</Item>
+	</Item>
+</roblox>

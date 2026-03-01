@@ -1,0 +1,614 @@
+<roblox xmlns:xmime="http://www.w3.org/2005/05/xmlmime" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.roblox.com/roblox.xsd" version="4">
+	<Meta name="ExplicitAutoJoints">true</Meta>
+	<External>null</External>
+	<External>nil</External>
+	<Item class="Tool" referent="RBXBA46BA08EBFB4C1381C090AD283EBE5B">
+		<Properties>
+			<bool name="CanBeDropped">true</bool>
+			<bool name="Enabled">true</bool>
+			<CoordinateFrame name="Grip">
+				<X>0</X>
+				<Y>-0.200000003</Y>
+				<Z>1.89999998</Z>
+				<R00>1</R00>
+				<R01>0</R01>
+				<R02>0</R02>
+				<R10>0</R10>
+				<R11>0</R11>
+				<R12>-1</R12>
+				<R20>0</R20>
+				<R21>1</R21>
+				<R22>0</R22>
+			</CoordinateFrame>
+			<bool name="ManualActivationOnly">false</bool>
+			<string name="Name">ChineseLantern</string>
+			<bool name="RequiresHandle">true</bool>
+			<BinaryString name="Tags"></BinaryString>
+			<Content name="TextureId"><url>rbxassetid://2750085790</url></Content>
+			<string name="ToolTip"></string>
+		</Properties>
+		<Item class="Part" referent="RBX25E97C8F010548568305EEDE2A02022B">
+			<Properties>
+				<bool name="Anchored">false</bool>
+				<float name="BackParamA">-0.5</float>
+				<float name="BackParamB">0.5</float>
+				<token name="BackSurface">0</token>
+				<token name="BackSurfaceInput">0</token>
+				<float name="BottomParamA">-0.5</float>
+				<float name="BottomParamB">0.5</float>
+				<token name="BottomSurface">4</token>
+				<token name="BottomSurfaceInput">0</token>
+				<CoordinateFrame name="CFrame">
+					<X>2.37999892</X>
+					<Y>1.15000701</Y>
+					<Z>3.56999993</Z>
+					<R00>0.652335405</R00>
+					<R01>0.757930458</R01>
+					<R02>0</R02>
+					<R10>0</R10>
+					<R11>0</R11>
+					<R12>1</R12>
+					<R20>0.757930458</R20>
+					<R21>-0.652335405</R21>
+					<R22>0</R22>
+				</CoordinateFrame>
+				<bool name="CanCollide">true</bool>
+				<int name="CollisionGroupId">0</int>
+				<Color3uint8 name="Color3uint8">4288914085</Color3uint8>
+				<PhysicalProperties name="CustomPhysicalProperties">
+					<CustomPhysics>false</CustomPhysics>
+				</PhysicalProperties>
+				<float name="FrontParamA">-0.5</float>
+				<float name="FrontParamB">0.5</float>
+				<token name="FrontSurface">0</token>
+				<token name="FrontSurfaceInput">0</token>
+				<float name="LeftParamA">-0.5</float>
+				<float name="LeftParamB">0.5</float>
+				<token name="LeftSurface">0</token>
+				<token name="LeftSurfaceInput">0</token>
+				<bool name="Locked">true</bool>
+				<bool name="Massless">false</bool>
+				<token name="Material">256</token>
+				<string name="Name">Handle</string>
+				<float name="Reflectance">0</float>
+				<float name="RightParamA">-0.5</float>
+				<float name="RightParamB">0.5</float>
+				<token name="RightSurface">0</token>
+				<token name="RightSurfaceInput">0</token>
+				<int name="RootPriority">0</int>
+				<Vector3 name="RotVelocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<BinaryString name="Tags"></BinaryString>
+				<float name="TopParamA">-0.5</float>
+				<float name="TopParamB">0.5</float>
+				<token name="TopSurface">3</token>
+				<token name="TopSurfaceInput">0</token>
+				<float name="Transparency">0</float>
+				<Vector3 name="Velocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<token name="formFactorRaw">3</token>
+				<token name="shape">1</token>
+				<Vector3 name="size">
+					<X>1.48999798</X>
+					<Y>1.39999878</Y>
+					<Z>3.18999767</Z>
+				</Vector3>
+			</Properties>
+			<Item class="SpecialMesh" referent="RBXBBB632E9C9A541089ECE9E432CF025B9">
+				<Properties>
+					<token name="LODX">2</token>
+					<token name="LODY">2</token>
+					<Content name="MeshId"><url>rbxassetid://70428318</url></Content>
+					<token name="MeshType">5</token>
+					<string name="Name">Mesh</string>
+					<Vector3 name="Offset">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+					</Vector3>
+					<Vector3 name="Scale">
+						<X>2</X>
+						<Y>2</Y>
+						<Z>2</Z>
+					</Vector3>
+					<BinaryString name="Tags"></BinaryString>
+					<Content name="TextureId"><url>rbxassetid://2750074520</url></Content>
+					<Vector3 name="VertexColor">
+						<X>1</X>
+						<Y>1</Y>
+						<Z>1</Z>
+					</Vector3>
+				</Properties>
+			</Item>
+			<Item class="Sound" referent="RBXBCCFBAEFA57547D98904BB64338B0252">
+				<Properties>
+					<float name="EmitterSize">10</float>
+					<bool name="Looped">false</bool>
+					<string name="Name">PigSound</string>
+					<bool name="PlayOnRemove">false</bool>
+					<float name="PlaybackSpeed">1</float>
+					<bool name="Playing">false</bool>
+					<token name="RollOffMode">0</token>
+					<Ref name="SoundGroup">null</Ref>
+					<Content name="SoundId"><url>rbxassetid://2758663595</url></Content>
+					<BinaryString name="Tags"></BinaryString>
+					<double name="TimePosition">0</double>
+					<float name="Volume">1</float>
+					<float name="xmlRead_MaxDistance_3">10000</float>
+				</Properties>
+			</Item>
+			<Item class="Attachment" referent="RBX1D0BDA19349247B689A19585FC2D2045">
+				<Properties>
+					<CoordinateFrame name="CFrame">
+						<X>0</X>
+						<Y>-0.200000048</Y>
+						<Z>1.9000001</Z>
+						<R00>1</R00>
+						<R01>0</R01>
+						<R02>6.31088724e-30</R02>
+						<R10>6.31088724e-30</R10>
+						<R11>0</R11>
+						<R12>-1</R12>
+						<R20>0</R20>
+						<R21>1</R21>
+						<R22>0</R22>
+					</CoordinateFrame>
+					<string name="Name">RightGripAttachment</string>
+					<BinaryString name="Tags"></BinaryString>
+					<bool name="Visible">false</bool>
+				</Properties>
+			</Item>
+		</Item>
+		<Item class="LocalScript" referent="RBX23E667CFC59246189D3192C5420121E9">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">Local Gui</string>
+				<string name="ScriptGuid">{391E7073-E1F2-4827-906C-163371E024E0}</string>
+				<ProtectedString name="Source"><![CDATA[Tool = script.Parent
+
+local stillEquipped = false
+
+function onEquippedLocal(mouse)
+	stillEquipped = true
+	if mouse == nil then 
+		print("Mouse not found")
+		return
+	end
+	while stillEquipped do 
+		print("Setting Mouse to go")
+		mouse.Icon = "rbxasset://textures\\GunCursor.png"
+		while Tool.Enabled and stillEquipped do 
+			wait(0.01)
+		end
+		print("Setting Mouse to wait")
+		mouse.Icon = "rbxasset://textures\\GunWaitCursor.png"
+		while not Tool.Enabled and stillEquipped do 
+			wait(0.01)
+		end	
+	end
+end
+
+
+function onUnequippedLocal()
+	stillEquipped = false
+end
+
+Tool.Equipped:connect(onEquippedLocal)
+Tool.Unequipped:connect(onUnequippedLocal)]]></ProtectedString>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+		</Item>
+		<Item class="Script" referent="RBXBCA755C6EC71485FBFB79334B443B6EC">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">LanternScript</string>
+				<string name="ScriptGuid">{778418C6-BC55-4D31-9B76-035C1F459B99}</string>
+				<ProtectedString name="Source"><![CDATA[local Tool = script.Parent 
+local Lantern = Tool.Handle
+
+local vCharacter
+local myTorso
+local myHumanoid 
+
+Tool.Enabled = true
+
+local equipped = false
+
+local activated = false 
+
+local hauntDamage = 45
+
+local pigSpirit
+
+local pigPart = Instance.new("Part")
+pigPart.Name = "Pig"
+pigPart.Size = Vector3.new(1, 1, 3)
+pigPart.Transparency = 0.5
+pigPart.CanCollide = false 
+pigPart.Anchored = true 
+
+local dragonSound
+
+local debris = game:GetService("Debris")
+
+local pigMesh = Instance.new("SpecialMesh")
+pigMesh.MeshId = ""
+pigMesh.TextureId = ""
+pigMesh.Parent = pigPart 
+
+pigSpirit = pigPart:Clone() 
+pigSpirit.Mesh.MeshId = "rbxassetid://2750073636"
+pigSpirit.Mesh.TextureId = "rbxassetid://2750072928"
+
+local float = Instance.new("BodyForce")
+float.force = Vector3.new(0, pigPart:GetMass() * workspace.Gravity, 0) 
+
+local radius1 = 5
+local radius2 = 3
+local radius3 = 4
+
+local theta1 = 0
+local theta2 = math.pi/2
+local theta3 = 3*math.pi/2
+
+local phi1 = 0
+local phi2 = math.pi/2
+local phi3 = 3*math.pi/2
+
+local dt1 = 0.02
+local dt2 = 0.030
+local dt3 = -0.025
+
+local dp1 = -0.01
+local dp2 = 0.025
+local dp3 = -0.035
+
+function animatePigs()
+	while pigSpirit and equipped do 
+		if not activated then 		
+			-- animate them
+			theta1 = theta1 + dt1
+			theta2 = theta2 + dt2
+			theta3 = theta3 + dt3
+
+			phi1 = phi1 + dp1
+			phi2 = phi2 + dp2
+			phi3 = phi3 + dp3
+
+			-- calc positions
+			local pos1 = radius1 * Vector3.new(math.sin(theta1) * math.cos(phi1), math.sin(phi1), math.cos(theta1) * math.cos(phi1))
+			local pos2 = radius2 * Vector3.new(math.sin(theta2) * math.cos(phi2), math.sin(phi2), math.cos(theta2) * math.cos(phi2))
+			local pos3 = radius3 * Vector3.new(math.sin(theta3) * math.cos(phi3), math.sin(phi3), math.cos(theta3) * math.cos(phi3))
+
+			-- render them
+			pigSpirit.CFrame = CFrame.new(pos1 + Lantern.Position, myTorso.Position + myTorso.CFrame.lookVector * 25)
+		end
+		wait()
+	end 
+end
+
+function haunt(hit, phantom)
+	local humanoid 
+	if hit and hit.Parent then 
+		if phantom then 
+			hauntDamage = 72 
+		else 
+			hauntDamage = 45
+		end 
+		humanoid = hit.Parent:FindFirstChild("Humanoid")
+		if humanoid and myHumanoid and humanoid ~= myHumanoid then 
+			humanoid:TakeDamage(hauntDamage)
+			if phantom then phantom:Destroy() end 
+		end 		
+	end 
+end 
+
+function findTarget(target)
+	local AOE = Vector3.new(12, 12, 12)
+	local parts = game.Workspace:FindPartsInRegion3(Region3.new(target - AOE, target + AOE), vCharacter, 100)
+	local minDistance = math.huge
+	local targetTorso = nil
+	for i = 1, #parts do 
+		local character = parts[i].Parent 
+		if character then 
+			local torso = character:FindFirstChild("Torso") or character:FindFirstChild("UpperTorso")
+			if torso then 
+				local distance = (target - torso.Position).magnitude 
+				if torso and distance < minDistance then 
+					minDistance = distance 
+					targetTorso = torso
+				end
+			end 
+		end 
+	end 
+	return targetTorso
+end 
+
+function flameIt(torso)
+	if pigSpirit then 
+		local s1 = pigSpirit:Clone()
+		s1.Anchored = false
+
+		pigSpirit.Transparency = 1.0
+	
+		local d1 = (torso.Position - s1.Position).unit
+
+		local f1 = float:Clone()
+		f1.Parent = s1
+
+		s1.Velocity = d1 * 50.0
+
+		s1.Parent = game.Workspace
+
+		debris:AddItem(s1, 8)
+
+		s1.Touched:connect(function(hit) haunt(hit, s1) end)
+	end 
+end 
+
+function onActivated()
+	if Tool.Enabled == false then 
+		return 
+	end 
+
+	if myTorso == nil or myHumanoid == nil then 
+		return 
+	end 
+
+	Tool.Enabled = false 
+
+	local target = myHumanoid.TargetPoint 
+	
+	local targetTorso = findTarget(target)	
+
+	if targetTorso then 
+		activated = true 
+		flameIt(targetTorso)
+	else 
+		-- Just make them go towards the target, say 50 studs distance, should they attack anyone? Not sure 
+	end 
+
+	wait(7.0)
+	Tool.Enabled = true 
+	activated = false
+	pigSpirit.Transparency = 0.5
+end 
+
+function onEquipped()
+	vCharacter = Tool.Parent 
+	myTorso = vCharacter:FindFirstChild("Torso") or vCharacter:FindFirstChild("UpperTorso")
+	myHumanoid = vCharacter:FindFirstChild("Humanoid")
+
+	pigSpirit.Parent = vCharacter 
+	equipped = true 
+
+	dc1 = pigSpirit.Touched:connect(haunt)
+
+	coroutine.resume(coroutine.create(animatePigs))
+
+	pigSound = Lantern:FindFirstChild("PigSound")
+	if pigSound then pigSound:Play() end 
+end 
+
+function onUnequipped()
+	equipped = false
+	if pigSpirit then pigSpirit.Parent = nil end	
+
+	if pigSound then pigSound:Stop() end 
+end
+
+Tool.Activated:connect(onActivated)
+Tool.Equipped:connect(onEquipped)
+Tool.Unequipped:connect(onUnequipped)
+
+
+]]></ProtectedString>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+		</Item>
+		<Item class="LocalScript" referent="RBXD97368B23A3B4BE8BBF767DE1D7C4831">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">GuiScript</string>
+				<string name="ScriptGuid">{155ADDAF-787F-47C9-B147-27F795F1A93B}</string>
+				<ProtectedString name="Source"><![CDATA[local Tool = script.Parent 
+local Lantern = Tool.Handle
+
+local vCharacter 
+local vPlayer 
+
+local sg 
+local frame 
+
+function onEquipped()
+	vCharacter = Tool.Parent
+	vPlayer = game.Players:GetPlayerFromCharacter(vCharacter)
+	if vPlayer then 
+		local playerGui = vPlayer:FindFirstChild("PlayerGui")
+		if playerGui and playerGui:FindFirstChild("LanternGui") == nil then 
+			sg = Instance.new("ScreenGui")
+			sg.Name = "LanternGui"
+			sg.Parent = playerGui 
+
+			frame = Instance.new("Frame")
+			frame.Parent = sg 
+			frame.Size = UDim2.new(0, 260, 0, 30)
+			frame.Position = UDim2.new(0.5, -130, 1, -130) 
+			frame.Style = Enum.FrameStyle.RobloxRound
+
+			local genericTextLabel = Instance.new("TextLabel")
+			genericTextLabel.BackgroundTransparency = 1.0
+			genericTextLabel.Size = UDim2.new(1, 0, 1, 0)
+			genericTextLabel.Visible = true 
+			genericTextLabel.ZIndex = 10 
+			genericTextLabel.FontSize = Enum.FontSize.Size10 
+			genericTextLabel.Font = Enum.Font.Legacy
+			genericTextLabel.TextColor3 = Color3.new(1, 127/255, 0)
+			genericTextLabel.TextXAlignment = Enum.TextXAlignment.Center
+			genericTextLabel.TextYAlignment = Enum.TextYAlignment.Top
+			genericTextLabel.Parent = frame
+			genericTextLabel.Text = "Project yourself with a loyal pig!" 
+
+		end 
+	end 
+end 
+
+function onUnequipped()
+	if sg then sg:Destroy() end 
+end 
+
+Tool.Equipped:connect(onEquipped)
+Tool.Unequipped:connect(onUnequipped)
+]]></ProtectedString>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+		</Item>
+		<Item class="Keyframe" referent="RBXEA62C9C9944F4CDF8CB4F8FF7222BBC1">
+			<Properties>
+				<string name="Name">ThumbnailPose</string>
+				<BinaryString name="Tags"></BinaryString>
+				<float name="Time">0</float>
+			</Properties>
+			<Item class="Pose" referent="RBX18D022919C4F4A2B84C40FC5F6EBB3C5">
+				<Properties>
+					<CoordinateFrame name="CFrame">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+						<R00>1</R00>
+						<R01>0</R01>
+						<R02>0</R02>
+						<R10>0</R10>
+						<R11>1</R11>
+						<R12>0</R12>
+						<R20>0</R20>
+						<R21>0</R21>
+						<R22>1</R22>
+					</CoordinateFrame>
+					<token name="EasingDirection">1</token>
+					<token name="EasingStyle">0</token>
+					<string name="Name">UpperTorso</string>
+					<BinaryString name="Tags"></BinaryString>
+					<float name="Weight">0</float>
+				</Properties>
+				<Item class="Pose" referent="RBX0C8E484C44E14E1DBE80B2E55236B30F">
+					<Properties>
+						<CoordinateFrame name="CFrame">
+							<X>0</X>
+							<Y>-6.70552254e-08</Y>
+							<Z>-5.96046448e-08</Z>
+							<R00>1</R00>
+							<R01>0</R01>
+							<R02>0</R02>
+							<R10>0</R10>
+							<R11>0.173648193</R11>
+							<R12>-0.98480773</R12>
+							<R20>0</R20>
+							<R21>0.98480773</R21>
+							<R22>0.173648193</R22>
+						</CoordinateFrame>
+						<token name="EasingDirection">1</token>
+						<token name="EasingStyle">0</token>
+						<string name="Name">RightUpperArm</string>
+						<BinaryString name="Tags"></BinaryString>
+						<float name="Weight">1</float>
+					</Properties>
+					<Item class="Pose" referent="RBX02B4CD91B1014541B220A07F45239F46">
+						<Properties>
+							<CoordinateFrame name="CFrame">
+								<X>0</X>
+								<Y>-1.49011612e-08</Y>
+								<Z>3.7252903e-09</Z>
+								<R00>1</R00>
+								<R01>0</R01>
+								<R02>0</R02>
+								<R10>0</R10>
+								<R11>0.98480773</R11>
+								<R12>-0.173648179</R12>
+								<R20>0</R20>
+								<R21>0.173648179</R21>
+								<R22>0.98480773</R22>
+							</CoordinateFrame>
+							<token name="EasingDirection">1</token>
+							<token name="EasingStyle">0</token>
+							<string name="Name">RightLowerArm</string>
+							<BinaryString name="Tags"></BinaryString>
+							<float name="Weight">1</float>
+						</Properties>
+						<Item class="Pose" referent="RBX761490E1FD164211BD561684062FD83D">
+							<Properties>
+								<CoordinateFrame name="CFrame">
+									<X>0</X>
+									<Y>0</Y>
+									<Z>0</Z>
+									<R00>1</R00>
+									<R01>0</R01>
+									<R02>0</R02>
+									<R10>0</R10>
+									<R11>1</R11>
+									<R12>0</R12>
+									<R20>0</R20>
+									<R21>0</R21>
+									<R22>1</R22>
+								</CoordinateFrame>
+								<token name="EasingDirection">1</token>
+								<token name="EasingStyle">0</token>
+								<string name="Name">RightHand</string>
+								<BinaryString name="Tags"></BinaryString>
+								<float name="Weight">1</float>
+							</Properties>
+						</Item>
+					</Item>
+				</Item>
+			</Item>
+		</Item>
+		<Item class="Camera" referent="RBXB38CD7BB420A4A14812C03BC01FD8B42">
+			<Properties>
+				<CoordinateFrame name="CFrame">
+					<X>0.231307238</X>
+					<Y>2.4595263</Y>
+					<Z>6.40063572</Z>
+					<R00>0.805043399</R00>
+					<R01>0.157502145</R01>
+					<R02>-0.571925044</R02>
+					<R10>7.4505806e-09</R10>
+					<R11>0.964109421</R11>
+					<R12>0.265505582</R12>
+					<R20>0.593215942</R20>
+					<R21>-0.213743523</R21>
+					<R22>0.776149869</R22>
+				</CoordinateFrame>
+				<Ref name="CameraSubject">null</Ref>
+				<token name="CameraType">0</token>
+				<float name="FieldOfView">70</float>
+				<CoordinateFrame name="Focus">
+					<X>1.37515724</X>
+					<Y>1.9285152</Y>
+					<Z>4.84833622</Z>
+					<R00>1</R00>
+					<R01>0</R01>
+					<R02>0</R02>
+					<R10>0</R10>
+					<R11>1</R11>
+					<R12>0</R12>
+					<R20>0</R20>
+					<R21>0</R21>
+					<R22>1</R22>
+				</CoordinateFrame>
+				<bool name="HeadLocked">true</bool>
+				<float name="HeadScale">1</float>
+				<string name="Name">ThumbnailCamera</string>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+		</Item>
+	</Item>
+</roblox>

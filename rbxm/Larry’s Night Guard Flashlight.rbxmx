@@ -1,0 +1,246 @@
+<roblox xmlns:xmime="http://www.w3.org/2005/05/xmlmime" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.roblox.com/roblox.xsd" version="4">
+	<External>null</External>
+	<External>nil</External>
+	<Item class="Tool" referent="RBXB78AE790A44144ECA32FF6C89B5FEB98">
+		<Properties>
+			<bool name="CanBeDropped">true</bool>
+			<bool name="Enabled">true</bool>
+			<CoordinateFrame name="Grip">
+				<X>0</X>
+				<Y>0</Y>
+				<Z>0</Z>
+				<R00>1</R00>
+				<R01>0</R01>
+				<R02>0</R02>
+				<R10>0</R10>
+				<R11>1</R11>
+				<R12>0</R12>
+				<R20>0</R20>
+				<R21>0</R21>
+				<R22>1</R22>
+			</CoordinateFrame>
+			<bool name="ManualActivationOnly">false</bool>
+			<string name="Name">NATMFlashlight</string>
+			<bool name="RequiresHandle">true</bool>
+			<Content name="TextureId"><url>http://www.roblox.com/asset/?id=186494953  </url></Content>
+			<string name="ToolTip"></string>
+		</Properties>
+		<Item class="Part" referent="RBXD854F1781E4B42C6BCA10DA7CBD3C8F4">
+			<Properties>
+				<bool name="Anchored">false</bool>
+				<float name="BackParamA">-0.5</float>
+				<float name="BackParamB">0.5</float>
+				<token name="BackSurface">0</token>
+				<token name="BackSurfaceInput">0</token>
+				<float name="BottomParamA">-0.5</float>
+				<float name="BottomParamB">0.5</float>
+				<token name="BottomSurface">0</token>
+				<token name="BottomSurfaceInput">0</token>
+				<int name="BrickColor">194</int>
+				<CoordinateFrame name="CFrame">
+					<X>11.5</X>
+					<Y>37.5</Y>
+					<Z>22.5</Z>
+					<R00>-0.999999881</R00>
+					<R01>-2.10161085e-013</R01>
+					<R02>-8.95277822e-007</R02>
+					<R10>6.30781585e-007</R10>
+					<R11>0.707106888</R11>
+					<R12>-0.707106531</R12>
+					<R20>6.30781528e-007</R20>
+					<R21>-0.707106531</R21>
+					<R22>-0.707106888</R22>
+				</CoordinateFrame>
+				<bool name="CanCollide">true</bool>
+				<PhysicalProperties name="CustomPhysicalProperties">
+					<CustomPhysics>false</CustomPhysics>
+				</PhysicalProperties>
+				<float name="Elasticity">0.5</float>
+				<float name="Friction">0.300000012</float>
+				<float name="FrontParamA">-0.5</float>
+				<float name="FrontParamB">0.5</float>
+				<token name="FrontSurface">0</token>
+				<token name="FrontSurfaceInput">0</token>
+				<float name="LeftParamA">-0.5</float>
+				<float name="LeftParamB">0.5</float>
+				<token name="LeftSurface">0</token>
+				<token name="LeftSurfaceInput">0</token>
+				<bool name="Locked">false</bool>
+				<token name="Material">256</token>
+				<string name="Name">Handle</string>
+				<float name="Reflectance">0</float>
+				<float name="RightParamA">-0.5</float>
+				<float name="RightParamB">0.5</float>
+				<token name="RightSurface">0</token>
+				<token name="RightSurfaceInput">0</token>
+				<Vector3 name="RotVelocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<float name="TopParamA">-0.5</float>
+				<float name="TopParamB">0.5</float>
+				<token name="TopSurface">0</token>
+				<token name="TopSurfaceInput">0</token>
+				<float name="Transparency">0</float>
+				<Vector3 name="Velocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<token name="formFactorRaw">0</token>
+				<token name="shape">1</token>
+				<Vector3 name="size">
+					<X>1</X>
+					<Y>1</Y>
+					<Z>3</Z>
+				</Vector3>
+			</Properties>
+			<Item class="SpecialMesh" referent="RBX169D655C85D44DE18E3F4B41995518D6">
+				<Properties>
+					<token name="LODX">2</token>
+					<token name="LODY">2</token>
+					<Content name="MeshId"><url>http://www.roblox.com/asset/?id=186494905 </url></Content>
+					<token name="MeshType">5</token>
+					<string name="Name">Mesh</string>
+					<Vector3 name="Offset">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+					</Vector3>
+					<Vector3 name="Scale">
+						<X>1</X>
+						<Y>1</Y>
+						<Z>1</Z>
+					</Vector3>
+					<Content name="TextureId"><url>http://www.roblox.com/asset/?id=186494927</url></Content>
+					<Vector3 name="VertexColor">
+						<X>1</X>
+						<Y>1</Y>
+						<Z>1</Z>
+					</Vector3>
+				</Properties>
+			</Item>
+			<Item class="SpotLight" referent="RBXE447B36867BF47DEA2169A33AC0AAB0F">
+				<Properties>
+					<float name="Angle">60</float>
+					<float name="Brightness">1.75</float>
+					<Color3 name="Color">4294967295</Color3>
+					<bool name="Enabled">true</bool>
+					<token name="Face">5</token>
+					<string name="Name">Light</string>
+					<float name="Range">32</float>
+					<bool name="Shadows">false</bool>
+				</Properties>
+			</Item>
+		</Item>
+		<Item class="LocalScript" referent="RBX001252B000044654A6F16E8AACD6127F">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">Client</string>
+				<string name="ScriptGuid"></string>
+				<ProtectedString name="Source"><![CDATA[local Player = game:GetService("Players").LocalPlayer
+local Mouse = Player:GetMouse()
+
+local Tool = script.Parent
+local Remote = Tool:WaitForChild("Remote")
+
+function onMouseMove()
+	Remote:FireServer("UpdateDirection", Mouse.Hit.p)
+end
+
+function onMouseClick()
+	Remote:FireServer("ToggleLight")
+end
+
+Mouse.Move:connect(onMouseMove)
+Mouse.Button1Down:connect(onMouseClick)
+game:GetService("RunService").Heartbeat:connect(onMouseMove)
+]]></ProtectedString>
+			</Properties>
+		</Item>
+		<Item class="Script" referent="RBX1C0F90107CAD42B09D1889449392C0D6">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">Server</string>
+				<string name="ScriptGuid">{5C8CC7C7-7E8D-40FA-BE19-DA3286BF3473}</string>
+				<ProtectedString name="Source"><![CDATA[--Updated for R15 avatars by StarWars
+local Tool = script.Parent
+local Handle = Tool:WaitForChild("Handle")
+local Light = Handle:WaitForChild("Light")
+local Remote = Tool:WaitForChild("Remote")
+
+local Weld
+local Motor
+local MotorPart0
+local MotorPart1
+
+function getPlayer()
+	return game:GetService("Players"):GetPlayerFromCharacter(Tool.Parent)
+end
+
+function setPointDirection(position)
+	local char = Tool.Parent
+	if not char then return end
+	local Torso = char:FindFirstChild("Torso") or char:FindFirstChild("UpperTorso")
+	local RightArm = char:FindFirstChild("Right Arm") or char:FindFirstChild("RightUpperArm")
+	local RightShoulder = RightArm:FindFirstChild("Right Shoulder") or RightArm:FindFirstChild("RightShoulder")
+	
+	if not Weld then
+		Motor = RightShoulder:Clone()
+		MotorPart0 = Torso
+		MotorPart1 = RightArm
+		
+		Weld = Instance.new("Weld")
+		Weld.Part0 = Torso
+		Weld.Part1 = RightArm
+		Weld.C0 = CFrame.new(1, 1, 0)
+		Weld.Parent = Weld.Part0
+	end
+	
+	local jointPosition = Weld.Part0.CFrame:toWorldSpace(CFrame.new(1, 0.5, 0))
+	local cframe = CFrame.new(jointPosition.p, position) * CFrame.Angles(math.pi/2, 0, 0) * CFrame.new(0, -1, 0)
+	Weld.C0 = Weld.Part0.CFrame:toObjectSpace(cframe)
+end
+
+function toggleLight()
+	Light.Enabled = not Light.Enabled
+end
+
+function onRemote(player, func, ...)
+	if player ~= getPlayer() then return end
+	
+	if func == "UpdateDirection" then
+		setPointDirection(...)
+	elseif func == "ToggleLight" then
+		toggleLight()
+	end
+end
+
+function onUnequipped()
+	if Weld then
+		Weld:Destroy()
+		Weld = nil
+	end
+	
+	if Motor then
+		Motor.Part0 = MotorPart0
+		Motor.Part1 = MotorPart1
+		Motor.Parent = MotorPart0
+		Motor = nil
+	end
+end
+
+Remote.OnServerEvent:connect(onRemote)
+Tool.Unequipped:connect(onUnequipped)]]></ProtectedString>
+			</Properties>
+		</Item>
+		<Item class="RemoteEvent" referent="RBX421635500981427B800DF331AC73408E">
+			<Properties>
+				<string name="Name">Remote</string>
+			</Properties>
+		</Item>
+	</Item>
+</roblox>

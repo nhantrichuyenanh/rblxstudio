@@ -1,0 +1,528 @@
+<roblox xmlns:xmime="http://www.w3.org/2005/05/xmlmime" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.roblox.com/roblox.xsd" version="4">
+	<External>null</External>
+	<External>nil</External>
+	<Item class="Tool" referent="RBXBC8D97C202EB4555A66FA79019D57C07">
+		<Properties>
+			<bool name="CanBeDropped">true</bool>
+			<bool name="Enabled">true</bool>
+			<CoordinateFrame name="Grip">
+				<X>0</X>
+				<Y>0</Y>
+				<Z>-1.5</Z>
+				<R00>1</R00>
+				<R01>0</R01>
+				<R02>0</R02>
+				<R10>0</R10>
+				<R11>0</R11>
+				<R12>-1</R12>
+				<R20>0</R20>
+				<R21>1</R21>
+				<R22>0</R22>
+			</CoordinateFrame>
+			<bool name="ManualActivationOnly">false</bool>
+			<string name="Name">GhostDagger</string>
+			<bool name="RequiresHandle">true</bool>
+			<BinaryString name="Tags"></BinaryString>
+			<Content name="TextureId"><url>http://www.roblox.com/asset/?id=64131067 </url></Content>
+			<string name="ToolTip"></string>
+		</Properties>
+		<Item class="Part" referent="RBX61003EF6225C407887AFB69148BADF73">
+			<Properties>
+				<bool name="Anchored">false</bool>
+				<float name="BackParamA">-0.5</float>
+				<float name="BackParamB">0.5</float>
+				<token name="BackSurface">0</token>
+				<token name="BackSurfaceInput">0</token>
+				<float name="BottomParamA">-0.5</float>
+				<float name="BottomParamB">0.5</float>
+				<token name="BottomSurface">4</token>
+				<token name="BottomSurfaceInput">0</token>
+				<CoordinateFrame name="CFrame">
+					<X>1.50000203</X>
+					<Y>5.60000801</Y>
+					<Z>-1.49999797</Z>
+					<R00>1</R00>
+					<R01>0</R01>
+					<R02>0</R02>
+					<R10>0</R10>
+					<R11>-0.707106352</R11>
+					<R12>0.707107365</R12>
+					<R20>0</R20>
+					<R21>-0.707107365</R21>
+					<R22>-0.707106352</R22>
+				</CoordinateFrame>
+				<bool name="CanCollide">true</bool>
+				<int name="CollisionGroupId">0</int>
+				<Color3uint8 name="Color3uint8">4278226844</Color3uint8>
+				<PhysicalProperties name="CustomPhysicalProperties">
+					<CustomPhysics>false</CustomPhysics>
+				</PhysicalProperties>
+				<float name="Elasticity">0.5</float>
+				<float name="Friction">0.300000012</float>
+				<float name="FrontParamA">-0.5</float>
+				<float name="FrontParamB">0.5</float>
+				<token name="FrontSurface">0</token>
+				<token name="FrontSurfaceInput">0</token>
+				<float name="LeftParamA">-0.5</float>
+				<float name="LeftParamB">0.5</float>
+				<token name="LeftSurface">0</token>
+				<token name="LeftSurfaceInput">0</token>
+				<bool name="Locked">true</bool>
+				<token name="Material">256</token>
+				<string name="Name">Handle</string>
+				<float name="Reflectance">0</float>
+				<float name="RightParamA">-0.5</float>
+				<float name="RightParamB">0.5</float>
+				<token name="RightSurface">0</token>
+				<token name="RightSurfaceInput">0</token>
+				<Vector3 name="RotVelocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<BinaryString name="Tags"></BinaryString>
+				<float name="TopParamA">-0.5</float>
+				<float name="TopParamB">0.5</float>
+				<token name="TopSurface">3</token>
+				<token name="TopSurfaceInput">0</token>
+				<float name="Transparency">0</float>
+				<Vector3 name="Velocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<token name="formFactorRaw">3</token>
+				<token name="shape">1</token>
+				<Vector3 name="size">
+					<X>0.200000003</X>
+					<Y>0.31000036</Y>
+					<Z>2.01999974</Z>
+				</Vector3>
+			</Properties>
+			<Item class="Sound" referent="RBXF4F5FF48D1164E0DA2392D5409E54333">
+				<Properties>
+					<float name="EmitterSize">10</float>
+					<bool name="Looped">false</bool>
+					<string name="Name">ThrowSound</string>
+					<bool name="PlayOnRemove">false</bool>
+					<float name="PlaybackSpeed">1.5</float>
+					<bool name="Playing">false</bool>
+					<token name="RollOffMode">0</token>
+					<Ref name="SoundGroup">null</Ref>
+					<Content name="SoundId"><url>rbxasset://sounds/swordslash.wav</url></Content>
+					<BinaryString name="Tags"></BinaryString>
+					<double name="TimePosition">0</double>
+					<float name="Volume">0</float>
+					<float name="xmlRead_MaxDistance_3">10000</float>
+				</Properties>
+			</Item>
+			<Item class="Sound" referent="RBXF4D862B01013488B8736464E39AEAD77">
+				<Properties>
+					<float name="EmitterSize">10</float>
+					<bool name="Looped">false</bool>
+					<string name="Name">ClinkSound</string>
+					<bool name="PlayOnRemove">false</bool>
+					<float name="PlaybackSpeed">3</float>
+					<bool name="Playing">false</bool>
+					<token name="RollOffMode">0</token>
+					<Ref name="SoundGroup">null</Ref>
+					<Content name="SoundId"><url>rbxasset://sounds/unsheath.wav</url></Content>
+					<BinaryString name="Tags"></BinaryString>
+					<double name="TimePosition">0</double>
+					<float name="Volume">1</float>
+					<float name="xmlRead_MaxDistance_3">10000</float>
+				</Properties>
+			</Item>
+			<Item class="SpecialMesh" referent="RBXA7512B6E43D6471A9F9E4BA524E8286F">
+				<Properties>
+					<token name="LODX">2</token>
+					<token name="LODY">2</token>
+					<Content name="MeshId"><url>http://www.roblox.com/asset/?id=64131019 </url></Content>
+					<token name="MeshType">5</token>
+					<string name="Name">Mesh</string>
+					<Vector3 name="Offset">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+					</Vector3>
+					<Vector3 name="Scale">
+						<X>3</X>
+						<Y>3</Y>
+						<Z>3</Z>
+					</Vector3>
+					<BinaryString name="Tags"></BinaryString>
+					<Content name="TextureId"><url>http://www.roblox.com/asset/?id=64131051 </url></Content>
+					<Vector3 name="VertexColor">
+						<X>1</X>
+						<Y>1</Y>
+						<Z>1</Z>
+					</Vector3>
+				</Properties>
+			</Item>
+			<Item class="Attachment" referent="RBX00A8205FA9034FF2BEF04DB4A1EDE5A1">
+				<Properties>
+					<CoordinateFrame name="CFrame">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>-1.49999988</Z>
+						<R00>1</R00>
+						<R01>0</R01>
+						<R02>6.31088724e-30</R02>
+						<R10>6.31088724e-30</R10>
+						<R11>0</R11>
+						<R12>-1</R12>
+						<R20>0</R20>
+						<R21>1</R21>
+						<R22>0</R22>
+					</CoordinateFrame>
+					<string name="Name">RightGripAttachment</string>
+					<BinaryString name="Tags"></BinaryString>
+					<bool name="Visible">false</bool>
+				</Properties>
+			</Item>
+		</Item>
+		<Item class="Script" referent="RBX7103E98574CC4F93BC179DB57FFEF9A2">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">DaggerScript</string>
+				<string name="ScriptGuid">{069111AA-A633-45A6-A50A-C58C54D9E829}</string>
+				<ProtectedString name="Source"><![CDATA[local Tool = script.Parent
+local Dagger = Tool.Handle
+
+local damage = 22
+
+local vCharacter 
+local myTorso 
+local rightShoulder 
+local rightArm 
+
+Tool.Enabled = true
+
+local myHumanoid 
+local storeWeld 
+
+local r = game:service("RunService")
+local debris = game:GetService("Debris")
+
+local hitSound = Instance.new("Sound")
+hitSound.Name = "hitSound"
+hitSound.SoundId = "http://www.roblox.com/asset/?id=11945266"
+hitSound.Parent = ball
+hitSound.Volume = 1
+
+local daggers = {}
+local last_attack = 0
+local state = 0 -- state: 0 means "ready to start", 1 means "adding more daggers", 2 means "throw daggers"
+local switchEvenOddParity = -1
+
+function burn(humanoid)
+	if humanoid then
+		local character = humanoid.Parent
+		local torso = character:FindFirstChild("Torso") or character:FindFirstChild("UpperTorso")
+		if torso and humanoid and torso:FindFirstChild("GhostFire") == nil then 
+			local fire = Instance.new("Fire")
+			fire.Color = Color3.new(0, 0, 102/255)
+			fire.SecondaryColor = Color3.new(102/255, 1, 1)
+			fire.Name = "GhostFire"
+			fire.Parent = torso 
+
+			local duration = 5 
+			while duration > 0 do 
+				if humanoid then humanoid:TakeDamage(4) end
+				duration = duration - 1
+				wait(1)
+			end
+		
+			if fire then fire:Destroy() end
+		end
+	end
+end
+
+
+function blow(dagger, hit)
+	if hit == nil or hit.Parent == nil or dagger == nil then return end	
+	local humanoid = hit.Parent:FindFirstChild("Humanoid")
+	if hit.Parent:IsA("Accessory") then 
+		humanoid = hit.Parent.Parent:FindFirstChild("Humanoid")
+	end	
+	if humanoid ~= nil and myHumanoid ~= nil and humanoid ~= myHumanoid then		
+		if hitSound then hitSound:Play() end
+		humanoid:TakeDamage(damage)
+		coroutine.resume(coroutine.create(function() burn(humanoid) end))
+	end
+	if connection then connection:disconnect() end
+	if hit.Name ~= "ThrownDagger" then
+		dagger.Velocity = Vector3.new(0, 0, 0) -- have the dagger drop dead upon impact
+		daggerFloat = dagger:FindFirstChild("BodyForce")
+		if daggerFloat ~= nil then daggerFloat:Destroy() end
+	end
+end
+
+function shoot(dPos, missile)
+
+	local vCharacter = Tool.Parent
+	if vCharacter == nil then return end
+	local vHum = vCharacter:FindFirstChild("Humanoid")
+	if vHum == nil then return end
+	local vPlayer = game.Players:playerFromCharacter(vCharacter)
+	if vPlayer == nil then return end
+	
+	local spawnPos = vCharacter.PrimaryPart.Position
+	
+	spawnPos = spawnPos + dPos * 5.0 
+	
+	missile.Weld:Destroy()	
+	missile.CFrame = CFrame.new(spawnPos, spawnPos + dPos) * CFrame.Angles(0, 0, math.pi/2)
+
+	missile.Velocity = dPos * 70
+	missile.RotVelocity = Vector3.new(0, 0, 0)
+	missile.Name = "ThrownDagger"
+	missile.CanCollide = true
+
+	local force = Instance.new("BodyForce")
+	force.force = Vector3.new(0, missile:getMass()*workspace.Gravity,0)
+	force.Parent = missile
+
+	missile.Touched:connect(function(hit) blow(missile, hit) end)	
+	missile.Parent = game.Workspace
+	debris:AddItem(missile, 7)
+end
+
+function onActivated()
+	if not Tool.Enabled  then
+		return
+	end
+
+	Tool.Enabled = false
+
+	Dagger.Transparency = 1	
+
+	vCharacter = Tool.Parent
+	myHumanoid = vCharacter:FindFirstChild("Humanoid")
+	myTorso = vCharacter:FindFirstChild("Torso") or vCharacter:FindFirstChild("UpperTorso")
+	
+	if myHumanoid == nil or myTorso == nil then		
+		Tool.Enabled = true
+		return 
+	end
+	rightArm = vCharacter:FindFirstChild("Right Arm") or vCharacter:FindFirstChild("RightHand")
+	if rightArm == nil then 
+		return 
+	end
+	rightShoulder = myTorso:FindFirstChild("Right Shoulder")
+	if not rightShoulder then
+		local RightUpperArm = vCharacter:FindFirstChild("RightUpperArm")
+		if RightUpperArm then
+			rightShoulder = RightUpperArm:FindFirstChild("RightShoulder")
+		end
+	end
+
+	local firing = false
+	local t = r.Stepped:wait()
+	local DaggerOffset = myHumanoid and ((myHumanoid.RigType == Enum.HumanoidRigType.R15 and -0.2) or -1.2)
+	if state == 0 then
+		daggers = {}
+		-- start the dagger adding process
+		local newDagger = Tool.Handle:Clone()
+		newDagger.Transparency = 0
+
+		local newDaggerWeld = Instance.new("Weld")
+		newDaggerWeld.Part0 = newDagger
+		newDaggerWeld.Part1 = rightArm
+		newDaggerWeld.C1 = (CFrame.new() + Vector3.new(0, DaggerOffset, -0.5)) * CFrame.Angles(0, 0, 0) + Vector3.new(0, 0, -0.35)
+		newDaggerWeld.Parent = newDagger
+
+		newDagger.Parent = game.Workspace
+
+		table.insert(daggers, newDagger)
+		last_attack = t
+		state = 1
+		clinkSound = Tool.Handle:FindFirstChild("ClinkSound")
+		if clinkSound ~= nil then
+			clinkSound.Volume = .5
+			clinkSound:Play()
+		end
+	elseif (t - last_attack < .70) and #daggers < 7 then
+		-- add a dagger
+
+		local newDagger = Tool.Handle:Clone()
+		newDagger.Transparency = 0
+
+		local newDaggerWeld = Instance.new("Weld")
+		newDaggerWeld.Part0 = newDagger
+		newDaggerWeld.Part1 = rightArm
+		switchEvenOddParity = -switchEvenOddParity
+		angle = math.ceil(#daggers/2)*math.pi/8*switchEvenOddParity
+		newDaggerWeld.C1 = (CFrame.new() + Vector3.new(0, DaggerOffset, -0.5))*CFrame.Angles(0, angle, 0) + Vector3.new(-.75*math.sin(angle), 0, -.75*math.cos(angle)+.4)
+		newDaggerWeld.Parent = newDagger
+
+		newDagger.Parent = game.Workspace
+
+		table.insert(daggers, newDagger)
+
+		clinkSound = Tool.Handle:FindFirstChild("ClinkSound")
+		if clinkSound ~= nil then
+			clinkSound.Volume = 0.5
+			clinkSound:Play()
+		end
+
+	elseif (t - last_attack > 1.45) then
+		-- throw the daggers
+		local reload = 1.5
+		local targetPos = myHumanoid.TargetPoint
+		local lookAt = (targetPos - vCharacter.PrimaryPart.Position).unit
+
+		confettiBang = Tool.Handle:FindFirstChild("ThrowSound")
+		if confettiBang ~= nil then 
+			confettiBang.Volume = .6
+			confettiBang:Play() 
+		end
+
+		if state ~= 0 then
+			firing = true
+			switchEvenOddParity = 1
+			for i = 1, #daggers do
+				angle = math.ceil((i-1)/2)*math.pi/12*switchEvenOddParity
+				switchEvenOddParity = -switchEvenOddParity
+				shoot(CFrame.Angles(0, angle, 0) * lookAt, daggers[i])
+				daggers[i] = nil
+
+				rightShoulder.MaxVelocity = 0.5
+				rightShoulder.DesiredAngle = 0 -- 3.14
+			end 
+			firing = false
+		end
+
+		wait(reload)
+		Dagger.Transparency = 0.0
+		confettiBang = Tool.Handle:FindFirstChild("ThrowSound")
+		if confettiBang ~= nil then confettiBang.Volume = 0 end
+		clinkSound = Tool.Handle:FindFirstChild("ClinkSound")
+		if clinkSound ~= nil then clinkSound.Volume = 0 end
+		state = 0
+	end
+
+	Tool.Enabled = true		
+end
+
+function onEquipped()	
+	if fireWeld then fireWeld.Parent = Dagger end
+	vCharacter = Tool.Parent
+	myHumanoid = vCharacter:FindFirstChild("Humanoid")
+	myTorso = vCharacter:FindFirstChild("Torso") or vCharacter:FindFirstChild("UpperTorso")
+	rightShoulder = myTorso:FindFirstChild("Right Shoulder")
+	if not rightShoulder then
+		local RightUpperArm = vCharacter:FindFirstChild("RightUpperArm")
+		if RightUpperArm then
+			rightShoulder = RightUpperArm:FindFirstChild("RightShoulder")
+		end
+	end	
+	rightArm = vCharacter:FindFirstChild("Right Arm") or vCharacter:FindFirstChild("RightHand")
+end
+
+function onUnequipped()
+	Dagger.Transparency = 0.0
+	state = 0
+	if not firing then
+		for i = 1, #daggers do
+			if daggers[i] ~= nil then daggers[i]:Destroy() end
+		end
+		daggers = {}
+	end	
+	if fire then fire.Enabled = true end
+end
+
+Tool.Activated:connect(onActivated)
+Tool.Equipped:connect(onEquipped)
+Tool.Unequipped:connect(onUnequipped)
+
+Dagger.Touched:connect(function() blow(Dagger, hit) end)]]></ProtectedString>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+		</Item>
+		<Item class="LocalScript" referent="RBX0DC2C073CA834951876A627CA0E02A2F">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">Local Gui</string>
+				<string name="ScriptGuid">{16137120-DE04-46D9-AD10-06C14CD483BC}</string>
+				<ProtectedString name="Source"><![CDATA[local Tool = script.Parent;
+
+local stillEquipped = true
+function onEquippedLocal(mouse)
+	stillEquipped = true
+	if mouse == nil then
+		print("Mouse not found")
+		return
+	end
+	
+	while stillEquipped do
+		print("Setting Mouse to Go")
+		mouse.Icon = "rbxasset://textures\\GunCursor.png"
+
+		while Tool.Enabled and stillEquipped do
+			wait(.01)
+		end
+	
+		print("Setting Mouse To Wait")
+		mouse.Icon = "rbxasset://textures\\GunWaitCursor.png"
+
+		while not Tool.Enabled and stillEquipped do
+			wait(.01)
+		end
+	end
+end
+
+function onUnequippedLocal()
+	stillEquipped = false
+end
+
+
+Tool.Equipped:connect(onEquippedLocal)
+Tool.Unequipped:connect(onUnequippedLocal)
+]]></ProtectedString>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+		</Item>
+		<Item class="Camera" referent="RBX010CF6F5C17F48B79FA7369897B0A912">
+			<Properties>
+				<CoordinateFrame name="CFrame">
+					<X>4.23491907</X>
+					<Y>5.56804895</Y>
+					<Z>-1.53504002</Z>
+					<R00>-0.0279598236</R00>
+					<R01>-2.90756961e-05</R01>
+					<R02>0.999609113</R02>
+					<R10>5.68434189e-14</R10>
+					<R11>1.00000012</R11>
+					<R12>2.90870667e-05</R12>
+					<R20>-0.999609113</R20>
+					<R21>8.1326931e-07</R21>
+					<R22>-0.0279598236</R22>
+				</CoordinateFrame>
+				<Ref name="CameraSubject">null</Ref>
+				<token name="CameraType">0</token>
+				<float name="FieldOfView">70</float>
+				<CoordinateFrame name="Focus">
+					<X>2.23570085</X>
+					<Y>5.56799078</Y>
+					<Z>-1.47912037</Z>
+					<R00>1</R00>
+					<R01>0</R01>
+					<R02>0</R02>
+					<R10>0</R10>
+					<R11>1</R11>
+					<R12>0</R12>
+					<R20>0</R20>
+					<R21>0</R21>
+					<R22>1</R22>
+				</CoordinateFrame>
+				<bool name="HeadLocked">true</bool>
+				<float name="HeadScale">1</float>
+				<string name="Name">ThumbnailCamera</string>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+		</Item>
+	</Item>
+</roblox>

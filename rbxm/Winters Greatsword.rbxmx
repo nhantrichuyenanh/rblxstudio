@@ -1,0 +1,2861 @@
+<roblox xmlns:xmime="http://www.w3.org/2005/05/xmlmime" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.roblox.com/roblox.xsd" version="4">
+	<Meta name="ExplicitAutoJoints">true</Meta>
+	<External>null</External>
+	<External>nil</External>
+	<Item class="Tool" referent="RBX12C5ECF112414465A6230ED0CBE0FEAF">
+		<Properties>
+			<bool name="CanBeDropped">true</bool>
+			<bool name="Enabled">true</bool>
+			<CoordinateFrame name="Grip">
+				<X>-0</X>
+				<Y>4.37199574e-08</Y>
+				<Z>2.58155394</Z>
+				<R00>0.99999994</R00>
+				<R01>0</R01>
+				<R02>0</R02>
+				<R10>0</R10>
+				<R11>-4.37113883e-08</R11>
+				<R12>1</R12>
+				<R20>0</R20>
+				<R21>-1</R21>
+				<R22>-4.37113883e-08</R22>
+			</CoordinateFrame>
+			<bool name="ManualActivationOnly">false</bool>
+			<string name="Name">WintersGreatSword</string>
+			<bool name="RequiresHandle">true</bool>
+			<BinaryString name="Tags"></BinaryString>
+			<Content name="TextureId"><url>rbxassetid://3304831676</url></Content>
+			<string name="ToolTip">&quot;Freeze Varmint!&quot;</string>
+		</Properties>
+		<Item class="MeshPart" referent="RBXFAC9B7466AE64C348950744BF25A976A">
+			<Properties>
+				<bool name="Anchored">false</bool>
+				<float name="BackParamA">-0.5</float>
+				<float name="BackParamB">0.5</float>
+				<token name="BackSurface">0</token>
+				<token name="BackSurfaceInput">0</token>
+				<float name="BottomParamA">-0.5</float>
+				<float name="BottomParamB">0.5</float>
+				<token name="BottomSurface">0</token>
+				<token name="BottomSurfaceInput">0</token>
+				<CoordinateFrame name="CFrame">
+					<X>0</X>
+					<Y>7.20001221</Y>
+					<Z>-8</Z>
+					<R00>1</R00>
+					<R01>0</R01>
+					<R02>0</R02>
+					<R10>0</R10>
+					<R11>0.707108378</R11>
+					<R12>-0.707105339</R12>
+					<R20>0</R20>
+					<R21>0.707105339</R21>
+					<R22>0.707108378</R22>
+				</CoordinateFrame>
+				<bool name="CanCollide">true</bool>
+				<bool name="CastShadow">true</bool>
+				<int name="CollisionGroupId">0</int>
+				<Color3uint8 name="Color3uint8">4288914085</Color3uint8>
+				<PhysicalProperties name="CustomPhysicalProperties">
+					<CustomPhysics>false</CustomPhysics>
+				</PhysicalProperties>
+				<float name="FrontParamA">-0.5</float>
+				<float name="FrontParamB">0.5</float>
+				<token name="FrontSurface">0</token>
+				<token name="FrontSurfaceInput">0</token>
+				<Vector3 name="InitialSize">
+					<X>0.393642992</X>
+					<Y>1.72530997</Y>
+					<Z>6.96080017</Z>
+				</Vector3>
+				<BinaryString name="LODData"></BinaryString>
+				<float name="LeftParamA">-0.5</float>
+				<float name="LeftParamB">0.5</float>
+				<token name="LeftSurface">0</token>
+				<token name="LeftSurfaceInput">0</token>
+				<bool name="Locked">false</bool>
+				<bool name="Massless">false</bool>
+				<token name="Material">256</token>
+				<Content name="MeshID"><url>rbxassetid://2619974550</url></Content>
+				<Content name="MeshId"><url>rbxassetid://2619974550</url></Content>
+				<string name="Name">Handle</string>
+				<SharedString name="PhysicalConfigData">745VHrRPS82nGn+eHO9aSQ==</SharedString>
+				<BinaryString name="PhysicsData"></BinaryString>
+				<float name="Reflectance">0</float>
+				<token name="RenderFidelity">1</token>
+				<float name="RightParamA">-0.5</float>
+				<float name="RightParamB">0.5</float>
+				<token name="RightSurface">0</token>
+				<token name="RightSurfaceInput">0</token>
+				<int name="RootPriority">0</int>
+				<Vector3 name="RotVelocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<BinaryString name="Tags"></BinaryString>
+				<Content name="TextureID"><url>rbxassetid://2619974853</url></Content>
+				<float name="TopParamA">-0.5</float>
+				<float name="TopParamB">0.5</float>
+				<token name="TopSurface">0</token>
+				<token name="TopSurfaceInput">0</token>
+				<float name="Transparency">0</float>
+				<Vector3 name="Velocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<Vector3 name="size">
+					<X>0.393642992</X>
+					<Y>1.72530997</Y>
+					<Z>6.96080017</Z>
+				</Vector3>
+			</Properties>
+			<Item class="Attachment" referent="RBXD8E45519B4CD4BA98B0DA9B99A9A325B">
+				<Properties>
+					<CoordinateFrame name="CFrame">
+						<X>0</X>
+						<Y>2.08616257e-07</Y>
+						<Z>2</Z>
+						<R00>1</R00>
+						<R01>0</R01>
+						<R02>0</R02>
+						<R10>0</R10>
+						<R11>1</R11>
+						<R12>-2.38418608e-07</R12>
+						<R20>0</R20>
+						<R21>2.38418608e-07</R21>
+						<R22>1</R22>
+					</CoordinateFrame>
+					<string name="Name">BeamBottom</string>
+					<BinaryString name="Tags"></BinaryString>
+					<bool name="Visible">false</bool>
+				</Properties>
+			</Item>
+			<Item class="Attachment" referent="RBXB906922710054367BBEAD8185DE5EA2C">
+				<Properties>
+					<CoordinateFrame name="CFrame">
+						<X>0</X>
+						<Y>-8.19563866e-07</Y>
+						<Z>-4.50000048</Z>
+						<R00>1</R00>
+						<R01>7.07105755e-06</R01>
+						<R02>1.00063902e-12</R02>
+						<R10>-7.07105755e-06</R10>
+						<R11>1</R11>
+						<R12>-3.7302005e-08</R12>
+						<R20>-1.26440362e-12</R20>
+						<R21>3.7302005e-08</R21>
+						<R22>1</R22>
+					</CoordinateFrame>
+					<string name="Name">BeamTop</string>
+					<BinaryString name="Tags"></BinaryString>
+					<bool name="Visible">false</bool>
+				</Properties>
+			</Item>
+			<Item class="Beam" referent="RBX447DB5EAEC6D41C68FB91B3D362E58FF">
+				<Properties>
+					<Ref name="Attachment0">RBXD8E45519B4CD4BA98B0DA9B99A9A325B</Ref>
+					<Ref name="Attachment1">RBXB906922710054367BBEAD8185DE5EA2C</Ref>
+					<ColorSequence name="Color">0 1 1 1 0 0.5 0 0.666667 1 0 1 1 1 1 0 </ColorSequence>
+					<float name="CurveSize0">0</float>
+					<float name="CurveSize1">0</float>
+					<bool name="Enabled">true</bool>
+					<bool name="FaceCamera">true</bool>
+					<float name="LightEmission">1</float>
+					<float name="LightInfluence">1</float>
+					<string name="Name">Beam</string>
+					<int name="Segments">10</int>
+					<BinaryString name="Tags"></BinaryString>
+					<Content name="Texture"><url>rbxassetid://1141825913</url></Content>
+					<float name="TextureLength">0.100000001</float>
+					<token name="TextureMode">0</token>
+					<float name="TextureSpeed">0.5</float>
+					<NumberSequence name="Transparency">0 1 0 0.286207 0.75 0 0.524138 0.6 0 0.855172 0.93125 0 1 1 0 </NumberSequence>
+					<float name="Width0">4</float>
+					<float name="Width1">1</float>
+					<float name="ZOffset">0.5</float>
+				</Properties>
+			</Item>
+			<Item class="ParticleEmitter" referent="RBX20B1B49A08F941EBA0A8AFF23BAD0015">
+				<Properties>
+					<Vector3 name="Acceleration">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+					</Vector3>
+					<ColorSequence name="Color">0 0.666667 1 1 0 1 1 1 1 0 </ColorSequence>
+					<float name="Drag">0</float>
+					<token name="EmissionDirection">5</token>
+					<bool name="Enabled">true</bool>
+					<NumberRange name="Lifetime">2 2 </NumberRange>
+					<float name="LightEmission">0</float>
+					<float name="LightInfluence">0.5</float>
+					<bool name="LockedToPart">false</bool>
+					<string name="Name">Puff</string>
+					<float name="Rate">15</float>
+					<NumberRange name="RotSpeed">-100 100 </NumberRange>
+					<NumberRange name="Rotation">-180 180 </NumberRange>
+					<NumberSequence name="Size">0 0.625 0 1 0.4375 0.4375 </NumberSequence>
+					<NumberRange name="Speed">1 2 </NumberRange>
+					<Vector2 name="SpreadAngle">
+						<X>-60</X>
+						<Y>60</Y>
+					</Vector2>
+					<BinaryString name="Tags"></BinaryString>
+					<Content name="Texture"><url>http://www.roblox.com/asset/?id=258128463</url></Content>
+					<NumberSequence name="Transparency">0 1 0 0.1 0.5 0 0.5 0.5 0 0.645161 0.545455 0 0.741935 0.606061 0 0.829637 0.692641 0 0.892137 0.78355 0 0.950605 0.883117 0 1 1 0 </NumberSequence>
+					<float name="VelocityInheritance">0</float>
+					<float name="ZOffset">0</float>
+				</Properties>
+			</Item>
+			<Item class="Sound" referent="RBX44BA84435F494ECF80DE7967475E240B">
+				<Properties>
+					<float name="EmitterSize">10</float>
+					<bool name="Looped">false</bool>
+					<string name="Name">Equip</string>
+					<bool name="PlayOnRemove">false</bool>
+					<float name="PlaybackSpeed">0.75</float>
+					<bool name="Playing">false</bool>
+					<token name="RollOffMode">0</token>
+					<Ref name="SoundGroup">null</Ref>
+					<Content name="SoundId"><url>rbxassetid://12222225</url></Content>
+					<BinaryString name="Tags"></BinaryString>
+					<double name="TimePosition">0</double>
+					<float name="Volume">0.5</float>
+					<float name="xmlRead_MaxDistance_3">10000</float>
+				</Properties>
+			</Item>
+			<Item class="Sound" referent="RBX057A02599F7641EB88F4094F726A587D">
+				<Properties>
+					<float name="EmitterSize">10</float>
+					<bool name="Looped">false</bool>
+					<string name="Name">Swing</string>
+					<bool name="PlayOnRemove">false</bool>
+					<float name="PlaybackSpeed">1</float>
+					<bool name="Playing">false</bool>
+					<token name="RollOffMode">0</token>
+					<Ref name="SoundGroup">null</Ref>
+					<Content name="SoundId"><url>rbxassetid://92089006</url></Content>
+					<BinaryString name="Tags"></BinaryString>
+					<double name="TimePosition">0</double>
+					<float name="Volume">1</float>
+					<float name="xmlRead_MaxDistance_3">10000</float>
+				</Properties>
+			</Item>
+			<Item class="Sound" referent="RBXD63799EE7E2547339062618E1A858D52">
+				<Properties>
+					<float name="EmitterSize">10</float>
+					<bool name="Looped">false</bool>
+					<string name="Name">Shatter</string>
+					<bool name="PlayOnRemove">false</bool>
+					<float name="PlaybackSpeed">1</float>
+					<bool name="Playing">false</bool>
+					<token name="RollOffMode">0</token>
+					<Ref name="SoundGroup">null</Ref>
+					<Content name="SoundId"><url>http://www.roblox.com/Asset?ID=87015121</url></Content>
+					<BinaryString name="Tags"></BinaryString>
+					<double name="TimePosition">0</double>
+					<float name="Volume">1</float>
+					<float name="xmlRead_MaxDistance_3">10000</float>
+				</Properties>
+			</Item>
+			<Item class="Sound" referent="RBX61C4FA2AD83741DEB9A2EF7E02AADA7D">
+				<Properties>
+					<float name="EmitterSize">10</float>
+					<bool name="Looped">false</bool>
+					<string name="Name">IceCrack</string>
+					<bool name="PlayOnRemove">false</bool>
+					<float name="PlaybackSpeed">1</float>
+					<bool name="Playing">false</bool>
+					<token name="RollOffMode">0</token>
+					<Ref name="SoundGroup">null</Ref>
+					<Content name="SoundId"><url>rbxassetid://32788850</url></Content>
+					<BinaryString name="Tags"></BinaryString>
+					<double name="TimePosition">0</double>
+					<float name="Volume">5</float>
+					<float name="xmlRead_MaxDistance_3">10000</float>
+				</Properties>
+			</Item>
+			<Item class="ParticleEmitter" referent="RBX5286C6D30F4B4D91B37426DA060C43B7">
+				<Properties>
+					<Vector3 name="Acceleration">
+						<X>0</X>
+						<Y>-40</Y>
+						<Z>0</Z>
+					</Vector3>
+					<ColorSequence name="Color">0 0.666667 1 1 0 1 0.666667 1 1 0 </ColorSequence>
+					<float name="Drag">2</float>
+					<token name="EmissionDirection">1</token>
+					<bool name="Enabled">true</bool>
+					<NumberRange name="Lifetime">0.5 1 </NumberRange>
+					<float name="LightEmission">1</float>
+					<float name="LightInfluence">0</float>
+					<bool name="LockedToPart">false</bool>
+					<string name="Name">FrostSparkles</string>
+					<float name="Rate">10</float>
+					<NumberRange name="RotSpeed">-200 200 </NumberRange>
+					<NumberRange name="Rotation">-180 180 </NumberRange>
+					<NumberSequence name="Size">0 0.8125 0.5625 0.05 0 0 0.101227 0.875 0.625 0.15 0 0 0.199386 0.75 0.625 0.25 0 0 0.303681 0.9375 0.5625 0.35 0 0 0.397239 0.8125 0.5625 0.45 0 0 0.506135 0.75 0.625 0.55 0 0 0.596626 0.5625 0.5625 0.65 0 0 0.702454 0.8125 0.5625 0.75 0 0 0.806748 0.5 0.5 0.85 0 0 0.935583 0.625 0.5 1 0 0 </NumberSequence>
+					<NumberRange name="Speed">5 10 </NumberRange>
+					<Vector2 name="SpreadAngle">
+						<X>-180</X>
+						<Y>180</Y>
+					</Vector2>
+					<BinaryString name="Tags"></BinaryString>
+					<Content name="Texture"><url>rbxassetid://298984512</url></Content>
+					<NumberSequence name="Transparency">0 0 0 1 1 0 </NumberSequence>
+					<float name="VelocityInheritance">0</float>
+					<float name="ZOffset">0</float>
+				</Properties>
+			</Item>
+			<Item class="Attachment" referent="RBX341A5DB7A420448187368E6504A3580C">
+				<Properties>
+					<CoordinateFrame name="CFrame">
+						<X>0</X>
+						<Y>-1.1920929e-07</Y>
+						<Z>2.58155441</Z>
+						<R00>1</R00>
+						<R01>0</R01>
+						<R02>0</R02>
+						<R10>0</R10>
+						<R11>-4.37113883e-08</R11>
+						<R12>1</R12>
+						<R20>0</R20>
+						<R21>-1</R21>
+						<R22>-4.37113883e-08</R22>
+					</CoordinateFrame>
+					<string name="Name">RightGripAttachment</string>
+					<BinaryString name="Tags"></BinaryString>
+					<bool name="Visible">false</bool>
+				</Properties>
+			</Item>
+		</Item>
+		<Item class="Script" referent="RBX03CDFBBFBA824CE28A995F9539C3F42F">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">Server</string>
+				<string name="ScriptGuid">{32FFAEB1-2213-411B-ACFE-0D1671194B3C}</string>
+				<ProtectedString name="Source"><![CDATA[--Scripted by TakeoHonorable
+
+--Forecast is nothing but SHEER COLD!
+
+function Create(ty)
+	return function(data)
+		local obj = Instance.new(ty)
+		for k, v in pairs(data) do
+			if type(k) == 'number' then
+				v.Parent = obj
+			else
+				obj[k] = v
+			end
+		end
+		return obj
+	end
+end
+
+
+local Tool = script.Parent
+Tool.Enabled = true
+
+
+
+local Seed = Random.new()
+
+local Handle = Tool:WaitForChild("Handle")
+
+local FrostSparkles = Handle:WaitForChild("FrostSparkles")
+FrostSparkles.Enabled = true
+
+local Sounds = {
+	Equip = Handle:WaitForChild("Equip"),
+	Swing = Handle:WaitForChild("Swing"),
+	IceCrack = Handle:WaitForChild("IceCrack"),
+	--Shatter = Handle:WaitForChild("Shatter")
+}
+
+local Remote = (Tool:FindFirstChildOfClass("RemoteEvent") or Create("RemoteEvent"){
+	Name = "Remote",
+	Parent = Tool
+})
+
+local Animations = {}
+
+local Events = {}
+
+local Player,Character,Center
+
+
+local Services = {
+	Players = (game:FindService("Players") or game:GetService("Players")),
+	TweenService = (game:FindService("TweenService") or game:GetService("TweenService")),
+	RunService = (game:FindService("RunService") or game:GetService("RunService")),
+	Debris = (game:FindService("Debris") or game:GetService("Debris")),
+	ServerScriptService = (game:FindService("ServerScriptService") or game:GetService("ServerScriptService"))
+}
+
+
+function PlantIceStalagmite(Position)
+	local StalagmiteScript = script:WaitForChild("StalagmiteScript"):Clone()
+	StalagmiteScript.Parent = Services.ServerScriptService
+	
+	Create("Vector3Value"){
+		Name = "Pos",
+		Value = Position,
+		Parent = StalagmiteScript
+	}
+	
+	Create("ObjectValue"){
+		Name = "Creator",
+		Value = Character,
+		Parent = StalagmiteScript
+	}
+	
+	StalagmiteScript.Disabled = false -- Go get em' tiger!
+end
+
+
+function GetHumanoidsInRange(CenterPos,Range)--Returns all non-teammate humanoids that are alive
+	
+	local CapHum = {}
+	
+	local world = workspace
+	
+	local Vec3 = Vector3.new
+	
+	local Region = Region3.new
+	
+	local FindPartsInRegion = world.FindPartsInRegion3WithIgnoreList --Micro-optimization techniques C:
+	
+	local Neg,Pos = CenterPos - Vec3(1,1,1) * (Range*.5), CenterPos + Vec3(1,1,1) * (Range*.5)
+	
+	local Parts = FindPartsInRegion(world,Region(Neg,Pos),{Character},math.huge) --Always specify the original object to call the function
+	
+	for i=1,#Parts do
+		
+		if Parts[i] and (Parts[i].Position-CenterPos).Magnitude <= Range then --It's within range
+			
+			local Hum,FF = Parts[i].Parent:FindFirstChildOfClass("Humanoid"),Parts[i].Parent:FindFirstChildOfClass("ForceField")
+			
+			if Hum  and not FF and Hum.Parent and Hum.Health ~= 0 and not IsTeamMate(Player,Services.Players:GetPlayerFromCharacter(Hum.Parent)) and not IsInTable(CapHum,Hum) then
+				
+				CapHum[#CapHum+1] = Hum
+				
+			end
+			
+			
+		end
+		
+	end
+	
+	return CapHum
+end
+
+local Abilities = {
+	[Enum.KeyCode.Q] = {
+		Ready = true,
+		Reload = 35,
+		Function = function()
+			--warn("Activated Ice Stalagmites")
+			FrostSparkles.Enabled = false
+			Animations.Summon:Play(nil,nil,2.5)
+			Sounds.IceCrack:Play()
+			
+			wait(1.5)
+			
+			local TargetHums = GetHumanoidsInRange(Center.Position,180)
+			local world = workspace
+			local Vec3 = Vector3.new
+			local FindPartOnRay = world.FindPartOnRayWithIgnoreList
+			local ray = Ray.new
+			
+			local MaxHeightFromGround = 100
+	
+			for i=1,#TargetHums do
+				if TargetHums[i] and TargetHums[i].Parent then
+					local Torso = TargetHums[i].Parent:FindFirstChild("Torso") or TargetHums[i].Parent:FindFirstChild("UpperTorso")
+					
+					if Torso then
+						--Secondary check to see if the target is at enough height from the ground
+						
+						local hit,pos,nor = FindPartOnRay(world,ray(Torso.Position,(Torso.Position + Vec3(0,-MaxHeightFromGround,0))-Torso.Position ),{Character,TargetHums[i].Parent})
+						
+						if hit and hit.CanCollide and (pos-Torso.Position).Magnitude <= MaxHeightFromGround then
+							
+							--TargetHums[i]:TakeDamage(TargetHums[i].MaxHealth*.5) --shred away half of their total health
+							
+							PlantIceStalagmite(pos)
+							--warn(TargetHums[i])
+							
+						end
+						
+						
+					end
+				
+				end
+			end
+			--Sounds.Shatter:Play()
+			
+		end
+	},
+--[[	[Enum.KeyCode.E] = {
+		Ready = true,
+		Reload = 15,
+		Function = function()
+
+		end
+	}]]
+}
+
+function IsInTable(Table,Value)
+	for _,v in pairs(Table) do
+		if v == Value then
+			return true
+		end
+	end
+	return false
+end
+
+function IsTeamMate(Player1, Player2)
+	return (Player1 and Player2 and not Player1.Neutral and not Player2.Neutral and Player1.TeamColor == Player2.TeamColor)
+end
+
+function TagHumanoid(humanoid, player)
+	local Creator_Tag = Instance.new("ObjectValue")
+	Creator_Tag.Name = "creator"
+	Creator_Tag.Value = player
+	Services.Debris:AddItem(Creator_Tag, 2)
+	Creator_Tag.Parent = humanoid
+end
+
+function UntagHumanoid(humanoid)
+	for i, v in pairs(humanoid:GetChildren()) do
+		if v:IsA("ObjectValue") and v.Name == "creator" then
+			v:Destroy()
+		end
+	end
+end
+
+function Activated()
+	if not Tool.Enabled or not Humanoid or Humanoid.Health <= 0 then return end
+	Tool.Enabled = false
+	Sounds.Swing:Play()
+	local Anim = {Animations.OverHeadSwing,Animations.LeftSlash}
+	Anim = Anim[Seed:NextInteger(1,#Anim)]:Play()
+	wait(.75)
+	Tool.Enabled = true
+end
+
+local function HasFinisher(Hum) -- Quick check to see if they're not stunned
+	local Children = Services.ServerScriptService:GetChildren()
+	for i=1, #Children do
+		if Children[i]:IsA("Script") and Children[i].Name == "Finisher" and Children[i]:FindFirstChild("Target") and Children[i]:FindFirstChild("Target").Value == Hum.Parent then
+			return true
+		end
+	end
+	return false
+end
+
+function Touched(hit,damage)
+	if not hit or not hit.Parent then return end
+	local Hum,FF = hit.Parent:FindFirstChildOfClass("Humanoid"),hit.Parent:FindFirstChildOfClass("ForceField")
+	if Hum and Hum ~= Humanoid and Hum.Health > 0 and not FF and not IsTeamMate(Player, Services.Players:GetPlayerFromCharacter(Hum.Parent)) then
+		UntagHumanoid(Hum)
+		TagHumanoid(Hum,Player)
+		if (Hum.Health/Hum.MaxHealth)*100 <= 25 then
+			if not HasFinisher(Hum)  then
+				--Cue the finisher instead
+				local Finisher = script:WaitForChild("Finisher"):Clone()
+				Create("ObjectValue"){
+					Name = "Target",
+					Value = Hum.Parent,
+					Parent = Finisher
+				}
+				Create("ObjectValue"){
+					Name = "Creator",
+					Value = Player,
+					Parent = Finisher
+				}
+				Finisher.Parent = Services.ServerScriptService
+				Finisher.Disabled = false
+			end
+		else
+			UntagHumanoid(Hum)
+			TagHumanoid(Hum,Player)
+			Hum:TakeDamage(damage or 0)
+			
+		end 
+	end
+end
+
+function Equipped()
+	Character = Tool.Parent
+	Player = Services.Players:GetPlayerFromCharacter(Character)
+	Humanoid = Character:FindFirstChildOfClass("Humanoid")
+	Center = Character:FindFirstChild("HumanoidRootPart") or Character:FindFirstChild("Torso")
+	if not Humanoid or Humanoid.Health <= 0 or not Character or not Center then return end
+	
+	Animations = Tool:WaitForChild("Animations")
+	Animations = {
+		OverHeadSwing = Humanoid:LoadAnimation(Animations:WaitForChild(Humanoid.RigType.Name):WaitForChild("OverHeadSwing")),
+		LeftSlash = Humanoid:LoadAnimation(Animations:WaitForChild(Humanoid.RigType.Name):WaitForChild("LeftSlash")),
+		--RightSlash = Humanoid:LoadAnimation(Animations:WaitForChild(Humanoid.RigType.Name):WaitForChild("RightSlash")),
+		Summon = Humanoid:LoadAnimation(Animations:WaitForChild(Humanoid.RigType.Name):WaitForChild("Summon")),
+	}
+	Events[#Events+1] = Tool.Activated:Connect(Activated)
+	Events[#Events+1] = Remote.OnServerEvent:Connect(function(client,Key)
+		if not Tool.Enabled or client ~= Player or not Key or Humanoid.Health <= 0 then return end
+		if not Abilities[Key] or not Abilities[Key].Ready then return end
+		Tool.Enabled = false
+		Abilities[Key].Ready = false
+		delay(Abilities[Key].Reload,function() FrostSparkles.Enabled = true Abilities[Key].Ready = true end)
+		Abilities[Key].Function()--Execute the respective ability
+		Tool.Enabled = true
+	end)
+	Events[#Events+1] = Handle.Touched:Connect(function(hit)
+		Touched(hit,14)
+	end)
+	Sounds.Equip:Play()
+end
+
+function Unequipped()
+	for _,anim in pairs(Animations) do
+		if anim then
+			anim:Stop()
+		end
+	end
+	for _,sound in pairs(Sounds) do
+		if sound then
+			sound:Stop()
+		end
+	end
+	for i=1,#Events do
+		if Events[i] then
+			Events[i]:Disconnect()
+		end
+	end
+	Events = {}
+end
+
+
+Tool.Equipped:Connect(Equipped)
+Tool.Unequipped:Connect(Unequipped)]]></ProtectedString>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+			<Item class="Script" referent="RBX59571215753846E0B26625CEA5C1B429">
+				<Properties>
+					<bool name="Disabled">true</bool>
+					<Content name="LinkedSource"><null></null></Content>
+					<string name="Name">Finisher</string>
+					<string name="ScriptGuid">{97A79735-F99B-4BA5-BBA1-006009E4D803}</string>
+					<ProtectedString name="Source"><![CDATA[local Target = script:FindFirstChild("Target")
+local Creator = script:FindFirstChild("Creator")
+
+local Sounds = {
+	IceCrack = script:WaitForChild("IceCrack"),
+	Shatter = script:WaitForChild("Shatter")
+}
+
+if not Target or not Creator then script:Destroy() end
+
+Target = Target.Value
+Creator = Creator.Value
+
+local Torso = Target:FindFirstChild("Torso") or Target:FindFirstChild("UpperTorso")
+
+
+local Humanoid = Target:FindFirstChildOfClass("Humanoid")
+Humanoid:UnequipTools()
+
+local Stop = false
+coroutine.wrap(function()
+	repeat
+		Humanoid.JumpPower = 0
+		Humanoid.WalkSpeed = 0
+		game:GetService("RunService").Heartbeat:Wait()
+	until Stop
+end)()
+
+local Services = {
+	Players = (game:FindService("Players") or game:GetService("Players")),
+	Debris = (game:FindService("Debris") or game:GetService("Debris")),
+	RunService = (game:FindService("RunService") or game:GetService("RunService")),
+}
+
+function Create(ty)
+	return function(data)
+		local obj = Instance.new(ty)
+		for k, v in pairs(data) do
+			if type(k) == 'number' then
+				v.Parent = obj
+			else
+				obj[k] = v
+			end
+		end
+		return obj
+	end
+end
+
+function TagHumanoid(humanoid, player)
+	local Creator_Tag = Instance.new("ObjectValue")
+	Creator_Tag.Name = "creator"
+	Creator_Tag.Value = player
+	Services.Debris:AddItem(Creator_Tag, 2)
+	Creator_Tag.Parent = humanoid
+end
+
+function UntagHumanoid(humanoid)
+	for i, v in pairs(humanoid:GetChildren()) do
+		if v:IsA("ObjectValue") and v.Name == "creator" then
+			v:Destroy()
+		end
+	end
+end
+
+if Services.Players:GetPlayerFromCharacter(Target) then
+	local Disable = script:WaitForChild("DisableBackpack")
+	Disable.Parent = Services.Players:GetPlayerFromCharacter(Target):WaitForChild("Backpack")
+	Disable.Disabled = false
+	Services.Debris:AddItem(Disable,1)
+	Services.Players:GetPlayerFromCharacter(Target).CharacterRemoving:Connect(function(Char)--keeps people from a hidden inventory
+		local Enable = script:WaitForChild("EnableBackpack")
+		Enable.Parent = Services.Players:GetPlayerFromCharacter(Target):WaitForChild("Backpack")
+		Enable.Disabled = false
+		Services.Debris:AddItem(Enable,1)
+	end)
+end
+
+local ice = Create("Part"){
+	Shape = "Block", 
+	Size = Vector3.new(4.2,4,6.3)*0, 
+	CanCollide = true,
+	Anchored = true,
+	Locked = true,
+	Name = "Ice Block",
+	CFrame = Torso.CFrame*CFrame.Angles(math.rad(-90),0,0), 
+	Transparency = 0.4,
+	Parent = Target,
+}
+
+local iceBlockMesh = Create("SpecialMesh"){
+	MeshId = "http://www.roblox.com/asset/?id=66876751",
+	TextureId = "http://www.roblox.com/asset/?id=66876766",
+	Scale = Vector3.new(1.0, 1.0, 1.0)*0,
+	Parent = ice,
+}
+
+Sounds.IceCrack.Parent = ice
+Sounds.IceCrack:Play()
+
+local Puff = script:WaitForChild("Puff")
+Puff.Parent = ice
+Puff.Enabled = true
+
+local FrozenParts = {}
+
+for _,parts in pairs(Target:GetChildren()) do
+	if parts:IsA("BasePart") and Humanoid:GetLimb(parts) then
+		parts.Anchored = true
+		FrozenParts[#FrozenParts+1] = parts
+	end
+end
+
+for i=1,60,1 do
+	ice.Size = (Vector3.new(4.2,4,6.3)*.1):lerp(Vector3.new(4.2,4,6.3),i/60)
+	iceBlockMesh.Scale = (Vector3.new(1.0, 1.0, 1.0)*.1):lerp(Vector3.new(1.0, 1.0, 1.0),i/60)
+	ice.CFrame = Torso.CFrame*CFrame.Angles(math.rad(-90),0,0)
+	Services.RunService.Heartbeat:Wait()
+end
+
+local Duration,Start = 3,tick()
+
+repeat
+	Services.RunService.Heartbeat:Wait()
+until (tick()-Start) >= Duration or Humanoid.Health <= 0
+
+Sounds.Shatter.Parent = Torso
+Sounds.Shatter:Play()
+Services.Debris:AddItem(Sounds.Shatter,Sounds.Shatter.TimeLength+1)
+
+Stop = true
+UntagHumanoid(Humanoid)
+TagHumanoid(Humanoid,Creator)
+ice:Destroy()
+Humanoid.JumpPower = 50
+Humanoid.WalkSpeed = 16
+Humanoid.Parent:BreakJoints()
+
+local Seed = Random.new(tick())
+
+for _, parts in pairs(FrozenParts) do
+	if parts then
+		parts.Anchored = false
+		local DebrisIce = Create("Part"){
+			Size = Vector3.new(Seed:NextNumber(1,2),Seed:NextNumber(1,2),Seed:NextNumber(1,2)),
+			Locked = true,
+			Anchored = false,
+			Name = "Broken Ice",
+			CFrame = parts.CFrame,
+			Transparency = 0.3,
+			Material = Enum.Material.Glass,
+			TopSurface = Enum.SurfaceType.Smooth,
+			BottomSurface = Enum.SurfaceType.Smooth,
+			Color = (Seed:NextInteger(1,3) == 1 and Color3.fromRGB(170,255,255)) or Color3.fromRGB(0,170,255),
+			Parent = workspace
+		}
+		Services.Debris:AddItem(DebrisIce,Seed:NextNumber(3,5))
+	end
+end
+
+local FrostSparkles = script:WaitForChild("FrostSparkles")
+FrostSparkles.Parent = Torso
+FrostSparkles:Emit(FrostSparkles.Rate)
+Services.Debris:AddItem(FrostSparkles,FrostSparkles.Lifetime.Max)
+
+if Services.Players:GetPlayerFromCharacter(Target) then	
+	local Enable = script:WaitForChild("EnableBackpack")
+	Enable.Parent = Services.Players:GetPlayerFromCharacter(Target):WaitForChild("Backpack")
+	Enable.Disabled = false
+	Services.Debris:AddItem(Enable,1)
+end
+
+wait(2) -- Grace period (Your're Welcome EuroC2)
+
+script:Destroy()]]></ProtectedString>
+					<BinaryString name="Tags"></BinaryString>
+				</Properties>
+				<Item class="LocalScript" referent="RBXF6091FFC27EE4660A6268F450802D687">
+					<Properties>
+						<bool name="Disabled">true</bool>
+						<Content name="LinkedSource"><null></null></Content>
+						<string name="Name">DisableBackpack</string>
+						<string name="ScriptGuid">{93B1E15D-C2B3-4659-964F-524C02D6C759}</string>
+						<ProtectedString name="Source"><![CDATA[--Much efficient way to hide the backpack without causing lag
+
+local StarterGui = game:GetService("StarterGui")
+
+StarterGui:SetCoreGuiEnabled(Enum.CoreGuiType.Backpack, false)]]></ProtectedString>
+						<BinaryString name="Tags"></BinaryString>
+					</Properties>
+				</Item>
+				<Item class="LocalScript" referent="RBX178F3A2B89E5453FAC8D16A0475B267B">
+					<Properties>
+						<bool name="Disabled">true</bool>
+						<Content name="LinkedSource"><null></null></Content>
+						<string name="Name">EnableBackpack</string>
+						<string name="ScriptGuid">{651E8DB5-87E3-46FA-B3FA-987200F38E66}</string>
+						<ProtectedString name="Source"><![CDATA[--Much efficient way to hide the backpack without causing lag
+
+local StarterGui = game:GetService("StarterGui")
+
+StarterGui:SetCoreGuiEnabled(Enum.CoreGuiType.Backpack, true)]]></ProtectedString>
+						<BinaryString name="Tags"></BinaryString>
+					</Properties>
+				</Item>
+				<Item class="Sound" referent="RBXC7EFF1DAF3404C3280AF4CFDC478E8E3">
+					<Properties>
+						<float name="EmitterSize">10</float>
+						<bool name="Looped">false</bool>
+						<string name="Name">IceCrack</string>
+						<bool name="PlayOnRemove">false</bool>
+						<float name="PlaybackSpeed">1</float>
+						<bool name="Playing">false</bool>
+						<token name="RollOffMode">0</token>
+						<Ref name="SoundGroup">null</Ref>
+						<Content name="SoundId"><url>rbxassetid://32788850</url></Content>
+						<BinaryString name="Tags"></BinaryString>
+						<double name="TimePosition">0</double>
+						<float name="Volume">1</float>
+						<float name="xmlRead_MaxDistance_3">10000</float>
+					</Properties>
+				</Item>
+				<Item class="ParticleEmitter" referent="RBX28C47C96F24443A7B7F561D118D266F1">
+					<Properties>
+						<Vector3 name="Acceleration">
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</Vector3>
+						<ColorSequence name="Color">0 0.666667 1 1 0 1 1 1 1 0 </ColorSequence>
+						<float name="Drag">0</float>
+						<token name="EmissionDirection">1</token>
+						<bool name="Enabled">false</bool>
+						<NumberRange name="Lifetime">1 2 </NumberRange>
+						<float name="LightEmission">0</float>
+						<float name="LightInfluence">0.5</float>
+						<bool name="LockedToPart">false</bool>
+						<string name="Name">Puff</string>
+						<float name="Rate">10</float>
+						<NumberRange name="RotSpeed">-60 60 </NumberRange>
+						<NumberRange name="Rotation">0 0 </NumberRange>
+						<NumberSequence name="Size">0 2.75 0 1 1.9375 0.5625 </NumberSequence>
+						<NumberRange name="Speed">1 2 </NumberRange>
+						<Vector2 name="SpreadAngle">
+							<X>-180</X>
+							<Y>180</Y>
+						</Vector2>
+						<BinaryString name="Tags"></BinaryString>
+						<Content name="Texture"><url>rbxassetid://258128463</url></Content>
+						<NumberSequence name="Transparency">0 1 0 0.199597 0.493506 0 0.502016 0.493506 0 0.641129 0.52381 0 0.747984 0.549784 0 0.836694 0.623377 0 0.910282 0.709957 0 0.957661 0.800866 0 1 1 0 </NumberSequence>
+						<float name="VelocityInheritance">0.5</float>
+						<float name="ZOffset">0</float>
+					</Properties>
+				</Item>
+				<Item class="Sound" referent="RBX36D7F2BBE9524650967B1DC900E76F55">
+					<Properties>
+						<float name="EmitterSize">10</float>
+						<bool name="Looped">false</bool>
+						<string name="Name">Shatter</string>
+						<bool name="PlayOnRemove">false</bool>
+						<float name="PlaybackSpeed">1</float>
+						<bool name="Playing">false</bool>
+						<token name="RollOffMode">0</token>
+						<Ref name="SoundGroup">null</Ref>
+						<Content name="SoundId"><url>http://www.roblox.com/Asset?ID=87015121</url></Content>
+						<BinaryString name="Tags"></BinaryString>
+						<double name="TimePosition">0</double>
+						<float name="Volume">1</float>
+						<float name="xmlRead_MaxDistance_3">10000</float>
+					</Properties>
+				</Item>
+				<Item class="ParticleEmitter" referent="RBXEAF711A3E6FE48D4836D7EBDB36707C0">
+					<Properties>
+						<Vector3 name="Acceleration">
+							<X>0</X>
+							<Y>-10</Y>
+							<Z>0</Z>
+						</Vector3>
+						<ColorSequence name="Color">0 0.666667 1 1 0 1 0.666667 1 1 0 </ColorSequence>
+						<float name="Drag">2</float>
+						<token name="EmissionDirection">1</token>
+						<bool name="Enabled">false</bool>
+						<NumberRange name="Lifetime">1 2 </NumberRange>
+						<float name="LightEmission">1</float>
+						<float name="LightInfluence">0</float>
+						<bool name="LockedToPart">false</bool>
+						<string name="Name">FrostSparkles</string>
+						<float name="Rate">300</float>
+						<NumberRange name="RotSpeed">-200 200 </NumberRange>
+						<NumberRange name="Rotation">-180 180 </NumberRange>
+						<NumberSequence name="Size">0 0.5625 0.5625 0.05 0 0 0.104294 0.625 0.625 0.15 0 0 0.199386 0.6875 0.625 0.25 0 0 0.300613 0.6875 0.5625 0.35 0 0 0.404908 0.6875 0.5625 0.45 0 0 0.501534 0.75 0.625 0.55 0 0 0.599693 0.8125 0.6875 0.65 0 0 0.70092 0.6875 0.5625 0.75 0 0 0.800613 0.75 0.625 0.85 0 0 0.92638 0.6875 0.5 1 0 0 </NumberSequence>
+						<NumberRange name="Speed">20 40 </NumberRange>
+						<Vector2 name="SpreadAngle">
+							<X>-180</X>
+							<Y>180</Y>
+						</Vector2>
+						<BinaryString name="Tags"></BinaryString>
+						<Content name="Texture"><url>rbxassetid://298984512</url></Content>
+						<NumberSequence name="Transparency">0 0 0 1 1 0 </NumberSequence>
+						<float name="VelocityInheritance">0</float>
+						<float name="ZOffset">0</float>
+					</Properties>
+				</Item>
+			</Item>
+			<Item class="Script" referent="RBX5671E08AA68A4D128BA399A8786AFA16">
+				<Properties>
+					<bool name="Disabled">true</bool>
+					<Content name="LinkedSource"><null></null></Content>
+					<string name="Name">StalagmiteScript</string>
+					<string name="ScriptGuid">{A6CD787B-6F2F-4EB3-8FD1-EEEE895C9AE6}</string>
+					<ProtectedString name="Source"><![CDATA[--Plant the Ice Stalagmite and let em' have it!
+
+local Services = {
+	Debris = (game:FindService("Debris") or game:GetService("Debris")),
+	Players = (game:FindService("Players") or game:GetService("Players")),
+	ServerScriptService = (game:FindService("ServerScriptService") or game:GetService("ServerScriptService"))
+}
+
+local Regions = require(script:WaitForChild("RegionModule"))
+
+
+local Region,Vec = Region3.new,Vector3.new
+
+local Position,Creator = script:FindFirstChild("Pos"),script:FindFirstChild("Creator")
+
+if not Position or not Creator then script:Destroy() end
+
+Position = Position.Value
+
+Creator = Creator.Value
+
+function IsTeamMate(Player1, Player2)
+	return (Player1 and Player2 and not Player1.Neutral and not Player2.Neutral and Player1.TeamColor == Player2.TeamColor)
+end
+
+function Create(ty)
+	return function(data)
+		local obj = Instance.new(ty)
+		for k, v in pairs(data) do
+			if type(k) == 'number' then
+				v.Parent = obj
+			else
+				obj[k] = v
+			end
+		end
+		return obj
+	end
+end
+
+function TagHumanoid(humanoid, player)
+	local Creator_Tag = Instance.new("ObjectValue")
+	Creator_Tag.Name = "creator"
+	Creator_Tag.Value = player
+	Services.Debris:AddItem(Creator_Tag, 2)
+	Creator_Tag.Parent = humanoid
+end
+
+function UntagHumanoid(humanoid)
+	for i, v in pairs(humanoid:GetChildren()) do
+		if v:IsA("ObjectValue") and v.Name == "creator" then
+			v:Destroy()
+		end
+	end
+end
+
+function IsInTable(Table,Value)
+	for _,v in pairs(Table) do
+		if v == Value then
+			return true
+		end
+	end
+	return false
+end
+
+function CastScripts(Duration,ScriptEntries) -- Could be used for ServerScripts, but we'll use LocalScripts in this case
+	local LoggedScripts = {} -- Keeps track of the current scripts
+	local Players = Services.Players:GetPlayers()
+	for p=1,#Players do
+		if Players[p] then
+			for i=1,#ScriptEntries do
+				if ScriptEntries[i] and ScriptEntries[i]:IsA("LocalScript") and Players[p]:FindFirstChild("PlayerGui")then
+					local Clone = ScriptEntries[i]:Clone()
+					Clone.Parent = Players[p]:FindFirstChild("PlayerGui") -- The best spot to place it at
+					Clone.Disabled = false
+					LoggedScripts[#LoggedScripts+1] = Clone
+				end
+			end
+		end
+	end
+	
+	local function Clean()
+		--print("CLEANING")
+		for s=1,#LoggedScripts do
+			
+			if LoggedScripts[s] then
+				--LoggedScripts[s]:Destroy()
+				Services.Debris:AddItem(LoggedScripts[s],(Duration or 1)+1)
+			end
+		end
+		LoggedScripts = {} -- Clear the Memory
+	end
+	
+	Clean()
+	
+end
+
+wait(.1)--Small time to make an escape
+
+
+local StatlagmiteClient = script:WaitForChild("StalagmiteClient")
+local Pos = Instance.new("Vector3Value")
+Pos.Value = Position
+Pos.Name = "Pos"
+Pos.Parent = StatlagmiteClient
+CastScripts(4,{StatlagmiteClient})
+
+local Parts = Regions.new(CFrame.new(Position) * CFrame.new(0,50,0),Vec(14,100,14)):Cast({Creator})
+local TaggedHum = {}
+
+for i=1,#Parts,1 do
+	if Parts[i] and Parts[i].Parent then
+		local Hum,FF = Parts[i].Parent:FindFirstChildOfClass("Humanoid"),Parts[i].Parent:FindFirstChildOfClass("ForceField")
+		
+		if Hum and not FF and not IsTeamMate(Services.Players:GetPlayerFromCharacter(Creator),Services.Players:GetPlayerFromCharacter(Hum.Parent)) and not IsInTable(TaggedHum,Hum) then 
+			UntagHumanoid(Hum)
+			TagHumanoid(Hum,Services.Players:GetPlayerFromCharacter(Creator))
+			Hum:TakeDamage(Hum.MaxHealth*(1/3))
+			TaggedHum[#TaggedHum+1] = Hum
+			local Chance = Random.new():NextInteger(1,2)
+			--print(Chance)
+			if Hum and Hum.Health ~= 0 and Hum.Parent and Chance == 2 then
+				--warn("Freezing")
+				local Freeze = script:WaitForChild("Freeze"):Clone()
+				Create("ObjectValue"){
+					Name = "Target",
+					Value = Hum.Parent,
+					Parent = Freeze
+				}
+				Freeze.Parent = Services.ServerScriptService
+				Freeze.Disabled = false
+			end
+		end
+		
+	end
+end
+
+script:Destroy()
+]]></ProtectedString>
+					<BinaryString name="Tags"></BinaryString>
+				</Properties>
+				<Item class="LocalScript" referent="RBX91DC5D217CD34DBD8AEF2F74FF5A57F1">
+					<Properties>
+						<bool name="Disabled">true</bool>
+						<Content name="LinkedSource"><null></null></Content>
+						<string name="Name">StalagmiteClient</string>
+						<string name="ScriptGuid">{5C8817F7-A56A-4D7E-839D-106177B302B6}</string>
+						<ProtectedString name="Source"><![CDATA[local Pos = script:FindFirstChild("Pos")
+
+if not Pos then return end
+
+local Vec3,cframe = Vector3.new,CFrame.new
+
+local Services = {
+	Debris = (game:FindService("Debris") or game:GetService("Debris")),
+	tService = (game:FindService("TweenService") or game:GetService("TweenService")),
+	rService = (game:FindService("RunService") or game:GetService("RunService"))
+}
+
+Pos = Pos.Value
+
+local StalagmiteWidth,StalagmiteHeight = 7,100
+
+function Create(ty)
+	return function(data)
+		local obj = Instance.new(ty)
+		for k, v in pairs(data) do
+			if type(k) == 'number' then
+				v.Parent = obj
+			else
+				obj[k] = v
+			end
+		end
+		return obj
+	end
+end
+
+local StalagModel = Create("Model"){
+	Name = "Stalagmite",
+}
+
+Services.Debris:AddItem(StalagModel,3)
+
+local StalagCorners = {}
+for i=0,270,90 do
+	local ShatterSound = script:FindFirstChild("ShatterSound")
+	local FrostSparkles = script:FindFirstChild("FrostSparkles")
+	local StalagWedge = Create("CornerWedgePart"){
+		Anchored = true,
+		Material = Enum.Material.Glass,
+		CanCollide = false,
+		Locked = true,
+		Size = Vec3(StalagmiteWidth,0,StalagmiteWidth),
+		Reflectance = 0,
+		Transparency = .5,
+		Name = "StalagmiteCorner",
+		Color = Color3.fromRGB(9, 137, 207),
+		CFrame = cframe(Pos)*CFrame.Angles(0,math.rad(i),0)*cframe(-StalagmiteWidth*.5,0,StalagmiteWidth*.5),
+		Parent = StalagModel,
+		TopSurface = Enum.SurfaceType.SmoothNoOutlines,
+		BottomSurface = Enum.SurfaceType.SmoothNoOutlines
+	}
+	if ShatterSound then
+		ShatterSound:Clone().Parent = StalagWedge
+	end
+	if FrostSparkles then
+		FrostSparkles:Clone().Parent = StalagWedge
+	end
+	StalagCorners[#StalagCorners+1] = StalagWedge
+end
+
+local DeltaInc = 1
+local TargetFrameRate = 60
+
+local GoalTime = .1--(TargetFrameRate/10) * .1
+local Current_Time = 0
+
+StalagModel.Parent = workspace
+
+for i=1,#StalagCorners,1 do
+	if StalagCorners[i]:FindFirstChildWhichIsA("ParticleEmitter") then
+		StalagCorners[i]:FindFirstChildWhichIsA("ParticleEmitter"):Emit(StalagCorners[i]:FindFirstChildWhichIsA("ParticleEmitter").Rate)
+	end
+end
+
+local ShatterSound = StalagModel:FindFirstChild("ShatterSound", true)
+if ShatterSound then ShatterSound:Play() end
+
+repeat
+	
+	for i=1,#StalagCorners,1 do
+		
+		if StalagCorners[i] then
+			
+			StalagCorners[i].Size = Vec3(StalagmiteWidth,(Current_Time/GoalTime)*StalagmiteHeight,StalagmiteWidth)
+			StalagCorners[i].CFrame = cframe(Pos)*(StalagCorners[i].CFrame-StalagCorners[i].CFrame.Position) * cframe(-StalagmiteWidth*.5,StalagCorners[i].Size.Y*.5,StalagmiteWidth*.5)
+		end
+		
+	end
+	DeltaInc = Services.rService.Heartbeat:Wait()
+	Current_Time = Current_Time + DeltaInc
+until #StalagCorners <= 0 or Current_Time >= GoalTime
+
+for i=1,#StalagCorners,1 do
+		
+	if StalagCorners[i] then
+			
+		StalagCorners[i].Size = Vec3(StalagmiteWidth,StalagmiteHeight,StalagmiteWidth)
+		StalagCorners[i].CFrame = cframe(Pos)*(StalagCorners[i].CFrame-StalagCorners[i].CFrame.Position) * cframe(-StalagmiteWidth*.5,StalagCorners[i].Size.Y*.5,StalagmiteWidth*.5)	
+	end
+		
+end
+
+wait(.5)
+
+GoalTime = .5
+Current_Time = .5
+repeat
+	
+	for i=1,#StalagCorners,1 do
+		
+		if StalagCorners[i] then
+			
+			StalagCorners[i].Size = Vec3(StalagmiteWidth,(Current_Time/GoalTime)*StalagmiteHeight,StalagmiteWidth)
+			StalagCorners[i].Transparency = 1-(Current_Time/GoalTime)
+			StalagCorners[i].CFrame = cframe(Pos)*(StalagCorners[i].CFrame-StalagCorners[i].CFrame.Position) * cframe(-StalagmiteWidth*.5,StalagCorners[i].Size.Y*.5,StalagmiteWidth*.5)
+		
+		end
+		
+	end
+	DeltaInc = Services.rService.Heartbeat:Wait()
+	Current_Time = Current_Time - DeltaInc
+until #StalagCorners <= 0 or Current_Time <= 0
+
+for i=1,#StalagCorners,1 do
+		
+	if StalagCorners[i] then
+			
+		StalagCorners[i].Size = Vec3(StalagmiteWidth,0,StalagmiteWidth)
+		StalagCorners[i].Transparency = 1
+		StalagCorners[i].CFrame = cframe(Pos)*(StalagCorners[i].CFrame-StalagCorners[i].CFrame.Position) * cframe(-StalagmiteWidth*.5,StalagCorners[i].Size.Y*.5,StalagmiteWidth*.5)	
+	end
+		
+end
+]]></ProtectedString>
+						<BinaryString name="Tags"></BinaryString>
+					</Properties>
+					<Item class="Sound" referent="RBXE7D0DA60F6554502B6A42C9840B3708F">
+						<Properties>
+							<float name="EmitterSize">10</float>
+							<bool name="Looped">false</bool>
+							<string name="Name">ShatterSound</string>
+							<bool name="PlayOnRemove">false</bool>
+							<float name="PlaybackSpeed">1</float>
+							<bool name="Playing">false</bool>
+							<token name="RollOffMode">0</token>
+							<Ref name="SoundGroup">null</Ref>
+							<Content name="SoundId"><url>http://www.roblox.com/Asset?ID=87015121</url></Content>
+							<BinaryString name="Tags"></BinaryString>
+							<double name="TimePosition">0</double>
+							<float name="Volume">1</float>
+							<float name="xmlRead_MaxDistance_3">10000</float>
+						</Properties>
+					</Item>
+					<Item class="ParticleEmitter" referent="RBX806E623ACE474222A442C43108F96D7F">
+						<Properties>
+							<Vector3 name="Acceleration">
+								<X>0</X>
+								<Y>-40</Y>
+								<Z>0</Z>
+							</Vector3>
+							<ColorSequence name="Color">0 0.666667 1 1 0 1 0.666667 1 1 0 </ColorSequence>
+							<float name="Drag">2</float>
+							<token name="EmissionDirection">1</token>
+							<bool name="Enabled">false</bool>
+							<NumberRange name="Lifetime">3 4 </NumberRange>
+							<float name="LightEmission">1</float>
+							<float name="LightInfluence">0</float>
+							<bool name="LockedToPart">false</bool>
+							<string name="Name">FrostSparkles</string>
+							<float name="Rate">150</float>
+							<NumberRange name="RotSpeed">-200 200 </NumberRange>
+							<NumberRange name="Rotation">-180 180 </NumberRange>
+							<NumberSequence name="Size">0 2.1875 0.5625 0.05 0 0 0.0966258 1.6875 0.625 0.15 0 0 0.197853 1.9375 0.625 0.25 0 0 0.305215 1.6875 0.5625 0.35 0 0 0.397239 1.6875 0.5625 0.45 0 0 0.501534 1.5 0.625 0.55 0 0 0.598159 1.625 0.6875 0.65 0 0 0.703988 1.8125 0.5625 0.75 0 0 0.791411 1.6875 0.625 0.85 0 0 0.929448 1.6875 0.5 1 0 0 </NumberSequence>
+							<NumberRange name="Speed">80 100 </NumberRange>
+							<Vector2 name="SpreadAngle">
+								<X>-180</X>
+								<Y>180</Y>
+							</Vector2>
+							<BinaryString name="Tags"></BinaryString>
+							<Content name="Texture"><url>rbxassetid://298984512</url></Content>
+							<NumberSequence name="Transparency">0 0 0 1 1 0 </NumberSequence>
+							<float name="VelocityInheritance">0</float>
+							<float name="ZOffset">0</float>
+						</Properties>
+					</Item>
+				</Item>
+				<Item class="ModuleScript" referent="RBX92C9600BF1094889A582897322F0994C">
+					<Properties>
+						<Content name="LinkedSource"><null></null></Content>
+						<string name="Name">RegionModule</string>
+						<string name="ScriptGuid">{FAF33B07-150B-4B86-B9D5-112489B9C0C7}</string>
+						<ProtectedString name="Source"><![CDATA[--[[
+By AxisAngle, (Trey Reynolds)
+Documentation
+http://www.roblox.com/item.aspx?id=227509468
+
+Region constructors:
+	Region Region.new(CFrame RegionCFrame, Vector3 RegionSize)
+		>Returns a new Region object
+
+	Region Region.FromPart(Instance Part)
+		>Returns a new Region objects
+
+
+Region methods:
+	table Region:Cast([Instance or table Ignore])
+		>Returns all parts in the Region, ignoring the Ignore
+
+	bool Region:CastPart(Instance Part)
+		>Returns true if Part is within Region, false otherwise
+
+	table Region:CastParts(table Parts)
+		>Returns a table of all parts within the region
+
+	bool Region:CastPoint(Vector3 Point)
+		>Returns true if Point intersects Region, false otherwise
+
+	bool Region:CastSphere(Vector3 SphereCenter, number SphereRadius)
+		>Returns true if Sphere intersects Region, false otherwise
+
+	bool Region:CastBox(CFrame BoxCFrame, Vector3 BoxSize)
+		>Returns true if Box intersects Region, false otherwise
+
+
+
+Region properties: (Regions are mutable)
+	CFrame	CFrame
+	Vector3	Size
+	Region3	Region3
+
+
+
+Region functions:
+	Region3 Region.Region3BoundingBox(CFrame BoxCFrame, Vector3 BoxSize)
+		>Returns the enclosing boundingbox of Box
+
+	table Region.FindAllPartsInRegion3(Region3 Region3, [Instance or table Ignore])
+		>Returns all parts within a Region3 of any size
+
+	bool Region.BoxPointCollision(CFrame BoxCFrame, Vector3 BoxSize, Vector3 Point)
+		>Returns true if the Point is intersecting the Box, false otherwise
+
+	bool Region.BoxSphereCollision(CFrame BoxCFrame, Vector3 BoxSize, Vector3 SphereCenter, number SphereRadius)
+		>Returns true if the Sphere is intersecting the Box, false otherwise
+
+	bool Region.BoxCollision(CFrame Box0CFrame, Vector3 Box0Size, CFrame Box1CFrame, Vector3 Box1Size, [bool AssumeTrue])
+		>Returns true if the boxes are intersecting, false otherwise
+		If AssumeTrue is left blank, it does the full check to see if Box0 is intersecting Box1
+		If AssumeTrue is true, it skips the heavy check and assumes that any part that could possibly be in the Region is
+		If AssumeTrue is false, it skips the heavy check and assumes that any part that could possible be outside the Region is
+	
+	bool Region.CastPoint(Vector3 Point, [Instance or table Ignore])
+		>Returns true if the point intersects a part, false otherwise
+]]
+
+local Region={}
+
+
+
+local BoxPointCollision do
+	local VecDiv=CFrame.new().pointToObjectSpace--Right Division, yo.
+	function BoxPointCollision(CFrame,Size,Point)
+		local Relative	=VecDiv(CFrame,Point)
+		local sx,sy,sz	=Size.x/2,Size.y/2,Size.z/2
+		local rx,ry,rz	=Relative.x,Relative.y,Relative.z
+		return			rx*rx<sx*sx and rx*rx<sx*sx and rx*rx<sx*sx
+	end
+end
+
+
+
+local BoxSphereCollision do
+	local VecDiv=CFrame.new().pointToObjectSpace--Right Division, yo.
+	function BoxSphereCollision(CFrame,Size,Center,Radius)
+		local Relative	=VecDiv(CFrame,Center)
+		local sx,sy,sz	=Size.x/2,Size.y/2,Size.z/2
+		local rx,ry,rz	=Relative.x,Relative.y,Relative.z
+		local dx		=rx>sx and rx-sx--Faster than if statement
+						or rx<-sx and rx+sx
+						or 0
+		local dy		=ry>sy and ry-sy
+						or ry<-sy and ry+sy
+						or 0
+		local dz		=rz>sz and rz-sz
+						or rz<-sz and rz+sz
+						or 0
+		return dx*dx+dy*dy+dz*dz<Radius*Radius
+	end
+end
+
+
+
+--There's a reason why this hasn't been done before by ROBLOX users (as far as I know)
+--It's really mathy, really long, and really confusing.
+--0.000033 seconds is the worst, 0.000018 looks like the average case.
+--Also I ran out of local variables so I had to redo everything so that I could reuse the names lol.
+--So don't even try to read it.
+local BoxCollision do
+	local components=CFrame.new().components
+	function BoxCollision(CFrame0,Size0,CFrame1,Size1,AssumeTrue)
+		local	m00,m01,m02,
+				m03,m04,m05,
+				m06,m07,m08,
+				m09,m10,m11	=components(CFrame0)
+		local	m12,m13,m14,
+				m15,m16,m17,
+				m18,m19,m20,
+				m21,m22,m23	=components(CFrame1)
+		local	m24,m25,m26	=Size0.x/2,Size0.y/2,Size0.z/2
+		local	m27,m28,m29	=Size1.x/2,Size1.y/2,Size1.z/2
+		local	m30,m31,m32	=m12-m00,m13-m01,m14-m02
+		local	m00			=m03*m30+m06*m31+m09*m32
+		local	m01			=m04*m30+m07*m31+m10*m32
+		local	m02			=m05*m30+m08*m31+m11*m32
+		local	m12			=m15*m30+m18*m31+m21*m32
+		local	m13			=m16*m30+m19*m31+m22*m32
+		local	m14			=m17*m30+m20*m31+m23*m32
+		local	m30			=m12>m27 and m12-m27
+							or m12<-m27 and m12+m27
+							or 0
+		local	m31			=m13>m28 and m13-m28
+							or m13<-m28 and m13+m28
+							or 0
+		local	m32			=m14>m29 and m14-m29
+							or m14<-m29 and m14+m29
+							or 0
+		local	m33			=m00>m24 and m00-m24
+							or m00<-m24 and m00+m24
+							or 0
+		local	m34			=m01>m25 and m01-m25
+							or m01<-m25 and m01+m25
+							or 0
+		local	m35			=m02>m26 and m02-m26
+							or m02<-m26 and m02+m26
+							or 0
+		local	m36			=m30*m30+m31*m31+m32*m32
+		local	m30			=m33*m33+m34*m34+m35*m35
+		local	m31			=m24<m25 and (m24<m26 and m24 or m26)
+							or (m25<m26 and m25 or m26)
+		local	m32			=m27<m28 and (m27<m29 and m27 or m29)
+							or (m28<m29 and m28 or m29)
+		if m36<m31*m31 or m30<m32*m32 then
+			return true
+		elseif m36>m24*m24+m25*m25+m26*m26 or m30>m27*m27+m28*m28+m29*m29 then
+			return false
+		elseif AssumeTrue==nil then
+			--LOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOL
+			--(This is how you tell if something was made by Axis Angle)
+			local m30=m03*m15+m06*m18+m09*m21
+			local m31=m03*m16+m06*m19+m09*m22
+			local m32=m03*m17+m06*m20+m09*m23
+			local m03=m04*m15+m07*m18+m10*m21
+			local m06=m04*m16+m07*m19+m10*m22
+			local m09=m04*m17+m07*m20+m10*m23
+			local m04=m05*m15+m08*m18+m11*m21
+			local m07=m05*m16+m08*m19+m11*m22
+			local m10=m05*m17+m08*m20+m11*m23
+			local m05=m29*m29
+			local m08=m27*m27
+			local m11=m28*m28
+			local m15=m24*m30
+			local m16=m25*m03
+			local m17=m26*m04
+			local m18=m24*m31
+			local m19=m25*m06
+			local m20=m26*m07
+			local m21=m24*m32
+			local m22=m25*m09
+			local m23=m26*m10
+			local m33=m15+m16+m17-m12;if m33*m33<m08 then local m34=m18+m19+m20-m13;if m34*m34<m11 then local m35=m21+m22+m23-m14;if m35*m35<m05 then return true;end;end;end;
+			local m33=-m15+m16+m17-m12;if m33*m33<m08 then local m34=-m18+m19+m20-m13;if m34*m34<m11 then local m35=-m21+m22+m23-m14;if m35*m35<m05 then return true;end;end;end;
+			local m33=m15-m16+m17-m12;if m33*m33<m08 then local m34=m18-m19+m20-m13;if m34*m34<m11 then local m35=m21-m22+m23-m14;if m35*m35<m05 then return true;end;end;end;
+			local m33=-m15-m16+m17-m12;if m33*m33<m08 then local m34=-m18-m19+m20-m13;if m34*m34<m11 then local m35=-m21-m22+m23-m14;if m35*m35<m05 then return true;end;end;end;
+			local m33=m15+m16-m17-m12;if m33*m33<m08 then local m34=m18+m19-m20-m13;if m34*m34<m11 then local m35=m21+m22-m23-m14;if m35*m35<m05 then return true;end;end;end;
+			local m33=-m15+m16-m17-m12;if m33*m33<m08 then local m34=-m18+m19-m20-m13;if m34*m34<m11 then local m35=-m21+m22-m23-m14;if m35*m35<m05 then return true;end;end;end;
+			local m33=m15-m16-m17-m12;if m33*m33<m08 then local m34=m18-m19-m20-m13;if m34*m34<m11 then local m35=m21-m22-m23-m14;if m35*m35<m05 then return true;end;end;end;
+			local m33=-m15-m16-m17-m12;if m33*m33<m08 then local m34=-m18-m19-m20-m13;if m34*m34<m11 then local m35=-m21-m22-m23-m14;if m35*m35<m05 then return true;end;end;end;
+			local m12=m24*m24
+			local m13=m25*m25
+			local m14=m26*m26
+			local m15=m27*m04
+			local m16=m28*m07
+			local m17=m27*m30
+			local m18=m28*m31
+			local m19=m27*m03
+			local m20=m28*m06
+			local m21=m29*m10
+			local m22=m29*m32
+			local m23=m29*m09
+			local m35=(m02-m26+m15+m16)/m10;if m35*m35<m05 then local m33=m00+m17+m18-m35*m32;if m33*m33<m12 then local m34=m01+m19+m20-m35*m09;if m34*m34<m13 then return true;end;end;end;
+			local m35=(m02+m26+m15+m16)/m10;if m35*m35<m05 then local m33=m00+m17+m18-m35*m32;if m33*m33<m12 then local m34=m01+m19+m20-m35*m09;if m34*m34<m13 then return true;end;end;end;
+			local m35=(m02-m26-m15+m16)/m10;if m35*m35<m05 then local m33=m00-m17+m18-m35*m32;if m33*m33<m12 then local m34=m01-m19+m20-m35*m09;if m34*m34<m13 then return true;end;end;end;
+			local m35=(m02+m26-m15+m16)/m10;if m35*m35<m05 then local m33=m00-m17+m18-m35*m32;if m33*m33<m12 then local m34=m01-m19+m20-m35*m09;if m34*m34<m13 then return true;end;end;end;
+			local m35=(m02-m26+m15-m16)/m10;if m35*m35<m05 then local m33=m00+m17-m18-m35*m32;if m33*m33<m12 then local m34=m01+m19-m20-m35*m09;if m34*m34<m13 then return true;end;end;end;
+			local m35=(m02+m26+m15-m16)/m10;if m35*m35<m05 then local m33=m00+m17-m18-m35*m32;if m33*m33<m12 then local m34=m01+m19-m20-m35*m09;if m34*m34<m13 then return true;end;end;end;
+			local m35=(m02-m26-m15-m16)/m10;if m35*m35<m05 then local m33=m00-m17-m18-m35*m32;if m33*m33<m12 then local m34=m01-m19-m20-m35*m09;if m34*m34<m13 then return true;end;end;end;
+			local m35=(m02+m26-m15-m16)/m10;if m35*m35<m05 then local m33=m00-m17-m18-m35*m32;if m33*m33<m12 then local m34=m01-m19-m20-m35*m09;if m34*m34<m13 then return true;end;end;end;
+			local m35=(m00-m24+m17+m18)/m32;if m35*m35<m05 then local m33=m01+m19+m20-m35*m09;if m33*m33<m13 then local m34=m02+m15+m16-m35*m10;if m34*m34<m14 then return true;end;end;end;
+			local m35=(m00+m24+m17+m18)/m32;if m35*m35<m05 then local m33=m01+m19+m20-m35*m09;if m33*m33<m13 then local m34=m02+m15+m16-m35*m10;if m34*m34<m14 then return true;end;end;end;
+			local m35=(m00-m24-m17+m18)/m32;if m35*m35<m05 then local m33=m01-m19+m20-m35*m09;if m33*m33<m13 then local m34=m02-m15+m16-m35*m10;if m34*m34<m14 then return true;end;end;end;
+			local m35=(m00+m24-m17+m18)/m32;if m35*m35<m05 then local m33=m01-m19+m20-m35*m09;if m33*m33<m13 then local m34=m02-m15+m16-m35*m10;if m34*m34<m14 then return true;end;end;end;
+			local m35=(m00-m24+m17-m18)/m32;if m35*m35<m05 then local m33=m01+m19-m20-m35*m09;if m33*m33<m13 then local m34=m02+m15-m16-m35*m10;if m34*m34<m14 then return true;end;end;end;
+			local m35=(m00+m24+m17-m18)/m32;if m35*m35<m05 then local m33=m01+m19-m20-m35*m09;if m33*m33<m13 then local m34=m02+m15-m16-m35*m10;if m34*m34<m14 then return true;end;end;end;
+			local m35=(m00-m24-m17-m18)/m32;if m35*m35<m05 then local m33=m01-m19-m20-m35*m09;if m33*m33<m13 then local m34=m02-m15-m16-m35*m10;if m34*m34<m14 then return true;end;end;end;
+			local m35=(m00+m24-m17-m18)/m32;if m35*m35<m05 then local m33=m01-m19-m20-m35*m09;if m33*m33<m13 then local m34=m02-m15-m16-m35*m10;if m34*m34<m14 then return true;end;end;end;
+			local m35=(m01-m25+m19+m20)/m09;if m35*m35<m05 then local m33=m02+m15+m16-m35*m10;if m33*m33<m14 then local m34=m00+m17+m18-m35*m32;if m34*m34<m12 then return true;end;end;end;
+			local m35=(m01+m25+m19+m20)/m09;if m35*m35<m05 then local m33=m02+m15+m16-m35*m10;if m33*m33<m14 then local m34=m00+m17+m18-m35*m32;if m34*m34<m12 then return true;end;end;end;
+			local m35=(m01-m25-m19+m20)/m09;if m35*m35<m05 then local m33=m02-m15+m16-m35*m10;if m33*m33<m14 then local m34=m00-m17+m18-m35*m32;if m34*m34<m12 then return true;end;end;end;
+			local m35=(m01+m25-m19+m20)/m09;if m35*m35<m05 then local m33=m02-m15+m16-m35*m10;if m33*m33<m14 then local m34=m00-m17+m18-m35*m32;if m34*m34<m12 then return true;end;end;end;
+			local m35=(m01-m25+m19-m20)/m09;if m35*m35<m05 then local m33=m02+m15-m16-m35*m10;if m33*m33<m14 then local m34=m00+m17-m18-m35*m32;if m34*m34<m12 then return true;end;end;end;
+			local m35=(m01+m25+m19-m20)/m09;if m35*m35<m05 then local m33=m02+m15-m16-m35*m10;if m33*m33<m14 then local m34=m00+m17-m18-m35*m32;if m34*m34<m12 then return true;end;end;end;
+			local m35=(m01-m25-m19-m20)/m09;if m35*m35<m05 then local m33=m02-m15-m16-m35*m10;if m33*m33<m14 then local m34=m00-m17-m18-m35*m32;if m34*m34<m12 then return true;end;end;end;
+			local m35=(m01+m25-m19-m20)/m09;if m35*m35<m05 then local m33=m02-m15-m16-m35*m10;if m33*m33<m14 then local m34=m00-m17-m18-m35*m32;if m34*m34<m12 then return true;end;end;end;
+			local m35=(m02-m26+m16+m21)/m04;if m35*m35<m08 then local m33=m00+m18+m22-m35*m30;if m33*m33<m12 then local m34=m01+m20+m23-m35*m03;if m34*m34<m13 then return true;end;end;end;
+			local m35=(m02+m26+m16+m21)/m04;if m35*m35<m08 then local m33=m00+m18+m22-m35*m30;if m33*m33<m12 then local m34=m01+m20+m23-m35*m03;if m34*m34<m13 then return true;end;end;end;
+			local m35=(m02-m26-m16+m21)/m04;if m35*m35<m08 then local m33=m00-m18+m22-m35*m30;if m33*m33<m12 then local m34=m01-m20+m23-m35*m03;if m34*m34<m13 then return true;end;end;end;
+			local m35=(m02+m26-m16+m21)/m04;if m35*m35<m08 then local m33=m00-m18+m22-m35*m30;if m33*m33<m12 then local m34=m01-m20+m23-m35*m03;if m34*m34<m13 then return true;end;end;end;
+			local m35=(m02-m26+m16-m21)/m04;if m35*m35<m08 then local m33=m00+m18-m22-m35*m30;if m33*m33<m12 then local Axi=m01+m20-m23-m35*m03;if Axi*Axi<m13 then return true;end;end;end;
+			local m35=(m02+m26+m16-m21)/m04;if m35*m35<m08 then local m33=m00+m18-m22-m35*m30;if m33*m33<m12 then local sAn=m01+m20-m23-m35*m03;if sAn*sAn<m13 then return true;end;end;end;
+			local m35=(m02-m26-m16-m21)/m04;if m35*m35<m08 then local m33=m00-m18-m22-m35*m30;if m33*m33<m12 then local gle=m01-m20-m23-m35*m03;if gle*gle<m13 then return true;end;end;end;
+			local m35=(m02+m26-m16-m21)/m04;if m35*m35<m08 then local m33=m00-m18-m22-m35*m30;if m33*m33<m12 then local m34=m01-m20-m23-m35*m03;if m34*m34<m13 then return true;end;end;end;
+			local m35=(m00-m24+m18+m22)/m30;if m35*m35<m08 then local m33=m01+m20+m23-m35*m03;if m33*m33<m13 then local m34=m02+m16+m21-m35*m04;if m34*m34<m14 then return true;end;end;end;
+			local m35=(m00+m24+m18+m22)/m30;if m35*m35<m08 then local m33=m01+m20+m23-m35*m03;if m33*m33<m13 then local m34=m02+m16+m21-m35*m04;if m34*m34<m14 then return true;end;end;end;
+			local m35=(m00-m24-m18+m22)/m30;if m35*m35<m08 then local m33=m01-m20+m23-m35*m03;if m33*m33<m13 then local m34=m02-m16+m21-m35*m04;if m34*m34<m14 then return true;end;end;end;
+			local m35=(m00+m24-m18+m22)/m30;if m35*m35<m08 then local m33=m01-m20+m23-m35*m03;if m33*m33<m13 then local m34=m02-m16+m21-m35*m04;if m34*m34<m14 then return true;end;end;end;
+			local m35=(m00-m24+m18-m22)/m30;if m35*m35<m08 then local m33=m01+m20-m23-m35*m03;if m33*m33<m13 then local m34=m02+m16-m21-m35*m04;if m34*m34<m14 then return true;end;end;end;
+			local m35=(m00+m24+m18-m22)/m30;if m35*m35<m08 then local m33=m01+m20-m23-m35*m03;if m33*m33<m13 then local m34=m02+m16-m21-m35*m04;if m34*m34<m14 then return true;end;end;end;
+			local m35=(m00-m24-m18-m22)/m30;if m35*m35<m08 then local m33=m01-m20-m23-m35*m03;if m33*m33<m13 then local m34=m02-m16-m21-m35*m04;if m34*m34<m14 then return true;end;end;end;
+			local m35=(m00+m24-m18-m22)/m30;if m35*m35<m08 then local m33=m01-m20-m23-m35*m03;if m33*m33<m13 then local m34=m02-m16-m21-m35*m04;if m34*m34<m14 then return true;end;end;end;
+			local m35=(m01-m25+m20+m23)/m03;if m35*m35<m08 then local m33=m02+m16+m21-m35*m04;if m33*m33<m14 then local m34=m00+m18+m22-m35*m30;if m34*m34<m12 then return true;end;end;end;
+			local m35=(m01+m25+m20+m23)/m03;if m35*m35<m08 then local m33=m02+m16+m21-m35*m04;if m33*m33<m14 then local m34=m00+m18+m22-m35*m30;if m34*m34<m12 then return true;end;end;end;
+			local m35=(m01-m25-m20+m23)/m03;if m35*m35<m08 then local m33=m02-m16+m21-m35*m04;if m33*m33<m14 then local m34=m00-m18+m22-m35*m30;if m34*m34<m12 then return true;end;end;end;
+			local m35=(m01+m25-m20+m23)/m03;if m35*m35<m08 then local m33=m02-m16+m21-m35*m04;if m33*m33<m14 then local m34=m00-m18+m22-m35*m30;if m34*m34<m12 then return true;end;end;end;
+			local m35=(m01-m25+m20-m23)/m03;if m35*m35<m08 then local m33=m02+m16-m21-m35*m04;if m33*m33<m14 then local m34=m00+m18-m22-m35*m30;if m34*m34<m12 then return true;end;end;end;
+			local m35=(m01+m25+m20-m23)/m03;if m35*m35<m08 then local m33=m02+m16-m21-m35*m04;if m33*m33<m14 then local m34=m00+m18-m22-m35*m30;if m34*m34<m12 then return true;end;end;end;
+			local m35=(m01-m25-m20-m23)/m03;if m35*m35<m08 then local m33=m02-m16-m21-m35*m04;if m33*m33<m14 then local m34=m00-m18-m22-m35*m30;if m34*m34<m12 then return true;end;end;end;
+			local m35=(m01+m25-m20-m23)/m03;if m35*m35<m08 then local m33=m02-m16-m21-m35*m04;if m33*m33<m14 then local m34=m00-m18-m22-m35*m30;if m34*m34<m12 then return true;end;end;end;
+			local m35=(m02-m26+m21+m15)/m07;if m35*m35<m11 then local m33=m00+m22+m17-m35*m31;if m33*m33<m12 then local m34=m01+m23+m19-m35*m06;if m34*m34<m13 then return true;end;end;end;
+			local m35=(m02+m26+m21+m15)/m07;if m35*m35<m11 then local m33=m00+m22+m17-m35*m31;if m33*m33<m12 then local m34=m01+m23+m19-m35*m06;if m34*m34<m13 then return true;end;end;end;
+			local m35=(m02-m26-m21+m15)/m07;if m35*m35<m11 then local m33=m00-m22+m17-m35*m31;if m33*m33<m12 then local m34=m01-m23+m19-m35*m06;if m34*m34<m13 then return true;end;end;end;
+			local m35=(m02+m26-m21+m15)/m07;if m35*m35<m11 then local m33=m00-m22+m17-m35*m31;if m33*m33<m12 then local m34=m01-m23+m19-m35*m06;if m34*m34<m13 then return true;end;end;end;
+			local m35=(m02-m26+m21-m15)/m07;if m35*m35<m11 then local m33=m00+m22-m17-m35*m31;if m33*m33<m12 then local m34=m01+m23-m19-m35*m06;if m34*m34<m13 then return true;end;end;end;
+			local m35=(m02+m26+m21-m15)/m07;if m35*m35<m11 then local m33=m00+m22-m17-m35*m31;if m33*m33<m12 then local m34=m01+m23-m19-m35*m06;if m34*m34<m13 then return true;end;end;end;
+			local m35=(m02-m26-m21-m15)/m07;if m35*m35<m11 then local m33=m00-m22-m17-m35*m31;if m33*m33<m12 then local m34=m01-m23-m19-m35*m06;if m34*m34<m13 then return true;end;end;end;
+			local m35=(m02+m26-m21-m15)/m07;if m35*m35<m11 then local m33=m00-m22-m17-m35*m31;if m33*m33<m12 then local m34=m01-m23-m19-m35*m06;if m34*m34<m13 then return true;end;end;end;
+			local m35=(m00-m24+m22+m17)/m31;if m35*m35<m11 then local m33=m01+m23+m19-m35*m06;if m33*m33<m13 then local m34=m02+m21+m15-m35*m07;if m34*m34<m14 then return true;end;end;end;
+			local m35=(m00+m24+m22+m17)/m31;if m35*m35<m11 then local m33=m01+m23+m19-m35*m06;if m33*m33<m13 then local m34=m02+m21+m15-m35*m07;if m34*m34<m14 then return true;end;end;end;
+			local m35=(m00-m24-m22+m17)/m31;if m35*m35<m11 then local m33=m01-m23+m19-m35*m06;if m33*m33<m13 then local m34=m02-m21+m15-m35*m07;if m34*m34<m14 then return true;end;end;end;
+			local m35=(m00+m24-m22+m17)/m31;if m35*m35<m11 then local m33=m01-m23+m19-m35*m06;if m33*m33<m13 then local m34=m02-m21+m15-m35*m07;if m34*m34<m14 then return true;end;end;end;
+			local m35=(m00-m24+m22-m17)/m31;if m35*m35<m11 then local m33=m01+m23-m19-m35*m06;if m33*m33<m13 then local m34=m02+m21-m15-m35*m07;if m34*m34<m14 then return true;end;end;end;
+			local m35=(m00+m24+m22-m17)/m31;if m35*m35<m11 then local m33=m01+m23-m19-m35*m06;if m33*m33<m13 then local m34=m02+m21-m15-m35*m07;if m34*m34<m14 then return true;end;end;end;
+			local m35=(m00-m24-m22-m17)/m31;if m35*m35<m11 then local m33=m01-m23-m19-m35*m06;if m33*m33<m13 then local m34=m02-m21-m15-m35*m07;if m34*m34<m14 then return true;end;end;end;
+			local m35=(m00+m24-m22-m17)/m31;if m35*m35<m11 then local m33=m01-m23-m19-m35*m06;if m33*m33<m13 then local m34=m02-m21-m15-m35*m07;if m34*m34<m14 then return true;end;end;end;
+			local m35=(m01-m25+m23+m19)/m06;if m35*m35<m11 then local m33=m02+m21+m15-m35*m07;if m33*m33<m14 then local m34=m00+m22+m17-m35*m31;if m34*m34<m12 then return true;end;end;end;
+			local m35=(m01+m25+m23+m19)/m06;if m35*m35<m11 then local m33=m02+m21+m15-m35*m07;if m33*m33<m14 then local m34=m00+m22+m17-m35*m31;if m34*m34<m12 then return true;end;end;end;
+			local m35=(m01-m25-m23+m19)/m06;if m35*m35<m11 then local m33=m02-m21+m15-m35*m07;if m33*m33<m14 then local m34=m00-m22+m17-m35*m31;if m34*m34<m12 then return true;end;end;end;
+			local m35=(m01+m25-m23+m19)/m06;if m35*m35<m11 then local m33=m02-m21+m15-m35*m07;if m33*m33<m14 then local m34=m00-m22+m17-m35*m31;if m34*m34<m12 then return true;end;end;end;
+			local m35=(m01-m25+m23-m19)/m06;if m35*m35<m11 then local m33=m02+m21-m15-m35*m07;if m33*m33<m14 then local m34=m00+m22-m17-m35*m31;if m34*m34<m12 then return true;end;end;end;
+			local m35=(m01+m25+m23-m19)/m06;if m35*m35<m11 then local m33=m02+m21-m15-m35*m07;if m33*m33<m14 then local m34=m00+m22-m17-m35*m31;if m34*m34<m12 then return true;end;end;end;
+			local m35=(m01-m25-m23-m19)/m06;if m35*m35<m11 then local m33=m02-m21-m15-m35*m07;if m33*m33<m14 then local m34=m00-m22-m17-m35*m31;if m34*m34<m12 then return true;end;end;end;
+			local m35=(m01+m25-m23-m19)/m06;if m35*m35<m11 then local m33=m02-m21-m15-m35*m07;if m33*m33<m14 then local m34=m00-m22-m17-m35*m31;if m34*m34<m12 then return true;end;end;end;
+			return false
+		else
+			return AssumeTrue
+		end
+	end
+end
+
+
+local setmetatable	=setmetatable
+local components	=CFrame.new().components
+local Workspace		=Workspace
+local BoxCast		=Workspace.FindPartsInRegion3WithIgnoreList
+local unpack		=unpack
+local type			=type
+local IsA			=game.IsA
+local r3			=Region3.new
+local v3			=Vector3.new
+
+
+
+local function Region3BoundingBox(CFrame,Size)
+ 	local	x,y,z,
+			xx,yx,zx,
+			xy,yy,zy,
+			xz,yz,zz=components(CFrame)
+	local	sx,sy,sz=Size.x/2,Size.y/2,Size.z/2
+	local	px		=sx*(xx<0 and -xx or xx)
+					+sy*(yx<0 and -yx or yx)
+					+sz*(zx<0 and -zx or zx)
+	local	py		=sx*(xy<0 and -xy or xy)
+					+sy*(yy<0 and -yy or yy)
+					+sz*(zy<0 and -zy or zy)
+	local	pz		=sx*(xz<0 and -xz or xz)
+					+sy*(yz<0 and -yz or yz)
+					+sz*(zz<0 and -zz or zz)
+	return			r3(v3(x-px,y-py,z-pz),v3(x+px,y+py,z+pz))
+end
+
+
+
+local function FindAllPartsInRegion3(Region3,Ignore)
+	local Ignore=type(Ignore)=="table" and Ignore or {Ignore}
+	local Last=#Ignore
+	repeat
+		local Parts=BoxCast(Workspace,Region3,Ignore,100)
+		local Start=#Ignore
+		for i=1,#Parts do
+			Ignore[Start+i]=Parts[i]
+		end
+	until #Parts<100;
+	return {unpack(Ignore,Last+1,#Ignore)}
+end
+
+
+
+local function CastPoint(Region,Point)
+	return BoxPointCollision(Region.CFrame,Region.Size,Point)
+end
+
+
+
+local function CastSphere(Region,Center,Radius)
+	return BoxSphereCollision(Region.CFrame,Region.Size,Center,Radius)
+end
+
+
+
+local function CastBox(Region,CFrame,Size)
+	return BoxCollision(Region.CFrame,Region.Size,CFrame,Size)
+end
+
+
+
+local function CastPart(Region,Part)
+	return	(not IsA(Part,"Part") or Part.Shape=="Block") and
+			BoxCollision(Region.CFrame,Region.Size,Part.CFrame,Part.Size)
+			or BoxSphereCollision(Region.CFrame,Region.Size,Part.Position,Part.Size.x)
+end
+
+
+
+local function CastParts(Region,Parts)
+	local Inside={}
+	for i=1,#Parts do
+		if CastPart(Region,Parts[i]) then
+			Inside[#Inside+1]=Parts[i]
+		end
+	end
+	return Inside
+end
+
+
+
+local function Cast(Region,Ignore)
+	local Inside={}
+	local Parts=FindAllPartsInRegion3(Region.Region3,Ignore)
+	for i=1,#Parts do
+		if CastPart(Region,Parts[i]) then
+			Inside[#Inside+1]=Parts[i]
+		end
+	end
+	return Inside
+end
+
+
+
+local function NewRegion(CFrame,Size)
+	local Object	={
+		CFrame		=CFrame;
+		Size		=Size;
+		Region3		=Region3BoundingBox(CFrame,Size);
+		Cast		=Cast;
+		CastPart	=CastPart;
+		CastParts	=CastParts;
+		CastPoint	=CastPoint;
+		CastSphere	=CastSphere;
+		CastBox		=CastBox;
+					}
+	return			setmetatable({},{
+		__index=Object;
+		__newindex=function(_,Index,Value)
+			Object[Index]=Value
+			Object.Region3=Region3BoundingBox(Object.CFrame,Object.Size)
+		end;
+					})
+end
+
+
+
+Region.Region3BoundingBox	=Region3BoundingBox
+Region.FindAllPartsInRegion3=FindAllPartsInRegion3
+Region.BoxPointCollision	=BoxPointCollision
+Region.BoxSphereCollision	=BoxSphereCollision
+Region.BoxCollision			=BoxCollision
+Region.new					=NewRegion
+function Region.FromPart(Part)
+	return NewRegion(Part.CFrame,Part.Size)
+end
+
+return Region]]></ProtectedString>
+						<BinaryString name="Tags"></BinaryString>
+					</Properties>
+				</Item>
+				<Item class="Script" referent="RBX5476476194D74A3299CDF19DBE956EDA">
+					<Properties>
+						<bool name="Disabled">true</bool>
+						<Content name="LinkedSource"><null></null></Content>
+						<string name="Name">Freeze</string>
+						<string name="ScriptGuid">{24582A03-9A91-4CDE-B348-509798B658ED}</string>
+						<ProtectedString name="Source"><![CDATA[local Target = script:WaitForChild("Target").Value
+
+local Sounds = {
+	IceCrack = script:WaitForChild("IceCrack"),
+	Shatter = script:WaitForChild("Shatter")
+}
+
+local Torso = Target:FindFirstChild("Torso") or Target:FindFirstChild("UpperTorso")
+
+if not Target then script:Destroy() end
+
+local Humanoid = Target:FindFirstChildOfClass("Humanoid")
+Humanoid:UnequipTools()
+
+local Stop = false
+coroutine.wrap(function()
+	repeat
+		Humanoid.JumpPower = 0
+		Humanoid.WalkSpeed = 0
+		game:GetService("RunService").Heartbeat:Wait()
+	until Stop
+end)()
+
+local Services = {
+	Players = (game:FindService("Players") or game:GetService("Players")),
+	Debris = (game:FindService("Debris") or game:GetService("Debris")),
+	RunService = (game:FindService("RunService") or game:GetService("RunService")),
+}
+
+function Create(ty)
+	return function(data)
+		local obj = Instance.new(ty)
+		for k, v in pairs(data) do
+			if type(k) == 'number' then
+				v.Parent = obj
+			else
+				obj[k] = v
+			end
+		end
+		return obj
+	end
+end
+
+if Services.Players:GetPlayerFromCharacter(Target) then
+	local Disable = script:WaitForChild("DisableBackpack")
+	Disable.Parent = Services.Players:GetPlayerFromCharacter(Target):WaitForChild("Backpack")
+	Disable.Disabled = false
+	Services.Debris:AddItem(Disable,1)
+	Services.Players:GetPlayerFromCharacter(Target).CharacterRemoving:Connect(function(Char)--keeps people from a hidden inventory
+		local Enable = script:WaitForChild("EnableBackpack")
+		Enable.Parent = Services.Players:GetPlayerFromCharacter(Target):WaitForChild("Backpack")
+		Enable.Disabled = false
+		Services.Debris:AddItem(Enable,1)
+	end)
+end
+
+local ice = Create("Part"){
+	Shape = "Block", 
+	Size = Vector3.new(4.2,4,6.3)*0, 
+	CanCollide = true,
+	Anchored = true,
+	Locked = true,
+	Name = "Ice Block",
+	CFrame = Torso.CFrame*CFrame.Angles(math.rad(-90),0,0), 
+	Transparency = 0.4,
+	Parent = Target,
+}
+
+local iceBlockMesh = Create("SpecialMesh"){
+	MeshId = "http://www.roblox.com/asset/?id=66876751",
+	TextureId = "http://www.roblox.com/asset/?id=66876766",
+	Scale = Vector3.new(1.0, 1.0, 1.0)*0,
+	Parent = ice,
+}
+
+Sounds.IceCrack.Parent = ice
+Sounds.IceCrack:Play()
+
+local Puff = script:WaitForChild("Puff")
+Puff.Parent = ice
+Puff.Enabled = true
+
+local FrozenParts = {}
+
+for _,parts in pairs(Target:GetChildren()) do
+	if parts:IsA("BasePart") and Humanoid:GetLimb(parts) then
+		parts.Anchored = true
+		FrozenParts[#FrozenParts+1] = parts
+	end
+end
+
+for i=1,60,1 do
+	ice.Size = (Vector3.new(4.2,4,6.3)*.1):lerp(Vector3.new(4.2,4,6.3),i/60)
+	iceBlockMesh.Scale = (Vector3.new(1.0, 1.0, 1.0)*.1):lerp(Vector3.new(1.0, 1.0, 1.0),i/60)
+	ice.CFrame = Torso.CFrame*CFrame.Angles(math.rad(-90),0,0)
+	Services.RunService.Heartbeat:Wait()
+end
+
+local Duration,Start = 5.5,tick()
+
+repeat
+	Services.RunService.Heartbeat:Wait()
+until (tick()-Start) >= Duration or Humanoid.Health <= 0
+
+Sounds.Shatter.Parent = Torso
+Sounds.Shatter:Play()
+Services.Debris:AddItem(Sounds.Shatter,Sounds.Shatter.TimeLength+1)
+
+Stop = true
+ice:Destroy()
+Humanoid.JumpPower = 50
+Humanoid.WalkSpeed = 16
+
+local Seed = Random.new(tick())
+
+for _, parts in pairs(FrozenParts) do
+	if parts then
+		parts.Anchored = false
+		local DebrisIce = Create("Part"){
+			Size = Vector3.new(Seed:NextNumber(1,2),Seed:NextNumber(1,2),Seed:NextNumber(1,2)),
+			Locked = true,
+			Anchored = false,
+			Name = "Broken Ice",
+			CFrame = parts.CFrame,
+			Transparency = 0.3,
+			Material = Enum.Material.Glass,
+			TopSurface = Enum.SurfaceType.Smooth,
+			BottomSurface = Enum.SurfaceType.Smooth,
+			Color = (Seed:NextInteger(1,3) == 1 and Color3.fromRGB(170,255,255)) or Color3.fromRGB(0,170,255),
+			Parent = workspace
+		}
+		Services.Debris:AddItem(DebrisIce,Seed:NextNumber(3,5))
+	end
+end
+
+local FrostSparkles = script:WaitForChild("FrostSparkles")
+FrostSparkles.Parent = Torso
+FrostSparkles:Emit(FrostSparkles.Rate)
+Services.Debris:AddItem(FrostSparkles,FrostSparkles.Lifetime.Max)
+
+if Services.Players:GetPlayerFromCharacter(Target) then	
+	local Enable = script:WaitForChild("EnableBackpack")
+	Enable.Parent = Services.Players:GetPlayerFromCharacter(Target):WaitForChild("Backpack")
+	Enable.Disabled = false
+	Services.Debris:AddItem(Enable,1)
+end
+
+wait(2) -- Grace period (Your're Welcome EuroC2)
+
+script:Destroy()]]></ProtectedString>
+						<BinaryString name="Tags"></BinaryString>
+					</Properties>
+					<Item class="LocalScript" referent="RBX6CA9D28E6F6447898DBAEE4ED01C7C76">
+						<Properties>
+							<bool name="Disabled">true</bool>
+							<Content name="LinkedSource"><null></null></Content>
+							<string name="Name">DisableBackpack</string>
+							<string name="ScriptGuid">{CE87EC48-1D6B-42B6-8360-783362C35316}</string>
+							<ProtectedString name="Source"><![CDATA[--Much efficient way to hide the backpack without causing lag
+
+local StarterGui = game:GetService("StarterGui")
+
+StarterGui:SetCoreGuiEnabled(Enum.CoreGuiType.Backpack, false)]]></ProtectedString>
+							<BinaryString name="Tags"></BinaryString>
+						</Properties>
+					</Item>
+					<Item class="LocalScript" referent="RBX75E6AFC47CB6440190AAF193BE620D59">
+						<Properties>
+							<bool name="Disabled">true</bool>
+							<Content name="LinkedSource"><null></null></Content>
+							<string name="Name">EnableBackpack</string>
+							<string name="ScriptGuid">{26A4D8E0-3BFC-4FD7-8960-B44817ED92BF}</string>
+							<ProtectedString name="Source"><![CDATA[--Much efficient way to hide the backpack without causing lag
+
+local StarterGui = game:GetService("StarterGui")
+
+StarterGui:SetCoreGuiEnabled(Enum.CoreGuiType.Backpack, true)]]></ProtectedString>
+							<BinaryString name="Tags"></BinaryString>
+						</Properties>
+					</Item>
+					<Item class="Sound" referent="RBXBA486311862D4D508A54DFE14DD6E38D">
+						<Properties>
+							<float name="EmitterSize">10</float>
+							<bool name="Looped">false</bool>
+							<string name="Name">IceCrack</string>
+							<bool name="PlayOnRemove">false</bool>
+							<float name="PlaybackSpeed">1</float>
+							<bool name="Playing">false</bool>
+							<token name="RollOffMode">0</token>
+							<Ref name="SoundGroup">null</Ref>
+							<Content name="SoundId"><url>rbxassetid://32788850</url></Content>
+							<BinaryString name="Tags"></BinaryString>
+							<double name="TimePosition">0</double>
+							<float name="Volume">1</float>
+							<float name="xmlRead_MaxDistance_3">10000</float>
+						</Properties>
+					</Item>
+					<Item class="ParticleEmitter" referent="RBX8C05B81AF6BA44D9A9399DF4B53FCD30">
+						<Properties>
+							<Vector3 name="Acceleration">
+								<X>0</X>
+								<Y>0</Y>
+								<Z>0</Z>
+							</Vector3>
+							<ColorSequence name="Color">0 0.666667 1 1 0 1 1 1 1 0 </ColorSequence>
+							<float name="Drag">0</float>
+							<token name="EmissionDirection">1</token>
+							<bool name="Enabled">false</bool>
+							<NumberRange name="Lifetime">1 2 </NumberRange>
+							<float name="LightEmission">0</float>
+							<float name="LightInfluence">0.5</float>
+							<bool name="LockedToPart">false</bool>
+							<string name="Name">Puff</string>
+							<float name="Rate">10</float>
+							<NumberRange name="RotSpeed">-60 60 </NumberRange>
+							<NumberRange name="Rotation">0 0 </NumberRange>
+							<NumberSequence name="Size">0 2.75 0 1 1.9375 0.5625 </NumberSequence>
+							<NumberRange name="Speed">1 2 </NumberRange>
+							<Vector2 name="SpreadAngle">
+								<X>-180</X>
+								<Y>180</Y>
+							</Vector2>
+							<BinaryString name="Tags"></BinaryString>
+							<Content name="Texture"><url>rbxassetid://258128463</url></Content>
+							<NumberSequence name="Transparency">0 1 0 0.199597 0.493506 0 0.502016 0.493506 0 0.641129 0.52381 0 0.747984 0.549784 0 0.836694 0.623377 0 0.910282 0.709957 0 0.957661 0.800866 0 1 1 0 </NumberSequence>
+							<float name="VelocityInheritance">0.5</float>
+							<float name="ZOffset">0</float>
+						</Properties>
+					</Item>
+					<Item class="Sound" referent="RBX787E7314ED6148AFB8E85FE0F4A80F09">
+						<Properties>
+							<float name="EmitterSize">10</float>
+							<bool name="Looped">false</bool>
+							<string name="Name">Shatter</string>
+							<bool name="PlayOnRemove">false</bool>
+							<float name="PlaybackSpeed">1</float>
+							<bool name="Playing">false</bool>
+							<token name="RollOffMode">0</token>
+							<Ref name="SoundGroup">null</Ref>
+							<Content name="SoundId"><url>http://www.roblox.com/Asset?ID=87015121</url></Content>
+							<BinaryString name="Tags"></BinaryString>
+							<double name="TimePosition">0</double>
+							<float name="Volume">1</float>
+							<float name="xmlRead_MaxDistance_3">10000</float>
+						</Properties>
+					</Item>
+					<Item class="ParticleEmitter" referent="RBX004EAB815A0C4B788F647D3A4946858D">
+						<Properties>
+							<Vector3 name="Acceleration">
+								<X>0</X>
+								<Y>-10</Y>
+								<Z>0</Z>
+							</Vector3>
+							<ColorSequence name="Color">0 0.666667 1 1 0 1 0.666667 1 1 0 </ColorSequence>
+							<float name="Drag">2</float>
+							<token name="EmissionDirection">1</token>
+							<bool name="Enabled">false</bool>
+							<NumberRange name="Lifetime">1 2 </NumberRange>
+							<float name="LightEmission">1</float>
+							<float name="LightInfluence">0</float>
+							<bool name="LockedToPart">false</bool>
+							<string name="Name">FrostSparkles</string>
+							<float name="Rate">300</float>
+							<NumberRange name="RotSpeed">-200 200 </NumberRange>
+							<NumberRange name="Rotation">-180 180 </NumberRange>
+							<NumberSequence name="Size">0 0.5625 0.5625 0.05 0 0 0.104294 0.625 0.625 0.15 0 0 0.199386 0.6875 0.625 0.25 0 0 0.300613 0.6875 0.5625 0.35 0 0 0.404908 0.6875 0.5625 0.45 0 0 0.501534 0.75 0.625 0.55 0 0 0.599693 0.8125 0.6875 0.65 0 0 0.70092 0.6875 0.5625 0.75 0 0 0.800613 0.75 0.625 0.85 0 0 0.92638 0.6875 0.5 1 0 0 </NumberSequence>
+							<NumberRange name="Speed">20 40 </NumberRange>
+							<Vector2 name="SpreadAngle">
+								<X>-180</X>
+								<Y>180</Y>
+							</Vector2>
+							<BinaryString name="Tags"></BinaryString>
+							<Content name="Texture"><url>rbxassetid://298984512</url></Content>
+							<NumberSequence name="Transparency">0 0 0 1 1 0 </NumberSequence>
+							<float name="VelocityInheritance">0</float>
+							<float name="ZOffset">0</float>
+						</Properties>
+					</Item>
+				</Item>
+			</Item>
+		</Item>
+		<Item class="LocalScript" referent="RBX202D2B65DAF9429291DB4B12E2D59A49">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">Client</string>
+				<string name="ScriptGuid">{01FB0F29-967B-4F50-99C5-F2FDD6E2DF0E}</string>
+				<ProtectedString name="Source"><![CDATA[local Tool = script.Parent
+
+local Remote = Tool:WaitForChild("Remote",10)
+
+--local MouseInput = Tool:WaitForChild("MouseInput")
+
+local Services = {
+	Players = (game:FindService("Players") or game:GetService("Players")),
+	TweenService = (game:FindService("TweenService") or game:GetService("TweenService")),
+	RunService = (game:FindService("RunService") or game:GetService("RunService")),
+	Input = (game:FindService("ContextActionService") or game:GetService("ContextActionService"))
+}
+
+local Player,Character,Humanoid
+
+
+function Primary(actionName, inputState, inputObj)
+	if inputState == Enum.UserInputState.Begin then 
+		Remote:FireServer(Enum.KeyCode.Q)
+	end
+end
+
+--[[function Secondary(actionName, inputState, inputObj)
+	if inputState == Enum.UserInputState.Begin then 
+		Remote:FireServer(Enum.KeyCode.Q)
+	end
+end]]
+
+
+function Equipped()
+	Player = Services.Players.LocalPlayer
+	Character = Player.Character
+	Humanoid = Character:FindFirstChildOfClass("Humanoid")
+	if not Humanoid or not Humanoid.Parent or Humanoid.Health <= 0 then return end
+	Services.Input:BindAction("Primary",Primary,true,Enum.KeyCode.Q,Enum.KeyCode.ButtonX)
+	Services.Input:SetTitle("Primary","Ice Stalagmites")
+	Services.Input:SetPosition("Primary",UDim2.new(.5,0,-.5,0))
+	--[[Services.Input:BindAction("Secondary",Secondary,true,Enum.KeyCode.E,Enum.KeyCode.ButtonY)
+	Services.Input:SetTitle("Secondary","Blizzard")
+	Services.Input:SetPosition("Secondary",UDim2.new(.5,0,0,0))]]
+end
+
+function Unequipped()
+	Services.Input:UnbindAction("Primary")
+	--Services.Input:UnbindAction("Secondary")
+			
+end
+
+Tool.Equipped:Connect(Equipped)
+Tool.Unequipped:Connect(Unequipped)
+
+
+--[[function MouseInput.OnClientInvoke()
+	return game.Players.LocalPlayer:GetMouse().Hit.p
+end]]]]></ProtectedString>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+		</Item>
+		<Item class="LocalScript" referent="RBX2433C5AC67C64118AD23752C8B5D2276">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">MouseIcon</string>
+				<string name="ScriptGuid">{C7FB55D6-278F-4ABC-A339-0F5F8B37368E}</string>
+				<ProtectedString name="Source"><![CDATA[--Rescripted by Luckymaxer
+
+Mouse_Icon = "rbxasset://textures/GunCursor.png"
+Reloading_Icon = "rbxasset://textures/GunWaitCursor.png"
+
+Tool = script.Parent
+
+Mouse = nil
+
+function UpdateIcon()
+	if Mouse then
+		Mouse.Icon = Tool.Enabled and Mouse_Icon or Reloading_Icon
+	end
+end
+
+function OnEquipped(ToolMouse)
+	Mouse = ToolMouse
+	UpdateIcon()
+end
+
+function OnChanged(Property)
+	if Property == "Enabled" then
+		UpdateIcon()
+	end
+end
+
+Tool.Equipped:Connect(OnEquipped)
+Tool.Changed:Connect(OnChanged)
+]]></ProtectedString>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+		</Item>
+		<Item class="Folder" referent="RBXED4EE65C69AA4CD2B91BDBC5EDA40C5D">
+			<Properties>
+				<string name="Name">Animations</string>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+			<Item class="Folder" referent="RBXD3183E7074034F238910B145B3D538D2">
+				<Properties>
+					<string name="Name">R6</string>
+					<BinaryString name="Tags"></BinaryString>
+				</Properties>
+				<Item class="Animation" referent="RBXBDAE0EC4E5BA4A6F80FA7635F8C2BAF3">
+					<Properties>
+						<Content name="AnimationId"><url>http://www.roblox.com/Asset?ID=74894663</url></Content>
+						<string name="Name">LeftSlash</string>
+						<BinaryString name="Tags"></BinaryString>
+					</Properties>
+				</Item>
+				<Item class="Animation" referent="RBXA60FE7415ABF4AF3B2E7BF8DF81479C2">
+					<Properties>
+						<Content name="AnimationId"><url>http://www.roblox.com/Asset?ID=74897796</url></Content>
+						<string name="Name">OverHeadSwing</string>
+						<BinaryString name="Tags"></BinaryString>
+					</Properties>
+				</Item>
+				<Item class="Animation" referent="RBXCCC7CE1E89E443D38BBD01B80CA7381E">
+					<Properties>
+						<Content name="AnimationId"><url>http://www.roblox.com/Asset?ID=74813494</url></Content>
+						<string name="Name">RightSlash</string>
+						<BinaryString name="Tags"></BinaryString>
+					</Properties>
+				</Item>
+				<Item class="Animation" referent="RBX34C00834D61E40B09FD466142BD2DB71">
+					<Properties>
+						<Content name="AnimationId"><url>rbxassetid://93693205</url></Content>
+						<string name="Name">Summon</string>
+						<BinaryString name="Tags"></BinaryString>
+					</Properties>
+				</Item>
+			</Item>
+			<Item class="Folder" referent="RBX8BA18C39BC58431193E582722C74BBD3">
+				<Properties>
+					<string name="Name">R15</string>
+					<BinaryString name="Tags"></BinaryString>
+				</Properties>
+				<Item class="Animation" referent="RBX4222C87C95FB416AA52D682BB585935F">
+					<Properties>
+						<Content name="AnimationId"><url>rbxassetid://2458764950</url></Content>
+						<string name="Name">LeftSlash</string>
+						<BinaryString name="Tags"></BinaryString>
+					</Properties>
+				</Item>
+				<Item class="Animation" referent="RBX35342982A0484984BDAE005043AB027C">
+					<Properties>
+						<Content name="AnimationId"><url>rbxassetid://2458800614</url></Content>
+						<string name="Name">OverHeadSwing</string>
+						<BinaryString name="Tags"></BinaryString>
+					</Properties>
+				</Item>
+				<Item class="Animation" referent="RBX462B894C4A51427CB7F7B64CDFD918E4">
+					<Properties>
+						<Content name="AnimationId"><url>rbxassetid://2459004735</url></Content>
+						<string name="Name">RightSlash</string>
+						<BinaryString name="Tags"></BinaryString>
+					</Properties>
+				</Item>
+				<Item class="Animation" referent="RBXD88920B10C4D4FE78A30B2BCF1EEAD73">
+					<Properties>
+						<Content name="AnimationId"><url>rbxassetid://1296930651</url></Content>
+						<string name="Name">Summon</string>
+						<BinaryString name="Tags"></BinaryString>
+					</Properties>
+				</Item>
+			</Item>
+		</Item>
+		<Item class="Camera" referent="RBXAB79CA7750D4419384460EAAFABD1097">
+			<Properties>
+				<CoordinateFrame name="CFrame">
+					<X>10.0298796</X>
+					<Y>7.62056541</Y>
+					<Z>-7.77021551</Z>
+					<R00>0.0229035132</R00>
+					<R01>-0.0418715328</R01>
+					<R02>0.998860478</R02>
+					<R10>-0</R10>
+					<R11>0.99912256</R11>
+					<R12>0.0418825187</R12>
+					<R20>-0.99973768</R20>
+					<R21>-0.000959256839</R21>
+					<R22>0.0228834171</R22>
+				</CoordinateFrame>
+				<Ref name="CameraSubject">null</Ref>
+				<token name="CameraType">0</token>
+				<float name="FieldOfView">30</float>
+				<CoordinateFrame name="Focus">
+					<X>8.03215885</X>
+					<Y>7.53680038</Y>
+					<Z>-7.81598234</Z>
+					<R00>1</R00>
+					<R01>0</R01>
+					<R02>0</R02>
+					<R10>0</R10>
+					<R11>1</R11>
+					<R12>0</R12>
+					<R20>0</R20>
+					<R21>0</R21>
+					<R22>1</R22>
+				</CoordinateFrame>
+				<bool name="HeadLocked">true</bool>
+				<float name="HeadScale">1</float>
+				<string name="Name">ThumbnailCamera</string>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+		</Item>
+	</Item>
+	<SharedStrings>
+		<SharedString md5="745VHrRPS82nGn+eHO9aSQ==">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
+AAAPAAAABgAAAAEAAAAGAAAABwAAAAEAAAAHAAAACAAAAAEAAAAIAAAAAgAAAAIAAAAJAAAA
+CgAAAAIAAAAKAAAACwAAAAIAAAALAAAAAwAAAAIAAAAIAAAACQAAAAQAAAAMAAAADQAAAAQA
+AAANAAAABQAAAAUAAAANAAAADgAAAAUAAAAOAAAADwAAAAYAAAAPAAAAGAAAAAYAAAAYAAAA
+FwAAAAYAAAAXAAAAIQAAAAYAAAAhAAAAIwAAAAYAAAAjAAAAIgAAAAYAAAAiAAAAGgAAAAYA
+AAAaAAAAGQAAAAYAAAAZAAAAEAAAAAYAAAAQAAAACAAAAAYAAAAIAAAABwAAAAgAAAAQAAAA
+EQAAAAgAAAARAAAACQAAAAkAAAARAAAAEAAAAAkAAAAQAAAAEgAAAAkAAAASAAAAEwAAAAkA
+AAATAAAAFAAAAAkAAAAUAAAACgAAAAwAAAAVAAAADQAAAAwAAAAWAAAAFQAAAA0AAAAVAAAA
+FwAAAA0AAAAXAAAADgAAAA4AAAAXAAAAGAAAAA4AAAAYAAAADwAAABAAAAAZAAAAEgAAABIA
+AAAZAAAAGgAAABIAAAAaAAAAGwAAABIAAAAbAAAAHAAAABIAAAAcAAAAHQAAABIAAAAdAAAA
+HgAAABIAAAAeAAAAEwAAABUAAAAfAAAAFwAAABUAAAAWAAAAIAAAABUAAAAgAAAAIQAAABUA
+AAAhAAAAHwAAABYAAAAcAAAAIAAAABcAAAAfAAAAIQAAABoAAAAiAAAAGwAAABsAAAAiAAAA
+IAAAABsAAAAgAAAAHAAAACAAAAAiAAAAIwAAACAAAAAjAAAAIQAAABAAAAAAAAAAAAAAAAAA
+AAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAgD9mAAAABAAAAIQO7L0AAAi1Fvs0QI2Wy73LonO9
+Fvs0QHaEEL4AAAi1Vno/QNZB+D0AAAi1Fvs0QABn+b1ujpO9Vno/QHbtZb1H79K9Fvs0QBxT
+Cb4AAAi1YupAQH784r3KsWa9BOdCQLqWFj4AAAi1Vno/QP1j9z3Apvm6Fvs0QPIJ7b3Xa4y9
+YupAQIpsjb20kP+9Vno/QBX+y70xSKS9BOdCQIBIQju9k/O9Fvs0QBlYi70gIby7BOdCQG9Z
+gb0AAAi1q+ZCQCnNAj5ujpO9Vno/QN/J1z3LonO9Fvs0QKvt9j2ANjW7Fvs0QMVsDz4AAAi1
+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
+A66kvYMeYD0oDydAwDtCO+Er4L0oDydAwDtCO1WU870W+zRALknJvakzeT0W+zRAAMJrvfvB
+qD0oDydAQoyiPGrf1r0oDydAqWN0PdVw1L0W+zRAkg3Ivd3Gez0W+zRAdwU5vWAgwj0oDydA
+7+V3PcL2070W+zRAqDRRPSYhwr0oDydAEPllvWvp0j0W+zRAd55fvfz10z0W+zRAwFtkvKTe
+1j0oDydA0Fh+PTHq0r0W+zRAvASCPcHCqL0oDydAMRxcvQ9w1D0W+zRAwDtCOxsr4D0oDydA
+TjHUPWnIe70W+zRAnMWwPQ8gYL0oDydA28vXPU58c70W+zRA6mzVPTU1eb0W+zRAwDtCO4+T
+8z0W+zRA0Fh+PWvp0j0W+zRAqDRRPWAgwj0oDydA9By6PVfKGr0oDydATmD3PXhM97oW+zRA
+28vXPSyTcz0W+zRAnMWwPYMeYD0oDydA7i7LPQAARrUoDydA8kb4PQAARrUW+zRA5AAAAAAA
+AAABAAAAAgAAAAAAAAACAAAAAwAAAAAAAAADAAAABwAAAAAAAAAHAAAACwAAAAAAAAALAAAA
+DwAAAAAAAAAPAAAAEgAAAAAAAAASAAAAFwAAAAAAAAAXAAAAGwAAAAAAAAAbAAAAHgAAAAAA
+AAAeAAAAHQAAAAAAAAAdAAAAIwAAAAAAAAAjAAAAJwAAAAAAAAAnAAAAJAAAAAAAAAAkAAAA
+IAAAAAAAAAAgAAAAHwAAAAAAAAAfAAAAGQAAAAAAAAAZAAAAFQAAAAAAAAAVAAAAFAAAAAAA
+AAAUAAAAEAAAAAAAAAAQAAAADAAAAAAAAAAMAAAACAAAAAAAAAAIAAAABAAAAAAAAAAEAAAA
+BQAAAAAAAAAFAAAAAQAAAAEAAAAFAAAACQAAAAEAAAAJAAAADQAAAAEAAAANAAAAEQAAAAEA
+AAARAAAAFgAAAAEAAAAWAAAAGgAAAAEAAAAaAAAAIQAAAAEAAAAhAAAAJQAAAAEAAAAlAAAA
+JgAAAAEAAAAmAAAAIgAAAAEAAAAiAAAAHAAAAAEAAAAcAAAAGAAAAAEAAAAYAAAAEwAAAAEA
+AAATAAAADgAAAAEAAAAOAAAACgAAAAEAAAAKAAAABgAAAAEAAAAGAAAAAgAAAAIAAAAGAAAA
+AwAAAAMAAAAGAAAABwAAAAQAAAAIAAAABQAAAAUAAAAIAAAACQAAAAYAAAAKAAAABwAAAAcA
+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
+AAAJAAAABAAAAAcAAAAIAAAABQAAAAoAAAALAAAABQAAAAsAAAAGAAAABgAAAAsAAAAMAAAA
+BwAAAA0AAAAIAAAACAAAAA4AAAAJAAAACAAAAA0AAAAPAAAACAAAAA8AAAAQAAAACAAAABAA
+AAAOAAAACQAAAA4AAAAQAAAACQAAABAAAAASAAAACQAAABIAAAARAAAACQAAABEAAAAKAAAA
+CgAAABEAAAALAAAACwAAABEAAAASAAAACwAAABIAAAATAAAACwAAABMAAAAMAAAAEAAAAAAA
+AAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAACAP0gAAAAEAAAACrOcvUgXaz7Uvt4+
+XrCnPSwdaz7Uvt4+qGyoPUgXaz7qlAI/VG+dvUgXaz7qlAI/lPyRvUnWqz5cgQ0/lPyRvaKC
+pj7Uvt4+FwKdPaKCpj7Uvt4+FwKdPUnWqz5cgQ0/FwKdPWHCrj68TEw/FNeoPSwdaz7Bwzw/
+FNeoPUgXaz5oAkY/wNmdvSwdaz7Bwzw/lPyRvWHCrj68TEw/0rCdvUgXaz4ciVI/QNUvO1YU
+6z6J5i8/QNUvO8Un5j7Uvt4+/KYXvaOLzD7gvl4/BLItPaOLzD7gvl4/FwKdPdDTrT7gvl4/
+l5WoPUgXaz7gvl4/wNmdvSwdaz5oAkY/lPyRvdDTrT7gvl4/E5CdvUgXaz7gvl4/QNUvO4gn
+5T7gvl4/hAAAAAAAAAABAAAAAgAAAAAAAAACAAAACgAAAAAAAAAKAAAAEwAAAAAAAAATAAAA
+FgAAAAAAAAAWAAAADQAAAAAAAAANAAAAAwAAAAAAAAADAAAABAAAAAAAAAAEAAAABQAAAAAA
+AAAFAAAADwAAAAAAAAAPAAAABgAAAAAAAAAGAAAAAQAAAAEAAAAGAAAABwAAAAEAAAAHAAAA
+AgAAAAIAAAAHAAAACAAAAAIAAAAIAAAACQAAAAIAAAAJAAAACgAAAAMAAAALAAAADAAAAAMA
+AAAMAAAABAAAAAMAAAANAAAACwAAAAQAAAAOAAAADwAAAAQAAAAPAAAABQAAAAQAAAAMAAAA
+EAAAAAQAAAAQAAAADgAAAAYAAAAPAAAABwAAAAcAAAAPAAAADgAAAAcAAAAOAAAAEQAAAAcA
+AAARAAAACAAAAAgAAAARAAAAEgAAAAgAAAASAAAAEwAAAAgAAAATAAAACgAAAAgAAAAKAAAA
+CQAAAAsAAAANAAAAFAAAAAsAAAAUAAAADAAAAAwAAAAUAAAAFQAAAAwAAAAVAAAAEAAAAA0A
+AAAWAAAAFAAAAA4AAAAQAAAAFwAAAA4AAAAXAAAAEQAAABAAAAAVAAAAFgAAABAAAAAWAAAA
+EwAAABAAAAATAAAAEgAAABAAAAASAAAAEQAAABAAAAARAAAAFwAAABQAAAAWAAAAFQAAABAA
+AAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAgD9RAAAABAAAAGDVLzs3F+u+
+weMvP8UEkr2i1Ku+K4QNP2DVLzuGKua+4L7ePhsCnT2i1Ku+K4QNPwiyLT3Oisy+4L5eP+KF
+xzyEpdi+4L5eP2DVLztDKuW+4L5eP4qQm7yEpdi+4L5eP1y3F73Oisy+4L5ePyZnnb0KHWu+
+75QCPwyznL0KHWu+4L7ePsUEkr3ZgKa+4L7ePsUEkr3NwK6+vUxMPxsCnT3ZgKa+4L7ePmKw
+pz0KHWu+4L7ePnxkqD0KHWu+75QCPxsCnT3NwK6+vUxMPxsCnT020q2+4L5eP8UEkr020q2+
+4L5eP8LZnb0KHWu+w8M8P3cEpz0mF2u+L0QnP0SYnb0KHWu+4L5eP8LZnb0KHWu+n/9FPymu
+qD0mF2u+UoZSPxjXqD0KHWu+w8M8PxjXqD0KHWu+n/9FP5qVqD0KHWu+4L5eP5YAAAAAAAAA
+AQAAAAIAAAAAAAAAAgAAAAMAAAAAAAAAAwAAAAQAAAAAAAAABAAAAAUAAAAAAAAABQAAAAYA
+AAAAAAAABgAAAAcAAAAAAAAABwAAAAgAAAAAAAAACAAAAAEAAAABAAAACQAAAAoAAAABAAAA
+CgAAAAsAAAABAAAACwAAAAIAAAABAAAACAAAAAwAAAABAAAADAAAAAkAAAACAAAACwAAAAoA
+AAACAAAACgAAAA4AAAACAAAADgAAAA0AAAACAAAADQAAAAMAAAADAAAADQAAAA4AAAADAAAA
+DgAAAA8AAAADAAAADwAAABAAAAADAAAAEAAAAAQAAAAEAAAAEAAAABEAAAAEAAAAEQAAABoA
+AAAEAAAAGgAAABUAAAAEAAAAFQAAABIAAAAEAAAAEgAAAAgAAAAEAAAACAAAAAcAAAAEAAAA
+BwAAAAYAAAAEAAAABgAAAAUAAAAIAAAAEgAAAAwAAAAJAAAADAAAABMAAAAJAAAAEwAAABQA
+AAAJAAAAFAAAAAoAAAAKAAAAFAAAAA4AAAAMAAAAEgAAABUAAAAMAAAAFQAAABYAAAAMAAAA
+FgAAABMAAAAOAAAAFAAAABcAAAAOAAAAFwAAAA8AAAAPAAAAGAAAABAAAAAPAAAAFwAAABgA
+AAAQAAAAGQAAABoAAAAQAAAAGgAAABEAAAAQAAAAGAAAABkAAAATAAAAFgAAABQAAAAUAAAA
+FgAAABUAAAAUAAAAFQAAABcAAAAVAAAAGgAAABcAAAAXAAAAGgAAABkAAAAXAAAAGQAAABgA
+AAAQAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAIA/QgAAAAQAAAAI2pi9
+aIGMPuC+Xj9e36M9aIGMPuC+Xj8eutC9aIGMPuDqpj8JCJK9ANGtPuC+Xj+z+pw9ANGtPuC+
+Xj+z+pw9pJesPpE1dz+vsKM9aIGMPtasaz8eutC9aIGMPigPpz8eutC9WMuMPigPpz/Jtxe9
+O5XMPuC+Xj9tEXu9jIsDPygPpz/+QlS9bmEKPygPpz/Kry09O5XMPuC+Xj+BMi49bmEKPygP
+pz+cE1U9jIsDPygPpz9uUJM9WMuMPigPpz9uUJM9aIGMPigPpz/Y/y07lSzlPuC+Xj+Yizm8
+eDcMPygPpz/Y/y07Lx7vPiwadD+MJgU7eDcMPygPpz9Z15i7aIEMPygPpz94AAAAAAAAAAEA
+AAAGAAAAAAAAAAYAAAAQAAAAAAAAABAAAAAHAAAAAAAAAAcAAAACAAAAAAAAAAIAAAADAAAA
+AAAAAAMAAAAJAAAAAAAAAAkAAAARAAAAAAAAABEAAAAMAAAAAAAAAAwAAAAEAAAAAAAAAAQA
+AAABAAAAAQAAAAQAAAAFAAAAAQAAAAUAAAAGAAAAAgAAAAcAAAAIAAAAAgAAAAgAAAADAAAA
+AwAAAAgAAAAKAAAAAwAAAAoAAAALAAAAAwAAAAsAAAAJAAAABAAAAAwAAAANAAAABAAAAA0A
+AAAOAAAABAAAAA4AAAAFAAAABQAAAA4AAAAPAAAABQAAAA8AAAAGAAAABgAAAA8AAAAQAAAA
+BwAAABAAAAAPAAAABwAAAA8AAAAOAAAABwAAAA4AAAANAAAABwAAAA0AAAAUAAAABwAAABQA
+AAAVAAAABwAAABUAAAASAAAABwAAABIAAAALAAAABwAAAAsAAAAKAAAABwAAAAoAAAAIAAAA
+CQAAAAsAAAARAAAACwAAABIAAAARAAAADAAAABEAAAANAAAADQAAABEAAAATAAAADQAAABMA
+AAAUAAAAEQAAABIAAAAVAAAAEQAAABUAAAATAAAAEwAAABUAAAAUAAAAEAAAAAAAAAAAAAAA
+AAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAACAP0gAAAAEAAAA80GYu+J9DL/BDac/XFEGO7Y1
+DL/BDac/5kA5vLY1DL/BDac/qCovO1cq5b6qwV4/qCovO7Ib777jG3Q/L0UuPbhfCr/BDac/
+/0JUvbhfCr/BDac/lJbHPKWm2L6qwV4/kaabvKWm2L6qwV4/nhNVPQGKA7/BDac/y68tPZqT
+zL6qwV4/CgSdPanTrb6qwV4/bhF7vQGKA7/BDac/CgiSvanTrb6qwV4/yrcXvZqTzL6qwV4/
+b1CTPdTOjL7BDac/CgSdPVWarL4hN3c/X9+jPeWEjL6qwV4/H7rQvdTOjL7BDac/stCYveWE
+jL6qwV4/H7rQveWEjL576aY/b1CTPeWEjL7BDac/BrqjPeWEjL4wrGs/H7rQveWEjL7BDac/
+hAAAAAAAAAABAAAABQAAAAAAAAAFAAAACQAAAAAAAAAJAAAADwAAAAAAAAAPAAAAFQAAAAAA
+AAAVAAAAFwAAAAAAAAAXAAAAEgAAAAAAAAASAAAADAAAAAAAAAAMAAAABgAAAAAAAAAGAAAA
+AgAAAAAAAAACAAAAAwAAAAAAAAADAAAABAAAAAAAAAAEAAAAAQAAAAEAAAAEAAAABQAAAAIA
+AAAGAAAAAwAAAAMAAAAHAAAABQAAAAMAAAAFAAAABAAAAAMAAAAGAAAACAAAAAMAAAAIAAAA
+DgAAAAMAAAAOAAAADQAAAAMAAAANAAAAEwAAAAMAAAATAAAAEQAAAAMAAAARAAAACwAAAAMA
+AAALAAAACgAAAAMAAAAKAAAABwAAAAUAAAAHAAAACgAAAAUAAAAKAAAACwAAAAUAAAALAAAA
+CQAAAAYAAAAMAAAADQAAAAYAAAANAAAADgAAAAYAAAAOAAAACAAAAAkAAAALAAAAEAAAAAkA
+AAAQAAAADwAAAAsAAAARAAAAEAAAAAwAAAASAAAADQAAAA0AAAASAAAAFAAAAA0AAAAUAAAA
+EwAAAA8AAAAQAAAAFgAAAA8AAAAWAAAAFQAAABAAAAARAAAAFgAAABEAAAATAAAAFAAAABEA
+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
+3j8RqNC9jDMHPw8Y3T8RqNC9yDAHP+C+3j8Kkqq9CBdGP+C+3j/SAAAAAAAAAAEAAAAEAAAA
+AAAAAAQAAAAIAAAAAAAAAAgAAAASAAAAAAAAABIAAAAVAAAAAAAAABUAAAAKAAAAAAAAAAoA
+AAAFAAAAAAAAAAUAAAACAAAAAAAAAAIAAAADAAAAAAAAAAMAAAABAAAAAQAAAAMAAAAEAAAA
+AgAAAAUAAAADAAAAAwAAAAYAAAAOAAAAAwAAAA4AAAAcAAAAAwAAABwAAAAbAAAAAwAAABsA
+AAAdAAAAAwAAAB0AAAAPAAAAAwAAAA8AAAAHAAAAAwAAAAcAAAAEAAAAAwAAAAUAAAAGAAAA
+BAAAAAcAAAAJAAAABAAAAAkAAAATAAAABAAAABMAAAAgAAAABAAAACAAAAAfAAAABAAAAB8A
+AAAhAAAABAAAACEAAAARAAAABAAAABEAAAAIAAAABQAAAAoAAAALAAAABQAAAAsAAAAGAAAA
+BgAAAAsAAAAMAAAABgAAAAwAAAANAAAABgAAAA0AAAAOAAAABwAAAA8AAAANAAAABwAAAA0A
+AAAQAAAABwAAABAAAAAJAAAACAAAABEAAAASAAAACQAAABAAAAATAAAACgAAABQAAAALAAAA
+CgAAABUAAAAjAAAACgAAACMAAAAiAAAACgAAACIAAAAUAAAACwAAABYAAAAMAAAACwAAABQA
+AAAWAAAADAAAABYAAAAXAAAADAAAABcAAAAYAAAADAAAABgAAAAZAAAADAAAABkAAAAaAAAA
+DAAAABoAAAANAAAADQAAABsAAAAcAAAADQAAABwAAAAOAAAADQAAABoAAAAQAAAADQAAAA8A
+AAAdAAAADQAAAB0AAAAbAAAAEAAAABoAAAAeAAAAEAAAAB4AAAAfAAAAEAAAAB8AAAAgAAAA
+EAAAACAAAAATAAAAEQAAACEAAAAeAAAAEQAAAB4AAAAaAAAAEQAAABoAAAAZAAAAEQAAABkA
+AAAkAAAAEQAAACQAAAAjAAAAEQAAACMAAAAVAAAAEQAAABUAAAASAAAAFAAAACIAAAAYAAAA
+FAAAABgAAAAXAAAAFAAAABcAAAAWAAAAGAAAACIAAAAjAAAAGAAAACMAAAAkAAAAGAAAACQA
+AAAZAAAAHgAAACEAAAAfAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA
+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
+AAACAAAAAwAAAAAAAAADAAAAAQAAAAEAAAADAAAABAAAAAEAAAAEAAAABQAAAAEAAAAFAAAA
+BgAAAAIAAAAHAAAACAAAAAIAAAAIAAAAAwAAAAIAAAAJAAAABwAAAAMAAAAIAAAABwAAAAMA
+AAAHAAAADgAAAAMAAAAOAAAAFgAAAAMAAAAWAAAAHgAAAAMAAAAeAAAAHAAAAAMAAAAcAAAA
+GgAAAAMAAAAaAAAADwAAAAMAAAAPAAAACgAAAAMAAAAKAAAABQAAAAMAAAAFAAAABAAAAAUA
+AAAKAAAACwAAAAUAAAALAAAABgAAAAYAAAALAAAADAAAAAcAAAAJAAAADQAAAAcAAAANAAAA
+FAAAAAcAAAAUAAAAHQAAAAcAAAAdAAAAFwAAAAcAAAAXAAAADgAAAAoAAAAPAAAAEAAAAAoA
+AAAQAAAAEQAAAAoAAAARAAAAEgAAAAoAAAASAAAACwAAAAsAAAASAAAAGwAAAAsAAAAbAAAA
+IgAAAAsAAAAiAAAAHwAAAAsAAAAfAAAAHQAAAAsAAAAdAAAAFAAAAAsAAAAUAAAAEwAAAAsA
+AAATAAAADAAAAA4AAAAVAAAAFgAAAA4AAAAXAAAAGAAAAA4AAAAYAAAAGQAAAA4AAAAZAAAA
+FQAAAA8AAAAaAAAAEAAAABAAAAAaAAAAEgAAABAAAAASAAAAEQAAABIAAAAaAAAAHAAAABIA
+AAAcAAAAHgAAABIAAAAeAAAAIQAAABIAAAAhAAAAIAAAABIAAAAgAAAAGwAAABUAAAAZAAAA
+FgAAABYAAAAZAAAAHgAAABcAAAAdAAAAHwAAABcAAAAfAAAAGAAAABgAAAAgAAAAIQAAABgA
+AAAhAAAAGQAAABgAAAAfAAAAIgAAABgAAAAiAAAAGwAAABgAAAAbAAAAIAAAABkAAAAhAAAA
+HgAAABAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAgD9jAAAABAAAAIqN
+Xr0AAAAAKA+nP7IIib1w3Co9KA+nP+ypFj0AAAAAKA+nP3QFhb0AAAAAa4a5P2Lhsr0U1WU9
+6US7P2MkkL104lQ9aLKnPx+60L3TeCo+KA+nP8ctSj1w3Co9KA+nP3eStT0AAAAAfr3eP6RG
+jb0AAAAAH6jSP9mcvr1wm3Y9H6jSPx+60L2hv4w+KA+nPx+60L0sUxY+DT3cP9VHUj1olUw9
+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
+CgAAABAAAAAAAAAAEAAAABYAAAAAAAAAFgAAABcAAAAAAAAAFwAAABEAAAAAAAAAEQAAAAsA
+AAAAAAAACwAAAAQAAAAAAAAABAAAAAMAAAAAAAAAAwAAAAEAAAABAAAAAwAAAAQAAAABAAAA
+BAAAAAUAAAABAAAABQAAAAYAAAABAAAABgAAAAcAAAABAAAABwAAAAgAAAABAAAACAAAAAkA
+AAABAAAACQAAAAoAAAABAAAACgAAAAIAAAAEAAAACwAAAAUAAAAFAAAACwAAAAwAAAAFAAAA
+DAAAAA0AAAAFAAAADQAAAAYAAAAGAAAADQAAAAwAAAAGAAAADAAAABMAAAAGAAAAEwAAABoA
+AAAGAAAAGgAAABkAAAAGAAAAGQAAAB0AAAAGAAAAHQAAABwAAAAGAAAAHAAAABsAAAAGAAAA
+GwAAABQAAAAGAAAAFAAAAA8AAAAGAAAADwAAAA4AAAAGAAAADgAAAAgAAAAGAAAACAAAAAcA
+AAAIAAAADgAAAAkAAAAJAAAADgAAAA8AAAAJAAAADwAAABAAAAAJAAAAEAAAAAoAAAALAAAA
+EQAAABIAAAALAAAAEgAAAAwAAAAMAAAAEgAAABMAAAAPAAAAFAAAABUAAAAPAAAAFQAAABAA
+AAAQAAAAFQAAABYAAAARAAAAFwAAABgAAAARAAAAGAAAABIAAAASAAAAGAAAABkAAAASAAAA
+GQAAABoAAAASAAAAGgAAABMAAAAUAAAAGwAAABUAAAAVAAAAGwAAABwAAAAVAAAAHAAAABgA
+AAAVAAAAGAAAABYAAAAWAAAAGAAAABcAAAAYAAAAHAAAAB0AAAAYAAAAHQAAABkAAAA=</SharedString>
+	</SharedStrings>
+</roblox>

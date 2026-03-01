@@ -1,0 +1,681 @@
+<roblox xmlns:xmime="http://www.w3.org/2005/05/xmlmime" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.roblox.com/roblox.xsd" version="4">
+	<External>null</External>
+	<External>nil</External>
+	<Item class="Tool" referent="RBX6163B7C4EBB148A3B64FE637B4487D11">
+		<Properties>
+			<bool name="CanBeDropped">true</bool>
+			<bool name="Enabled">true</bool>
+			<CoordinateFrame name="Grip">
+				<X>0</X>
+				<Y>0</Y>
+				<Z>0</Z>
+				<R00>1</R00>
+				<R01>0</R01>
+				<R02>0</R02>
+				<R10>0</R10>
+				<R11>-1</R11>
+				<R12>0</R12>
+				<R20>0</R20>
+				<R21>0</R21>
+				<R22>-1</R22>
+			</CoordinateFrame>
+			<bool name="ManualActivationOnly">false</bool>
+			<string name="Name">Kodachi</string>
+			<bool name="RequiresHandle">true</bool>
+			<Content name="TextureId"><url>http://www.roblox.com/asset/?id= 51274893 </url></Content>
+			<string name="ToolTip"></string>
+		</Properties>
+		<Item class="Part" referent="RBX2EA9EF1E9FCE428DB79178B70FF8364E">
+			<Properties>
+				<bool name="Anchored">false</bool>
+				<float name="BackParamA">-0.5</float>
+				<float name="BackParamB">0.5</float>
+				<token name="BackSurface">0</token>
+				<token name="BackSurfaceInput">0</token>
+				<float name="BottomParamA">-0.5</float>
+				<float name="BottomParamB">0.5</float>
+				<token name="BottomSurface">4</token>
+				<token name="BottomSurfaceInput">0</token>
+				<int name="BrickColor">107</int>
+				<CoordinateFrame name="CFrame">
+					<X>-9.00500107</X>
+					<Y>35.2500496</Y>
+					<Z>24.005024</Z>
+					<R00>0.711067379</R00>
+					<R01>0.70312345</R01>
+					<R02>0</R02>
+					<R10>0.70312345</R10>
+					<R11>-0.711067379</R11>
+					<R12>0</R12>
+					<R20>0</R20>
+					<R21>0</R21>
+					<R22>-1</R22>
+				</CoordinateFrame>
+				<bool name="CanCollide">true</bool>
+				<PhysicalProperties name="CustomPhysicalProperties">
+					<CustomPhysics>false</CustomPhysics>
+				</PhysicalProperties>
+				<float name="Elasticity">0.5</float>
+				<float name="Friction">0.300000012</float>
+				<float name="FrontParamA">-0.5</float>
+				<float name="FrontParamB">0.5</float>
+				<token name="FrontSurface">0</token>
+				<token name="FrontSurfaceInput">0</token>
+				<float name="LeftParamA">-0.5</float>
+				<float name="LeftParamB">0.5</float>
+				<token name="LeftSurface">0</token>
+				<token name="LeftSurfaceInput">0</token>
+				<bool name="Locked">true</bool>
+				<token name="Material">256</token>
+				<string name="Name">Handle</string>
+				<float name="Reflectance">0</float>
+				<float name="RightParamA">-0.5</float>
+				<float name="RightParamB">0.5</float>
+				<token name="RightSurface">0</token>
+				<token name="RightSurfaceInput">0</token>
+				<Vector3 name="RotVelocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<float name="TopParamA">-0.5</float>
+				<float name="TopParamB">0.5</float>
+				<token name="TopSurface">3</token>
+				<token name="TopSurfaceInput">0</token>
+				<float name="Transparency">0</float>
+				<Vector3 name="Velocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<token name="formFactorRaw">3</token>
+				<token name="shape">1</token>
+				<Vector3 name="size">
+					<X>0.449999928</X>
+					<Y>6.10000229</Y>
+					<Z>0.419998407</Z>
+				</Vector3>
+			</Properties>
+			<Item class="SpecialMesh" referent="RBX3DE0FB06DBC14360B98DEED3D260F9A5">
+				<Properties>
+					<token name="LODX">2</token>
+					<token name="LODY">2</token>
+					<Content name="MeshId"><url>http://www.roblox.com/asset/?id=51237272 </url></Content>
+					<token name="MeshType">5</token>
+					<string name="Name">Mesh</string>
+					<Vector3 name="Offset">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+					</Vector3>
+					<Vector3 name="Scale">
+						<X>0.600000024</X>
+						<Y>0.600000024</Y>
+						<Z>0.600000024</Z>
+					</Vector3>
+					<Content name="TextureId"><url>http://www.roblox.com/asset/?id= 51237309 </url></Content>
+					<Vector3 name="VertexColor">
+						<X>1</X>
+						<Y>1</Y>
+						<Z>1</Z>
+					</Vector3>
+				</Properties>
+			</Item>
+		</Item>
+		<Item class="LocalScript" referent="RBXF9939FFD03C24124933BD34A1C08B6BD">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">Local Gui</string>
+				<string name="ScriptGuid">{957B6851-9C9E-4CCD-BC45-AB7985CA8832}</string>
+				<ProtectedString name="Source"><![CDATA[Tool = script.Parent
+
+local stillEquipped = false
+
+function onEquippedLocal(mouse)
+	stillEquipped = true
+	if mouse == nil then 
+	--	print("Mouse not found")
+		return
+	end
+	while stillEquipped do 
+	--	print("Setting Mouse to go")
+		mouse.Icon = "rbxasset://textures\\GunCursor.png"
+		while Tool.Enabled and stillEquipped do 
+			wait(0.01)
+		end
+	--	print("Setting Mouse to wait")
+		mouse.Icon = "rbxasset://textures\\GunWaitCursor.png"
+		while not Tool.Enabled and stillEquipped do 
+			wait(0.01)
+		end	
+	end
+end
+
+
+function onUnequippedLocal()
+	stillEquipped = false
+end
+
+Tool.Equipped:connect(onEquippedLocal)
+Tool.Unequipped:connect(onUnequippedLocal)]]></ProtectedString>
+			</Properties>
+		</Item>
+		<Item class="Script" referent="RBX4B8DF13211D64C4989E7C4A392CEE190">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">KodachiScript</string>
+				<string name="ScriptGuid">{E02CABA0-F50F-4FBD-9D74-A7A8700FDB5C}</string>
+				<ProtectedString name="Source"><![CDATA[--[[
+	Fixed by ArceusInator.  Now works with FE and has a mobile button for equipping the second kodachi.  Fixed teamkilling.  Fixed an issue with the animation freezing.
+--]]
+
+-- Right Sword 51288759 
+-- Left Sword 51286923
+-- Kodachi without Right Sword 51287154 
+-- Sheath Only 51286751
+-- Full Kodachi 51237272
+-- Texture 51237309
+
+local GLib = require(206209239)
+
+local Tool = script.Parent
+local Kodachi = Tool.Handle
+
+local vCharacter 
+local swordActive = Tool.SwordActive
+
+Tool.Enabled = true
+
+local Sword
+
+local connection
+
+local hiddenBladeActive = Tool.HiddenBladeActive
+
+local damage = 20
+
+local sheath
+
+local batto = Tool.Batto
+
+function blow(hit)
+	humanoid = hit.Parent:FindFirstChild("Humanoid")
+	vCharacter = Tool.Parent
+	myHumanoid = vCharacter:FindFirstChild("Humanoid")
+	vPlayer = game.Players:GetPlayerFromCharacter(vCharacter)
+	local tPlayer = GLib.GetPlayerFromPart(hit)
+	if humanoid ~= nil and humanoid ~= myHumanoid and myHumanoid ~= nil and (not tPlayer or not GLib.IsTeammate(tPlayer, vPlayer)) then 
+		rightArm = vCharacter:FindFirstChild("Right Arm") or vCharacter:FindFirstChild('RightHand')
+		if rightArm then 
+			rightGrip = rightArm:FindFirstChild("RightGrip")
+			if rightGrip and (rightGrip.Part0 == Sword or rightGrip.Part1 == Sword) then 
+				tagHumanoid(humanoid, vPlayer)
+				if hiddenBladeActive.Value == 0 then damage = 30 else damage = 20 end
+				humanoid:TakeDamage(damage)
+				wait(1.0)
+				untagHumanoid(humanoid)
+			end
+		end
+	end
+end
+
+function tagHumanoid(humanoid, player)
+	if humanoid then 
+		creatorTag = Instance.new("ObjectValue")
+		creatorTag.Value = player
+		creatorTag.Name = "creator"
+		creatorTag.Parent = humanoid
+	end
+end
+
+function untagHumanoid(humanoid)
+	if humanoid then 
+		tag = humanoid:FindFirstChild("creator")
+		if tag then tag:Remove() end
+	end
+end
+
+
+function onActivated()
+	if Tool.Enabled == false then
+		return
+	end 
+
+	Tool.Enabled = false 
+
+	vCharacter = Tool.Parent
+	myHumanoid = vCharacter:FindFirstChild("Humanoid")
+	if myHumanoid == nil then 
+		return
+	end
+	if swordActive.Value == 0 then
+		wait(0.2)
+		leftArm = vCharacter:FindFirstChild("Left Arm") or vCharacter:FindFirstChild('LeftHand')
+		if leftArm then 
+			leftGrip = leftArm:FindFirstChild("LeftGrip")
+			if leftGrip then 
+				Kodachi.Mesh.MeshId = "http://www.roblox.com/asset/?id=51287154"
+			end
+		end
+
+		Sword = Instance.new("Part")
+		Sword.Name = "Sword"
+		Sword.FormFactor = 3
+		Sword.Shape = "Block"
+		Sword.Size = Vector3.new(0.45, 3, 0.42)
+		Sword.CanCollide = false
+		
+		rightSwordMesh = Instance.new("SpecialMesh")
+		rightSwordMesh.Parent = Sword
+		rightSwordMesh.MeshId = "http://www.roblox.com/asset/?id=51288759"
+		rightSwordMesh.TextureId = "http://www.roblox.com/asset/?id=51237309"
+		rightSwordMesh.Scale = Vector3.new(0.6, 0.6, 0.6)
+
+		Sword.Parent = vCharacter
+
+		rightArm = vCharacter:FindFirstChild("Right Arm") or vCharacter:FindFirstChild('RightHand')
+		rightGrip = Instance.new("Weld")
+		rightGrip.Part0 = rightArm
+		rightGrip.Part1 = Sword
+		if myHumanoid then
+			if myHumanoid.RigType == Enum.HumanoidRigType.R6 then
+				rightGrip.C1 = (CFrame.new(Vector3.new(0, 0, 0)) * CFrame.Angles(math.pi/2, 0.0, math.pi/2)) + Vector3.new(-1, -1.25, 0)
+			elseif myHumanoid.RigType == Enum.HumanoidRigType.R15 then
+				rightGrip.C1 = (CFrame.new(Vector3.new(0, 0, 0)) * CFrame.Angles(math.pi/2, 0.0, math.pi/2)) + Vector3.new(-0.2, -1.25, 0)
+			end
+		end
+		rightGrip.Name = "RightGrip"
+		rightGrip.Parent = rightArm
+		connection = Sword.Touched:connect(blow)
+		swordActive.Value = 1
+	end
+
+	wait(1.0)	
+	batto.Value = 1
+	Tool.Enabled = true 
+end
+
+function onEquipped()
+--	print("ON EQUIP")
+	vCharacter = Tool.Parent
+	torso = vCharacter:FindFirstChild("Torso") or vCharacter:FindFirstChild('UpperTorso')
+	if torso ~= nil then 
+		rightArm = vCharacter:FindFirstChild("Right Arm") or vCharacter:FindFirstChild('RightHand')
+		leftArm = vCharacter:FindFirstChild("Left Arm") or vCharacter:FindFirstChild('LeftHand')
+		if rightArm then rightGrip = rightArm:FindFirstChild("RightGrip") end
+		if rightGrip then 
+			rightGrip.Parent = leftArm
+			rightGrip.Name = "LeftGrip"
+			rightGrip.Part0 = leftArm
+			rightGrip.Part1 = Kodachi	
+			rightGrip.C1 = rightGrip.C1 * CFrame.Angles(0, math.pi/2, 0)
+		end
+	end
+end
+
+function onUnequipped()
+	if Sword then Sword:Destroy() end
+
+	if connection then connection:disconnect() end
+	if Kodachi then 
+		Kodachi.Mesh.MeshId = "http://www.roblox.com/asset/?id=51237272" 
+		if Kodachi then Kodachi.Transparency = 0.0 end
+	end
+	if swordActive then swordActive.Value = 0 end
+	if batto then batto.Value = 0 end
+end
+
+Tool.Activated:connect(onActivated)
+Tool.Equipped:connect(onEquipped)
+Tool.Unequipped:connect(onUnequipped)
+]]></ProtectedString>
+			</Properties>
+		</Item>
+		<Item class="LocalScript" referent="RBX3F815EF65DE041F8BDB6E71E035B4870">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">LocalScript</string>
+				<string name="ScriptGuid">{C5666B77-F263-45B1-AD44-0CACB3C96401}</string>
+				<ProtectedString name="Source"><![CDATA[local CAS, UIS = game:GetService'ContextActionService', game:GetService'UserInputService'
+
+script.Parent.Equipped:connect(function(mouse)
+	mouse.Button1Down:connect(function() script.Parent.Input:FireServer('Mouse1', true, mouse.Hit.p) end)
+	mouse.Button1Up:connect(function() script.Parent.Input:FireServer('Mouse1', false, mouse.Hit.p) end)
+	mouse.KeyDown:connect(function(key) script.Parent.Input:FireServer('KeyDown', key) end)
+	
+	if UIS.TouchEnabled then
+		CAS:BindActionToInputTypes(
+			'TwinKodachi_DualWeild',
+			function(action, state, input)
+				if state == Enum.UserInputState.Begin then
+					script.Parent.Input:FireServer('KeyDown', 'q')
+				end
+			end,
+			true,
+			''
+		)
+		CAS:SetTitle('TwinKodachi_DualWeild', 'Dual Weild')
+	end
+end)
+
+script.Parent.Unequipped:connect(function()
+	if UIS.TouchEnabled then
+		CAS:UnbindAction('TwinKodachi_DualWeild')
+	end
+end)]]></ProtectedString>
+			</Properties>
+		</Item>
+		<Item class="Animation" referent="RBX5C97E6F2563B489695C9700C57E5167D">
+			<Properties>
+				<Content name="AnimationId"><url>http://www.roblox.com/Asset?ID=49867748</url></Content>
+				<string name="Name">KodachiWalk</string>
+			</Properties>
+		</Item>
+		<Item class="Animation" referent="RBX51635B9B408147149822027AF9D4C857">
+			<Properties>
+				<Content name="AnimationId"><url>http://www.roblox.com/Asset?ID=211953288</url></Content>
+				<string name="Name">SlashAnim</string>
+			</Properties>
+		</Item>
+		<Item class="NumberValue" referent="RBX8D8AFADCD0944AC182B4492F08AB0D88">
+			<Properties>
+				<string name="Name">SwordActive</string>
+				<double name="Value">0</double>
+			</Properties>
+		</Item>
+		<Item class="NumberValue" referent="RBX445347D136384B8AA918B16AE165459F">
+			<Properties>
+				<string name="Name">HiddenBladeActive</string>
+				<double name="Value">0</double>
+			</Properties>
+		</Item>
+		<Item class="Animation" referent="RBX2056EE511E6A49AA901416DD773E269D">
+			<Properties>
+				<Content name="AnimationId"><url>rbxassetid://738744566</url></Content>
+				<string name="Name">R15Battojutsu</string>
+			</Properties>
+		</Item>
+		<Item class="Animation" referent="RBXC49E8226A3E643F8A97018EE6388DE68">
+			<Properties>
+				<Content name="AnimationId"><url>http://www.roblox.com/Asset?ID=51343632</url></Content>
+				<string name="Name">DualSlash</string>
+			</Properties>
+		</Item>
+		<Item class="NumberValue" referent="RBX8591ADFACB4D46E192492DE79D4965F8">
+			<Properties>
+				<string name="Name">Batto</string>
+				<double name="Value">0</double>
+			</Properties>
+		</Item>
+		<Item class="Sound" referent="RBXA016328BE43D4EF795DA296FE285DBD5">
+			<Properties>
+				<float name="EmitterSize">10</float>
+				<bool name="Looped">false</bool>
+				<string name="Name">DualSlashSound</string>
+				<bool name="PlayOnRemove">false</bool>
+				<float name="PlaybackSpeed">2</float>
+				<bool name="Playing">false</bool>
+				<token name="RollOffMode">0</token>
+				<Ref name="SoundGroup">null</Ref>
+				<Content name="SoundId"><url>http://www.roblox.com/asset/?id=48156432 </url></Content>
+				<double name="TimePosition">0</double>
+				<float name="Volume">1</float>
+				<float name="xmlRead_MaxDistance_3">10000</float>
+			</Properties>
+		</Item>
+		<Item class="Script" referent="RBXD2D72482E54846F088066F13D2878651">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">AnimateScript</string>
+				<string name="ScriptGuid">{DB368C0F-211D-4C51-9468-BC733DB6B968}</string>
+				<ProtectedString name="Source"><![CDATA[local Tool = script.Parent
+local Kodachi = Tool:WaitForChild("Handle")
+
+local vCharacter
+local walkAnim
+local slashAnim
+
+local stabAnim
+
+local HiddenBlade
+
+
+local lastKeyDown = 0
+local dashTime = 0
+local lastSlash = 0
+
+local myHumanoid
+local dualSlashSound
+
+swordActive = Tool:WaitForChild("SwordActive")
+hiddenBladeActive = Tool:WaitForChild("HiddenBladeActive")
+batto = Tool:WaitForChild("Batto")
+
+-- game service
+local r = game:GetService("RunService")
+
+local damage = 20
+
+function blow(hit)
+	humanoid = hit.Parent:FindFirstChild("Humanoid")
+	vCharacter = Tool.Parent
+	myHumanoid = vCharacter:FindFirstChild("Humanoid")
+	vPlayer = game.Players:GetPlayerFromCharacter(vCharacter)
+	if humanoid ~= nil and humanoid ~= myHumanoid and myHumanoid ~= nil then 
+		leftArm = vCharacter:FindFirstChild("Left Arm") or vCharacter:FindFirstChild('LeftHand')
+		if rightArm then 
+			leftGrip = leftArm:FindFirstChild("LeftGrip1")
+			if leftGrip and (leftGrip.Part0 == HiddenBlade or leftGrip.Part1 == HiddenBlade) then 
+				tagHumanoid(humanoid, vPlayer)
+				humanoid:TakeDamage(damage)
+				wait(1.0)
+				untagHumanoid(humanoid)
+			end
+		end
+	end
+end
+
+function tagHumanoid(humanoid, player)
+	if humanoid then 
+		creatorTag = Instance.new("ObjectValue")
+		creatorTag.Value = player
+		creatorTag.Name = "creator"
+		creatorTag.Parent = humanoid
+	end
+end
+
+function untagHumanoid(humanoid)
+	if humanoid then 
+		tag = humanoid:FindFirstChild("creator")
+		if tag then tag:Remove() end
+	end
+end
+
+function initiateHiddenBlade(key)
+	key = key:lower()-- print('onkey',key=='q',key=='w')
+	if key == "q" then		
+		vChar = Tool.Parent
+		myHumanoid = vChar:FindFirstChild("Humanoid")
+		if myHumanoid == nil then 
+		--	print("Humanoid not found")		
+			return
+		end
+		
+		if hiddenBladeActive.Value == 0 and swordActive.Value == 1 then 			
+			--initiateCloneAnim = myHumanoid:LoadAnimation(Tool.initiateCloneAnim)
+			--initiateCloneAnim:Play(0, 1.0, 1.0)
+			wait(0.4)
+
+			HiddenBlade = Instance.new("Part")
+			HiddenBlade.Name = "Sword"
+			HiddenBlade.FormFactor = 3
+			HiddenBlade.Shape = "Block"
+			HiddenBlade.Size = Vector3.new(0.45, 3, 0.42)
+			HiddenBlade.CanCollide = false
+
+			leftSwordMesh = Instance.new("SpecialMesh")
+			leftSwordMesh.Parent = HiddenBlade
+			leftSwordMesh.MeshId = "http://www.roblox.com/asset/?id=51286923"
+			leftSwordMesh.TextureId = "http://www.roblox.com/asset/?id=51237309"
+			leftSwordMesh.Scale = Vector3.new(0.6, 0.6, 0.6)
+
+			HiddenBlade.Parent = vChar	
+
+			leftArm = vChar:FindFirstChild("Left Arm") or vChar:FindFirstChild('LeftHand')
+			
+			if Tool.Parent:FindFirstChild("Humanoid") ~= nil then
+				leftGrip = leftArm:FindFirstChild("LeftGrip")
+				if leftGrip then Kodachi.Transparency = 1.0 end
+				local leftWeld = Instance.new("Weld")
+				leftWeld.Name = "LeftGrip1"
+				leftWeld.Parent = leftArm
+				leftWeld.Part0 = leftArm
+				leftWeld.Part1 = HiddenBlade
+				if myHumanoid then
+					if myHumanoid.RigType == Enum.HumanoidRigType.R6 then
+						leftWeld.C1 = (CFrame.new(Vector3.new(0, 0, 0)) * CFrame.Angles(-math.pi/2, 0.0, math.pi/2)) + Vector3.new(-1, 2.5, 0)
+					elseif myHumanoid.RigType == Enum.HumanoidRigType.R15 then
+						leftWeld.C1 = (CFrame.new(Vector3.new(0, 0, 0)) * CFrame.Angles(-math.pi/2, 0.0, math.pi/2)) + Vector3.new(-0.2, 2.5, 0)
+					end
+				end						
+				--leftWeld.C1 = (CFrame.new(Vector3.new(0, 0, 0)) * CFrame.Angles(-math.pi/2, 0, math.pi/2)) + Vector3.new(-1, 2.5, 0)
+				hiddenBladeActive.Value = 1
+				connection = HiddenBlade.Touched:connect(blow)
+				myHumanoid.WalkSpeed = 18
+			end	
+		end
+	end
+	if key == "w" then 
+		t = r.Stepped:wait()
+		if (t - lastKeyDown < 0.2) then dashTime = t end 
+		lastKeyDown = t
+	end
+end
+
+function onActivatedLocal()
+	vCharacter = Tool.Parent
+
+	myHumanoid = vCharacter:FindFirstChild("Humanoid")
+	if myHumanoid == nil then 
+		return
+	end
+
+	rightArm = vCharacter:FindFirstChild("Right Arm")
+	if rightArm == nil then 
+		return 	
+	end
+	rightGrip = rightArm:FindFirstChild("RightGrip")
+	rightGrip=rightArm:WaitForChild("RightGrip")
+--	print("FOUND GRIP")
+	if slashAnim then slashAnim:Stop() end
+	if batto.Value == 0.0 then
+	--	print("Playing Battojutsu")
+		if myHumanoid then
+			if myHumanoid.RigType == Enum.HumanoidRigType.R6 then
+				stabAnim = myHumanoid:LoadAnimation(Tool.SlashAnim)
+			elseif myHumanoid.RigType == Enum.HumanoidRigType.R15 then
+				stabAnim = myHumanoid:LoadAnimation(Tool.R15SlashAnim)				
+			end
+		end
+		
+		if stabAnim then stabAnim:Play() end
+	elseif hiddenBladeActive.Value == 0.0 then
+		if myHumanoid then
+			if myHumanoid.RigType == Enum.HumanoidRigType.R6 then
+				stabAnim = myHumanoid:LoadAnimation(Tool.SlashAnim)
+			elseif myHumanoid.RigType == Enum.HumanoidRigType.R15 then
+				stabAnim = myHumanoid:LoadAnimation(Tool.R15SlashAnim)				
+			end
+		end
+		if stabAnim then stabAnim:Play() 	end
+	else
+		if myHumanoid then
+			if myHumanoid.RigType == Enum.HumanoidRigType.R6 then
+				dualSlashAnim = myHumanoid:LoadAnimation(Tool.DualSlash)
+			elseif myHumanoid.RigType == Enum.HumanoidRigType.R15 then
+				dualSlashAnim = myHumanoid:LoadAnimation(Tool.R15DualSlash)				
+			end
+		end
+		
+		if dualSlashAnim then dualSlashAnim:Play() end
+		dualSlashSound = Tool:FindFirstChild("DualSlashSound")
+		if dualSlashSound then dualSlashSound:Play() end
+	end
+	
+	
+	while Tool.Enabled == false do
+		wait()
+	end
+end
+function onEquippedLocal()
+	vCharacter = Tool.Parent
+	if vCharacter then
+		myHumanoid = vCharacter:FindFirstChild("Humanoid")
+--		if myHumanoid then 
+--			walkAnim = myHumanoid:LoadAnimation(Tool:WaitForChild("KodachiWalk"))
+--			walkAnim:Play()
+--		end
+	end
+end
+
+Tool.Input.OnServerEvent:connect(function(client, action, ...)
+	if client.Character == Tool.Parent then
+		if action == 'KeyDown' then
+			local key = ...
+			
+			initiateHiddenBlade(key)
+		end
+	end
+end)
+
+function onUnequippedLocal()
+	if walkAnim then walkAnim:Stop() end
+	if stabAnim then stabAnim:Stop() end
+	if slashAnim then slashAnim:Stop() end
+	if dualSlashAnim then dualSlashAnim:Stop() end
+
+	if hiddenBladeActive then hiddenBladeActive.Value = 0 end
+
+	if HiddenBlade then HiddenBlade:Remove() end
+	--if leftGrip1 then leftGrip1:Remove() end
+	if vCharacter then myHumanoid = vCharacter:findFirstChild("Humanoid") 
+		if myHumanoid then myHumanoid.WalkSpeed = 16.0	end
+	end
+	if dualSlashSound then dualSlashSound:Stop() end
+end
+
+Tool.Equipped:connect(onEquippedLocal)
+Tool.Unequipped:connect(onUnequippedLocal)
+
+Tool.Activated:connect(onActivatedLocal)]]></ProtectedString>
+			</Properties>
+		</Item>
+		<Item class="RemoteEvent" referent="RBX165902676A194B3FAF53E47C4DD0FAC1">
+			<Properties>
+				<string name="Name">Input</string>
+			</Properties>
+		</Item>
+		<Item class="Animation" referent="RBXFD56672EE2444E10B235BC9439B21DE8">
+			<Properties>
+				<Content name="AnimationId"><url>rbxassetid://738723467</url></Content>
+				<string name="Name">R15DualSlash</string>
+			</Properties>
+		</Item>
+		<Item class="Animation" referent="RBX33A43288E31C4C56B09F0CC0D36BD36F">
+			<Properties>
+				<Content name="AnimationId"><url>http://www.roblox.com/Asset?ID=51343043</url></Content>
+				<string name="Name">Battojutsu</string>
+			</Properties>
+		</Item>
+		<Item class="Animation" referent="RBX6A184D4481DE4FD884B332726ED1AA94">
+			<Properties>
+				<Content name="AnimationId"><url>rbxassetid://742375036</url></Content>
+				<string name="Name">R15SlashAnim</string>
+			</Properties>
+		</Item>
+	</Item>
+</roblox>

@@ -1,0 +1,813 @@
+<roblox xmlns:xmime="http://www.w3.org/2005/05/xmlmime" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.roblox.com/roblox.xsd" version="4">
+	<External>null</External>
+	<External>nil</External>
+	<Item class="Tool" referent="RBXF6A8EB5733CD41D39B38A29BD1C38C46">
+		<Properties>
+			<bool name="CanBeDropped">true</bool>
+			<bool name="Enabled">true</bool>
+			<CoordinateFrame name="Grip">
+				<X>0</X>
+				<Y>2.23517418e-008</Y>
+				<Z>1.01950586</Z>
+				<R00>0.999936879</R00>
+				<R01>0.0112336874</R01>
+				<R02>0</R02>
+				<R10>-0.000749997504</R10>
+				<R11>0.066759035</R11>
+				<R12>0.997768819</R12>
+				<R20>0.0112086227</R20>
+				<R21>-0.997705817</R21>
+				<R22>0.066763252</R22>
+			</CoordinateFrame>
+			<bool name="ManualActivationOnly">false</bool>
+			<string name="Name">BunnyEaredSai</string>
+			<bool name="RequiresHandle">true</bool>
+			<Content name="TextureId"><url>rbxassetid://230849491</url></Content>
+			<string name="ToolTip"></string>
+		</Properties>
+		<Item class="Script" referent="RBXDE1E61D609D9432BA194CA1F855F87E2">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">Server</string>
+				<string name="ScriptGuid">{8FAFDFFE-E0AF-49D3-9CFC-DD3DB7016B8E}</string>
+				<ProtectedString name="Source"><![CDATA[--Updated for R15 avatar by StarWars
+
+local Tool = script.Parent
+local Remote = Tool:WaitForChild("Remote")
+local Handle = Tool:WaitForChild("Handle")
+
+local Heartbeat = game:GetService("RunService").Heartbeat
+local HeartbeatConnection
+
+local FriendlyFire = false
+
+local AttackRestTimer = 0
+local DropAttackTimer = 0
+local DamageTimer = 0
+
+local AttackWindow = 0.75
+local AttackDamage = 12
+local AttackDamaging = false
+
+for i, v in pairs(Tool:GetChildren()) do
+	if v:IsA("BasePart") and v ~= Handle then
+		v:Destroy()
+	end
+end
+
+--returns the wielding player of this tool
+function getPlayer()
+	local char = Tool.Parent
+	return game:GetService("Players"):GetPlayerFromCharacter(char)
+end
+
+--helpfully checks a table for a specific value
+function contains(t, v)
+	for _, val in pairs(t) do
+		if val == v then
+			return true
+		end
+	end
+	return false
+end
+
+--tags a human for the ROBLOX KO system
+function tagHuman(human)
+	local tag = Instance.new("ObjectValue")
+	tag.Value = getPlayer()
+	tag.Name = "creator"
+	tag.Parent = human
+	game:GetService("Debris"):AddItem(tag)
+end
+
+--used by checkTeams
+function sameTeam(otherHuman)
+	local player = getPlayer()
+	local otherPlayer = game:GetService("Players"):GetPlayerFromCharacter(otherHuman.Parent)
+	if player and otherPlayer then
+		if player == otherPlayer then
+			return true
+		end
+		if otherPlayer.Neutral then
+			return false
+		end
+		return player.TeamColor == otherPlayer.TeamColor
+	end
+	return false
+end
+
+--use this to determine if you want this human to be harmed or not, returns boolean
+function checkTeams(otherHuman)
+	return not (sameTeam(otherHuman) and not FriendlyFire)
+end
+
+function canAttack()
+	return AttackRestTimer <= 0 
+end
+
+function canDropAttack()
+	return DropAttackTimer > 0
+end
+
+function onHeartbeat(dt)
+	AttackRestTimer = AttackRestTimer - dt
+	if AttackRestTimer < 0 then
+		AttackRestTimer = 0
+	end
+	
+	DropAttackTimer = DropAttackTimer - dt
+	if DropAttackTimer < 0 then
+		DropAttackTimer = 0
+	end
+	
+	DamageTimer = DamageTimer - dt
+	if DamageTimer < 0 then
+		DamageTimer = 0
+	end
+	
+	if characterIsGrounded() then
+		DropAttackTimer = 0
+	end
+end
+
+function playSound(name, pitch)
+	pitch = pitch or math.random(90, 110) / 100
+	
+	local sound = Handle:FindFirstChild(name)
+	sound.Pitch = pitch
+	sound:Play()
+end
+
+function airAttack()
+	local root = Tool.Parent:FindFirstChild("HumanoidRootPart")
+	local humanoid = Tool.Parent:FindFirstChild("Humanoid")
+	if root then
+		if canDropAttack() then
+			root.Velocity = Vector3.new(0, -160, 0)
+			
+			spawn(function()
+				local t = 0
+				while not characterIsGrounded() and t < 2 do
+					t = t + Heartbeat:wait()
+				end
+				
+				local e = Instance.new("Explosion")
+				e.Position = root.Position - Vector3.new(0, 3, 0)
+				e.BlastPressure = 0
+				e.Hit:connect(function(part)
+					if part:IsDescendantOf(Tool.Parent) then return end
+					
+					if part.Parent and part.Parent:FindFirstChild("HumanoidRootPart") then
+						local root = part.Parent.HumanoidRootPart
+						local dir = (root.Position - e.Position).unit
+						
+						local vel = Instance.new("BodyVelocity")
+						vel.velocity = dir * 64
+						vel.maxForce = Vector3.new(1e9, 1e9, 1e9)
+						vel.Parent = root
+						game:GetService("Debris"):AddItem(vel, 0.1)
+					end
+				end)
+				e.Parent = workspace
+				
+				if humanoid then
+					if humanoid.RigType == Enum.HumanoidRigType.R6 then
+						Remote:FireClient(getPlayer(), "StopAnimation", "Fall")
+					elseif humanoid.RigType == Enum.HumanoidRigType.R15 then
+						Remote:FireClient(getPlayer(), "StopAnimation", "R15Fall")
+					end
+				end
+				playSound("Hit")
+			end)
+			
+			DropAttackTimer = 0
+			AttackRestTimer = AttackRestTimer + 1
+			
+			if humanoid then
+				if humanoid.RigType == Enum.HumanoidRigType.R6 then
+					Remote:FireClient(getPlayer(), "PlayAnimation", "Fall")
+				elseif humanoid.RigType == Enum.HumanoidRigType.R15 then
+					Remote:FireClient(getPlayer(), "PlayAnimation", "R15Fall")
+				end
+			end
+			playSound("Whoosh")
+		else
+			root.Velocity = Vector3.new(0, 96, 0)
+			
+			DropAttackTimer = 2.5
+			AttackRestTimer = AttackRestTimer + 0.5
+			
+			if humanoid then
+				if humanoid.RigType == Enum.HumanoidRigType.R6 then
+					Remote:FireClient(getPlayer(), "PlayAnimation", "Jump", nil, nil, 2)
+				elseif humanoid.RigType == Enum.HumanoidRigType.R15 then
+					Remote:FireClient(getPlayer(), "PlayAnimation", "R15Jump", nil, nil, 2)
+				end
+			end
+			playSound("Jump")
+		end
+	end
+end
+
+function groundAttack()
+	local humanoid = Tool.Parent:FindFirstChild("Humanoid")
+	if humanoid then
+		if humanoid.RigType == Enum.HumanoidRigType.R6 then
+			Remote:FireClient(getPlayer(), "PlayAnimation", "Swing", nil, nil, math.random(90, 110) / 100)
+		elseif humanoid.RigType == Enum.HumanoidRigType.R15 then
+			Remote:FireClient(getPlayer(), "PlayAnimation", "R15Swing", nil, nil, math.random(90, 110) / 100)
+		end
+	end
+	playSound("Swing")
+	
+	AttackRestTimer = AttackRestTimer + 0.25
+	DamageTimer = DamageTimer + 0.15
+end
+
+function characterIsGrounded()
+	local root = Tool.Parent:FindFirstChild("HumanoidRootPart")
+	if root then
+		local ray = Ray.new(root.Position, Vector3.new(0, -3.5, 0))
+		local part, pos = workspace:FindPartOnRay(ray, Tool.Parent)
+		return part ~= nil
+	end
+	return false
+end
+
+function onLeftDown()
+	if not canAttack() then return end
+	
+	if characterIsGrounded() then
+		groundAttack()
+	else
+		airAttack()
+	end
+end
+
+function onHandleTouched(part)
+	if DamageTimer <= 0 then return end
+	if part:IsDescendantOf(Tool.Parent) then return end
+	
+	if part.Parent and part.Parent:FindFirstChild("Humanoid") then
+		local human = part.Parent.Humanoid
+		if checkTeams(human) then
+			tagHuman(human)
+			human:TakeDamage(AttackDamage)
+			DamageTimer = 0
+		end
+	end
+end
+
+function onRemote(player, func, ...)
+	if player ~= getPlayer() then return end
+	
+	if func == "LeftDown" then
+		onLeftDown(...)
+	end
+end
+
+function onEquip()
+	HeartbeatConnection = Heartbeat:connect(onHeartbeat)
+	Spawn(function()
+	local LeftArm = Tool.Parent:FindFirstChild("Left Arm") or Tool.Parent:FindFirstChild("LeftHand") --Fix implemented by Luckymaxer
+		if LeftArm then
+			FakeHandle = Handle:Clone()
+			FakeHandle.Name = "FakeHandle"
+			local LeftGrip = Instance.new("Weld")
+			LeftGrip.Part0 = LeftArm
+			LeftGrip.Part1 = FakeHandle
+			LeftGrip.C0 = CFrame.new(0, (LeftArm.Name == "LeftHand" and -0.15) or -1, 0, 1, 0, -0, 0, 0, 1, 0, -1, -0)
+			LeftGrip.C1 = Tool.Grip
+			LeftGrip.Parent = FakeHandle
+			FakeHandle.Touched:connect(onHandleTouched)
+			FakeHandle.Parent = Tool
+		end
+	end)
+end
+
+function onUnequip()
+	if FakeHandle and FakeHandle.Parent then
+		FakeHandle:Destroy()
+	end
+	if HeartbeatConnection then
+		HeartbeatConnection:disconnect()
+		HeartbeatConnection = nil
+	end
+end
+
+Remote.OnServerEvent:connect(onLeftDown)
+Tool.Equipped:connect(onEquip)
+Tool.Unequipped:connect(onUnequip)
+Handle.Touched:connect(onHandleTouched)
+]]></ProtectedString>
+			</Properties>
+		</Item>
+		<Item class="LocalScript" referent="RBX85F82DEAEE654F64B27EAF2505D31FFC">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">Client</string>
+				<string name="ScriptGuid">{31607664-21BA-41C7-99E4-9C33A0FFCE6F}</string>
+				<ProtectedString name="Source"><![CDATA[local Player = game:GetService("Players").LocalPlayer
+local UIS = game:GetService("UserInputService")
+local Mouse = Player:GetMouse()
+local Tool = script.Parent
+local Remote = Tool:WaitForChild("Remote")
+local Tracks = {}
+local InputType = Enum.UserInputType
+
+local BeganConnection, EndedConnection
+
+function playAnimation(animName, ...)
+	if Tracks[animName] then
+		Tracks[animName]:Play(...)
+	else
+		local anim = Tool:FindFirstChild(animName)
+		if anim and Tool.Parent and Tool.Parent:FindFirstChild("Humanoid") then
+			Tracks[animName] = Tool.Parent.Humanoid:LoadAnimation(anim)
+			playAnimation(animName, ...)
+		end
+	end
+end
+
+function stopAnimation(animName)
+	if Tracks[animName] then
+		Tracks[animName]:Stop()
+	end
+end
+
+function inputBegan(input)
+	if input.UserInputType == InputType.MouseButton1 then
+		Remote:FireServer("LeftDown")
+	end
+end
+
+function inputEnded(input)
+	if input.UserInputType == InputType.MouseButton1 then
+		Remote:FireServer("LeftUp")
+	end
+end
+
+function onRemote(func, ...)
+	if func == "PlayAnimation" then
+		playAnimation(...)
+	elseif func == "StopAnimation" then
+		stopAnimation(...)
+	end
+end
+
+function onEquip()
+	BeganConnection = UIS.InputBegan:connect(inputBegan)
+	EndedConnection = UIS.InputEnded:connect(inputEnded)
+end
+
+function onUnequip()
+	if BeganConnection then
+		BeganConnection:disconnect()
+		BeganConnection = nil
+	end
+	
+	if EndedConnection then
+		EndedConnection:disconnect()
+		EndedConnection = nil
+	end
+end
+
+Tool.Equipped:connect(onEquip)
+Tool.Unequipped:connect(onUnequip)
+Remote.OnClientEvent:connect(onRemote)]]></ProtectedString>
+			</Properties>
+		</Item>
+		<Item class="RemoteEvent" referent="RBX1F7C39E5B3644430BB793BEB4566ECA5">
+			<Properties>
+				<string name="Name">Remote</string>
+			</Properties>
+		</Item>
+		<Item class="Part" referent="RBX818284CA20AC4408959E9BC4425BA829">
+			<Properties>
+				<bool name="Anchored">false</bool>
+				<float name="BackParamA">-0.5</float>
+				<float name="BackParamB">0.5</float>
+				<token name="BackSurface">0</token>
+				<token name="BackSurfaceInput">0</token>
+				<float name="BottomParamA">-0.5</float>
+				<float name="BottomParamB">0.5</float>
+				<token name="BottomSurface">0</token>
+				<token name="BottomSurfaceInput">0</token>
+				<int name="BrickColor">194</int>
+				<CoordinateFrame name="CFrame">
+					<X>1.60601389</X>
+					<Y>18.1115208</Y>
+					<Z>20.9834156</Z>
+					<R00>0.999873519</R00>
+					<R01>-0.0119578382</R01>
+					<R02>0.0104490304</R02>
+					<R10>0.0158450287</R10>
+					<R11>0.70761919</R11>
+					<R12>-0.706415951</R12>
+					<R20>0.00105334632</R20>
+					<R21>0.706492245</R21>
+					<R22>0.707719564</R22>
+				</CoordinateFrame>
+				<bool name="CanCollide">true</bool>
+				<PhysicalProperties name="CustomPhysicalProperties">
+					<CustomPhysics>false</CustomPhysics>
+				</PhysicalProperties>
+				<float name="Elasticity">0.5</float>
+				<float name="Friction">0.300000012</float>
+				<float name="FrontParamA">-0.5</float>
+				<float name="FrontParamB">0.5</float>
+				<token name="FrontSurface">0</token>
+				<token name="FrontSurfaceInput">0</token>
+				<float name="LeftParamA">-0.5</float>
+				<float name="LeftParamB">0.5</float>
+				<token name="LeftSurface">0</token>
+				<token name="LeftSurfaceInput">0</token>
+				<bool name="Locked">true</bool>
+				<token name="Material">256</token>
+				<string name="Name">Handle</string>
+				<float name="Reflectance">0</float>
+				<float name="RightParamA">-0.5</float>
+				<float name="RightParamB">0.5</float>
+				<token name="RightSurface">0</token>
+				<token name="RightSurfaceInput">0</token>
+				<Vector3 name="RotVelocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<float name="TopParamA">-0.5</float>
+				<float name="TopParamB">0.5</float>
+				<token name="TopSurface">0</token>
+				<token name="TopSurfaceInput">0</token>
+				<float name="Transparency">0</float>
+				<Vector3 name="Velocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<token name="formFactorRaw">3</token>
+				<token name="shape">1</token>
+				<Vector3 name="size">
+					<X>1</X>
+					<Y>1</Y>
+					<Z>1</Z>
+				</Vector3>
+			</Properties>
+			<Item class="SpecialMesh" referent="RBX778CB74279074A288E1BB26808887D55">
+				<Properties>
+					<token name="LODX">2</token>
+					<token name="LODY">2</token>
+					<Content name="MeshId"><url>rbxassetid://230849408</url></Content>
+					<token name="MeshType">5</token>
+					<string name="Name">Mesh</string>
+					<Vector3 name="Offset">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+					</Vector3>
+					<Vector3 name="Scale">
+						<X>0.174999997</X>
+						<Y>0.174999997</Y>
+						<Z>0.174999997</Z>
+					</Vector3>
+					<Content name="TextureId"><url>rbxassetid://230849444</url></Content>
+					<Vector3 name="VertexColor">
+						<X>1</X>
+						<Y>1</Y>
+						<Z>1</Z>
+					</Vector3>
+				</Properties>
+			</Item>
+			<Item class="Sound" referent="RBX571A989B32E044C89F7EA7353DF85AE4">
+				<Properties>
+					<float name="EmitterSize">10</float>
+					<bool name="Looped">false</bool>
+					<string name="Name">Jump</string>
+					<bool name="PlayOnRemove">false</bool>
+					<float name="PlaybackSpeed">1</float>
+					<bool name="Playing">false</bool>
+					<token name="RollOffMode">0</token>
+					<Ref name="SoundGroup">null</Ref>
+					<Content name="SoundId"><url>rbxassetid://107433821</url></Content>
+					<double name="TimePosition">0</double>
+					<float name="Volume">0.5</float>
+					<float name="xmlRead_MaxDistance_3">10000</float>
+				</Properties>
+			</Item>
+			<Item class="Sound" referent="RBX3C6EE6BBC1AC447DA3B897D8206E69E6">
+				<Properties>
+					<float name="EmitterSize">10</float>
+					<bool name="Looped">false</bool>
+					<string name="Name">Whoosh</string>
+					<bool name="PlayOnRemove">false</bool>
+					<float name="PlaybackSpeed">1</float>
+					<bool name="Playing">false</bool>
+					<token name="RollOffMode">0</token>
+					<Ref name="SoundGroup">null</Ref>
+					<Content name="SoundId"><url>rbxassetid://25874790</url></Content>
+					<double name="TimePosition">0</double>
+					<float name="Volume">0.5</float>
+					<float name="xmlRead_MaxDistance_3">10000</float>
+				</Properties>
+			</Item>
+			<Item class="Sound" referent="RBX4CA3D2CB1F4A4211B1E06C6CB86907BD">
+				<Properties>
+					<float name="EmitterSize">10</float>
+					<bool name="Looped">false</bool>
+					<string name="Name">Hit</string>
+					<bool name="PlayOnRemove">false</bool>
+					<float name="PlaybackSpeed">1</float>
+					<bool name="Playing">false</bool>
+					<token name="RollOffMode">0</token>
+					<Ref name="SoundGroup">null</Ref>
+					<Content name="SoundId"><url>rbxassetid://124254994</url></Content>
+					<double name="TimePosition">0</double>
+					<float name="Volume">0.5</float>
+					<float name="xmlRead_MaxDistance_3">10000</float>
+				</Properties>
+			</Item>
+			<Item class="Sound" referent="RBXB9B12977ECA647648EC66C3772E178BC">
+				<Properties>
+					<float name="EmitterSize">10</float>
+					<bool name="Looped">false</bool>
+					<string name="Name">Swing</string>
+					<bool name="PlayOnRemove">false</bool>
+					<float name="PlaybackSpeed">0.930000007</float>
+					<bool name="Playing">false</bool>
+					<token name="RollOffMode">0</token>
+					<Ref name="SoundGroup">null</Ref>
+					<Content name="SoundId"><url>rbxassetid://92597369</url></Content>
+					<double name="TimePosition">0</double>
+					<float name="Volume">0.5</float>
+					<float name="xmlRead_MaxDistance_3">10000</float>
+				</Properties>
+			</Item>
+			<Item class="Sound" referent="RBX01BBFB866A34456ABF8E1E52F9BBC2D1">
+				<Properties>
+					<float name="EmitterSize">10</float>
+					<bool name="Looped">false</bool>
+					<string name="Name">FleshHit</string>
+					<bool name="PlayOnRemove">false</bool>
+					<float name="PlaybackSpeed">1</float>
+					<bool name="Playing">false</bool>
+					<token name="RollOffMode">0</token>
+					<Ref name="SoundGroup">null</Ref>
+					<Content name="SoundId"><url>rbxassetid://93005921</url></Content>
+					<double name="TimePosition">0</double>
+					<float name="Volume">0.5</float>
+					<float name="xmlRead_MaxDistance_3">10000</float>
+				</Properties>
+			</Item>
+		</Item>
+		<Item class="Animation" referent="RBXFB02155D007644D28102009FC32F9F5E">
+			<Properties>
+				<Content name="AnimationId"><url>rbxassetid://233064613</url></Content>
+				<string name="Name">Jump</string>
+			</Properties>
+		</Item>
+		<Item class="Animation" referent="RBXEE10A05DED24479F87999471E182D0B3">
+			<Properties>
+				<Content name="AnimationId"><url>rbxassetid://233322916</url></Content>
+				<string name="Name">Fall</string>
+			</Properties>
+		</Item>
+		<Item class="Animation" referent="RBX35D9F8428567411694C518FF1BF4560F">
+			<Properties>
+				<Content name="AnimationId"><url>rbxassetid://233329237</url></Content>
+				<string name="Name">Swing</string>
+			</Properties>
+		</Item>
+		<Item class="Part" referent="RBX257ED0031AEB4E1FA2D638405B89D6F7">
+			<Properties>
+				<bool name="Anchored">false</bool>
+				<float name="BackParamA">-0.5</float>
+				<float name="BackParamB">0.5</float>
+				<token name="BackSurface">0</token>
+				<token name="BackSurfaceInput">0</token>
+				<float name="BottomParamA">-0.5</float>
+				<float name="BottomParamB">0.5</float>
+				<token name="BottomSurface">0</token>
+				<token name="BottomSurfaceInput">0</token>
+				<int name="BrickColor">194</int>
+				<CoordinateFrame name="CFrame">
+					<X>-1.39999998</X>
+					<Y>16.5074406</Y>
+					<Z>23.0743885</Z>
+					<R00>1</R00>
+					<R01>-3.61923504e-008</R01>
+					<R02>1.05198168e-007</R02>
+					<R10>-4.87944938e-008</R10>
+					<R11>0.707106709</R11>
+					<R12>0.707106769</R12>
+					<R20>-9.99781875e-008</R20>
+					<R21>-0.707106769</R21>
+					<R22>0.707106709</R22>
+				</CoordinateFrame>
+				<bool name="CanCollide">true</bool>
+				<PhysicalProperties name="CustomPhysicalProperties">
+					<CustomPhysics>false</CustomPhysics>
+				</PhysicalProperties>
+				<float name="Elasticity">0.5</float>
+				<float name="Friction">0.300000012</float>
+				<float name="FrontParamA">-0.5</float>
+				<float name="FrontParamB">0.5</float>
+				<token name="FrontSurface">0</token>
+				<token name="FrontSurfaceInput">0</token>
+				<float name="LeftParamA">-0.5</float>
+				<float name="LeftParamB">0.5</float>
+				<token name="LeftSurface">0</token>
+				<token name="LeftSurfaceInput">0</token>
+				<bool name="Locked">true</bool>
+				<token name="Material">256</token>
+				<string name="Name">FakeHandle</string>
+				<float name="Reflectance">0</float>
+				<float name="RightParamA">-0.5</float>
+				<float name="RightParamB">0.5</float>
+				<token name="RightSurface">0</token>
+				<token name="RightSurfaceInput">0</token>
+				<Vector3 name="RotVelocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<float name="TopParamA">-0.5</float>
+				<float name="TopParamB">0.5</float>
+				<token name="TopSurface">0</token>
+				<token name="TopSurfaceInput">0</token>
+				<float name="Transparency">0</float>
+				<Vector3 name="Velocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<token name="formFactorRaw">3</token>
+				<token name="shape">1</token>
+				<Vector3 name="size">
+					<X>1</X>
+					<Y>1</Y>
+					<Z>1</Z>
+				</Vector3>
+			</Properties>
+			<Item class="SpecialMesh" referent="RBX30C49D9F391F400BA74951FA2AFA8CD6">
+				<Properties>
+					<token name="LODX">2</token>
+					<token name="LODY">2</token>
+					<Content name="MeshId"><url>rbxassetid://230849408</url></Content>
+					<token name="MeshType">5</token>
+					<string name="Name">Mesh</string>
+					<Vector3 name="Offset">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+					</Vector3>
+					<Vector3 name="Scale">
+						<X>0.174999997</X>
+						<Y>0.174999997</Y>
+						<Z>0.174999997</Z>
+					</Vector3>
+					<Content name="TextureId"><url>rbxassetid://230849444</url></Content>
+					<Vector3 name="VertexColor">
+						<X>1</X>
+						<Y>1</Y>
+						<Z>1</Z>
+					</Vector3>
+				</Properties>
+			</Item>
+			<Item class="Sound" referent="RBXE6CF96AE692745D09574A12C043BA572">
+				<Properties>
+					<float name="EmitterSize">10</float>
+					<bool name="Looped">false</bool>
+					<string name="Name">Jump</string>
+					<bool name="PlayOnRemove">false</bool>
+					<float name="PlaybackSpeed">1</float>
+					<bool name="Playing">false</bool>
+					<token name="RollOffMode">0</token>
+					<Ref name="SoundGroup">null</Ref>
+					<Content name="SoundId"><url>rbxassetid://107433821</url></Content>
+					<double name="TimePosition">0</double>
+					<float name="Volume">0.5</float>
+					<float name="xmlRead_MaxDistance_3">10000</float>
+				</Properties>
+			</Item>
+			<Item class="Sound" referent="RBX00F1D4CA5E534CFAA110ECDC068963C1">
+				<Properties>
+					<float name="EmitterSize">10</float>
+					<bool name="Looped">false</bool>
+					<string name="Name">Whoosh</string>
+					<bool name="PlayOnRemove">false</bool>
+					<float name="PlaybackSpeed">1</float>
+					<bool name="Playing">false</bool>
+					<token name="RollOffMode">0</token>
+					<Ref name="SoundGroup">null</Ref>
+					<Content name="SoundId"><url>rbxassetid://25874790</url></Content>
+					<double name="TimePosition">0</double>
+					<float name="Volume">0.5</float>
+					<float name="xmlRead_MaxDistance_3">10000</float>
+				</Properties>
+			</Item>
+			<Item class="Sound" referent="RBX7A4A0CA8DE0745359DA43F9CBB9A8577">
+				<Properties>
+					<float name="EmitterSize">10</float>
+					<bool name="Looped">false</bool>
+					<string name="Name">Hit</string>
+					<bool name="PlayOnRemove">false</bool>
+					<float name="PlaybackSpeed">1</float>
+					<bool name="Playing">false</bool>
+					<token name="RollOffMode">0</token>
+					<Ref name="SoundGroup">null</Ref>
+					<Content name="SoundId"><url>rbxassetid://124254994</url></Content>
+					<double name="TimePosition">0</double>
+					<float name="Volume">0.5</float>
+					<float name="xmlRead_MaxDistance_3">10000</float>
+				</Properties>
+			</Item>
+			<Item class="Sound" referent="RBXE027B238FF014316B496B80CB50F2C9C">
+				<Properties>
+					<float name="EmitterSize">10</float>
+					<bool name="Looped">false</bool>
+					<string name="Name">Swing</string>
+					<bool name="PlayOnRemove">false</bool>
+					<float name="PlaybackSpeed">0.930000007</float>
+					<bool name="Playing">false</bool>
+					<token name="RollOffMode">0</token>
+					<Ref name="SoundGroup">null</Ref>
+					<Content name="SoundId"><url>rbxassetid://92597369</url></Content>
+					<double name="TimePosition">0</double>
+					<float name="Volume">0.5</float>
+					<float name="xmlRead_MaxDistance_3">10000</float>
+				</Properties>
+			</Item>
+			<Item class="Sound" referent="RBXF1E88150942B468F96B5F40CDF414890">
+				<Properties>
+					<float name="EmitterSize">10</float>
+					<bool name="Looped">false</bool>
+					<string name="Name">FleshHit</string>
+					<bool name="PlayOnRemove">false</bool>
+					<float name="PlaybackSpeed">1</float>
+					<bool name="Playing">false</bool>
+					<token name="RollOffMode">0</token>
+					<Ref name="SoundGroup">null</Ref>
+					<Content name="SoundId"><url>rbxassetid://93005921</url></Content>
+					<double name="TimePosition">0</double>
+					<float name="Volume">0.5</float>
+					<float name="xmlRead_MaxDistance_3">10000</float>
+				</Properties>
+			</Item>
+			<Item class="Weld" referent="RBX8B6A336B3CFE4958BA098550D1238F92">
+				<Properties>
+					<CoordinateFrame name="C0">
+						<X>14.5452633</X>
+						<Y>44.0746231</Y>
+						<Z>7.67472744</Z>
+						<R00>0.788344741</R00>
+						<R01>0.0112336837</R01>
+						<R02>0.615130782</R02>
+						<R10>-0.614362419</R10>
+						<R11>0.0675535128</R11>
+						<R12>0.786126494</R12>
+						<R20>-0.0327231474</R20>
+						<R21>-0.997652292</R21>
+						<R22>0.0601570196</R22>
+					</CoordinateFrame>
+					<CoordinateFrame name="C1">
+						<X>17.1025887</X>
+						<Y>-4.87425232</Y>
+						<Z>43.9080353</Z>
+						<R00>0.795250058</R00>
+						<R01>2.86046291e-022</R01>
+						<R02>0.60628134</R02>
+						<R10>0.0404773131</R10>
+						<R11>0.997768819</R11>
+						<R12>-0.0530934781</R12>
+						<R20>-0.604928613</R20>
+						<R21>0.066763252</R21>
+						<R22>0.793475747</R22>
+					</CoordinateFrame>
+					<string name="Name">Weld</string>
+					<Ref name="Part0">RBX818284CA20AC4408959E9BC4425BA829</Ref>
+					<Ref name="Part1">RBX257ED0031AEB4E1FA2D638405B89D6F7</Ref>
+				</Properties>
+			</Item>
+		</Item>
+		<Item class="Animation" referent="RBX8591A4F2E6DE453496C13388F937E86D">
+			<Properties>
+				<Content name="AnimationId"><url>rbxassetid://530913441</url></Content>
+				<string name="Name">R15Fall</string>
+			</Properties>
+		</Item>
+		<Item class="Animation" referent="RBX4720CCAA23A048FC90D87814D2B024CA">
+			<Properties>
+				<Content name="AnimationId"><url>rbxassetid://530910568</url></Content>
+				<string name="Name">R15Jump</string>
+			</Properties>
+		</Item>
+		<Item class="Animation" referent="RBX1FB054C9A2DC45B78ACFE20295E767CC">
+			<Properties>
+				<Content name="AnimationId"><url>rbxassetid://530872879</url></Content>
+				<string name="Name">R15Swing</string>
+			</Properties>
+		</Item>
+	</Item>
+</roblox>

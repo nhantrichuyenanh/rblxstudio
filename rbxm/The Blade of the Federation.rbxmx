@@ -1,0 +1,327 @@
+<roblox xmlns:xmime="http://www.w3.org/2005/05/xmlmime" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.roblox.com/roblox.xsd" version="4">
+	<External>null</External>
+	<External>nil</External>
+	<Item class="Tool" referent="RBX04F8B1143ABD491A970A265AF1EE5C6B">
+		<Properties>
+			<bool name="CanBeDropped">true</bool>
+			<bool name="Enabled">true</bool>
+			<CoordinateFrame name="Grip">
+				<X>0</X>
+				<Y>-2.20000005</Y>
+				<Z>0</Z>
+				<R00>1</R00>
+				<R01>0</R01>
+				<R02>0</R02>
+				<R10>0</R10>
+				<R11>1</R11>
+				<R12>0</R12>
+				<R20>0</R20>
+				<R21>0</R21>
+				<R22>1</R22>
+			</CoordinateFrame>
+			<bool name="ManualActivationOnly">false</bool>
+			<string name="Name">BladeFederation</string>
+			<bool name="RequiresHandle">true</bool>
+			<Content name="TextureId"><url>rbxassetid://879963754</url></Content>
+			<string name="ToolTip"></string>
+		</Properties>
+		<Item class="Script" referent="RBXF194B85EDEC345EA9741360067943DDD">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">Script</string>
+				<string name="ScriptGuid">{FA8B1252-8D63-4C6F-A2E4-61DF6E2086B1}</string>
+				<ProtectedString name="Source"><![CDATA[--// Made by StarWars
+local Players = game:GetService("Players")
+local RunService = game:GetService("RunService")
+
+local Tool = script.Parent
+local Handle = Tool:FindFirstChild("Handle")
+if not Handle then return end
+
+local Sword = require(754568173)
+
+local Player = nil
+local Character = nil
+local Humanoid = nil
+local Torso = nil
+
+local SwordData = Sword.SwordFunctions.GetData("BladeOfTheFederation")
+local SwordModel = Sword.SwordFunctions.GetSword("BladeOfTheFederation")
+local Config = Sword.SwordFunctions.CreateConfiguration(Tool, SwordData)
+
+local UnsheathSound = Handle:WaitForChild("Unsheath")
+local LungeSound = Handle:WaitForChild("Lunge")
+local SlashSound = Handle:WaitForChild("Slash")
+
+local LastAttack = 0
+
+function OnActivated()
+	--// Check to see if you are double clicking then lunge attack
+	Handle.Trail.Enabled = true 
+	local ClickTime = RunService.Stepped:wait()
+	print(ClickTime - LastAttack)
+	if ClickTime - LastAttack < 0.2 then
+		Config.Damage.Value = SwordData.Damage.Lunge
+		LungeSound:Play()
+		SwordData.Functions.Lunge(Player, Tool)
+		wait(0.2)
+		Tool.Grip = SwordData.Grips.Out
+		wait(0.75)
+		Tool.Grip = SwordData.Grips.Up
+	else
+		SlashSound:Play()
+		Config.Damage.Value = SwordData.Damage.Slash
+		SwordData.Functions.Slash(Player, Tool)
+	end
+
+	Handle.Trail.Enabled = false 	
+	LastAttack = ClickTime
+	Config.Damage.Value = SwordData.Damage.Base
+end
+
+function OnEquipped()
+	Character = Tool.Parent
+	Player = Players:GetPlayerFromCharacter(Character)
+	Humanoid = Character:FindFirstChildOfClass('Humanoid')
+	Torso = Character:FindFirstChild('HumanoidRootPart')
+	Handle.Trail.Enabled = false 
+	UnsheathSound:Play()
+end
+
+function OnUnequipped()
+	Player = nil
+	Character = nil
+	Humanoid = nil
+	Torso = nil
+end
+
+
+Tool.Activated:Connect(OnActivated)
+Tool.Equipped:Connect(OnEquipped)
+Tool.Unequipped:Connect(OnUnequipped)]]></ProtectedString>
+			</Properties>
+		</Item>
+		<Item class="LocalScript" referent="RBXA7206ABFB56A40198A2E02A5145DABDF">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">MouseIcon</string>
+				<string name="ScriptGuid">{AEF69464-AC62-419B-AE6A-3946959AE823}</string>
+				<ProtectedString name="Source"><![CDATA[Mouse_Icon = "rbxasset://textures/GunCursor.png"
+Reloading_Icon = "rbxasset://textures/GunWaitCursor.png"
+
+Tool = script.Parent
+
+Mouse = nil
+
+function UpdateIcon()
+	if Mouse then
+		Mouse.Icon = Tool.Enabled and Mouse_Icon or Reloading_Icon
+	end
+end
+
+function OnEquipped(ToolMouse)
+	Mouse = ToolMouse
+	UpdateIcon()
+end
+
+Tool:GetPropertyChangedSignal("Enabled"):Connect(UpdateIcon)
+Tool.Equipped:connect(OnEquipped)]]></ProtectedString>
+			</Properties>
+		</Item>
+		<Item class="Part" referent="RBXCBADAE61A2304F9488AFEB2CB284E31C">
+			<Properties>
+				<bool name="Anchored">false</bool>
+				<float name="BackParamA">-0.5</float>
+				<float name="BackParamB">0.5</float>
+				<token name="BackSurface">0</token>
+				<token name="BackSurfaceInput">0</token>
+				<float name="BottomParamA">-0.5</float>
+				<float name="BottomParamB">0.5</float>
+				<token name="BottomSurface">4</token>
+				<token name="BottomSurfaceInput">0</token>
+				<CoordinateFrame name="CFrame">
+					<X>-0.0323030017</X>
+					<Y>0.405007005</Y>
+					<Z>0.0569229983</Z>
+					<R00>1</R00>
+					<R01>0</R01>
+					<R02>0</R02>
+					<R10>0</R10>
+					<R11>-0.739976823</R11>
+					<R12>0.672634423</R12>
+					<R20>0</R20>
+					<R21>-0.672634423</R21>
+					<R22>-0.739976823</R22>
+				</CoordinateFrame>
+				<bool name="CanCollide">true</bool>
+				<int name="CollisionGroupId">0</int>
+				<Color3uint8 name="Color3uint8">4288914085</Color3uint8>
+				<PhysicalProperties name="CustomPhysicalProperties">
+					<CustomPhysics>false</CustomPhysics>
+				</PhysicalProperties>
+				<float name="Elasticity">0.5</float>
+				<float name="Friction">0.300000012</float>
+				<float name="FrontParamA">-0.5</float>
+				<float name="FrontParamB">0.5</float>
+				<token name="FrontSurface">0</token>
+				<token name="FrontSurfaceInput">0</token>
+				<float name="LeftParamA">-0.5</float>
+				<float name="LeftParamB">0.5</float>
+				<token name="LeftSurface">0</token>
+				<token name="LeftSurfaceInput">0</token>
+				<bool name="Locked">false</bool>
+				<token name="Material">256</token>
+				<string name="Name">Handle</string>
+				<float name="Reflectance">0</float>
+				<float name="RightParamA">-0.5</float>
+				<float name="RightParamB">0.5</float>
+				<token name="RightSurface">0</token>
+				<token name="RightSurfaceInput">0</token>
+				<Vector3 name="RotVelocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<float name="TopParamA">-0.5</float>
+				<float name="TopParamB">0.5</float>
+				<token name="TopSurface">3</token>
+				<token name="TopSurfaceInput">0</token>
+				<float name="Transparency">0</float>
+				<Vector3 name="Velocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<token name="formFactorRaw">1</token>
+				<token name="shape">1</token>
+				<Vector3 name="size">
+					<X>0.25</X>
+					<Y>4.25</Y>
+					<Z>0.75</Z>
+				</Vector3>
+			</Properties>
+			<Item class="SpecialMesh" referent="RBX20372B4C7CD94ACB927E2B86D133803C">
+				<Properties>
+					<token name="LODX">2</token>
+					<token name="LODY">2</token>
+					<Content name="MeshId"><url>rbxassetid://879963585</url></Content>
+					<token name="MeshType">5</token>
+					<string name="Name">Mesh</string>
+					<Vector3 name="Offset">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+					</Vector3>
+					<Vector3 name="Scale">
+						<X>1</X>
+						<Y>1.25</Y>
+						<Z>1</Z>
+					</Vector3>
+					<Content name="TextureId"><url>rbxassetid://879963938</url></Content>
+					<Vector3 name="VertexColor">
+						<X>1</X>
+						<Y>1</Y>
+						<Z>1</Z>
+					</Vector3>
+				</Properties>
+			</Item>
+			<Item class="Trail" referent="RBXB41D8BDCBB444493B3FE63F2699649CD">
+				<Properties>
+					<Ref name="Attachment0">RBXAF05C74A5C7044A5AE4BB72C38B11605</Ref>
+					<Ref name="Attachment1">RBX9EC6E6FA469A45DD890A3488C99F2140</Ref>
+					<ColorSequence name="Color">0 0 1 0.501961 0 1 1 1 1 0 </ColorSequence>
+					<bool name="Enabled">true</bool>
+					<bool name="FaceCamera">true</bool>
+					<float name="Lifetime">0.100000001</float>
+					<float name="LightEmission">0</float>
+					<float name="MinLength">1</float>
+					<string name="Name">Trail</string>
+					<Content name="Texture"><url>rbxassetid://719379528</url></Content>
+					<float name="TextureLength">1</float>
+					<token name="TextureMode">0</token>
+					<NumberSequence name="Transparency">0 0.5 0 1 0.5 0 </NumberSequence>
+				</Properties>
+			</Item>
+			<Item class="Attachment" referent="RBXAF05C74A5C7044A5AE4BB72C38B11605">
+				<Properties>
+					<CoordinateFrame name="CFrame">
+						<X>0</X>
+						<Y>2.125</Y>
+						<Z>0.125</Z>
+						<R00>0</R00>
+						<R01>0</R01>
+						<R02>-1</R02>
+						<R10>0</R10>
+						<R11>1</R11>
+						<R12>0</R12>
+						<R20>1</R20>
+						<R21>0</R21>
+						<R22>0</R22>
+					</CoordinateFrame>
+					<string name="Name">TopAttachment</string>
+					<bool name="Visible">false</bool>
+				</Properties>
+			</Item>
+			<Item class="Attachment" referent="RBX9EC6E6FA469A45DD890A3488C99F2140">
+				<Properties>
+					<CoordinateFrame name="CFrame">
+						<X>0</X>
+						<Y>-0.607142866</Y>
+						<Z>-0.125</Z>
+						<R00>0</R00>
+						<R01>0</R01>
+						<R02>-1</R02>
+						<R10>0</R10>
+						<R11>1</R11>
+						<R12>0</R12>
+						<R20>1</R20>
+						<R21>0</R21>
+						<R22>0</R22>
+					</CoordinateFrame>
+					<string name="Name">BottomAttachment</string>
+					<bool name="Visible">false</bool>
+				</Properties>
+			</Item>
+		</Item>
+		<Item class="Camera" referent="RBX637D0E9568354730925566BC396D3EFB">
+			<Properties>
+				<CoordinateFrame name="CFrame">
+					<X>-3.64957666</X>
+					<Y>0.665827394</Y>
+					<Z>-0.349615604</Z>
+					<R00>-0.111685</R00>
+					<R01>0.0710226521</R01>
+					<R02>-0.991202474</R02>
+					<R10>-0</R10>
+					<R11>0.997442842</R11>
+					<R12>0.0714697838</R12>
+					<R20>0.993743718</R20>
+					<R21>0.00798210315</R21>
+					<R22>-0.111399397</R22>
+				</CoordinateFrame>
+				<Ref name="CameraSubject">null</Ref>
+				<token name="CameraType">0</token>
+				<float name="FieldOfView">70</float>
+				<CoordinateFrame name="Focus">
+					<X>-0.0323030055</X>
+					<Y>0.405007064</Y>
+					<Z>0.0569230318</Z>
+					<R00>1</R00>
+					<R01>0</R01>
+					<R02>0</R02>
+					<R10>0</R10>
+					<R11>1</R11>
+					<R12>0</R12>
+					<R20>0</R20>
+					<R21>0</R21>
+					<R22>1</R22>
+				</CoordinateFrame>
+				<bool name="HeadLocked">true</bool>
+				<float name="HeadScale">1</float>
+				<string name="Name">ThumbnailCamera</string>
+			</Properties>
+		</Item>
+	</Item>
+</roblox>

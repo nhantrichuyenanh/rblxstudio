@@ -1,0 +1,1306 @@
+<roblox xmlns:xmime="http://www.w3.org/2005/05/xmlmime" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.roblox.com/roblox.xsd" version="4">
+	<Meta name="ExplicitAutoJoints">true</Meta>
+	<External>null</External>
+	<External>nil</External>
+	<Item class="Tool" referent="RBX9A64E71E63514C22A8FC48CB93C5E275">
+		<Properties>
+			<bool name="CanBeDropped">false</bool>
+			<bool name="Enabled">true</bool>
+			<CoordinateFrame name="Grip">
+				<X>0.0500000007</X>
+				<Y>-1.31955695</Y>
+				<Z>-0.941427648</Z>
+				<R00>1</R00>
+				<R01>0</R01>
+				<R02>0</R02>
+				<R10>0</R10>
+				<R11>0.906307757</R11>
+				<R12>0.42261824</R12>
+				<R20>0</R20>
+				<R21>-0.42261824</R21>
+				<R22>0.906307757</R22>
+			</CoordinateFrame>
+			<bool name="ManualActivationOnly">false</bool>
+			<string name="Name">Carnagecopia</string>
+			<bool name="RequiresHandle">true</bool>
+			<BinaryString name="Tags"></BinaryString>
+			<Content name="TextureId"><url>http://www.roblox.com/asset/?id=98345995</url></Content>
+			<string name="ToolTip">Carnagecopia</string>
+		</Properties>
+		<Item class="Part" referent="RBX93376C9011B64A88B2C390F572B58345">
+			<Properties>
+				<bool name="Anchored">false</bool>
+				<float name="BackParamA">-0.5</float>
+				<float name="BackParamB">0.5</float>
+				<token name="BackSurface">0</token>
+				<token name="BackSurfaceInput">0</token>
+				<float name="BottomParamA">-0.5</float>
+				<float name="BottomParamB">0.5</float>
+				<token name="BottomSurface">0</token>
+				<token name="BottomSurfaceInput">0</token>
+				<CoordinateFrame name="CFrame">
+					<X>23.9200001</X>
+					<Y>78.125</Y>
+					<Z>-45.125</Z>
+					<R00>1</R00>
+					<R01>0</R01>
+					<R02>0</R02>
+					<R10>0</R10>
+					<R11>1</R11>
+					<R12>0</R12>
+					<R20>0</R20>
+					<R21>0</R21>
+					<R22>1</R22>
+				</CoordinateFrame>
+				<bool name="CanCollide">true</bool>
+				<bool name="CastShadow">true</bool>
+				<int name="CollisionGroupId">0</int>
+				<Color3uint8 name="Color3uint8">4288914085</Color3uint8>
+				<PhysicalProperties name="CustomPhysicalProperties">
+					<CustomPhysics>false</CustomPhysics>
+				</PhysicalProperties>
+				<float name="FrontParamA">-0.5</float>
+				<float name="FrontParamB">0.5</float>
+				<token name="FrontSurface">0</token>
+				<token name="FrontSurfaceInput">0</token>
+				<float name="LeftParamA">-0.5</float>
+				<float name="LeftParamB">0.5</float>
+				<token name="LeftSurface">0</token>
+				<token name="LeftSurfaceInput">0</token>
+				<bool name="Locked">true</bool>
+				<bool name="Massless">false</bool>
+				<token name="Material">256</token>
+				<string name="Name">Handle</string>
+				<float name="Reflectance">0</float>
+				<float name="RightParamA">-0.5</float>
+				<float name="RightParamB">0.5</float>
+				<token name="RightSurface">0</token>
+				<token name="RightSurfaceInput">0</token>
+				<int name="RootPriority">0</int>
+				<Vector3 name="RotVelocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<BinaryString name="Tags"></BinaryString>
+				<float name="TopParamA">-0.5</float>
+				<float name="TopParamB">0.5</float>
+				<token name="TopSurface">0</token>
+				<token name="TopSurfaceInput">0</token>
+				<float name="Transparency">0</float>
+				<Vector3 name="Velocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<token name="formFactorRaw">3</token>
+				<token name="shape">1</token>
+				<Vector3 name="size">
+					<X>0.839999974</X>
+					<Y>1.14999998</Y>
+					<Z>3.54999995</Z>
+				</Vector3>
+			</Properties>
+			<Item class="SpecialMesh" referent="RBXF06D2287511F4FB09C18628C66C4DEAC">
+				<Properties>
+					<token name="LODX">2</token>
+					<token name="LODY">2</token>
+					<Content name="MeshId"><url>http://www.roblox.com/asset/?id=98331889</url></Content>
+					<token name="MeshType">5</token>
+					<string name="Name">Mesh</string>
+					<Vector3 name="Offset">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+					</Vector3>
+					<Vector3 name="Scale">
+						<X>2</X>
+						<Y>2</Y>
+						<Z>2</Z>
+					</Vector3>
+					<BinaryString name="Tags"></BinaryString>
+					<Content name="TextureId"><url>http://www.roblox.com/asset/?id=98332070</url></Content>
+					<Vector3 name="VertexColor">
+						<X>1</X>
+						<Y>1</Y>
+						<Z>1</Z>
+					</Vector3>
+				</Properties>
+			</Item>
+			<Item class="Sound" referent="RBX4A15928E40164283B7B4A252665FAA10">
+				<Properties>
+					<float name="EmitterSize">10</float>
+					<bool name="Looped">false</bool>
+					<string name="Name">ReloadSound</string>
+					<bool name="PlayOnRemove">false</bool>
+					<float name="PlaybackSpeed">1</float>
+					<bool name="Playing">false</bool>
+					<token name="RollOffMode">0</token>
+					<Ref name="SoundGroup">null</Ref>
+					<Content name="SoundId"><url>http://www.roblox.com/Asset?ID=94132726</url></Content>
+					<BinaryString name="Tags"></BinaryString>
+					<double name="TimePosition">0</double>
+					<float name="Volume">1</float>
+					<float name="xmlRead_MaxDistance_3">10000</float>
+				</Properties>
+			</Item>
+			<Item class="Sound" referent="RBXA4630CC8A9BE4EA3A319039D0EC5CE2B">
+				<Properties>
+					<float name="EmitterSize">10</float>
+					<bool name="Looped">false</bool>
+					<string name="Name">Equip</string>
+					<bool name="PlayOnRemove">false</bool>
+					<float name="PlaybackSpeed">1.33000004</float>
+					<bool name="Playing">false</bool>
+					<token name="RollOffMode">0</token>
+					<Ref name="SoundGroup">null</Ref>
+					<Content name="SoundId"><url>http://www.roblox.com/Asset?ID=97103817</url></Content>
+					<BinaryString name="Tags"></BinaryString>
+					<double name="TimePosition">0</double>
+					<float name="Volume">0.5</float>
+					<float name="xmlRead_MaxDistance_3">10000</float>
+				</Properties>
+			</Item>
+			<Item class="Attachment" referent="RBX79D96AEABB564486BB3795B6957A58BB">
+				<Properties>
+					<CoordinateFrame name="CFrame">
+						<X>0.0499999523</X>
+						<Y>-1.31955671</Y>
+						<Z>-0.941427588</Z>
+						<R00>1</R00>
+						<R01>0</R01>
+						<R02>-0</R02>
+						<R10>0</R10>
+						<R11>0.906307757</R11>
+						<R12>0.42261824</R12>
+						<R20>0</R20>
+						<R21>-0.42261824</R21>
+						<R22>0.906307757</R22>
+					</CoordinateFrame>
+					<string name="Name">RightGripAttachment</string>
+					<BinaryString name="Tags"></BinaryString>
+					<bool name="Visible">false</bool>
+				</Properties>
+			</Item>
+		</Item>
+		<Item class="LocalScript" referent="RBX02566F4916B644B8A69F43845D9EFF6F">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">MouseIcon</string>
+				<string name="ScriptGuid">{234C336D-845C-43F5-8F51-4A462CE24A2C}</string>
+				<ProtectedString name="Source"><![CDATA[local MOUSE_ICON = 'rbxasset://textures/GunCursor.png'
+local RELOADING_ICON = 'rbxasset://textures/GunWaitCursor.png'
+
+local Tool = script.Parent
+
+local Mouse = nil
+
+local function UpdateIcon()
+	Mouse.Icon = Tool.Enabled and MOUSE_ICON or RELOADING_ICON
+end
+
+local function OnEquipped(mouse)
+	Mouse = mouse
+	UpdateIcon()
+end
+
+local function OnChanged(property)
+	if property == 'Enabled' then
+		UpdateIcon()
+	end
+end
+
+Tool.Equipped:connect(OnEquipped)
+Tool.Changed:connect(OnChanged)
+]]></ProtectedString>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+		</Item>
+		<Item class="Script" referent="RBX4C2FA505336A44F0A47DEB23E1015081">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">Launcher</string>
+				<string name="ScriptGuid">{1EF781F0-C26A-4713-AE55-E7C2CD6D03E8}</string>
+				<ProtectedString name="Source"><![CDATA[-----------------
+--| Constants |--
+-----------------
+
+local COOLDOWN = 4 -- Seconds until tool can be used again
+
+-- RocketPropulsion Fields
+local TARGET_RADIUS = 5
+local MAX_SPEED = 75
+local MAX_TORQUE = Vector3.new(4e6, 4e6, 0)
+local MAX_THRUST = 50000
+local THRUST_P = 500
+local THRUST_D = 50000
+
+local TARGET_OVERSHOOT_DISTANCE = 10000000
+
+local ROCKET_MESH_ID = 'http://www.roblox.com/asset/?id=94690081'
+local ROCKET_MESH_SCALE = Vector3.new(2, 2, 2)
+local ROCKET_PART_SIZE = Vector3.new(2,2.4,1)
+
+local VELOCITY = 110 -- constant
+local VELOCITY_SQAURED = VELOCITY * VELOCITY
+local VELOCITY_TO_FOURTH = VELOCITY_SQAURED * VELOCITY_SQAURED
+
+-----------------
+--| Variables |--
+-----------------
+
+local DebrisService = game:GetService('Debris')
+local PlayersService = game:GetService('Players')
+
+local Tool = script.Parent
+local ToolHandle = Tool.Handle
+
+local Remote = Instance.new("RemoteEvent")
+Remote.Name = "Remote"
+Remote.Parent = Tool
+
+local RocketScript = script:WaitForChild("Rocket")
+
+local SwooshSound = script:WaitForChild("Swoosh")
+local BoomSound = script:WaitForChild("Boom")
+local ReloadSound = ToolHandle:WaitForChild("ReloadSound")
+local EquipSound
+
+local MyModel = nil
+local MyPlayer = nil
+
+local BaseRocket = nil
+local RocketClone = nil
+
+local RocketMeshes = Tool:WaitForChild("RocketMeshes")
+
+local textGui= Tool:WaitForChild("textGui")
+
+local Kills= Tool:WaitForChild("Kills")
+
+local InUltra=false
+
+-----------------
+--| Functions |--
+-----------------
+
+function computeLaunchAngle(dx,dy,grav)
+	-- arcane
+	-- http://en.wikipedia.org/wiki/Trajectory_of_a_projectile
+	
+	local g = math.abs(grav)
+	local inRoot = (VELOCITY_TO_FOURTH) - (g * ((g*dx*dx) + (2*dy*VELOCITY_SQAURED)))
+	if inRoot <= 0 then
+		return .25 * math.pi
+	end
+	local root = math.sqrt(inRoot)
+	local inATan1 = ((VELOCITY_SQAURED) + root) / (g*dx)
+
+	local inATan2 = ((VELOCITY_SQAURED) - root) / (g*dx)
+	local answer1 = math.atan(inATan1)
+	local answer2 = math.atan(inATan2)
+	return math.min(answer1,answer2)
+end
+
+local function MakeBaseRocket()
+	-- Set up the rocket part
+	local rocket = Instance.new('Part')
+	rocket.Name = 'Rocket'
+	--rocket.FormFactor = Enum.FormFactor.Custom --NOTE: This must be done before changing Size
+	rocket.Size = ROCKET_PART_SIZE
+	rocket.CanCollide = false
+	rocket.BottomSurface = Enum.SurfaceType.Smooth
+	rocket.TopSurface = Enum.SurfaceType.Smooth
+
+	-- Add the mesh
+	local mesh = RocketMeshes[math.random(1,#RocketMeshes:GetChildren())]:Clone()--Instance.new('SpecialMesh', rocket)
+	--mesh.MeshId = 
+	mesh.Scale = ROCKET_MESH_SCALE
+	--mesh.TextureId = ToolHandle.Mesh.TextureId
+	mesh.Parent=rocket
+
+	-- Add fire
+	local fire = Instance.new('Fire', rocket)
+	fire.Heat = 5
+	fire.Size = 2
+
+
+	local spin = Instance.new('BodyAngularVelocity')
+	spin.maxTorque=Vector3.new(999999,999999,999999)
+	spin.angularvelocity=Vector3.new(math.random()*30-15,math.random()*30-15,math.random()*30-15)
+	spin.Parent=rocket
+	
+	-- Clone the sounds
+	local swooshSoundClone = SwooshSound:Clone()
+	swooshSoundClone.Parent = rocket
+	local boomSoundClone = BoomSound:Clone()
+	boomSoundClone.Parent = rocket
+
+	-- Attach creator tags
+	local creatorTag = Instance.new('ObjectValue', rocket)
+	creatorTag.Name = 'creator' --NOTE: Must be called 'creator' for website stats
+	creatorTag.Value = MyPlayer
+	local iconTag = Instance.new('StringValue', creatorTag)
+	iconTag.Name = 'icon'
+	iconTag.Value = Tool.TextureId
+
+	-- Finally, clone the rocket script and enable it
+	local rocketScriptClone = RocketScript:Clone()
+	rocketScriptClone.Parent = rocket
+	rocketScriptClone.Disabled = false
+
+	return rocket
+end
+
+local function OnEquipped()
+	MyModel = Tool.Parent
+	MyPlayer = PlayersService:GetPlayerFromCharacter(MyModel)
+	BaseRocket = MakeBaseRocket()
+	RocketClone = BaseRocket:Clone()
+	EquipSound = ToolHandle:WaitForChild("Equip")
+	EquipSound:Play()
+end
+
+local function OnActivated(Player,targetOverride)
+	if (Tool.Enabled or InUltra) and MyModel and MyModel:FindFirstChildOfClass('Humanoid') and MyModel.Humanoid.Health > 0 then
+		Tool.Enabled = false
+
+		-- Pick a target
+		local targetPosition = targetOverride
+
+		-- Position the rocket clone
+		local spawnPosition = ToolHandle.Position + (ToolHandle.CFrame.lookVector * (ToolHandle.Size.z / 2))
+		RocketClone.CFrame = CFrame.new(spawnPosition, targetPosition) --NOTE: This must be done before assigning Parent
+		DebrisService:AddItem(RocketClone, 30)
+		RocketClone.Parent = workspace
+		RocketClone:SetNetworkOwner(MyPlayer)
+
+		local startPosition = spawnPosition
+		local mouse_pos=targetPosition
+		local dir = mouse_pos - startPosition
+		dir = dir.unit
+	
+		local launch = startPosition + 3 * dir
+	
+		local delta = mouse_pos - launch
+		
+		local dy = delta.y
+		
+		local new_delta = Vector3.new(delta.x, 0, delta.z)
+		delta = new_delta
+	
+		local dx = delta.Magnitude
+		local unit_delta = delta.Unit
+		
+		-- acceleration due to gravity in RBX units
+		local g = (-9.81 * 20)
+	
+		local theta = computeLaunchAngle( dx, dy, g)
+
+		local vy = math.sin(theta)
+		local xz = math.cos(theta)
+		local vx = unit_delta.x * xz
+		local vz = unit_delta.z * xz
+		
+		RocketClone.Velocity = Vector3.new(vx,vy,vz) * VELOCITY
+
+
+		--wait(0) --TODO: Remove when sounds realize they can be played as soon as they enter the Workspace
+		
+		-- Swoosh!
+		local swooshSound = RocketClone:FindFirstChild('Swoosh')
+		if swooshSound then
+			swooshSound:Play()
+		end
+
+		-- Prepare the next rocket to be fired
+		BaseRocket:Destroy()
+		BaseRocket = MakeBaseRocket()
+		RocketClone = BaseRocket:Clone()
+
+		ReloadSound:Play()
+		--if not InUltra then
+			wait((InUltra and .05) or COOLDOWN)
+		--end
+
+		-- Stop the reloading sound if it hasn't already finished
+		ReloadSound:Stop()
+
+		Tool.Enabled = true
+	end
+end
+
+local function OnUnequipped()
+	ReloadSound:Stop() --TODO: This does not work online
+end
+
+function updateUltra()
+	if Kills.Value>2 then 
+		Kills.Value=0
+		InUltra=true
+		local tgui=textGui:Clone()
+		tgui.Parent=MyPlayer.PlayerGui
+		game.Debris:AddItem(tgui,10)
+		local startTime=tick()
+		while tick()-startTime<10 do
+			--OnActivated()
+			wait(.5)
+		end
+		InUltra=false
+	end
+end
+
+--------------------
+--| Script Logic |--
+--------------------
+
+Remote.OnServerEvent:Connect(OnActivated)
+
+Kills.Changed:Connect(updateUltra)
+Tool.Equipped:Connect(OnEquipped)
+--Tool.Activated:Connect(OnActivated)
+Tool.Unequipped:Connect(OnUnequipped)
+--Tool.ChildAdded:Connect(OnChildAdded) --NOTE: Added for Action Button
+
+]]></ProtectedString>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+			<Item class="Sound" referent="RBXFA900EA071C74670996C951CDA19224B">
+				<Properties>
+					<float name="EmitterSize">10</float>
+					<bool name="Looped">false</bool>
+					<string name="Name">Boom</string>
+					<bool name="PlayOnRemove">false</bool>
+					<float name="PlaybackSpeed">1</float>
+					<bool name="Playing">false</bool>
+					<token name="RollOffMode">0</token>
+					<Ref name="SoundGroup">null</Ref>
+					<Content name="SoundId"><url>rbxasset://sounds/collide.wav</url></Content>
+					<BinaryString name="Tags"></BinaryString>
+					<double name="TimePosition">0</double>
+					<float name="Volume">1</float>
+					<float name="xmlRead_MaxDistance_3">10000</float>
+				</Properties>
+			</Item>
+			<Item class="Sound" referent="RBXB5C8E141B3D3463BA2018E4E93FFE833">
+				<Properties>
+					<float name="EmitterSize">10</float>
+					<bool name="Looped">true</bool>
+					<string name="Name">Swoosh</string>
+					<bool name="PlayOnRemove">false</bool>
+					<float name="PlaybackSpeed">1</float>
+					<bool name="Playing">false</bool>
+					<token name="RollOffMode">0</token>
+					<Ref name="SoundGroup">null</Ref>
+					<Content name="SoundId"><url>http://www.roblox.com/Asset?ID=98318391</url></Content>
+					<BinaryString name="Tags"></BinaryString>
+					<double name="TimePosition">0</double>
+					<float name="Volume">1</float>
+					<float name="xmlRead_MaxDistance_3">10000</float>
+				</Properties>
+			</Item>
+			<Item class="Script" referent="RBXAB133076ECE74B24A05D9543C2FEB7C3">
+				<Properties>
+					<bool name="Disabled">true</bool>
+					<Content name="LinkedSource"><null></null></Content>
+					<string name="Name">Rocket</string>
+					<string name="ScriptGuid">{10A25A84-3EC1-4D2D-A826-8AC85BC52C97}</string>
+					<ProtectedString name="Source"><![CDATA[-----------------
+--| Constants |--
+-----------------
+
+local BLAST_RADIUS = 10
+local BLAST_PRESSURE = 350000
+
+-- Rocket will fly through things named these
+local ROCKET_IGNORE_LIST = {rocket = 1, handle = 1, effect = 1, water = 1} --NOTE: Keys must be lowercase, values must evaluate to true
+
+-----------------
+--| Variables |--
+-----------------
+
+local DebrisService = game:GetService('Debris')
+
+local Rocket = script.Parent
+local CreatorTag = Rocket:WaitForChild("creator")
+
+local Connection = nil
+
+-----------------
+--| Functions |--
+-----------------
+
+
+function TagHumanoid(humanoid, player)
+	local Creator_Tag = Instance.new("ObjectValue")
+	Creator_Tag.Name = "creator";
+	Creator_Tag.Value = player;
+	game:GetService("Debris"):AddItem(Creator_Tag, 2)
+	Creator_Tag.Parent = humanoid
+end
+	
+function UntagHumanoid(humanoid)
+	for _, v in pairs(humanoid:GetChildren()) do
+		if v:IsA("ObjectValue") and v.Name == "creator" then
+			v:Destroy()
+		end
+	end
+end
+
+function IsTeamMate(Player1, Player2)
+	return (Player1 and Player2 and not Player1.Neutral and not Player2.Neutral and Player1.TeamColor == Player2.TeamColor)
+end
+
+-- Returns the ancestor that contains a Humanoid, if it exists
+local function FindCharacterAncestor(subject)
+	if subject and subject ~= workspace then
+		local humanoid = subject:FindFirstChildOfClass('Humanoid')
+		if humanoid then
+			return subject, humanoid
+		else
+			return FindCharacterAncestor(subject.Parent)
+		end
+	end
+	return nil
+end
+
+local hitHuman=false
+
+local function OnExplosionHit(hitPart)
+	if hitPart then
+		local _, humanoid = FindCharacterAncestor(hitPart.Parent)
+		if humanoid and not humanoid.Parent:FindFirstChildOfClass("ForceField") and game:GetService("Players"):GetPlayerFromCharacter(humanoid.Parent) ~= CreatorTag.Value and humanoid.Health ~= 0 and not IsTeamMate(CreatorTag.Value,game.Players:GetPlayerFromCharacter(humanoid.Parent)) then
+			if CreatorTag.Value.Character:FindFirstChild('Carnagecopia') then
+				local tkills= CreatorTag.Value.Character:FindFirstChild('Carnagecopia'):FindFirstChild('Kills')
+				if tkills and not hitHuman then
+					UntagHumanoid(humanoid)
+					TagHumanoid(humanoid,CreatorTag.Value)
+					tkills.Value=tkills.Value+1
+					humanoid.Parent:BreakJoints()
+					hitHuman=true
+				end
+			end
+		end
+	end
+end
+
+local function OnTouched(otherPart)
+	if Rocket and otherPart then
+		-- Fly through anything in the ignore list
+		if ROCKET_IGNORE_LIST[string.lower(otherPart.Name)] then
+			return
+		end
+
+		-- Fly through the creator
+		local myPlayer = CreatorTag.Value
+		if myPlayer and myPlayer.Character and myPlayer.Character:IsAncestorOf(otherPart) then
+			return
+		end
+
+		-- Create the explosion
+		local explosion = Instance.new('Explosion')
+		explosion.BlastPressure = BLAST_PRESSURE
+		explosion.DestroyJointRadiusPercent = 0
+		explosion.BlastRadius = BLAST_RADIUS
+		explosion.Position = Rocket.Position
+		explosion.Hit:Connect(OnExplosionHit)
+		explosion.Parent = workspace
+
+		-- Start playing the boom sound
+		local boomSound = Rocket:FindFirstChild('Boom')
+		if boomSound then
+			boomSound:Play()
+		end
+
+		-- NOTE:
+		-- If we just destroyed the rocket at this point, the boom sound would be destroyed too,
+		-- so instead we will hide the rocket, keep it in the same spot, and schedule it for deletion
+
+		-- Stop playing the swoosh sound
+		local swooshSound = Rocket:FindFirstChild('Swoosh')
+		if swooshSound then
+			swooshSound:Stop()
+		end
+
+		-- Put out the fire
+		local fire = Rocket:FindFirstChild('Fire')
+		if fire then
+			fire:Destroy()
+		end
+
+		Rocket.Transparency = 1
+		Rocket.CanCollide = false
+		Rocket.Anchored = true
+		DebrisService:AddItem(Rocket, 3)
+
+		-- Destroy the connection so this method won't be called again
+		Connection:Disconnect()
+	end
+end
+
+--------------------
+--| Script Logic |--
+--------------------
+
+-- Arm the rocket and save the touch connection so we can disconnect it later
+Connection = Rocket.Touched:Connect(OnTouched)
+]]></ProtectedString>
+					<BinaryString name="Tags"></BinaryString>
+				</Properties>
+			</Item>
+		</Item>
+		<Item class="ScreenGui" referent="RBXD9FCB93511234E91AD7020C5775AD3B3">
+			<Properties>
+				<bool name="AutoLocalize">true</bool>
+				<int name="DisplayOrder">0</int>
+				<bool name="Enabled">true</bool>
+				<bool name="IgnoreGuiInset">false</bool>
+				<string name="Name">textGui</string>
+				<bool name="ResetOnSpawn">true</bool>
+				<Ref name="RootLocalizationTable">null</Ref>
+				<BinaryString name="Tags"></BinaryString>
+				<token name="ZIndexBehavior">0</token>
+			</Properties>
+			<Item class="Frame" referent="RBX01291C56A7B34335BC6DC07DDC80FF82">
+				<Properties>
+					<bool name="Active">false</bool>
+					<Vector2 name="AnchorPoint">
+						<X>0</X>
+						<Y>0</Y>
+					</Vector2>
+					<bool name="AutoLocalize">true</bool>
+					<Color3 name="BackgroundColor3">
+						<R>0.639215708</R>
+						<G>0.635294139</G>
+						<B>0.647058845</B>
+					</Color3>
+					<float name="BackgroundTransparency">1</float>
+					<Color3 name="BorderColor3">
+						<R>0.105882362</R>
+						<G>0.164705887</G>
+						<B>0.207843155</B>
+					</Color3>
+					<int name="BorderSizePixel">1</int>
+					<bool name="ClipsDescendants">false</bool>
+					<bool name="Draggable">false</bool>
+					<int name="LayoutOrder">0</int>
+					<string name="Name">Frame</string>
+					<Ref name="NextSelectionDown">null</Ref>
+					<Ref name="NextSelectionLeft">null</Ref>
+					<Ref name="NextSelectionRight">null</Ref>
+					<Ref name="NextSelectionUp">null</Ref>
+					<UDim2 name="Position">
+						<XS>0.25</XS>
+						<XO>0</XO>
+						<YS>0.75</YS>
+						<YO>0</YO>
+					</UDim2>
+					<Ref name="RootLocalizationTable">null</Ref>
+					<float name="Rotation">0</float>
+					<bool name="Selectable">false</bool>
+					<Ref name="SelectionImageObject">null</Ref>
+					<UDim2 name="Size">
+						<XS>0.5</XS>
+						<XO>0</XO>
+						<YS>0.100000001</YS>
+						<YO>0</YO>
+					</UDim2>
+					<token name="SizeConstraint">0</token>
+					<token name="Style">0</token>
+					<BinaryString name="Tags"></BinaryString>
+					<bool name="Visible">true</bool>
+					<int name="ZIndex">1</int>
+				</Properties>
+				<Item class="LocalScript" referent="RBXCF01246BB8BC4509B13FC272DA3C8696">
+					<Properties>
+						<bool name="Disabled">false</bool>
+						<Content name="LinkedSource"><null></null></Content>
+						<string name="Name">ElementShaker</string>
+						<string name="ScriptGuid">{CCB61B3E-054D-4ED4-94D0-23DC8D8DA54F}</string>
+						<ProtectedString name="Source"><![CDATA[local Element = script.Parent
+
+local ShakeSpeed = .05
+
+local ShakeAmount = 5
+
+local StartPosition=Element.Position
+
+while true do
+	local angle= math.random()*math.pi*2
+	Element:TweenPosition(StartPosition+UDim2.new(0,math.cos(angle)*ShakeAmount,0,math.sin(angle)*ShakeAmount), "Out", "Quad", ShakeSpeed, true)
+	wait(ShakeSpeed+.01)
+end]]></ProtectedString>
+						<BinaryString name="Tags"></BinaryString>
+					</Properties>
+				</Item>
+				<Item class="ImageLabel" referent="RBXD2C088B5C59240628969041F5E884BBA">
+					<Properties>
+						<bool name="Active">false</bool>
+						<Vector2 name="AnchorPoint">
+							<X>0</X>
+							<Y>0</Y>
+						</Vector2>
+						<bool name="AutoLocalize">true</bool>
+						<Color3 name="BackgroundColor3">
+							<R>0.639215708</R>
+							<G>0.635294139</G>
+							<B>0.647058845</B>
+						</Color3>
+						<float name="BackgroundTransparency">1</float>
+						<Color3 name="BorderColor3">
+							<R>0.105882362</R>
+							<G>0.164705887</G>
+							<B>0.207843155</B>
+						</Color3>
+						<int name="BorderSizePixel">1</int>
+						<bool name="ClipsDescendants">false</bool>
+						<bool name="Draggable">false</bool>
+						<Content name="Image"><url>http://www.roblox.com/asset/?id=98341554</url></Content>
+						<Color3 name="ImageColor3">
+							<R>1</R>
+							<G>1</G>
+							<B>1</B>
+						</Color3>
+						<Vector2 name="ImageRectOffset">
+							<X>0</X>
+							<Y>0</Y>
+						</Vector2>
+						<Vector2 name="ImageRectSize">
+							<X>0</X>
+							<Y>0</Y>
+						</Vector2>
+						<float name="ImageTransparency">0</float>
+						<int name="LayoutOrder">0</int>
+						<string name="Name">ImageLabel</string>
+						<Ref name="NextSelectionDown">null</Ref>
+						<Ref name="NextSelectionLeft">null</Ref>
+						<Ref name="NextSelectionRight">null</Ref>
+						<Ref name="NextSelectionUp">null</Ref>
+						<UDim2 name="Position">
+							<XS>0</XS>
+							<XO>0</XO>
+							<YS>0</YS>
+							<YO>0</YO>
+						</UDim2>
+						<Ref name="RootLocalizationTable">null</Ref>
+						<float name="Rotation">0</float>
+						<token name="ScaleType">0</token>
+						<bool name="Selectable">false</bool>
+						<Ref name="SelectionImageObject">null</Ref>
+						<UDim2 name="Size">
+							<XS>1</XS>
+							<XO>0</XO>
+							<YS>1</YS>
+							<YO>0</YO>
+						</UDim2>
+						<token name="SizeConstraint">0</token>
+						<Rect2D name="SliceCenter">
+							<min>
+								<X>0</X>
+								<Y>0</Y>
+							</min>
+							<max>
+								<X>0</X>
+								<Y>0</Y>
+							</max>
+						</Rect2D>
+						<float name="SliceScale">1</float>
+						<BinaryString name="Tags"></BinaryString>
+						<UDim2 name="TileSize">
+							<XS>1</XS>
+							<XO>0</XO>
+							<YS>1</YS>
+							<YO>0</YO>
+						</UDim2>
+						<bool name="Visible">true</bool>
+						<int name="ZIndex">1</int>
+					</Properties>
+				</Item>
+			</Item>
+			<Item class="Frame" referent="RBX267B755E413F490497B835A02BFC8933">
+				<Properties>
+					<bool name="Active">false</bool>
+					<Vector2 name="AnchorPoint">
+						<X>0</X>
+						<Y>0</Y>
+					</Vector2>
+					<bool name="AutoLocalize">true</bool>
+					<Color3 name="BackgroundColor3">
+						<R>0.639215708</R>
+						<G>0.635294139</G>
+						<B>0.647058845</B>
+					</Color3>
+					<float name="BackgroundTransparency">1</float>
+					<Color3 name="BorderColor3">
+						<R>0.105882362</R>
+						<G>0.164705887</G>
+						<B>0.207843155</B>
+					</Color3>
+					<int name="BorderSizePixel">1</int>
+					<bool name="ClipsDescendants">false</bool>
+					<bool name="Draggable">false</bool>
+					<int name="LayoutOrder">0</int>
+					<string name="Name">Frame</string>
+					<Ref name="NextSelectionDown">null</Ref>
+					<Ref name="NextSelectionLeft">null</Ref>
+					<Ref name="NextSelectionRight">null</Ref>
+					<Ref name="NextSelectionUp">null</Ref>
+					<UDim2 name="Position">
+						<XS>0.25</XS>
+						<XO>0</XO>
+						<YS>0.75</YS>
+						<YO>0</YO>
+					</UDim2>
+					<Ref name="RootLocalizationTable">null</Ref>
+					<float name="Rotation">0</float>
+					<bool name="Selectable">false</bool>
+					<Ref name="SelectionImageObject">null</Ref>
+					<UDim2 name="Size">
+						<XS>0.5</XS>
+						<XO>0</XO>
+						<YS>0.100000001</YS>
+						<YO>0</YO>
+					</UDim2>
+					<token name="SizeConstraint">0</token>
+					<token name="Style">0</token>
+					<BinaryString name="Tags"></BinaryString>
+					<bool name="Visible">true</bool>
+					<int name="ZIndex">1</int>
+				</Properties>
+				<Item class="LocalScript" referent="RBXC23A99604EBA48C28D94505278F1BA37">
+					<Properties>
+						<bool name="Disabled">false</bool>
+						<Content name="LinkedSource"><null></null></Content>
+						<string name="Name">ElementShaker</string>
+						<string name="ScriptGuid">{C80B227A-F22D-4BA3-A57F-28FEE3D27DF5}</string>
+						<ProtectedString name="Source"><![CDATA[local Element = script.Parent
+
+local ShakeSpeed = .05
+
+local ShakeAmount = 5
+
+local StartPosition=Element.Position
+
+while true do
+	local angle= math.random()*math.pi*2
+	Element:TweenPosition(StartPosition+UDim2.new(0,math.cos(angle)*ShakeAmount,0,math.sin(angle)*ShakeAmount), "Out", "Quad", ShakeSpeed, true)
+	wait(ShakeSpeed+.01)
+end]]></ProtectedString>
+						<BinaryString name="Tags"></BinaryString>
+					</Properties>
+				</Item>
+				<Item class="ImageLabel" referent="RBX058CD5974B434DBCA1CC50D8A4544A93">
+					<Properties>
+						<bool name="Active">false</bool>
+						<Vector2 name="AnchorPoint">
+							<X>0</X>
+							<Y>0</Y>
+						</Vector2>
+						<bool name="AutoLocalize">true</bool>
+						<Color3 name="BackgroundColor3">
+							<R>0.639215708</R>
+							<G>0.635294139</G>
+							<B>0.647058845</B>
+						</Color3>
+						<float name="BackgroundTransparency">1</float>
+						<Color3 name="BorderColor3">
+							<R>0.105882362</R>
+							<G>0.164705887</G>
+							<B>0.207843155</B>
+						</Color3>
+						<int name="BorderSizePixel">1</int>
+						<bool name="ClipsDescendants">false</bool>
+						<bool name="Draggable">false</bool>
+						<Content name="Image"><url>http://www.roblox.com/asset/?id=98341065</url></Content>
+						<Color3 name="ImageColor3">
+							<R>1</R>
+							<G>1</G>
+							<B>1</B>
+						</Color3>
+						<Vector2 name="ImageRectOffset">
+							<X>0</X>
+							<Y>0</Y>
+						</Vector2>
+						<Vector2 name="ImageRectSize">
+							<X>0</X>
+							<Y>0</Y>
+						</Vector2>
+						<float name="ImageTransparency">0</float>
+						<int name="LayoutOrder">0</int>
+						<string name="Name">ImageLabel</string>
+						<Ref name="NextSelectionDown">null</Ref>
+						<Ref name="NextSelectionLeft">null</Ref>
+						<Ref name="NextSelectionRight">null</Ref>
+						<Ref name="NextSelectionUp">null</Ref>
+						<UDim2 name="Position">
+							<XS>0</XS>
+							<XO>0</XO>
+							<YS>0</YS>
+							<YO>0</YO>
+						</UDim2>
+						<Ref name="RootLocalizationTable">null</Ref>
+						<float name="Rotation">0</float>
+						<token name="ScaleType">0</token>
+						<bool name="Selectable">false</bool>
+						<Ref name="SelectionImageObject">null</Ref>
+						<UDim2 name="Size">
+							<XS>1</XS>
+							<XO>0</XO>
+							<YS>1</YS>
+							<YO>0</YO>
+						</UDim2>
+						<token name="SizeConstraint">0</token>
+						<Rect2D name="SliceCenter">
+							<min>
+								<X>0</X>
+								<Y>0</Y>
+							</min>
+							<max>
+								<X>0</X>
+								<Y>0</Y>
+							</max>
+						</Rect2D>
+						<float name="SliceScale">1</float>
+						<BinaryString name="Tags"></BinaryString>
+						<UDim2 name="TileSize">
+							<XS>1</XS>
+							<XO>0</XO>
+							<YS>1</YS>
+							<YO>0</YO>
+						</UDim2>
+						<bool name="Visible">true</bool>
+						<int name="ZIndex">1</int>
+					</Properties>
+				</Item>
+			</Item>
+		</Item>
+		<Item class="IntValue" referent="RBXB7778B9DA5274C52AC2080A8F52CC1DE">
+			<Properties>
+				<string name="Name">Kills</string>
+				<BinaryString name="Tags"></BinaryString>
+				<int64 name="Value">0</int64>
+			</Properties>
+		</Item>
+		<Item class="Folder" referent="RBXEABBF7990EAA47E69B0C1B790CFCF24E">
+			<Properties>
+				<string name="Name">RocketMeshes</string>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+			<Item class="SpecialMesh" referent="RBX7243E4B304804AEFAA8D0EF0499503B8">
+				<Properties>
+					<token name="LODX">2</token>
+					<token name="LODY">2</token>
+					<Content name="MeshId"><url>http://www.roblox.com/asset/?id=16190555</url></Content>
+					<token name="MeshType">5</token>
+					<string name="Name">1</string>
+					<Vector3 name="Offset">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+					</Vector3>
+					<Vector3 name="Scale">
+						<X>1.60000002</X>
+						<Y>1.60000002</Y>
+						<Z>1.60000002</Z>
+					</Vector3>
+					<BinaryString name="Tags"></BinaryString>
+					<Content name="TextureId"><url>http://www.roblox.com/asset/?id=16190577</url></Content>
+					<Vector3 name="VertexColor">
+						<X>1</X>
+						<Y>1</Y>
+						<Z>1</Z>
+					</Vector3>
+				</Properties>
+			</Item>
+			<Item class="SpecialMesh" referent="RBX94AB96DA0E2148D989E048F7A2C8AAB6">
+				<Properties>
+					<token name="LODX">2</token>
+					<token name="LODY">2</token>
+					<Content name="MeshId"><url>http://www.roblox.com/asset/?id=28937301</url></Content>
+					<token name="MeshType">5</token>
+					<string name="Name">2</string>
+					<Vector3 name="Offset">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+					</Vector3>
+					<Vector3 name="Scale">
+						<X>1</X>
+						<Y>1</Y>
+						<Z>1</Z>
+					</Vector3>
+					<BinaryString name="Tags"></BinaryString>
+					<Content name="TextureId"><url>http://www.roblox.com/asset/?id=28937670</url></Content>
+					<Vector3 name="VertexColor">
+						<X>1</X>
+						<Y>1</Y>
+						<Z>1</Z>
+					</Vector3>
+				</Properties>
+			</Item>
+			<Item class="SpecialMesh" referent="RBX5FCE2FE49EF14C059A30D1DB9105C8B3">
+				<Properties>
+					<token name="LODX">2</token>
+					<token name="LODY">2</token>
+					<Content name="MeshId"><url>http://www.roblox.com/asset/?id=13073626</url></Content>
+					<token name="MeshType">5</token>
+					<string name="Name">3</string>
+					<Vector3 name="Offset">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+					</Vector3>
+					<Vector3 name="Scale">
+						<X>1.5</X>
+						<Y>1.5</Y>
+						<Z>1.5</Z>
+					</Vector3>
+					<BinaryString name="Tags"></BinaryString>
+					<Content name="TextureId"><url>http://www.roblox.com/asset/?id=13073598</url></Content>
+					<Vector3 name="VertexColor">
+						<X>1</X>
+						<Y>1</Y>
+						<Z>1</Z>
+					</Vector3>
+				</Properties>
+			</Item>
+			<Item class="SpecialMesh" referent="RBXA76F72800DE44AF4AFAEC001D617A3EF">
+				<Properties>
+					<token name="LODX">2</token>
+					<token name="LODY">2</token>
+					<Content name="MeshId"><url>http://www.roblox.com/asset/?id=40311092</url></Content>
+					<token name="MeshType">5</token>
+					<string name="Name">4</string>
+					<Vector3 name="Offset">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+					</Vector3>
+					<Vector3 name="Scale">
+						<X>1</X>
+						<Y>1</Y>
+						<Z>1</Z>
+					</Vector3>
+					<BinaryString name="Tags"></BinaryString>
+					<Content name="TextureId"><url>http://www.roblox.com/asset/?id=40311049</url></Content>
+					<Vector3 name="VertexColor">
+						<X>0.699999988</X>
+						<Y>0.699999988</Y>
+						<Z>0.699999988</Z>
+					</Vector3>
+				</Properties>
+			</Item>
+			<Item class="SpecialMesh" referent="RBX4C99D19B02394842927E5841B9665F95">
+				<Properties>
+					<token name="LODX">2</token>
+					<token name="LODY">2</token>
+					<Content name="MeshId"><url>http://www.roblox.com/asset/?id=16215477</url></Content>
+					<token name="MeshType">5</token>
+					<string name="Name">5</string>
+					<Vector3 name="Offset">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+					</Vector3>
+					<Vector3 name="Scale">
+						<X>1.04999995</X>
+						<Y>1.04999995</Y>
+						<Z>1.04999995</Z>
+					</Vector3>
+					<BinaryString name="Tags"></BinaryString>
+					<Content name="TextureId"><url>http://www.roblox.com/asset/?id=16215451</url></Content>
+					<Vector3 name="VertexColor">
+						<X>1</X>
+						<Y>1</Y>
+						<Z>1</Z>
+					</Vector3>
+				</Properties>
+			</Item>
+			<Item class="SpecialMesh" referent="RBX7308BF18AF514561B85069180934E8F6">
+				<Properties>
+					<token name="LODX">2</token>
+					<token name="LODY">2</token>
+					<Content name="MeshId"><url>http://www.roblox.com/asset/?id=16940906</url></Content>
+					<token name="MeshType">5</token>
+					<string name="Name">6</string>
+					<Vector3 name="Offset">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+					</Vector3>
+					<Vector3 name="Scale">
+						<X>0.800000012</X>
+						<Y>0.800000012</Y>
+						<Z>0.800000012</Z>
+					</Vector3>
+					<BinaryString name="Tags"></BinaryString>
+					<Content name="TextureId"><url>http://www.roblox.com/asset/?id=16940893</url></Content>
+					<Vector3 name="VertexColor">
+						<X>1</X>
+						<Y>1</Y>
+						<Z>1</Z>
+					</Vector3>
+				</Properties>
+			</Item>
+		</Item>
+		<Item class="LocalScript" referent="RBX326B38C1A06148968CC5FA0EF64B4751">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">Client</string>
+				<string name="ScriptGuid">{1F2AF8FF-38AA-4DD3-AC4A-A152DA40566F}</string>
+				<ProtectedString name="Source"><![CDATA[local Tool = script.Parent
+
+local Remote = Tool:WaitForChild("Remote")
+
+local Mouse = game.Players.LocalPlayer:GetMouse()
+
+
+Tool.Activated:Connect(function()
+	Remote:FireServer(Mouse.Hit.p)
+end)]]></ProtectedString>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+		</Item>
+		<Item class="Camera" referent="RBX5C6D137EC8AF40D3ACB5BD4317A83DFA">
+			<Properties>
+				<CoordinateFrame name="CFrame">
+					<X>21.8368359</X>
+					<Y>79.0976563</Y>
+					<Z>-47.8299904</Z>
+					<R00>-0.792283893</R00>
+					<R01>0.167173624</R01>
+					<R02>-0.58680433</R02>
+					<R10>-0</R10>
+					<R11>0.96173358</R11>
+					<R12>0.273986518</R12>
+					<R20>0.610152721</R20>
+					<R21>0.217075109</R21>
+					<R22>-0.76196593</R22>
+				</CoordinateFrame>
+				<Ref name="CameraSubject">null</Ref>
+				<token name="CameraType">0</token>
+				<float name="FieldOfView">70</float>
+				<CoordinateFrame name="Focus">
+					<X>23.9200001</X>
+					<Y>78.125</Y>
+					<Z>-45.125</Z>
+					<R00>1</R00>
+					<R01>0</R01>
+					<R02>0</R02>
+					<R10>0</R10>
+					<R11>1</R11>
+					<R12>0</R12>
+					<R20>0</R20>
+					<R21>0</R21>
+					<R22>1</R22>
+				</CoordinateFrame>
+				<bool name="HeadLocked">true</bool>
+				<float name="HeadScale">1</float>
+				<string name="Name">ThumbnailCamera</string>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+		</Item>
+		<Item class="Keyframe" referent="RBX1C0F761C871441D09981945858B18CFE">
+			<Properties>
+				<string name="Name">ThumbnailPose</string>
+				<BinaryString name="Tags"></BinaryString>
+				<float name="Time">0</float>
+			</Properties>
+			<Item class="Pose" referent="RBXBCDD543147C7401BAEB777F004B5C629">
+				<Properties>
+					<CoordinateFrame name="CFrame">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+						<R00>1</R00>
+						<R01>0</R01>
+						<R02>0</R02>
+						<R10>0</R10>
+						<R11>1</R11>
+						<R12>0</R12>
+						<R20>0</R20>
+						<R21>0</R21>
+						<R22>1</R22>
+					</CoordinateFrame>
+					<token name="EasingDirection">1</token>
+					<token name="EasingStyle">0</token>
+					<string name="Name">UpperTorso</string>
+					<BinaryString name="Tags"></BinaryString>
+					<float name="Weight">0</float>
+				</Properties>
+				<Item class="Pose" referent="RBX7B88E19CCB644E44A36367668DD69CF6">
+					<Properties>
+						<CoordinateFrame name="CFrame">
+							<X>0</X>
+							<Y>-6.70552254e-08</Y>
+							<Z>-5.96046448e-08</Z>
+							<R00>1</R00>
+							<R01>0</R01>
+							<R02>0</R02>
+							<R10>0</R10>
+							<R11>0.173648193</R11>
+							<R12>-0.98480773</R12>
+							<R20>0</R20>
+							<R21>0.98480773</R21>
+							<R22>0.173648193</R22>
+						</CoordinateFrame>
+						<token name="EasingDirection">1</token>
+						<token name="EasingStyle">0</token>
+						<string name="Name">RightUpperArm</string>
+						<BinaryString name="Tags"></BinaryString>
+						<float name="Weight">1</float>
+					</Properties>
+					<Item class="Pose" referent="RBXA37144F391644F28BBAB593F33AB4E0C">
+						<Properties>
+							<CoordinateFrame name="CFrame">
+								<X>0</X>
+								<Y>-1.49011612e-08</Y>
+								<Z>3.7252903e-09</Z>
+								<R00>1</R00>
+								<R01>0</R01>
+								<R02>0</R02>
+								<R10>0</R10>
+								<R11>0.98480773</R11>
+								<R12>-0.173648179</R12>
+								<R20>0</R20>
+								<R21>0.173648179</R21>
+								<R22>0.98480773</R22>
+							</CoordinateFrame>
+							<token name="EasingDirection">1</token>
+							<token name="EasingStyle">0</token>
+							<string name="Name">RightLowerArm</string>
+							<BinaryString name="Tags"></BinaryString>
+							<float name="Weight">1</float>
+						</Properties>
+						<Item class="Pose" referent="RBX1F4CAD86DD6340E3B1A5B24583C238BA">
+							<Properties>
+								<CoordinateFrame name="CFrame">
+									<X>0</X>
+									<Y>0</Y>
+									<Z>0</Z>
+									<R00>1</R00>
+									<R01>0</R01>
+									<R02>0</R02>
+									<R10>0</R10>
+									<R11>1</R11>
+									<R12>0</R12>
+									<R20>0</R20>
+									<R21>0</R21>
+									<R22>1</R22>
+								</CoordinateFrame>
+								<token name="EasingDirection">1</token>
+								<token name="EasingStyle">0</token>
+								<string name="Name">RightHand</string>
+								<BinaryString name="Tags"></BinaryString>
+								<float name="Weight">1</float>
+							</Properties>
+						</Item>
+					</Item>
+				</Item>
+			</Item>
+		</Item>
+	</Item>
+</roblox>

@@ -1,0 +1,569 @@
+<roblox xmlns:xmime="http://www.w3.org/2005/05/xmlmime" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.roblox.com/roblox.xsd" version="4">
+	<External>null</External>
+	<External>nil</External>
+	<Item class="Tool" referent="RBX0">
+		<Properties>
+			<bool name="CanBeDropped">true</bool>
+			<bool name="Enabled">true</bool>
+			<CoordinateFrame name="Grip">
+				<X>0</X>
+				<Y>0</Y>
+				<Z>0</Z>
+				<R00>1</R00>
+				<R01>0</R01>
+				<R02>0</R02>
+				<R10>0</R10>
+				<R11>1</R11>
+				<R12>0</R12>
+				<R20>0</R20>
+				<R21>0</R21>
+				<R22>1</R22>
+			</CoordinateFrame>
+			<bool name="ManualActivationOnly">false</bool>
+			<string name="Name">CampingLantern</string>
+			<bool name="RequiresHandle">true</bool>
+			<Content name="TextureId"><url>http://www.roblox.com/asset/?id=123239881</url></Content>
+			<string name="ToolTip">Mosquitoes... how relaxing.</string>
+		</Properties>
+		<Item class="Part" referent="RBX1">
+			<Properties>
+				<bool name="Anchored">false</bool>
+				<float name="BackParamA">-0.5</float>
+				<float name="BackParamB">0.5</float>
+				<token name="BackSurface">0</token>
+				<token name="BackSurfaceInput">0</token>
+				<float name="BottomParamA">-0.5</float>
+				<float name="BottomParamB">0.5</float>
+				<token name="BottomSurface">4</token>
+				<token name="BottomSurfaceInput">0</token>
+				<int name="BrickColor">194</int>
+				<CoordinateFrame name="CFrame">
+					<X>6.20000029</X>
+					<Y>65.5</Y>
+					<Z>112.900009</Z>
+					<R00>-1</R00>
+					<R01>0</R01>
+					<R02>-0</R02>
+					<R10>-0</R10>
+					<R11>1</R11>
+					<R12>-0</R12>
+					<R20>-0</R20>
+					<R21>0</R21>
+					<R22>-1</R22>
+				</CoordinateFrame>
+				<bool name="CanCollide">true</bool>
+				<PhysicalProperties name="CustomPhysicalProperties">
+					<CustomPhysics>false</CustomPhysics>
+				</PhysicalProperties>
+				<float name="Elasticity">0.5</float>
+				<float name="Friction">0.300000012</float>
+				<float name="FrontParamA">-0.5</float>
+				<float name="FrontParamB">0.5</float>
+				<token name="FrontSurface">0</token>
+				<token name="FrontSurfaceInput">0</token>
+				<float name="LeftParamA">-0.5</float>
+				<float name="LeftParamB">0.5</float>
+				<token name="LeftSurface">0</token>
+				<token name="LeftSurfaceInput">0</token>
+				<bool name="Locked">false</bool>
+				<token name="Material">256</token>
+				<string name="Name">Handle</string>
+				<float name="Reflectance">0</float>
+				<float name="RightParamA">-0.5</float>
+				<float name="RightParamB">0.5</float>
+				<token name="RightSurface">0</token>
+				<token name="RightSurfaceInput">0</token>
+				<Vector3 name="RotVelocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<float name="TopParamA">-0.5</float>
+				<float name="TopParamB">0.5</float>
+				<token name="TopSurface">3</token>
+				<token name="TopSurfaceInput">0</token>
+				<float name="Transparency">0</float>
+				<Vector3 name="Velocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<token name="formFactorRaw">3</token>
+				<token name="shape">1</token>
+				<Vector3 name="size">
+					<X>0.889996111</X>
+					<Y>2.60000038</Y>
+					<Z>1</Z>
+				</Vector3>
+			</Properties>
+			<Item class="SpecialMesh" referent="RBX2">
+				<Properties>
+					<token name="LODX">2</token>
+					<token name="LODY">2</token>
+					<Content name="MeshId"><url>http://www.roblox.com/asset/?id=123115084</url></Content>
+					<token name="MeshType">5</token>
+					<string name="Name">Mesh</string>
+					<Vector3 name="Offset">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+					</Vector3>
+					<Vector3 name="Scale">
+						<X>1</X>
+						<Y>1</Y>
+						<Z>1</Z>
+					</Vector3>
+					<Content name="TextureId"><url>http://www.roblox.com/asset/?id=123115105 </url></Content>
+					<Vector3 name="VertexColor">
+						<X>1</X>
+						<Y>1</Y>
+						<Z>1</Z>
+					</Vector3>
+				</Properties>
+			</Item>
+		</Item>
+		<Item class="LocalScript" referent="RBX3">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">CampingLanternMain</string>
+				<string name="ScriptGuid"></string>
+				<ProtectedString name="Source"><![CDATA[local Tool = script.Parent
+local Handle = Tool:WaitForChild('Handle')
+local SpotLightProxy = Tool:WaitForChild('SpotLightProxy')
+local Light = SpotLightProxy:WaitForChild('SpotLight')
+local Humanoid;
+local Character;
+
+local Equipped = false
+local Running = false
+
+local ANIM_Hold, ANIM_Equip, ANIM_Swish;
+
+local Swarm = {}
+
+local function rand11()
+	return math.random()*2 - 1
+end
+
+local CurrentSpeed = 20
+local LastAnimate;
+local function AnimateSwarm()
+	local desiredSpeed = (Handle.Velocity.magnitude > 1) and 20 or 8
+	--
+	local time = tick()
+	local dt = time-LastAnimate
+	LastAnimate = time
+	--
+	if CurrentSpeed > desiredSpeed then
+		CurrentSpeed = math.max(desiredSpeed, CurrentSpeed - dt*10)
+	else
+		CurrentSpeed = math.min(desiredSpeed, CurrentSpeed + dt*10)
+	end
+	--
+	for i, swarmItem in pairs(Swarm) do
+		local at = swarmItem.Part.Position
+		local to = Handle.Position
+		if Handle.Velocity.magnitude > 2 then
+			to = to + Handle.Velocity.unit * 6
+		end
+		--
+		swarmItem.Thrust.MaxSpeed = CurrentSpeed
+		--
+		local r = (at-to).magnitude
+		if Running and r < 6 then
+			swarmItem.TargetPart.Position = 
+				swarmItem.Part.Position + 
+					(CFrame.new(to,at)*CFrame.Angles(rand11()*0.9, 0, rand11()*0.9)).lookVector*5
+		else
+			if r > 8 or (not Running and r > 4)  then
+				-- swarmItem.LastAnimated = tick()
+				-- local randomPointNearby = (Handle.CFrame * 
+				--                            CFrame.Angles(0, rand11()*math.pi, 0) * 
+				--                            CFrame.Angles(math.acos(rand11()), 0, 0) *
+				--                            CFrame.new(0, 0, (Running and -math.random(5,8) or -math.random(1,4)))).p
+				swarmItem.TargetPart.Position = at + 
+					(CFrame.new(at, to)*CFrame.Angles(rand11()*1, 0, rand11()*1)).lookVector*30
+				-- local newTo = CFrame.new(at, randomPointNearby) * CFrame.new(0, 0, -15)
+				-- swarmItem.TargetPart.Position = newTo.p
+			end
+		end
+	end
+end
+
+local function CreateSwarm()
+	for i = 1, 10 do
+		local swarmItem = {}
+		--
+		local swarmPart = Instance.new('Part')
+		swarmPart.TopSurface = 'Smooth'
+		swarmPart.BottomSurface = 'Smooth'
+		swarmPart.FormFactor = 'Custom'
+		swarmPart.Size = Vector3.new()
+		swarmPart.BrickColor = BrickColor.new('New Yeller') -- not a typo, our naming just sucks... I mean really, "yeller"?
+		swarmPart.CanCollide = false
+		swarmPart.CFrame = Handle.CFrame*CFrame.new(0,-0.1,0.1)
+		swarmPart.Parent = Character
+		--
+		local swarmPartTarget = Instance.new('Part')
+		swarmPartTarget.Parent = nil
+		swarmPartTarget.Position = Handle.Position
+		--
+		local thrust = Instance.new('RocketPropulsion')
+		thrust.TargetRadius = 0
+		thrust.Target = swarmPartTarget
+		thrust.MaxTorque = Vector3.new(2,2,2)
+		thrust.MaxThrust = 200
+		thrust.ThrustD = 0
+		thrust.ThrustP = 100
+		thrust.TurnD = 0
+		thrust.TurnP = 200
+		thrust.MaxSpeed = 20
+		thrust.Parent = swarmPart
+		--
+		swarmItem.Part = swarmPart
+		swarmItem.TargetPart = swarmPartTarget
+		swarmItem.Thrust = thrust
+		swarmItem.LastDirectionChange = 0
+		swarmItem.LastAnimated = 0
+		table.insert(Swarm, swarmItem)
+		--
+		thrust:Fire()
+		--
+		swarmPart.Velocity = Vector3.new(rand11(),rand11(),rand11()).unit*50
+		swarmPartTarget.Position = Handle.Position + Vector3.new(rand11(),rand11(),rand11()).unit*(math.random()*4+2)
+	end
+	LastAnimate = tick()
+	AnimateSwarm()
+end
+
+local function DestroySwarm()
+	for _, item in pairs(Swarm) do
+		item.Part:Destroy()
+	end
+	Swarm = {}
+end
+
+local function Flicker()
+	--now everbody lets make some noise!
+	local x = 4*tick()
+	local frac = math.abs(math.cos(x/12)^5 * (math.sin(x)^4*math.cos(x+1)^2+
+	                                          0.5*math.cos(x+2)-math.sin(3*x+2)))
+	frac = math.min(frac, 1)
+	Light.Brightness = (1-frac)*1.5
+end
+
+Tool.Equipped:connect(function(mouse)
+	local w = Instance.new('Weld', Handle)
+	w.Name = 'HandleWeld'
+	w.C0 = CFrame.new(0,7,0)*CFrame.Angles(-math.pi/2,0,0)
+	w.Part0 = Handle
+	w.Part1 = SpotLightProxy
+	--
+	Equipped = true
+	Character = Tool.Parent
+	Humanoid = Character:WaitForChild('Humanoid')
+	--
+	ANIM_Equip = Humanoid:LoadAnimation(Tool:WaitForChild('ANIM_Equip'))
+	ANIM_Hold  = Humanoid:LoadAnimation(Tool:WaitForChild('ANIM_Hold'))
+	ANIM_Swish = Humanoid:LoadAnimation(Tool:WaitForChild('ANIM_Swish'))
+	--
+	ANIM_Equip:Play()
+	repeat until ANIM_Equip.KeyframeReached:wait() == 'Complete'
+	--
+	ANIM_Hold:Play(0)
+	CreateSwarm()
+	--
+	Running = false
+	mouse.Button1Down:connect(function()
+		if Running then return end
+		Running = true
+		--
+		ANIM_Swish:Play()
+		repeat until ANIM_Swish.KeyframeReached:wait() == 'Complete'
+		--
+		Running = false
+	end)
+	--
+	while Equipped do
+		AnimateSwarm()
+		Flicker()
+		wait()
+	end
+end)
+
+Tool.Unequipped:connect(function()
+	Equipped = false
+	DestroySwarm()
+	if ANIM_Swish then
+		ANIM_Equip:Stop()
+		ANIM_Hold:Stop()
+		ANIM_Swish:Stop()
+	end
+end)]]></ProtectedString>
+			</Properties>
+			<Item class="Script" referent="RBX4">
+				<Properties>
+					<bool name="Disabled">false</bool>
+					<Content name="LinkedSource"><null></null></Content>
+					<string name="Name">MotorizeRightGrip</string>
+					<string name="ScriptGuid"></string>
+					<ProtectedString name="Source"><![CDATA[function Create(ty)
+	return function(data)
+		local obj = Instance.new(ty)
+		for k, v in pairs(data) do
+			if type(k) == 'number' then
+				v.Parent = obj
+			else
+				obj[k] = v
+			end
+		end
+		return obj
+	end
+end
+
+local Tool = script.Parent.Parent
+
+local armChildRemovedConn = nil
+local Motor6DGrip = nil
+local EquippedNum = 0
+
+Tool.Equipped:connect(function()
+	EquippedNum = EquippedNum + 1
+	local myEquip = EquippedNum
+	--some vars
+	local Player = game.Players:GetPlayerFromCharacter(Tool.Parent)
+	local Character = Player.Character
+
+	local rightarm = Character:FindFirstChild('Right Arm')
+	if rightarm and rightarm:FindFirstChild('RightGrip') then
+		local rightGrip = rightarm['RightGrip']
+		local handle = rightGrip.Part1
+
+		--kill my joint when the normal joint is removed
+		--this must be done here so that the joint is removed 
+		--_right away_ after unequipping and the character doesn't 
+		--glitch up.
+		local armChildRemovedConn = rightarm.ChildRemoved:connect(function(ch)
+			if ch == rightGrip then
+				Motor6DGrip:Remove()
+				Motor6DGrip = nil
+				--
+				if handle and Character:FindFirstChild('Torso') then
+					if Tool.Parent.Parent:IsA('Player') then
+						--the sword has been deselected
+						--put the sword far away so the user doesn't notice that the handle doesn't
+						--update for about 0.1 seconds after selecting the tool.
+						handle.CFrame = CFrame.new(100000, 100000, 100000)
+					else
+						--if in the workspace, position the handle where it should be dropped
+						--use the size of the handle to make sure it's dropped far enough away
+						handle.CFrame = Character.Torso.CFrame * CFrame.new(0, 0, -(handle.Size.magnitude+2))
+					end
+				end
+			end
+		end)
+
+		--make my new joint
+		Motor6DGrip = Create'Motor6D'{
+			Name = 'RightGrip_Motor',
+			Part0 = rightarm,
+			Part1 = handle,
+			C0 = CFrame.new(0, -1,   0);
+			C1 = CFrame.new(0,  1.3, 0);
+		}
+		--kill the old weld
+		rightGrip.Part1 = nil
+		rightGrip.Part0 = nil
+		Motor6DGrip.Parent = rightGrip.Parent
+	end
+end)
+
+Tool.Unequipped:connect(function()
+	EquippedNum = EquippedNum + 1
+	if armChildRemovedConn then
+		armChildRemovedConn:disconnect()
+		armChildRemovedConn = nil
+	end
+end)
+]]></ProtectedString>
+				</Properties>
+			</Item>
+		</Item>
+		<Item class="Animation" referent="RBX5">
+			<Properties>
+				<Content name="AnimationId"><url>http://www.roblox.com/asset/?id=123125224</url></Content>
+				<string name="Name">ANIM_Hold</string>
+			</Properties>
+		</Item>
+		<Item class="Animation" referent="RBX6">
+			<Properties>
+				<Content name="AnimationId"><url>http://www.roblox.com/asset/?id=123125189</url></Content>
+				<string name="Name">ANIM_Equip</string>
+			</Properties>
+		</Item>
+		<Item class="Animation" referent="RBX7">
+			<Properties>
+				<Content name="AnimationId"><url>http://www.roblox.com/asset/?id=123125265</url></Content>
+				<string name="Name">ANIM_Swish</string>
+			</Properties>
+		</Item>
+		<Item class="Part" referent="RBX8">
+			<Properties>
+				<bool name="Anchored">false</bool>
+				<float name="BackParamA">-0.5</float>
+				<float name="BackParamB">0.5</float>
+				<token name="BackSurface">0</token>
+				<token name="BackSurfaceInput">0</token>
+				<float name="BottomParamA">-0.5</float>
+				<float name="BottomParamB">0.5</float>
+				<token name="BottomSurface">4</token>
+				<token name="BottomSurfaceInput">0</token>
+				<int name="BrickColor">194</int>
+				<CoordinateFrame name="CFrame">
+					<X>6.20000029</X>
+					<Y>65.5</Y>
+					<Z>112.900009</Z>
+					<R00>-1</R00>
+					<R01>0</R01>
+					<R02>-0</R02>
+					<R10>-0</R10>
+					<R11>1</R11>
+					<R12>-0</R12>
+					<R20>-0</R20>
+					<R21>0</R21>
+					<R22>-1</R22>
+				</CoordinateFrame>
+				<bool name="CanCollide">true</bool>
+				<PhysicalProperties name="CustomPhysicalProperties">
+					<CustomPhysics>false</CustomPhysics>
+				</PhysicalProperties>
+				<float name="Elasticity">0.5</float>
+				<float name="Friction">0.300000012</float>
+				<float name="FrontParamA">-0.5</float>
+				<float name="FrontParamB">0.5</float>
+				<token name="FrontSurface">0</token>
+				<token name="FrontSurfaceInput">0</token>
+				<float name="LeftParamA">-0.5</float>
+				<float name="LeftParamB">0.5</float>
+				<token name="LeftSurface">0</token>
+				<token name="LeftSurfaceInput">0</token>
+				<bool name="Locked">false</bool>
+				<token name="Material">256</token>
+				<string name="Name">SpotLightProxy</string>
+				<float name="Reflectance">0</float>
+				<float name="RightParamA">-0.5</float>
+				<float name="RightParamB">0.5</float>
+				<token name="RightSurface">0</token>
+				<token name="RightSurfaceInput">0</token>
+				<Vector3 name="RotVelocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<float name="TopParamA">-0.5</float>
+				<float name="TopParamB">0.5</float>
+				<token name="TopSurface">3</token>
+				<token name="TopSurfaceInput">0</token>
+				<float name="Transparency">1</float>
+				<Vector3 name="Velocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<token name="formFactorRaw">3</token>
+				<token name="shape">1</token>
+				<Vector3 name="size">
+					<X>0.200000003</X>
+					<Y>0.200000003</Y>
+					<Z>0.200000003</Z>
+				</Vector3>
+			</Properties>
+			<Item class="SpotLight" referent="RBX9">
+				<Properties>
+					<float name="Angle">170</float>
+					<float name="Brightness">1.5</float>
+					<Color3 name="Color">4294967295</Color3>
+					<bool name="Enabled">true</bool>
+					<token name="Face">5</token>
+					<string name="Name">SpotLight</string>
+					<float name="Range">30</float>
+					<bool name="Shadows">false</bool>
+				</Properties>
+			</Item>
+			<Item class="Weld" referent="RBX9FCCB3D0457843E5BCB080D5C9E00C18">
+				<Properties>
+					<CoordinateFrame name="C0">
+						<X>6.20000029</X>
+						<Y>-65.5</Y>
+						<Z>112.900009</Z>
+						<R00>-1</R00>
+						<R01>-0</R01>
+						<R02>-0</R02>
+						<R10>0</R10>
+						<R11>1</R11>
+						<R12>0</R12>
+						<R20>-0</R20>
+						<R21>-0</R21>
+						<R22>-1</R22>
+					</CoordinateFrame>
+					<CoordinateFrame name="C1">
+						<X>6.20000029</X>
+						<Y>-65.5</Y>
+						<Z>112.900009</Z>
+						<R00>-1</R00>
+						<R01>-0</R01>
+						<R02>-0</R02>
+						<R10>0</R10>
+						<R11>1</R11>
+						<R12>0</R12>
+						<R20>-0</R20>
+						<R21>-0</R21>
+						<R22>-1</R22>
+					</CoordinateFrame>
+					<string name="Name">Handle_Weld</string>
+					<Ref name="Part0">RBX1</Ref>
+					<Ref name="Part1">RBX8</Ref>
+				</Properties>
+			</Item>
+		</Item>
+		<Item class="Camera" referent="RBX10">
+			<Properties>
+				<CoordinateFrame name="CFrame">
+					<X>5.07823086</X>
+					<Y>66.5617218</Y>
+					<Z>115.235451</Z>
+					<R00>0.90140903</R00>
+					<R01>0.164176792</R01>
+					<R02>-0.400634319</R02>
+					<R10>-0</R10>
+					<R11>0.925319493</R11>
+					<R12>0.379188627</R12>
+					<R20>0.432968676</R20>
+					<R21>-0.341804057</R21>
+					<R22>0.834091246</R22>
+				</CoordinateFrame>
+				<Ref name="CameraSubject">null</Ref>
+				<token name="CameraType">0</token>
+				<float name="FieldOfView">70</float>
+				<CoordinateFrame name="Focus">
+					<X>6.20000029</X>
+					<Y>65.5</Y>
+					<Z>112.900009</Z>
+					<R00>1</R00>
+					<R01>0</R01>
+					<R02>0</R02>
+					<R10>0</R10>
+					<R11>1</R11>
+					<R12>0</R12>
+					<R20>0</R20>
+					<R21>0</R21>
+					<R22>1</R22>
+				</CoordinateFrame>
+				<bool name="HeadLocked">true</bool>
+				<float name="HeadScale">1</float>
+				<string name="Name">Camera</string>
+			</Properties>
+		</Item>
+	</Item>
+</roblox>

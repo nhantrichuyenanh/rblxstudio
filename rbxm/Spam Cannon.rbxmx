@@ -1,0 +1,451 @@
+<roblox xmlns:xmime="http://www.w3.org/2005/05/xmlmime" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.roblox.com/roblox.xsd" version="4">
+	<External>null</External>
+	<External>nil</External>
+	<Item class="Tool" referent="RBXBA6B5EE08EC440D0BD23A83D79026511">
+		<Properties>
+			<bool name="CanBeDropped">true</bool>
+			<bool name="Enabled">true</bool>
+			<CoordinateFrame name="Grip">
+				<X>0</X>
+				<Y>-0.5</Y>
+				<Z>-0.800000012</Z>
+				<R00>1</R00>
+				<R01>0</R01>
+				<R02>0</R02>
+				<R10>0</R10>
+				<R11>0</R11>
+				<R12>-1</R12>
+				<R20>0</R20>
+				<R21>1</R21>
+				<R22>0</R22>
+			</CoordinateFrame>
+			<bool name="ManualActivationOnly">false</bool>
+			<string name="Name">SpamGun</string>
+			<bool name="RequiresHandle">true</bool>
+			<BinaryString name="Tags"></BinaryString>
+			<Content name="TextureId"><url>http://www.roblox.com/asset/?id=65536920 </url></Content>
+			<string name="ToolTip"></string>
+		</Properties>
+		<Item class="Part" referent="RBXA677CE9300A2491386A87E984B354EBF">
+			<Properties>
+				<bool name="Anchored">false</bool>
+				<float name="BackParamA">-0.5</float>
+				<float name="BackParamB">0.5</float>
+				<token name="BackSurface">0</token>
+				<token name="BackSurfaceInput">0</token>
+				<float name="BottomParamA">-0.5</float>
+				<float name="BottomParamB">0.5</float>
+				<token name="BottomSurface">0</token>
+				<token name="BottomSurfaceInput">0</token>
+				<CoordinateFrame name="CFrame">
+					<X>1.50000095</X>
+					<Y>0.0175030008</Y>
+					<Z>0.687509</Z>
+					<R00>1</R00>
+					<R01>0</R01>
+					<R02>0</R02>
+					<R10>0</R10>
+					<R11>0.642788053</R11>
+					<R12>0.76604414</R12>
+					<R20>0</R20>
+					<R21>-0.76604414</R21>
+					<R22>0.642788053</R22>
+				</CoordinateFrame>
+				<bool name="CanCollide">true</bool>
+				<int name="CollisionGroupId">0</int>
+				<Color3uint8 name="Color3uint8">4291677645</Color3uint8>
+				<PhysicalProperties name="CustomPhysicalProperties">
+					<CustomPhysics>false</CustomPhysics>
+				</PhysicalProperties>
+				<float name="Elasticity">0.5</float>
+				<float name="Friction">0.300000012</float>
+				<float name="FrontParamA">-0.5</float>
+				<float name="FrontParamB">0.5</float>
+				<token name="FrontSurface">0</token>
+				<token name="FrontSurfaceInput">0</token>
+				<float name="LeftParamA">-0.5</float>
+				<float name="LeftParamB">0.5</float>
+				<token name="LeftSurface">0</token>
+				<token name="LeftSurfaceInput">0</token>
+				<bool name="Locked">true</bool>
+				<token name="Material">256</token>
+				<string name="Name">Handle</string>
+				<float name="Reflectance">0</float>
+				<float name="RightParamA">-0.5</float>
+				<float name="RightParamB">0.5</float>
+				<token name="RightSurface">0</token>
+				<token name="RightSurfaceInput">0</token>
+				<Vector3 name="RotVelocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<BinaryString name="Tags"></BinaryString>
+				<float name="TopParamA">-0.5</float>
+				<float name="TopParamB">0.5</float>
+				<token name="TopSurface">0</token>
+				<token name="TopSurfaceInput">0</token>
+				<float name="Transparency">0</float>
+				<Vector3 name="Velocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<token name="formFactorRaw">3</token>
+				<token name="shape">1</token>
+				<Vector3 name="size">
+					<X>0.569999874</X>
+					<Y>1.95999968</Y>
+					<Z>0.850000024</Z>
+				</Vector3>
+			</Properties>
+			<Item class="SpecialMesh" referent="RBX536C95FC5A2248CCA41823E813793F70">
+				<Properties>
+					<token name="LODX">2</token>
+					<token name="LODY">2</token>
+					<Content name="MeshId"><url>http://www.roblox.com/asset/?id=65536847 </url></Content>
+					<token name="MeshType">5</token>
+					<string name="Name">Mesh</string>
+					<Vector3 name="Offset">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+					</Vector3>
+					<Vector3 name="Scale">
+						<X>0.649999976</X>
+						<Y>0.649999976</Y>
+						<Z>0.649999976</Z>
+					</Vector3>
+					<BinaryString name="Tags"></BinaryString>
+					<Content name="TextureId"><url>http://www.roblox.com/asset/?id=65536891 </url></Content>
+					<Vector3 name="VertexColor">
+						<X>1</X>
+						<Y>1</Y>
+						<Z>1</Z>
+					</Vector3>
+				</Properties>
+			</Item>
+			<Item class="Sound" referent="RBXB951AB0F7586467B89FBF8EB81E0FA2B">
+				<Properties>
+					<float name="EmitterSize">10</float>
+					<bool name="Looped">false</bool>
+					<string name="Name">GunSound</string>
+					<bool name="PlayOnRemove">false</bool>
+					<float name="PlaybackSpeed">1</float>
+					<bool name="Playing">false</bool>
+					<token name="RollOffMode">0</token>
+					<Ref name="SoundGroup">null</Ref>
+					<Content name="SoundId"><url>http://www.roblox.com/asset/?id=65069831 </url></Content>
+					<BinaryString name="Tags"></BinaryString>
+					<double name="TimePosition">0</double>
+					<float name="Volume">0.5</float>
+					<float name="xmlRead_MaxDistance_3">10000</float>
+				</Properties>
+			</Item>
+			<Item class="Attachment" referent="RBX5FCC37201205493FBDCDC8A68CF22146">
+				<Properties>
+					<CoordinateFrame name="CFrame">
+						<X>0</X>
+						<Y>-0.5</Y>
+						<Z>-0.800000012</Z>
+						<R00>1</R00>
+						<R01>0</R01>
+						<R02>6.31088724e-30</R02>
+						<R10>6.31088724e-30</R10>
+						<R11>0</R11>
+						<R12>-1</R12>
+						<R20>0</R20>
+						<R21>1</R21>
+						<R22>0</R22>
+					</CoordinateFrame>
+					<string name="Name">RightGripAttachment</string>
+					<BinaryString name="Tags"></BinaryString>
+					<bool name="Visible">false</bool>
+				</Properties>
+			</Item>
+		</Item>
+		<Item class="Script" referent="RBX6984F5C1A0E34BE48AAD6CD73BA86B60">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">SpamGunScript</string>
+				<string name="ScriptGuid">{490B289F-8847-400C-A33F-1EF29A1D63F7}</string>
+				<ProtectedString name="Source"><![CDATA[local Tool = script.Parent 
+local Gun = Tool.Handle 
+
+Tool.Enabled = true 
+
+local minRange = 2 
+local maxRange = 800 
+
+local gunSound 
+
+local ray = Instance.new("Part") 
+ray.FormFactor = 3 
+ray.Shape = "Ball" 
+ray.Size = Vector3.new(0.4, 0.4, 0.4) 
+ray.CanCollide = false 
+ray.Transparency = 0.0 
+
+local bullet = Instance.new("SpecialMesh") 
+bullet.MeshId = "http://www.roblox.com/asset/?id=65020210" 
+bullet.TextureId = "http://www.roblox.com/asset/?id=65020347" 
+bullet.Parent = ray 
+bullet.Scale = Vector3.new(0.02, 0.02, 0.02) 
+
+local vCharacter 
+local vPlayer 
+local myTorso
+local myHumanoid
+
+local debris = game:GetService("Debris") 
+
+function tagHumanoid(humanoid, player) 
+	if humanoid ~= nil then 
+		local creatorTag = Instance.new("ObjectValue") 
+		creatorTag.Value = player 
+		creatorTag.Name = "creator" 
+		creatorTag.Parent = humanoid 
+		debris:AddItem(creatorTag, 1) 
+	end 
+end 
+
+function shoot(pos, target) 
+	vCharacter = Tool.Parent 
+	vPlayer = game.Players:GetPlayerFromCharacter(vCharacter) 
+	myTorso = vCharacter:FindFirstChild("Torso") or vCharacter:FindFirstChild("UpperTorso") 
+	if vPlayer == nil or myTorso == nil then 
+		return 
+	end 
+
+	spawnPos = myTorso.Position 
+	spawnPos = spawnPos + pos.unit * 5.0 
+
+	local rayC = ray:Clone() 
+	rayC.CFrame = CFrame.new(spawnPos, spawnPos + pos) 
+	rayC.Parent = game.Workspace 
+
+	bodyForce = Instance.new("BodyForce") 
+	bodyForce.force = Vector3.new(0.0, rayC:GetMass() * workspace.Gravity, 0.0) 
+	bodyForce.Parent = rayC 
+
+	rayC.Velocity = pos.unit * 450.0      
+
+	local hit, destination = game.Workspace:FindPartOnRay(Ray.new(Gun.Position + pos*minRange, pos*maxRange), vCharacter) 
+
+	if hit and hit.Parent then                     
+		local humanoid = hit.Parent:FindFirstChild("Humanoid")			
+		if hit.Parent.className == "Hat" and hit.Parent.Parent then 
+			humanoid = hit.Parent.Parent:FindFirstChild("Humanoid")
+		end
+		if humanoid then 
+			local character = humanoid.Parent 
+			local player = game.Players:GetPlayerFromCharacter(character)
+			if player then 
+				local playerGui = player:FindFirstChild("PlayerGui")
+				if playerGui and playerGui:FindFirstChild("SpamScript") == nil then 
+					local cloneScript = Tool.SpamScript:Clone()
+					cloneScript.Parent = playerGui 
+					cloneScript.Disabled = false
+				end
+			end 
+		end		
+	end 	
+	debris:AddItem(rayC, 2) 
+end 
+
+function onActivated() 
+	if Tool.Enabled == false then 
+		return 
+	end 
+
+	Tool.Enabled = false 
+
+	vCharacter = Tool.Parent 
+	myTorso = vCharacter:FindFirstChild("Torso") or vCharacter:FindFirstChild("UpperTorso")
+	if not myTorso then 
+		return 
+	end 
+
+	myHumanoid = vCharacter:FindFirstChild("Humanoid") 
+	if not myHumanoid then 
+		return       
+	end 
+
+	target = myHumanoid.TargetPoint 
+	direction = (target - Gun.Position).unit 
+
+	gunSound = Gun:FindFirstChild("GunSound") 
+	if gunSound then gunSound:Play() end     
+
+	shoot(direction, target) 
+	wait(2.4) 
+	Tool.Enabled = true 
+end 
+
+function onEquipped() 
+	vCharacter = Tool.Parent 
+	myTorso = vCharacter:FindFirstChild("Torso") or vCharacter:FindFirstChild("UpperTorso")
+	myHumanoid = vCharacter:FindFirstChild("Humanoid")
+end 
+
+function onUnequipped() 
+	if gunSound then gunSound:Stop() end 
+end 
+
+Tool.Activated:connect(onActivated) 
+Tool.Equipped:connect(onEquipped) 
+Tool.Unequipped:connect(onUnequipped) 
+]]></ProtectedString>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+		</Item>
+		<Item class="LocalScript" referent="RBX976AA1E4DC2A438B8E7911DA322BBFEC">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">Local Gui</string>
+				<string name="ScriptGuid">{102D299C-8F11-4C6A-B201-EE040AAFF8B2}</string>
+				<ProtectedString name="Source"><![CDATA[Tool = script.Parent
+
+local stillEquipped = false
+
+function onEquippedLocal(mouse)
+	stillEquipped = true
+	if mouse == nil then 
+		print("Mouse not found")
+		return
+	end
+	while stillEquipped do 
+		print("Setting Mouse to go")
+		mouse.Icon = "rbxasset://textures\\GunCursor.png"
+		while Tool.Enabled and stillEquipped do 
+			wait(0.01)
+		end
+		print("Setting Mouse to wait")
+		mouse.Icon = "rbxasset://textures\\GunWaitCursor.png"
+		while not Tool.Enabled and stillEquipped do 
+			wait(0.01)
+		end	
+	end
+end
+
+
+function onUnequippedLocal()
+	stillEquipped = false
+end
+
+Tool.Equipped:connect(onEquippedLocal)
+Tool.Unequipped:connect(onUnequippedLocal)]]></ProtectedString>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+		</Item>
+		<Item class="LocalScript" referent="RBX18D99F8876AA4F9F92A45A2C6FC304EC">
+			<Properties>
+				<bool name="Disabled">true</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">SpamScript</string>
+				<string name="ScriptGuid">{57ADDD0A-2A43-443B-8FCC-59CD515F11B8}</string>
+				<ProtectedString name="Source"><![CDATA[local playerGui = script.Parent
+if playerGui == nil then script:Remove() end
+local player = playerGui.Parent
+
+local spamAssets = {65545966, 65545985, 65546005, 65546027} 
+
+tick()
+
+local spamGui
+
+local spamImg = Instance.new("ImageLabel")
+spamImg.Active = true 
+spamImg.Image = "http://www.roblox.com/asset/?id=" .. spamAssets[math.random(1, #spamAssets)]
+spamImg.BackgroundTransparency = 1.0
+spamImg.Size = UDim2.new(0, 750, 0, 200)
+spamImg.Position = UDim2.new(0.5, -275, 0.5, -100)
+
+local tImage = Instance.new("ImageLabel")
+tImage.Active = true 
+tImage.Image = "http://www.roblox.com/Thumbs/Avatar.ashx?x=250&y=250&Format=Png&username=" .. player.Name
+tImage.Size = UDim2.new(0, 250, 0, 250)
+tImage.Position = UDim2.new(0.5, -500, 0.5, -100)
+tImage.BackgroundTransparency = 1.0
+
+local textBtn = Instance.new("TextButton")
+textBtn.Active = true 
+textBtn.Text = "Delete Comment"
+textBtn.Font = Enum.Font.Arial
+textBtn.FontSize = Enum.FontSize.Size18
+textBtn.TextColor3 = Color3.new(0, 0, 255/255) 
+textBtn.BackgroundTransparency = 1.0
+textBtn.Size = UDim2.new(0, 150, 0, 40)
+textBtn.Position = UDim2.new(0.5, 325, 0.5, 65)
+
+if playerGui:FindFirstChild("SpamGui") and #playerGui.SpamGui:GetChildren() < 1 then 
+	spamGui = playerGui.SpamGui
+	spamImg.Parent = spamGui
+	tImage.Parent = spamGui
+	textBtn.Parent = spamGui
+else 
+	spamGui = Instance.new("ScreenGui")
+	spamGui.Name = "SpamGui"
+	spamGui.Parent = playerGui	
+	spamImg.Parent = spamGui
+	tImage.Parent = spamGui
+	textBtn.Parent = spamGui
+end
+
+textBtn.MouseButton1Click:connect(function()
+	if textBtn then textBtn:Destroy() end 
+	if spamImg then spamImg:Destroy() end
+	if tImage then tImage:Destroy() end
+	if spamGui then spamGui:Destroy() end
+	if script then script:Destroy() end
+end)
+
+
+
+]]></ProtectedString>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+		</Item>
+		<Item class="Camera" referent="RBXC37C17F87A0F4BEC838B44393D59EF5E">
+			<Properties>
+				<CoordinateFrame name="CFrame">
+					<X>4.83990812</X>
+					<Y>0.359985352</Y>
+					<Z>0.110338062</Z>
+					<R00>-0.160011947</R00>
+					<R01>-0.144358397</R01>
+					<R02>0.976502419</R02>
+					<R10>1.86264515e-09</R10>
+					<R11>0.989248872</R11>
+					<R12>0.146242723</R12>
+					<R20>-0.987115085</R20>
+					<R21>0.0234005842</R21>
+					<R22>-0.158291623</R22>
+				</CoordinateFrame>
+				<Ref name="CameraSubject">null</Ref>
+				<token name="CameraType">0</token>
+				<float name="FieldOfView">70</float>
+				<CoordinateFrame name="Focus">
+					<X>2.88690305</X>
+					<Y>0.0674998835</Y>
+					<Z>0.426921338</Z>
+					<R00>1</R00>
+					<R01>0</R01>
+					<R02>0</R02>
+					<R10>0</R10>
+					<R11>1</R11>
+					<R12>0</R12>
+					<R20>0</R20>
+					<R21>0</R21>
+					<R22>1</R22>
+				</CoordinateFrame>
+				<bool name="HeadLocked">true</bool>
+				<float name="HeadScale">1</float>
+				<string name="Name">ThumbnailCamera</string>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+		</Item>
+	</Item>
+</roblox>

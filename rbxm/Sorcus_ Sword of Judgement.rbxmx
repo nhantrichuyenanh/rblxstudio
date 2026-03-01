@@ -1,0 +1,783 @@
+<roblox xmlns:xmime="http://www.w3.org/2005/05/xmlmime" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.roblox.com/roblox.xsd" version="4">
+	<External>null</External>
+	<External>nil</External>
+	<Item class="Tool" referent="RBXB530E707D9934F53913D46E4AF5F20E8">
+		<Properties>
+			<bool name="CanBeDropped">true</bool>
+			<bool name="Enabled">true</bool>
+			<CoordinateFrame name="Grip">
+				<X>0</X>
+				<Y>1.79999995</Y>
+				<Z>0</Z>
+				<R00>0</R00>
+				<R01>0</R01>
+				<R02>-1</R02>
+				<R10>0</R10>
+				<R11>-1</R11>
+				<R12>-0</R12>
+				<R20>-1</R20>
+				<R21>0</R21>
+				<R22>-0</R22>
+			</CoordinateFrame>
+			<bool name="ManualActivationOnly">false</bool>
+			<string name="Name">SorcusSword</string>
+			<Content name="TextureId"><url>http://www.roblox.com/asset/?id=53357857</url></Content>
+			<string name="ToolTip"></string>
+		</Properties>
+		<Item class="Part" referent="RBX22595A76E9B2455AB926CB0C9B85F921">
+			<Properties>
+				<bool name="Anchored">false</bool>
+				<float name="BackParamA">-0.5</float>
+				<float name="BackParamB">0.5</float>
+				<token name="BackSurface">0</token>
+				<token name="BackSurfaceInput">0</token>
+				<float name="BottomParamA">-0.5</float>
+				<float name="BottomParamB">0.5</float>
+				<token name="BottomSurface">0</token>
+				<token name="BottomSurfaceInput">0</token>
+				<int name="BrickColor">199</int>
+				<CoordinateFrame name="CFrame">
+					<X>26.1483021</X>
+					<Y>2.53692222</Y>
+					<Z>-18.6664886</Z>
+					<R00>-0.683661997</R00>
+					<R01>0.713564992</R01>
+					<R02>0.153090313</R02>
+					<R10>-0.722158492</R10>
+					<R11>-0.691725612</R11>
+					<R12>-0.000792511855</R12>
+					<R20>0.105331033</R20>
+					<R21>-0.11109741</R21>
+					<R22>0.988215387</R22>
+				</CoordinateFrame>
+				<bool name="CanCollide">true</bool>
+				<float name="Elasticity">0.5</float>
+				<float name="Friction">0.300000012</float>
+				<float name="FrontParamA">-0.5</float>
+				<float name="FrontParamB">0.5</float>
+				<token name="FrontSurface">0</token>
+				<token name="FrontSurfaceInput">0</token>
+				<float name="LeftParamA">-0.5</float>
+				<float name="LeftParamB">0.5</float>
+				<token name="LeftSurface">0</token>
+				<token name="LeftSurfaceInput">0</token>
+				<bool name="Locked">true</bool>
+				<token name="Material">256</token>
+				<string name="Name">Handle</string>
+				<float name="Reflectance">0</float>
+				<float name="RightParamA">-0.5</float>
+				<float name="RightParamB">0.5</float>
+				<token name="RightSurface">0</token>
+				<token name="RightSurfaceInput">0</token>
+				<Vector3 name="RotVelocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<float name="TopParamA">-0.5</float>
+				<float name="TopParamB">0.5</float>
+				<token name="TopSurface">0</token>
+				<token name="TopSurfaceInput">0</token>
+				<float name="Transparency">0</float>
+				<Vector3 name="Velocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<token name="formFactorRaw">3</token>
+				<token name="shape">1</token>
+				<Vector3 name="size">
+					<X>0.800002098</X>
+					<Y>4.96999884</Y>
+					<Z>0.200000003</Z>
+				</Vector3>
+			</Properties>
+			<Item class="SpecialMesh" referent="RBX47606D6293E64524AC05F870102EA51F">
+				<Properties>
+					<token name="LODX">2</token>
+					<token name="LODY">2</token>
+					<Content name="MeshId"><url>http://www.roblox.com/asset/?id=53351910 </url></Content>
+					<token name="MeshType">5</token>
+					<string name="Name">Mesh</string>
+					<Vector3 name="Offset">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+					</Vector3>
+					<Vector3 name="Scale">
+						<X>0.75</X>
+						<Y>0.75</Y>
+						<Z>0.75</Z>
+					</Vector3>
+					<Content name="TextureId"><url>http://www.roblox.com/asset/?id= 53352041 </url></Content>
+					<Vector3 name="VertexColor">
+						<X>1</X>
+						<Y>1</Y>
+						<Z>1</Z>
+					</Vector3>
+				</Properties>
+			</Item>
+		</Item>
+		<Item class="NumberValue" referent="RBXBB84C2D55B5949B48478D29E0AF3AB21">
+			<Properties>
+				<string name="Name">CloneActive</string>
+				<double name="Value">0</double>
+			</Properties>
+		</Item>
+		<Item class="Animation" referent="RBXF23F5BCA5917485EA06A53A49D70FD87">
+			<Properties>
+				<Content name="AnimationId"><url>http://www.roblox.com/Asset?ID=53590423</url></Content>
+				<string name="Name">JudgeAnim</string>
+			</Properties>
+		</Item>
+		<Item class="Animation" referent="RBXFEF795EC9C804DD0BDD061C7DE42A871">
+			<Properties>
+				<Content name="AnimationId"><url>http://www.roblox.com/Asset?ID=53590611</url></Content>
+				<string name="Name">RaiseAnim</string>
+			</Properties>
+		</Item>
+		<Item class="Vector3Value" referent="RBX8C7E14415736407F8BD64243B292AAF4">
+			<Properties>
+				<string name="Name">Pos</string>
+				<Vector3 name="Value">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+			</Properties>
+		</Item>
+		<Item class="RemoteEvent" referent="RBXB62434FFDC4342F4BEF3AFC7D2AD3628">
+			<Properties>
+				<string name="Name">Animate</string>
+			</Properties>
+		</Item>
+		<Item class="RemoteEvent" referent="RBX54D5E22AFD5E4DBD8440FF489D020540">
+			<Properties>
+				<string name="Name">Input</string>
+			</Properties>
+		</Item>
+		<Item class="Camera" referent="RBXF0E96301516B4C5B88BFA898A053A49E">
+			<Properties>
+				<Ref name="CameraSubject">null</Ref>
+				<token name="CameraType">0</token>
+				<CoordinateFrame name="CoordinateFrame">
+					<X>25.7989388</X>
+					<Y>2.47842574</Y>
+					<Z>-21.152235</Z>
+					<R00>-0.990267217</R00>
+					<R01>-0.00324248918</R01>
+					<R02>-0.139140964</R02>
+					<R10>-0</R10>
+					<R11>0.999728501</R11>
+					<R12>-0.0232973024</R12>
+					<R20>0.139178738</R20>
+					<R21>-0.0230705552</R21>
+					<R22>-0.98999846</R22>
+				</CoordinateFrame>
+				<float name="FieldOfView">70</float>
+				<CoordinateFrame name="Focus">
+					<X>26.1483021</X>
+					<Y>2.53692198</Y>
+					<Z>-18.6664886</Z>
+					<R00>1</R00>
+					<R01>0</R01>
+					<R02>0</R02>
+					<R10>0</R10>
+					<R11>1</R11>
+					<R12>0</R12>
+					<R20>0</R20>
+					<R21>0</R21>
+					<R22>1</R22>
+				</CoordinateFrame>
+				<string name="Name">ThumbnailCamera</string>
+			</Properties>
+		</Item>
+		<Item class="Script" referent="RBX478021718F4643AAA3F1800FA04064AD">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">JudgementScript</string>
+				<ProtectedString name="Source">-- SWORD OF JUDGEMENT --
+-- HEAVY DAMAGE --
+-- ACTIVE ABILITIES -- 
+r = game:service(&quot;RunService&quot;) 
+local sword = script.Parent.Handle 
+local Tool = script.Parent 
+
+local damage = 16
+
+local slash_damage = 24
+local lunge_damage = 32 
+
+local SlashSound = Instance.new(&quot;Sound&quot;) 
+SlashSound.SoundId = &quot;rbxasset://sounds\\swordslash.wav&quot; 
+SlashSound.Parent = sword 
+SlashSound.Volume = .7 
+
+local LungeSound = Instance.new(&quot;Sound&quot;) 
+LungeSound.SoundId = &quot;rbxasset://sounds\\swordlunge.wav&quot; 
+LungeSound.Parent = sword 
+LungeSound.Volume = .6 
+
+local UnsheathSound = Instance.new(&quot;Sound&quot;) 
+UnsheathSound.SoundId = &quot;rbxasset://sounds\\unsheath.wav&quot; 
+UnsheathSound.Parent = sword 
+UnsheathSound.Volume = 1 
+
+local cloneActive = Tool:FindFirstChild(&quot;CloneActive&quot;)
+
+function blow(hit) 
+&#9;local humanoid = hit.Parent:findFirstChild(&quot;Humanoid&quot;) 
+&#9;local vCharacter = Tool.Parent 
+&#9;local vPlayer = game.Players:playerFromCharacter(vCharacter) 
+&#9;local hum = vCharacter:findFirstChild(&quot;Humanoid&quot;) -- non-nil if tool held by a character 
+&#9;if humanoid~=nil and humanoid ~= hum and hum ~= nil then           
+&#9;&#9;-- final check, make sure sword is in-hand 
+&#9;&#9;local right_arm = vCharacter:FindFirstChild(&quot;Right Arm&quot;) 
+&#9;&#9;if (right_arm ~= nil) then 
+&#9;&#9;&#9;local joint = right_arm:FindFirstChild(&quot;RightGrip&quot;) 
+&#9;&#9;&#9;if (joint ~= nil and (joint.Part0 == sword or joint.Part1 == sword)) then 
+&#9;&#9;&#9;&#9;tagHumanoid(humanoid, vPlayer)                                                         
+&#9;&#9;&#9;&#9;humanoid:TakeDamage(damage) 
+&#9;&#9;&#9;&#9;wait(1) 
+&#9;&#9;&#9;&#9;untagHumanoid(humanoid)                     
+&#9;&#9;&#9;end 
+&#9;&#9;end 
+&#9;end 
+end 
+
+
+function tagHumanoid(humanoid, player) 
+     local creator_tag = Instance.new(&quot;ObjectValue&quot;) 
+     creator_tag.Value = player 
+     creator_tag.Name = &quot;creator&quot; 
+     creator_tag.Parent = humanoid 
+end 
+
+function untagHumanoid(humanoid) 
+     if humanoid ~= nil then 
+          local tag = humanoid:findFirstChild(&quot;creator&quot;) 
+          if tag ~= nil then 
+               tag.Parent = nil 
+          end 
+     end 
+end 
+
+
+function attack() 
+     damage = slash_damage 
+     SlashSound:play() 
+     local anim = Instance.new(&quot;StringValue&quot;) 
+     anim.Name = &quot;toolanim&quot; 
+     anim.Value = &quot;Slash&quot; 
+     anim.Parent = Tool 
+end 
+
+function lunge() 
+     damage = lunge_damage 
+     LungeSound:play() 
+
+
+     local anim = Instance.new(&quot;StringValue&quot;) 
+     anim.Name = &quot;toolanim&quot; 
+     anim.Value = &quot;Lunge&quot; 
+     anim.Parent = Tool 
+      
+     force = Instance.new(&quot;BodyVelocity&quot;) 
+     force.velocity = Vector3.new(0,10,0) --Tool.Parent.Torso.CFrame.lookVector * 80 
+     force.Parent = Tool.Parent.Torso 
+     wait(.2) 
+     swordOut() 
+     wait(.2) 
+     force.Parent = nil 
+     wait(.4) 
+     swordUp() 
+     damage = slash_damage 
+end 
+
+function swordUp() 
+     Tool.GripForward = Vector3.new(1,0,0) 
+     Tool.GripRight = Vector3.new(0,0,-1) 
+     Tool.GripUp = Vector3.new(0,-1, 0) 
+end 
+
+function swordOut() 
+     Tool.GripForward = Vector3.new(0, 1, 0) 
+     Tool.GripRight = Vector3.new(0, 0, -1) 
+     Tool.GripUp = Vector3.new(-1, 0, 0) 
+end 
+
+Tool.Enabled = true 
+local last_attack = 0 
+function onActivated() &#9;&#9;
+&#9;if not Tool.Enabled then 
+&#9;&#9; return 
+&#9;end 
+
+&#9;if cloneActive.Value == 1 then &#9;
+&#9;&#9;return
+&#9;end
+
+&#9;Tool.Enabled = false 
+
+&#9;local character = Tool.Parent; 
+&#9;local humanoid = character.Humanoid 
+&#9;if humanoid == nil then 
+&#9;&#9; print(&quot;Humanoid not found&quot;) 
+&#9;&#9; return 
+&#9;end 
+
+&#9;t = r.Stepped:wait() 
+
+&#9;if (t - last_attack &lt; .2) then 
+&#9;&#9; lunge() 
+&#9;else 
+&#9;&#9; attack() 
+&#9;end 
+
+&#9;last_attack = t 
+
+&#9;--wait(0.5) 
+
+&#9;Tool.Enabled = true 
+end 
+
+function onEquipped()      
+     UnsheathSound:play()      
+end 
+
+script.Parent.Activated:connect(onActivated) 
+script.Parent.Equipped:connect(onEquipped) 
+
+connection = sword.Touched:connect(blow) 
+</ProtectedString>
+			</Properties>
+		</Item>
+		<Item class="Script" referent="RBX895F355B4D434F39A14896D6A565DBBB">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">JudgementScript2</string>
+				<ProtectedString name="Source">-------------------------------- Judgement Sword ------------------------------------- 
+
+-- Has two abilities 
+&#9;-- Call for Judgement --  
+&#9;-- Will of Judgement -- 
+--
+
+local Tool = script.Parent
+local Sword = Tool.Handle
+
+local vCharacter
+local myHumanoid
+
+-- Animations
+local raiseAnim
+local judgeAnim
+
+local tempHumanoids = {} -- Humanoids to be affected
+
+local restorePos
+
+local co -- coroutine to restrict call of judgement to once per 12 seconds
+local co60 -- coroutine to restrict will of judgement to be once per 60 seconds
+local resetCo -- coroutine to reset the humanoid walkspeeds back to normal after 5 seconds
+
+local camera
+
+local chars = {} -- table to store the characters to be attacked
+
+local cloneActive = Tool:FindFirstChild(&quot;CloneActive&quot;)
+
+local pos = Tool:FindFirstChild(&quot;Pos&quot;)
+local resetValue = 0
+
+local willOfFire = Instance.new(&quot;Part&quot;)
+willOfFire.Name = &quot;JUDGEMENT&quot;
+willOfFire.Shape = &quot;Ball&quot;
+willOfFire.Size = Vector3.new(2, 2, 2)
+willOfFire.FormFactor = 3
+willOfFire.Transparency = 0.8
+willOfFire.CanCollide = false
+
+local fire = Instance.new(&quot;Fire&quot;)
+fire.Color = Color3.new(0, 0, 0.75)
+fire.Parent = willOfFire
+fire.SecondaryColor = Color3.new(0, 0, 0.75)
+
+float = Instance.new(&quot;BodyForce&quot;)
+float.force  = Vector3.new(0, willOfFire:GetMass() * 196.1, 0)
+float.Parent = willOfFire
+
+movement = Instance.new(&quot;BodyVelocity&quot;)
+movement.P = 100000
+movement.maxForce = Vector3.new(movement.P, movement.P, movement.P)
+movement.Name = &quot;Velocity&quot;
+
+local willClone
+local sparkles
+local distance
+
+local camera
+local cloneHackScript
+
+local cloneActive = Tool:FindFirstChild(&quot;CloneActive&quot;)
+
+local myplayer
+
+function resetSpeed()
+&#9;for i =1, #tempHumanoids do 
+&#9;&#9;tempHumanoids[i].WalkSpeed = 16
+&#9;&#9;ratio = tempHumanoids[i].Health/tempHumanoids[i].MaxHealth
+&#9;&#9;tempHumanoids[i].Health = ratio * 100
+&#9;&#9;tempHumanoids[i].MaxHealth = 100
+&#9;end
+end
+
+function wait15()
+&#9;wait(15)
+end
+
+function wait60()
+&#9;wait(60)
+end
+
+-- HotThoth&apos;s insane character maker code, modified to suit my needs -- 
+function copyCharacter()
+end
+
+function spawnChar() 
+end
+
+function judge(key)
+&#9;if key:lower() == &quot;x&quot; then 
+&#9;&#9;if co == nil or coroutine.status(co) == &apos;dead&apos; then
+&#9;&#9;&#9;co = coroutine.create(wait15)
+&#9;&#9;&#9;coroutine.resume(co)
+&#9;&#9;&#9;myTorso = vCharacter:FindFirstChild(&quot;Torso&quot;)
+&#9;&#9;&#9;Tool.Animate:FireClient(myplayer, &apos;RaiseAnim&apos;, &apos;Play&apos;)
+&#9;&#9;&#9;wait(0.4)
+&#9;&#9;&#9;if myTorso then
+&#9;&#9;&#9;&#9;print(&quot;JUDGING&quot;)
+&#9;&#9;&#9;&#9;sparkles = Instance.new(&quot;Sparkles&quot;)
+&#9;&#9;&#9;&#9;sparkles.Parent = Sword
+&#9;&#9;&#9;&#9;players = game.Players:GetChildren()
+&#9;&#9;&#9;&#9;vPlayer = game.Players:GetPlayerFromCharacter(vCharacter)
+&#9;&#9;&#9;&#9;if #players &gt; 1 then 
+&#9;&#9;&#9;&#9;&#9;for i = 1, #players do 
+&#9;&#9;&#9;&#9;&#9;&#9;if players[i] ~= vPlayer then 
+&#9;&#9;&#9;&#9;&#9;&#9;&#9;tempChar = players[i].Character&#9;
+&#9;&#9;&#9;&#9;&#9;&#9;&#9;tmpHumanoid = tempChar:FindFirstChild(&quot;Humanoid&quot;)
+&#9;&#9;&#9;&#9;&#9;&#9;&#9;if tempChar and tmpHumanoid then &#9;
+&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;print(&quot;POPULATING THE HUMANOID TABLE&quot;)
+&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;table.insert(tempHumanoids, tmpHumanoid)
+&#9;&#9;&#9;&#9;&#9;&#9;&#9;end
+&#9;&#9;&#9;&#9;&#9;&#9;end
+&#9;&#9;&#9;&#9;&#9;end
+&#9;&#9;&#9;&#9;&#9;if #tempHumanoids &gt;= 1 then 
+&#9;&#9;&#9;&#9;&#9;&#9;print(&quot;DIE LESSER MORTALS&quot;)
+&#9;&#9;&#9;&#9;&#9;&#9;for i = 1, #tempHumanoids do 
+&#9;&#9;&#9;&#9;&#9;&#9;&#9;ratio = tempHumanoids[i].Health/tempHumanoids[i].MaxHealth
+&#9;&#9;&#9;&#9;&#9;&#9;&#9;tempHumanoids[i].Health = ratio * 75
+&#9;&#9;&#9;&#9;&#9;&#9;&#9;tempHumanoids[i].MaxHealth = 75
+&#9;&#9;&#9;&#9;&#9;&#9;&#9;tempHumanoids[i].WalkSpeed = tempHumanoids[i].WalkSpeed - (0.7 * (tempHumanoids[i].WalkSpeed *(1 - ratio))) &#9;&#9;&#9;&#9;&#9;&#9;&#9;
+&#9;&#9;&#9;&#9;&#9;&#9;end
+&#9;&#9;&#9;&#9;&#9;end
+&#9;&#9;&#9;&#9;end
+&#9;&#9;&#9;&#9;if sparkles then wait(0.4) sparkles:Remove() end
+&#9;&#9;&#9;end&#9;&#9;&#9;&#9;
+&#9;&#9;end
+&#9;elseif key:lower() == &quot;z&quot; then
+&#9;&#9;if co60 == nil or coroutine.status(co60) == &apos;dead&apos; then 
+&#9;&#9;&#9;resetValue = 1
+&#9;&#9;&#9;cloneActive.Value = 1
+&#9;&#9;&#9;print(&quot;Entering Judgement&quot;)
+&#9;&#9;&#9;co60 = coroutine.create(wait60)
+&#9;&#9;&#9;coroutine.resume(co60)
+&#9;&#9;&#9;-- Anchor the Torso and remove the player to farthest end of the world
+&#9;&#9;&#9;myTorso = vCharacter:FindFirstChild(&quot;Torso&quot;)
+&#9;&#9;&#9;myTorso.Anchored = true
+&#9;&#9;&#9;spawnChar()
+&#9;&#9;&#9;if myTorso then&#9;&#9;&#9;
+&#9;&#9;&#9;&#9;restorePos = myTorso.Position
+&#9;&#9;&#9;&#9;chars = {}
+&#9;&#9;&#9;&#9;players = game.Players:GetChildren()
+&#9;&#9;&#9;&#9;for i = 1, #players do 
+&#9;&#9;&#9;&#9;-- Populate the character table
+&#9;&#9;&#9;&#9;&#9;char = players[i].Character
+&#9;&#9;&#9;&#9;&#9;torso = char:FindFirstChild(&quot;Torso&quot;)
+&#9;&#9;&#9;&#9;&#9;if torso then&#9;&#9;
+&#9;&#9;&#9;&#9;&#9;&#9;if players[i].Character ~= vCharacter and (torso.Position - myTorso.Position).magnitude &lt; 125 then
+&#9;&#9;&#9;&#9;&#9;&#9;&#9;table.insert(chars, players[i].Character)
+&#9;&#9;&#9;&#9;&#9;&#9;end
+&#9;&#9;&#9;&#9;&#9;end
+&#9;&#9;&#9;&#9;end&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;
+&#9;&#9;&#9;&#9;--myTorso.CFrame = CFrame.new(Vector3.new(0, 50000, 0))&#9; -- TROLOLOL --&#9;&#9;&#9;&#9;&#9;&#9;
+&#9;&#9;&#9;&#9;if #chars &gt;= 1 then 
+&#9;&#9;&#9;&#9;&#9;print(#chars)
+&#9;&#9;&#9;&#9;&#9;cloneHackScript = script.HackScript:Clone()
+&#9;&#9;&#9;&#9;&#9;cloneHackScript.Parent = Tool
+&#9;&#9;&#9;&#9;&#9;cloneHackScript.Disabled = false
+&#9;&#9;&#9;&#9;&#9;willClone = willOfFire:Clone()
+&#9;&#9;&#9;&#9;&#9;willClone.Position = myTorso.Position
+&#9;&#9;&#9;&#9;&#9;camera = game.Workspace.CurrentCamera
+&#9;&#9;&#9;&#9;&#9;camera.CameraType = &quot;Attach&quot;
+&#9;&#9;&#9;&#9;&#9;willClone.Parent = game.Workspace
+&#9;&#9;&#9;&#9;&#9;--local mv = movement:clone()
+&#9;&#9;&#9;&#9;&#9;for i =1, #chars do &#9;&#9;&#9;&#9;&#9;&#9;&#9;
+&#9;&#9;&#9;&#9;&#9;&#9;print(&quot;Found Char&quot;)&#9;&#9;&#9;&#9;&#9;
+&#9;&#9;&#9;&#9;&#9;&#9;willClone.Parent = game.Workspace
+&#9;&#9;&#9;&#9;&#9;&#9;camera.CameraSubject = willClone
+&#9;&#9;&#9;&#9;&#9;&#9;myTorso.CFrame = CFrame.new(Vector3.new(0, 50000, 0))&#9; -- TROLOLOL --&#9;
+&#9;&#9;&#9;&#9;&#9;&#9;--mv.Parent = willClone
+&#9;&#9;&#9;&#9;&#9;&#9;local tempTorso = chars[i]:FindFirstChild(&quot;Torso&quot;)
+&#9;&#9;&#9;&#9;&#9;&#9;if tempTorso then &#9;&#9;&#9;&#9;&#9;&#9;&#9;
+&#9;&#9;&#9;&#9;&#9;&#9;&#9;distance = (tempTorso.Position - willClone.Position).magnitude&#9;&#9;&#9;&#9;&#9;&#9;&#9;
+&#9;&#9;&#9;&#9;&#9;&#9;&#9;local count = 0
+&#9;&#9;&#9;&#9;&#9;&#9;&#9;while distance &gt; 4.0 and count &lt; 300 do
+&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;count = count + 1&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;
+&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;wait()
+&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;distance = (tempTorso.Position - willClone.Position).magnitude&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;
+&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;pos.Value = (tempTorso.Position - willClone.Position).unit * 60.0&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;
+&#9;&#9;&#9;&#9;&#9;&#9;&#9;end
+&#9;&#9;&#9;&#9;&#9;&#9;&#9;myTorso.CFrame = CFrame.new(willClone.Position, tempTorso.Position)
+&#9;&#9;&#9;&#9;&#9;&#9;&#9;camera.CameraSubject = myTorso
+&#9;&#9;&#9;&#9;&#9;&#9;&#9;willClone.Parent = game.Lighting&#9;&#9;&#9;&#9;&#9;&#9;&#9;
+&#9;&#9;&#9;&#9;&#9;&#9;&#9;Tool.Animate:FireClient(myplayer, &apos;JudgeAnim&apos;, &apos;Play&apos;)
+&#9;&#9;&#9;&#9;&#9;&#9;&#9;humanoid = chars[i]:FindFirstChild(&quot;Humanoid&quot;)
+&#9;&#9;&#9;&#9;&#9;&#9;&#9;if humanoid then humanoid:TakeDamage(50) end
+&#9;&#9;&#9;&#9;&#9;&#9;&#9;--mv.Parent = vCharacter
+&#9;&#9;&#9;&#9;&#9;&#9;&#9;wait(0.25)
+&#9;&#9;&#9;&#9;&#9;&#9;&#9;print(&quot;Number of Characters judged: &quot;, i)
+&#9;&#9;&#9;&#9;&#9;&#9;end
+&#9;&#9;&#9;&#9;&#9;end
+&#9;&#9;&#9;&#9;&#9;if mv then mv:Remove() end
+&#9;&#9;&#9;&#9;&#9;wait(2)&#9;&#9;&#9;&#9;
+&#9;&#9;&#9;&#9;&#9;myTorso.CFrame = CFrame.new(restorePos)
+&#9;&#9;&#9;&#9;&#9;if willClone then willClone:Remove()  end
+&#9;&#9;&#9;&#9;&#9;myTorso.Anchored = false
+&#9;&#9;&#9;&#9;&#9;camera.CameraSubject = vCharacter&#9;
+&#9;&#9;&#9;&#9;&#9;camera.CameraType = &quot;Custom&quot;
+&#9;&#9;&#9;&#9;&#9;if cloneHackScript then cloneHackScript:Remove() end
+&#9;&#9;&#9;&#9;end&#9;&#9;&#9;&#9;
+&#9;&#9;&#9;end&#9;&#9;
+&#9;&#9;&#9;cloneActive.Value = 0
+&#9;&#9;&#9;resetValue = 0
+&#9;&#9;&#9;myTorso.Anchored = false
+&#9;&#9;end
+&#9;end
+end
+
+function onActivated()&#9;
+end
+
+function onEquipped()
+&#9;vCharacter = Tool.Parent
+&#9;myplayer = game:GetService&apos;Players&apos;:GetPlayerFromCharacter(vCharacter)
+&#9;myHumanoid = vCharacter:FindFirstChild(&quot;Humanoid&quot;)
+end
+
+Tool.Input.OnServerEvent:connect(function(client, action, ...)
+&#9;if client == myplayer then
+&#9;&#9;if action == &apos;Key&apos; then
+&#9;&#9;&#9;local down, key = ...
+&#9;&#9;&#9;
+&#9;&#9;&#9;if down then
+&#9;&#9;&#9;&#9;judge(key.Name)
+&#9;&#9;&#9;end
+&#9;&#9;end
+&#9;end
+end)
+
+function onUnequipped()
+&#9;myplayer = nil
+&#9;if slashAnim then slashAnim:Stop() end
+&#9;if myTorso and restorePos and resetValue == 1 then 
+&#9;&#9;myTorso.CFrame = CFrame.new(restorePos)
+&#9;&#9;myTorso.Anchored = false
+&#9;&#9;resetValue = 0
+&#9;end
+&#9;&#9;
+&#9;if willClone then willClone:Remove() end
+&#9;if camera then wait(0.2) camera.CameraSubject = vCharacter  camera.CameraType = &quot;Custom&quot; end
+&#9;if sparkles then sparkles:Remove() end
+
+&#9;if cloneActive then cloneActive.Value = 0 end
+end
+
+Tool.Activated:connect(onActivated)
+Tool.Equipped:connect(onEquipped)
+Tool.Unequipped:connect(onUnequipped)</ProtectedString>
+			</Properties>
+			<Item class="Script" referent="RBX9C57FD69822847A2BD292A7D628E52E1">
+				<Properties>
+					<bool name="Disabled">true</bool>
+					<Content name="LinkedSource"><null></null></Content>
+					<string name="Name">HackScript</string>
+					<ProtectedString name="Source">local Tool = script.Parent
+
+pos = Tool:FindFirstChild(&quot;Pos&quot;)
+
+judgementBall = game.Workspace:FindFirstChild(&quot;JUDGEMENT&quot;)
+
+while judgementBall == nil do 
+&#9;judgementBall = game.Workspace:FindFirstChild(&quot;JUDGEMENT&quot;)
+&#9;wait(1.0)
+end
+
+bv = Instance.new(&quot;BodyVelocity&quot;)
+bv.Name = &quot;Movement&quot;
+bv.P = 100000
+bv.maxForce = Vector3.new(100000, 100000, 100000)
+bv.Parent = judgementBall
+
+function onChange()
+&#9;bv.velocity = pos.Value
+end
+
+pos.Changed:connect(onChange)</ProtectedString>
+				</Properties>
+			</Item>
+		</Item>
+		<Item class="LocalScript" referent="RBX380444B6419A4F04BDD0346226862BD3">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">Local Gui</string>
+				<ProtectedString name="Source">Tool = script.Parent
+
+local stillEquipped = false
+
+function onEquippedLocal(mouse)
+&#9;stillEquipped = true
+&#9;if mouse == nil then 
+&#9;&#9;print(&quot;Mouse not found&quot;)
+&#9;&#9;return
+&#9;end
+&#9;while stillEquipped do 
+&#9;&#9;print(&quot;Setting Mouse to go&quot;)
+&#9;&#9;mouse.Icon = &quot;rbxasset://textures\\GunCursor.png&quot;
+&#9;&#9;while Tool.Enabled and stillEquipped do 
+&#9;&#9;&#9;wait(0.01)
+&#9;&#9;end
+&#9;&#9;print(&quot;Setting Mouse to wait&quot;)
+&#9;&#9;mouse.Icon = &quot;rbxasset://textures\\GunWaitCursor.png&quot;
+&#9;&#9;while not Tool.Enabled and stillEquipped do 
+&#9;&#9;&#9;wait(0.01)
+&#9;&#9;end&#9;
+&#9;end
+end
+
+
+function onUnequippedLocal()
+&#9;stillEquipped = false
+end
+
+Tool.Equipped:connect(onEquippedLocal)
+Tool.Unequipped:connect(onUnequippedLocal)</ProtectedString>
+			</Properties>
+		</Item>
+		<Item class="LocalScript" referent="RBX3A0C75DE23954FED9CB52D04F76CEC4A">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">LocalScript</string>
+				<ProtectedString name="Source">local animations = {}
+local savedHumanoid = nil
+
+local tool = script.Parent
+local uis = game:GetService&apos;UserInputService&apos;
+local localplayer = game:GetService&apos;Players&apos;.LocalPlayer
+local mouse = localplayer:GetMouse()
+
+local uis, cas = game:GetService&apos;UserInputService&apos;, game:GetService&apos;ContextActionService&apos;
+
+--
+--
+function clearAnimations()
+&#9;for i, track in next, animations do
+&#9;&#9;track:Stop()
+&#9;end
+&#9;animations = {}
+&#9;savedHumanoid = nil
+end
+
+--
+--
+
+local hdc
+tool:WaitForChild&apos;Animate&apos;.OnClientEvent:connect(function(name, action, ...)
+&#9;local humanoid = tool.Parent:FindFirstChild&apos;Humanoid&apos;
+&#9;
+&#9;if humanoid then
+&#9;&#9;if savedHumanoid ~= humanoid then
+&#9;&#9;&#9;clearAnimations()
+&#9;&#9;&#9;savedHumanoid = humanoid
+&#9;&#9;end
+&#9;&#9;
+&#9;&#9;local track = animations[name]
+&#9;&#9;if track == nil then
+&#9;&#9;&#9;track = humanoid:LoadAnimation(tool:WaitForChild(name))
+&#9;&#9;&#9;animations[name] = track
+&#9;&#9;end
+&#9;&#9;
+&#9;&#9;if action == &apos;Play&apos; then
+&#9;&#9;&#9;track:Play(...)
+&#9;&#9;elseif action == &apos;Stop&apos; then
+&#9;&#9;&#9;track:Stop(...)
+&#9;&#9;elseif action == &apos;AdjSpeed&apos; then
+&#9;&#9;&#9;track:AdjustSpeed(...)
+&#9;&#9;end
+&#9;&#9;
+&#9;&#9;if hdc then hdc:disconnect() end
+&#9;&#9;hdc = humanoid.Died:connect(function() tool.Parent = nil end)
+&#9;end
+end)
+tool.Unequipped:connect(function()
+&#9;if hdc then hdc:disconnect() end
+end)
+
+function onInput(input)
+&#9;if tool.Parent == localplayer.Character then
+&#9;&#9;local down = input.UserInputState == Enum.UserInputState.Begin
+&#9;&#9;
+&#9;&#9;if input.UserInputType == Enum.UserInputType.MouseButton1 then
+&#9;&#9;&#9;tool.Input:FireServer(&apos;Mouse1&apos;, down)
+&#9;&#9;elseif input.UserInputType == Enum.UserInputType.Keyboard then
+&#9;&#9;&#9;tool.Input:FireServer(&apos;Key&apos;, down, input.KeyCode)
+&#9;&#9;end
+&#9;end
+end
+
+if uis.TouchEnabled then
+&#9;tool.Equipped:connect(function()
+&#9;&#9;cas:UnbindAction(&apos;SorcusSwordOfJudgement_X&apos;)
+&#9;&#9;cas:UnbindAction(&apos;SorcusSwordOfJudgement_Z&apos;)
+&#9;&#9;
+&#9;&#9;cas:BindActionToInputTypes(&apos;SorcusSwordOfJudgement_X&apos;, function()
+&#9;&#9;&#9;tool.Input:FireServer(&apos;Key&apos;, true, {Name=&apos;x&apos;})
+&#9;&#9;end, true, &apos;&apos;)
+&#9;&#9;cas:BindActionToInputTypes(&apos;SorcusSwordOfJudgement_Z&apos;, function()
+&#9;&#9;&#9;tool.Input:FireServer(&apos;Key&apos;, true, {Name=&apos;z&apos;})
+&#9;&#9;end, true, &apos;&apos;)
+&#9;&#9;
+&#9;&#9;cas:SetTitle(&apos;SorcusSwordOfJudgement_X&apos;, &apos;Call for Judgement&apos;)
+&#9;&#9;cas:SetTitle(&apos;SorcusSwordOfJudgement_Z&apos;, &apos;Will of Judgement&apos;)
+&#9;end)
+&#9;
+&#9;tool.Unequipped:connect(function()
+&#9;&#9;cas:UnbindAction(&apos;SorcusSwordOfJudgement_X&apos;)
+&#9;&#9;cas:UnbindAction(&apos;SorcusSwordOfJudgement_Z&apos;)
+&#9;end)
+end
+
+--
+--
+
+tool.Unequipped:connect(clearAnimations)
+uis.InputBegan:connect(onInput)
+uis.InputEnded:connect(onInput)</ProtectedString>
+			</Properties>
+		</Item>
+	</Item>
+</roblox>

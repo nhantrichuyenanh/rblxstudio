@@ -1,0 +1,777 @@
+<roblox xmlns:xmime="http://www.w3.org/2005/05/xmlmime" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.roblox.com/roblox.xsd" version="4">
+	<Meta name="ExplicitAutoJoints">true</Meta>
+	<External>null</External>
+	<External>nil</External>
+	<Item class="Tool" referent="RBXB60DC0E4DE4846AFA0E3D5C3675A7FB6">
+		<Properties>
+			<bool name="CanBeDropped">true</bool>
+			<bool name="Enabled">true</bool>
+			<CoordinateFrame name="Grip">
+				<X>0.649999976</X>
+				<Y>0</Y>
+				<Z>-0.5</Z>
+				<R00>0</R00>
+				<R01>0</R01>
+				<R02>1</R02>
+				<R10>1</R10>
+				<R11>0</R11>
+				<R12>0</R12>
+				<R20>0</R20>
+				<R21>1</R21>
+				<R22>0</R22>
+			</CoordinateFrame>
+			<bool name="ManualActivationOnly">false</bool>
+			<string name="Name">ConfusoRay-672</string>
+			<bool name="RequiresHandle">true</bool>
+			<BinaryString name="Tags"></BinaryString>
+			<Content name="TextureId"><url>http://www.roblox.com/asset/?id=48476348 </url></Content>
+			<string name="ToolTip">Topsy Turvy</string>
+		</Properties>
+		<Item class="Part" referent="RBX24B9F37F9A0E48F2BE65D7DF2842C1EF">
+			<Properties>
+				<bool name="Anchored">false</bool>
+				<float name="BackParamA">-0.5</float>
+				<float name="BackParamB">0.5</float>
+				<token name="BackSurface">0</token>
+				<token name="BackSurfaceInput">0</token>
+				<float name="BottomParamA">-0.5</float>
+				<float name="BottomParamB">0.5</float>
+				<token name="BottomSurface">4</token>
+				<token name="BottomSurfaceInput">0</token>
+				<CoordinateFrame name="CFrame">
+					<X>4.22500277</X>
+					<Y>7.58500767</Y>
+					<Z>-27.8099995</Z>
+					<R00>0.812622249</R00>
+					<R01>1.40863303e-05</R01>
+					<R02>0.582790613</R02>
+					<R10>-0.582662761</R10>
+					<R11>-0.0209711082</R11>
+					<R12>0.812443733</R12>
+					<R20>0.0122332098</R20>
+					<R21>-0.999780178</R21>
+					<R22>-0.0170333833</R22>
+				</CoordinateFrame>
+				<bool name="CanCollide">true</bool>
+				<bool name="CastShadow">true</bool>
+				<int name="CollisionGroupId">0</int>
+				<Color3uint8 name="Color3uint8">4278226844</Color3uint8>
+				<PhysicalProperties name="CustomPhysicalProperties">
+					<CustomPhysics>false</CustomPhysics>
+				</PhysicalProperties>
+				<float name="FrontParamA">-0.5</float>
+				<float name="FrontParamB">0.5</float>
+				<token name="FrontSurface">0</token>
+				<token name="FrontSurfaceInput">0</token>
+				<float name="LeftParamA">-0.5</float>
+				<float name="LeftParamB">0.5</float>
+				<token name="LeftSurface">0</token>
+				<token name="LeftSurfaceInput">0</token>
+				<bool name="Locked">true</bool>
+				<bool name="Massless">false</bool>
+				<token name="Material">256</token>
+				<string name="Name">Handle</string>
+				<float name="Reflectance">0</float>
+				<float name="RightParamA">-0.5</float>
+				<float name="RightParamB">0.5</float>
+				<token name="RightSurface">0</token>
+				<token name="RightSurfaceInput">0</token>
+				<int name="RootPriority">0</int>
+				<Vector3 name="RotVelocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<BinaryString name="Tags"></BinaryString>
+				<float name="TopParamA">-0.5</float>
+				<float name="TopParamB">0.5</float>
+				<token name="TopSurface">3</token>
+				<token name="TopSurfaceInput">0</token>
+				<float name="Transparency">0</float>
+				<Vector3 name="Velocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<token name="formFactorRaw">3</token>
+				<token name="shape">1</token>
+				<Vector3 name="size">
+					<X>1.94999957</X>
+					<Y>0.57000035</Y>
+					<Z>1.06000054</Z>
+				</Vector3>
+			</Properties>
+			<Item class="SpecialMesh" referent="RBXAE092C548FE7470AABAA821740824B76">
+				<Properties>
+					<token name="LODX">2</token>
+					<token name="LODY">2</token>
+					<Content name="MeshId"><url>http://www.roblox.com/asset/?id=48476252 </url></Content>
+					<token name="MeshType">5</token>
+					<string name="Name">Mesh</string>
+					<Vector3 name="Offset">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+					</Vector3>
+					<Vector3 name="Scale">
+						<X>1.10000002</X>
+						<Y>1.10000002</Y>
+						<Z>1.10000002</Z>
+					</Vector3>
+					<BinaryString name="Tags"></BinaryString>
+					<Content name="TextureId"><url>http://www.roblox.com/asset/?id=48476327 </url></Content>
+					<Vector3 name="VertexColor">
+						<X>1</X>
+						<Y>1</Y>
+						<Z>1</Z>
+					</Vector3>
+				</Properties>
+			</Item>
+			<Item class="Sound" referent="RBX11A32AFFAF614CB59BD50C3686C555A6">
+				<Properties>
+					<float name="EmitterSize">10</float>
+					<bool name="Looped">false</bool>
+					<string name="Name">Fire</string>
+					<bool name="PlayOnRemove">false</bool>
+					<float name="PlaybackSpeed">1</float>
+					<bool name="Playing">false</bool>
+					<token name="RollOffMode">0</token>
+					<Ref name="SoundGroup">null</Ref>
+					<Content name="SoundId"><url>http://www.roblox.com/asset/?id=48578534 </url></Content>
+					<BinaryString name="Tags"></BinaryString>
+					<double name="TimePosition">0</double>
+					<float name="Volume">0.5</float>
+					<float name="xmlRead_MaxDistance_3">10000</float>
+				</Properties>
+			</Item>
+			<Item class="Attachment" referent="RBXA6CE16ADBE304919A241CFDAA851360C">
+				<Properties>
+					<CoordinateFrame name="CFrame">
+						<X>0.649999976</X>
+						<Y>0</Y>
+						<Z>-0.499999762</Z>
+						<R00>0</R00>
+						<R01>0</R01>
+						<R02>1</R02>
+						<R10>1</R10>
+						<R11>0</R11>
+						<R12>0</R12>
+						<R20>0</R20>
+						<R21>1</R21>
+						<R22>0</R22>
+					</CoordinateFrame>
+					<string name="Name">RightGripAttachment</string>
+					<BinaryString name="Tags"></BinaryString>
+					<bool name="Visible">false</bool>
+				</Properties>
+			</Item>
+		</Item>
+		<Item class="Camera" referent="RBX969AE864E50840AE9117644090959B1F">
+			<Properties>
+				<CoordinateFrame name="CFrame">
+					<X>4.10978699</X>
+					<Y>7.3925209</Y>
+					<Z>-29.1965103</Z>
+					<R00>-0.998897552</R00>
+					<R01>-0.00444398634</R01>
+					<R02>-0.0467329435</R02>
+					<R10>-0</R10>
+					<R11>0.995509028</R11>
+					<R12>-0.0946661606</R12>
+					<R20>0.0469437689</R20>
+					<R21>-0.0945617929</R21>
+					<R22>-0.994411528</R22>
+				</CoordinateFrame>
+				<Ref name="CameraSubject">null</Ref>
+				<token name="CameraType">0</token>
+				<float name="FieldOfView">70</float>
+				<CoordinateFrame name="Focus">
+					<X>4.17532396</X>
+					<Y>7.52527809</Y>
+					<Z>-27.8019753</Z>
+					<R00>1</R00>
+					<R01>0</R01>
+					<R02>0</R02>
+					<R10>0</R10>
+					<R11>1</R11>
+					<R12>0</R12>
+					<R20>0</R20>
+					<R21>0</R21>
+					<R22>1</R22>
+				</CoordinateFrame>
+				<bool name="HeadLocked">true</bool>
+				<float name="HeadScale">1</float>
+				<string name="Name">ThumbnailCamera</string>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+		</Item>
+		<Item class="LocalScript" referent="RBX43816691266E44F78F252E6AE2211474">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">MouseIcon</string>
+				<string name="ScriptGuid">{CF0E1EE9-D5F7-4438-952B-A68DB825950F}</string>
+				<ProtectedString name="Source"><![CDATA[--Rescripted by Luckymaxer
+
+Mouse_Icon = "rbxasset://textures/GunCursor.png"
+Reloading_Icon = "rbxasset://textures/GunWaitCursor.png"
+
+Tool = script.Parent
+
+Mouse = nil
+
+function UpdateIcon()
+	if Mouse then
+		Mouse.Icon = Tool.Enabled and Mouse_Icon or Reloading_Icon
+	end
+end
+
+function OnEquipped(ToolMouse)
+	Mouse = ToolMouse
+	UpdateIcon()
+end
+
+function OnChanged(Property)
+	if Property == "Enabled" then
+		UpdateIcon()
+	end
+end
+
+Tool.Equipped:Connect(OnEquipped)
+Tool.Changed:Connect(OnChanged)
+]]></ProtectedString>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+		</Item>
+		<Item class="LocalScript" referent="RBXC978C62EF1024B09AB0E0C11363AB803">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">Client</string>
+				<string name="ScriptGuid">{2FABF451-B3A5-4966-8E1F-7E9B2AF60DA2}</string>
+				<ProtectedString name="Source"><![CDATA[local Tool = script.Parent
+
+local MouseInput = Tool:WaitForChild("MousePos",10)
+
+local Services = {
+	Players = (game:FindService("Players") or game:GetService("Players")),
+	TweenService = (game:FindService("TweenService") or game:GetService("TweenService")),
+	RunService = (game:FindService("RunService") or game:GetService("RunService")),
+	Input = (game:FindService("ContextActionService") or game:GetService("ContextActionService"))
+}
+
+local Player,Character,Humanoid
+
+
+
+function Equipped()
+	Player = Services.Players.LocalPlayer
+	Character = Player.Character
+	Humanoid = Character:FindFirstChildOfClass("Humanoid")
+	if not Humanoid or not Humanoid.Parent or Humanoid.Health <= 0 then return end
+
+end
+
+function Unequipped()
+	
+end
+
+Tool.Equipped:Connect(Equipped)
+Tool.Unequipped:Connect(Unequipped)
+
+function MouseInput.OnClientInvoke()
+	return (Humanoid and Humanoid.TargetPoint) or Vector3.new(0,0,0)--game.Players.LocalPlayer:GetMouse().Hit.p
+end]]></ProtectedString>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+		</Item>
+		<Item class="Script" referent="RBXA7F0F108631C4D19B399648BD468C491">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">Server</string>
+				<string name="ScriptGuid">{AFF49068-F36F-4E12-8382-5E90A2A8ED84}</string>
+				<ProtectedString name="Source"><![CDATA[local Self = script
+
+local Tool = Self.Parent
+Tool.Enabled = true
+
+local Handle = Tool:WaitForChild("Handle")
+
+local Character,Humanoid,Player
+
+local Instant,Pairs,Type,Tick,wrap,Delay,Wait,Pcall = Instance.new,pairs,type,tick,coroutine.wrap,delay,wait,pcall
+
+local Cframe,rad,Angles,Vec3,huge = CFrame.new,math.rad,CFrame.Angles,Vector3.new,math.huge
+
+function Create(ty)
+	return function(data)
+		local obj = Instant(ty)
+		for k, v in Pairs(data) do
+			if Type(k) == 'number' then
+				v.Parent = obj
+			else
+				obj[k] = v
+			end
+		end
+		return obj
+	end
+end
+
+local MouseInput = (Tool:FindFirstChild("MousePos") or Create("RemoteFunction"){
+	Name = "MousePos",
+	Parent = Tool
+})
+
+local Sounds = {
+	Fire = Handle:WaitForChild("Fire")
+}
+
+local Services = {
+	Debris = (game:FindService("Debris") or game:GetService("Debris")),
+	Players = (game:FindService("Players") or game:GetService("Players"))
+}
+
+local Events = {}
+
+
+
+part = Create("Part"){
+	Size = Vec3(0.8, 0.8, 0.8),
+	Transparency = 0.6,
+	Anchored = false,
+	CanCollide = false,
+	Locked = true,
+	Shape = Enum.PartType.Ball,
+}
+
+local fieldMesh = Create("SpecialMesh"){
+	MeshType = "FileMesh",
+	Name = "Mesh",
+	MeshId = "http://www.roblox.com/asset/?id=48423624",
+	TextureId = "http://www.roblox.com/asset/?id=48578045",
+	Scale = Vector3.new(0.02, 0.02, 0.02),
+	Parent = part,
+}
+
+local Spirals = Self:WaitForChild("Spirals"):Clone()
+Spirals.Parent = part
+Spirals.Enabled = false
+
+function Equipped()
+	Character = Tool.Parent
+	Humanoid = Character:FindFirstChildOfClass("Humanoid")
+	Player = Services.Players:GetPlayerFromCharacter(Character)
+	
+	if not Humanoid or Humanoid.Health <= 0 or Humanoid.Health == huge or not Tool.Enabled then return end
+	
+	Events[#Events+1] = Tool.Activated:Connect(function()
+		
+		if not Humanoid or Humanoid.Health <= 0 or Humanoid.Health == huge or not Tool.Enabled then return end
+		
+		Tool.Enabled = false
+		Delay(1.5,function()
+			Tool.Enabled = true
+		end)
+		local sucess,MousePosition = Pcall(function() return MouseInput:InvokeClient(Player) end)
+		MousePosition = (sucess and MousePosition) or Vec3(0,0,0)
+		
+		local proj = part:Clone()
+		
+		Services.Debris:AddItem(proj,5)
+		
+		local lookAt = (MousePosition - Handle.Position).Unit	
+		
+		local spawnPos = Handle.Position
+		spawnPos = spawnPos + lookAt * 5.0
+		
+		proj.CFrame = Cframe(spawnPos, spawnPos + lookAt) 
+		
+		Create("BodyVelocity"){
+			MaxForce = Vec3(huge,huge,huge),
+			Velocity = lookAt * 60,
+			Parent = proj
+		}
+		
+		local ConfuseScript = Self:WaitForChild("ConfuseScript"):Clone()
+		
+		
+		Create("ObjectValue"){
+			Value = Player,
+			Name = "Creator",
+			Parent = ConfuseScript
+		}
+		ConfuseScript.Parent = proj
+		ConfuseScript.Disabled = false
+		
+		proj.Parent = workspace
+		Sounds.Fire:Play()
+		
+		local Particle = proj:FindFirstChildOfClass("ParticleEmitter")
+		if Particle then
+			Particle.Enabled = true
+		end
+		
+		if proj:CanSetNetworkOwnership() then
+			proj:SetNetworkOwner(nil)
+		end
+		
+	end)
+	
+end
+
+function Unequipped()
+	
+	for i=1,#Events,1 do
+		if Events[i] then
+			Events[i]:Disconnect()
+		end
+	end
+	Events = {}
+	
+	for i,v in Pairs(Sounds) do
+		if v and v:IsA("Sound") then
+			v:Stop()
+		end
+	end
+	
+end
+
+Tool.Equipped:Connect(Equipped)
+Tool.Unequipped:Connect(Unequipped)
+]]></ProtectedString>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+			<Item class="ParticleEmitter" referent="RBX50077E3CC10C47A5814F963A65401C97">
+				<Properties>
+					<Vector3 name="Acceleration">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+					</Vector3>
+					<ColorSequence name="Color">0 0 0.333333 1 0 1 0 0.333333 1 0 </ColorSequence>
+					<float name="Drag">1</float>
+					<token name="EmissionDirection">1</token>
+					<bool name="Enabled">false</bool>
+					<NumberRange name="Lifetime">3 5 </NumberRange>
+					<float name="LightEmission">0.5</float>
+					<float name="LightInfluence">0</float>
+					<bool name="LockedToPart">false</bool>
+					<string name="Name">Spirals</string>
+					<float name="Rate">20</float>
+					<NumberRange name="RotSpeed">300 300 </NumberRange>
+					<NumberRange name="Rotation">-180 180 </NumberRange>
+					<NumberSequence name="Size">0 0.5 0.5 1 0 0 </NumberSequence>
+					<NumberRange name="Speed">3 3 </NumberRange>
+					<Vector2 name="SpreadAngle">
+						<X>-180</X>
+						<Y>180</Y>
+					</Vector2>
+					<BinaryString name="Tags"></BinaryString>
+					<Content name="Texture"><url>rbxassetid://243134825</url></Content>
+					<NumberSequence name="Transparency">0 1 0 0.1 0 0 0.5 0 0 1 1 0 </NumberSequence>
+					<float name="VelocityInheritance">0.5</float>
+					<float name="ZOffset">0</float>
+				</Properties>
+			</Item>
+			<Item class="Script" referent="RBX492E1831C821409EB8E5B21B0671C43B">
+				<Properties>
+					<bool name="Disabled">true</bool>
+					<Content name="LinkedSource"><null></null></Content>
+					<string name="Name">ConfuseScript</string>
+					<string name="ScriptGuid">{259DCF96-793F-4039-BE49-26E426F8AB54}</string>
+					<ProtectedString name="Source"><![CDATA[local Self = script
+
+local Projectile = Self.Parent
+
+local Creator = Self:WaitForChild("Creator")
+
+local Instant,Pairs,Type,Tick,wrap,Delay,Wait,Pcall = Instance.new,pairs,type,tick,coroutine.wrap,delay,wait,pcall
+
+local Services = {
+	Debris = (game:FindService("Debris") or game:GetService("Debris")),
+	Players = (game:FindService("Players") or game:GetService("Players"))
+}
+
+function Create(ty)
+	return function(data)
+		local obj = Instant(ty)
+		for k, v in Pairs(data) do
+			if Type(k) == 'number' then
+				v.Parent = obj
+			else
+				obj[k] = v
+			end
+		end
+		return obj
+	end
+end
+
+--[[function IsTeamMate(Player1, Player2)
+	return (Player1 and Player2 and not Player1.Neutral and not Player2.Neutral and Player1.TeamColor == Player2.TeamColor)
+end]]
+
+function TagHumanoid(humanoid, player)
+	local Creator_Tag = Instant("ObjectValue")
+	Creator_Tag.Name = "creator"
+	Creator_Tag.Value = player
+	Services.Debris:AddItem(Creator_Tag, 2)
+	Creator_Tag.Parent = humanoid
+end
+
+function UntagHumanoid(humanoid)
+	for i, v in Pairs(humanoid:GetChildren()) do
+		if v:IsA("ObjectValue") and v.Name == "creator" then
+			v:Destroy()
+		end
+	end
+end
+
+
+Projectile.Touched:Connect(function(hit)
+	
+	if not hit or not hit.Parent then return end
+	
+	local Hum = hit.Parent:FindFirstChildOfClass("Humanoid")
+	
+	if not Hum or Hum.Health <= 0 or --[[IsTeamMate(Creator.Value,Services.Players:GetPlayerFromCharacter(Hum.Parent)) or]] Creator.Value == Services.Players:GetPlayerFromCharacter(Hum.Parent) then return end
+	
+	local Directory = Hum.Parent
+	
+	local Confused = Directory:FindFirstChild("Confuse")
+	
+	if Confused then return end
+	
+	--print("Made it here")
+	
+	local Confusion = Self:WaitForChild("Confuse"):Clone()
+	
+	Create("NumberValue"){
+		Name = "Duration",
+		Value = 3,
+		Parent = Confusion
+	}
+	
+	Confusion.Parent = Directory
+	Confusion.Disabled = false
+	
+	
+end)]]></ProtectedString>
+					<BinaryString name="Tags"></BinaryString>
+				</Properties>
+				<Item class="Script" referent="RBX158EFA2BD7F542999B24500A62CAF7BD">
+					<Properties>
+						<bool name="Disabled">true</bool>
+						<Content name="LinkedSource"><null></null></Content>
+						<string name="Name">Confuse</string>
+						<string name="ScriptGuid">{BBA00B4B-FA45-4AC8-8744-BF159347468A}</string>
+						<ProtectedString name="Source"><![CDATA[local Duration = 5
+local Players = (game:FindService("Players") or game:GetService("Players"))
+
+local Self = script
+
+local Character = Self.Parent
+
+local Humanoid = Character:FindFirstChildOfClass("Humanoid")
+
+local IsPlayer = Players:GetPlayerFromCharacter(Character)
+
+if IsPlayer then
+	local CamSpin = Self:WaitForChild("CamSpinServer")
+	local DurationValue = Instance.new("NumberValue")
+	DurationValue.Name = "Duration"
+	DurationValue.Value = Duration
+	DurationValue.Parent = CamSpin
+	
+	local Target = Instance.new("ObjectValue")
+	Target.Name = "Target"
+	Target.Value = IsPlayer
+	Target.Parent = CamSpin
+	
+	CamSpin.Parent = IsPlayer:WaitForChild("PlayerGui")
+	CamSpin.Disabled = false
+end
+
+if Humanoid then
+	Humanoid.WalkSpeed = 5
+	wait(Duration)
+	Humanoid.WalkSpeed = 16
+	
+	Self:Destroy()
+	--[[if not IsPlayer then
+		
+	end]]
+end
+
+]]></ProtectedString>
+						<BinaryString name="Tags"></BinaryString>
+					</Properties>
+					<Item class="Script" referent="RBXA9DC1650D533444EA3F2B6C43D05AD04">
+						<Properties>
+							<bool name="Disabled">true</bool>
+							<Content name="LinkedSource"><null></null></Content>
+							<string name="Name">CamSpinServer</string>
+							<string name="ScriptGuid">{88DD58D7-772E-4AFD-8CA8-958C60019B31}</string>
+							<ProtectedString name="Source"><![CDATA[--monitors the client to make sure nothing glitches
+
+local Self = script
+
+local Duration,Target = Self:WaitForChild("Duration").Value,Self:WaitForChild("Target").Value
+
+local CamSpinClient = Self:FindFirstChild("CamSpinClient")
+
+if CamSpinClient then
+	local Dur = Instance.new("NumberValue")
+	Dur.Name = "Duration"
+	Dur.Value = Duration
+	Dur.Parent = CamSpinClient
+	CamSpinClient.Parent = Target:WaitForChild("PlayerGui")
+	CamSpinClient.Disabled = false
+	 
+end
+
+delay(Duration + 1, function()
+	if CamSpinClient then
+		CamSpinClient:Destroy()
+	end
+	Self:Destroy()
+end)
+]]></ProtectedString>
+							<BinaryString name="Tags"></BinaryString>
+						</Properties>
+						<Item class="LocalScript" referent="RBXD8E765FB736D4780AB58FDE62E8A571C">
+							<Properties>
+								<bool name="Disabled">true</bool>
+								<Content name="LinkedSource"><null></null></Content>
+								<string name="Name">CamSpinClient</string>
+								<string name="ScriptGuid">{06EC754F-9CED-4143-B28F-899DF7BFE322}</string>
+								<ProtectedString name="Source"><![CDATA[local Duration =  script:WaitForChild("Duration").Value
+
+local RunService = (game:FindService("RunService") or game:GetService("RunService"))
+
+local Camera = workspace.CurrentCamera
+
+local rad,sin = math.rad,math.sin
+
+local Angle = 0
+
+local Seed = Random.new()
+
+local Current_Time = 0
+
+warn(Duration)
+repeat
+	Camera.CFrame = Camera.CFrame * CFrame.Angles(0,0,rad(Angle))
+	Angle = Angle + 5
+	Current_Time = Current_Time + RunService.RenderStepped:Wait()
+until Current_Time >= Duration
+
+Camera.CFrame = Camera.CFrame * CFrame.Angles(0,0,0)]]></ProtectedString>
+								<BinaryString name="Tags"></BinaryString>
+							</Properties>
+						</Item>
+					</Item>
+				</Item>
+			</Item>
+		</Item>
+		<Item class="Keyframe" referent="RBX7D31FA1EF8B6492797B88DE7BFC12673">
+			<Properties>
+				<string name="Name">ThumbnailPose</string>
+				<BinaryString name="Tags"></BinaryString>
+				<float name="Time">0</float>
+			</Properties>
+			<Item class="Pose" referent="RBX859311F8031A4033AE935680348ECFBD">
+				<Properties>
+					<CoordinateFrame name="CFrame">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+						<R00>1</R00>
+						<R01>0</R01>
+						<R02>0</R02>
+						<R10>0</R10>
+						<R11>1</R11>
+						<R12>0</R12>
+						<R20>0</R20>
+						<R21>0</R21>
+						<R22>1</R22>
+					</CoordinateFrame>
+					<token name="EasingDirection">1</token>
+					<token name="EasingStyle">0</token>
+					<string name="Name">UpperTorso</string>
+					<BinaryString name="Tags"></BinaryString>
+					<float name="Weight">0</float>
+				</Properties>
+				<Item class="Pose" referent="RBX9EF95A4C684B4D6480BF526AFCC4FEAB">
+					<Properties>
+						<CoordinateFrame name="CFrame">
+							<X>0</X>
+							<Y>-6.70552254e-08</Y>
+							<Z>-5.96046448e-08</Z>
+							<R00>1</R00>
+							<R01>0</R01>
+							<R02>0</R02>
+							<R10>0</R10>
+							<R11>0.173624337</R11>
+							<R12>-0.984811902</R12>
+							<R20>0</R20>
+							<R21>0.984811902</R21>
+							<R22>0.173624337</R22>
+						</CoordinateFrame>
+						<token name="EasingDirection">1</token>
+						<token name="EasingStyle">0</token>
+						<string name="Name">RightUpperArm</string>
+						<BinaryString name="Tags"></BinaryString>
+						<float name="Weight">1</float>
+					</Properties>
+					<Item class="Pose" referent="RBX93EBF00565884DB18AD0F2B0C4569161">
+						<Properties>
+							<CoordinateFrame name="CFrame">
+								<X>0</X>
+								<Y>-1.49011612e-08</Y>
+								<Z>3.7252903e-09</Z>
+								<R00>1</R00>
+								<R01>0</R01>
+								<R02>0</R02>
+								<R10>0</R10>
+								<R11>0.984812498</R11>
+								<R12>-0.173621148</R12>
+								<R20>0</R20>
+								<R21>0.173621148</R21>
+								<R22>0.984812498</R22>
+							</CoordinateFrame>
+							<token name="EasingDirection">1</token>
+							<token name="EasingStyle">0</token>
+							<string name="Name">RightLowerArm</string>
+							<BinaryString name="Tags"></BinaryString>
+							<float name="Weight">1</float>
+						</Properties>
+						<Item class="Pose" referent="RBX95E2DE8EBE8F4F49987F6855E93F6D14">
+							<Properties>
+								<CoordinateFrame name="CFrame">
+									<X>0</X>
+									<Y>0</Y>
+									<Z>0</Z>
+									<R00>1</R00>
+									<R01>0</R01>
+									<R02>0</R02>
+									<R10>0</R10>
+									<R11>1</R11>
+									<R12>0</R12>
+									<R20>0</R20>
+									<R21>0</R21>
+									<R22>1</R22>
+								</CoordinateFrame>
+								<token name="EasingDirection">1</token>
+								<token name="EasingStyle">0</token>
+								<string name="Name">RightHand</string>
+								<BinaryString name="Tags"></BinaryString>
+								<float name="Weight">1</float>
+							</Properties>
+						</Item>
+					</Item>
+				</Item>
+			</Item>
+		</Item>
+	</Item>
+</roblox>

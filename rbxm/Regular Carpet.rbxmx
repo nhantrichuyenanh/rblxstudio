@@ -1,0 +1,211 @@
+<roblox xmlns:xmime="http://www.w3.org/2005/05/xmlmime" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.roblox.com/roblox.xsd" version="4">
+	<External>null</External>
+	<External>nil</External>
+	<Item class="Tool" referent="RBX1009653AB089446B967DCAED298079FD">
+		<Properties>
+			<bool name="CanBeDropped">true</bool>
+			<bool name="Enabled">true</bool>
+			<CoordinateFrame name="Grip">
+				<X>-1.5</X>
+				<Y>0</Y>
+				<Z>0</Z>
+				<R00>0</R00>
+				<R01>0</R01>
+				<R02>-1</R02>
+				<R10>-1</R10>
+				<R11>8.90154915e-005</R11>
+				<R12>0</R12>
+				<R20>8.90154915e-005</R20>
+				<R21>1</R21>
+				<R22>0</R22>
+			</CoordinateFrame>
+			<bool name="ManualActivationOnly">false</bool>
+			<string name="Name">RegularCarpet</string>
+			<bool name="RequiresHandle">true</bool>
+			<Content name="TextureId"><url>http://www.roblox.com/asset/?id=233555795</url></Content>
+			<string name="ToolTip"></string>
+		</Properties>
+		<Item class="Script" referent="RBX1A419D567148450AAEAC8E948F04A72D">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">Script</string>
+				<ProtectedString name="Source"><![CDATA[--Rescripted by Luckymaxer
+
+Tool = script.Parent
+Handle = Tool:WaitForChild("Handle")
+
+InsertService = game:GetService("InsertService")
+Debris = game:GetService("Debris")
+
+CarpetModel = InsertService:LoadAsset(266360667)
+Carpet = CarpetModel:GetChildren()[1]:Clone()
+Debris:AddItem(CarpetModel, 1)
+
+Handle.Transparency = 0
+Tool.Enabled = true
+
+function Activated()
+	if not Tool.Enabled then
+		return
+	end
+	Tool.Enabled = false
+	Handle.Transparency = 1
+	CarpetModel = Carpet:Clone()
+	local HumanoidRootPart = CarpetModel.HumanoidRootPart
+	local AnimateScript = CarpetModel.AnimateScript
+	Debris:AddItem(CarpetModel, 60)
+	AnimateScript.Disabled = false
+	for i, v in pairs(CarpetModel:GetChildren()) do
+		if v:IsA("BasePart") then
+			v.Friction = 2
+			v.Elasticity = 0
+		end
+	end
+	local BodyVelocity = Instance.new("BodyVelocity")
+	BodyVelocity.velocity = Vector3.new(0, -8, 0)
+	BodyVelocity.Parent = HumanoidRootPart
+	HumanoidRootPart.CFrame = ((Handle.CFrame * CFrame.new(0, 0, 0)) * CFrame.Angles((math.pi / 2), -(math.pi / 2), 0))
+	CarpetModel.Parent = game:GetService("Workspace")
+	Debris:AddItem(Tool, 0)
+	Tool:Destroy()
+end
+
+Tool.Activated:connect(Activated)]]></ProtectedString>
+			</Properties>
+		</Item>
+		<Item class="Part" referent="RBXE41468C08C77473CBF59C687F95F9807">
+			<Properties>
+				<bool name="Anchored">false</bool>
+				<float name="BackParamA">-0.5</float>
+				<float name="BackParamB">0.5</float>
+				<token name="BackSurface">0</token>
+				<token name="BackSurfaceInput">0</token>
+				<float name="BottomParamA">-0.5</float>
+				<float name="BottomParamB">0.5</float>
+				<token name="BottomSurface">0</token>
+				<token name="BottomSurfaceInput">0</token>
+				<int name="BrickColor">194</int>
+				<CoordinateFrame name="CFrame">
+					<X>0.394089282</X>
+					<Y>41.585289</Y>
+					<Z>0.299661338</Z>
+					<R00>0.868376791</R00>
+					<R01>-0.429464072</R01>
+					<R02>-0.247956187</R02>
+					<R10>0.495903492</R10>
+					<R11>0.753247082</R11>
+					<R12>0.432086229</R12>
+					<R20>0.00120676972</R20>
+					<R21>-0.498176068</R21>
+					<R22>0.867075086</R22>
+				</CoordinateFrame>
+				<bool name="CanCollide">true</bool>
+				<PhysicalProperties name="CustomPhysicalProperties">
+					<CustomPhysics>false</CustomPhysics>
+				</PhysicalProperties>
+				<float name="Elasticity">0.5</float>
+				<float name="Friction">0.300000012</float>
+				<float name="FrontParamA">-0.5</float>
+				<float name="FrontParamB">0.5</float>
+				<token name="FrontSurface">0</token>
+				<token name="FrontSurfaceInput">0</token>
+				<float name="LeftParamA">-0.5</float>
+				<float name="LeftParamB">0.5</float>
+				<token name="LeftSurface">0</token>
+				<token name="LeftSurfaceInput">0</token>
+				<bool name="Locked">false</bool>
+				<token name="Material">256</token>
+				<string name="Name">Handle</string>
+				<float name="Reflectance">0</float>
+				<float name="RightParamA">-0.5</float>
+				<float name="RightParamB">0.5</float>
+				<token name="RightSurface">0</token>
+				<token name="RightSurfaceInput">0</token>
+				<Vector3 name="RotVelocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<float name="TopParamA">-0.5</float>
+				<float name="TopParamB">0.5</float>
+				<token name="TopSurface">0</token>
+				<token name="TopSurfaceInput">0</token>
+				<float name="Transparency">0</float>
+				<Vector3 name="Velocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<token name="formFactorRaw">3</token>
+				<token name="shape">1</token>
+				<Vector3 name="size">
+					<X>1</X>
+					<Y>1</Y>
+					<Z>1</Z>
+				</Vector3>
+			</Properties>
+			<Item class="SpecialMesh" referent="RBX606407936A414CBC9578BC28C51BCD9C">
+				<Properties>
+					<token name="LODX">2</token>
+					<token name="LODY">2</token>
+					<Content name="MeshId"><url>http://www.roblox.com/asset/?id=233555251</url></Content>
+					<token name="MeshType">5</token>
+					<string name="Name">Mesh</string>
+					<Vector3 name="Offset">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+					</Vector3>
+					<Vector3 name="Scale">
+						<X>1</X>
+						<Y>1</Y>
+						<Z>1</Z>
+					</Vector3>
+					<Content name="TextureId"><url>http://www.roblox.com/asset/?id=233555762</url></Content>
+					<Vector3 name="VertexColor">
+						<X>1</X>
+						<Y>1</Y>
+						<Z>1</Z>
+					</Vector3>
+				</Properties>
+			</Item>
+		</Item>
+		<Item class="Camera" referent="RBX4C3CE7F2A7854091B186EA69E1826ECD">
+			<Properties>
+				<Ref name="CameraSubject">null</Ref>
+				<token name="CameraType">0</token>
+				<CoordinateFrame name="CoordinateFrame">
+					<X>-1.74002981</X>
+					<Y>43.4005737</Y>
+					<Z>-3.04060316</Z>
+					<R00>-0.806569874</R00>
+					<R01>0.316714168</R01>
+					<R02>-0.499136478</R02>
+					<R10>-0</R10>
+					<R11>0.844364285</R11>
+					<R12>0.535769522</R12>
+					<R20>0.59113884</R20>
+					<R21>0.432135552</R21>
+					<R22>-0.681038737</R22>
+				</CoordinateFrame>
+				<float name="FieldOfView">70</float>
+				<CoordinateFrame name="Focus">
+					<X>-0.262590528</X>
+					<Y>41.8147011</Y>
+					<Z>-1.02473485</Z>
+					<R00>1</R00>
+					<R01>0</R01>
+					<R02>0</R02>
+					<R10>0</R10>
+					<R11>1</R11>
+					<R12>0</R12>
+					<R20>0</R20>
+					<R21>0</R21>
+					<R22>1</R22>
+				</CoordinateFrame>
+				<string name="Name">ThumbnailCamera</string>
+			</Properties>
+		</Item>
+	</Item>
+</roblox>

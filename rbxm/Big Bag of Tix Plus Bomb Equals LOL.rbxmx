@@ -1,0 +1,443 @@
+<roblox xmlns:xmime="http://www.w3.org/2005/05/xmlmime" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.roblox.com/roblox.xsd" version="4">
+	<External>null</External>
+	<External>nil</External>
+	<Item class="Tool" referent="RBXED2F10B2C4034785A5958845ECCF57B7">
+		<Properties>
+			<bool name="CanBeDropped">true</bool>
+			<bool name="Enabled">true</bool>
+			<CoordinateFrame name="Grip">
+				<X>0</X>
+				<Y>0.5</Y>
+				<Z>0</Z>
+				<R00>-1</R00>
+				<R01>0</R01>
+				<R02>0</R02>
+				<R10>0</R10>
+				<R11>1</R11>
+				<R12>0</R12>
+				<R20>0</R20>
+				<R21>0</R21>
+				<R22>-1</R22>
+			</CoordinateFrame>
+			<bool name="ManualActivationOnly">false</bool>
+			<string name="Name">Tixbomb</string>
+			<bool name="RequiresHandle">true</bool>
+			<Content name="TextureId"><url>http://www.roblox.com/asset/?id=19360478</url></Content>
+			<string name="ToolTip"></string>
+		</Properties>
+		<Item class="Part" referent="RBX92EF0128A5F94705B6EC451CE48AD949">
+			<Properties>
+				<bool name="Anchored">false</bool>
+				<float name="BackParamA">-0.5</float>
+				<float name="BackParamB">0.5</float>
+				<token name="BackSurface">0</token>
+				<token name="BackSurfaceInput">0</token>
+				<float name="BottomParamA">-0.5</float>
+				<float name="BottomParamB">0.5</float>
+				<token name="BottomSurface">0</token>
+				<token name="BottomSurfaceInput">0</token>
+				<int name="BrickColor">1002</int>
+				<CoordinateFrame name="CFrame">
+					<X>-0.437650681</X>
+					<Y>0.489785582</Y>
+					<Z>0.499961853</Z>
+					<R00>-0.999999523</R00>
+					<R01>-9.04471017e-006</R01>
+					<R02>2.48451997e-005</R02>
+					<R10>-8.99407678e-006</R10>
+					<R11>1</R11>
+					<R12>-1.47936089e-005</R12>
+					<R20>-2.47880726e-005</R20>
+					<R21>-1.48334029e-005</R21>
+					<R22>-1.00000012</R22>
+				</CoordinateFrame>
+				<bool name="CanCollide">true</bool>
+				<PhysicalProperties name="CustomPhysicalProperties">
+					<CustomPhysics>false</CustomPhysics>
+				</PhysicalProperties>
+				<float name="Elasticity">0.5</float>
+				<float name="Friction">0.300000012</float>
+				<float name="FrontParamA">-0.5</float>
+				<float name="FrontParamB">0.5</float>
+				<token name="FrontSurface">0</token>
+				<token name="FrontSurfaceInput">0</token>
+				<float name="LeftParamA">-0.5</float>
+				<float name="LeftParamB">0.5</float>
+				<token name="LeftSurface">0</token>
+				<token name="LeftSurfaceInput">0</token>
+				<bool name="Locked">true</bool>
+				<token name="Material">256</token>
+				<string name="Name">Handle</string>
+				<float name="Reflectance">0</float>
+				<float name="RightParamA">-0.5</float>
+				<float name="RightParamB">0.5</float>
+				<token name="RightSurface">0</token>
+				<token name="RightSurfaceInput">0</token>
+				<Vector3 name="RotVelocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<float name="TopParamA">-0.5</float>
+				<float name="TopParamB">0.5</float>
+				<token name="TopSurface">0</token>
+				<token name="TopSurfaceInput">0</token>
+				<float name="Transparency">0</float>
+				<Vector3 name="Velocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<token name="formFactorRaw">2</token>
+				<token name="shape">1</token>
+				<Vector3 name="size">
+					<X>1</X>
+					<Y>0.800000012</Y>
+					<Z>1</Z>
+				</Vector3>
+			</Properties>
+			<Item class="SpecialMesh" referent="RBX04C798E26BFD4A2EA54C443214B6C6F0">
+				<Properties>
+					<token name="LODX">2</token>
+					<token name="LODY">2</token>
+					<Content name="MeshId"><url>http://www.roblox.com/asset/?id=16657069</url></Content>
+					<token name="MeshType">5</token>
+					<string name="Name">Mesh</string>
+					<Vector3 name="Offset">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+					</Vector3>
+					<Vector3 name="Scale">
+						<X>0.5</X>
+						<Y>0.600000024</Y>
+						<Z>0.5</Z>
+					</Vector3>
+					<Content name="TextureId"><url>http://www.roblox.com/asset/?id=19354307</url></Content>
+					<Vector3 name="VertexColor">
+						<X>1</X>
+						<Y>1</Y>
+						<Z>1</Z>
+					</Vector3>
+				</Properties>
+			</Item>
+			<Item class="Sound" referent="RBX66765C532FEA4D46BD5845CF5DF32697">
+				<Properties>
+					<float name="EmitterSize">10</float>
+					<bool name="Looped">false</bool>
+					<string name="Name">MoneySound1</string>
+					<bool name="PlayOnRemove">false</bool>
+					<float name="PlaybackSpeed">1</float>
+					<bool name="Playing">false</bool>
+					<token name="RollOffMode">0</token>
+					<Ref name="SoundGroup">null</Ref>
+					<Content name="SoundId"><url>http://www.roblox.com/asset/?id=16720281</url></Content>
+					<double name="TimePosition">0</double>
+					<float name="Volume">1</float>
+					<float name="xmlRead_MaxDistance_3">10000</float>
+				</Properties>
+			</Item>
+			<Item class="Sound" referent="RBX021E3453A16D4C7FAFFD323D0B296B68">
+				<Properties>
+					<float name="EmitterSize">10</float>
+					<bool name="Looped">false</bool>
+					<string name="Name">MoneySound3</string>
+					<bool name="PlayOnRemove">false</bool>
+					<float name="PlaybackSpeed">1</float>
+					<bool name="Playing">false</bool>
+					<token name="RollOffMode">0</token>
+					<Ref name="SoundGroup">null</Ref>
+					<Content name="SoundId"><url>http://www.roblox.com/asset/?id=16720508</url></Content>
+					<double name="TimePosition">0</double>
+					<float name="Volume">1</float>
+					<float name="xmlRead_MaxDistance_3">10000</float>
+				</Properties>
+			</Item>
+			<Item class="Sound" referent="RBX90124228F5804238A671C16596D3796D">
+				<Properties>
+					<float name="EmitterSize">10</float>
+					<bool name="Looped">false</bool>
+					<string name="Name">MoneySound2</string>
+					<bool name="PlayOnRemove">false</bool>
+					<float name="PlaybackSpeed">1</float>
+					<bool name="Playing">false</bool>
+					<token name="RollOffMode">0</token>
+					<Ref name="SoundGroup">null</Ref>
+					<Content name="SoundId"><url>http://www.roblox.com/asset/?id=16720502</url></Content>
+					<double name="TimePosition">0</double>
+					<float name="Volume">1</float>
+					<float name="xmlRead_MaxDistance_3">10000</float>
+				</Properties>
+			</Item>
+			<Item class="Attachment" referent="RBX64C53C1E8B034FD8A673FE36AA4F9334">
+				<Properties>
+					<CoordinateFrame name="CFrame">
+						<X>0</X>
+						<Y>0.75</Y>
+						<Z>-0.5</Z>
+						<R00>0</R00>
+						<R01>0</R01>
+						<R02>1</R02>
+						<R10>0</R10>
+						<R11>1</R11>
+						<R12>-0</R12>
+						<R20>-1</R20>
+						<R21>0</R21>
+						<R22>0</R22>
+					</CoordinateFrame>
+					<string name="Name">RightGripAttachment</string>
+					<bool name="Visible">false</bool>
+				</Properties>
+			</Item>
+		</Item>
+		<Item class="LocalScript" referent="RBX6A33F38F0E48446DBB924670CAE908D3">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">Local Gui</string>
+				<string name="ScriptGuid"></string>
+				<ProtectedString name="Source"><![CDATA[local Tool = script.Parent;
+
+enabled = true
+function onButton1Down(mouse)
+	if not enabled then
+		return
+	end
+
+	enabled = false
+	mouse.Icon = "rbxasset://textures\\ArrowFarCursor.png"
+
+	wait(3)
+	mouse.Icon = "rbxasset://textures\\ArrowCursor.png"
+	enabled = true
+
+end
+
+function onEquippedLocal(mouse)
+
+	if mouse == nil then
+		print("Mouse not found")
+		return 
+	end
+
+	mouse.Icon = "rbxasset://textures\\ArrowCursor.png"
+	mouse.Button1Down:connect(function() onButton1Down(mouse) end)
+end
+
+Tool.Equipped:connect(onEquippedLocal)
+]]></ProtectedString>
+			</Properties>
+		</Item>
+		<Item class="Script" referent="RBX2FDC5825E297493CBC0D1A9BAAA1D906">
+			<Properties>
+				<bool name="Disabled">true</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">Bomb</string>
+				<string name="ScriptGuid">{DB6CE3F3-5835-4F59-BBC1-C75806B51362}</string>
+				<ProtectedString name="Source"><![CDATA[debris = game:GetService("Debris")
+
+FuseSound = Instance.new("Sound")
+FuseSound.SoundId = "http://www.roblox.com/asset/?id=11565378"
+FuseSound.Parent = script.Parent
+FuseSound:Play()
+
+local sounds = {script.Parent.MoneySound1, script.Parent.MoneySound2, script.Parent.MoneySound3}
+
+local meshsize = script.Parent.Mesh.Scale
+
+local buck = nil
+
+
+buck = Instance.new("Part")
+buck.formFactor = 2
+buck.Size = Vector3.new(2,.4,1)
+buck.BrickColor = BrickColor.new("Br. yellowish orange")
+buck.TopSurface = 0
+buck.BottomSurface = 0
+buck.Elasticity = .01 
+
+local d = Instance.new("Decal")
+d.Face = 4
+d.Texture = "http://www.roblox.com/asset/?id=19354292"
+d.Parent = buck
+
+local d2 = d:Clone()
+d2.Face = 1
+d2.Parent = buck
+
+function MakeABuck(pos)
+
+	local limit = 15
+
+	for i=1,limit do
+
+		local b = buck:Clone()
+		local v = Vector3.new(math.random() - .5, math.random() - .5, math.random() - .5).unit
+		b.CFrame = CFrame.new(pos + (v * 2) + Vector3.new(0,4,0), v)
+		b.Parent = game.Workspace
+		debris:AddItem(b, 60)
+	end
+
+end
+
+function update(big)
+	if big then
+		script.Parent.Mesh.Scale = meshsize * 1.5
+	else
+		script.Parent.Mesh.Scale = meshsize
+	end
+end
+
+
+function blowUp()
+	local sound = Instance.new("Sound")
+		sound.SoundId = "rbxasset://sounds\\Rocket shot.wav"
+		sound.Parent = script.Parent
+		sound.Volume = 1
+		sound:play()
+
+	MakeABuck(script.Parent.Position + Vector3.new(0,4,0))
+
+
+	explosion = Instance.new("Explosion")
+	explosion.BlastRadius = 12
+	explosion.BlastPressure = 100000 -- these are really wussy units
+
+	-- find instigator tag
+	local creator = script.Parent:findFirstChild("creator")
+	if creator ~= nil then
+		explosion.Hit:connect(function(part, distance)  onPlayerBlownUp(part, distance, creator) end)
+	end
+
+	explosion.Position = script.Parent.Position + Vector3.new(math.random() - .5, math.random() - .5, math.random() - .5)
+	explosion.Parent = game.Workspace
+
+	for i=1,5 do
+		sounds[math.random(1,#sounds)]:Play()
+		wait(.1)
+	end
+
+	script.Parent.Transparency = 1
+end
+
+function onPlayerBlownUp(part, distance, creator)
+	if part.Name == "Head" then
+		local humanoid = part.Parent.Humanoid
+		tagHumanoid(humanoid, creator)
+	end
+end
+
+function tagHumanoid(humanoid, creator)
+	-- tag does not need to expire iff all explosions lethal
+	
+	if creator ~= nil then
+		local new_tag = creator:clone()
+		new_tag.Parent = humanoid
+	end
+end
+
+function untagHumanoid(humanoid)
+	if humanoid ~= nil then
+		local tag = humanoid:findFirstChild("creator")
+		if tag ~= nil then
+			tag.Parent = nil
+		end
+	end
+end
+
+local counter = .6
+local big = true
+while counter > .03 do
+	wait(counter)
+	counter = counter * .8
+	update(big)
+	big = not big
+end
+
+
+blowUp()
+wait(.1)
+script.Parent:remove()
+]]></ProtectedString>
+			</Properties>
+		</Item>
+		<Item class="Script" referent="RBX81AFF9D24BE64F7A84CC2E57EA54C32D">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">PlantBomb</string>
+				<string name="ScriptGuid">{96133B44-F9C7-46BF-A1DF-A6CF575BA76B}</string>
+				<ProtectedString name="Source"><![CDATA[bombScript = script.Parent.Bomb
+Tool = script.Parent
+
+function plant(pos)
+	
+   
+	local vCharacter = Tool.Parent
+	local vPlayer = game.Players:playerFromCharacter(vCharacter)
+
+	local spawnPos = vCharacter.PrimaryPart.Position
+
+
+	local bomb = Tool.Handle:Clone()
+	bomb.CanCollide = true
+	bomb.Transparency = 0
+	bomb.Position = pos
+	bomb.Size = Vector3.new(2,2,2)
+	bomb.Name = "FuseBomb"
+	bomb.Locked = true
+
+	local spark = Instance.new("Sparkles")
+	spark.Name = "Fuse"
+	spark.Parent = bomb
+
+
+	local creator_tag = Instance.new("ObjectValue")
+	creator_tag.Value = vPlayer
+	creator_tag.Name = "creator"
+	creator_tag.Parent = bomb
+
+	Tool.Handle.MoneySound1:Clone().Parent = bomb
+	Tool.Handle.MoneySound2:Clone().Parent = bomb
+	Tool.Handle.MoneySound3:Clone().Parent = bomb
+
+	bomb.Parent = game.Workspace
+	local new_script = bombScript:clone()
+	new_script.Disabled = false
+	new_script.Parent = bomb
+
+end
+
+
+Tool.Enabled = true
+function onActivated()
+
+	if not Tool.Enabled then
+		return
+	end
+
+	Tool.Enabled = false
+
+	local character = Tool.Parent;
+	local humanoid = character.Humanoid
+	if humanoid == nil then
+		print("Humanoid not found")
+		return 
+	end
+
+	local targetPos = humanoid.TargetPoint
+
+	Tool.Handle.Transparency = 1
+	plant(Tool.Handle.Position)
+	wait(3)
+	Tool.Handle.Transparency = 0
+
+	Tool.Enabled = true
+end
+
+
+script.Parent.Activated:connect(onActivated)]]></ProtectedString>
+			</Properties>
+		</Item>
+	</Item>
+</roblox>

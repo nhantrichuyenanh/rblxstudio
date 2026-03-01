@@ -1,0 +1,726 @@
+<roblox xmlns:xmime="http://www.w3.org/2005/05/xmlmime" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.roblox.com/roblox.xsd" version="4">
+	<External>null</External>
+	<External>nil</External>
+	<Item class="Tool" referent="RBXAA75BA38890F4527A0FA3D547AFFB8DE">
+		<Properties>
+			<bool name="CanBeDropped">true</bool>
+			<bool name="Enabled">true</bool>
+			<CoordinateFrame name="Grip">
+				<X>0</X>
+				<Y>0</Y>
+				<Z>-0.75</Z>
+				<R00>0</R00>
+				<R01>0</R01>
+				<R02>1</R02>
+				<R10>1</R10>
+				<R11>0</R11>
+				<R12>0</R12>
+				<R20>0</R20>
+				<R21>1</R21>
+				<R22>0</R22>
+			</CoordinateFrame>
+			<bool name="ManualActivationOnly">false</bool>
+			<string name="Name">Icedagger</string>
+			<bool name="RequiresHandle">true</bool>
+			<Content name="TextureId"><url>http://www.roblox.com/asset/?id=179697540</url></Content>
+			<string name="ToolTip"></string>
+		</Properties>
+		<Item class="Part" referent="RBXB7A166860AE945AF9D489811E4042D50">
+			<Properties>
+				<bool name="Anchored">false</bool>
+				<float name="BackParamA">-0.5</float>
+				<float name="BackParamB">0.5</float>
+				<token name="BackSurface">0</token>
+				<token name="BackSurfaceInput">0</token>
+				<float name="BottomParamA">-0.5</float>
+				<float name="BottomParamB">0.5</float>
+				<token name="BottomSurface">0</token>
+				<token name="BottomSurfaceInput">0</token>
+				<int name="BrickColor">23</int>
+				<CoordinateFrame name="CFrame">
+					<X>0</X>
+					<Y>2</Y>
+					<Z>0</Z>
+					<R00>0.00096754462</R00>
+					<R01>-0.923925817</R01>
+					<R02>0.382570565</R02>
+					<R10>0.761063218</R10>
+					<R11>0.248845309</R11>
+					<R12>0.599048257</R12>
+					<R20>-0.648676991</R20>
+					<R21>0.290580779</R21>
+					<R22>0.703406692</R22>
+				</CoordinateFrame>
+				<bool name="CanCollide">true</bool>
+				<PhysicalProperties name="CustomPhysicalProperties">
+					<CustomPhysics>false</CustomPhysics>
+				</PhysicalProperties>
+				<float name="Elasticity">0.5</float>
+				<float name="Friction">0.300000012</float>
+				<float name="FrontParamA">-0.5</float>
+				<float name="FrontParamB">0.5</float>
+				<token name="FrontSurface">0</token>
+				<token name="FrontSurfaceInput">0</token>
+				<float name="LeftParamA">-0.5</float>
+				<float name="LeftParamB">0.5</float>
+				<token name="LeftSurface">0</token>
+				<token name="LeftSurfaceInput">0</token>
+				<bool name="Locked">true</bool>
+				<token name="Material">256</token>
+				<string name="Name">Handle</string>
+				<float name="Reflectance">0</float>
+				<float name="RightParamA">-0.5</float>
+				<float name="RightParamB">0.5</float>
+				<token name="RightSurface">0</token>
+				<token name="RightSurfaceInput">0</token>
+				<Vector3 name="RotVelocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<float name="TopParamA">-0.5</float>
+				<float name="TopParamB">0.5</float>
+				<token name="TopSurface">0</token>
+				<token name="TopSurfaceInput">0</token>
+				<float name="Transparency">0</float>
+				<Vector3 name="Velocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<token name="formFactorRaw">3</token>
+				<token name="shape">1</token>
+				<Vector3 name="size">
+					<X>1</X>
+					<Y>0.800000012</Y>
+					<Z>2</Z>
+				</Vector3>
+			</Properties>
+			<Item class="SpecialMesh" referent="RBXCDF73C095798488891C9A6A456ED16D9">
+				<Properties>
+					<token name="LODX">2</token>
+					<token name="LODY">2</token>
+					<Content name="MeshId"><url>http://www.roblox.com/asset/?id=12221720</url></Content>
+					<token name="MeshType">5</token>
+					<string name="Name">Mesh</string>
+					<Vector3 name="Offset">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+					</Vector3>
+					<Vector3 name="Scale">
+						<X>0.5</X>
+						<Y>0.5</Y>
+						<Z>0.5</Z>
+					</Vector3>
+					<Content name="TextureId"><url>http://www.roblox.com/asset/?id=64857463</url></Content>
+					<Vector3 name="VertexColor">
+						<X>0</X>
+						<Y>0.699999988</Y>
+						<Z>1</Z>
+					</Vector3>
+				</Properties>
+			</Item>
+			<Item class="Sound" referent="RBXCDB4D3A55E354699B3DA87F6DFE4172F">
+				<Properties>
+					<float name="EmitterSize">10</float>
+					<bool name="Looped">false</bool>
+					<string name="Name">Lunge</string>
+					<bool name="PlayOnRemove">false</bool>
+					<float name="PlaybackSpeed">1</float>
+					<bool name="Playing">false</bool>
+					<token name="RollOffMode">0</token>
+					<Ref name="SoundGroup">null</Ref>
+					<Content name="SoundId"><url>http://www.roblox.com/asset/?id=12222208</url></Content>
+					<double name="TimePosition">0</double>
+					<float name="Volume">0.600000024</float>
+					<float name="xmlRead_MaxDistance_3">10000</float>
+				</Properties>
+			</Item>
+			<Item class="Sound" referent="RBX85CD98FA115F4A7EB7A8F894B6050D0F">
+				<Properties>
+					<float name="EmitterSize">10</float>
+					<bool name="Looped">false</bool>
+					<string name="Name">Slash</string>
+					<bool name="PlayOnRemove">false</bool>
+					<float name="PlaybackSpeed">1</float>
+					<bool name="Playing">false</bool>
+					<token name="RollOffMode">0</token>
+					<Ref name="SoundGroup">null</Ref>
+					<Content name="SoundId"><url>http://www.roblox.com/asset/?id=12222216</url></Content>
+					<double name="TimePosition">0</double>
+					<float name="Volume">0.699999988</float>
+					<float name="xmlRead_MaxDistance_3">10000</float>
+				</Properties>
+			</Item>
+			<Item class="Sound" referent="RBX47970A9248F8408B93367C93080C261D">
+				<Properties>
+					<float name="EmitterSize">10</float>
+					<bool name="Looped">false</bool>
+					<string name="Name">Unsheath</string>
+					<bool name="PlayOnRemove">false</bool>
+					<float name="PlaybackSpeed">1</float>
+					<bool name="Playing">false</bool>
+					<token name="RollOffMode">0</token>
+					<Ref name="SoundGroup">null</Ref>
+					<Content name="SoundId"><url>http://www.roblox.com/asset/?id=12222225</url></Content>
+					<double name="TimePosition">0</double>
+					<float name="Volume">1</float>
+					<float name="xmlRead_MaxDistance_3">10000</float>
+				</Properties>
+			</Item>
+		</Item>
+		<Item class="LocalScript" referent="RBX76F834D14BF941DB9CAF16C663846E3A">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">MouseIcon</string>
+				<string name="ScriptGuid"></string>
+				<ProtectedString name="Source"><![CDATA[--Rescripted by Luckymaxer
+
+Mouse_Icon = "rbxasset://textures/GunCursor.png"
+Reloading_Icon = "rbxasset://textures/GunWaitCursor.png"
+
+Tool = script.Parent
+
+Mouse = nil
+
+function UpdateIcon()
+	if Mouse then
+		Mouse.Icon = Tool.Enabled and Mouse_Icon or Reloading_Icon
+	end
+end
+
+function OnEquipped(ToolMouse)
+	Mouse = ToolMouse
+	UpdateIcon()
+end
+
+function OnChanged(Property)
+	if Property == "Enabled" then
+		UpdateIcon()
+	end
+end
+
+Tool.Equipped:connect(OnEquipped)
+Tool.Changed:connect(OnChanged)
+]]></ProtectedString>
+			</Properties>
+		</Item>
+		<Item class="Script" referent="RBXBF06E95EA4C241E39F8D77324D5994E9">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">SwordScript</string>
+				<string name="ScriptGuid">{D8E9FC07-C5F8-469F-BFA7-B43A6BEC6FA9}</string>
+				<ProtectedString name="Source"><![CDATA[--Rescripted by Luckymaxer
+
+Tool = script.Parent
+Handle = Tool:WaitForChild("Handle")
+Mesh = Handle:WaitForChild("Mesh")
+
+Players = game:GetService("Players")
+Debris = game:GetService("Debris")
+RunService = game:GetService("RunService")
+
+BaseUrl = "http://www.roblox.com/asset/?id="
+
+Grips = {
+	Up = CFrame.new(0, 0, -0.75, 0, 0, 1, 1, 0, 0, 0, 1, 0),
+	Out = CFrame.new(0, 0, -0.75, 0, -1, -0, -1, 0, -0, 0, 0, -1),
+}
+
+DamageValues = {
+	BaseDamage = 5,
+	SlashDamage = 10,
+	LungeDamage = 15,
+}
+
+Damage = DamageValues.BaseDamage
+
+Sounds = {
+	Slash = Handle:WaitForChild("Slash"),
+	Lunge = Handle:WaitForChild("Lunge"),
+	Unsheath = Handle:WaitForChild("Unsheath"),
+}
+
+IceEffectScript = script:WaitForChild("IceEffect")
+
+LastAttack = 0
+
+CanFreeze = false
+ToolEquipped = false
+
+Tool.Enabled = true
+
+function SwordUp()
+	Tool.Grip = Grips.Up
+end
+
+function SwordOut()
+	Tool.Grip = Grips.Out
+end
+
+function ToggleFreeze(Boolean)
+	CanFreeze = Boolean
+	if CanFreeze then
+		Handle.BrickColor = BrickColor.new("Bright blue")
+		Mesh.VertexColor = Vector3.new(0, 0.7, 1)
+		Tool.TextureId = (BaseUrl .. "179697540")
+	else
+		Handle.BrickColor = BrickColor.new("White")
+		Mesh.VertexColor = Vector3.new(1, 1, 1)
+		Tool.TextureId = (BaseUrl .. "83689547")
+	end
+end
+
+function IceEffect(character)
+	if not character then
+		return
+	end
+	local humanoid = character:FindFirstChild("Humanoid")
+	if not humanoid then
+		return
+	end
+	for i, v in pairs(character:GetChildren()) do
+		if v:IsA("ForceField") then
+			return
+		end
+	end
+	local IceEffectCopy = character:FindFirstChild(IceEffectScript.Name)
+	local ImmuneFire = character:FindFirstChild("Firebrand")
+	if IceEffectCopy or ImmuneFire then
+		return
+	end
+	IceEffectCopy = IceEffectScript:Clone()
+	local Creator = Instance.new("ObjectValue")
+	Creator.Name = "Creator"
+	Creator.Value = Player
+	Creator.Parent = IceEffectCopy
+	IceEffectCopy.Disabled = false
+	IceEffectCopy.Parent = character
+end
+
+function IsTeamMate(Player1, Player2)
+	return (Player1 and Player2 and not Player1.Neutral and not Player2.Neutral and Player1.TeamColor == Player2.TeamColor)
+end
+
+function TagHumanoid(humanoid, player)
+	local Creator_Tag = Instance.new("ObjectValue")
+	Creator_Tag.Name = "creator"
+	Creator_Tag.Value = player
+	Debris:AddItem(Creator_Tag, 2)
+	Creator_Tag.Parent = humanoid
+end
+
+function UntagHumanoid(humanoid)
+	for i, v in pairs(humanoid:GetChildren()) do
+		if v:IsA("ObjectValue") and v.Name == "creator" then
+			v:Destroy()
+		end
+	end
+end
+
+function Attack()
+	Damage = DamageValues.SlashDamage
+	Sounds.Slash:Play()
+	local Anim = Instance.new("StringValue")
+	Anim.Name = "toolanim"
+	Anim.Value = "Slash"
+	Anim.Parent = Tool
+end
+
+function Lunge()
+	Damage = DamageValues.LungeDamage
+	Sounds.Lunge:Play()
+	local Anim = Instance.new("StringValue")
+	Anim.Name = "toolanim"
+	Anim.Value = "Lunge"
+	Anim.Parent = Tool	
+	local Force = Instance.new("BodyVelocity")
+	Force.velocity = Vector3.new(0, 10, 0) 
+	Force.maxForce = Vector3.new(0, 4000, 0)
+	Debris:AddItem(Force, 0.5)
+	Force.Parent = RootPart
+	wait(0.25)
+	SwordOut()
+	wait(0.25)
+	if Force and Force.Parent then
+		Force:Destroy()
+	end
+	wait(0.5)
+	SwordUp()
+end
+
+function Blow(Hit)
+	if not Hit or not Hit.Parent or not CheckIfAlive() then
+		return
+	end
+	local RightArm = (Character:FindFirstChild("Right Arm") or Character:FindFirstChild("RightHand"))
+	if not RightArm then
+		return
+	end
+	local RightGrip = RightArm:FindFirstChild("RightGrip")
+	if not RightGrip or (RightGrip.Part0 ~= RightArm and RightGrip.Part1 ~= RightArm) or (RightGrip.Part0 ~= Handle and RightGrip.Part1 ~= Handle) then
+		return
+	end
+	local character = Hit.Parent
+	local humanoid = character:FindFirstChild("Humanoid")
+	if not humanoid or humanoid.Health == 0 then
+		return
+	end
+	local player = Players:GetPlayerFromCharacter(character)
+	if player and (player == Player or IsTeamMate(Player, player)) then
+		return
+	end
+	if humanoid.Health > 0 then
+		if not CanFreeze then
+			UntagHumanoid(humanoid)
+			TagHumanoid(humanoid, Player)
+			humanoid:TakeDamage(Damage)
+		end
+		if CanFreeze then
+			IceEffect(character)
+		end
+	end
+end
+
+function Activated()
+	if not Tool.Enabled or not ToolEquipped or not CheckIfAlive() then
+		return
+	end
+	Tool.Enabled = false
+	local Tick = RunService.Stepped:wait()
+	if (Tick - LastAttack) < 0.2 then
+		Lunge()
+	else
+		Attack()
+	end
+	Damage = DamageValues.BaseDamage
+	LastAttack = Tick
+	Tool.Enabled = true
+end
+
+function CheckIfAlive()
+	return (((Character and Character.Parent and Humanoid and Humanoid.Parent and Humanoid.Health > 0 and RootPart and RootPart.Parent and Player and Player.Parent) and true) or false)
+end
+
+function Equipped()
+	Character = Tool.Parent
+	Player = Players:GetPlayerFromCharacter(Character)
+	Humanoid = Character:FindFirstChild("Humanoid")
+	RootPart = Character:FindFirstChild("HumanoidRootPart")
+	if not CheckIfAlive() then
+		return
+	end
+	ToolEquipped = true
+	Spawn(function()
+		ToggleFreeze(false)
+		if ToolUnequipped then
+			ToolUnequipped:disconnect()
+		end
+		local CurrentlyEquipped = true
+		ToolUnequipped = Tool.Unequipped:connect(function()
+			CurrentlyEquipped = false
+		end)
+		wait(1.5)
+		if ToolEquipped and CurrentlyEquipped and CheckIfAlive() then
+			Sounds.Unsheath:Play()
+			ToggleFreeze(true)
+		end
+	end)
+end
+
+function Unequipped()
+	ToggleFreeze(false)
+	ToolEquipped = false
+end
+
+ToggleFreeze(false)
+SwordUp()
+
+Handle.Touched:connect(Blow)
+
+Tool.Activated:connect(Activated)
+Tool.Equipped:connect(Equipped)
+Tool.Unequipped:connect(Unequipped)]]></ProtectedString>
+			</Properties>
+			<Item class="Script" referent="RBX8749DEF13198417FBD37D154F7A79997">
+				<Properties>
+					<bool name="Disabled">true</bool>
+					<Content name="LinkedSource"><null></null></Content>
+					<string name="Name">IceEffect</string>
+					<string name="ScriptGuid">{100AB83D-60D8-4FB0-8ADC-EF2829F6B69B}</string>
+					<ProtectedString name="Source"><![CDATA[--Rescripted by Luckymaxer
+
+Character = script.Parent
+Humanoid = Character:FindFirstChild("Humanoid")
+Head = Character:FindFirstChild("Head")
+
+Players = game:GetService("Players")
+Debris = game:GetService("Debris")
+
+Player = Players:GetPlayerFromCharacter(Character)
+
+Creator = script:FindFirstChild("Creator")
+
+Sounds = {
+	IceForm = script:FindFirstChild("IceForm"),
+	Shatter = script:FindFirstChild("Shatter"),
+	Shatter2 = script:FindFirstChild("Shatter2")
+}
+
+BaseColor = BrickColor.new("Pastel Blue")
+DarkProperties = {
+	All = {
+		--BrickColor = BaseColor,
+		Material = Enum.Material.Plastic,
+		TextureId = "",
+		--Texture = "",
+		VertexColor = Vector3.new(BaseColor.Color.r, BaseColor.Color.g, BaseColor.Color.b),
+		BaseTextureId = 0,
+		OverlayTextureId = 0,
+		ShirtTemplate = "",
+		PantsTemplate = "",
+		SparkleColor = BaseColor.Color,
+		Color = BaseColor.Color,
+		SecondaryColor = BaseColor.Color,
+		Enabled = false,
+	},
+	Class = {
+		BasePart = {
+			Transparency = 0.5,
+		},
+		FaceInstance = {
+			Transparency = 0.5,
+		},
+		ParticleEmitter = {
+			Color = ColorSequence.new(BaseColor.Color, BaseColor.Color),
+		},
+		Sparkles = {
+			Color = BaseColor.Color,
+			SparkleColor = BaseColor.Color,
+		},
+		Decal = {
+			Texture = "",
+		},
+	}
+}
+
+function IsTeamMate(Player1, Player2)
+	return (Player1 and Player2 and not Player1.Neutral and not Player2.Neutral and Player1.TeamColor == Player2.TeamColor)
+end
+
+function TagHumanoid(humanoid, player)
+	local Creator_Tag = Instance.new("ObjectValue")
+	Creator_Tag.Name = "creator"
+	Creator_Tag.Value = player
+	Debris:AddItem(Creator_Tag, 2)
+	Creator_Tag.Parent = humanoid
+end
+
+function UntagHumanoid(humanoid)
+	for i, v in pairs(humanoid:GetChildren()) do
+		if v:IsA("ObjectValue") and v.Name == "creator" then
+			v:Destroy()
+		end
+	end
+end
+
+function GetAllInstances(Parent)
+	local Instances = {}
+	local function GetInstances(Parent)
+		for i, v in pairs(Parent:GetChildren()) do
+			table.insert(Instances, v)
+			GetInstances(v)
+		end
+	end
+	GetInstances(Parent)
+	return Instances
+end
+
+function DarkEffect()
+
+	local TempSounds = {}
+	
+	if Head then
+		for i, v in pairs(Sounds) do
+			if v then
+				local Sound = v:Clone()
+				Debris:AddItem(Sound, 4)
+				Sound.Parent = Head
+				TempSounds[v.Name] = Sound
+			end
+		end
+	end
+	
+	if TempSounds.IceForm then
+		TempSounds.IceForm:Play()
+	end
+	
+	local EffectedInstances = GetAllInstances(Character)
+	local OriginalInstances = {}
+	for i, v in pairs(EffectedInstances) do
+		local Instance = {Object = v, Properties = {}}
+		local PropertiesAltered = {}
+		if v:IsA("Hat") or v:IsA("Tool") then
+			for ii, vv in pairs(v:GetChildren()) do
+				if vv:IsA("BasePart") then
+					vv.Parent = v.Parent
+				end
+			end
+			v:Destroy()
+		elseif v:IsA("BasePart") then
+			v.CanCollide = true
+			v.Anchored = true
+			Debris:AddItem(v, 10)
+		end
+		if v:IsA("BasePart") and v.Name == "HumanoidRootPart" then
+		elseif v:IsA("Decal") and v.Name == "face" then
+		elseif v:IsA("Clothing") then
+			v:Destroy()
+		else
+			for ii, vv in pairs(DarkProperties.All) do
+				pcall(function()
+					Instance.Properties[ii] = v[ii]
+					PropertiesAltered[ii] = true
+					v[ii] = vv
+				end)
+			end
+			for ii, vv in pairs(DarkProperties.Class) do
+				if v:IsA(ii) then
+					for iii, vvv in pairs(vv) do
+						--if not PropertiesAltered[iii] then
+							pcall(function()
+								Instance.Properties[iii] = v[iii]
+								v[iii] = vvv
+							end)
+						--end
+					end
+				end
+			end
+		end
+		table.insert(OriginalInstances, Instance)
+	end
+	
+	wait(2)
+	
+	if TempSounds.IceForm then
+		TempSounds.IceForm:Stop()
+	end
+	
+	for i, v in pairs({TempSounds.Shatter, TempSounds.Shatter2}) do
+		if v then
+			v:Play()
+		end
+	end
+	
+	UntagHumanoid(Humanoid)
+	if Creator and Creator.Value and Creator.Value:IsA("Player") then
+		TagHumanoid(Humanoid, Creator.Value)
+	end
+	Humanoid.Health = 0
+	Character:BreakJoints()
+	
+	for i, v in pairs(EffectedInstances) do
+		if v:IsA("BasePart") then
+			v.Anchored = false
+		end
+	end
+	
+end
+
+DarkEffect()
+
+script:Destroy()]]></ProtectedString>
+				</Properties>
+				<Item class="Sound" referent="RBX86315439985041518881F935C2794CF4">
+					<Properties>
+						<float name="EmitterSize">10</float>
+						<bool name="Looped">false</bool>
+						<string name="Name">Shatter</string>
+						<bool name="PlayOnRemove">false</bool>
+						<float name="PlaybackSpeed">1.79999995</float>
+						<bool name="Playing">false</bool>
+						<token name="RollOffMode">0</token>
+						<Ref name="SoundGroup">null</Ref>
+						<Content name="SoundId"><url>http://www.roblox.com/asset/?id=87015121</url></Content>
+						<double name="TimePosition">0</double>
+						<float name="Volume">0.600000024</float>
+						<float name="xmlRead_MaxDistance_3">10000</float>
+					</Properties>
+				</Item>
+				<Item class="Sound" referent="RBXF4C82147729948DDA6677145E841548E">
+					<Properties>
+						<float name="EmitterSize">10</float>
+						<bool name="Looped">false</bool>
+						<string name="Name">Shatter2</string>
+						<bool name="PlayOnRemove">false</bool>
+						<float name="PlaybackSpeed">1.29999995</float>
+						<bool name="Playing">false</bool>
+						<token name="RollOffMode">0</token>
+						<Ref name="SoundGroup">null</Ref>
+						<Content name="SoundId"><url>http://www.roblox.com/asset/?id=122571929</url></Content>
+						<double name="TimePosition">0</double>
+						<float name="Volume">1</float>
+						<float name="xmlRead_MaxDistance_3">10000</float>
+					</Properties>
+				</Item>
+				<Item class="Sound" referent="RBX511B2F97C6A845519A27E78E5F415822">
+					<Properties>
+						<float name="EmitterSize">10</float>
+						<bool name="Looped">false</bool>
+						<string name="Name">IceForm</string>
+						<bool name="PlayOnRemove">false</bool>
+						<float name="PlaybackSpeed">1</float>
+						<bool name="Playing">false</bool>
+						<token name="RollOffMode">0</token>
+						<Ref name="SoundGroup">null</Ref>
+						<Content name="SoundId"><url>http://www.roblox.com/asset/?id=41763367</url></Content>
+						<double name="TimePosition">0</double>
+						<float name="Volume">0.600000024</float>
+						<float name="xmlRead_MaxDistance_3">10000</float>
+					</Properties>
+				</Item>
+			</Item>
+		</Item>
+		<Item class="Camera" referent="RBX6E4F61B9AE0545BCA5FFDA5119451F6A">
+			<Properties>
+				<CoordinateFrame name="CFrame">
+					<X>-5.68945313</X>
+					<Y>2.1572516</Y>
+					<Z>-0.0764089003</Z>
+					<R00>-0.0151642645</R00>
+					<R01>0.0241452008</R01>
+					<R02>-0.999593496</R02>
+					<R10>-0</R10>
+					<R11>0.999708533</R11>
+					<R12>0.0241479762</R12>
+					<R20>0.999885082</R20>
+					<R21>0.000366186287</R21>
+					<R22>-0.0151598416</R22>
+				</CoordinateFrame>
+				<Ref name="CameraSubject">null</Ref>
+				<token name="CameraType">0</token>
+				<float name="FieldOfView">29.9999981</float>
+				<CoordinateFrame name="Focus">
+					<X>0.0066652298</X>
+					<Y>2.01964593</Y>
+					<Z>0.00997846574</Z>
+					<R00>1</R00>
+					<R01>0</R01>
+					<R02>0</R02>
+					<R10>0</R10>
+					<R11>1</R11>
+					<R12>0</R12>
+					<R20>0</R20>
+					<R21>0</R21>
+					<R22>1</R22>
+				</CoordinateFrame>
+				<bool name="HeadLocked">true</bool>
+				<float name="HeadScale">1</float>
+				<string name="Name">ThumbnailCamera</string>
+			</Properties>
+		</Item>
+	</Item>
+</roblox>

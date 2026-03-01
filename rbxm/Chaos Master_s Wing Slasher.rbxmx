@@ -1,0 +1,850 @@
+<roblox xmlns:xmime="http://www.w3.org/2005/05/xmlmime" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.roblox.com/roblox.xsd" version="4">
+	<Meta name="ExplicitAutoJoints">false</Meta>
+	<External>null</External>
+	<External>nil</External>
+	<Item class="Tool" referent="RBX5DC2E271BBE24B9FB29EDA052581823C">
+		<Properties>
+			<bool name="CanBeDropped">true</bool>
+			<bool name="Enabled">true</bool>
+			<CoordinateFrame name="Grip">
+				<X>0</X>
+				<Y>-2.5</Y>
+				<Z>0</Z>
+				<R00>0</R00>
+				<R01>0</R01>
+				<R02>-1</R02>
+				<R10>0</R10>
+				<R11>1</R11>
+				<R12>0</R12>
+				<R20>1</R20>
+				<R21>0</R21>
+				<R22>0</R22>
+			</CoordinateFrame>
+			<bool name="ManualActivationOnly">false</bool>
+			<string name="Name">ChaosMastersWingSlasher</string>
+			<bool name="RequiresHandle">true</bool>
+			<BinaryString name="Tags"></BinaryString>
+			<Content name="TextureId"><url>http://www.roblox.com/asset/?id=86508799</url></Content>
+			<string name="ToolTip"></string>
+		</Properties>
+		<Item class="Part" referent="RBX77BFA7AA3D1B4678A23E17BBB014BB37">
+			<Properties>
+				<bool name="Anchored">false</bool>
+				<float name="BackParamA">-0.5</float>
+				<float name="BackParamB">0.5</float>
+				<token name="BackSurface">0</token>
+				<token name="BackSurfaceInput">0</token>
+				<float name="BottomParamA">-0.5</float>
+				<float name="BottomParamB">0.5</float>
+				<token name="BottomSurface">0</token>
+				<token name="BottomSurfaceInput">0</token>
+				<CoordinateFrame name="CFrame">
+					<X>-1.60500002</X>
+					<Y>0.639999986</Y>
+					<Z>1.33999705</Z>
+					<R00>1</R00>
+					<R01>0</R01>
+					<R02>0</R02>
+					<R10>0</R10>
+					<R11>1</R11>
+					<R12>0</R12>
+					<R20>0</R20>
+					<R21>0</R21>
+					<R22>1</R22>
+				</CoordinateFrame>
+				<bool name="CanCollide">true</bool>
+				<int name="CollisionGroupId">0</int>
+				<Color3uint8 name="Color3uint8">4284702562</Color3uint8>
+				<PhysicalProperties name="CustomPhysicalProperties">
+					<CustomPhysics>false</CustomPhysics>
+				</PhysicalProperties>
+				<float name="FrontParamA">-0.5</float>
+				<float name="FrontParamB">0.5</float>
+				<token name="FrontSurface">0</token>
+				<token name="FrontSurfaceInput">0</token>
+				<float name="LeftParamA">-0.5</float>
+				<float name="LeftParamB">0.5</float>
+				<token name="LeftSurface">0</token>
+				<token name="LeftSurfaceInput">0</token>
+				<bool name="Locked">true</bool>
+				<token name="Material">256</token>
+				<string name="Name">Handle</string>
+				<float name="Reflectance">0</float>
+				<float name="RightParamA">-0.5</float>
+				<float name="RightParamB">0.5</float>
+				<token name="RightSurface">0</token>
+				<token name="RightSurfaceInput">0</token>
+				<Vector3 name="RotVelocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<BinaryString name="Tags"></BinaryString>
+				<float name="TopParamA">-0.5</float>
+				<float name="TopParamB">0.5</float>
+				<token name="TopSurface">0</token>
+				<token name="TopSurfaceInput">0</token>
+				<float name="Transparency">0</float>
+				<Vector3 name="Velocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<token name="formFactorRaw">3</token>
+				<token name="shape">1</token>
+				<Vector3 name="size">
+					<X>0.550000012</X>
+					<Y>6.52000046</Y>
+					<Z>0.660002112</Z>
+				</Vector3>
+			</Properties>
+			<Item class="Sound" referent="RBX8E14751515CE474183B029D1F87307F4">
+				<Properties>
+					<float name="EmitterSize">10</float>
+					<bool name="Looped">false</bool>
+					<string name="Name">SlashSound</string>
+					<bool name="PlayOnRemove">false</bool>
+					<float name="PlaybackSpeed">1</float>
+					<bool name="Playing">false</bool>
+					<token name="RollOffMode">0</token>
+					<Ref name="SoundGroup">null</Ref>
+					<Content name="SoundId"><url>http://www.roblox.com/asset/?id=62337944 </url></Content>
+					<BinaryString name="Tags"></BinaryString>
+					<double name="TimePosition">0</double>
+					<float name="Volume">0.5</float>
+					<float name="xmlRead_MaxDistance_3">10000</float>
+				</Properties>
+			</Item>
+			<Item class="SpecialMesh" referent="RBX6CF4A766FD5C472F8C65EC85CDCA42D7">
+				<Properties>
+					<token name="LODX">2</token>
+					<token name="LODY">2</token>
+					<Content name="MeshId"><url>http://www.roblox.com/asset/?id=86508642</url></Content>
+					<token name="MeshType">5</token>
+					<string name="Name">Mesh</string>
+					<Vector3 name="Offset">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+					</Vector3>
+					<Vector3 name="Scale">
+						<X>1.10000002</X>
+						<Y>1.10000002</Y>
+						<Z>1.10000002</Z>
+					</Vector3>
+					<BinaryString name="Tags"></BinaryString>
+					<Content name="TextureId"><url>http://www.roblox.com/asset/?id=86508739</url></Content>
+					<Vector3 name="VertexColor">
+						<X>1</X>
+						<Y>1</Y>
+						<Z>1</Z>
+					</Vector3>
+				</Properties>
+			</Item>
+			<Item class="Attachment" referent="RBXAB400B0190D14A60BE96217454BF18B6">
+				<Properties>
+					<CoordinateFrame name="CFrame">
+						<X>0</X>
+						<Y>-1.10000002</Y>
+						<Z>0</Z>
+						<R00>1</R00>
+						<R01>0</R01>
+						<R02>0</R02>
+						<R10>0</R10>
+						<R11>1</R11>
+						<R12>0</R12>
+						<R20>0</R20>
+						<R21>0</R21>
+						<R22>1</R22>
+					</CoordinateFrame>
+					<string name="Name">FirePart</string>
+					<BinaryString name="Tags"></BinaryString>
+					<bool name="Visible">false</bool>
+				</Properties>
+				<Item class="ParticleEmitter" referent="RBXB86194AC55BC4A1C9E3D1ACC017FF8DD">
+					<Properties>
+						<Vector3 name="Acceleration">
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</Vector3>
+						<ColorSequence name="Color">0 0 0.333333 1 0 0.597458 0.0522912 0.327891 0.954024 0 1 0.987259 0.230579 0.131975 0 </ColorSequence>
+						<float name="Drag">0</float>
+						<token name="EmissionDirection">1</token>
+						<bool name="Enabled">true</bool>
+						<NumberRange name="Lifetime">0.1 1 </NumberRange>
+						<float name="LightEmission">0.75</float>
+						<float name="LightInfluence">0</float>
+						<bool name="LockedToPart">true</bool>
+						<string name="Name">WingFire</string>
+						<float name="Rate">100</float>
+						<NumberRange name="RotSpeed">-45 45 </NumberRange>
+						<NumberRange name="Rotation">-90 90 </NumberRange>
+						<NumberSequence name="Size">0 1.49425 0.333333 1 0.632184 0.172414 </NumberSequence>
+						<NumberRange name="Speed">6 6 </NumberRange>
+						<Vector2 name="SpreadAngle">
+							<X>0</X>
+							<Y>0</Y>
+						</Vector2>
+						<BinaryString name="Tags"></BinaryString>
+						<Content name="Texture"><url>rbxassetid://341300088</url></Content>
+						<NumberSequence name="Transparency">0 1 0 0.0333333 0.417582 0 0.486207 0.225275 0 0.84023 0.423077 0 1 1 0 </NumberSequence>
+						<float name="VelocityInheritance">0</float>
+						<float name="ZOffset">0</float>
+					</Properties>
+				</Item>
+			</Item>
+		</Item>
+		<Item class="Script" referent="RBX0089046BA9924352A9A108B3D6769C4B">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">SwordScript</string>
+				<string name="ScriptGuid">{9516739A-FC0D-45B4-8201-F37C73668851}</string>
+				<ProtectedString name="Source"><![CDATA[-- Allows the wielder to become a boss 
+-- Destroy all those flyers with this
+-- Who is the Kami now? 
+
+-- 20 second cooldown
+-- Add a RBXGear lib that allows for unified GUIs 
+
+local Range = 150
+local RunService = (game:FindService("RunService") or game:GetService("RunService"))
+local function waitForChild(parent, instance)
+	while parent:FindFirstChild(instance) == nil do 
+		print(instance) 
+		wait() 
+	end 
+	return parent:FindFirstChild(instance)
+end 
+
+local function Wait(para) -- bypasses the latency
+	para = para or wait()
+	local Initial = tick()
+	repeat
+		RunService.Stepped:Wait()
+	until tick()-Initial >= para
+end
+
+function IsTeamMate(Player1, Player2)
+	return (Player1 and Player2 and not Player1.Neutral and not Player2.Neutral and Player1.TeamColor == Player2.TeamColor)
+end
+
+
+function TagHumanoid(humanoid, player)
+	local Creator_Tag = Instance.new("ObjectValue")
+	Creator_Tag.Name = "creator";
+	Creator_Tag.Value = player;
+	game:GetService("Debris"):AddItem(Creator_Tag, 2)
+	Creator_Tag.Parent = humanoid
+end
+	
+function UntagHumanoid(humanoid)
+	for _, v in pairs(humanoid:GetChildren()) do
+		if v:IsA("ObjectValue") and v.Name == "creator" then
+			v:Destroy()
+		end
+	end
+end
+
+--[[local function WeldTogether(Part0, Part1, JointType, WeldParent)
+	--- Weld's 2 parts together
+	-- @param Part0 The first part
+	-- @param Part1 The second part (Dependent part most of the time).
+	-- @param [JointType] The type of joint. Defaults to weld.
+	-- @param [WeldParent] Parent of the weld, Defaults to Part0 (so GC is better).
+	-- @return The weld created.
+ 
+	JointType = JointType or "Weld"
+ 
+	local NewWeld = Instance.new(JointType)
+	NewWeld.Part0  = Part0;
+	NewWeld.Part1  = Part1;
+	NewWeld.C0     = CFrame.new();
+	NewWeld.C1     = Part1.CFrame:toObjectSpace(Part0.CFrame);
+	NewWeld.Parent = WeldParent or Part0;
+ 
+	return NewWeld
+end]]
+
+local Tool = script.Parent 
+local Sword = Tool.Handle
+local AbilityInput = (Tool:FindFirstChild("WingSlash") or Instance.new("RemoteFunction"));AbilityInput.Name = "WingSlash";AbilityInput.Parent = Tool
+
+local Sounds = {
+	Slash = Sword:WaitForChild("SlashSound")
+	}
+
+local Directory -- Used for Guiding for R6 and R15 animations
+local Animations
+
+Tool.Enabled = true 
+
+-- The coolness factor 
+local Fire_Part = Sword:WaitForChild("FirePart")
+local Wing_Fire = Fire_Part:WaitForChild("WingFire")
+--[[function CreateFire()
+	Fire_Part = (Sword:FindFirstChild("FirePart") or Instance.new("Part"));Fire_Part.Name = "FirePart"
+	Fire_Part.Size = Vector3.new(0.2,0.2,0.2)
+	Fire_Part.Transparency = 1
+	Fire_Part.CanCollide = false
+	
+	Wing_Fire =(Fire_Part:FindFirstChild("WingFire") or Instance.new("Fire"));Wing_Fire.Name = "WingFire"
+	Wing_Fire.Color = Color3.fromRGB(51, 102, 153)
+	Wing_Fire.SecondaryColor = Color3.fromRGB(165, 0, 33)
+	Wing_Fire.Heat = 25
+	Wing_Fire.Size = 4
+	Wing_Fire.Parent = Fire_Part
+	
+	Fire_Part.CFrame = Sword.CFrame*CFrame.new(0,-1,0)
+	Fire_Part.Parent = Sword
+	if not Tool:FindFirstChild("JointInstance") then
+	WeldTogether(Sword,Fire_Part,"Weld",Fire_Part)	
+	end
+end]]
+
+
+-- Flat damage, it also has burst using the WingCutter
+local Damage = 19
+
+local Debris = (game:FindService("Debris") or game:GetService("Debris"))
+local Players = (game:FindService("Players") or game:GetService("Players"))
+
+local Effect_Part = Instance.new('Part')
+Effect_Part.FormFactor =3
+Effect_Part.Size = Vector3.new(2, 2, 2)
+Effect_Part.Name = 'WingCutter'
+
+-- TODO: Add the mesh and texture IDs 
+local Effect_Mesh = Instance.new('SpecialMesh')
+Effect_Mesh.Scale = Vector3.new(1, 1, 1)
+Effect_Mesh.Parent = Effect_Part
+
+local Effect_Fire = Wing_Fire:Clone()
+--Effect_Fire.Heat = 25 
+--Effect_Fire.Size = 5
+Effect_Fire.LockedToPart = false
+Effect_Fire.Parent = Effect_Part
+
+local IsHeld = false
+local Character
+local Humanoid
+local Torso
+function blow(hit)	
+	if hit and hit.Parent then 
+		local humanoid = hit.Parent:FindFirstChildOfClass("Humanoid")
+		if humanoid and humanoid ~= Humanoid and Humanoid and not IsTeamMate(Players:GetPlayerFromCharacter(Character),Players:GetPlayerFromCharacter(humanoid.Parent)) then 			
+			UntagHumanoid(humanoid)
+			TagHumanoid(humanoid,Players:GetPlayerFromCharacter(Character))
+			humanoid:TakeDamage(Damage)
+			if Wing_Fire and Wing_Fire.Enabled == true then
+				spawn(function()
+					local Root = (humanoid.Parent:FindFirstChild("HumanoidRootPart") or humanoid.Parent:FindFirstChild("Torso"))
+					if humanoid and humanoid.Parent and Root and not Root:FindFirstChild("WingFire") and not IsTeamMate(Players:GetPlayerFromCharacter(Character),Players:GetPlayerFromCharacter(humanoid.Parent)) then
+						local cFire = Wing_Fire:Clone()
+						cFire.Parent = Root
+						Debris:AddItem(cFire, 4) 
+						local duration = 4
+						while duration > 0 do
+							UntagHumanoid(humanoid)
+							TagHumanoid(humanoid,Players:GetPlayerFromCharacter(Character))
+							humanoid:TakeDamage(5)
+							duration = duration - 1 
+							wait(1.0) 
+						end 
+					end 
+				end)
+			end 
+		end 
+	end 
+end
+
+function onEquipped()
+	--CreateFire()
+	Character = Tool.Parent
+	Humanoid = Character:FindFirstChildOfClass("Humanoid")
+	Torso = (Character:FindFirstChild("Torso") or Character:FindFirstChild("HumanoidRootPart"))
+	
+	Directory = Tool:WaitForChild(Humanoid.RigType.Name)
+	Animations = {
+	Charge = Directory:WaitForChild("ChargeAnim"),
+	Slash = Directory:WaitForChild("SlashAnim"),
+	Stab = Directory:WaitForChild("StabAnim"),
+	Wing = Directory:WaitForChild("WingAnim")
+	}
+	--Wing_Fire.Enabled = true
+end 
+
+function onUnequipped()	
+	IsHeld = false
+	--CreateFire()
+end
+
+Tool.Equipped:Connect(onEquipped)
+Tool.Unequipped:Connect(onUnequipped)
+Tool.Activated:Connect(function()
+	if not Tool.Enabled then return end
+	Tool.Enabled = false
+	IsHeld = true
+	local currentSpeed = Humanoid.WalkSpeed
+	local ChargeAnim = Humanoid:LoadAnimation(Animations.Charge)
+	if ChargeAnim then ChargeAnim:Play() end
+	while IsHeld do
+		Humanoid.WalkSpeed = math.min(Humanoid.WalkSpeed + 0.1, 22) 
+		Wait(0.1)
+	end
+	local Anim 
+	if ChargeAnim then ChargeAnim:Stop();
+	local index = math.random(1,2)
+	Anim = ((index>1 and Animations.Stab) or Animations.Slash)
+	local SlashingAnim = Humanoid:LoadAnimation(Anim)	
+		if SlashingAnim then
+			SlashingAnim:Play()
+		end	
+	end
+	if Sounds.Slash then Sounds.Slash:Play() end
+	if Anim == Animations.Stab then
+	Tool.Grip = CFrame.new(0, -2.5, 0, 1, -0, 0, 0, 0, -1, 0, 1, 0)
+	end
+	Wait(1.3)
+	Tool.Grip = CFrame.new(0, -2.5, 0, 0, 0, -1, -0, 1, 0, 1, 0, 0)
+	Humanoid.WalkSpeed = (currentSpeed > 0 and currentSpeed) or 16
+	Tool.Enabled = true
+end)
+Tool.Deactivated:Connect(function()
+	IsHeld = false
+end)
+Sword.Touched:Connect(blow)
+
+local function IsInTable(Table,Value)
+	for i,v in pairs(Table) do
+		if v == Value then
+			return true
+		end
+	end
+	return false
+end
+
+function IsCharacterFlying(char) -- helps check if person is flying
+	local FlightClasses = {"BodyPosition","BodyThrust","BodyVelocity"}
+	if char then
+		for i,v in pairs(FlightClasses) do
+			if char:FindFirstChildWhichIsA(v,true) then
+				return true
+			end
+		end
+	end
+	return false
+end
+
+local Special = true
+function AbilityInput.OnServerInvoke(Player,Key)
+	if not Key == Enum.KeyCode.Q then return end
+	if not Special then return end
+	Special = false
+		local WingAnim = Humanoid:LoadAnimation(Animations.Wing)
+		if Humanoid and WingAnim then
+			WingAnim:Play()
+		end
+		Humanoid.WalkSpeed = 0
+		Wait(1.25)
+		Humanoid.WalkSpeed = 16
+		for i,v in pairs(Players:GetPlayers()) do
+			if v and v~= Player and v.Character then
+				local Root = (v.Character:FindFirstChild("Torso") or v.Character:FindFirstChild("HumanoidRootPart"))
+				local EnemyHumanoid = v.Character:FindFirstChildOfClass("Humanoid")
+				if Root and (Root.CFrame.p-Torso.CFrame.p).magnitude<=Range then
+					local GearFound = v.Character:FindFirstChildOfClass("Tool")
+					if GearFound and IsCharacterFlying(v.Character) and not IsTeamMate(Player,v) then
+						Root.Anchored = true
+						if EnemyHumanoid then
+							EnemyHumanoid:UnequipTools()
+						end
+						
+						GearFound:Destroy()
+						
+						local ePart = Effect_Part:Clone()
+						ePart.CFrame = Torso.CFrame 
+						ePart.CanCollide = false 
+
+						local bForce = Instance.new('BodyForce')
+						bForce.Name = 'Float'
+						bForce.force = Vector3.new(0, ePart:GetMass() * 196.2, 0)
+						bForce.Parent = ePart 
+
+						-- I know, this is super fast, but that's how I roll 
+						ePart.Velocity = (Root.CFrame.p - Torso.CFrame.p).unit * 200.0 
+						ePart.Parent = workspace
+
+						Debris:AddItem(ePart, 5)
+						local TouchedHumanoids = {}
+						ePart.Touched:Connect(function(hit)
+						local Hum = hit.Parent:FindFirstChildOfClass("Humanoid") 
+							if hit and hit.Parent and Root and Hum ~= Humanoid then 
+								if Hum and not IsInTable(TouchedHumanoids,Hum) then 
+									TouchedHumanoids[#TouchedHumanoids+1]=Hum
+									print("Damaging " ..Hum.Parent.Name)
+									UntagHumanoid(Hum)
+									TagHumanoid(Hum,Player)
+									Hum:TakeDamage(65)
+								end 
+							end 
+						end) 
+						
+						if not v.Character:FindFirstChild('UnwingScript') then 
+							local tScript = script.UnwingScript:Clone()
+							tScript.Parent = v.Character
+							tScript.Disabled = false 
+						end 
+					end
+					--Root.Anchored = true
+					
+					
+						
+				end
+			end
+		end
+Wait(20)
+Special = true
+
+	
+	end
+
+
+]]></ProtectedString>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+			<Item class="Script" referent="RBX507071E8ED96478AAF93C93525B93553">
+				<Properties>
+					<bool name="Disabled">true</bool>
+					<Content name="LinkedSource"><null></null></Content>
+					<string name="Name">UnwingScript</string>
+					<string name="ScriptGuid">{5E423B28-862F-4E57-A1C4-39F806429DCF}</string>
+					<ProtectedString name="Source"><![CDATA[-- Unwing this flyer! 
+
+local function WaitForChild(parent, child)
+	while not parent:FindFirstChild(child) do 
+		parent.ChildAdded:Wait()
+	end 
+	return parent[child]
+end 
+
+local Character = script.Parent 
+local Torso = WaitForChild(Character, 'HumanoidRootPart')
+local Humanoid = Character:FindFirstChildOfClass("Humanoid")
+
+local RBX_Debris = game:GetService('Debris')
+
+local Wing_List = {['RightWing'] = true, ['LeftWing'] = true}
+local cChildren = Character:GetChildren()
+for k = 1, #cChildren do
+	if cChildren[k]:IsA('BasePart') and Wing_List[cChildren[k].Name] then 
+		local wing = cChildren[k]
+		wing:BreakJoints() 	
+		RBX_Debris:AddItem(wing, 7.5)
+	end
+
+	if cChildren[k]:IsA('Tool') then 
+		Humanoid:UnequipTools()
+		cChildren[k]:Destroy()
+	end 
+end 
+
+Torso.Anchored = true 
+
+local Thorn_Part = Instance.new('Part')
+Thorn_Part.CanCollide = false 
+Thorn_Part.Size = Vector3.new(2, 4, 2)
+Thorn_Part.CFrame = Torso.CFrame 
+Thorn_Part.Anchored = true 
+Thorn_Part.Parent = Character 
+
+Thorn_Mesh = Instance.new("SpecialMesh") 
+Thorn_Mesh.MeshId = "http://www.roblox.com/asset/?id=54653968" 
+Thorn_Mesh.TextureId = "http://www.roblox.com/asset/?id=54654008" 
+Thorn_Mesh.Scale = Vector3.new(1.0, 1.0, 0.6) 
+Thorn_Mesh.Parent = Thorn_Part
+Thorn_Mesh.VertexColor = Vector3.new(0.1, 0.1, 0.9)
+
+
+local tChildren = Torso:GetChildren()
+for i = 1, #tChildren do 
+	if tChildren[i] and string.sub(tChildren[i].Name, 1, 6) == 'Flight' then 
+		tChildren[i]:Destroy() 
+	end 
+end 
+
+wait(3.75)
+for i,v in pairs(Character:GetDescendants()) do
+	if v:IsA("BasePart") and v.Name == "Torso" or v.Name == "HumanoidRootPart" then
+		v.Anchored = false
+	elseif v:IsA("BodyVelocity") or v:IsA("BodyThrust") or v:IsA("BodyPosition") then
+		v:Destroy()
+	end
+end
+Thorn_Part:Destroy()
+
+wait(1)
+
+script:Destroy() 
+
+
+]]></ProtectedString>
+					<BinaryString name="Tags"></BinaryString>
+				</Properties>
+			</Item>
+		</Item>
+		<Item class="LocalScript" referent="RBX67E5813ED04F4FB2A5752E0774F9AB8A">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">AnimateScript</string>
+				<string name="ScriptGuid">{68186851-5180-4797-94AD-15D4C2BB3AB1}</string>
+				<ProtectedString name="Source"><![CDATA[local function waitForChild(parent, instance)
+	while parent:FindFirstChild(instance) == nil do wait() end 
+	return parent:FindFirstChild(instance)
+end 
+local vPlayer = game.Players.LocalPlayer
+local Tool = script.Parent 
+local Sword = Tool.Handle
+local Input = (game:FindService("UserInputService") or game:GetService("UserInputService"))
+local Remote = (Tool:WaitForChild("WingSlash"))
+
+local RBX_Debris = game:GetService("Debris")
+
+local Animating_Bool = false 
+
+local PlayerGui 
+local Wing_Gui 
+local Wing_Frame 
+local Bar_Frame 
+
+local MouseDown
+local MouseUp
+local KeyInput
+
+local function createBarGui()
+	if PlayerGui then 
+		Wing_Gui = Instance.new("ScreenGui")
+		Wing_Gui.Name = "WingGui"
+		Wing_Gui.Parent = PlayerGui 
+
+		Wing_Frame = Instance.new("Frame")
+		Wing_Frame.BackgroundTransparency = 1.0 
+		Wing_Frame.Name = "WingFrame"
+		Wing_Frame.Style = Enum.FrameStyle.RobloxSquare
+		Wing_Frame.Parent = Wing_Gui
+		Wing_Frame.Size = UDim2.new(0, 220, 0, 30)
+		Wing_Frame.Position = UDim2.new(0.5, -110, 1, -130) 
+
+		Bar_Frame = Instance.new("Frame") 
+		Bar_Frame.BackgroundTransparency = 0.0 
+		Bar_Frame.BackgroundColor3 = Color3.new(0.8, 0.8, 0.9) 
+		Bar_Frame.Parent = Wing_Frame 
+		Bar_Frame.Size = UDim2.new(0, 0, 0, 30) 
+		Bar_Frame.Position = UDim2.new(0, -8, 0, -8)
+		Bar_Frame.Name = "Bar"
+	end  
+end 
+
+local function onEquipped(mouse)
+	PlayerGui = waitForChild(vPlayer, "PlayerGui")
+	if not Wing_Gui or not Wing_Gui.Parent then
+		createBarGui() 
+	end
+	local debounce = false
+	MouseDown = mouse.Button1Down:Connect(function()
+			MouseDown_Bool = true 
+			if debounce or not Tool.Enabled then return end
+			debounce = true
+			while MouseDown_Bool and debounce do
+				debounce = true 						
+				Bar_Frame.Size = UDim2.new(0,math.min((Bar_Frame.Size.X.Offset +3),220), 0, 30) 
+				wait(0.1) 
+			end 
+	end) 
+
+	MouseUp = mouse.Button1Up:Connect(function()
+		if not MouseDown_Bool then return end
+		MouseDown_Bool = false 
+		--wait(1.5)
+		repeat
+			wait()
+		until
+		Tool.Changed:Wait()=="Enabled"			
+		Bar_Frame.Size = UDim2.new(0, 0, 0, 30)
+		debounce = false
+	end)
+	
+	KeyInput = Input.InputBegan:Connect(function(InputObject,Processed)
+		if InputObject.UserInputType == Enum.UserInputType.Keyboard then
+			if InputObject.KeyCode == Enum.KeyCode.Q then
+				if Remote then
+					Remote:InvokeServer(InputObject.KeyCode)
+				end
+			end
+		end
+	end) 
+	
+end 
+
+local function onUnequipped()
+	-- Do stuff
+	if Wing_Gui and Wing_Gui.Parent then --Fix implemented by Luckymaxer
+		Wing_Gui:Destroy()
+	end
+	MouseDown_Bool = false 
+	if MouseDown then MouseDown:Disconnect() end
+	if MouseUp then MouseUp:Disconnect() end
+	if KeyInput then KeyInput:Disconnect() end
+end 
+
+local function onChanged()
+	
+end
+
+Tool.Changed:Connect(onChanged)
+
+Tool.Equipped:Connect(onEquipped)
+Tool.Unequipped:Connect(onUnequipped)]]></ProtectedString>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+		</Item>
+		<Item class="Folder" referent="RBX25CEFE2B467F4326B0797BA7FDE8111F">
+			<Properties>
+				<string name="Name">R6</string>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+			<Item class="Animation" referent="RBXB426A35AF0404BD9B41086A3E0B2FA54">
+				<Properties>
+					<Content name="AnimationId"><url>http://www.roblox.com/Asset?ID=77320917</url></Content>
+					<string name="Name">ChargeAnim</string>
+					<BinaryString name="Tags"></BinaryString>
+				</Properties>
+			</Item>
+			<Item class="Animation" referent="RBXBA3055C1541B4AD0B296AE8FC807FBE4">
+				<Properties>
+					<Content name="AnimationId"><url>http://www.roblox.com/Asset?ID=54584713</url></Content>
+					<string name="Name">SlashAnim</string>
+					<BinaryString name="Tags"></BinaryString>
+				</Properties>
+			</Item>
+			<Item class="Animation" referent="RBX86BEB2A61AB648B1825B3CA035C74B33">
+				<Properties>
+					<Content name="AnimationId"><url>http://www.roblox.com/Asset?ID=77319318</url></Content>
+					<string name="Name">StabAnim</string>
+					<BinaryString name="Tags"></BinaryString>
+				</Properties>
+			</Item>
+			<Item class="Animation" referent="RBX4AF19F7392164AB58F3AA47F44AFC021">
+				<Properties>
+					<Content name="AnimationId"><url>http://www.roblox.com/Asset?ID=77329203</url></Content>
+					<string name="Name">WingAnim</string>
+					<BinaryString name="Tags"></BinaryString>
+				</Properties>
+			</Item>
+		</Item>
+		<Item class="Folder" referent="RBXBE3E6C036490449693B059D93DE2752F">
+			<Properties>
+				<string name="Name">R15</string>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+			<Item class="Animation" referent="RBXF58797D2E8C6446B9E44051465761ADB">
+				<Properties>
+					<Content name="AnimationId"><url>rbxassetid://2410315272</url></Content>
+					<string name="Name">ChargeAnim</string>
+					<BinaryString name="Tags"></BinaryString>
+				</Properties>
+			</Item>
+			<Item class="Animation" referent="RBXC5CC0D9FBD0D4A65A288D5B950327834">
+				<Properties>
+					<Content name="AnimationId"><url>rbxassetid://2410679501</url></Content>
+					<string name="Name">SlashAnim</string>
+					<BinaryString name="Tags"></BinaryString>
+				</Properties>
+			</Item>
+			<Item class="Animation" referent="RBX43CB4C978A5341999E0D908706D6952F">
+				<Properties>
+					<Content name="AnimationId"><url>rbxassetid://2410755295</url></Content>
+					<string name="Name">StabAnim</string>
+					<BinaryString name="Tags"></BinaryString>
+				</Properties>
+			</Item>
+			<Item class="Animation" referent="RBX8E671279C3864D12B9931D7E7E8577F0">
+				<Properties>
+					<Content name="AnimationId"><url>rbxassetid://2410434009</url></Content>
+					<string name="Name">WingAnim</string>
+					<BinaryString name="Tags"></BinaryString>
+				</Properties>
+			</Item>
+		</Item>
+		<Item class="LocalScript" referent="RBX439249B54DF7440B92C4683857B6BFD7">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">MouseIcon</string>
+				<string name="ScriptGuid">{39C8006E-B3AE-4B7B-A51C-2F1F390C61CD}</string>
+				<ProtectedString name="Source"><![CDATA[Mouse_Icon = "rbxasset://textures/GunCursor.png"
+Reloading_Icon = "rbxasset://textures/GunWaitCursor.png"
+
+Tool = script.Parent
+
+Mouse = nil
+
+function UpdateIcon()
+	if Mouse then
+		Mouse.Icon = Tool.Enabled and Mouse_Icon or Reloading_Icon
+	end
+end
+
+function OnEquipped(ToolMouse)
+	Mouse = ToolMouse
+	UpdateIcon()
+end
+
+Tool:GetPropertyChangedSignal("Enabled"):Connect(UpdateIcon)
+Tool.Equipped:Connect(OnEquipped)]]></ProtectedString>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+		</Item>
+		<Item class="Camera" referent="RBXB44BA37700904ED6945FA3ED2C199BAD">
+			<Properties>
+				<CoordinateFrame name="CFrame">
+					<X>-0.0893090963</X>
+					<Y>1.72076678</Y>
+					<Z>-3.42225623</Z>
+					<R00>-0.952842712</R00>
+					<R01>-0.0639974475</R01>
+					<R02>0.29663986</R02>
+					<R10>-0</R10>
+					<R11>0.977510035</R11>
+					<R12>0.210889205</R12>
+					<R20>-0.3034648</R20>
+					<R21>0.200944245</R21>
+					<R22>-0.931413174</R22>
+				</CoordinateFrame>
+				<Ref name="CameraSubject">null</Ref>
+				<token name="CameraType">0</token>
+				<float name="FieldOfView">70</float>
+				<CoordinateFrame name="Focus">
+					<X>-1.60721827</X>
+					<Y>0.641644597</Y>
+					<Z>1.34379411</Z>
+					<R00>1</R00>
+					<R01>0</R01>
+					<R02>0</R02>
+					<R10>0</R10>
+					<R11>1</R11>
+					<R12>0</R12>
+					<R20>0</R20>
+					<R21>0</R21>
+					<R22>1</R22>
+				</CoordinateFrame>
+				<bool name="HeadLocked">true</bool>
+				<float name="HeadScale">1</float>
+				<string name="Name">ThumbnailCamera</string>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+		</Item>
+	</Item>
+</roblox>

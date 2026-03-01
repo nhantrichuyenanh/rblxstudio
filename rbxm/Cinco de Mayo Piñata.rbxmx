@@ -1,0 +1,525 @@
+<roblox xmlns:xmime="http://www.w3.org/2005/05/xmlmime" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.roblox.com/roblox.xsd" version="4">
+	<External>null</External>
+	<External>nil</External>
+	<Item class="Tool" referent="RBXC6597F209B8240399AEBF74244EB3D5A">
+		<Properties>
+			<bool name="CanBeDropped">true</bool>
+			<bool name="Enabled">true</bool>
+			<CoordinateFrame name="Grip">
+				<X>0.200000003</X>
+				<Y>0</Y>
+				<Z>0.200000003</Z>
+				<R00>1</R00>
+				<R01>0</R01>
+				<R02>0</R02>
+				<R10>0</R10>
+				<R11>1</R11>
+				<R12>0</R12>
+				<R20>0</R20>
+				<R21>0</R21>
+				<R22>1</R22>
+			</CoordinateFrame>
+			<bool name="ManualActivationOnly">false</bool>
+			<string name="Name">Cinco De Mayo Pinata</string>
+			<bool name="RequiresHandle">true</bool>
+			<BinaryString name="Tags"></BinaryString>
+			<Content name="TextureId"><url>http://www.roblox.com/asset/?id=114654402</url></Content>
+			<string name="ToolTip"></string>
+		</Properties>
+		<Item class="Part" referent="RBX91F7EE32384540919DFC3DB5ED5AB43C">
+			<Properties>
+				<bool name="Anchored">false</bool>
+				<float name="BackParamA">-0.5</float>
+				<float name="BackParamB">0.5</float>
+				<token name="BackSurface">0</token>
+				<token name="BackSurfaceInput">0</token>
+				<float name="BottomParamA">-0.5</float>
+				<float name="BottomParamB">0.5</float>
+				<token name="BottomSurface">4</token>
+				<token name="BottomSurfaceInput">0</token>
+				<CoordinateFrame name="CFrame">
+					<X>1.29999995</X>
+					<Y>3.049999</Y>
+					<Z>-1.73605741e-07</Z>
+					<R00>-1.62052993e-06</R00>
+					<R01>8.93907668e-08</R01>
+					<R02>-1</R02>
+					<R10>8.19563866e-08</R10>
+					<R11>0.999999881</R11>
+					<R12>8.93906247e-08</R12>
+					<R20>1.00000012</R20>
+					<R21>-1.04308128e-07</R21>
+					<R22>-1.6205297e-06</R22>
+				</CoordinateFrame>
+				<bool name="CanCollide">true</bool>
+				<int name="CollisionGroupId">0</int>
+				<Color3uint8 name="Color3uint8">4294901951</Color3uint8>
+				<PhysicalProperties name="CustomPhysicalProperties">
+					<CustomPhysics>false</CustomPhysics>
+				</PhysicalProperties>
+				<float name="Elasticity">0.5</float>
+				<float name="Friction">0.300000012</float>
+				<float name="FrontParamA">-0.5</float>
+				<float name="FrontParamB">0.5</float>
+				<token name="FrontSurface">0</token>
+				<token name="FrontSurfaceInput">0</token>
+				<float name="LeftParamA">-0.5</float>
+				<float name="LeftParamB">0.5</float>
+				<token name="LeftSurface">0</token>
+				<token name="LeftSurfaceInput">0</token>
+				<bool name="Locked">true</bool>
+				<token name="Material">256</token>
+				<string name="Name">Handle</string>
+				<float name="Reflectance">0</float>
+				<float name="RightParamA">-0.5</float>
+				<float name="RightParamB">0.5</float>
+				<token name="RightSurface">0</token>
+				<token name="RightSurfaceInput">0</token>
+				<Vector3 name="RotVelocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<BinaryString name="Tags"></BinaryString>
+				<float name="TopParamA">-0.5</float>
+				<float name="TopParamB">0.5</float>
+				<token name="TopSurface">3</token>
+				<token name="TopSurfaceInput">0</token>
+				<float name="Transparency">0</float>
+				<Vector3 name="Velocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<token name="formFactorRaw">1</token>
+				<token name="shape">1</token>
+				<Vector3 name="size">
+					<X>2</X>
+					<Y>2</Y>
+					<Z>1</Z>
+				</Vector3>
+			</Properties>
+			<Item class="SpecialMesh" referent="RBX6AE703BAB3A747568D0D4C0B73A9332E">
+				<Properties>
+					<token name="LODX">2</token>
+					<token name="LODY">2</token>
+					<Content name="MeshId"><url>http://www.roblox.com/asset/?id=114654521</url></Content>
+					<token name="MeshType">5</token>
+					<string name="Name">Mesh</string>
+					<Vector3 name="Offset">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+					</Vector3>
+					<Vector3 name="Scale">
+						<X>1</X>
+						<Y>1</Y>
+						<Z>1</Z>
+					</Vector3>
+					<BinaryString name="Tags"></BinaryString>
+					<Content name="TextureId"><url>http://www.roblox.com/asset/?id=114654485</url></Content>
+					<Vector3 name="VertexColor">
+						<X>1</X>
+						<Y>1</Y>
+						<Z>1</Z>
+					</Vector3>
+				</Properties>
+			</Item>
+			<Item class="PointLight" referent="RBX3A3A273C456A4763BAB99B9F1CBBFA2F">
+				<Properties>
+					<float name="Brightness">1</float>
+					<Color3 name="Color">4294967295</Color3>
+					<bool name="Enabled">true</bool>
+					<string name="Name">PointLight</string>
+					<float name="Range">16</float>
+					<bool name="Shadows">false</bool>
+					<BinaryString name="Tags"></BinaryString>
+				</Properties>
+			</Item>
+			<Item class="Attachment" referent="RBX9C87D5A753B24A83AF5E0408E08A9EF4">
+				<Properties>
+					<CoordinateFrame name="CFrame">
+						<X>0.200000048</X>
+						<Y>-1.13686838e-13</Y>
+						<Z>0.200000048</Z>
+						<R00>1</R00>
+						<R01>0</R01>
+						<R02>6.31088724e-30</R02>
+						<R10>0</R10>
+						<R11>1</R11>
+						<R12>-0</R12>
+						<R20>-6.31088724e-30</R20>
+						<R21>0</R21>
+						<R22>1</R22>
+					</CoordinateFrame>
+					<string name="Name">RightGripAttachment</string>
+					<BinaryString name="Tags"></BinaryString>
+					<bool name="Visible">false</bool>
+				</Properties>
+			</Item>
+		</Item>
+		<Item class="Script" referent="RBX73DBA40FC61B4DC3BDF1CBD8BFB52B06">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">Script</string>
+				<string name="ScriptGuid">{5ADC69EA-4D93-476A-8DB5-30EEE92A28F3}</string>
+				<ProtectedString name="Source"><![CDATA[--
+
+local Tool = script.Parent
+local torso = nil
+local debris=game:GetService("Debris")
+
+function onEquipped()
+	torso = Tool.Parent:FindFirstChild("Torso") or Tool.Parent:FindFirstChild("UpperTorso")
+end
+Tool.Equipped:connect(onEquipped)
+
+function pinataExists()
+	return workspace:FindFirstChild(torso.Parent.Name .. "'s Pinata")
+end
+
+local enabled = false
+function onActivated()
+
+	if pinataExists() == nil then
+		enabled = false
+	end
+
+	if enabled then return end
+	enabled = true
+
+	local pinata = Tool.Handle:clone()
+	pinata.Name = "Head"
+	pinata.CanCollide = true
+	pinata.Size = Vector3.new(3,3,1)
+	pinata.Position = Vector3.new(torso.Position.x + (torso.CFrame.lookVector.unit.x * 8),torso.Position.y,torso.Position.z + (torso.CFrame.lookVector.unit.z * 8))
+
+	local model = Instance.new("Model")
+	model.Name = torso.Parent.Name .. "'s Pinata"
+	pinata.Parent = model
+
+	local sound = Instance.new("Sound")
+	sound.Name = "BrokenSound"
+	sound.SoundId = "http://www.roblox.com/asset/?id=34300463"
+	sound.Volume=1
+	sound.Parent = pinata
+
+	local humanoid = Instance.new("Humanoid")
+	humanoid.Health=100
+	humanoid.MaxHealth = 100
+	humanoid.Parent = model
+
+	Tool.Handle.Transparency = 1
+	
+	local script = Tool.PinataScript:clone()
+	script.Parent = pinata
+	script.Disabled = false
+	
+	local bodyPos = Instance.new("BodyPosition")
+	bodyPos.position = Vector3.new(pinata.Position.x,torso.Position.y + 5, pinata.Position.z)
+	bodyPos.P = 8000
+	bodyPos.D = bodyPos.P
+	bodyPos.maxForce = Vector3.new(bodyPos.P,bodyPos.P,bodyPos.P)
+	bodyPos.Parent = pinata
+
+	local bodyGyro = Instance.new("BodyGyro")
+	bodyGyro.P = 50
+	bodyGyro.D = bodyGyro.P
+	bodyGyro.maxTorque = Vector3.new(bodyGyro.P,bodyGyro.P,bodyGyro.P)
+	bodyGyro.cframe = pinata.CFrame
+	bodyGyro.Parent = pinata
+
+	Tool:Destroy()
+	
+	debris:AddItem(model,5*60)
+	model.Parent = workspace
+	
+	checkForTransparency()
+
+end
+Tool.Activated:connect(onActivated)
+
+
+function checkForTransparency()
+	while pinataExists() do wait(0.5) end
+	if Tool:FindFirstChild("Handle") then
+		Tool.Handle.Transparency = 0
+	end
+end
+]]></ProtectedString>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+		</Item>
+		<Item class="Script" referent="RBX40CCF62ABE324BEAAC656F972E2CD9C0">
+			<Properties>
+				<bool name="Disabled">true</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">PinataScript</string>
+				<string name="ScriptGuid">{9D529515-F351-44F9-B366-4D16999FAD72}</string>
+				<ProtectedString name="Source"><![CDATA[local pinata = script.Parent
+local theWholeThing = pinata.Parent
+local humanoid=theWholeThing:WaitForChild("Humanoid")
+local health = 100
+local gears = {Sombrero=26673654,Sombrero2=26673654,Poncho=26673669,VaqueroSombrero=53901180,footbag=52180858,taco=15177716,Epicsauce=31314931,waterballoon=29100543,Epicsausegreen=38861951,Bugle=33683368,Guitar=26673760,Maraca=21351465,Tambourine=21392417,teddy=12848902}
+geardropchance=.5
+
+local debris = game:GetService("Debris")
+
+local scale = 1
+local increment = 0.1
+while scale < 1.6 do
+	pinata.Mesh.Scale = Vector3.new(scale,scale,scale)
+	scale = scale + increment
+	wait()
+end
+
+function pinataPieces()
+	for i = 1, 20 do
+		local pinataPart = Instance.new("Part")
+		pinataPart.Name = "Pinata Piece"
+		pinataPart.formFactor  = 2
+		pinataPart.Size = Vector3.new(1,0.4,1)
+		local color = math.random(1,3)
+		if color == 1 then
+			pinataPart.BrickColor = BrickColor.new("Bright red")
+		elseif color == 2 then
+			pinataPart.BrickColor = BrickColor.new("Bright yellow")
+		else
+			pinataPart.BrickColor = BrickColor.new("Hot pink")
+		end
+		pinataPart.BottomSurface = 0
+		pinataPart.TopSurface = 0
+		pinataPart.Material = Enum.Material.Grass
+		pinataPart.Position = Vector3.new(pinata.Position.x + math.random(-1,1),pinata.Position.y + math.random(-1,1),pinata.Position.z + math.random(-1,1))
+		pinataPart.Parent = workspace
+		debris:AddItem(pinataPart,math.random(3,7))
+	end
+end
+
+local breaking = false
+function checkHealth()
+
+--	print(health)
+	-- time to break out some gear!
+	if health <= 0 then
+
+		if breaking then return end
+		breaking = true
+		
+		local sound=pinata:FindFirstChild("BrokenSound")
+		if sound then
+			sound:Play()
+		end
+
+		delay(0,function()
+			local gearInstances = {}
+			for _,v in pairs(gears) do
+				if math.random()<geardropchance then
+					--This call will cause a "wait" until the data comes back --DONT CARE, DELAY'D(coroutine'd) IT
+					local root = game:GetService("InsertService"):LoadAsset(v)
+		
+					local instances = root:GetChildren()
+					if #instances == 0 then
+						root:Destroy()
+						return
+					end
+		
+					root = root:GetChildren()
+					root[1].Handle.Position = Vector3.new(pinata.Position.x + math.random(-1,1),pinata.Position.y + math.random(-1,1),pinata.Position.z + math.random(-1,1))
+					root[1].Handle.Velocity=Vector3.new(math.random()-.5,math.random()-.5,math.random()-.5)*50
+					root[1].Parent=workspace
+				end
+			end
+		end)
+
+		pinata.Transparency = 1
+		pinata.CanCollide = false
+
+		pinataPieces()
+
+	
+
+		debris:AddItem(pinata,3)
+		wait(3)
+		theWholeThing:Destroy()
+	end
+end
+
+
+local touching = false
+function onTouched(part)
+	if touching then return end
+	touching = true
+	
+	if part.CanCollide then
+		health = math.max(0,health - math.min(5,math.max(1,part.Velocity.magnitude/8)))
+		delay(0,function()
+			local light=pinata:FindFirstChild("PointLight")
+			if light~=nil then
+				light.Range=math.random(12,22)
+				light.Color=Color3.new(math.random(2,3)/3,math.random(2,3)/3,math.random(2,3)/3)
+			end
+		end)
+		checkHealth()
+		wait(0.1)
+	end
+
+	touching = false
+end
+
+pinata.Touched:connect(onTouched)
+
+while true do
+	humanoid.Health=health
+	humanoid.MaxHealth=100
+	wait(.5)
+end
+]]></ProtectedString>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+		</Item>
+		<Item class="Keyframe" referent="RBX254ADBD708704FE9AC4AA1687DC53C65">
+			<Properties>
+				<string name="Name">ThumbnailPose</string>
+				<BinaryString name="Tags"></BinaryString>
+				<float name="Time">0</float>
+			</Properties>
+			<Item class="Pose" referent="RBXC56AE34B1CB544D5B151FAE7006E5647">
+				<Properties>
+					<CoordinateFrame name="CFrame">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+						<R00>1</R00>
+						<R01>0</R01>
+						<R02>0</R02>
+						<R10>0</R10>
+						<R11>1</R11>
+						<R12>0</R12>
+						<R20>0</R20>
+						<R21>0</R21>
+						<R22>1</R22>
+					</CoordinateFrame>
+					<token name="EasingDirection">1</token>
+					<token name="EasingStyle">0</token>
+					<float name="MaskWeight">0</float>
+					<string name="Name">UpperTorso</string>
+					<BinaryString name="Tags"></BinaryString>
+					<float name="Weight">0</float>
+				</Properties>
+				<Item class="Pose" referent="RBX1D579A5D50AF46C0B4CC17FB5F4C910B">
+					<Properties>
+						<CoordinateFrame name="CFrame">
+							<X>0</X>
+							<Y>-6.70552254e-08</Y>
+							<Z>-5.96046448e-08</Z>
+							<R00>1</R00>
+							<R01>0</R01>
+							<R02>0</R02>
+							<R10>0</R10>
+							<R11>0.173648193</R11>
+							<R12>-0.98480773</R12>
+							<R20>0</R20>
+							<R21>0.98480773</R21>
+							<R22>0.173648193</R22>
+						</CoordinateFrame>
+						<token name="EasingDirection">1</token>
+						<token name="EasingStyle">0</token>
+						<float name="MaskWeight">0</float>
+						<string name="Name">RightUpperArm</string>
+						<BinaryString name="Tags"></BinaryString>
+						<float name="Weight">1</float>
+					</Properties>
+					<Item class="Pose" referent="RBXDD7747C4EEE14401884A4B29FC4F7E33">
+						<Properties>
+							<CoordinateFrame name="CFrame">
+								<X>0</X>
+								<Y>-1.49011612e-08</Y>
+								<Z>3.7252903e-09</Z>
+								<R00>1</R00>
+								<R01>0</R01>
+								<R02>0</R02>
+								<R10>0</R10>
+								<R11>0.98480773</R11>
+								<R12>-0.173648179</R12>
+								<R20>0</R20>
+								<R21>0.173648179</R21>
+								<R22>0.98480773</R22>
+							</CoordinateFrame>
+							<token name="EasingDirection">1</token>
+							<token name="EasingStyle">0</token>
+							<float name="MaskWeight">0</float>
+							<string name="Name">RightLowerArm</string>
+							<BinaryString name="Tags"></BinaryString>
+							<float name="Weight">1</float>
+						</Properties>
+						<Item class="Pose" referent="RBX64B014435F4B4ED18739F8F8B01A6176">
+							<Properties>
+								<CoordinateFrame name="CFrame">
+									<X>0</X>
+									<Y>0</Y>
+									<Z>0</Z>
+									<R00>1</R00>
+									<R01>0</R01>
+									<R02>0</R02>
+									<R10>0</R10>
+									<R11>1</R11>
+									<R12>0</R12>
+									<R20>0</R20>
+									<R21>0</R21>
+									<R22>1</R22>
+								</CoordinateFrame>
+								<token name="EasingDirection">1</token>
+								<token name="EasingStyle">0</token>
+								<float name="MaskWeight">0</float>
+								<string name="Name">RightHand</string>
+								<BinaryString name="Tags"></BinaryString>
+								<float name="Weight">1</float>
+							</Properties>
+						</Item>
+					</Item>
+				</Item>
+			</Item>
+		</Item>
+		<Item class="Camera" referent="RBX5D64286F126746A2A9AEAAD99DED241A">
+			<Properties>
+				<CoordinateFrame name="CFrame">
+					<X>-5.23142767</X>
+					<Y>4.96384335</Y>
+					<Z>-0.116643578</Z>
+					<R00>-0.0139342081</R00>
+					<R01>0.248657987</R01>
+					<R02>-0.968491077</R02>
+					<R10>-0</R10>
+					<R11>0.968585134</R11>
+					<R12>0.248682112</R12>
+					<R20>0.999902964</R20>
+					<R21>0.0034651882</R21>
+					<R22>-0.013496465</R22>
+				</CoordinateFrame>
+				<Ref name="CameraSubject">null</Ref>
+				<token name="CameraType">0</token>
+				<float name="FieldOfView">70</float>
+				<CoordinateFrame name="Focus">
+					<X>-3.29444432</X>
+					<Y>4.46647882</Y>
+					<Z>-0.089650631</Z>
+					<R00>1</R00>
+					<R01>0</R01>
+					<R02>0</R02>
+					<R10>0</R10>
+					<R11>1</R11>
+					<R12>0</R12>
+					<R20>0</R20>
+					<R21>0</R21>
+					<R22>1</R22>
+				</CoordinateFrame>
+				<bool name="HeadLocked">true</bool>
+				<float name="HeadScale">1</float>
+				<string name="Name">ThumbnailCamera</string>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+		</Item>
+	</Item>
+</roblox>

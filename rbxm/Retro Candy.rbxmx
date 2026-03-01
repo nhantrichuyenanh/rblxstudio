@@ -1,0 +1,492 @@
+<roblox xmlns:xmime="http://www.w3.org/2005/05/xmlmime" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.roblox.com/roblox.xsd" version="4">
+	<External>null</External>
+	<External>nil</External>
+	<Item class="Tool" referent="RBXF3E17ECA5B3446438E1A72387B1BD783">
+		<Properties>
+			<bool name="CanBeDropped">true</bool>
+			<bool name="Enabled">true</bool>
+			<CoordinateFrame name="Grip">
+				<X>0</X>
+				<Y>0.100000001</Y>
+				<Z>0</Z>
+				<R00>0</R00>
+				<R01>1</R01>
+				<R02>0</R02>
+				<R10>0</R10>
+				<R11>0</R11>
+				<R12>1</R12>
+				<R20>1</R20>
+				<R21>0</R21>
+				<R22>0</R22>
+			</CoordinateFrame>
+			<bool name="ManualActivationOnly">false</bool>
+			<string name="Name">EightBitCandy</string>
+			<bool name="RequiresHandle">true</bool>
+			<BinaryString name="Tags"></BinaryString>
+			<Content name="TextureId"><url>http://www.roblox.com/asset/?id=65015331 </url></Content>
+			<string name="ToolTip"></string>
+		</Properties>
+		<Item class="Part" referent="RBXD5C10C017BBE41D5A23DD2287F9F8BA9">
+			<Properties>
+				<bool name="Anchored">false</bool>
+				<float name="BackParamA">-0.5</float>
+				<float name="BackParamB">0.5</float>
+				<token name="BackSurface">0</token>
+				<token name="BackSurfaceInput">0</token>
+				<float name="BottomParamA">-0.5</float>
+				<float name="BottomParamB">0.5</float>
+				<token name="BottomSurface">0</token>
+				<token name="BottomSurfaceInput">0</token>
+				<CoordinateFrame name="CFrame">
+					<X>1.5</X>
+					<Y>5.50000906</Y>
+					<Z>0</Z>
+					<R00>1.62062088e-06</R00>
+					<R01>-1.26916612e-22</R01>
+					<R02>1</R02>
+					<R10>6.12324353e-17</R10>
+					<R11>1</R11>
+					<R12>2.76820442e-23</R12>
+					<R20>-1</R20>
+					<R21>6.12324353e-17</R21>
+					<R22>1.62062088e-06</R22>
+				</CoordinateFrame>
+				<bool name="CanCollide">true</bool>
+				<int name="CollisionGroupId">0</int>
+				<Color3uint8 name="Color3uint8">4291677645</Color3uint8>
+				<PhysicalProperties name="CustomPhysicalProperties">
+					<CustomPhysics>false</CustomPhysics>
+				</PhysicalProperties>
+				<float name="Elasticity">0.5</float>
+				<float name="Friction">0.300000012</float>
+				<float name="FrontParamA">-0.5</float>
+				<float name="FrontParamB">0.5</float>
+				<token name="FrontSurface">0</token>
+				<token name="FrontSurfaceInput">0</token>
+				<float name="LeftParamA">-0.5</float>
+				<float name="LeftParamB">0.5</float>
+				<token name="LeftSurface">0</token>
+				<token name="LeftSurfaceInput">0</token>
+				<bool name="Locked">true</bool>
+				<token name="Material">256</token>
+				<string name="Name">Handle</string>
+				<float name="Reflectance">0</float>
+				<float name="RightParamA">-0.5</float>
+				<float name="RightParamB">0.5</float>
+				<token name="RightSurface">0</token>
+				<token name="RightSurfaceInput">0</token>
+				<Vector3 name="RotVelocity">
+					<X>1</X>
+					<Y>1</Y>
+					<Z>1</Z>
+				</Vector3>
+				<BinaryString name="Tags"></BinaryString>
+				<float name="TopParamA">-0.5</float>
+				<float name="TopParamB">0.5</float>
+				<token name="TopSurface">0</token>
+				<token name="TopSurfaceInput">0</token>
+				<float name="Transparency">0</float>
+				<Vector3 name="Velocity">
+					<X>-1.40129846e-45</X>
+					<Y>0</Y>
+					<Z>1.40129846e-45</Z>
+				</Vector3>
+				<token name="formFactorRaw">3</token>
+				<token name="shape">1</token>
+				<Vector3 name="size">
+					<X>1.16999984</X>
+					<Y>0.339999974</Y>
+					<Z>0.490000188</Z>
+				</Vector3>
+			</Properties>
+			<Item class="SpecialMesh" referent="RBXB0B080B84B5E4EEC93A0C44E8C1F0A58">
+				<Properties>
+					<token name="LODX">2</token>
+					<token name="LODY">2</token>
+					<Content name="MeshId"><url>http://www.roblox.com/asset/?id=65015216 </url></Content>
+					<token name="MeshType">5</token>
+					<string name="Name">Mesh</string>
+					<Vector3 name="Offset">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+					</Vector3>
+					<Vector3 name="Scale">
+						<X>0.899999976</X>
+						<Y>0.899999976</Y>
+						<Z>0.899999976</Z>
+					</Vector3>
+					<BinaryString name="Tags"></BinaryString>
+					<Content name="TextureId"><url>http://www.roblox.com/asset/?id=65015300 </url></Content>
+					<Vector3 name="VertexColor">
+						<X>1</X>
+						<Y>1</Y>
+						<Z>1</Z>
+					</Vector3>
+				</Properties>
+			</Item>
+			<Item class="Attachment" referent="RBXBC11EBDED0134C118474F040FC63E424">
+				<Properties>
+					<CoordinateFrame name="CFrame">
+						<X>0</X>
+						<Y>0.100000001</Y>
+						<Z>0</Z>
+						<R00>0</R00>
+						<R01>1</R01>
+						<R02>-0</R02>
+						<R10>-6.31088724e-30</R10>
+						<R11>0</R11>
+						<R12>1</R12>
+						<R20>1</R20>
+						<R21>0</R21>
+						<R22>6.31088724e-30</R22>
+					</CoordinateFrame>
+					<string name="Name">RightGripAttachment</string>
+					<BinaryString name="Tags"></BinaryString>
+					<bool name="Visible">false</bool>
+				</Properties>
+			</Item>
+		</Item>
+		<Item class="LocalScript" referent="RBX2CE72A09107E4C4DBC39405D2DD85E46">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">CandyScript</string>
+				<string name="ScriptGuid">{21EB9ED7-002F-45C8-A56E-8E3AB494F9B9}</string>
+				<ProtectedString name="Source"><![CDATA[local Tool = script.Parent
+local Candy = Tool.Handle
+
+local vCharacter
+local myTorso
+local myHumanoid 
+
+local throwAnim
+
+Tool.Enabled = true 
+
+local debris = game:GetService("Debris")
+
+function sleep(hit, candyClone)
+	if hit and hit.Parent and candyClone then 
+		local humanoid = hit.Parent:FindFirstChild("Humanoid")
+		if hit.Parent:IsA("Accessory") then 
+			humanoid = hit.Parent.Parent:FindFirstChild("Humanoid")
+		end		
+
+		if humanoid ~= nil and humanoid ~= myHumanoid and myHumanoid ~= nil and candyClone then 
+			humanoid:TakeDamage(4)
+			humanoid.WalkSpeed = 0.0
+			if candyClone then candyClone:Remove() end
+			local character = humanoid.Parent 
+			if character:FindFirstChild("SleepScript") == nil then 
+				local cloneScript = Tool.SleepScript:Clone()
+				cloneScript.Parent = character 
+				cloneScript.Disabled = false 
+			
+				local sleepy = cloneScript:FindFirstChild("Sleepy")
+				if sleepy then sleepy.Value = 1 end  
+			else 
+				local sleepy = character.SleepScript:FindFirstChild("Sleepy")
+				if sleepy then sleepy.Value = sleepy.Value + 1 end
+			end
+			wait(0.1)
+			humanoid.WalkSpeed = 16.0
+		end
+	end
+end
+
+function shoot(direction, candyClone)
+	if myTorso and myHumanoid then 
+		local spawnPos = Candy.Position + direction * 4.0 
+		candyClone.CFrame = CFrame.new(spawnPos, spawnPos + direction) 
+	
+		candyClone.Velocity = (direction + Vector3.new(0, 2, 0)).unit * 45.0
+		candyClone.RotVelocity = Vector3.new(0, 10, 0)
+
+		local floatForce = Instance.new("BodyForce")
+		floatForce.force = Vector3.new(0, candyClone:GetMass() * 88.1, 0)
+		floatForce.Parent = candyClone 
+		
+		candyClone.Parent = game.Workspace
+	
+		candyClone.Touched:connect(function(hit)  sleep(hit, candyClone) end)
+
+		debris:AddItem(candyClone, 2.5)
+	end	
+end
+
+function onActivated()
+	if Tool.Enabled == false then 
+		return 
+	end
+
+	vCharacter = Tool.Parent
+	myTorso = vCharacter:FindFirstChild("Torso") or vCharacter:FindFirstChild("UpperTorso")
+	myHumanoid = vCharacter:FindFirstChild("Humanoid")
+
+	if myTorso == nil or myHumanoid == nil then 
+		return 
+	end
+
+	Tool.Enabled = false
+
+	local candyClone = Candy:Clone()
+	candyClone.CanCollide = true 
+	
+	Candy.Transparency = 1.0
+	
+	local target = myHumanoid.TargetPoint 
+	local direction = (target - Candy.Position).unit 
+	
+	shoot(direction, candyClone)
+
+	wait(0.25)
+	Candy.Transparency = 0.0
+	Tool.Enabled = true 
+end
+
+function onEquipped()
+	vCharacter = Tool.Parent
+	myTorso = vCharacter:FindFirstChild("Torso") or vCharacter:FindFirstChild("UpperTorso")
+	myHumanoid = vCharacter:FindFirstChild("Humanoid")
+end
+
+function onUnequipped()
+	if throwAnim then throwAnim:Stop() end
+end
+
+Tool.Activated:connect(onActivated)
+Tool.Equipped:connect(onEquipped)
+Tool.Unequipped:connect(onUnequipped)
+
+Candy.Touched:connect(sleep)]]></ProtectedString>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+		</Item>
+		<Item class="Script" referent="RBXB8697C92AA014D42AD98BD4CF1F70041">
+			<Properties>
+				<bool name="Disabled">true</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">SleepScript</string>
+				<string name="ScriptGuid">{22D1B1EF-6422-449F-AB75-C83A174DBE18}</string>
+				<ProtectedString name="Source"><![CDATA[local vCharacter = script.Parent
+
+local vPlayer = game.Players:GetPlayerFromCharacter(vCharacter) 
+local backpack = nil
+
+if vPlayer then
+	backpack = vPlayer:FindFirstChild("Backpack")
+end
+
+local sleeping = false 
+
+local myTorso = vCharacter:FindFirstChild("Torso") or vCharacter:FindFirstChild("UpperTorso")
+local myHumanoid = vCharacter:FindFirstChild("Humanoid") 
+
+local debris = game:GetService("Debris")
+
+if myTorso == nil or myHumanoid == nil then 
+	script:Remove()
+end
+
+while script:FindFirstChild("Sleepy") == nil do
+	wait()
+end
+
+local toolInHand = nil
+local backpackItems = {}
+local zStorage = {}
+
+local sleepVal = script.Sleepy
+sleepVal.Changed:connect(function() 
+	if sleepVal and sleepVal.Value > 5 and not sleeping then 
+
+		local duration = 4.5
+		if script:FindFirstChild("Duration") and script.Duration.Value > 0 then 
+			duration = script.Duration.Value			
+		end
+
+		backpackItems = {} 
+		toolInHand = nil
+		sleeping = true 
+		sleepVal.Value = 0 
+		
+		myHumanoid.WalkSpeed = 0.0 
+		myTorso.Anchored = true 
+
+		local children = vCharacter:GetChildren()
+		for i = 1, #children do 
+			if children[i] and children[i]:IsA("Tool") then 
+				toolInHand = children[i]
+				toolInHand.Parent = nil
+			end
+		end
+
+		if backpack then 
+			local bChildren = backpack:GetChildren()
+			for j = 1, #bChildren do 
+				if bChildren[j] then 
+					table.insert(backpackItems, bChildren[j])
+					bChildren[j].Parent = nil
+				end
+			end
+		end
+		
+
+		while duration > 0 do 					
+				
+			local z = Instance.new("Part")				
+			z.Name = "Z" 
+			z.CFrame = (vCharacter.Head.CFrame + Vector3.new(0, 1, 0)) * CFrame.Angles(math.pi/2, 0, 0)
+			z.CanCollide = false 
+			
+			local zMesh = Instance.new("SpecialMesh")
+			zMesh.Parent = z
+			zMesh.MeshId = "http://www.roblox.com/asset/?id=65046096"
+			zMesh.TextureId = "http://www.roblox.com/asset/?id=65020347"
+			zMesh.Scale = Vector3.new(0.05, 0.05, 0.05)
+
+			local floatForce = Instance.new("BodyForce")
+			floatForce.force = Vector3.new(0, z:GetMass() * workspace.Gravity * 1.05, 0)
+			floatForce.Parent = z 	
+		
+			z.Parent = game.Workspace
+
+			table.insert(zStorage, z)
+
+			coroutine.resume(coroutine.create(function() 
+				while z and zMesh and #zStorage > 0 do 					
+					zMesh.Scale = zMesh.Scale + Vector3.new(0.005, 0.005, 0.005)
+					wait(0.05)
+				end
+			end)) 
+
+			wait(0.25)
+			duration = duration - 0.25	
+
+			debris:AddItem(z, 1)			
+		end
+
+		myHumanoid.WalkSpeed = 16.0
+		myTorso.Anchored = false 
+		if toolInHand then toolInHand.Parent = vCharacter  end
+		for a = 1, #backpackItems do 
+			if backpackItems[a] then 
+				backpackItems[a].Parent = backpack 
+			end
+		end
+		zStorage = {} -- free memory
+	
+		wait(5.0)
+		sleeping = false 
+	end 
+end) 
+
+coroutine.resume(coroutine.create(function() 
+	wait(60) 	
+	if sleeping then
+		wait(1.0)
+		myHumanoid.WalkSpeed = 16.0
+		myTorso.Anchored = false 
+		if toolInHand then toolInHand.Parent = vCharacter  end
+		for a = 1, #backpackItems do 
+			if backpackItems[a] then 
+				backpackItems[a].Parent = backpack 
+			end
+		end
+		zStorage = {} -- free memory
+	end
+	script:Remove() 
+end))
+]]></ProtectedString>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+			<Item class="IntValue" referent="RBX4F3D60564A1C49E5940E61667E9E86A8">
+				<Properties>
+					<string name="Name">Sleepy</string>
+					<BinaryString name="Tags"></BinaryString>
+					<int name="Value">0</int>
+				</Properties>
+			</Item>
+		</Item>
+		<Item class="LocalScript" referent="RBX644FA71B89A84AD29D7C8E12D0B0F9A4">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">Local Gui</string>
+				<string name="ScriptGuid">{4767A16A-3885-40FE-A9D8-F715182EEFCF}</string>
+				<ProtectedString name="Source"><![CDATA[Tool = script.Parent
+
+local stillEquipped = false
+
+function onEquippedLocal(mouse)
+	stillEquipped = true
+	if mouse == nil then 
+		print("Mouse not found")
+		return
+	end
+	while stillEquipped do 
+		print("Setting Mouse to go")
+		mouse.Icon = "rbxasset://textures\\GunCursor.png"
+		while Tool.Enabled and stillEquipped do 
+			wait(0.01)
+		end
+		print("Setting Mouse to wait")
+		mouse.Icon = "rbxasset://textures\\GunWaitCursor.png"
+		while not Tool.Enabled and stillEquipped do 
+			wait(0.01)
+		end	
+	end
+end
+
+
+function onUnequippedLocal()
+	stillEquipped = false
+end
+
+Tool.Equipped:connect(onEquippedLocal)
+Tool.Unequipped:connect(onUnequippedLocal)]]></ProtectedString>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+		</Item>
+		<Item class="Camera" referent="RBXB7BEC115C702420EA04DF47CDC3F7DFB">
+			<Properties>
+				<CoordinateFrame name="CFrame">
+					<X>2.51470327</X>
+					<Y>6.86853123</Y>
+					<Z>-0.977594018</Z>
+					<R00>-0.694676757</R00>
+					<R01>-0.495159149</R01>
+					<R02>0.521767795</R02>
+					<R10>1.49011612e-08</R10>
+					<R11>0.725360453</R11>
+					<R12>0.688369215</R12>
+					<R20>-0.719322026</R20>
+					<R21>0.478194088</R21>
+					<R22>-0.503891051</R22>
+				</CoordinateFrame>
+				<Ref name="CameraSubject">null</Ref>
+				<token name="CameraType">0</token>
+				<float name="FieldOfView">70</float>
+				<CoordinateFrame name="Focus">
+					<X>1.47116756</X>
+					<Y>5.49179268</Y>
+					<Z>0.0301882029</Z>
+					<R00>1</R00>
+					<R01>0</R01>
+					<R02>0</R02>
+					<R10>0</R10>
+					<R11>1</R11>
+					<R12>0</R12>
+					<R20>0</R20>
+					<R21>0</R21>
+					<R22>1</R22>
+				</CoordinateFrame>
+				<bool name="HeadLocked">true</bool>
+				<float name="HeadScale">1</float>
+				<string name="Name">ThumbnailCamera</string>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+		</Item>
+	</Item>
+</roblox>

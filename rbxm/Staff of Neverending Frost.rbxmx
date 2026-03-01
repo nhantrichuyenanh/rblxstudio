@@ -1,0 +1,1758 @@
+<roblox xmlns:xmime="http://www.w3.org/2005/05/xmlmime" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.roblox.com/roblox.xsd" version="4">
+	<Meta name="ExplicitAutoJoints">true</Meta>
+	<External>null</External>
+	<External>nil</External>
+	<Item class="Tool" referent="RBX137342FAC32841C696226741A2E8DA61">
+		<Properties>
+			<bool name="CanBeDropped">true</bool>
+			<bool name="Enabled">true</bool>
+			<CoordinateFrame name="Grip">
+				<X>-0</X>
+				<Y>0</Y>
+				<Z>-1</Z>
+				<R00>1</R00>
+				<R01>0</R01>
+				<R02>0</R02>
+				<R10>0</R10>
+				<R11>0</R11>
+				<R12>-1</R12>
+				<R20>0</R20>
+				<R21>1</R21>
+				<R22>0</R22>
+			</CoordinateFrame>
+			<bool name="ManualActivationOnly">false</bool>
+			<string name="Name">StaffofNeverendingFrost</string>
+			<bool name="RequiresHandle">true</bool>
+			<BinaryString name="Tags"></BinaryString>
+			<Content name="TextureId"><url>http://www.roblox.com/asset/?id=66876555 </url></Content>
+			<string name="ToolTip">Gettin&apos; kinda chilly out here...</string>
+		</Properties>
+		<Item class="Part" referent="RBXE2D5F9F8E5B2422FA2929008C88782A2">
+			<Properties>
+				<bool name="Anchored">false</bool>
+				<float name="BackParamA">-0.5</float>
+				<float name="BackParamB">0.5</float>
+				<token name="BackSurface">0</token>
+				<token name="BackSurfaceInput">0</token>
+				<float name="BottomParamA">-0.5</float>
+				<float name="BottomParamB">0.5</float>
+				<token name="BottomSurface">0</token>
+				<token name="BottomSurfaceInput">0</token>
+				<CoordinateFrame name="CFrame">
+					<X>-15.0249023</X>
+					<Y>4.69159412</Y>
+					<Z>5.61404514</Z>
+					<R00>0.707105339</R00>
+					<R01>0</R01>
+					<R02>-0.707108378</R02>
+					<R10>0.707108378</R10>
+					<R11>0</R11>
+					<R12>0.707105339</R12>
+					<R20>0</R20>
+					<R21>-1</R21>
+					<R22>0</R22>
+				</CoordinateFrame>
+				<bool name="CanCollide">true</bool>
+				<int name="CollisionGroupId">0</int>
+				<Color3uint8 name="Color3uint8">4284702562</Color3uint8>
+				<PhysicalProperties name="CustomPhysicalProperties">
+					<CustomPhysics>false</CustomPhysics>
+				</PhysicalProperties>
+				<float name="FrontParamA">-0.5</float>
+				<float name="FrontParamB">0.5</float>
+				<token name="FrontSurface">0</token>
+				<token name="FrontSurfaceInput">0</token>
+				<float name="LeftParamA">-0.5</float>
+				<float name="LeftParamB">0.5</float>
+				<token name="LeftSurface">0</token>
+				<token name="LeftSurfaceInput">0</token>
+				<bool name="Locked">true</bool>
+				<bool name="Massless">false</bool>
+				<token name="Material">256</token>
+				<string name="Name">Handle</string>
+				<float name="Reflectance">0</float>
+				<float name="RightParamA">-0.5</float>
+				<float name="RightParamB">0.5</float>
+				<token name="RightSurface">0</token>
+				<token name="RightSurfaceInput">0</token>
+				<int name="RootPriority">0</int>
+				<Vector3 name="RotVelocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<BinaryString name="Tags"></BinaryString>
+				<float name="TopParamA">-0.5</float>
+				<float name="TopParamB">0.5</float>
+				<token name="TopSurface">0</token>
+				<token name="TopSurfaceInput">0</token>
+				<float name="Transparency">0</float>
+				<Vector3 name="Velocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<token name="formFactorRaw">3</token>
+				<token name="shape">1</token>
+				<Vector3 name="size">
+					<X>0.600000024</X>
+					<Y>0.600000024</Y>
+					<Z>4.39999628</Z>
+				</Vector3>
+			</Properties>
+			<Item class="SpecialMesh" referent="RBX264DABC32846419BB85240CB720E1474">
+				<Properties>
+					<token name="LODX">2</token>
+					<token name="LODY">2</token>
+					<Content name="MeshId"><url>http://www.roblox.com/asset?id=66876213 </url></Content>
+					<token name="MeshType">5</token>
+					<string name="Name">Mesh</string>
+					<Vector3 name="Offset">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>1</Z>
+					</Vector3>
+					<Vector3 name="Scale">
+						<X>1</X>
+						<Y>1</Y>
+						<Z>1</Z>
+					</Vector3>
+					<BinaryString name="Tags"></BinaryString>
+					<Content name="TextureId"><url>http://www.roblox.com/asset?id=66876289 </url></Content>
+					<Vector3 name="VertexColor">
+						<X>1</X>
+						<Y>1</Y>
+						<Z>1</Z>
+					</Vector3>
+				</Properties>
+			</Item>
+			<Item class="Attachment" referent="RBXCDD3F4F511C94D4894549623722F28F3">
+				<Properties>
+					<CoordinateFrame name="CFrame">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>2.04999948</Z>
+						<R00>1</R00>
+						<R01>0</R01>
+						<R02>0</R02>
+						<R10>0</R10>
+						<R11>2.98023224e-08</R11>
+						<R12>-1</R12>
+						<R20>0</R20>
+						<R21>1</R21>
+						<R22>2.98023224e-08</R22>
+					</CoordinateFrame>
+					<string name="Name">Tip</string>
+					<BinaryString name="Tags"></BinaryString>
+					<bool name="Visible">false</bool>
+				</Properties>
+				<Item class="ParticleEmitter" referent="RBXCEE3482738A0496EA1E2119B81EE2664">
+					<Properties>
+						<Vector3 name="Acceleration">
+							<X>0</X>
+							<Y>-2</Y>
+							<Z>0</Z>
+						</Vector3>
+						<ColorSequence name="Color">0 0.666667 1 1 0 1 1 1 1 0 </ColorSequence>
+						<float name="Drag">0</float>
+						<token name="EmissionDirection">1</token>
+						<bool name="Enabled">true</bool>
+						<NumberRange name="Lifetime">4 4 </NumberRange>
+						<float name="LightEmission">1</float>
+						<float name="LightInfluence">0</float>
+						<bool name="LockedToPart">false</bool>
+						<string name="Name">Snowflakes</string>
+						<float name="Rate">5</float>
+						<NumberRange name="RotSpeed">-200 200 </NumberRange>
+						<NumberRange name="Rotation">-180 180 </NumberRange>
+						<NumberSequence name="Size">0 0.4 0.4 1 0 0 </NumberSequence>
+						<NumberRange name="Speed">2 5 </NumberRange>
+						<Vector2 name="SpreadAngle">
+							<X>-180</X>
+							<Y>180</Y>
+						</Vector2>
+						<BinaryString name="Tags"></BinaryString>
+						<Content name="Texture"><url>http://www.roblox.com/asset/?id=242837894</url></Content>
+						<NumberSequence name="Transparency">0 1 0 0.1 0 0 0.892768 0 0 1 1 0 </NumberSequence>
+						<float name="VelocityInheritance">0</float>
+						<float name="ZOffset">0</float>
+					</Properties>
+				</Item>
+			</Item>
+			<Item class="ParticleEmitter" referent="RBXAAC5F8C74B794DA896D944DDA9CAE1B8">
+				<Properties>
+					<Vector3 name="Acceleration">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+					</Vector3>
+					<ColorSequence name="Color">0 0 0.333333 1 0 1 1 1 1 0 </ColorSequence>
+					<float name="Drag">0</float>
+					<token name="EmissionDirection">1</token>
+					<bool name="Enabled">true</bool>
+					<NumberRange name="Lifetime">1 1 </NumberRange>
+					<float name="LightEmission">1</float>
+					<float name="LightInfluence">0</float>
+					<bool name="LockedToPart">true</bool>
+					<string name="Name">FrostSmoke</string>
+					<float name="Rate">200</float>
+					<NumberRange name="RotSpeed">-50 50 </NumberRange>
+					<NumberRange name="Rotation">-180 180 </NumberRange>
+					<NumberSequence name="Size">0 1 0 1 1 0 </NumberSequence>
+					<NumberRange name="Speed">0 0 </NumberRange>
+					<Vector2 name="SpreadAngle">
+						<X>0</X>
+						<Y>0</Y>
+					</Vector2>
+					<BinaryString name="Tags"></BinaryString>
+					<Content name="Texture"><url>rbxasset://textures/particles/fire_sparks_main.dds</url></Content>
+					<NumberSequence name="Transparency">0 0 0 1 0 0 </NumberSequence>
+					<float name="VelocityInheritance">0</float>
+					<float name="ZOffset">0.5</float>
+				</Properties>
+			</Item>
+			<Item class="Sound" referent="RBXDBB4FECBC78B4E0F84A60DA61143289C">
+				<Properties>
+					<float name="EmitterSize">10</float>
+					<bool name="Looped">true</bool>
+					<string name="Name">FrostLoop</string>
+					<bool name="PlayOnRemove">false</bool>
+					<float name="PlaybackSpeed">1</float>
+					<bool name="Playing">false</bool>
+					<token name="RollOffMode">0</token>
+					<Ref name="SoundGroup">null</Ref>
+					<Content name="SoundId"><url>rbxassetid://32786031</url></Content>
+					<BinaryString name="Tags"></BinaryString>
+					<double name="TimePosition">0</double>
+					<float name="Volume">0.0500000007</float>
+					<float name="xmlRead_MaxDistance_3">10000</float>
+				</Properties>
+			</Item>
+			<Item class="Sound" referent="RBX97D7C33B28F146B7BDB2DA4611ABB998">
+				<Properties>
+					<float name="EmitterSize">10</float>
+					<bool name="Looped">false</bool>
+					<string name="Name">Shoot</string>
+					<bool name="PlayOnRemove">false</bool>
+					<float name="PlaybackSpeed">1</float>
+					<bool name="Playing">false</bool>
+					<token name="RollOffMode">0</token>
+					<Ref name="SoundGroup">null</Ref>
+					<Content name="SoundId"><url>rbxassetid://32788904</url></Content>
+					<BinaryString name="Tags"></BinaryString>
+					<double name="TimePosition">0</double>
+					<float name="Volume">1</float>
+					<float name="xmlRead_MaxDistance_3">10000</float>
+				</Properties>
+			</Item>
+			<Item class="Attachment" referent="RBX9587BA28BF014A6DABE6AB3FD75F6B14">
+				<Properties>
+					<CoordinateFrame name="CFrame">
+						<X>0</X>
+						<Y>-1.1920929e-07</Y>
+						<Z>-0.999999762</Z>
+						<R00>1</R00>
+						<R01>0</R01>
+						<R02>0</R02>
+						<R10>0</R10>
+						<R11>0</R11>
+						<R12>-1</R12>
+						<R20>0</R20>
+						<R21>1</R21>
+						<R22>0</R22>
+					</CoordinateFrame>
+					<string name="Name">RightGripAttachment</string>
+					<BinaryString name="Tags"></BinaryString>
+					<bool name="Visible">false</bool>
+				</Properties>
+			</Item>
+		</Item>
+		<Item class="Script" referent="RBX050372B645E2409E8769F06CA47674F7">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">Server</string>
+				<string name="ScriptGuid">{248BEF25-2D9B-4140-B6DD-992D9CF9388C}</string>
+				<ProtectedString name="Source"><![CDATA[--Rescripted/Revamped by TakeoHonorable
+--True form of neverending frost
+
+function Create(ty)
+	return function(data)
+		local obj = Instance.new(ty)
+		for k, v in pairs(data) do
+			if type(k) == 'number' then
+				v.Parent = obj
+			else
+				obj[k] = v
+			end
+		end
+		return obj
+	end
+end
+
+local Tool = script.Parent
+Tool.Enabled = true
+
+local Handle = Tool:WaitForChild("Handle")
+
+local Tip = Handle:WaitForChild("Tip")
+Tip:WaitForChild("Snowflakes").Enabled = true
+
+local MouseLoc,Remote = Tool:WaitForChild("MouseLoc"),Tool:WaitForChild("Remote")
+
+local Player,Character,Humanoid,Torso
+
+local Services = {
+	Players = (game:FindService("Players") or game:GetService("Players")),
+	TweenService = (game:FindService("TweenService") or game:GetService("TweenService")),
+	RunService = (game:FindService("RunService") or game:GetService("RunService")),
+	Debris = (game:FindService("Debris") or game:GetService("Debris")),
+	ReplicatedStorage = (game:FindService("ReplicatedStorage") or game:GetService("ReplicatedStorage")),
+	Lighting = (game:FindService("Lighting") or game:GetService("Lighting")),
+	ServerScriptService = (game:FindService("ServerScriptService") or game:GetService("ServerScriptService"))
+}
+
+local Grips = {
+	Out = Tool:WaitForChild("Out").Value,
+	In = Tool:WaitForChild("In").Value
+}
+Tool.Grip = Grips.In
+
+local Sounds = {
+	FrostLoop = Handle:WaitForChild("FrostLoop"),
+	Shoot = Handle:WaitForChild("Shoot")
+}
+
+local flake = Create("Part"){
+	Shape = Enum.PartType.Block, 
+	Size = Vector3.new(1.7, 0.4, 1.7),
+	Locked = true,
+	Name = "Snowflake",
+	CanCollide = false, 
+	Transparency = 0.0,
+}
+
+local flakeMesh = Create("SpecialMesh") {
+	MeshId = "http://www.roblox.com/asset/?id=66877034",
+	TextureId = "http://www.roblox.com/asset/?id=66876289",
+	Parent = flake,
+	Scale = Vector3.new(2, 2, 2),
+}
+
+function Equipped()
+	Character = Tool.Parent
+	Humanoid = Character:FindFirstChildOfClass("Humanoid")
+	Player = Services.Players:GetPlayerFromCharacter(Character)
+	Center = Character:WaitForChild("HumanoidRootPart")
+	Sounds.FrostLoop:Play()
+end
+
+function Unequipped()
+	Sounds.FrostLoop:Stop()
+end
+
+function Activated()
+	if not Player or not Humanoid or Humanoid.Health <= 0 or not Tool.Enabled then return end
+	Tool.Enabled = false
+	local Sucess,Pos = pcall(function() return MouseLoc:InvokeClient(Player)end)
+	Pos = (Sucess and Pos) or Vector3.new(0,0,0)
+	
+	coroutine.wrap(function()
+		Tool.Grip = Grips.Out
+		wait(1)
+		Tool.Grip = Grips.In
+	end)()
+	
+	local SpawnPos = Tip.WorldPosition + (Pos - Tip.WorldPosition).Unit * 4
+	
+	local FlakeProj = flake:Clone()
+	FlakeProj.CFrame = CFrame.new(SpawnPos)*CFrame.Angles(0,0,0)
+	
+	local Velo = Create("BodyVelocity"){
+		MaxForce = Vector3.new(1,1,1)*math.huge,
+		Velocity = (Pos - SpawnPos).Unit * 100,
+		Parent = FlakeProj
+	}
+	
+	local SnowflakeScript = script:WaitForChild("SnowflakeScript"):Clone()
+	SnowflakeScript:WaitForChild("Creator").Value = Player
+	SnowflakeScript.Parent = FlakeProj
+	SnowflakeScript.Disabled = false
+	
+	Sounds.Shoot:Play()
+	FlakeProj.Parent = workspace
+	FlakeProj:SetNetworkOwner(nil)
+	wait(3)
+	Tool.Enabled = true
+end
+
+Tool.Equipped:Connect(Equipped)
+Tool.Unequipped:Connect(Unequipped)
+Tool.Activated:Connect(Activated)
+
+local Special = true
+Remote.OnServerEvent:Connect(function(Client,Key)
+	if not Tool.Enabled or Client ~= Player or not Key or not Humanoid or Humanoid.Health <= 0 or not Tool:IsDescendantOf(Character) then return end
+	if Key == Enum.KeyCode.Q and Special then
+		Tool.Enabled = false
+		coroutine.wrap(function()
+			Special = false
+			Tip:WaitForChild("Snowflakes").Enabled = false
+			wait(20)
+			Tip:WaitForChild("Snowflakes").Enabled = true
+			Special = true
+		end)()
+		local ThudAnim = Humanoid:LoadAnimation(Tool:WaitForChild("Thud"..Humanoid.RigType.Name))
+		ThudAnim:Play()
+		Tool.Grip = Grips.In * CFrame.new(0,2,0) -- Makes the character hold the staff at the top
+		wait(0.95)
+		if Tool:IsDescendantOf(Character) then
+			Sounds.Shoot:Play()
+		end
+		local IcingScript = script:WaitForChild("Icing"):Clone()
+		IcingScript:WaitForChild("Position").Value = Center.CFrame.p - Vector3.new(0,Center.Size.Y*1.5,0)
+		IcingScript:WaitForChild("Creator").Value = Player
+		IcingScript.Parent = Services.ServerScriptService
+		IcingScript.Disabled = false
+		Tool.Grip = Grips.In
+		Tool.Enabled = true
+	end
+end)]]></ProtectedString>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+			<Item class="Script" referent="RBXD60787CAD48E481AAED6B2C2BE329827">
+				<Properties>
+					<bool name="Disabled">true</bool>
+					<Content name="LinkedSource"><null></null></Content>
+					<string name="Name">SnowflakeScript</string>
+					<string name="ScriptGuid">{0B7F1952-FEBF-4184-8238-722AD10D8BA0}</string>
+					<ProtectedString name="Source"><![CDATA[local Snowflake = script.Parent
+
+local Services = {
+	Players = (game:FindService("Players") or game:GetService("Players")),
+	TweenService = (game:FindService("TweenService") or game:GetService("TweenService")),
+	RunService = (game:FindService("RunService") or game:GetService("RunService")),
+	Debris = (game:FindService("Debris") or game:GetService("Debris")),
+	ReplicatedStorage = (game:FindService("ReplicatedStorage") or game:GetService("ReplicatedStorage")),
+	Lighting = (game:FindService("Lighting") or game:GetService("Lighting")),
+	ServerScriptService = (game:FindService("ServerScriptService") or game:GetService("ServerScriptService"))
+}
+
+
+
+function IsInTable(Table,Value)
+	for _,v in pairs(Table) do
+		if v == Value then
+			return true
+		end
+	end
+	return false
+end
+
+function IsTeamMate(Player1, Player2)
+	return (Player1 and Player2 and not Player1.Neutral and not Player2.Neutral and Player1.TeamColor == Player2.TeamColor)
+end
+
+function TagHumanoid(humanoid, player)
+	local Creator_Tag = Instance.new("ObjectValue")
+	Creator_Tag.Name = "creator"
+	Creator_Tag.Value = player
+	Services.Debris:AddItem(Creator_Tag, 2)
+	Creator_Tag.Parent = humanoid
+end
+
+function UntagHumanoid(humanoid)
+	for i, v in pairs(humanoid:GetChildren()) do
+		if v:IsA("ObjectValue") and v.Name == "creator" then
+			v:Destroy()
+		end
+	end
+end
+
+delay(7,function()
+	Snowflake:Destroy()
+end)
+
+local Puff = script:WaitForChild("Puff")
+Puff.Parent = Snowflake
+Puff.Enabled = true
+
+local Creator = script:WaitForChild("Creator")
+
+local Touch
+
+Touch = Snowflake.Touched:Connect(function(hit)
+	if not hit or not hit.Parent then return end
+	local Hum = hit.Parent:FindFirstChildOfClass("Humanoid")
+	local FF = hit.Parent:FindFirstChildOfClass("ForceField")
+	if FF or not Hum or Hum.Health <= 0 or IsTeamMate(Creator.Value,Services.Players:GetPlayerFromCharacter(Hum.Parent)) or Creator.Value == Services.Players:GetPlayerFromCharacter(Hum.Parent) then return end
+	Touch:Disconnect();Touch = nil
+	UntagHumanoid(Hum)
+	TagHumanoid(Hum)
+	Hum:TakeDamage(17)
+	local function Frozen(Character) -- Quick check to see if they're not frozen
+		for _,v in pairs(Services.ServerScriptService:GetChildren()) do
+			if v:IsA("Script") and v.Name == "Freeze" and v:FindFirstChild("Target") and v:FindFirstChild("Target").Value == Hum.Parent then
+				return true
+			end
+		end
+		return false
+	end
+	if not Frozen(Hum.Parent) then
+		local FreezeScript = script:WaitForChild("Freeze"):Clone()
+		FreezeScript:WaitForChild("Creator").Value = Creator.Value
+		FreezeScript:WaitForChild("Target").Value = Hum.Parent
+		FreezeScript.Parent = Services.ServerScriptService
+		FreezeScript.Disabled = false
+	end
+	Snowflake:Destroy()
+end)
+]]></ProtectedString>
+					<BinaryString name="Tags"></BinaryString>
+				</Properties>
+				<Item class="ParticleEmitter" referent="RBX95BFB2BD17C7471DA674E255D1631901">
+					<Properties>
+						<Vector3 name="Acceleration">
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</Vector3>
+						<ColorSequence name="Color">0 0.666667 1 1 0 1 1 1 1 0 </ColorSequence>
+						<float name="Drag">0</float>
+						<token name="EmissionDirection">1</token>
+						<bool name="Enabled">false</bool>
+						<NumberRange name="Lifetime">1 1 </NumberRange>
+						<float name="LightEmission">0</float>
+						<float name="LightInfluence">0.5</float>
+						<bool name="LockedToPart">false</bool>
+						<string name="Name">Puff</string>
+						<float name="Rate">30</float>
+						<NumberRange name="RotSpeed">-50 50 </NumberRange>
+						<NumberRange name="Rotation">-180 180 </NumberRange>
+						<NumberSequence name="Size">0 1 0 1 1.0625 1.0625 </NumberSequence>
+						<NumberRange name="Speed">2 2 </NumberRange>
+						<Vector2 name="SpreadAngle">
+							<X>-180</X>
+							<Y>180</Y>
+						</Vector2>
+						<BinaryString name="Tags"></BinaryString>
+						<Content name="Texture"><url>http://www.roblox.com/asset/?id=258128463</url></Content>
+						<NumberSequence name="Transparency">0 1 0 0.2 0.5 0 0.5 0.5 0 0.645161 0.545455 0 0.741935 0.606061 0 0.829637 0.692641 0 0.892137 0.78355 0 0.950605 0.883117 0 1 1 0 </NumberSequence>
+						<float name="VelocityInheritance">0</float>
+						<float name="ZOffset">0</float>
+					</Properties>
+				</Item>
+				<Item class="Script" referent="RBX6E4C3DB25A6B45A79D23DF163F5C7D1C">
+					<Properties>
+						<bool name="Disabled">true</bool>
+						<Content name="LinkedSource"><null></null></Content>
+						<string name="Name">Freeze</string>
+						<string name="ScriptGuid">{4B2A26B8-5FD8-4858-8C0D-DA65DC3EB471}</string>
+						<ProtectedString name="Source"><![CDATA[local Target = script:WaitForChild("Target").Value
+
+local Sounds = {
+	IceCrack = script:WaitForChild("IceCrack"),
+	Shatter = script:WaitForChild("Shatter")
+}
+
+local Torso = Target:FindFirstChild("Torso") or Target:FindFirstChild("UpperTorso")
+
+if not Target then script:Destroy() end
+
+local Humanoid = Target:FindFirstChildOfClass("Humanoid")
+Humanoid:UnequipTools()
+
+local Stop = false
+coroutine.wrap(function()
+	repeat
+		Humanoid.JumpPower = 0
+		Humanoid.WalkSpeed = 0
+		game:GetService("RunService").Heartbeat:Wait()
+	until Stop
+end)()
+
+local Services = {
+	Players = (game:FindService("Players") or game:GetService("Players")),
+	Debris = (game:FindService("Debris") or game:GetService("Debris")),
+	RunService = (game:FindService("RunService") or game:GetService("RunService")),
+}
+
+function Create(ty)
+	return function(data)
+		local obj = Instance.new(ty)
+		for k, v in pairs(data) do
+			if type(k) == 'number' then
+				v.Parent = obj
+			else
+				obj[k] = v
+			end
+		end
+		return obj
+	end
+end
+
+if Services.Players:GetPlayerFromCharacter(Target) then
+	local Disable = script:WaitForChild("DisableBackpack")
+	Disable.Parent = Services.Players:GetPlayerFromCharacter(Target):WaitForChild("Backpack")
+	Disable.Disabled = false
+	Services.Debris:AddItem(Disable,1)
+	Services.Players:GetPlayerFromCharacter(Target).CharacterRemoving:Connect(function(Char)--keeps people from a hidden inventory
+		local Enable = script:WaitForChild("EnableBackpack")
+		Enable.Parent = Services.Players:GetPlayerFromCharacter(Target):WaitForChild("Backpack")
+		Enable.Disabled = false
+		Services.Debris:AddItem(Enable,1)
+	end)
+end
+
+local ice = Create("Part"){
+	Shape = "Block", 
+	Size = Vector3.new(4.2,4,6.3)*0, 
+	CanCollide = true,
+	Anchored = true,
+	Locked = true,
+	Name = "Ice Block",
+	CFrame = Torso.CFrame*CFrame.Angles(math.rad(-90),0,0), 
+	Transparency = 0.4,
+	Parent = Target,
+}
+
+local iceBlockMesh = Create("SpecialMesh"){
+	MeshId = "http://www.roblox.com/asset/?id=66876751",
+	TextureId = "http://www.roblox.com/asset/?id=66876766",
+	Scale = Vector3.new(1.0, 1.0, 1.0)*0,
+	Parent = ice,
+}
+
+Sounds.IceCrack.Parent = ice
+Sounds.IceCrack:Play()
+
+local Puff = script:WaitForChild("Puff")
+Puff.Parent = ice
+Puff.Enabled = true
+
+local FrozenParts = {}
+
+for _,parts in pairs(Target:GetChildren()) do
+	if parts:IsA("BasePart") and Humanoid:GetLimb(parts) then
+		parts.Anchored = true
+		FrozenParts[#FrozenParts+1] = parts
+	end
+end
+
+for i=1,60,1 do
+	ice.Size = (Vector3.new(4.2,4,6.3)*.1):lerp(Vector3.new(4.2,4,6.3),i/60)
+	iceBlockMesh.Scale = (Vector3.new(1.0, 1.0, 1.0)*.1):lerp(Vector3.new(1.0, 1.0, 1.0),i/60)
+	ice.CFrame = Torso.CFrame*CFrame.Angles(math.rad(-90),0,0)
+	Services.RunService.Heartbeat:Wait()
+end
+
+local Duration,Start = 5.5,tick()
+
+repeat
+	Services.RunService.Heartbeat:Wait()
+until (tick()-Start) >= Duration or Humanoid.Health <= 0
+
+Sounds.Shatter.Parent = Torso
+Sounds.Shatter:Play()
+Services.Debris:AddItem(Sounds.Shatter,Sounds.Shatter.TimeLength+1)
+
+Stop = true
+ice:Destroy()
+Humanoid.JumpPower = 50
+Humanoid.WalkSpeed = 16
+
+local Seed = Random.new(tick())
+
+for _, parts in pairs(FrozenParts) do
+	if parts then
+		parts.Anchored = false
+		local DebrisIce = Create("Part"){
+			Size = Vector3.new(Seed:NextNumber(1,2),Seed:NextNumber(1,2),Seed:NextNumber(1,2)),
+			Locked = true,
+			Anchored = false,
+			Name = "Broken Ice",
+			CFrame = parts.CFrame,
+			Transparency = 0.3,
+			Material = Enum.Material.Glass,
+			TopSurface = Enum.SurfaceType.Smooth,
+			BottomSurface = Enum.SurfaceType.Smooth,
+			Color = (Seed:NextInteger(1,3) == 1 and Color3.fromRGB(170,255,255)) or Color3.fromRGB(0,170,255),
+			Parent = workspace
+		}
+		Services.Debris:AddItem(DebrisIce,Seed:NextNumber(3,5))
+	end
+end
+
+local FrostSparkles = script:WaitForChild("FrostSparkles")
+FrostSparkles.Parent = Torso
+FrostSparkles:Emit(FrostSparkles.Rate)
+Services.Debris:AddItem(FrostSparkles,FrostSparkles.Lifetime.Max)
+
+if Services.Players:GetPlayerFromCharacter(Target) then	
+	local Enable = script:WaitForChild("EnableBackpack")
+	Enable.Parent = Services.Players:GetPlayerFromCharacter(Target):WaitForChild("Backpack")
+	Enable.Disabled = false
+	Services.Debris:AddItem(Enable,1)
+end
+
+wait(2) -- Grace period (Your're Welcome EuroC2)
+
+script:Destroy()]]></ProtectedString>
+						<BinaryString name="Tags"></BinaryString>
+					</Properties>
+					<Item class="ObjectValue" referent="RBX9868BBF2095346CD99C81B4C0ADD024D">
+						<Properties>
+							<string name="Name">Target</string>
+							<BinaryString name="Tags"></BinaryString>
+							<Ref name="Value">null</Ref>
+						</Properties>
+					</Item>
+					<Item class="LocalScript" referent="RBXA3F128145E144999A815E05C81BC20D4">
+						<Properties>
+							<bool name="Disabled">true</bool>
+							<Content name="LinkedSource"><null></null></Content>
+							<string name="Name">DisableBackpack</string>
+							<string name="ScriptGuid">{D72A7161-4DB4-48C9-AFDE-5DB624124129}</string>
+							<ProtectedString name="Source"><![CDATA[--Much efficient way to hide the backpack without causing lag
+
+local StarterGui = game:GetService("StarterGui")
+
+StarterGui:SetCoreGuiEnabled(Enum.CoreGuiType.Backpack, false)]]></ProtectedString>
+							<BinaryString name="Tags"></BinaryString>
+						</Properties>
+					</Item>
+					<Item class="LocalScript" referent="RBX45DF130855DD4C0FB2627C6252830C42">
+						<Properties>
+							<bool name="Disabled">true</bool>
+							<Content name="LinkedSource"><null></null></Content>
+							<string name="Name">EnableBackpack</string>
+							<string name="ScriptGuid">{DC1774B1-8515-4CC4-AC7A-B34E03708B96}</string>
+							<ProtectedString name="Source"><![CDATA[--Much efficient way to hide the backpack without causing lag
+
+local StarterGui = game:GetService("StarterGui")
+
+StarterGui:SetCoreGuiEnabled(Enum.CoreGuiType.Backpack, true)]]></ProtectedString>
+							<BinaryString name="Tags"></BinaryString>
+						</Properties>
+					</Item>
+					<Item class="Sound" referent="RBX30D6F9DF93C94AB38B07363EBC6ACF04">
+						<Properties>
+							<float name="EmitterSize">10</float>
+							<bool name="Looped">false</bool>
+							<string name="Name">IceCrack</string>
+							<bool name="PlayOnRemove">false</bool>
+							<float name="PlaybackSpeed">1</float>
+							<bool name="Playing">false</bool>
+							<token name="RollOffMode">0</token>
+							<Ref name="SoundGroup">null</Ref>
+							<Content name="SoundId"><url>rbxassetid://32788850</url></Content>
+							<BinaryString name="Tags"></BinaryString>
+							<double name="TimePosition">0</double>
+							<float name="Volume">1</float>
+							<float name="xmlRead_MaxDistance_3">10000</float>
+						</Properties>
+					</Item>
+					<Item class="ObjectValue" referent="RBXA6B4EC125EA043878CCBAB2E61FA82C1">
+						<Properties>
+							<string name="Name">Creator</string>
+							<BinaryString name="Tags"></BinaryString>
+							<Ref name="Value">null</Ref>
+						</Properties>
+					</Item>
+					<Item class="ParticleEmitter" referent="RBXC3D7219BD1434D5BA4160E4F5147BB25">
+						<Properties>
+							<Vector3 name="Acceleration">
+								<X>0</X>
+								<Y>0</Y>
+								<Z>0</Z>
+							</Vector3>
+							<ColorSequence name="Color">0 0.666667 1 1 0 1 1 1 1 0 </ColorSequence>
+							<float name="Drag">0</float>
+							<token name="EmissionDirection">1</token>
+							<bool name="Enabled">false</bool>
+							<NumberRange name="Lifetime">1 2 </NumberRange>
+							<float name="LightEmission">0</float>
+							<float name="LightInfluence">0.5</float>
+							<bool name="LockedToPart">false</bool>
+							<string name="Name">Puff</string>
+							<float name="Rate">10</float>
+							<NumberRange name="RotSpeed">-60 60 </NumberRange>
+							<NumberRange name="Rotation">0 0 </NumberRange>
+							<NumberSequence name="Size">0 2.75 0 1 1.9375 0.5625 </NumberSequence>
+							<NumberRange name="Speed">1 2 </NumberRange>
+							<Vector2 name="SpreadAngle">
+								<X>-180</X>
+								<Y>180</Y>
+							</Vector2>
+							<BinaryString name="Tags"></BinaryString>
+							<Content name="Texture"><url>rbxassetid://258128463</url></Content>
+							<NumberSequence name="Transparency">0 1 0 0.199597 0.493506 0 0.502016 0.493506 0 0.641129 0.52381 0 0.747984 0.549784 0 0.836694 0.623377 0 0.910282 0.709957 0 0.957661 0.800866 0 1 1 0 </NumberSequence>
+							<float name="VelocityInheritance">0.5</float>
+							<float name="ZOffset">0</float>
+						</Properties>
+					</Item>
+					<Item class="Sound" referent="RBX61CF61F2E9F747898BB7EC288D1479FC">
+						<Properties>
+							<float name="EmitterSize">10</float>
+							<bool name="Looped">false</bool>
+							<string name="Name">Shatter</string>
+							<bool name="PlayOnRemove">false</bool>
+							<float name="PlaybackSpeed">1</float>
+							<bool name="Playing">false</bool>
+							<token name="RollOffMode">0</token>
+							<Ref name="SoundGroup">null</Ref>
+							<Content name="SoundId"><url>http://www.roblox.com/Asset?ID=87015121</url></Content>
+							<BinaryString name="Tags"></BinaryString>
+							<double name="TimePosition">0</double>
+							<float name="Volume">1</float>
+							<float name="xmlRead_MaxDistance_3">10000</float>
+						</Properties>
+					</Item>
+					<Item class="ParticleEmitter" referent="RBX543EF7B6FD114367B075AC82B3A8385B">
+						<Properties>
+							<Vector3 name="Acceleration">
+								<X>0</X>
+								<Y>-10</Y>
+								<Z>0</Z>
+							</Vector3>
+							<ColorSequence name="Color">0 0.666667 1 1 0 1 0.666667 1 1 0 </ColorSequence>
+							<float name="Drag">2</float>
+							<token name="EmissionDirection">1</token>
+							<bool name="Enabled">false</bool>
+							<NumberRange name="Lifetime">1 2 </NumberRange>
+							<float name="LightEmission">1</float>
+							<float name="LightInfluence">0</float>
+							<bool name="LockedToPart">false</bool>
+							<string name="Name">FrostSparkles</string>
+							<float name="Rate">300</float>
+							<NumberRange name="RotSpeed">-200 200 </NumberRange>
+							<NumberRange name="Rotation">-180 180 </NumberRange>
+							<NumberSequence name="Size">0 0.5625 0.5625 0.05 0 0 0.104294 0.625 0.625 0.15 0 0 0.199386 0.6875 0.625 0.25 0 0 0.300613 0.6875 0.5625 0.35 0 0 0.404908 0.6875 0.5625 0.45 0 0 0.501534 0.75 0.625 0.55 0 0 0.599693 0.8125 0.6875 0.65 0 0 0.70092 0.6875 0.5625 0.75 0 0 0.800613 0.75 0.625 0.85 0 0 0.92638 0.6875 0.5 1 0 0 </NumberSequence>
+							<NumberRange name="Speed">20 40 </NumberRange>
+							<Vector2 name="SpreadAngle">
+								<X>-180</X>
+								<Y>180</Y>
+							</Vector2>
+							<BinaryString name="Tags"></BinaryString>
+							<Content name="Texture"><url>rbxassetid://298984512</url></Content>
+							<NumberSequence name="Transparency">0 0 0 1 1 0 </NumberSequence>
+							<float name="VelocityInheritance">0</float>
+							<float name="ZOffset">0</float>
+						</Properties>
+					</Item>
+				</Item>
+				<Item class="ObjectValue" referent="RBXAF38664C845C4CEAA3DC60146C1201C0">
+					<Properties>
+						<string name="Name">Creator</string>
+						<BinaryString name="Tags"></BinaryString>
+						<Ref name="Value">null</Ref>
+					</Properties>
+				</Item>
+			</Item>
+			<Item class="Script" referent="RBX6EA95F0CA37549E4A7A1DEA5DE11446E">
+				<Properties>
+					<bool name="Disabled">true</bool>
+					<Content name="LinkedSource"><null></null></Content>
+					<string name="Name">Icing</string>
+					<string name="ScriptGuid">{E5FCECE7-F423-428A-B7BF-2240C31462DC}</string>
+					<ProtectedString name="Source"><![CDATA[
+local Services = {
+	Players = (game:FindService("Players") or game:GetService("Players")),
+	TweenService = (game:FindService("TweenService") or game:GetService("TweenService")),
+	RunService = (game:FindService("RunService") or game:GetService("RunService")),
+	Debris = (game:FindService("Debris") or game:GetService("Debris")),
+	ReplicatedStorage = (game:FindService("ReplicatedStorage") or game:GetService("ReplicatedStorage")),
+	Lighting = (game:FindService("Lighting") or game:GetService("Lighting")),
+	ServerScriptService = (game:FindService("ServerScriptService") or game:GetService("ServerScriptService"))
+}
+
+function Create(ty)
+	return function(data)
+		local obj = Instance.new(ty)
+		for k, v in pairs(data) do
+			if type(k) == 'number' then
+				v.Parent = obj
+			else
+				obj[k] = v
+			end
+		end
+		return obj
+	end
+end
+
+function IsInTable(Table,Value)
+	for _,v in pairs(Table) do
+		if v == Value then
+			return true
+		end
+	end
+	return false
+end
+
+function IsTeamMate(Player1, Player2)
+	return (Player1 and Player2 and not Player1.Neutral and not Player2.Neutral and Player1.TeamColor == Player2.TeamColor)
+end
+
+function TagHumanoid(humanoid, player)
+	local Creator_Tag = Instance.new("ObjectValue")
+	Creator_Tag.Name = "creator"
+	Creator_Tag.Value = player
+	Services.Debris:AddItem(Creator_Tag, 2)
+	Creator_Tag.Parent = humanoid
+end
+
+function UntagHumanoid(humanoid)
+	for i, v in pairs(humanoid:GetChildren()) do
+		if v:IsA("ObjectValue") and v.Name == "creator" then
+			v:Destroy()
+		end
+	end
+end
+
+local Creator,Position = script:WaitForChild("Creator"),script:WaitForChild("Position").Value
+
+local IceFloor = Create("Part"){
+	Name = "Ice Floor",
+	Size = Vector3.new(0,0,0),
+	Material = Enum.Material.Neon,
+	Transparency = 0.95,
+	TopSurface = Enum.SurfaceType.Smooth,
+	BottomSurface = Enum.SurfaceType.Smooth,
+	Color = Color3.fromRGB(0,170,255),
+	Locked = true,
+	CanCollide = false,
+	Anchored = true,
+	Shape = Enum.PartType.Block,
+	CFrame = CFrame.new(Position),
+	Parent = workspace
+}
+
+local IcePlatform = Create("Part"){
+	Name = "Ice Platform",
+	Size = Vector3.new(0,0,0),
+	Material = Enum.Material.Glass,
+	Transparency = .3,
+	TopSurface = Enum.SurfaceType.Smooth,
+	BottomSurface = Enum.SurfaceType.Smooth,
+	Color = Color3.fromRGB(0,170,255),
+	Locked = true,
+	CanCollide = true,
+	Anchored = true,
+	Shape = Enum.PartType.Cylinder,
+	CFrame = CFrame.new(Position),
+	Parent = workspace
+}
+
+local Puff = script:WaitForChild("Puff")
+Puff.Parent = IceFloor
+Puff.Enabled = true
+
+local Snowflakes = script:WaitForChild("Snowflakes")
+Snowflakes.Parent = IceFloor
+Snowflakes.Enabled = true
+
+local Frost = script:WaitForChild("FreezeSound")
+Frost.Parent = IceFloor
+Frost:Play()
+
+local Speed = 3 -- time approximated in seconds to complete
+local Range = 75 --How far the range of the ice floor will go
+
+
+local Touch,TouchEnd
+
+local RecHumanoids = {} --Records the Humanoid and their time in the frost
+--{Humanoid = nil,TimeInFrost = 0}
+local function GetHumanoidTime(Table,Hum)
+	local Found
+	for _,HumTable in pairs(Table) do
+		if HumTable["Humanoid"] and HumTable["TimeInFrost"] and HumTable["Humanoid"] == Hum then
+			Found = HumTable
+		end
+	end
+	
+	if Found then
+		Found["TimeInFrost"] = Found["TimeInFrost"] + (1/60)
+		return Found["TimeInFrost"]
+	else
+		Table[#Table+1] = {Humanoid = Hum,TimeInFrost = 0}
+		return 0
+	end
+end
+
+
+
+coroutine.wrap(function()
+	repeat
+		local Hums = {}
+		local Pos,Neg = IceFloor.CFrame.p + Vector3.new(IceFloor.Size.Z,IceFloor.Size.X,IceFloor.Size.Z)*.5 + Vector3.new(0,IceFloor.Size.X*.5,0), IceFloor.CFrame.p - Vector3.new(IceFloor.Size.Z,IceFloor.Size.X,IceFloor.Size.Z)*.5 - Vector3.new(0,IceFloor.Size.X*.5,0)
+		local Region = Region3.new(Neg,Pos)
+		local Parts = workspace:FindPartsInRegion3WithIgnoreList(Region,{Creator.Value.Character},math.huge)
+		
+		for _,part in pairs(Parts) do
+			
+			if part and part.Parent then
+				local Hum,FF = part.Parent:FindFirstChildOfClass("Humanoid"),part.Parent:FindFirstChildOfClass("ForceField")
+				if Hum and not IsInTable(Hums,Hum) and Hum.Health ~= 0 and not FF and not IsTeamMate(Creator.Value,Services.Players:GetPlayerFromCharacter(Hum.Parent)) then
+					Hums[#Hums+1] = Hum
+					Hum:TakeDamage((20/60))
+					Hum.WalkSpeed = math.clamp(Hum.WalkSpeed - (16/(60*2)),0,16) -- Progressive Slowdown
+					if Hum.Health <= 0 or GetHumanoidTime(RecHumanoids,Hum) >= 2 then --Freeze them when they have no walkspeed or health left
+						local function Frozen(Character) -- Quick check to see if they're not frozen
+							for _,v in pairs(Services.ServerScriptService:GetChildren()) do
+								if v:IsA("Script") and v.Name == "Freeze" and v:FindFirstChild("Target") and v:FindFirstChild("Target").Value == Hum.Parent then
+									return true
+								end
+							end
+							return false
+						end
+						if not Frozen(Hum.Parent) then
+							local FreezeScript = script:WaitForChild("Freeze"):Clone()
+							FreezeScript:WaitForChild("Creator").Value = Creator.Value
+							FreezeScript:WaitForChild("Target").Value = Hum.Parent
+							FreezeScript.Parent = Services.ServerScriptService
+							FreezeScript.Disabled = false
+							Hum.Parent:BreakJoints()
+						end
+					end
+					
+					UntagHumanoid(Hum)
+					TagHumanoid(Hum,Creator.Value)
+				end
+			end				
+		end
+		Services.RunService.Heartbeat:Wait()
+	until not Puff.Enabled
+end)()
+
+
+for i=1,60*(Speed),1 do
+	IcePlatform.Size = Vector3.new(2,(i/(60*Speed))*Range,(i/(60*Speed))*Range)
+	IcePlatform.CFrame = CFrame.new(Position-Vector3.new(0,IceFloor.Size.X,0))*CFrame.Angles(0,0,math.rad(90))
+	
+	IceFloor.Size = Vector3.new(5,(i/(60*Speed))*Range,(i/(60*Speed))*Range)
+	IceFloor.CFrame = CFrame.new(Position+Vector3.new(0,IceFloor.Size.X/2,0))*CFrame.Angles(0,0,math.rad(90))
+	Frost.EmitterSize = (i/(60*Speed))*Range
+	Services.RunService.Heartbeat:Wait()
+end
+
+wait(8)
+
+IceFloor.Transparency = 1
+Puff.Enabled = false
+Snowflakes.Enabled = false
+
+wait(Puff.Lifetime.Max)
+Frost:Stop()
+
+while IcePlatform.Size.Z > 1 do
+	IcePlatform.Size = IcePlatform.Size - Vector3.new(0,.5,.5)
+	IcePlatform.CFrame = CFrame.new(Position-Vector3.new(0,IceFloor.Size.X,0))*CFrame.Angles(0,0,math.rad(90))
+	Services.RunService.Heartbeat:Wait()
+end
+
+IcePlatform:Destroy()
+IceFloor:Destroy()
+
+script:Destroy()]]></ProtectedString>
+					<BinaryString name="Tags"></BinaryString>
+				</Properties>
+				<Item class="Script" referent="RBX0888F495D47E4A17914466CE38AD7F63">
+					<Properties>
+						<bool name="Disabled">true</bool>
+						<Content name="LinkedSource"><null></null></Content>
+						<string name="Name">Freeze</string>
+						<string name="ScriptGuid">{B392B88D-CAA7-4F63-BEAB-DECFA3EEA989}</string>
+						<ProtectedString name="Source"><![CDATA[local Target = script:WaitForChild("Target").Value
+
+local Sounds = {
+	IceCrack = script:WaitForChild("IceCrack"),
+	Shatter = script:WaitForChild("Shatter")
+}
+
+local Torso = Target:FindFirstChild("Torso") or Target:FindFirstChild("UpperTorso")
+
+if not Target then script:Destroy() end
+
+local Humanoid = Target:FindFirstChildOfClass("Humanoid")
+Humanoid:UnequipTools()
+
+local Stop = false
+coroutine.wrap(function()
+	repeat
+		Humanoid.JumpPower = 0
+		Humanoid.WalkSpeed = 0
+		game:GetService("RunService").Heartbeat:Wait()
+	until Stop
+end)()
+
+local Services = {
+	Players = (game:FindService("Players") or game:GetService("Players")),
+	Debris = (game:FindService("Debris") or game:GetService("Debris")),
+	RunService = (game:FindService("RunService") or game:GetService("RunService")),
+}
+
+function Create(ty)
+	return function(data)
+		local obj = Instance.new(ty)
+		for k, v in pairs(data) do
+			if type(k) == 'number' then
+				v.Parent = obj
+			else
+				obj[k] = v
+			end
+		end
+		return obj
+	end
+end
+
+if Services.Players:GetPlayerFromCharacter(Target) then
+	local Disable = script:WaitForChild("DisableBackpack")
+	Disable.Parent = Services.Players:GetPlayerFromCharacter(Target):WaitForChild("Backpack")
+	Disable.Disabled = false
+	Services.Debris:AddItem(Disable,1)
+	Services.Players:GetPlayerFromCharacter(Target).CharacterRemoving:Connect(function(Char)--keeps people from a hidden inventory
+		local Enable = script:WaitForChild("EnableBackpack")
+		Enable.Parent = Services.Players:GetPlayerFromCharacter(Target):WaitForChild("Backpack")
+		Enable.Disabled = false
+		Services.Debris:AddItem(Enable,1)
+	end)
+end
+
+
+
+local ice = Create("Part"){
+	Shape = "Block", 
+	Size = Vector3.new(4.2,4,6.3)*0, 
+	CanCollide = true,
+	Anchored = true,
+	Locked = true,
+	Name = "Ice Block",
+	CFrame = Torso.CFrame*CFrame.Angles(math.rad(-90),0,0), 
+	Transparency = 0.4,
+	Parent = Target,
+}
+
+local iceBlockMesh = Create("SpecialMesh"){
+	MeshId = "http://www.roblox.com/asset/?id=66876751",
+	TextureId = "http://www.roblox.com/asset/?id=66876766",
+	Scale = Vector3.new(1.0, 1.0, 1.0)*0,
+	Parent = ice,
+}
+
+Sounds.IceCrack.Parent = ice
+Sounds.IceCrack:Play()
+
+local Puff = script:WaitForChild("Puff")
+Puff.Parent = ice
+Puff.Enabled = true
+
+local FrozenParts = {}
+
+for _,parts in pairs(Target:GetChildren()) do
+	if parts:IsA("BasePart") and Humanoid:GetLimb(parts) then
+		parts.Anchored = true
+		FrozenParts[#FrozenParts+1] = parts
+	end
+end
+
+for i=1,60,1 do
+	ice.Size = (Vector3.new(4.2,4,6.3)*.1):lerp(Vector3.new(4.2,4,6.3),i/60)
+	iceBlockMesh.Scale = (Vector3.new(1.0, 1.0, 1.0)*.1):lerp(Vector3.new(1.0, 1.0, 1.0),i/60)
+	ice.CFrame = Torso.CFrame*CFrame.Angles(math.rad(-90),0,0)
+	Services.RunService.Heartbeat:Wait()
+end
+
+local Duration,Start = 5.5,tick()
+
+repeat
+	Services.RunService.Heartbeat:Wait()
+until (tick()-Start) >= Duration or Humanoid.Health <= 0
+
+Sounds.Shatter.Parent = Torso
+Sounds.Shatter:Play()
+Services.Debris:AddItem(Sounds.Shatter,Sounds.Shatter.TimeLength+1)
+
+Stop = true
+
+wait(2)
+
+Humanoid.JumpPower = 50
+Humanoid.WalkSpeed = 16
+
+if Services.Players:GetPlayerFromCharacter(Target) then	
+	local Enable = script:WaitForChild("EnableBackpack")
+	Enable.Parent = Services.Players:GetPlayerFromCharacter(Target):WaitForChild("Backpack")
+	Enable.Disabled = false
+	Services.Debris:AddItem(Enable,1)
+end
+
+local Seed = Random.new(tick())
+
+for _, parts in pairs(FrozenParts) do
+	if parts then
+		parts.Anchored = false
+		local DebrisIce = Create("Part"){
+			Size = Vector3.new(Seed:NextNumber(1,2),Seed:NextNumber(1,2),Seed:NextNumber(1,2)),
+			Locked = true,
+			Anchored = false,
+			Name = "Broken Ice",
+			CFrame = parts.CFrame,
+			Transparency = 0.3,
+			Material = Enum.Material.Glass,
+			TopSurface = Enum.SurfaceType.Smooth,
+			BottomSurface = Enum.SurfaceType.Smooth,
+			Color = (Seed:NextInteger(1,3) == 1 and Color3.fromRGB(170,255,255)) or Color3.fromRGB(0,170,255),
+			Parent = workspace
+		}
+		Services.Debris:AddItem(DebrisIce,Seed:NextNumber(3,5))
+	end
+end
+
+local FrostSparkles = script:WaitForChild("FrostSparkles")
+FrostSparkles.Parent = Torso
+FrostSparkles:Emit(FrostSparkles.Rate)
+Services.Debris:AddItem(FrostSparkles,FrostSparkles.Lifetime.Max)
+
+
+
+ice:Destroy()
+script:Destroy()]]></ProtectedString>
+						<BinaryString name="Tags"></BinaryString>
+					</Properties>
+					<Item class="ObjectValue" referent="RBXCDCCE1D4FA4745B7A9E33D527C81139A">
+						<Properties>
+							<string name="Name">Target</string>
+							<BinaryString name="Tags"></BinaryString>
+							<Ref name="Value">null</Ref>
+						</Properties>
+					</Item>
+					<Item class="LocalScript" referent="RBX8152940A568D44D3AD871771EA01AB9D">
+						<Properties>
+							<bool name="Disabled">true</bool>
+							<Content name="LinkedSource"><null></null></Content>
+							<string name="Name">DisableBackpack</string>
+							<string name="ScriptGuid">{A21930FB-CCDA-48BB-8037-CF6F35D167D3}</string>
+							<ProtectedString name="Source"><![CDATA[--Much efficient way to hide the backpack without causing lag
+
+local StarterGui = game:GetService("StarterGui")
+
+StarterGui:SetCoreGuiEnabled(Enum.CoreGuiType.Backpack, false)]]></ProtectedString>
+							<BinaryString name="Tags"></BinaryString>
+						</Properties>
+					</Item>
+					<Item class="LocalScript" referent="RBX66D3F16976D649ADB22ADA746A69DD4E">
+						<Properties>
+							<bool name="Disabled">true</bool>
+							<Content name="LinkedSource"><null></null></Content>
+							<string name="Name">EnableBackpack</string>
+							<string name="ScriptGuid">{BC833ADF-96D4-496C-B677-9F2D77AD270C}</string>
+							<ProtectedString name="Source"><![CDATA[--Much efficient way to hide the backpack without causing lag
+
+local StarterGui = game:GetService("StarterGui")
+
+StarterGui:SetCoreGuiEnabled(Enum.CoreGuiType.Backpack, true)]]></ProtectedString>
+							<BinaryString name="Tags"></BinaryString>
+						</Properties>
+					</Item>
+					<Item class="Sound" referent="RBX2A8482664962488CBA01EE8024F3FBDB">
+						<Properties>
+							<float name="EmitterSize">10</float>
+							<bool name="Looped">false</bool>
+							<string name="Name">IceCrack</string>
+							<bool name="PlayOnRemove">false</bool>
+							<float name="PlaybackSpeed">1</float>
+							<bool name="Playing">false</bool>
+							<token name="RollOffMode">0</token>
+							<Ref name="SoundGroup">null</Ref>
+							<Content name="SoundId"><url>rbxassetid://32788850</url></Content>
+							<BinaryString name="Tags"></BinaryString>
+							<double name="TimePosition">0</double>
+							<float name="Volume">1</float>
+							<float name="xmlRead_MaxDistance_3">10000</float>
+						</Properties>
+					</Item>
+					<Item class="ObjectValue" referent="RBXFFB21C7F03C14796A2F4D5633FC36759">
+						<Properties>
+							<string name="Name">Creator</string>
+							<BinaryString name="Tags"></BinaryString>
+							<Ref name="Value">null</Ref>
+						</Properties>
+					</Item>
+					<Item class="ParticleEmitter" referent="RBX49267A05465846D283FF5169B1CE3F94">
+						<Properties>
+							<Vector3 name="Acceleration">
+								<X>0</X>
+								<Y>0</Y>
+								<Z>0</Z>
+							</Vector3>
+							<ColorSequence name="Color">0 0.666667 1 1 0 1 1 1 1 0 </ColorSequence>
+							<float name="Drag">0</float>
+							<token name="EmissionDirection">1</token>
+							<bool name="Enabled">false</bool>
+							<NumberRange name="Lifetime">1 2 </NumberRange>
+							<float name="LightEmission">0</float>
+							<float name="LightInfluence">0.5</float>
+							<bool name="LockedToPart">false</bool>
+							<string name="Name">Puff</string>
+							<float name="Rate">10</float>
+							<NumberRange name="RotSpeed">-60 60 </NumberRange>
+							<NumberRange name="Rotation">0 0 </NumberRange>
+							<NumberSequence name="Size">0 2.75 0 1 1.9375 0.5625 </NumberSequence>
+							<NumberRange name="Speed">1 2 </NumberRange>
+							<Vector2 name="SpreadAngle">
+								<X>-180</X>
+								<Y>180</Y>
+							</Vector2>
+							<BinaryString name="Tags"></BinaryString>
+							<Content name="Texture"><url>rbxassetid://258128463</url></Content>
+							<NumberSequence name="Transparency">0 1 0 0.199597 0.493506 0 0.502016 0.493506 0 0.641129 0.52381 0 0.747984 0.549784 0 0.836694 0.623377 0 0.910282 0.709957 0 0.957661 0.800866 0 1 1 0 </NumberSequence>
+							<float name="VelocityInheritance">0.5</float>
+							<float name="ZOffset">0</float>
+						</Properties>
+					</Item>
+					<Item class="Sound" referent="RBX6C03F01E8E9E4F1DAD4AB44A68E77243">
+						<Properties>
+							<float name="EmitterSize">10</float>
+							<bool name="Looped">false</bool>
+							<string name="Name">Shatter</string>
+							<bool name="PlayOnRemove">false</bool>
+							<float name="PlaybackSpeed">1</float>
+							<bool name="Playing">false</bool>
+							<token name="RollOffMode">0</token>
+							<Ref name="SoundGroup">null</Ref>
+							<Content name="SoundId"><url>http://www.roblox.com/Asset?ID=87015121</url></Content>
+							<BinaryString name="Tags"></BinaryString>
+							<double name="TimePosition">0</double>
+							<float name="Volume">1</float>
+							<float name="xmlRead_MaxDistance_3">10000</float>
+						</Properties>
+					</Item>
+					<Item class="ParticleEmitter" referent="RBX757A1E80E6234CEFACF3CF162E35AF1E">
+						<Properties>
+							<Vector3 name="Acceleration">
+								<X>0</X>
+								<Y>-10</Y>
+								<Z>0</Z>
+							</Vector3>
+							<ColorSequence name="Color">0 0.666667 1 1 0 1 0.666667 1 1 0 </ColorSequence>
+							<float name="Drag">2</float>
+							<token name="EmissionDirection">1</token>
+							<bool name="Enabled">false</bool>
+							<NumberRange name="Lifetime">1 2 </NumberRange>
+							<float name="LightEmission">1</float>
+							<float name="LightInfluence">0</float>
+							<bool name="LockedToPart">false</bool>
+							<string name="Name">FrostSparkles</string>
+							<float name="Rate">300</float>
+							<NumberRange name="RotSpeed">-200 200 </NumberRange>
+							<NumberRange name="Rotation">-180 180 </NumberRange>
+							<NumberSequence name="Size">0 0.5625 0.5625 0.05 0 0 0.104294 0.625 0.625 0.15 0 0 0.199386 0.6875 0.625 0.25 0 0 0.300613 0.6875 0.5625 0.35 0 0 0.404908 0.6875 0.5625 0.45 0 0 0.501534 0.75 0.625 0.55 0 0 0.599693 0.8125 0.6875 0.65 0 0 0.70092 0.6875 0.5625 0.75 0 0 0.800613 0.75 0.625 0.85 0 0 0.92638 0.6875 0.5 1 0 0 </NumberSequence>
+							<NumberRange name="Speed">20 40 </NumberRange>
+							<Vector2 name="SpreadAngle">
+								<X>-180</X>
+								<Y>180</Y>
+							</Vector2>
+							<BinaryString name="Tags"></BinaryString>
+							<Content name="Texture"><url>rbxassetid://298984512</url></Content>
+							<NumberSequence name="Transparency">0 0 0 1 1 0 </NumberSequence>
+							<float name="VelocityInheritance">0</float>
+							<float name="ZOffset">0</float>
+						</Properties>
+					</Item>
+				</Item>
+				<Item class="ObjectValue" referent="RBX12A5DA32D45A4CEFB198F02289762337">
+					<Properties>
+						<string name="Name">Creator</string>
+						<BinaryString name="Tags"></BinaryString>
+						<Ref name="Value">null</Ref>
+					</Properties>
+				</Item>
+				<Item class="Vector3Value" referent="RBXF0353973F7724C49A300490FB40CF442">
+					<Properties>
+						<string name="Name">Position</string>
+						<BinaryString name="Tags"></BinaryString>
+						<Vector3 name="Value">
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</Vector3>
+					</Properties>
+				</Item>
+				<Item class="Sound" referent="RBX01ECBD663D804B96B4CC6562E9E785EC">
+					<Properties>
+						<float name="EmitterSize">10</float>
+						<bool name="Looped">false</bool>
+						<string name="Name">FreezeSound</string>
+						<bool name="PlayOnRemove">false</bool>
+						<float name="PlaybackSpeed">1</float>
+						<bool name="Playing">false</bool>
+						<token name="RollOffMode">0</token>
+						<Ref name="SoundGroup">null</Ref>
+						<Content name="SoundId"><url>http://www.roblox.com/Asset?ID=87014838</url></Content>
+						<BinaryString name="Tags"></BinaryString>
+						<double name="TimePosition">0</double>
+						<float name="Volume">0.300000012</float>
+						<float name="xmlRead_MaxDistance_3">10000</float>
+					</Properties>
+				</Item>
+				<Item class="ParticleEmitter" referent="RBX5F354A84E7754DBA8F72B59CA7755520">
+					<Properties>
+						<Vector3 name="Acceleration">
+							<X>0</X>
+							<Y>-2</Y>
+							<Z>0</Z>
+						</Vector3>
+						<ColorSequence name="Color">0 0.666667 1 1 0 1 1 1 1 0 </ColorSequence>
+						<float name="Drag">0</float>
+						<token name="EmissionDirection">1</token>
+						<bool name="Enabled">false</bool>
+						<NumberRange name="Lifetime">4 4 </NumberRange>
+						<float name="LightEmission">0</float>
+						<float name="LightInfluence">0</float>
+						<bool name="LockedToPart">false</bool>
+						<string name="Name">Snowflakes</string>
+						<float name="Rate">20</float>
+						<NumberRange name="RotSpeed">-200 200 </NumberRange>
+						<NumberRange name="Rotation">-180 180 </NumberRange>
+						<NumberSequence name="Size">0 2.75 1.525 1 0 0 </NumberSequence>
+						<NumberRange name="Speed">2 5 </NumberRange>
+						<Vector2 name="SpreadAngle">
+							<X>-180</X>
+							<Y>180</Y>
+						</Vector2>
+						<BinaryString name="Tags"></BinaryString>
+						<Content name="Texture"><url>http://www.roblox.com/asset/?id=242837894</url></Content>
+						<NumberSequence name="Transparency">0 1 0 0.1 0 0 0.892768 0 0 1 1 0 </NumberSequence>
+						<float name="VelocityInheritance">0</float>
+						<float name="ZOffset">0</float>
+					</Properties>
+				</Item>
+				<Item class="ParticleEmitter" referent="RBX07DD1F6C180D4DE9B3E773D6300C6CB6">
+					<Properties>
+						<Vector3 name="Acceleration">
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</Vector3>
+						<ColorSequence name="Color">0 0.666667 1 1 0 1 1 1 1 0 </ColorSequence>
+						<float name="Drag">0</float>
+						<token name="EmissionDirection">1</token>
+						<bool name="Enabled">false</bool>
+						<NumberRange name="Lifetime">4 6 </NumberRange>
+						<float name="LightEmission">0</float>
+						<float name="LightInfluence">0.5</float>
+						<bool name="LockedToPart">false</bool>
+						<string name="Name">Puff</string>
+						<float name="Rate">100</float>
+						<NumberRange name="RotSpeed">-100 100 </NumberRange>
+						<NumberRange name="Rotation">-180 180 </NumberRange>
+						<NumberSequence name="Size">0 6.9375 0 1 9.125 0.875 </NumberSequence>
+						<NumberRange name="Speed">2 2 </NumberRange>
+						<Vector2 name="SpreadAngle">
+							<X>-180</X>
+							<Y>180</Y>
+						</Vector2>
+						<BinaryString name="Tags"></BinaryString>
+						<Content name="Texture"><url>http://www.roblox.com/asset/?id=258128463</url></Content>
+						<NumberSequence name="Transparency">0 1 0 0.1 0.5 0 0.5 0.5 0 0.645161 0.545455 0 0.741935 0.606061 0 0.829637 0.692641 0 0.892137 0.78355 0 0.950605 0.883117 0 1 1 0 </NumberSequence>
+						<float name="VelocityInheritance">0</float>
+						<float name="ZOffset">0</float>
+					</Properties>
+				</Item>
+			</Item>
+		</Item>
+		<Item class="RemoteFunction" referent="RBX9B22092DBA024A0BB9BE4B9D5BAB251A">
+			<Properties>
+				<string name="Name">MouseLoc</string>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+		</Item>
+		<Item class="Camera" referent="RBXCED4799EF8B54433922631E73BEFD699">
+			<Properties>
+				<CoordinateFrame name="CFrame">
+					<X>-14.3625507</X>
+					<Y>4.75552177</Y>
+					<Z>-16.6693916</Z>
+					<R00>-0.999352217</R00>
+					<R01>0.000187371261</R01>
+					<R02>0.0359868892</R02>
+					<R10>1.45519135e-11</R10>
+					<R11>0.99998647</R11>
+					<R12>-0.00520658307</R12>
+					<R20>-0.0359873734</R20>
+					<R21>-0.00520321028</R21>
+					<R22>-0.999338746</R22>
+				</CoordinateFrame>
+				<Ref name="CameraSubject">null</Ref>
+				<token name="CameraType">0</token>
+				<float name="FieldOfView">10</float>
+				<CoordinateFrame name="Focus">
+					<X>-14.4345245</X>
+					<Y>4.76593494</Y>
+					<Z>-14.6707134</Z>
+					<R00>1</R00>
+					<R01>0</R01>
+					<R02>0</R02>
+					<R10>0</R10>
+					<R11>1</R11>
+					<R12>0</R12>
+					<R20>0</R20>
+					<R21>0</R21>
+					<R22>1</R22>
+				</CoordinateFrame>
+				<bool name="HeadLocked">true</bool>
+				<float name="HeadScale">1</float>
+				<string name="Name">ThumbnailCamera</string>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+		</Item>
+		<Item class="LocalScript" referent="RBXC56865E4F3C943978B2F3A500D693355">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">MouseIcon</string>
+				<string name="ScriptGuid">{C0699BC8-B6D7-46D9-B70E-15A317F5B8A9}</string>
+				<ProtectedString name="Source"><![CDATA[local MOUSE_ICON = 'rbxasset://textures/GunCursor.png'
+local RELOADING_ICON = 'rbxasset://textures/GunWaitCursor.png'
+
+local Tool = script.Parent
+
+local Mouse = nil
+
+local function UpdateIcon()
+	if Mouse then
+		Mouse.Icon = Tool.Enabled and MOUSE_ICON or RELOADING_ICON
+	end
+end
+
+local function OnEquipped(mouse)
+	Mouse = mouse
+	UpdateIcon()
+end
+
+local function OnChanged(property)
+	if property == 'Enabled' then
+		UpdateIcon()
+	end
+end
+
+Tool.Equipped:Connect(OnEquipped)
+Tool.Changed:Connect(OnChanged)
+]]></ProtectedString>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+		</Item>
+		<Item class="LocalScript" referent="RBXA7A8C3F698964FB6ABA13D5EC34C6C8E">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">Client</string>
+				<string name="ScriptGuid">{81FF3E62-B0D2-46B6-B9BF-E057703836E0}</string>
+				<ProtectedString name="Source"><![CDATA[local Tool = script.Parent
+
+local Remote = Tool:WaitForChild("Remote",10)
+
+local MouseInput = Tool:WaitForChild("MouseLoc",10)
+
+local Services = {
+	Players = (game:FindService("Players") or game:GetService("Players")),
+	RunService = (game:FindService("RunService") or game:GetService("RunService")),
+	Input = (game:FindService("ContextActionService") or game:GetService("ContextActionService"))
+}
+
+local Player,Character,Humanoid
+
+
+function FrostPrimary(actionName, inputState, inputObj)
+	if inputState == Enum.UserInputState.Begin then 
+		Remote:FireServer(Enum.KeyCode.Q)
+	end
+end
+
+function Equipped()
+	Player = Services.Players.LocalPlayer
+	Character = Player.Character
+	Humanoid = Character:FindFirstChildOfClass("Humanoid")
+	if not Humanoid or not Humanoid.Parent or Humanoid.Health <= 0 then return end
+	
+	Services.Input:BindAction("PeriPrimary",FrostPrimary,true,Enum.KeyCode.Q,Enum.KeyCode.ButtonY)
+	Services.Input:SetTitle("PeriPrimary","Ice Sheet")
+	Services.Input:SetPosition("PeriPrimary",UDim2.new(.5,0,-.5,0))
+end
+
+function Unequipped()
+	Services.Input:UnbindAction("PeriPrimary")		
+end
+
+Tool.Equipped:Connect(Equipped)
+Tool.Unequipped:Connect(Unequipped)
+
+
+function MouseInput.OnClientInvoke()
+	return game.Players.LocalPlayer:GetMouse().Hit.p
+end]]></ProtectedString>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+		</Item>
+		<Item class="CFrameValue" referent="RBXC01C89473D1043B4ABE9B7403AF51B5B">
+			<Properties>
+				<string name="Name">Out</string>
+				<BinaryString name="Tags"></BinaryString>
+				<CoordinateFrame name="Value">
+					<X>0</X>
+					<Y>0.100000232</Y>
+					<Z>-1.0660255</Z>
+					<R00>1</R00>
+					<R01>0</R01>
+					<R02>0</R02>
+					<R10>0</R10>
+					<R11>-0.500000179</R11>
+					<R12>-0.866025329</R12>
+					<R20>0</R20>
+					<R21>0.866025329</R21>
+					<R22>-0.500000179</R22>
+				</CoordinateFrame>
+			</Properties>
+		</Item>
+		<Item class="CFrameValue" referent="RBX1E7D2BA5DDC0499DBC1346C03840168A">
+			<Properties>
+				<string name="Name">In</string>
+				<BinaryString name="Tags"></BinaryString>
+				<CoordinateFrame name="Value">
+					<X>-0</X>
+					<Y>0</Y>
+					<Z>-1</Z>
+					<R00>1</R00>
+					<R01>0</R01>
+					<R02>0</R02>
+					<R10>0</R10>
+					<R11>0</R11>
+					<R12>-1</R12>
+					<R20>0</R20>
+					<R21>1</R21>
+					<R22>0</R22>
+				</CoordinateFrame>
+			</Properties>
+		</Item>
+		<Item class="RemoteEvent" referent="RBX07CC727BC0ED444DB1C642EDE1BD6216">
+			<Properties>
+				<string name="Name">Remote</string>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+		</Item>
+		<Item class="Animation" referent="RBX76C034ED4FD7410D9DD76CD8334B781C">
+			<Properties>
+				<Content name="AnimationId"><url>rbxassetid://59088963</url></Content>
+				<string name="Name">ThudR6</string>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+		</Item>
+		<Item class="Animation" referent="RBX143BE69E4425496FACAB5ABD6E9C11F4">
+			<Properties>
+				<Content name="AnimationId"><url>rbxassetid://2792575424</url></Content>
+				<string name="Name">ThudR15</string>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+		</Item>
+		<Item class="Keyframe" referent="RBX391F1446308543038CFC77BD126C3389">
+			<Properties>
+				<string name="Name">ThumbnailPose</string>
+				<BinaryString name="Tags"></BinaryString>
+				<float name="Time">0</float>
+			</Properties>
+			<Item class="Pose" referent="RBX7EC8EF624F3A4F618D5376138C6F59DC">
+				<Properties>
+					<CoordinateFrame name="CFrame">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+						<R00>1</R00>
+						<R01>0</R01>
+						<R02>0</R02>
+						<R10>0</R10>
+						<R11>1</R11>
+						<R12>0</R12>
+						<R20>0</R20>
+						<R21>0</R21>
+						<R22>1</R22>
+					</CoordinateFrame>
+					<token name="EasingDirection">1</token>
+					<token name="EasingStyle">0</token>
+					<string name="Name">UpperTorso</string>
+					<BinaryString name="Tags"></BinaryString>
+					<float name="Weight">0</float>
+				</Properties>
+				<Item class="Pose" referent="RBXDB1C18D7340144B7A851EFA838634D25">
+					<Properties>
+						<CoordinateFrame name="CFrame">
+							<X>0</X>
+							<Y>-6.70552254e-08</Y>
+							<Z>-5.96046448e-08</Z>
+							<R00>1</R00>
+							<R01>0</R01>
+							<R02>0</R02>
+							<R10>0</R10>
+							<R11>0.173648193</R11>
+							<R12>-0.98480773</R12>
+							<R20>0</R20>
+							<R21>0.98480773</R21>
+							<R22>0.173648193</R22>
+						</CoordinateFrame>
+						<token name="EasingDirection">1</token>
+						<token name="EasingStyle">0</token>
+						<string name="Name">RightUpperArm</string>
+						<BinaryString name="Tags"></BinaryString>
+						<float name="Weight">1</float>
+					</Properties>
+					<Item class="Pose" referent="RBXCEBBD9F532494B94967C273DF4373447">
+						<Properties>
+							<CoordinateFrame name="CFrame">
+								<X>0</X>
+								<Y>-1.49011612e-08</Y>
+								<Z>3.7252903e-09</Z>
+								<R00>1</R00>
+								<R01>0</R01>
+								<R02>0</R02>
+								<R10>0</R10>
+								<R11>0.98480773</R11>
+								<R12>-0.173648179</R12>
+								<R20>0</R20>
+								<R21>0.173648179</R21>
+								<R22>0.98480773</R22>
+							</CoordinateFrame>
+							<token name="EasingDirection">1</token>
+							<token name="EasingStyle">0</token>
+							<string name="Name">RightLowerArm</string>
+							<BinaryString name="Tags"></BinaryString>
+							<float name="Weight">1</float>
+						</Properties>
+						<Item class="Pose" referent="RBX9247C953EE1E49D7B2D04576D3AB18A0">
+							<Properties>
+								<CoordinateFrame name="CFrame">
+									<X>0</X>
+									<Y>0</Y>
+									<Z>0</Z>
+									<R00>1</R00>
+									<R01>0</R01>
+									<R02>0</R02>
+									<R10>0</R10>
+									<R11>1</R11>
+									<R12>0</R12>
+									<R20>0</R20>
+									<R21>0</R21>
+									<R22>1</R22>
+								</CoordinateFrame>
+								<token name="EasingDirection">1</token>
+								<token name="EasingStyle">0</token>
+								<string name="Name">RightHand</string>
+								<BinaryString name="Tags"></BinaryString>
+								<float name="Weight">1</float>
+							</Properties>
+						</Item>
+					</Item>
+				</Item>
+			</Item>
+		</Item>
+	</Item>
+</roblox>

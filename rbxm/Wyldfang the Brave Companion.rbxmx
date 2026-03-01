@@ -1,0 +1,706 @@
+<roblox xmlns:xmime="http://www.w3.org/2005/05/xmlmime" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.roblox.com/roblox.xsd" version="4">
+	<External>null</External>
+	<External>nil</External>
+	<Item class="Tool" referent="RBX170312ABD7A7490C88AD8FB75FE572C9">
+		<Properties>
+			<bool name="CanBeDropped">true</bool>
+			<bool name="Enabled">true</bool>
+			<CoordinateFrame name="Grip">
+				<X>6</X>
+				<Y>1.49999976</Y>
+				<Z>-2</Z>
+				<R00>1</R00>
+				<R01>4.37113883e-08</R01>
+				<R02>0</R02>
+				<R10>-4.37113883e-08</R10>
+				<R11>1</R11>
+				<R12>0</R12>
+				<R20>0</R20>
+				<R21>0</R21>
+				<R22>1</R22>
+			</CoordinateFrame>
+			<bool name="ManualActivationOnly">false</bool>
+			<string name="Name">WolfCompanion</string>
+			<bool name="RequiresHandle">true</bool>
+			<BinaryString name="Tags"></BinaryString>
+			<Content name="TextureId"><url>rbxassetid://1920474974</url></Content>
+			<string name="ToolTip"></string>
+		</Properties>
+		<Item class="Part" referent="RBX32B088005D5D42ABBA2D882D9322C389">
+			<Properties>
+				<bool name="Anchored">false</bool>
+				<float name="BackParamA">-0.5</float>
+				<float name="BackParamB">0.5</float>
+				<token name="BackSurface">0</token>
+				<token name="BackSurfaceInput">0</token>
+				<float name="BottomParamA">-0.5</float>
+				<float name="BottomParamB">0.5</float>
+				<token name="BottomSurface">0</token>
+				<token name="BottomSurfaceInput">0</token>
+				<CoordinateFrame name="CFrame">
+					<X>-0.212051004</X>
+					<Y>18.1003571</Y>
+					<Z>18.4534092</Z>
+					<R00>0.982333124</R00>
+					<R01>8.95972698e-05</R01>
+					<R02>0.187141001</R02>
+					<R10>-8.8000008e-05</R10>
+					<R11>1</R11>
+					<R12>-1.68426905e-05</R12>
+					<R20>-0.187141016</R20>
+					<R21>7.6722408e-08</R21>
+					<R22>0.982333124</R22>
+				</CoordinateFrame>
+				<bool name="CanCollide">true</bool>
+				<int name="CollisionGroupId">0</int>
+				<Color3uint8 name="Color3uint8">4288914085</Color3uint8>
+				<PhysicalProperties name="CustomPhysicalProperties">
+					<CustomPhysics>false</CustomPhysics>
+				</PhysicalProperties>
+				<float name="Elasticity">0.5</float>
+				<float name="Friction">0.300000012</float>
+				<float name="FrontParamA">-0.5</float>
+				<float name="FrontParamB">0.5</float>
+				<token name="FrontSurface">0</token>
+				<token name="FrontSurfaceInput">0</token>
+				<float name="LeftParamA">-0.5</float>
+				<float name="LeftParamB">0.5</float>
+				<token name="LeftSurface">0</token>
+				<token name="LeftSurfaceInput">0</token>
+				<bool name="Locked">true</bool>
+				<token name="Material">256</token>
+				<string name="Name">Handle</string>
+				<float name="Reflectance">0</float>
+				<float name="RightParamA">-0.5</float>
+				<float name="RightParamB">0.5</float>
+				<token name="RightSurface">0</token>
+				<token name="RightSurfaceInput">0</token>
+				<Vector3 name="RotVelocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<BinaryString name="Tags"></BinaryString>
+				<float name="TopParamA">-0.5</float>
+				<float name="TopParamB">0.5</float>
+				<token name="TopSurface">0</token>
+				<token name="TopSurfaceInput">0</token>
+				<float name="Transparency">0</float>
+				<Vector3 name="Velocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<token name="formFactorRaw">3</token>
+				<token name="shape">1</token>
+				<Vector3 name="size">
+					<X>4</X>
+					<Y>4</Y>
+					<Z>1</Z>
+				</Vector3>
+			</Properties>
+			<Item class="SpecialMesh" referent="RBXBE2E810C03B84E85A3EE0AD94B920377">
+				<Properties>
+					<token name="LODX">2</token>
+					<token name="LODY">2</token>
+					<Content name="MeshId"><url>rbxassetid://1920474335</url></Content>
+					<token name="MeshType">5</token>
+					<string name="Name">Mesh</string>
+					<Vector3 name="Offset">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+					</Vector3>
+					<Vector3 name="Scale">
+						<X>1</X>
+						<Y>1</Y>
+						<Z>1</Z>
+					</Vector3>
+					<BinaryString name="Tags"></BinaryString>
+					<Content name="TextureId"><url>rbxassetid://1920475697</url></Content>
+					<Vector3 name="VertexColor">
+						<X>1</X>
+						<Y>1</Y>
+						<Z>1</Z>
+					</Vector3>
+				</Properties>
+			</Item>
+			<Item class="Attachment" referent="RBX8AAAF5C1584B4452A80BFD47241EB672">
+				<Properties>
+					<CoordinateFrame name="CFrame">
+						<X>6</X>
+						<Y>1.49999976</Y>
+						<Z>-2</Z>
+						<R00>1</R00>
+						<R01>4.37113883e-08</R01>
+						<R02>-0</R02>
+						<R10>-4.37113883e-08</R10>
+						<R11>1</R11>
+						<R12>0</R12>
+						<R20>0</R20>
+						<R21>0</R21>
+						<R22>1</R22>
+					</CoordinateFrame>
+					<string name="Name">RightGripAttachment</string>
+					<BinaryString name="Tags"></BinaryString>
+					<bool name="Visible">false</bool>
+				</Properties>
+			</Item>
+		</Item>
+		<Item class="Model" referent="RBX36F26B187DC8465E81F7E775B477ADF5">
+			<Properties>
+				<CoordinateFrame name="ModelInPrimary">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+					<R00>1</R00>
+					<R01>0</R01>
+					<R02>0</R02>
+					<R10>0</R10>
+					<R11>1</R11>
+					<R12>0</R12>
+					<R20>0</R20>
+					<R21>0</R21>
+					<R22>1</R22>
+				</CoordinateFrame>
+				<string name="Name">DisplayModel</string>
+				<Ref name="PrimaryPart">null</Ref>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+			<Item class="Part" referent="RBX9CB260B6F0F1434A94DF90153692A66F">
+				<Properties>
+					<bool name="Anchored">false</bool>
+					<float name="BackParamA">-0.5</float>
+					<float name="BackParamB">0.5</float>
+					<token name="BackSurface">0</token>
+					<token name="BackSurfaceInput">0</token>
+					<float name="BottomParamA">-0.5</float>
+					<float name="BottomParamB">0.5</float>
+					<token name="BottomSurface">0</token>
+					<token name="BottomSurfaceInput">0</token>
+					<CoordinateFrame name="CFrame">
+						<X>-2.69285917</X>
+						<Y>16.2005768</Y>
+						<Z>17.9881897</Z>
+						<R00>0.920039356</R00>
+						<R01>8.8953675e-05</R01>
+						<R02>0.391826063</R02>
+						<R10>-8.20000278e-05</R10>
+						<R11>1</R11>
+						<R12>-3.4480694e-05</R12>
+						<R20>-0.391826153</R20>
+						<R21>-4.06152139e-07</R21>
+						<R22>0.920039237</R22>
+					</CoordinateFrame>
+					<bool name="CanCollide">false</bool>
+					<int name="CollisionGroupId">0</int>
+					<Color3uint8 name="Color3uint8">4288914085</Color3uint8>
+					<PhysicalProperties name="CustomPhysicalProperties">
+						<CustomPhysics>false</CustomPhysics>
+					</PhysicalProperties>
+					<float name="Elasticity">0.5</float>
+					<float name="Friction">0.300000012</float>
+					<float name="FrontParamA">-0.5</float>
+					<float name="FrontParamB">0.5</float>
+					<token name="FrontSurface">0</token>
+					<token name="FrontSurfaceInput">0</token>
+					<float name="LeftParamA">-0.5</float>
+					<float name="LeftParamB">0.5</float>
+					<token name="LeftSurface">0</token>
+					<token name="LeftSurfaceInput">0</token>
+					<bool name="Locked">true</bool>
+					<token name="Material">256</token>
+					<string name="Name">DisplayPart</string>
+					<float name="Reflectance">0</float>
+					<float name="RightParamA">-0.5</float>
+					<float name="RightParamB">0.5</float>
+					<token name="RightSurface">0</token>
+					<token name="RightSurfaceInput">0</token>
+					<Vector3 name="RotVelocity">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+					</Vector3>
+					<BinaryString name="Tags"></BinaryString>
+					<float name="TopParamA">-0.5</float>
+					<float name="TopParamB">0.5</float>
+					<token name="TopSurface">0</token>
+					<token name="TopSurfaceInput">0</token>
+					<float name="Transparency">1</float>
+					<Vector3 name="Velocity">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+					</Vector3>
+					<token name="formFactorRaw">3</token>
+					<token name="shape">1</token>
+					<Vector3 name="size">
+						<X>0.200000003</X>
+						<Y>0.200000003</Y>
+						<Z>0.200000003</Z>
+					</Vector3>
+				</Properties>
+			</Item>
+			<Item class="Part" referent="RBXC84778871BBE476FA30D472B5E9B1E9E">
+				<Properties>
+					<bool name="Anchored">false</bool>
+					<float name="BackParamA">-0.5</float>
+					<float name="BackParamB">0.5</float>
+					<token name="BackSurface">0</token>
+					<token name="BackSurfaceInput">0</token>
+					<float name="BottomParamA">-0.5</float>
+					<float name="BottomParamB">0.5</float>
+					<token name="BottomSurface">0</token>
+					<token name="BottomSurfaceInput">0</token>
+					<CoordinateFrame name="CFrame">
+						<X>-2.6925211</X>
+						<Y>20.0005779</Y>
+						<Z>17.9881878</Z>
+						<R00>0.920039356</R00>
+						<R01>8.8953675e-05</R01>
+						<R02>0.391826063</R02>
+						<R10>-8.20000278e-05</R10>
+						<R11>1</R11>
+						<R12>-3.4480694e-05</R12>
+						<R20>-0.391826153</R20>
+						<R21>-4.06152139e-07</R21>
+						<R22>0.920039237</R22>
+					</CoordinateFrame>
+					<bool name="CanCollide">false</bool>
+					<int name="CollisionGroupId">0</int>
+					<Color3uint8 name="Color3uint8">4288914085</Color3uint8>
+					<PhysicalProperties name="CustomPhysicalProperties">
+						<CustomPhysics>false</CustomPhysics>
+					</PhysicalProperties>
+					<float name="Elasticity">0.5</float>
+					<float name="Friction">0.300000012</float>
+					<float name="FrontParamA">-0.5</float>
+					<float name="FrontParamB">0.5</float>
+					<token name="FrontSurface">0</token>
+					<token name="FrontSurfaceInput">0</token>
+					<float name="LeftParamA">-0.5</float>
+					<float name="LeftParamB">0.5</float>
+					<token name="LeftSurface">0</token>
+					<token name="LeftSurfaceInput">0</token>
+					<bool name="Locked">true</bool>
+					<token name="Material">256</token>
+					<string name="Name">DisplayPart</string>
+					<float name="Reflectance">0</float>
+					<float name="RightParamA">-0.5</float>
+					<float name="RightParamB">0.5</float>
+					<token name="RightSurface">0</token>
+					<token name="RightSurfaceInput">0</token>
+					<Vector3 name="RotVelocity">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+					</Vector3>
+					<BinaryString name="Tags"></BinaryString>
+					<float name="TopParamA">-0.5</float>
+					<float name="TopParamB">0.5</float>
+					<token name="TopSurface">0</token>
+					<token name="TopSurfaceInput">0</token>
+					<float name="Transparency">1</float>
+					<Vector3 name="Velocity">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+					</Vector3>
+					<token name="formFactorRaw">3</token>
+					<token name="shape">1</token>
+					<Vector3 name="size">
+						<X>0.200000003</X>
+						<Y>0.200000003</Y>
+						<Z>0.200000003</Z>
+					</Vector3>
+				</Properties>
+			</Item>
+		</Item>
+		<Item class="Script" referent="RBXB476D1C941BF4A478187DCB115CE489F">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">Script</string>
+				<string name="ScriptGuid">{9C9934B9-F0A0-4589-B2B7-17FF52D5537C}</string>
+				<ProtectedString name="Source"><![CDATA[Tool = script.Parent
+Handle = Tool:WaitForChild("Handle")
+
+Players = game:GetService("Players")
+InsertService = game:GetService("InsertService")
+
+NPCModule = require(191816425)
+
+BaseUrl = "rbxassetid://"
+
+RemoverScript = script:WaitForChild("RemoverScript")
+
+NPCModel = InsertService:LoadAsset(1989724206)
+NPC = NPCModel:GetChildren()[1]:Clone()
+if NPCModel and NPCModel.Parent then
+	NPCModel:Destroy()
+end
+
+ReloadTime = 5
+
+ToolEquipped = false
+
+DisplayModel = Tool:FindFirstChild("DisplayModel")
+if DisplayModel then
+	DisplayModel:Destroy()
+end
+
+Handle.Transparency = 0
+Tool.Enabled = true
+
+function MakeNPC()
+	if PlayerNPC and PlayerNPC.Parent then
+		PlayerNPC:Destroy()
+	end
+
+	PlayerNPC = NPC:Clone()
+	local Data = NPCModule.GetTable({Key = "MakeNPC", Player = Player})
+	if not Data then
+		return
+	end
+	local NPCData = Data.GetData({Player = Player, Tool = Tool})
+	NPCData.MakeNPC({
+		NPC = PlayerNPC, AIControl = {
+			Creator = Player,
+			Mode = "Follow",
+			MaxDistance = math.hgue,
+			Follow = Player,
+			Offset = Vector3.new(-4.5, 2.05, -0.5),
+			Chase = false,
+			ChaseDistance = 0,
+			ChaseRange = 0,
+			Target = nil,
+			TargetPos = Vector3.new(0, 0, 0),
+			Damage = 0,
+			NormalSpeed = 16,
+			ChaseSpeed = 16, SelfSufficient = true
+		}
+	})
+	
+	NPCHumanoid = PlayerNPC:FindFirstChild("Humanoid")
+	NPCHead = PlayerNPC:FindFirstChild("Head")
+	NPCTorso = PlayerNPC:FindFirstChild("Torso")
+
+	if not NPCHumanoid or not NPCHead or not NPCTorso then
+		return
+	end
+	local RemoverScriptCopy = RemoverScript:Clone()
+	RemoverScriptCopy.Disabled = false
+--	RemoverScriptCopy.Parent = PlayerNPC
+	PlayerNPC.Parent = workspace
+	NPCTorso.CFrame = (Torso.CFrame * CFrame.new(PlayerNPC.Offset.Value))
+	NPCHumanoid:ChangeState(Enum.HumanoidStateType.Freefall)
+end
+
+function Activated()
+	if not Tool.Enabled or not CheckIfAlive() or PlayerFollowerNPC then
+		return
+	end
+end
+
+function CheckIfAlive()
+	return (((Player and Player.Parent and Character and Character.Parent and Humanoid and Humanoid.Parent and Humanoid.Health > 0 and Torso and Torso.Parent) and true) or false)
+end
+
+function Equipped()
+	Handle.Transparency = 1
+	Character = Tool.Parent
+	Player = Players:GetPlayerFromCharacter(Character)
+	Humanoid = Character:FindFirstChild("Humanoid")
+	Torso = Character:FindFirstChild("Torso") or Character:FindFirstChild("UpperTorso")
+	if not CheckIfAlive() then
+		return
+	end
+	if Tool.Enabled then
+		Spawn(function()
+			MakeNPC()
+		end)
+	end
+	ToolEquipped = true
+end
+
+function Unequipped()
+	if PlayerNPC then
+		for i, v in pairs({PlayerNPC}) do
+			if v and v.Parent then
+				v:Destroy()
+			end
+		end
+		PlayerNPC = nil
+		Spawn(function()
+			Tool.Enabled = false
+			wait(ReloadTime)
+			Tool.Enabled = true
+			if not ToolEquipped then
+				Handle.Transparency = 0
+			end
+		end)
+	end
+	
+	if PlayerFollowerNPC then
+		for i, v in pairs({PlayerFollowerNPC}) do
+			if v and v.Parent then
+				v:Destroy()
+			end
+		end
+		PlayerFollowerNPC = nil
+	end
+
+	ToolEquipped = false
+end
+
+Tool.Changed:connect(function(Property)
+	if Property == "Enabled" and Tool.Enabled and ToolEquipped and Tool.Parent then
+		MakeNPC()
+	elseif Property == "Parent" and Tool.Parent and not Tool.Parent:IsA("Backpack") and not Players:GetPlayerFromCharacter(Tool.Parent) then
+		Handle.Transparency = 0
+	end
+end)
+
+Tool.Activated:connect(Activated)
+Tool.Equipped:connect(Equipped)
+Tool.Unequipped:connect(Unequipped)]]></ProtectedString>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+			<Item class="Script" referent="RBXA12C4BA74619481FA36B7D4AC0E7335E">
+				<Properties>
+					<bool name="Disabled">true</bool>
+					<Content name="LinkedSource"><null></null></Content>
+					<string name="Name">RemoverScript</string>
+					<string name="ScriptGuid">{92F66B10-BFC4-489F-9FA8-2BCD0AB5D33A}</string>
+					<ProtectedString name="Source"><![CDATA[--Made by Luckymaxer
+
+Model = script.Parent
+Humanoid = Model:FindFirstChild("Humanoid")
+
+Debris = game:GetService("Debris")
+
+Creator = Model:FindFirstChild("Creator")
+Tool = Model:FindFirstChild("Tool")
+
+function DestroyModel()
+	Debris:AddItem(Model, 2)
+end
+
+if not Creator or not Creator.Value or not Creator.Value:IsA("Player") or not Creator.Value.Parent or not Tool or not Tool.Value or not Tool.Value.Parent then
+	DestroyModel()
+	return
+end
+
+Creator = Creator.Value
+Tool = Tool.Value
+
+Character = Creator.Character
+if not Character then
+	DestroyModel()
+	return
+end
+
+Creator.Changed:connect(function(Property)
+	if Property == "Parent" and not Creator.Parent then
+		DestroyModel()
+	end
+end)
+
+Character.Changed:connect(function(Property)
+	if Property == "Parent" and not Character.Parent then
+		DestroyModel()
+	end
+end)
+
+Tool.Changed:connect(function(Property)
+	if Property == "Parent" then
+		DestroyModel()
+	end
+end)
+
+if Humanoid then
+	Humanoid.Died:connect(function()
+		DestroyModel()
+	end)
+end]]></ProtectedString>
+					<BinaryString name="Tags"></BinaryString>
+				</Properties>
+			</Item>
+		</Item>
+		<Item class="LocalScript" referent="RBX201EAA4C60974C16A8B13DB7E1648627">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">MouseIcon</string>
+				<string name="ScriptGuid">{0025E201-CB1B-4529-8626-EAEB8F65DFA8}</string>
+				<ProtectedString name="Source"><![CDATA[--Made by Luckymaxer
+
+Mouse_Icon = "rbxasset://textures/GunCursor.png"
+Reloading_Icon = "rbxasset://textures/GunWaitCursor.png"
+
+Tool = script.Parent
+
+Mouse = nil
+
+function UpdateIcon()
+	if Mouse then
+		Mouse.Icon = Tool.Enabled and Mouse_Icon or Reloading_Icon
+	end
+end
+
+function OnEquipped(ToolMouse)
+	Mouse = ToolMouse
+	UpdateIcon()
+end
+
+function OnChanged(Property)
+	if Property == "Enabled" then
+		UpdateIcon()
+	end
+end
+
+Tool.Equipped:connect(OnEquipped)
+Tool.Changed:connect(OnChanged)]]></ProtectedString>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+		</Item>
+		<Item class="Keyframe" referent="RBX7307E0102F964463A8FF1779C4846316">
+			<Properties>
+				<string name="Name">ThumbnailPose</string>
+				<BinaryString name="Tags"></BinaryString>
+				<float name="Time">0</float>
+			</Properties>
+			<Item class="Pose" referent="RBX089811E3B13D40BE9463111F4A7FE9FE">
+				<Properties>
+					<CoordinateFrame name="CFrame">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+						<R00>1</R00>
+						<R01>0</R01>
+						<R02>0</R02>
+						<R10>0</R10>
+						<R11>1</R11>
+						<R12>0</R12>
+						<R20>0</R20>
+						<R21>0</R21>
+						<R22>1</R22>
+					</CoordinateFrame>
+					<token name="EasingDirection">1</token>
+					<token name="EasingStyle">0</token>
+					<string name="Name">UpperTorso</string>
+					<BinaryString name="Tags"></BinaryString>
+					<float name="Weight">0</float>
+				</Properties>
+				<Item class="Pose" referent="RBXF2487531AC6942D5907E80B0B1C7E0E7">
+					<Properties>
+						<CoordinateFrame name="CFrame">
+							<X>0</X>
+							<Y>-6.70552254e-08</Y>
+							<Z>-5.96046448e-08</Z>
+							<R00>1</R00>
+							<R01>0</R01>
+							<R02>0</R02>
+							<R10>0</R10>
+							<R11>0.173648193</R11>
+							<R12>-0.98480773</R12>
+							<R20>0</R20>
+							<R21>0.98480773</R21>
+							<R22>0.173648193</R22>
+						</CoordinateFrame>
+						<token name="EasingDirection">1</token>
+						<token name="EasingStyle">0</token>
+						<string name="Name">RightUpperArm</string>
+						<BinaryString name="Tags"></BinaryString>
+						<float name="Weight">1</float>
+					</Properties>
+					<Item class="Pose" referent="RBX4580C2F527D94E579187F2ECE316F6A5">
+						<Properties>
+							<CoordinateFrame name="CFrame">
+								<X>0</X>
+								<Y>-1.49011612e-08</Y>
+								<Z>3.7252903e-09</Z>
+								<R00>1</R00>
+								<R01>0</R01>
+								<R02>0</R02>
+								<R10>0</R10>
+								<R11>0.98480773</R11>
+								<R12>-0.173648179</R12>
+								<R20>0</R20>
+								<R21>0.173648179</R21>
+								<R22>0.98480773</R22>
+							</CoordinateFrame>
+							<token name="EasingDirection">1</token>
+							<token name="EasingStyle">0</token>
+							<string name="Name">RightLowerArm</string>
+							<BinaryString name="Tags"></BinaryString>
+							<float name="Weight">1</float>
+						</Properties>
+						<Item class="Pose" referent="RBX18B90B69601E444E9C24C210FF723AC5">
+							<Properties>
+								<CoordinateFrame name="CFrame">
+									<X>0</X>
+									<Y>0</Y>
+									<Z>0</Z>
+									<R00>1</R00>
+									<R01>0</R01>
+									<R02>0</R02>
+									<R10>0</R10>
+									<R11>1</R11>
+									<R12>0</R12>
+									<R20>0</R20>
+									<R21>0</R21>
+									<R22>1</R22>
+								</CoordinateFrame>
+								<token name="EasingDirection">1</token>
+								<token name="EasingStyle">0</token>
+								<string name="Name">RightHand</string>
+								<BinaryString name="Tags"></BinaryString>
+								<float name="Weight">1</float>
+							</Properties>
+						</Item>
+					</Item>
+				</Item>
+			</Item>
+		</Item>
+		<Item class="Camera" referent="RBXD5A02EF923BD49E08CCC8F62A03DC35B">
+			<Properties>
+				<CoordinateFrame name="CFrame">
+					<X>-4.41353512</X>
+					<Y>19.7482643</Y>
+					<Z>14.676054</Z>
+					<R00>-0.615650117</R00>
+					<R01>0.21984756</R01>
+					<R02>-0.756731212</R02>
+					<R10>-1.49011594e-08</R10>
+					<R11>0.960294902</R11>
+					<R12>0.278987408</R12>
+					<R20>0.788019717</R20>
+					<R21>0.171758652</R21>
+					<R22>-0.591205537</R22>
+				</CoordinateFrame>
+				<Ref name="CameraSubject">null</Ref>
+				<token name="CameraType">0</token>
+				<float name="FieldOfView">70</float>
+				<CoordinateFrame name="Focus">
+					<X>-2.90007019</X>
+					<Y>19.1902885</Y>
+					<Z>15.8584671</Z>
+					<R00>1</R00>
+					<R01>0</R01>
+					<R02>0</R02>
+					<R10>0</R10>
+					<R11>1</R11>
+					<R12>0</R12>
+					<R20>0</R20>
+					<R21>0</R21>
+					<R22>1</R22>
+				</CoordinateFrame>
+				<bool name="HeadLocked">true</bool>
+				<float name="HeadScale">1</float>
+				<string name="Name">ThumbnailCamera</string>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+		</Item>
+	</Item>
+</roblox>

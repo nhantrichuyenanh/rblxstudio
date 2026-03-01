@@ -1,0 +1,727 @@
+<roblox xmlns:xmime="http://www.w3.org/2005/05/xmlmime" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.roblox.com/roblox.xsd" version="4">
+	<External>null</External>
+	<External>nil</External>
+	<Item class="Tool" referent="RBX6547695E3797499896EFF838E67FFA0B">
+		<Properties>
+			<bool name="CanBeDropped">true</bool>
+			<bool name="Enabled">true</bool>
+			<CoordinateFrame name="Grip">
+				<X>1.5</X>
+				<Y>0</Y>
+				<Z>-2.29999995</Z>
+				<R00>1</R00>
+				<R01>0</R01>
+				<R02>0</R02>
+				<R10>0</R10>
+				<R11>1</R11>
+				<R12>0</R12>
+				<R20>0</R20>
+				<R21>0</R21>
+				<R22>1</R22>
+			</CoordinateFrame>
+			<bool name="ManualActivationOnly">false</bool>
+			<string name="Name">SteampunkJetpack</string>
+			<Content name="TextureId"><url>http://www.roblox.com/asset/?id=156292216 </url></Content>
+			<string name="ToolTip"></string>
+		</Properties>
+		<Item class="Part" referent="RBXBC73AFC09615462B9DF727225EA86D88">
+			<Properties>
+				<bool name="Anchored">false</bool>
+				<float name="BackParamA">-0.5</float>
+				<float name="BackParamB">0.5</float>
+				<token name="BackSurface">0</token>
+				<token name="BackSurfaceInput">0</token>
+				<float name="BottomParamA">-0.5</float>
+				<float name="BottomParamB">0.5</float>
+				<token name="BottomSurface">2</token>
+				<token name="BottomSurfaceInput">0</token>
+				<int name="BrickColor">194</int>
+				<CoordinateFrame name="CFrame">
+					<X>-0.0413093567</X>
+					<Y>9.60000134</Y>
+					<Z>0.00427436829</Z>
+					<R00>-0.993522882</R00>
+					<R01>2.58162618e-006</R01>
+					<R02>-0.113632977</R02>
+					<R10>-1.37236339e-006</R10>
+					<R11>1</R11>
+					<R12>3.47197056e-005</R12>
+					<R20>0.113632977</R20>
+					<R21>3.47197056e-005</R21>
+					<R22>-0.993522823</R22>
+				</CoordinateFrame>
+				<bool name="CanCollide">true</bool>
+				<float name="Elasticity">0.5</float>
+				<float name="Friction">0.300000012</float>
+				<float name="FrontParamA">-0.5</float>
+				<float name="FrontParamB">0.5</float>
+				<token name="FrontSurface">0</token>
+				<token name="FrontSurfaceInput">0</token>
+				<float name="LeftParamA">-0.5</float>
+				<float name="LeftParamB">0.5</float>
+				<token name="LeftSurface">0</token>
+				<token name="LeftSurfaceInput">0</token>
+				<bool name="Locked">true</bool>
+				<token name="Material">256</token>
+				<string name="Name">Handle</string>
+				<float name="Reflectance">0</float>
+				<float name="RightParamA">-0.5</float>
+				<float name="RightParamB">0.5</float>
+				<token name="RightSurface">0</token>
+				<token name="RightSurfaceInput">0</token>
+				<Vector3 name="RotVelocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<float name="TopParamA">-0.5</float>
+				<float name="TopParamB">0.5</float>
+				<token name="TopSurface">3</token>
+				<token name="TopSurfaceInput">0</token>
+				<float name="Transparency">0</float>
+				<Vector3 name="Velocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<token name="formFactorRaw">3</token>
+				<token name="shape">1</token>
+				<Vector3 name="size">
+					<X>2.68000054</X>
+					<Y>2.00000072</Y>
+					<Z>2.62999916</Z>
+				</Vector3>
+			</Properties>
+			<Item class="SpecialMesh" referent="RBXF668B2694CE440D4B03073834841AB78">
+				<Properties>
+					<token name="LODX">2</token>
+					<token name="LODY">2</token>
+					<Content name="MeshId"><url>http://www.roblox.com/asset/?id=156292119 </url></Content>
+					<token name="MeshType">5</token>
+					<string name="Name">Mesh</string>
+					<Vector3 name="Offset">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+					</Vector3>
+					<Vector3 name="Scale">
+						<X>1.75</X>
+						<Y>1.75</Y>
+						<Z>1.75</Z>
+					</Vector3>
+					<Content name="TextureId"><url>http://www.roblox.com/asset/?id=156292147 </url></Content>
+					<Vector3 name="VertexColor">
+						<X>1</X>
+						<Y>1</Y>
+						<Z>1</Z>
+					</Vector3>
+				</Properties>
+			</Item>
+			<Item class="Sound" referent="RBX06DAF30D731A464DB425E06ED153D579">
+				<Properties>
+					<bool name="Looped">false</bool>
+					<string name="Name">EngineFail</string>
+					<float name="Pitch">1</float>
+					<bool name="PlayOnRemove">false</bool>
+					<Content name="SoundId"><url>http://www.roblox.com/asset/?id=30624305</url></Content>
+					<float name="Volume">0.5</float>
+				</Properties>
+			</Item>
+			<Item class="Sound" referent="RBXE49F5087BD384673852552F4BF51AB96">
+				<Properties>
+					<bool name="Looped">false</bool>
+					<string name="Name">InitialThrust</string>
+					<float name="Pitch">1</float>
+					<bool name="PlayOnRemove">false</bool>
+					<Content name="SoundId"><url>http://www.roblox.com/asset/?id=30624262</url></Content>
+					<float name="Volume">0.5</float>
+				</Properties>
+			</Item>
+			<Item class="Sound" referent="RBXF2ABE500836640E7B9C5DE065EA3C7F6">
+				<Properties>
+					<bool name="Looped">true</bool>
+					<string name="Name">LowFuelWarning</string>
+					<float name="Pitch">1</float>
+					<bool name="PlayOnRemove">false</bool>
+					<Content name="SoundId"><url>http://www.roblox.com/asset/?id=30624357</url></Content>
+					<float name="Volume">0.5</float>
+				</Properties>
+			</Item>
+			<Item class="Sound" referent="RBX9F69BB621D954E1CA974703A81A0D5B9">
+				<Properties>
+					<bool name="Looped">true</bool>
+					<string name="Name">Thrusting</string>
+					<float name="Pitch">1</float>
+					<bool name="PlayOnRemove">false</bool>
+					<Content name="SoundId"><url>http://www.roblox.com/asset/?id=30624426</url></Content>
+					<float name="Volume">0.5</float>
+				</Properties>
+			</Item>
+		</Item>
+		<Item class="Animation" referent="RBXB555987AC21542E9B8D80F39470E8AFC">
+			<Properties>
+				<Content name="AnimationId"><url>http://www.roblox.com/asset/?id=167272039</url></Content>
+				<string name="Name">StandStill</string>
+			</Properties>
+		</Item>
+		<Item class="ScreenGui" referent="RBX0607671404EF4CE7992AA017DFBCEFF6">
+			<Properties>
+				<string name="Name">FuelGui</string>
+			</Properties>
+			<Item class="Frame" referent="RBXE5D9770490474227AA06A503DDEDB061">
+				<Properties>
+					<bool name="Active">false</bool>
+					<Color3 name="BackgroundColor3">4294927872</Color3>
+					<float name="BackgroundTransparency">0</float>
+					<Color3 name="BorderColor3">4279970357</Color3>
+					<int name="BorderSizePixel">1</int>
+					<bool name="ClipsDescendants">false</bool>
+					<bool name="Draggable">false</bool>
+					<string name="Name">Frame</string>
+					<UDim2 name="Position">
+						<XS>0.900000036</XS>
+						<XO>0</XO>
+						<YS>0.200000003</YS>
+						<YO>0</YO>
+					</UDim2>
+					<float name="Rotation">0</float>
+					<UDim2 name="Size">
+						<XS>0</XS>
+						<XO>32</XO>
+						<YS>0.449999988</YS>
+						<YO>0</YO>
+					</UDim2>
+					<token name="SizeConstraint">0</token>
+					<token name="Style">0</token>
+					<bool name="Visible">true</bool>
+					<int name="ZIndex">1</int>
+				</Properties>
+				<Item class="ImageLabel" referent="RBX936E64D81A77401AAC5501D5768B2A3F">
+					<Properties>
+						<bool name="Active">false</bool>
+						<Color3 name="BackgroundColor3">4288914085</Color3>
+						<float name="BackgroundTransparency">1</float>
+						<Color3 name="BorderColor3">4279970357</Color3>
+						<int name="BorderSizePixel">1</int>
+						<bool name="ClipsDescendants">false</bool>
+						<bool name="Draggable">false</bool>
+						<Content name="Image"><url>http://www.roblox.com/asset/?id=67292123 </url></Content>
+						<Color3 name="ImageColor3">4294967295</Color3>
+						<Vector2 name="ImageRectOffset">
+							<X>0</X>
+							<Y>0</Y>
+						</Vector2>
+						<Vector2 name="ImageRectSize">
+							<X>0</X>
+							<Y>0</Y>
+						</Vector2>
+						<float name="ImageTransparency">0</float>
+						<string name="Name">FuelFill</string>
+						<UDim2 name="Position">
+							<XS>0</XS>
+							<XO>0</XO>
+							<YS>0</YS>
+							<YO>0</YO>
+						</UDim2>
+						<float name="Rotation">0</float>
+						<UDim2 name="Size">
+							<XS>1</XS>
+							<XO>0</XO>
+							<YS>1</YS>
+							<YO>0</YO>
+						</UDim2>
+						<token name="SizeConstraint">0</token>
+						<bool name="Visible">true</bool>
+						<int name="ZIndex">1</int>
+					</Properties>
+				</Item>
+			</Item>
+			<Item class="ImageLabel" referent="RBX4567096A55C540E3BF19B2A6A7B24308">
+				<Properties>
+					<bool name="Active">false</bool>
+					<Color3 name="BackgroundColor3">4294967295</Color3>
+					<float name="BackgroundTransparency">1</float>
+					<Color3 name="BorderColor3">4279970357</Color3>
+					<int name="BorderSizePixel">1</int>
+					<bool name="ClipsDescendants">false</bool>
+					<bool name="Draggable">false</bool>
+					<Content name="Image"><url>http://www.roblox.com/asset/?id= 67292028 </url></Content>
+					<Color3 name="ImageColor3">4294967295</Color3>
+					<Vector2 name="ImageRectOffset">
+						<X>0</X>
+						<Y>0</Y>
+					</Vector2>
+					<Vector2 name="ImageRectSize">
+						<X>0</X>
+						<Y>0</Y>
+					</Vector2>
+					<float name="ImageTransparency">0</float>
+					<string name="Name">FuelGauge</string>
+					<UDim2 name="Position">
+						<XS>0.900000036</XS>
+						<XO>0</XO>
+						<YS>0.200000003</YS>
+						<YO>0</YO>
+					</UDim2>
+					<float name="Rotation">0</float>
+					<UDim2 name="Size">
+						<XS>0</XS>
+						<XO>70</XO>
+						<YS>0.449999988</YS>
+						<YO>0</YO>
+					</UDim2>
+					<token name="SizeConstraint">0</token>
+					<bool name="Visible">true</bool>
+					<int name="ZIndex">1</int>
+				</Properties>
+			</Item>
+		</Item>
+		<Item class="IntConstrainedValue" referent="RBX81AFE12C1EAF43018A26F6AD85E5695E">
+			<Properties>
+				<int name="MaxValue">1300</int>
+				<int name="MinValue">0</int>
+				<string name="Name">CurrentFuel</string>
+				<int name="value">1300</int>
+			</Properties>
+		</Item>
+		<Item class="LocalScript" referent="RBXAAB063BEBBC542D1A635877899666D9B">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">LocalScript</string>
+				<ProtectedString name="Source">--Made by Luckymaxer
+
+Tool = script.Parent
+Handle = Tool:WaitForChild(&quot;Handle&quot;)
+
+Players = game:GetService(&quot;Players&quot;)
+RunService = game:GetService(&quot;RunService&quot;)
+
+Camera = game:GetService(&quot;Workspace&quot;).CurrentCamera
+
+Animations = {}
+
+ServerControl = Tool:WaitForChild(&quot;ServerControl&quot;)
+ClientControl = Tool:WaitForChild(&quot;ClientControl&quot;)
+
+ToolEquipped = false
+
+function SetAnimation(Mode, Value)
+&#9;if Mode == &quot;PlayAnimation&quot; and Value and ToolEquipped and Humanoid then
+&#9;&#9;for i, v in pairs(Animations) do
+&#9;&#9;&#9;if v.Animation == Value.Animation then
+&#9;&#9;&#9;&#9;v.AnimationTrack:Stop()
+&#9;&#9;&#9;&#9;table.remove(Animations, i)
+&#9;&#9;&#9;end
+&#9;&#9;end
+&#9;&#9;local AnimationTrack = Humanoid:LoadAnimation(Value.Animation)
+&#9;&#9;table.insert(Animations, {Animation = Value.Animation, AnimationTrack = AnimationTrack})
+&#9;&#9;AnimationTrack:Play(Value.FadeTime, Value.Weight, Value.Speed)
+&#9;elseif Mode == &quot;StopAnimation&quot; and Value then
+&#9;&#9;for i, v in pairs(Animations) do
+&#9;&#9;&#9;if v.Animation == Value.Animation then
+&#9;&#9;&#9;&#9;v.AnimationTrack:Stop()
+&#9;&#9;&#9;&#9;table.remove(Animations, i)
+&#9;&#9;&#9;end
+&#9;&#9;end
+&#9;end
+end
+
+function CheckIfAlive()
+&#9;return (((Player and Player.Parent and Humanoid and Humanoid.Parent and Humanoid.Health &gt; 0) and true) or false)
+end
+
+function Equipped(Mouse)
+&#9;Character = Tool.Parent
+&#9;Player = Players:GetPlayerFromCharacter(Character)
+&#9;Humanoid = Character:FindFirstChild(&quot;Humanoid&quot;)
+&#9;ToolEquipped = true
+&#9;if not CheckIfAlive() then
+&#9;&#9;return
+&#9;end
+&#9;PlayerMouse = Player:GetMouse()
+&#9;Mouse.Button1Down:connect(function()
+&#9;&#9;InvokeServer(&quot;MouseClick&quot;, {Down = true})
+&#9;end)
+&#9;Mouse.Button1Up:connect(function()
+&#9;&#9;InvokeServer(&quot;MouseClick&quot;, {Down = false})
+&#9;end)
+end
+
+function Unequipped()
+&#9;ToolEquipped = false
+&#9;for i, v in pairs(Animations) do
+&#9;&#9;if v and v.AnimationTrack then
+&#9;&#9;&#9;v.AnimationTrack:Stop()
+&#9;&#9;end
+&#9;end
+&#9;Animations = {}
+end
+
+function InvokeServer(Mode, Value)
+&#9;pcall(function()
+&#9;&#9;local ServerReturn = ServerControl:InvokeServer(Mode, Value)
+&#9;&#9;return ServerReturn
+&#9;end)
+end
+
+function OnClientInvoke(Mode, Value)
+&#9;if Mode == &quot;PlayAnimation&quot; and Value and ToolEquipped and Humanoid then
+&#9;&#9;SetAnimation(&quot;PlayAnimation&quot;, Value)
+&#9;elseif Mode == &quot;StopAnimation&quot; and Value then
+&#9;&#9;SetAnimation(&quot;StopAnimation&quot;, Value)
+&#9;elseif Mode == &quot;PlaySound&quot; and Value then
+&#9;&#9;Value:Play()
+&#9;elseif Mode == &quot;StopSound&quot; and Value then
+&#9;&#9;Value:Stop()
+&#9;elseif Mode == &quot;MousePosition&quot; then
+&#9;&#9;return PlayerMouse.Hit.p
+&#9;elseif Mode == &quot;GetCamera&quot; and Value then
+&#9;&#9;local PropertyValue = nil
+&#9;&#9;pcall(function()
+&#9;&#9;&#9;PropertyValue = Camera[Value.Property]
+&#9;&#9;end)
+&#9;&#9;return PropertyValue
+&#9;end
+end
+
+Tool.Equipped:connect(Equipped)
+Tool.Unequipped:connect(Unequipped)
+ClientControl.OnClientInvoke = OnClientInvoke</ProtectedString>
+			</Properties>
+		</Item>
+		<Item class="Script" referent="RBX13BDFA746D734E22A1C83ACC4869272E">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">Script</string>
+				<ProtectedString name="Source">--Made by Luckymaxer
+
+Tool = script.Parent
+Handle = Tool:WaitForChild(&quot;Handle&quot;)
+
+Players = game:GetService(&quot;Players&quot;)
+
+CurrentFuel = Tool:WaitForChild(&quot;CurrentFuel&quot;)
+StandStill = Tool:WaitForChild(&quot;StandStill&quot;)
+FuelGui = Tool:WaitForChild(&quot;FuelGui&quot;)
+
+Animations = {
+&#9;StandStill = {Animation = Tool:WaitForChild(&quot;StandStill&quot;), FadeTime = nil, Weight = nil, Speed = nil}
+}
+
+Sounds = {
+&#9;EngineFail = Handle:WaitForChild(&quot;EngineFail&quot;),
+&#9;InitialThrust = Handle:WaitForChild(&quot;InitialThrust&quot;),
+&#9;LowFuelWarning = Handle:WaitForChild(&quot;LowFuelWarning&quot;),
+&#9;Thrusting = Handle:WaitForChild(&quot;Thrusting&quot;)
+}
+
+BasePart = Instance.new(&quot;Part&quot;)
+BasePart.Shape = Enum.PartType.Block
+BasePart.Material = Enum.Material.Plastic
+BasePart.FormFactor = Enum.FormFactor.Custom
+BasePart.TopSurface = Enum.SurfaceType.Smooth
+BasePart.BottomSurface = Enum.SurfaceType.Smooth
+BasePart.Size = Vector3.new(0.2, 0.2, 0.2)
+BasePart.Locked = true
+BasePart.CanCollide = true
+BasePart.Anchored = false
+
+Mass = 0
+EqualizingForce = 236 / 1.2 -- amount of force required to levitate a mass
+Gravity = 0.80 -- things float at &gt; 1
+
+MaxFuel = 1300
+
+Fuel = CurrentFuel.Value
+Gui = nil
+Anim = nil
+JetPack = nil
+Regen = false
+
+ToolEquipped = false
+
+Force = Instance.new(&quot;BodyVelocity&quot;)
+Force.velocity = Vector3.new(0, 0, 0)
+
+BodyGyro = Instance.new(&quot;BodyGyro&quot;)
+BodyGyro.P = 20000
+BodyGyro.D = 8000     
+BodyGyro.maxTorque = Vector3.new(BodyGyro.P, BodyGyro.P, BodyGyro.P)
+
+ServerControl = (Tool:FindFirstChild(&quot;ServerControl&quot;) or Instance.new(&quot;RemoteFunction&quot;))
+ServerControl.Name = &quot;ServerControl&quot;
+ServerControl.Parent = Tool
+
+ClientControl = (Tool:FindFirstChild(&quot;ClientControl&quot;) or Instance.new(&quot;RemoteFunction&quot;))
+ClientControl.Name = &quot;ClientControl&quot;
+ClientControl.Parent = Tool
+
+CurrentFuel.Value = CurrentFuel.MaxValue
+
+function UpdateGui()
+&#9;if Gui then
+&#9;&#9;local Frame = Gui:FindFirstChild(&quot;Frame&quot;)
+&#9;&#9;if Frame then
+&#9;&#9;&#9;Frame.Size = UDim2.new(0, 32, 0.45 * (CurrentFuel.Value / MaxFuel), 0)
+&#9;&#9;&#9;Frame.Position = UDim2.new(0.903, 0, 0.2 + (0.45 * (1 - CurrentFuel.Value / MaxFuel)), 0)
+&#9;&#9;end
+&#9;end 
+end
+
+function Thrust()
+&#9;if Fuel &gt; 0 then
+&#9;&#9;Thrusting = true
+&#9;&#9;Force.Parent = Torso
+&#9;&#9;Fire.Enabled = true
+&#9;&#9;LeftSmoke.Enabled = true
+&#9;&#9;RightSmoke.Enabled = true
+&#9;&#9;Sounds.InitialThrust:Play()
+&#9;&#9;BodyGyro.Parent = Torso
+&#9;&#9;while Thrusting do
+&#9;&#9;&#9;local CoordinateFrame = InvokeClient(&quot;GetCamera&quot;, {Property = &quot;CoordinateFrame&quot;})
+&#9;&#9;&#9;BodyGyro.cframe = CoordinateFrame
+&#9;&#9;&#9;Force.velocity = Vector3.new(0, CoordinateFrame.lookVector.unit.y, 0) * 50
+&#9;&#9;&#9;Fuel = Fuel - 1
+&#9;&#9;&#9;CurrentFuel.Value = Fuel
+&#9;&#9;&#9;if Fuel &lt;= 0 then
+&#9;&#9;&#9;&#9;Sounds.EngineFail:Play()
+&#9;&#9;&#9;&#9;CutEngine()
+&#9;&#9;&#9;end
+&#9;&#9;&#9;UpdateGui()
+&#9;&#9;&#9;wait()
+&#9;&#9;&#9;Sounds.Thrusting:Play()
+&#9;&#9;&#9;if Fuel &lt;= 200 then
+&#9;&#9;&#9;&#9;Sounds.LowFuelWarning:Play()
+&#9;&#9;&#9;end
+&#9;&#9;end
+&#9;&#9;Sounds.Thrusting:Stop()
+&#9;&#9;Sounds.LowFuelWarning:Stop()
+&#9;end
+end
+
+function CutEngine()
+&#9;Thrusting = false
+&#9;Fire.Enabled = false
+&#9;LeftSmoke.Enabled = false
+&#9;RightSmoke.Enabled = false
+&#9;Force.velocity = Vector3.new(0, 0, 0)
+&#9;Force.Parent = nil
+&#9;BodyGyro.Parent = nil
+end
+
+function RecursiveGetLift(Parent)
+&#9;local TotalMass = 0
+&#9;for i, v in pairs(Parent:GetChildren()) do
+&#9;&#9;if v:IsA(&quot;BasePart&quot;) then
+&#9;&#9;&#9;if Head and Head.Parent and (v.Position - Head.Position).magnitude &lt; 10 then
+&#9;&#9;&#9;&#9;TotalMass = TotalMass + (v:GetMass() * EqualizingForce * 1)
+&#9;&#9;&#9;else
+&#9;&#9;&#9;&#9;TotalMass = TotalMass + (v:GetMass() * EqualizingForce * Gravity)
+&#9;&#9;&#9;end
+&#9;&#9;end
+&#9;&#9;TotalMass = TotalMass + RecursiveGetLift(v)
+&#9;end
+&#9;return TotalMass
+end
+
+function RegenFuel()
+&#9;while Regen do
+&#9;&#9;if Fuel &lt; MaxFuel then
+&#9;&#9;&#9;Fuel = Fuel + 1
+&#9;&#9;&#9;CurrentFuel.Value = Fuel
+&#9;&#9;&#9;UpdateGui()
+&#9;&#9;end
+&#9;&#9;wait(0.2)
+&#9;end
+end
+
+function EquipJetPack()
+
+&#9;JetPack = Handle:clone()
+&#9;JetPack.CanCollide = false
+&#9;JetPack.Name = &quot;JetPack&quot;
+
+&#9;Handle.Transparency = 1
+
+&#9;local Weld = Instance.new(&quot;Weld&quot;)
+&#9;Weld.Part0 = JetPack
+&#9;Weld.Part1 = Torso
+&#9;Weld.C0 = CFrame.new(Vector3.new(0, 0.25, -1.25)) * CFrame.Angles(0, 0, 0)
+&#9;Weld.Parent = JetPack
+
+&#9;FirePart = BasePart:Clone()
+&#9;FirePart.Name = &quot;FirePart&quot;
+&#9;FirePart.Transparency = 1
+&#9;FirePart.Size = Vector3.new(1, 0.4, 1)
+&#9;FirePart.CanCollide = false
+&#9;FirePart.Parent = JetPack
+
+&#9;Fire = Instance.new(&quot;Fire&quot;)
+&#9;Fire.Heat = -12
+&#9;Fire.Size = 4
+&#9;Fire.Enabled = false
+&#9;Fire.Parent = FirePart
+
+&#9;local FireWeld = Instance.new(&quot;Weld&quot;)
+&#9;FireWeld.Part0 = FirePart
+&#9;FireWeld.Part1 = JetPack
+&#9;FireWeld.C0 = CFrame.new(Vector3.new(0, 2, 0))
+&#9;FireWeld.Parent = FirePart
+&#9;
+&#9;LeftSmokePart = BasePart:Clone()
+&#9;LeftSmokePart.Name = &quot;LeftSmokePart&quot;
+&#9;LeftSmokePart.Transparency = 1
+&#9;LeftSmokePart.Size = Vector3.new(1, 0.4, 1)
+&#9;LeftSmokePart.CanCollide = false
+&#9;LeftSmokePart.Parent = JetPack
+
+&#9;LeftSmoke = Instance.new(&quot;Smoke&quot;)
+&#9;LeftSmoke.Color = BrickColor.new(&quot;Institutional white&quot;).Color
+&#9;LeftSmoke.Opacity = 0.25
+&#9;LeftSmoke.RiseVelocity = 0
+&#9;LeftSmoke.Size = 0.1
+&#9;LeftSmoke.Enabled = false
+&#9;LeftSmoke.Parent = LeftSmokePart
+
+&#9;local LeftSmokeWeld = Instance.new(&quot;Weld&quot;)
+&#9;LeftSmokeWeld.Part0 = LeftSmokePart
+&#9;LeftSmokeWeld.Part1 = JetPack
+&#9;LeftSmokeWeld.C0 = CFrame.new(Vector3.new(1.25, 1.5, 0))
+&#9;LeftSmokeWeld.Parent = LeftSmokePart
+&#9;
+&#9;RightSmokePart = LeftSmokePart:Clone()
+&#9;RightSmokePart.Name = &quot;RightSmokePart&quot;
+&#9;RightSmokePart.Parent = JetPack
+
+&#9;RightSmoke = LeftSmoke:Clone()
+&#9;RightSmoke.Parent = RightSmokePart
+
+&#9;local RightSmokeWeld = Instance.new(&quot;Weld&quot;)
+&#9;RightSmokeWeld.Part0 = RightSmokePart
+&#9;RightSmokeWeld.Part1 = JetPack
+&#9;RightSmokeWeld.C0 = CFrame.new(Vector3.new(-1.25, 1.5, 0))
+&#9;RightSmokeWeld.Parent = RightSmokePart
+&#9;
+&#9;JetPack.Parent = Character
+&#9;
+end
+
+function CheckIfAlive()
+&#9;return (((Character and Character.Parent and Humanoid and Humanoid.Parent and Humanoid.Health &gt; 0 and Head and Head.Parent and Torso and Torso.Parent) and true) or false)
+end
+
+function Equipped(Mouse)
+&#9;Character = Tool.Parent
+&#9;Player = Players:GetPlayerFromCharacter(Character)
+&#9;Humanoid = Character:FindFirstChild(&quot;Humanoid&quot;)
+&#9;Head = Character:FindFirstChild(&quot;Head&quot;)
+&#9;Torso = Character:FindFirstChild(&quot;Torso&quot;)
+&#9;if not CheckIfAlive() then
+&#9;&#9;return
+&#9;end
+&#9;Spawn(function()
+&#9;&#9;EquipJetPack()
+&#9;end)
+&#9;PlayerGui = Player:FindFirstChild(&quot;PlayerGui&quot;)
+&#9;if PlayerGui then
+&#9;&#9;Gui = FuelGui:Clone()
+&#9;&#9;Gui.Parent = PlayerGui
+&#9;&#9;UpdateGui()
+&#9;end
+&#9;Mass = RecursiveGetLift(Character)
+&#9;Force.P = Mass * 10
+&#9;Force.maxForce = Vector3.new(0, Force.P, 0)
+&#9;Spawn(function()
+&#9;&#9;InvokeClient(&quot;PlayAnimation&quot;, Animations.StandStill)
+&#9;end)
+&#9;Regen = true
+&#9;Spawn(function()
+&#9;&#9;RegenFuel()
+&#9;end)
+&#9;ToolEquipped = true
+end
+
+function Unequipped()
+&#9;Regen = false
+&#9;for i, v in pairs({Force, BodyGyro, JetPack, Gui}) do
+&#9;&#9;if v and v.Parent then
+&#9;&#9;&#9;v:Destroy()
+&#9;&#9;end
+&#9;end
+&#9;InvokeClient(&quot;StopAnimation&quot;, Animations.StandStill)
+&#9;Handle.Transparency = 0
+&#9;Thrusting = false
+&#9;ToolEquipped = false
+end
+
+function OnServerInvoke(player, mode, value)
+&#9;if not ToolEquipped or not CheckIfAlive() then
+&#9;&#9;return
+&#9;end
+&#9;if mode == &quot;MouseClick&quot; and value then
+&#9;&#9;local Down = value.Down
+&#9;&#9;if Down and not Thrusting then
+&#9;&#9;&#9;Thrust()
+&#9;&#9;elseif not Down and Thrusting then
+&#9;&#9;&#9;Thrusting = false
+&#9;&#9;&#9;CutEngine()
+&#9;&#9;end
+&#9;end
+end
+
+function InvokeClient(Mode, Value)
+&#9;local ClientReturn = nil
+&#9;pcall(function()
+&#9;&#9;ClientReturn = ClientControl:InvokeClient(Player, Mode, Value)
+&#9;end)
+&#9;return ClientReturn
+end
+
+UpdateGui()
+
+ServerControl.OnServerInvoke = OnServerInvoke
+
+Tool.Equipped:connect(Equipped)
+Tool.Unequipped:connect(Unequipped)</ProtectedString>
+			</Properties>
+		</Item>
+		<Item class="Camera" referent="RBX6F7D1001BBFC4A9BBD4413446EFF48C6">
+			<Properties>
+				<Ref name="CameraSubject">null</Ref>
+				<token name="CameraType">0</token>
+				<CoordinateFrame name="CoordinateFrame">
+					<X>-0.297521323</X>
+					<Y>10.2885637</Y>
+					<Z>-3.75613093</Z>
+					<R00>-0.997010112</R00>
+					<R01>0.0116710365</R01>
+					<R02>-0.0763857067</R02>
+					<R10>-0</R10>
+					<R11>0.988528013</R11>
+					<R12>0.151038021</R12>
+					<R20>0.0772721767</R20>
+					<R21>0.150586441</R21>
+					<R22>-0.985572278</R22>
+				</CoordinateFrame>
+				<float name="FieldOfView">70</float>
+				<CoordinateFrame name="Focus">
+					<X>-0.202038974</X>
+					<Y>10.0997658</Y>
+					<Z>-2.52416277</Z>
+					<R00>1</R00>
+					<R01>0</R01>
+					<R02>0</R02>
+					<R10>0</R10>
+					<R11>1</R11>
+					<R12>0</R12>
+					<R20>0</R20>
+					<R21>0</R21>
+					<R22>1</R22>
+				</CoordinateFrame>
+				<string name="Name">ThumbnailCamera</string>
+			</Properties>
+		</Item>
+	</Item>
+</roblox>

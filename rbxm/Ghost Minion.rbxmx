@@ -1,0 +1,564 @@
+<roblox xmlns:xmime="http://www.w3.org/2005/05/xmlmime" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.roblox.com/roblox.xsd" version="4">
+	<External>null</External>
+	<External>nil</External>
+	<Item class="Tool" referent="RBXCE2E0DA79638445EA4017EFC5C0D5558">
+		<Properties>
+			<bool name="CanBeDropped">true</bool>
+			<bool name="Enabled">true</bool>
+			<CoordinateFrame name="Grip">
+				<X>0</X>
+				<Y>0</Y>
+				<Z>0</Z>
+				<R00>1</R00>
+				<R01>0</R01>
+				<R02>0</R02>
+				<R10>0</R10>
+				<R11>1</R11>
+				<R12>0</R12>
+				<R20>0</R20>
+				<R21>0</R21>
+				<R22>1</R22>
+			</CoordinateFrame>
+			<bool name="ManualActivationOnly">false</bool>
+			<string name="Name">GhostPet</string>
+			<bool name="RequiresHandle">true</bool>
+			<Content name="TextureId"><url>http://www.roblox.com/asset/?id=89472132</url></Content>
+			<string name="ToolTip"></string>
+		</Properties>
+		<Item class="Script" referent="RBX97E14020CC79414488F04CE9A6227855">
+			<Properties>
+				<bool name="Disabled">true</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">GhostScript</string>
+				<string name="ScriptGuid">{88729035-4039-4851-B3FD-14B992F55C66}</string>
+				<ProtectedString name="Source"><![CDATA[local RbxUtility = LoadLibrary('RbxUtility')
+local Create = RbxUtility.Create
+
+local creator = script:WaitForChild('creator')
+local Ghost = script.Parent
+repeat wait() until creator.Value
+local Player = creator.Value
+local Character = Player.Character
+local Humanoid = Character.Humanoid
+local Alive = true
+
+local Health = Create'NumberValue'{
+	Parent = Ghost;
+	Name = 'Health';
+	Value = 150;
+}
+
+----------------------------------------
+
+--change alive and remove us soon when health reaches 0
+Health.Changed:connect(function()
+	if Health.Value <= 0 then
+		Alive = false
+		--if the humanoid is dead, explode will handle us
+		if Humanoid.Health <= 0 then
+			--nothing to do
+		else
+			--otherwise, play a dissapearing anim here
+			for i = 0, 1, 0.05 do
+				Ghost.Torso.Transparency = i
+				wait()
+			end
+			Ghost:Destroy()
+		end
+	end
+end)
+
+
+--kill us on character died
+Character.Humanoid.Died:connect(function()
+	--kill us
+	local damageToDo = Health.Value
+	Health.Value = 0
+
+	--explode
+	local ringAt = Character.Torso.Position
+	local ring = Create'Part'{
+		Parent = Ghost;
+		Transparency = 1;
+		FormFactor = 'Custom';
+		Size = Vector3.new(1,1,1);
+		Anchored = true;
+		CanCollide = false;
+		--
+		Create'Decal'{
+			Texture = 'http://www.roblox.com/asset/?id=11187115';
+			Face = 'Top';
+			Shiny = 0;
+			Name = 'DecalA';
+		};
+		--
+		Create'Decal'{
+			Texture = 'http://www.roblox.com/asset/?id=11187115';
+			Face = 'Bottom';
+			Shiny = 0;
+			Name = 'DecalB';
+		};
+	}
+
+	--expand
+	for i = 0, 1, 0.05 do
+		ring.Size = Vector3.new(i*i*22*2, 0, i*i*22*2)
+		ring.CFrame = CFrame.new(ringAt)
+		ring.DecalA.Transparency = i
+		ring.DecalB.Transparency = i
+		Ghost.Torso.Mesh.Scale = Vector3.new(1+i*2, 1+i*2, 1+i*2)
+		Ghost.Torso.Transparency = 0.2 + 0.8*i
+		wait()
+	end
+
+	--do damage
+	local allParts = game.Workspace:FindPartsInRegion3(Region3.new(ringAt - Vector3.new(15, 5, 15),
+	                                                               ringAt + Vector3.new(15, 5, 15)))
+	local didDamageTo = {[Humanoid] = true}
+	for _, part in pairs(allParts) do
+		if (part.Position - ringAt).magnitude < 15 then
+			if part.Parent and part.Parent:FindFirstChild('Humanoid') then
+				local hum = part.Parent:FindFirstChild('Humanoid')
+				if not didDamageTo[hum] then
+					didDamageTo[hum] = true
+					hum:TakeDamage(hum.Health)
+				end
+			end
+		end
+	end
+
+	--get rid of ring and ghost
+	ring:Destroy()
+	Ghost:Destroy()
+end)
+
+
+--tracking of "healing bits" to show when the ghost is healing you
+local HealingBitList = {}
+local ToBeHealed = 0
+function AddHealingBit(health)
+	ToBeHealed = ToBeHealed + health
+	local bit = {}
+	bit.Part = Create'Part'{
+		Name = 'HealingBit';
+		Parent = Ghost;
+		Shape = 'Ball';
+		Anchored = true;
+		CanCollide = false;
+		FormFactor = 'Custom';
+		Size = Vector3.new(1,1,1);
+		BrickColor = BrickColor.new(28);
+		Transparency = 0.2;
+	}
+	bit.Direction = Vector3.new(math.random(-10,10), math.random(-10,10), math.random(-10,10)).unit
+	bit.From = Ghost.Torso.Position
+	bit.Timestamp = tick()
+	bit.Health = health
+	HealingBitList[bit] = true
+end
+Spawn(function()
+	local LastTime = tick()
+	while true do
+		wait()
+		local Now = tick()
+		local dt = LastTime-Now
+		LastTime = Now
+		--
+		local torsoPos = Character.HumanoidRootPart.Position
+		for bit, _ in pairs(HealingBitList) do
+			local elapsed = (Now - bit.Timestamp)/1.0
+			if elapsed > 1 then
+				--done, heal player and remove bit
+				HealingBitList[bit] = nil
+				bit.Part:Destroy()
+				Humanoid.Health = Humanoid.Health + bit.Health
+				ToBeHealed = ToBeHealed - bit.Health
+			else
+				local toTorso = torsoPos - bit.From
+				bit.Part.CFrame = CFrame.new(bit.From + toTorso*elapsed + bit.Direction*6*(1-elapsed))
+			end
+		end
+	end
+end)
+
+
+--set up the healing loop
+Spawn(function()
+	local LastHealedAt = tick()
+	while true do
+		wait()
+		if not Alive then break end
+		--
+		if Health.Value > 0 and Humanoid.Health + ToBeHealed < Humanoid.MaxHealth then
+			if tick()-LastHealedAt > 0.5 then
+				local toHeal = math.min(Humanoid.MaxHealth-Humanoid.Health, Health.Value, 5)
+				Health.Value = Health.Value - toHeal
+				AddHealingBit(toHeal)
+				LastHealedAt = tick()
+			end
+		end
+	end
+end)
+
+
+--create the Ghost
+Create'Part'{
+	Name = 'Torso';
+	Parent = Ghost;
+	Shape = 'Ball';
+	Size = Vector3.new(2,2,2);
+	Transparency = 0.2;
+	CanCollide = false;
+	CFrame = CFrame.new(Character.HumanoidRootPart.Position + Vector3.new(1,1,1),
+		                Character.HumanoidRootPart.Position + Vector3.new(1,1,1) + Character.HumanoidRootPart.CFrame.lookVector);
+	--
+	Create'SpecialMesh'{
+		MeshId = 'http://www.roblox.com/asset/?id=89391602';
+		TextureId = 'http://www.roblox.com/asset/?id=89391636';
+		VertexColor = Vector3.new(0.8, 1.0, 0.8);
+		Scale = Vector3.new(0.8,0.8,0.8);
+		Name = 'Mesh';
+	};
+	--
+	Create'BodyPosition'{
+		Name = 'Float';
+		position = Character.HumanoidRootPart.Position + Vector3.new(1,1,1);
+	};
+	Create'BodyGyro'{
+		Name = 'Rotate';
+		cframe = Character.HumanoidRootPart.CFrame;
+		maxTorque = Vector3.new(40000, 20000, 40000);
+	};
+}
+
+
+--set up ghost following you
+Spawn(function()
+	while Alive do
+		local torsoAt = Character.HumanoidRootPart.Position
+		local toGhost = Ghost.Torso.Position - torsoAt
+		toGhost = Vector3.new(toGhost.x, 0, toGhost.z).unit
+		local ghostAt = torsoAt + toGhost*3 + Vector3.new(0, 2 + 1*math.sin(tick()), 0)
+		--
+		Ghost.Torso.Float.position = ghostAt
+		Ghost.Torso.Rotate.cframe = Character.HumanoidRootPart.CFrame
+		--
+		wait()
+	end
+end)
+
+
+--and finally set up a veiw of our health
+local GhostLocal = script:WaitForChild('GhostLocal')
+GhostLocal:WaitForChild('Target')
+--
+local sc = GhostLocal:Clone()
+sc.Target.Value = Ghost
+sc.Parent = Character
+sc.Disabled = false]]></ProtectedString>
+			</Properties>
+			<Item class="ObjectValue" referent="RBX3C3C5B7F15B9409298B4D4E51C438673">
+				<Properties>
+					<string name="Name">creator</string>
+					<Ref name="Value">null</Ref>
+				</Properties>
+			</Item>
+			<Item class="LocalScript" referent="RBX1A0DC665124C43DF9342931779173D3B">
+				<Properties>
+					<bool name="Disabled">true</bool>
+					<Content name="LinkedSource"><null></null></Content>
+					<string name="Name">GhostLocal</string>
+					<string name="ScriptGuid">{8E15DA5A-6E02-4226-86C2-C485D6088E5F}</string>
+					<ProtectedString name="Source"><![CDATA[local RbxUtility = LoadLibrary('RbxUtility')
+local Create = RbxUtility.Create
+
+------------------------------------------
+local function WaitFor(parent)
+	return setmetatable({}, {
+		__index = function(tb, child)
+			return function()
+				while not parent:FindFirstChild(child) do 
+					parent.ChildAdded:wait()
+				end
+				return parent:FindFirstChild(child)			
+			end
+		end;
+	})
+end
+----------------------------------------
+
+local GhostValue = WaitFor(script).Target()
+while not GhostValue.Value do wait() end
+
+local Ghost = GhostValue.Value
+local GhostTorso = WaitFor(Ghost).Torso()
+local GhostHealth = WaitFor(Ghost).Health()
+
+-----------------------------------------
+
+local creator = WaitFor(WaitFor(Ghost).GhostScript()).creator()
+while not creator.Value do wait() end
+local Player = creator.Value
+local PlayerGui = WaitFor(Player).PlayerGui()
+
+------------------------------------------
+
+--bail out if the ghost already died
+if Player.Character.Humanoid.Health <= 0 or GhostHealth.Value <= 0 then
+	script:Destroy()
+	return
+end
+
+------------------------------------------
+
+local Gui = Create'BillboardGui'{
+	Parent = PlayerGui;
+	Adornee = GhostTorso;
+	Size = UDim2.new(2,0,1,0);
+	--
+	Create'TextLabel'{
+		Name = 'HealthLabel';
+		Font = 'ArialBold';
+		TextScaled = true;
+		Text = "150/150";
+		BackgroundTransparency = 1;
+		TextColor3 = Color3.new(0, 0.8, 0);
+		TextStrokeColor3 = Color3.new(0, 0.3, 0);
+		TextStrokeTransparency = 0.2;
+		Size = UDim2.new(1,0,1,0);
+	};
+}
+
+-----------------------------------------
+
+Ghost.Changed:connect(function(pr)
+	if pr == 'Parent' and not Ghost.Parent then
+		--destroy us
+		Gui:Destroy()
+		script:Destroy()
+	end
+end)
+
+------------------------------------------
+
+GhostHealth.Changed:connect(function()
+	Gui.HealthLabel.Text = ""..math.floor(GhostHealth.Value).."/150"
+end)]]></ProtectedString>
+				</Properties>
+				<Item class="ObjectValue" referent="RBX01C7822DF8FF42DE98405AB61199E526">
+					<Properties>
+						<string name="Name">Target</string>
+						<Ref name="Value">null</Ref>
+					</Properties>
+				</Item>
+			</Item>
+		</Item>
+		<Item class="LocalScript" referent="RBXECC4FB2BF3224331B8DD5113CD7B16F1">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">LocalMain</string>
+				<string name="ScriptGuid">{DB503D0A-7947-4AAD-87B9-59BCF82BDE5F}</string>
+				<ProtectedString name="Source"><![CDATA[local Tool = script.Parent
+local Character = nil
+local Player = game.Players.LocalPlayer
+
+local CurrentGhost = Player:WaitForChild('CurrentGhost')
+local Clicked = false
+
+local SpawnGhostEvent = script.Parent:WaitForChild("SpawnGhost")
+---------------------------------------
+
+Tool.Equipped:connect(function(mouse)
+	--setup
+	Character = Tool.Parent
+	CurrentGhost = Player:WaitForChild('CurrentGhost', 1)
+
+	--set mouse icon
+	if CurrentGhost and not CurrentGhost.Value then
+		mouse.Icon = 'http://www.roblox.com/asset/?id=89375832'
+	end
+
+	--events
+	mouse.Button1Down:connect(function()
+		if not Clicked then
+			Clicked = true
+			SpawnGhostEvent:FireServer()
+		end
+	end)
+end)
+
+Tool.Unequipped:connect(function()
+	--teardown
+	Clicked = false
+	--
+end)]]></ProtectedString>
+			</Properties>
+		</Item>
+		<Item class="Part" referent="RBX239DCF638CAC4C008F736442C409E899">
+			<Properties>
+				<bool name="Anchored">false</bool>
+				<float name="BackParamA">-0.5</float>
+				<float name="BackParamB">0.5</float>
+				<token name="BackSurface">0</token>
+				<token name="BackSurfaceInput">0</token>
+				<float name="BottomParamA">-0.5</float>
+				<float name="BottomParamB">0.5</float>
+				<token name="BottomSurface">4</token>
+				<token name="BottomSurfaceInput">0</token>
+				<int name="BrickColor">194</int>
+				<CoordinateFrame name="CFrame">
+					<X>20.115015</X>
+					<Y>92.9899826</Y>
+					<Z>27</Z>
+					<R00>1</R00>
+					<R01>0</R01>
+					<R02>0</R02>
+					<R10>0</R10>
+					<R11>1</R11>
+					<R12>0</R12>
+					<R20>0</R20>
+					<R21>0</R21>
+					<R22>1</R22>
+				</CoordinateFrame>
+				<bool name="CanCollide">true</bool>
+				<PhysicalProperties name="CustomPhysicalProperties">
+					<CustomPhysics>false</CustomPhysics>
+				</PhysicalProperties>
+				<float name="Elasticity">0.5</float>
+				<float name="Friction">0.300000012</float>
+				<float name="FrontParamA">-0.5</float>
+				<float name="FrontParamB">0.5</float>
+				<token name="FrontSurface">0</token>
+				<token name="FrontSurfaceInput">0</token>
+				<float name="LeftParamA">-0.5</float>
+				<float name="LeftParamB">0.5</float>
+				<token name="LeftSurface">0</token>
+				<token name="LeftSurfaceInput">0</token>
+				<bool name="Locked">false</bool>
+				<token name="Material">256</token>
+				<string name="Name">Handle</string>
+				<float name="Reflectance">0</float>
+				<float name="RightParamA">-0.5</float>
+				<float name="RightParamB">0.5</float>
+				<token name="RightSurface">0</token>
+				<token name="RightSurfaceInput">0</token>
+				<Vector3 name="RotVelocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<float name="TopParamA">-0.5</float>
+				<float name="TopParamB">0.5</float>
+				<token name="TopSurface">3</token>
+				<token name="TopSurfaceInput">0</token>
+				<float name="Transparency">0.200000003</float>
+				<Vector3 name="Velocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<token name="formFactorRaw">3</token>
+				<token name="shape">1</token>
+				<Vector3 name="size">
+					<X>2</X>
+					<Y>2</Y>
+					<Z>2</Z>
+				</Vector3>
+			</Properties>
+			<Item class="SpecialMesh" referent="RBX3F6523FA39C34B60B20DE7B024281424">
+				<Properties>
+					<token name="LODX">2</token>
+					<token name="LODY">2</token>
+					<Content name="MeshId"><url>http://www.roblox.com/asset/?id=89391602</url></Content>
+					<token name="MeshType">5</token>
+					<string name="Name">Mesh</string>
+					<Vector3 name="Offset">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+					</Vector3>
+					<Vector3 name="Scale">
+						<X>0.5</X>
+						<Y>0.5</Y>
+						<Z>0.5</Z>
+					</Vector3>
+					<Content name="TextureId"><url>http://www.roblox.com/asset/?id=89391636</url></Content>
+					<Vector3 name="VertexColor">
+						<X>0.800000012</X>
+						<Y>1</Y>
+						<Z>0.800000012</Z>
+					</Vector3>
+				</Properties>
+			</Item>
+			<Item class="Attachment" referent="RBXC75FCA90FD0B49529729CFAEB0F137E1">
+				<Properties>
+					<CoordinateFrame name="CFrame">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0.5</Z>
+						<R00>0</R00>
+						<R01>0</R01>
+						<R02>-1</R02>
+						<R10>0</R10>
+						<R11>1</R11>
+						<R12>0</R12>
+						<R20>1</R20>
+						<R21>0</R21>
+						<R22>0</R22>
+					</CoordinateFrame>
+					<string name="Name">RightGripAttachment</string>
+					<bool name="Visible">false</bool>
+				</Properties>
+			</Item>
+		</Item>
+		<Item class="Script" referent="RBX653D4F48B32B4301A546493EBD4FDA26">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">Script</string>
+				<string name="ScriptGuid">{29A84D9A-6C95-4CB9-88C5-56AF34F3F81D}</string>
+				<ProtectedString name="Source"><![CDATA[local Tool = script.Parent
+local GhostScript = Tool.GhostScript
+
+local CurrentGhost = nil
+local Character = nil
+
+local SpawnGhostEvent = Instance.new("RemoteEvent")
+SpawnGhostEvent.Name = "SpawnGhost"
+SpawnGhostEvent.OnServerEvent:connect(function(player)
+	if CurrentGhost.Value then return end
+	if Character ~= player.Character then return end	
+	
+	local NewModel = Instance.new("Model")
+	NewModel.Name = "Ghost Pet"
+	NewModel.Parent = Tool.Parent
+	local NewScript = GhostScript:Clone()
+	NewScript.Disabled = false
+	NewScript.creator.Value = player
+	NewScript.Parent = NewModel
+	CurrentGhost.Value = NewModel
+	
+	game.Debris:AddItem(Tool, 0.1)
+end)
+SpawnGhostEvent.Parent = script.Parent
+
+Tool.Equipped:connect(function()
+	Character = Tool.Parent
+	local Player = game.Players:GetPlayerFromCharacter(Character)
+	if Player and Player:FindFirstChild("CurrentGhost") then
+		CurrentGhost = Player.CurrentGhost
+	elseif Player then
+		CurrentGhost = Instance.new("ObjectValue")
+		CurrentGhost.Name = "CurrentGhost"
+		CurrentGhost.Parent = Player
+	end
+end)
+
+Tool.Unequipped:connect(function()
+	Character = nil
+end)]]></ProtectedString>
+			</Properties>
+		</Item>
+	</Item>
+</roblox>

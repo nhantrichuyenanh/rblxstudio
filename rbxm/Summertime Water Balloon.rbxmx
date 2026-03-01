@@ -1,0 +1,639 @@
+<roblox xmlns:xmime="http://www.w3.org/2005/05/xmlmime" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.roblox.com/roblox.xsd" version="4">
+	<External>null</External>
+	<External>nil</External>
+	<Item class="Tool" referent="RBXDCE3D3F5C12441E3A20B4411DEC25DDA">
+		<Properties>
+			<bool name="CanBeDropped">true</bool>
+			<bool name="Enabled">true</bool>
+			<CoordinateFrame name="Grip">
+				<X>0</X>
+				<Y>-0.300000012</Y>
+				<Z>0</Z>
+				<R00>0</R00>
+				<R01>0</R01>
+				<R02>-1</R02>
+				<R10>-1</R10>
+				<R11>0</R11>
+				<R12>0</R12>
+				<R20>0</R20>
+				<R21>1</R21>
+				<R22>0</R22>
+			</CoordinateFrame>
+			<bool name="ManualActivationOnly">false</bool>
+			<string name="Name">BlueWaterBalloon</string>
+			<bool name="RequiresHandle">true</bool>
+			<Content name="TextureId"><url>rbxassetid://880549847</url></Content>
+			<string name="ToolTip"></string>
+		</Properties>
+		<Item class="Part" referent="RBX7EA03AA34F344FEAA51F142BD45A375A">
+			<Properties>
+				<bool name="Anchored">false</bool>
+				<float name="BackParamA">-0.5</float>
+				<float name="BackParamB">0.5</float>
+				<token name="BackSurface">0</token>
+				<token name="BackSurfaceInput">0</token>
+				<float name="BottomParamA">-0.5</float>
+				<float name="BottomParamB">0.5</float>
+				<token name="BottomSurface">4</token>
+				<token name="BottomSurfaceInput">0</token>
+				<CoordinateFrame name="CFrame">
+					<X>-0.119999997</X>
+					<Y>0.660000026</Y>
+					<Z>0.0300009996</Z>
+					<R00>1</R00>
+					<R01>0</R01>
+					<R02>0</R02>
+					<R10>0</R10>
+					<R11>1</R11>
+					<R12>0</R12>
+					<R20>0</R20>
+					<R21>0</R21>
+					<R22>1</R22>
+				</CoordinateFrame>
+				<bool name="CanCollide">true</bool>
+				<int name="CollisionGroupId">0</int>
+				<Color3uint8 name="Color3uint8">4288914085</Color3uint8>
+				<PhysicalProperties name="CustomPhysicalProperties">
+					<CustomPhysics>false</CustomPhysics>
+				</PhysicalProperties>
+				<float name="Elasticity">0.5</float>
+				<float name="Friction">0.300000012</float>
+				<float name="FrontParamA">-0.5</float>
+				<float name="FrontParamB">0.5</float>
+				<token name="FrontSurface">0</token>
+				<token name="FrontSurfaceInput">0</token>
+				<float name="LeftParamA">-0.5</float>
+				<float name="LeftParamB">0.5</float>
+				<token name="LeftSurface">0</token>
+				<token name="LeftSurfaceInput">0</token>
+				<bool name="Locked">true</bool>
+				<token name="Material">256</token>
+				<string name="Name">Handle</string>
+				<float name="Reflectance">0</float>
+				<float name="RightParamA">-0.5</float>
+				<float name="RightParamB">0.5</float>
+				<token name="RightSurface">0</token>
+				<token name="RightSurfaceInput">0</token>
+				<Vector3 name="RotVelocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<float name="TopParamA">-0.5</float>
+				<float name="TopParamB">0.5</float>
+				<token name="TopSurface">3</token>
+				<token name="TopSurfaceInput">0</token>
+				<float name="Transparency">0</float>
+				<Vector3 name="Velocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<token name="formFactorRaw">0</token>
+				<token name="shape">0</token>
+				<Vector3 name="size">
+					<X>1</X>
+					<Y>1</Y>
+					<Z>1</Z>
+				</Vector3>
+			</Properties>
+			<Item class="SpecialMesh" referent="RBXEF2CACA808B74265A2A4F2B82C666138">
+				<Properties>
+					<token name="LODX">2</token>
+					<token name="LODY">2</token>
+					<Content name="MeshId"><url>rbxassetid://880548733</url></Content>
+					<token name="MeshType">5</token>
+					<string name="Name">Mesh</string>
+					<Vector3 name="Offset">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+					</Vector3>
+					<Vector3 name="Scale">
+						<X>2</X>
+						<Y>2</Y>
+						<Z>2</Z>
+					</Vector3>
+					<Content name="TextureId"><url>rbxassetid://880549474</url></Content>
+					<Vector3 name="VertexColor">
+						<X>1</X>
+						<Y>1</Y>
+						<Z>1</Z>
+					</Vector3>
+				</Properties>
+			</Item>
+			<Item class="Sound" referent="RBXD62806E767EF4B54B62D1F2D51CDA73E">
+				<Properties>
+					<float name="EmitterSize">10</float>
+					<bool name="Looped">false</bool>
+					<string name="Name">Splat</string>
+					<bool name="PlayOnRemove">false</bool>
+					<float name="PlaybackSpeed">1</float>
+					<bool name="Playing">false</bool>
+					<token name="RollOffMode">0</token>
+					<Ref name="SoundGroup">null</Ref>
+					<Content name="SoundId"><url>http://www.roblox.com/asset/?id=28604165</url></Content>
+					<double name="TimePosition">0</double>
+					<float name="Volume">0.699999988</float>
+					<float name="xmlRead_MaxDistance_3">10000</float>
+				</Properties>
+			</Item>
+		</Item>
+		<Item class="LocalScript" referent="RBXA5B1C22CF49547488DED7AF12215CA62">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">LocalScript</string>
+				<string name="ScriptGuid">{73DE89A2-C807-465A-A713-1420C7D50551}</string>
+				<ProtectedString name="Source"><![CDATA[local Tool = script.Parent
+local throwStrength = 0
+local count = false
+local p = nil
+local gui = nil
+local thrower = nil
+
+local ControllerEvent = Tool:WaitForChild("Controller")
+
+function onEquippedLocal(mouse)
+
+	mouse.Button1Down:connect(mouse1Down)
+	mouse.Button1Up:connect(mouse1Up)
+	p = game.Players:GetPlayerFromCharacter(Tool.Parent)
+	gui = Tool.ThrowGui:clone()
+	gui.Parent = p.PlayerGui
+
+	local humanoid = Tool.Parent:FindFirstChild("Humanoid")
+	if humanoid ~= nil then 
+		local Animation = Tool:WaitForChild("throw")
+		if humanoid.RigType == Enum.HumanoidRigType.R15 then 
+			Animation = Tool:WaitForChild("R15throw")
+		end 
+		thrower = humanoid:LoadAnimation(Animation)
+	end
+
+end
+
+function onUnequippedLocal(mouse)
+	if thrower then 
+		thrower:Stop()
+		thrower:Destroy()
+	end 
+	thrower = nil
+	gui:Destroy()
+
+end
+
+function mouse1Down()
+	if not Tool.Enabled then return end 
+	throwStrength = 0
+	count = true
+	countStrength()
+
+end
+
+
+
+function mouse1Up()
+
+	wait()
+	count = false
+--	Tool.ThrowStrength.Value = throwStrength
+	ControllerEvent:FireServer(throwStrength)
+	gui.Frame.Visible = false
+	thrower:Play(0.1,1,throwStrength/20)
+
+end
+
+
+function countStrength()
+
+	gui.Frame.Visible = true
+	while count do
+
+		throwStrength = throwStrength + 2
+		if throwStrength <= 200 then
+			p.PlayerGui.ThrowGui.Frame.StrengthBar.Size = UDim2.new(1,0,-throwStrength/200,0)
+		end
+		wait()
+
+	end
+
+end
+
+
+Tool.Equipped:connect(onEquippedLocal)
+Tool.Unequipped:connect(onUnequippedLocal)
+
+]]></ProtectedString>
+			</Properties>
+		</Item>
+		<Item class="Script" referent="RBXE9BBA02546C34E3CBDAFE4E6A39DFD67">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">ThrowScript</string>
+				<string name="ScriptGuid">{BAE943E5-D7AE-43FD-8705-804296032A09}</string>
+				<ProtectedString name="Source"><![CDATA[local Players = game:GetService("Players")
+local debris = game:GetService("Debris")
+
+local Tool = script.Parent
+
+local Player = nil
+
+local RemoteEvent = Tool:FindFirstChild("Controller") or Instance.new("RemoteEvent")
+RemoteEvent.Name = "Controller"
+RemoteEvent.OnServerEvent:Connect(function(player, strength)
+	if player ~= Player then return end 
+
+	throwBalloon(strength)
+end)
+
+RemoteEvent.Parent = Tool
+
+function onEquipped()
+
+	--Tool.ThrowStrength.Changed:connect(throwBalloon)
+	if Tool.Handle:FindFirstChild("BodyForce") ~= nil then
+		Tool.Handle:FindFirstChild("BodyForce"):Destroy()
+	end
+	local humanoid = Tool.Parent:FindFirstChild("Humanoid")
+	
+	Player = Players:GetPlayerFromCharacter(Tool.Parent)
+end
+
+local throwing = false
+
+function throwBalloon(throwStrength)
+	if not Tool.Enabled then return end 
+	Tool.Enabled = false 
+
+	local humanoid = Tool.Parent:FindFirstChild("Humanoid")
+	if throwStrength > 0 and humanoid ~= nil then
+		wait()
+		if throwStrength > 200 then
+			throwStrength = 200
+		end
+
+		local balloon = Tool.Handle:clone()
+
+		Tool.Handle.Transparency = 1
+
+		local targetPos = humanoid.TargetPoint
+		local lookAt = (targetPos - Tool.Parent.Head.Position).unit
+
+		local script = Tool.WaterBalloonScript:clone()
+		script.Parent = balloon
+		script.Disabled = false
+		
+		balloon.Parent = workspace
+		balloon.CanCollide = true
+
+		balloon.Velocity = lookAt * throwStrength
+
+		local force = Instance.new("BodyForce")
+		force.force = Vector3.new(0, (workspace.Gravity * balloon:GetMass() * 0.5) + (throwStrength/30),0)
+		force.Parent = balloon
+
+		debris:AddItem(balloon,20)
+
+		wait(1.5)
+		Tool.Handle.Transparency = 0
+
+	end
+
+	Tool.Enabled = true
+
+end
+
+Tool.Equipped:connect(onEquipped)
+
+]]></ProtectedString>
+			</Properties>
+		</Item>
+		<Item class="LocalScript" referent="RBXDCC7E0293C434CE2956B6DBDFAFAD9C8">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">Local Gui</string>
+				<string name="ScriptGuid">{9A0A282B-251E-4D0F-AD88-72E7D8740F6E}</string>
+				<ProtectedString name="Source"><![CDATA[Mouse_Icon = "rbxasset://textures/GunCursor.png"
+Reloading_Icon = "rbxasset://textures/GunWaitCursor.png"
+
+Tool = script.Parent
+
+Mouse = nil
+
+function UpdateIcon()
+	if Mouse then
+		Mouse.Icon = Tool.Enabled and Mouse_Icon or Reloading_Icon
+	end
+end
+
+function OnEquipped(ToolMouse)
+	Mouse = ToolMouse
+	UpdateIcon()
+end
+
+Tool:GetPropertyChangedSignal("Enabled"):Connect(UpdateIcon)
+Tool.Equipped:connect(OnEquipped)]]></ProtectedString>
+			</Properties>
+		</Item>
+		<Item class="Script" referent="RBX655B9D53DA9048E09F8D8ED8BE4493DE">
+			<Properties>
+				<bool name="Disabled">true</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">WaterBalloonScript</string>
+				<string name="ScriptGuid">{F6562A67-2C04-4E26-86CB-C2EF822A7D5E}</string>
+				<ProtectedString name="Source"><![CDATA[local flakes = {"28575797", "28575813", "28575821", "28575833", "28575848"}
+local globs = {"28575761", "28575775"}
+
+local debris = game:GetService("Debris")
+
+wait(0.1)
+
+function splashScreen(p)
+
+	local guiMain = Instance.new("GuiMain") 
+	guiMain.Parent = p.PlayerGui 
+	local mainFrame = Instance.new("Frame") 
+	mainFrame.Name = "WaterEffect"
+	mainFrame.Position = UDim2.new(0, 0, 0, 0) 
+	mainFrame.Size = UDim2.new(1, 0, 1, 0) 
+	mainFrame.BackgroundColor = BrickColor.new(1,1,1)
+	mainFrame.Transparency = 1
+	mainFrame.BorderColor = BrickColor.new(1,1,1)
+	mainFrame.Parent = guiMain
+
+	debris:AddItem(guiMain, 10)
+
+	--- big globs
+	for i = 1,3 do
+
+		local s = Instance.new("ImageLabel")
+		local size = (math.random() * .2) + .5
+		s.Size = UDim2.new(size,0,size,0)
+		s.Position = UDim2.new(math.random() - (size/2),0, math.random() - (size/2),0)
+		s.SizeConstraint = Enum.SizeConstraint.RelativeXX
+		s.Transparency = 1
+		s.Image = "http://www.roblox.com/asset/?id=" .. globs[math.random(1, #globs)]
+		s.Parent = mainFrame
+		debris:AddItem(s, 5 + (math.random() * 2))
+
+	end
+
+	-- flakes
+	for i=1,20 do
+
+		local s = Instance.new("ImageLabel")
+		local size = (math.random() * .05) + .05
+		s.Size = UDim2.new(size,0,size,0)
+		s.Position = UDim2.new(math.random() - (size/2),0, math.random() - (size/2),0)
+		s.SizeConstraint = Enum.SizeConstraint.RelativeXX
+		s.Transparency = 1
+		s.Image = "http://www.roblox.com/asset/?id=" .. flakes[math.random(1, #flakes)]
+		s.Parent = mainFrame
+		debris:AddItem(s, 3 + (math.random() * 6))
+
+	end
+
+end
+
+
+function onTouched(part)
+
+	local humanoid = part.Parent:FindFirstChildOfClass("Humanoid")
+	if humanoid ~= nil then
+
+		if script.Parent.Velocity.magnitude > 50 then 
+			script.Parent.Splat:Play()
+			local p = game.Players:GetPlayerFromCharacter(humanoid.Parent)
+			if not p then return end
+			splashScreen(p)
+			script.Parent.Transparency = 1
+			wait(1)
+			script.Parent:remove()
+		elseif script.Parent.Velocity.magnitude > 60 then
+			script.Parent.Splat:Play()
+			script.Parent.Transparency = 1
+			wait(1)
+			script.Parent:remove()
+		end
+
+	end
+
+end
+
+script.Parent.Touched:connect(onTouched)
+]]></ProtectedString>
+			</Properties>
+		</Item>
+		<Item class="ScreenGui" referent="RBX3EF517DE0D96474EA0B8D74A84D13E02">
+			<Properties>
+				<int name="DisplayOrder">0</int>
+				<bool name="Enabled">true</bool>
+				<string name="Name">ThrowGui</string>
+				<bool name="ResetOnSpawn">true</bool>
+			</Properties>
+			<Item class="Frame" referent="RBX20E0120337304BC09AEA33281422D6AA">
+				<Properties>
+					<bool name="Active">false</bool>
+					<Vector2 name="AnchorPoint">
+						<X>0</X>
+						<Y>0</Y>
+					</Vector2>
+					<Color3 name="BackgroundColor3">4294967295</Color3>
+					<float name="BackgroundTransparency">0.300000012</float>
+					<Color3 name="BorderColor3">4279970357</Color3>
+					<int name="BorderSizePixel">1</int>
+					<bool name="ClipsDescendants">false</bool>
+					<bool name="Draggable">false</bool>
+					<int name="LayoutOrder">0</int>
+					<string name="Name">Frame</string>
+					<Ref name="NextSelectionDown">null</Ref>
+					<Ref name="NextSelectionLeft">null</Ref>
+					<Ref name="NextSelectionRight">null</Ref>
+					<Ref name="NextSelectionUp">null</Ref>
+					<UDim2 name="Position">
+						<XS>0.850000024</XS>
+						<XO>0</XO>
+						<YS>0.5</YS>
+						<YO>0</YO>
+					</UDim2>
+					<float name="Rotation">0</float>
+					<bool name="Selectable">false</bool>
+					<Ref name="SelectionImageObject">null</Ref>
+					<UDim2 name="Size">
+						<XS>0.0500000007</XS>
+						<XO>0</XO>
+						<YS>0.400000006</YS>
+						<YO>0</YO>
+					</UDim2>
+					<token name="SizeConstraint">0</token>
+					<bool name="SizeFromContents">false</bool>
+					<token name="Style">0</token>
+					<bool name="Visible">false</bool>
+					<int name="ZIndex">1</int>
+				</Properties>
+				<Item class="ImageLabel" referent="RBX0B8FAE22EDEF4BC4802BF18D7F01A66A">
+					<Properties>
+						<bool name="Active">false</bool>
+						<Vector2 name="AnchorPoint">
+							<X>0</X>
+							<Y>0</Y>
+						</Vector2>
+						<Color3 name="BackgroundColor3">4294967295</Color3>
+						<float name="BackgroundTransparency">1</float>
+						<Color3 name="BorderColor3">4279970357</Color3>
+						<int name="BorderSizePixel">0</int>
+						<bool name="ClipsDescendants">false</bool>
+						<bool name="Draggable">false</bool>
+						<Content name="Image"><url>http://www.roblox.com/asset/?id=28600771</url></Content>
+						<Color3 name="ImageColor3">4294967295</Color3>
+						<Vector2 name="ImageRectOffset">
+							<X>0</X>
+							<Y>0</Y>
+						</Vector2>
+						<Vector2 name="ImageRectSize">
+							<X>0</X>
+							<Y>0</Y>
+						</Vector2>
+						<float name="ImageTransparency">0</float>
+						<int name="LayoutOrder">0</int>
+						<string name="Name">ImageLabel</string>
+						<Ref name="NextSelectionDown">null</Ref>
+						<Ref name="NextSelectionLeft">null</Ref>
+						<Ref name="NextSelectionRight">null</Ref>
+						<Ref name="NextSelectionUp">null</Ref>
+						<UDim2 name="Position">
+							<XS>0</XS>
+							<XO>-70</XO>
+							<YS>0</YS>
+							<YO>-50</YO>
+						</UDim2>
+						<float name="Rotation">0</float>
+						<token name="ScaleType">0</token>
+						<bool name="Selectable">false</bool>
+						<Ref name="SelectionImageObject">null</Ref>
+						<UDim2 name="Size">
+							<XS>0</XS>
+							<XO>200</XO>
+							<YS>0</YS>
+							<YO>50</YO>
+						</UDim2>
+						<token name="SizeConstraint">0</token>
+						<bool name="SizeFromContents">false</bool>
+						<Rect2D name="SliceCenter">
+							<min>
+								<X>0</X>
+								<Y>0</Y>
+							</min>
+							<max>
+								<X>0</X>
+								<Y>0</Y>
+							</max>
+						</Rect2D>
+						<UDim2 name="TileSize">
+							<XS>1</XS>
+							<XO>0</XO>
+							<YS>1</YS>
+							<YO>0</YO>
+						</UDim2>
+						<bool name="Visible">true</bool>
+						<int name="ZIndex">1</int>
+					</Properties>
+				</Item>
+				<Item class="Frame" referent="RBX8985CC63E2C2460FA928CB4FB63EADDE">
+					<Properties>
+						<bool name="Active">false</bool>
+						<Vector2 name="AnchorPoint">
+							<X>0</X>
+							<Y>0</Y>
+						</Vector2>
+						<Color3 name="BackgroundColor3">4278255360</Color3>
+						<float name="BackgroundTransparency">0.300000012</float>
+						<Color3 name="BorderColor3">4279970357</Color3>
+						<int name="BorderSizePixel">1</int>
+						<bool name="ClipsDescendants">false</bool>
+						<bool name="Draggable">false</bool>
+						<int name="LayoutOrder">0</int>
+						<string name="Name">StrengthBar</string>
+						<Ref name="NextSelectionDown">null</Ref>
+						<Ref name="NextSelectionLeft">null</Ref>
+						<Ref name="NextSelectionRight">null</Ref>
+						<Ref name="NextSelectionUp">null</Ref>
+						<UDim2 name="Position">
+							<XS>0</XS>
+							<XO>0</XO>
+							<YS>1</YS>
+							<YO>0</YO>
+						</UDim2>
+						<float name="Rotation">0</float>
+						<bool name="Selectable">false</bool>
+						<Ref name="SelectionImageObject">null</Ref>
+						<UDim2 name="Size">
+							<XS>1</XS>
+							<XO>0</XO>
+							<YS>-0</YS>
+							<YO>0</YO>
+						</UDim2>
+						<token name="SizeConstraint">0</token>
+						<bool name="SizeFromContents">false</bool>
+						<token name="Style">0</token>
+						<bool name="Visible">true</bool>
+						<int name="ZIndex">1</int>
+					</Properties>
+				</Item>
+			</Item>
+		</Item>
+		<Item class="Animation" referent="RBXAA815FF325AA4722B13D5429ABD57508">
+			<Properties>
+				<Content name="AnimationId"><url>http://www.roblox.com/Asset?ID=28604759</url></Content>
+				<string name="Name">throw</string>
+			</Properties>
+		</Item>
+		<Item class="Animation" referent="RBX22263510D14343A1A5C087EF6CC9AA32">
+			<Properties>
+				<Content name="AnimationId"><url>rbxassetid://854406300</url></Content>
+				<string name="Name">R15throw</string>
+			</Properties>
+		</Item>
+		<Item class="Camera" referent="RBXeef60f9aa56644809a656989a75b8b90">
+			<Properties>
+				<CoordinateFrame name="CFrame">
+					<X>-1.23741925</X>
+					<Y>1.71828437</Y>
+					<Z>-1.32429183</Z>
+					<R00>-0.774949908</R00>
+					<R01>0.323624909</R01>
+					<R02>-0.542880952</R02>
+					<R10>2.98023259e-08</R10>
+					<R11>0.858958006</R11>
+					<R12>0.512046218</R12>
+					<R20>0.632022798</R20>
+					<R21>0.396810144</R21>
+					<R22>-0.665649295</R22>
+				</CoordinateFrame>
+				<Ref name="CameraSubject">null</Ref>
+				<token name="CameraType">0</token>
+				<float name="FieldOfView">70</float>
+				<CoordinateFrame name="Focus">
+					<X>-0.151657343</X>
+					<Y>0.694191933</Y>
+					<Z>0.00700676441</Z>
+					<R00>1</R00>
+					<R01>0</R01>
+					<R02>0</R02>
+					<R10>0</R10>
+					<R11>1</R11>
+					<R12>0</R12>
+					<R20>0</R20>
+					<R21>0</R21>
+					<R22>1</R22>
+				</CoordinateFrame>
+				<bool name="HeadLocked">true</bool>
+				<float name="HeadScale">1</float>
+				<string name="Name">ThumbnailCamera</string>
+			</Properties>
+		</Item>
+	</Item>
+</roblox>

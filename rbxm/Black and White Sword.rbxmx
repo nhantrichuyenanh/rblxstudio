@@ -1,0 +1,476 @@
+<roblox xmlns:xmime="http://www.w3.org/2005/05/xmlmime" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.roblox.com/roblox.xsd" version="4">
+	<External>null</External>
+	<External>nil</External>
+	<Item class="Tool" referent="RBX92664FB781E54A7FB4003C36C81548C3">
+		<Properties>
+			<bool name="CanBeDropped">true</bool>
+			<bool name="Enabled">true</bool>
+			<CoordinateFrame name="Grip">
+				<X>0</X>
+				<Y>0</Y>
+				<Z>2.1500001</Z>
+				<R00>1</R00>
+				<R01>0</R01>
+				<R02>-0</R02>
+				<R10>0</R10>
+				<R11>0</R11>
+				<R12>1</R12>
+				<R20>0</R20>
+				<R21>-1</R21>
+				<R22>0</R22>
+			</CoordinateFrame>
+			<bool name="ManualActivationOnly">false</bool>
+			<string name="Name">BlackAndWhiteWingedSword</string>
+			<bool name="RequiresHandle">true</bool>
+			<Content name="TextureId"><url>http://www.roblox.com/asset/?id=191073422</url></Content>
+			<string name="ToolTip"></string>
+		</Properties>
+		<Item class="Part" referent="RBXAFE5B17F3B7748B4905A924A47FCE7FE">
+			<Properties>
+				<bool name="Anchored">false</bool>
+				<float name="BackParamA">-0.5</float>
+				<float name="BackParamB">0.5</float>
+				<token name="BackSurface">0</token>
+				<token name="BackSurfaceInput">0</token>
+				<float name="BottomParamA">-0.5</float>
+				<float name="BottomParamB">0.5</float>
+				<token name="BottomSurface">0</token>
+				<token name="BottomSurfaceInput">0</token>
+				<int name="BrickColor">194</int>
+				<CoordinateFrame name="CFrame">
+					<X>0</X>
+					<Y>11.5</Y>
+					<Z>0</Z>
+					<R00>1</R00>
+					<R01>0</R01>
+					<R02>0</R02>
+					<R10>0</R10>
+					<R11>0</R11>
+					<R12>0.99999994</R12>
+					<R20>0</R20>
+					<R21>-0.99999994</R21>
+					<R22>0</R22>
+				</CoordinateFrame>
+				<bool name="CanCollide">false</bool>
+				<PhysicalProperties name="CustomPhysicalProperties">
+					<CustomPhysics>false</CustomPhysics>
+				</PhysicalProperties>
+				<float name="Elasticity">0.5</float>
+				<float name="Friction">0.300000012</float>
+				<float name="FrontParamA">-0.5</float>
+				<float name="FrontParamB">0.5</float>
+				<token name="FrontSurface">0</token>
+				<token name="FrontSurfaceInput">0</token>
+				<float name="LeftParamA">-0.5</float>
+				<float name="LeftParamB">0.5</float>
+				<token name="LeftSurface">0</token>
+				<token name="LeftSurfaceInput">0</token>
+				<bool name="Locked">false</bool>
+				<token name="Material">256</token>
+				<string name="Name">Handle</string>
+				<float name="Reflectance">0</float>
+				<float name="RightParamA">-0.5</float>
+				<float name="RightParamB">0.5</float>
+				<token name="RightSurface">0</token>
+				<token name="RightSurfaceInput">0</token>
+				<Vector3 name="RotVelocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<float name="TopParamA">-0.5</float>
+				<float name="TopParamB">0.5</float>
+				<token name="TopSurface">0</token>
+				<token name="TopSurfaceInput">0</token>
+				<float name="Transparency">0</float>
+				<Vector3 name="Velocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<token name="formFactorRaw">3</token>
+				<token name="shape">1</token>
+				<Vector3 name="size">
+					<X>0.200000003</X>
+					<Y>1</Y>
+					<Z>5</Z>
+				</Vector3>
+			</Properties>
+			<Item class="SpecialMesh" referent="RBX4FF7C16D4A8440B29E48ED912A7C082E">
+				<Properties>
+					<token name="LODX">2</token>
+					<token name="LODY">2</token>
+					<Content name="MeshId"><url>http://www.roblox.com/asset/?id=191073134 </url></Content>
+					<token name="MeshType">5</token>
+					<string name="Name">Mesh</string>
+					<Vector3 name="Offset">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+					</Vector3>
+					<Vector3 name="Scale">
+						<X>2.5</X>
+						<Y>2.5</Y>
+						<Z>2.5</Z>
+					</Vector3>
+					<Content name="TextureId"><url>http://www.roblox.com/asset/?id=191073117 </url></Content>
+					<Vector3 name="VertexColor">
+						<X>1</X>
+						<Y>1</Y>
+						<Z>1</Z>
+					</Vector3>
+				</Properties>
+			</Item>
+			<Item class="Sound" referent="RBX236CFE40CD1B40BB9303BCEAEFE02BFA">
+				<Properties>
+					<float name="EmitterSize">10</float>
+					<bool name="Looped">false</bool>
+					<string name="Name">Hit</string>
+					<bool name="PlayOnRemove">false</bool>
+					<float name="PlaybackSpeed">1</float>
+					<bool name="Playing">false</bool>
+					<token name="RollOffMode">0</token>
+					<Ref name="SoundGroup">null</Ref>
+					<Content name="SoundId"><url>http://www.roblox.com/asset/?id=93005921</url></Content>
+					<double name="TimePosition">0</double>
+					<float name="Volume">1</float>
+					<float name="xmlRead_MaxDistance_3">10000</float>
+				</Properties>
+			</Item>
+			<Item class="Sound" referent="RBX5F2DF76ECFAB45C1949923A0249DA02D">
+				<Properties>
+					<float name="EmitterSize">10</float>
+					<bool name="Looped">false</bool>
+					<string name="Name">Attack</string>
+					<bool name="PlayOnRemove">false</bool>
+					<float name="PlaybackSpeed">1</float>
+					<bool name="Playing">false</bool>
+					<token name="RollOffMode">0</token>
+					<Ref name="SoundGroup">null</Ref>
+					<Content name="SoundId"><url>http://www.roblox.com/asset/?id=45941860</url></Content>
+					<double name="TimePosition">0</double>
+					<float name="Volume">0.330000013</float>
+					<float name="xmlRead_MaxDistance_3">10000</float>
+				</Properties>
+			</Item>
+			<Item class="Sound" referent="RBXF735926B84634662A6B6B53401190616">
+				<Properties>
+					<float name="EmitterSize">10</float>
+					<bool name="Looped">false</bool>
+					<string name="Name">Clash1</string>
+					<bool name="PlayOnRemove">false</bool>
+					<float name="PlaybackSpeed">1</float>
+					<bool name="Playing">false</bool>
+					<token name="RollOffMode">0</token>
+					<Ref name="SoundGroup">null</Ref>
+					<Content name="SoundId"><url>rbxassetid://91154446</url></Content>
+					<double name="TimePosition">0</double>
+					<float name="Volume">0.5</float>
+					<float name="xmlRead_MaxDistance_3">10000</float>
+				</Properties>
+			</Item>
+			<Item class="Sound" referent="RBXDA708E702FF64DE8A49456353A7566E8">
+				<Properties>
+					<float name="EmitterSize">10</float>
+					<bool name="Looped">false</bool>
+					<string name="Name">Clash2</string>
+					<bool name="PlayOnRemove">false</bool>
+					<float name="PlaybackSpeed">1</float>
+					<bool name="Playing">false</bool>
+					<token name="RollOffMode">0</token>
+					<Ref name="SoundGroup">null</Ref>
+					<Content name="SoundId"><url>rbxassetid://91154471</url></Content>
+					<double name="TimePosition">0</double>
+					<float name="Volume">0.5</float>
+					<float name="xmlRead_MaxDistance_3">10000</float>
+				</Properties>
+			</Item>
+			<Item class="Sound" referent="RBX52180A9A0FA047D19CA9183017588FCD">
+				<Properties>
+					<float name="EmitterSize">10</float>
+					<bool name="Looped">false</bool>
+					<string name="Name">Clash3</string>
+					<bool name="PlayOnRemove">false</bool>
+					<float name="PlaybackSpeed">1</float>
+					<bool name="Playing">false</bool>
+					<token name="RollOffMode">0</token>
+					<Ref name="SoundGroup">null</Ref>
+					<Content name="SoundId"><url>rbxassetid://91154503</url></Content>
+					<double name="TimePosition">0</double>
+					<float name="Volume">0.5</float>
+					<float name="xmlRead_MaxDistance_3">10000</float>
+				</Properties>
+			</Item>
+		</Item>
+		<Item class="LocalScript" referent="RBX10B175475108435D896B29E0CC5F8A47">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">Client</string>
+				<string name="ScriptGuid">{570E7211-854A-4B06-9373-4AAAC76AAE00}</string>
+				<ProtectedString name="Source"><![CDATA[local Tool = script.Parent
+local Remote = Tool:WaitForChild("Remote")
+
+local CAS = game:GetService("ContextActionService")
+local ActionName = "BlackAndWhiteWingedSword"
+
+local Player = game:GetService("Players").LocalPlayer
+local Mouse = Player:GetMouse()
+
+function onAction(actionName, inputState, inputObject)
+	if inputState == Enum.UserInputState.Begin then
+		Remote:FireServer("Activate", Mouse.Hit.p)
+	end
+end
+
+function onEquipped()
+	--ensure unequip
+	onUnequipped()
+	
+	--bind
+	CAS:BindActionToInputTypes(
+		ActionName,
+		onAction,
+		false,
+		Enum.UserInputType.MouseButton1,
+		Enum.UserInputType.Touch
+	)
+end
+
+function onUnequipped()
+	--unbind
+	CAS:UnbindAction(ActionName)
+end
+
+function playAnimation(name, ...)
+	local anim = Tool:FindFirstChild(name)
+	if anim then
+		local human = Tool.Parent:FindFirstChild("Humanoid")
+		if human then
+			local track = human:LoadAnimation(anim)
+			track:Play(...)
+		end
+	end
+end
+
+function loopAnimation(name, duration, animTime, ...)
+	for _ = 1, duration/animTime do
+		playAnimation(name, ...)
+		wait(animTime)
+	end
+end
+
+function onRemote(func, ...)
+	if func == "PlayAnimation" then
+		playAnimation(...)
+	end
+	
+	if func == "LoopAnimation" then
+		loopAnimation(...)
+	end
+end
+
+--connect
+Tool.Equipped:connect(onEquipped)
+Tool.Unequipped:connect(onUnequipped)
+Remote.OnClientEvent:connect(onRemote)]]></ProtectedString>
+			</Properties>
+		</Item>
+		<Item class="RemoteEvent" referent="RBXF56D2EBE03A84A0399642F392BD12D96">
+			<Properties>
+				<string name="Name">Remote</string>
+			</Properties>
+		</Item>
+		<Item class="Script" referent="RBX1C5B8CB93C4A4A048503AA463326135F">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">Server</string>
+				<string name="ScriptGuid">{7EAE7FC1-7E29-4E9F-A4E9-3CB1429BD5AD}</string>
+				<ProtectedString name="Source"><![CDATA[--Updated for R15 avatars by StarWars
+local Tool = script.Parent
+local Remote = Tool:WaitForChild("Remote")
+local Handle = Tool:WaitForChild("Handle")
+local Human
+local JumpConnection
+local HB = game:GetService("RunService").Heartbeat
+local DB = game:GetService("Debris")
+
+local AttackAble = true
+local AttackRestTime = 2/3
+local AttackDamaging = false
+local AttackStartUp = 0.2
+local AttackWindow = 1
+local AttackDamage = 25
+
+local JumpAble = true
+local JumpRestTime = 5
+local JumpDamage = 10
+
+function onEquipped()
+	onUnequipped()
+	
+	Human = Tool.Parent:WaitForChild("Humanoid")
+	JumpConnection = Human.Jumping:connect(onJump)
+end
+
+function onUnequipped()
+	if JumpConnection then
+		JumpConnection:disconnect()
+	end
+end
+
+function bladeTrail(duration)
+	spawn(function()
+		local fadeTime = 0.5
+		local t = 0
+		while t < duration do
+			t = t + wait(0.075)
+			local blade = Handle:clone()
+			blade.Anchored = true
+			blade.CanCollide = false
+			blade.Parent = workspace
+			DB:AddItem(blade, fadeTime)
+			HB:connect(function(dt)
+				blade.Transparency = blade.Transparency + (dt / fadeTime)
+			end)
+			local touched
+			touched = blade.Touched:connect(function(part)
+				if part:IsDescendantOf(Tool.Parent) then return end
+				
+				if part.Parent and part.Parent:FindFirstChild("Humanoid") then
+					local human = part.Parent.Humanoid
+					tagHuman(human)
+					human:TakeDamage(JumpDamage)
+					touched:disconnect()
+					
+					blade.Anchored = false
+					local w = Instance.new("Weld")
+					w.Part0 = part
+					w.Part1 = blade
+					w.C0 = part.CFrame:toObjectSpace(blade.CFrame)
+					w.Parent = w.Part0
+					
+					Handle.Hit:Play()
+				end
+			end)
+		end
+	end)
+end
+
+function onJump()
+	if not JumpAble then return end
+	
+	JumpAble = false
+	delay(JumpRestTime, function()
+		JumpAble = true
+	end)
+	
+	local duration = 1.5
+	local jumpAssist = Instance.new("BodyVelocity")
+	jumpAssist.maxForce = Vector3.new(0, math.huge, 0)
+	jumpAssist.velocity = Vector3.new(0, 1.5, 0)
+	jumpAssist.Parent = Handle
+	DB:AddItem(jumpAssist, duration)
+	bladeTrail(duration)
+	if Human then
+		Remote:FireClient(getPlayer(), "LoopAnimation", "R15Spin", duration, 0.5, 0, nil, 1.5)
+	else
+		Remote:FireClient(getPlayer(), "LoopAnimation", "Spin", duration, 0.5, 0, nil, 1.5)
+	end
+	local soundTime = 0.25
+	for t = 1, duration/soundTime do
+		Handle["Clash"..math.random(1, 3)]:Play()
+		wait(soundTime)
+	end
+end
+
+function tagHuman(human)
+	local val = Instance.new("ObjectValue")
+	val.Name = "creator"
+	val.Value = getPlayer()
+	val.Parent = human
+	game:GetService("Debris"):AddItem(val, 1)
+end
+
+function onTouched(part)
+	if not AttackDamaging then return end
+	
+	if part.Parent and part.Parent:FindFirstChild("Humanoid") then
+		local human = part.Parent.Humanoid
+		tagHuman(human)
+		human:TakeDamage(AttackDamage)
+		Handle.Hit:Play()
+		AttackDamaging = false
+	end
+end
+
+function activate()
+	if not AttackAble then return end
+	
+	AttackAble = false
+	delay(AttackRestTime, function()
+		AttackAble = true
+	end)
+	
+	delay(AttackStartUp, function()
+		AttackDamaging = true
+		delay(AttackWindow, function()
+			AttackDamaging = false
+		end)
+	end)
+	
+	if Human then
+		Remote:FireClient(getPlayer(), "PlayAnimation", "R15HackAndSlash1")
+	else
+		Remote:FireClient(getPlayer(), "PlayAnimation", "HackAndSlash1")
+	end
+	
+	Handle.Attack.Pitch = math.random(170, 180)/100
+	Handle.Attack:Play()
+end
+
+function getPlayer()
+	return game:GetService("Players"):GetPlayerFromCharacter(Tool.Parent)
+end
+
+function onRemote(player, func, ...)
+	if player ~= getPlayer() then return end
+	
+	if func == "Activate" then
+		activate()
+	end
+end
+
+Tool.Equipped:connect(onEquipped)
+Tool.Unequipped:connect(onUnequipped)
+Remote.OnServerEvent:connect(onRemote)
+Handle.Touched:connect(onTouched)]]></ProtectedString>
+			</Properties>
+		</Item>
+		<Item class="Animation" referent="RBX21716262CBD4435B95CAABFD1542CA18">
+			<Properties>
+				<Content name="AnimationId"><url>http://www.roblox.com/asset/?id=191123156</url></Content>
+				<string name="Name">HackAndSlash1</string>
+			</Properties>
+		</Item>
+		<Item class="Animation" referent="RBX8D9CC10FD06E42E3A47578F243DF790F">
+			<Properties>
+				<Content name="AnimationId"><url>http://www.roblox.com/asset/?id=191124503</url></Content>
+				<string name="Name">Spin</string>
+			</Properties>
+		</Item>
+		<Item class="Animation" referent="RBXE0A8FBA5DA7248FEB0A52C9CDFDF8106">
+			<Properties>
+				<Content name="AnimationId"><url>rbxassetid://552873642</url></Content>
+				<string name="Name">R15HackAndSlash1</string>
+			</Properties>
+		</Item>
+		<Item class="Animation" referent="RBX3A39EF2EEB8947EE95F8961446A2CF62">
+			<Properties>
+				<Content name="AnimationId"><url>rbxassetid://552878722</url></Content>
+				<string name="Name">R15Spin</string>
+			</Properties>
+		</Item>
+	</Item>
+</roblox>

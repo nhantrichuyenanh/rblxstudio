@@ -1,0 +1,348 @@
+<roblox xmlns:xmime="http://www.w3.org/2005/05/xmlmime" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.roblox.com/roblox.xsd" version="4">
+	<External>null</External>
+	<External>nil</External>
+	<Item class="Tool" referent="RBXE4466EB993C04FD7A41867BBF6823B1F">
+		<Properties>
+			<bool name="CanBeDropped">true</bool>
+			<bool name="Enabled">true</bool>
+			<CoordinateFrame name="Grip">
+				<X>0</X>
+				<Y>-0.300000012</Y>
+				<Z>0.800000012</Z>
+				<R00>1</R00>
+				<R01>0</R01>
+				<R02>0</R02>
+				<R10>0</R10>
+				<R11>1</R11>
+				<R12>0</R12>
+				<R20>0</R20>
+				<R21>0</R21>
+				<R22>1</R22>
+			</CoordinateFrame>
+			<bool name="ManualActivationOnly">false</bool>
+			<string name="Name">ROBLOX University Free Stuff Launcher</string>
+			<bool name="RequiresHandle">true</bool>
+			<Content name="TextureId"><url>http://www.roblox.com/asset/?id=176237360 </url></Content>
+			<string name="ToolTip">ROBLOX University Free Stuff Launcher</string>
+		</Properties>
+		<Item class="Part" referent="RBXF013E615865B4F3B8E73DBA850F3816C">
+			<Properties>
+				<bool name="Anchored">false</bool>
+				<float name="BackParamA">-0.5</float>
+				<float name="BackParamB">0.5</float>
+				<token name="BackSurface">0</token>
+				<token name="BackSurfaceInput">0</token>
+				<float name="BottomParamA">-0.5</float>
+				<float name="BottomParamB">0.5</float>
+				<token name="BottomSurface">0</token>
+				<token name="BottomSurfaceInput">0</token>
+				<int name="BrickColor">199</int>
+				<CoordinateFrame name="CFrame">
+					<X>-0.160000026</X>
+					<Y>-0.0299987793</Y>
+					<Z>-4.87999725</Z>
+					<R00>0</R00>
+					<R01>0</R01>
+					<R02>1</R02>
+					<R10>0</R10>
+					<R11>1</R11>
+					<R12>-0</R12>
+					<R20>-1</R20>
+					<R21>0</R21>
+					<R22>0</R22>
+				</CoordinateFrame>
+				<bool name="CanCollide">true</bool>
+				<PhysicalProperties name="CustomPhysicalProperties">
+					<CustomPhysics>false</CustomPhysics>
+				</PhysicalProperties>
+				<float name="Elasticity">0.5</float>
+				<float name="Friction">0.300000012</float>
+				<float name="FrontParamA">-0.5</float>
+				<float name="FrontParamB">0.5</float>
+				<token name="FrontSurface">0</token>
+				<token name="FrontSurfaceInput">0</token>
+				<float name="LeftParamA">-0.5</float>
+				<float name="LeftParamB">0.5</float>
+				<token name="LeftSurface">0</token>
+				<token name="LeftSurfaceInput">0</token>
+				<bool name="Locked">true</bool>
+				<token name="Material">256</token>
+				<string name="Name">Handle</string>
+				<float name="Reflectance">0</float>
+				<float name="RightParamA">-0.5</float>
+				<float name="RightParamB">0.5</float>
+				<token name="RightSurface">0</token>
+				<token name="RightSurfaceInput">0</token>
+				<Vector3 name="RotVelocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<float name="TopParamA">-0.5</float>
+				<float name="TopParamB">0.5</float>
+				<token name="TopSurface">0</token>
+				<token name="TopSurfaceInput">0</token>
+				<float name="Transparency">0</float>
+				<Vector3 name="Velocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<token name="formFactorRaw">2</token>
+				<token name="shape">1</token>
+				<Vector3 name="size">
+					<X>1</X>
+					<Y>1.64999998</Y>
+					<Z>4.19999981</Z>
+				</Vector3>
+			</Properties>
+			<Item class="SpecialMesh" referent="RBXE8D8A3D24CC34DF79A31923F5FC07693">
+				<Properties>
+					<token name="LODX">2</token>
+					<token name="LODY">2</token>
+					<Content name="MeshId"><url>http://www.roblox.com/asset/?id=176237448 </url></Content>
+					<token name="MeshType">5</token>
+					<string name="Name">Mesh</string>
+					<Vector3 name="Offset">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+					</Vector3>
+					<Vector3 name="Scale">
+						<X>2</X>
+						<Y>2</Y>
+						<Z>2</Z>
+					</Vector3>
+					<Content name="TextureId"><url>http://www.roblox.com/asset/?id=176237401 </url></Content>
+					<Vector3 name="VertexColor">
+						<X>1</X>
+						<Y>1</Y>
+						<Z>1</Z>
+					</Vector3>
+				</Properties>
+			</Item>
+			<Item class="Sound" referent="RBX00AC54EA309B40C78698D79F8840A8D6">
+				<Properties>
+					<float name="EmitterSize">10</float>
+					<bool name="Looped">false</bool>
+					<string name="Name">Launch</string>
+					<bool name="PlayOnRemove">false</bool>
+					<float name="PlaybackSpeed">1</float>
+					<bool name="Playing">false</bool>
+					<token name="RollOffMode">0</token>
+					<Ref name="SoundGroup">null</Ref>
+					<Content name="SoundId"><url>http://www.roblox.com/asset/?id=174915286</url></Content>
+					<double name="TimePosition">0</double>
+					<float name="Volume">1</float>
+					<float name="xmlRead_MaxDistance_3">10000</float>
+				</Properties>
+			</Item>
+		</Item>
+		<Item class="Script" referent="RBX32B0B3F631C84AB9AAE8A26AE76ACC7B">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">GearScript</string>
+				<string name="ScriptGuid">{C6E42B06-0855-4AF9-9EE5-7DA1BDADB9CC}</string>
+				<ProtectedString name="Source"><![CDATA[--[[ alexnewtron 2014 ]]--
+--Updated for R15 avatars by StarWars
+
+local ClientAgent = require(script:WaitForChild("ClientAgent"));
+local Controller = script:WaitForChild("Controller");
+local Gear = script.Parent;
+
+local PlayersService = Game:GetService('Players');
+local DebrisService = Game:GetService('Debris');
+
+local Character = nil;
+local Player = nil;
+local Humanoid = nil;
+
+Gear:WaitForChild("Handle");
+
+local d = { Debris = game:GetService("Debris") };
+local s = { ["Launch"] = Gear.Handle:WaitForChild("Launch")};
+
+function TagHumanoid(a,b)local c=Instance.new("ObjectValue")c.Name="creator"c.Value=b;d.Debris:AddItem(c,2)c.Parent=a end
+function UntagHumanoid(a)for b,c in pairs(a:GetChildren())do if c:IsA("ObjectValue")and c.Name=="creator"then c:Destroy()end end end
+
+function Controller.OnServerInvoke(p, e, ...)
+	local tuples={...};
+	if (e == ClientAgent.SERVER_PLAY_SOUND) then
+		s[tuples[1]]:Play();
+	end
+end;
+
+
+Gear.Equipped:connect(function()
+	Character = Gear.Parent;
+	Player = game:GetService("Players"):GetPlayerFromCharacter(Character);
+	Humanoid = Character:FindFirstChild("Humanoid");
+	
+	PIZZA = game:GetService("InsertService"):LoadAsset(175696937):GetChildren()[1];
+		
+	if not Character or not Humanoid or Humanoid.Health == 0 then return; end
+end);
+
+Gear.Activated:connect(function()
+	if not Gear.Enabled or not Humanoid or Humanoid.Health == 0 then return; end
+	Gear.Enabled = false;
+	s["Launch"]:Play();
+	if Humanoid and Humanoid.RigType == Enum.HumanoidRigType.R15 then
+		Controller:InvokeClient(Player, ClientAgent.REQUEST_ANIMATIONS, "R15Cannon");
+	else
+		Controller:InvokeClient(Player, ClientAgent.REQUEST_ANIMATIONS, "Cannon");
+	end
+	
+
+	local r = math.random(1,2);
+	if (r == 1) then
+		-- SHIRT!
+		local l = Instance.new("Part", workspace);
+		l.Size = Vector3.new(1, 0.78, 1.64);
+		
+		d.Debris:AddItem(l, 10);
+		
+		local m = Instance.new("SpecialMesh", l);
+		m.MeshId = "http://www.roblox.com/asset/?id=172282848"
+		m.TextureId = "http://www.roblox.com/asset/?id=172282768"
+		m.Scale = Vector3.new(2,2,2);
+		
+		l.CFrame=CFrame.new(Gear.Handle.Position+Gear.Handle.CFrame.lookVector*4)
+		l.Velocity=Gear.Handle.CFrame.lookVector*math.random(50,80)+Vector3.new(0,35,0);	
+		
+		l.Touched:connect(function(p)
+			if (p ~= nil and p.Parent ~= nil and p.Parent:FindFirstChild("Humanoid") ~= nil) then -- and p.Parent ~= Character
+				--shirt time!
+				
+				for i, v in ipairs(p.Parent:GetChildren()) do
+					if (v:IsA("Shirt")) then
+						v:Destroy();
+					end
+				end
+				
+				local shirt = Instance.new("Shirt", p.Parent);
+				shirt.ShirtTemplate = "http://www.roblox.com/asset/?id=176080681";
+				
+				l:Destroy();					
+			end
+		end);			
+		
+	elseif (r == 2) then
+		-- PIZZA!
+		local l = Instance.new("Part", workspace);
+		l.Size = Vector3.new(1, 0.78, 1.64);
+		
+		d.Debris:AddItem(l, 10);
+		
+		local m = Instance.new("SpecialMesh", l);
+		m.MeshId = "http://www.roblox.com/asset/?id=172282868"
+		m.TextureId = "http://www.roblox.com/asset/?id=172282768"
+		m.Scale = Vector3.new(2,2,2);
+		
+		l.CFrame=CFrame.new(Gear.Handle.Position+Gear.Handle.CFrame.lookVector*4)
+		l.Velocity=Gear.Handle.CFrame.lookVector*math.random(50,80)+Vector3.new(0,35,0);
+		
+		l.Touched:connect(function(p)
+			if (p ~= nil and p.Parent ~= nil and p.Parent:FindFirstChild("Humanoid") ~= nil and p.Parent:findFirstChild("Roblox University PIZZA!") == nil and Player.Backpack:findFirstChild("Roblox University PIZZA!") == nil) then
+				local p1 = PIZZA:Clone();
+				p1.Parent = p.Parent;
+				l:Destroy();
+			end
+		end);
+	end
+	wait(1.5);
+	Gear.Enabled = true;
+end)]]></ProtectedString>
+			</Properties>
+			<Item class="LocalScript" referent="RBX6C116949676F4A19BAD86992B0EB5FC4">
+				<Properties>
+					<bool name="Disabled">false</bool>
+					<Content name="LinkedSource"><null></null></Content>
+					<string name="Name">GearLibrary</string>
+					<string name="ScriptGuid">{54D36FC1-5D38-4FA3-AB82-B39131AE7FA2}</string>
+					<ProtectedString name="Source"><![CDATA[--[[ alexnewtron 2014 ]]--
+--Updated for R15 avatars by StarWars
+
+local Gear = script.Parent.Parent;
+local Player = nil;
+local Character = nil;
+local Humanoid = nil;
+local Controller = script.Parent:WaitForChild("Controller");
+
+local d = {
+	Debris = game:GetService("Debris")
+};
+
+local ClientAgent = require(script.Parent:WaitForChild("ClientAgent"));
+local preparedAnimations = {
+	Gear:WaitForChild("Cannon"),
+	Gear:WaitForChild("R15Cannon")
+};
+local readyAnimations = {};
+
+
+Controller.OnClientInvoke = (function(...)
+	local tuples={...};
+	print(tuples[1]);
+	if (tuples[1] == ClientAgent.REQUEST_TARGETPOINT) then
+		return ((Humanoid and Humanoid.TargetPoint) or nil);
+	elseif (tuples[1] == ClientAgent.REQUEST_ANIMATIONS) then
+		repeat wait() until readyAnimations[tuples[2]] ~= nil
+		readyAnimations[tuples[2]]:Play();
+		return true;
+	elseif (tuples[1] == ClientAgent.REQUEST_ANIMATIONS_END) then
+		for i, v in pairs(readyAnimations) do readyAnimations[i]:Stop(); end
+		return true;
+	end
+end);
+
+Gear.Equipped:connect(function()
+	Character = Gear.Parent;
+	Player = game.Players.LocalPlayer;
+	Character = Player.Character;
+	Humanoid = Character:findFirstChild("Humanoid");
+	if not Character or not Humanoid or Humanoid.Health == 0 then return; end
+	if (#readyAnimations == 0) then
+		for i=1, #preparedAnimations do
+			readyAnimations[preparedAnimations[i].Name] = Humanoid:LoadAnimation(preparedAnimations[i]);
+		end
+	end
+end);]]></ProtectedString>
+				</Properties>
+			</Item>
+			<Item class="RemoteFunction" referent="RBX525A5F71053B4612B62FDEBD3852A365">
+				<Properties>
+					<string name="Name">Controller</string>
+				</Properties>
+			</Item>
+			<Item class="ModuleScript" referent="RBXE3B8F000202943D98A0BFE970B4A673C">
+				<Properties>
+					<Content name="LinkedSource"><null></null></Content>
+					<string name="Name">ClientAgent</string>
+					<string name="ScriptGuid">{1E609A0A-E520-45CD-A6F9-45214949FE82}</string>
+					<ProtectedString name="Source"><![CDATA[-- REMOTE FUNCTION CLIENT AGENT 8-10-14 ALEXNEWTRON
+return {
+	REQUEST_TARGETPOINT = 1,
+	REQUEST_ANIMATIONS = 2,
+	REQUEST_PLAYER = 3,
+	REQUEST_ANIMATIONS_END = 4,
+	SERVER_PLAY_SOUND = 6,
+};]]></ProtectedString>
+				</Properties>
+			</Item>
+		</Item>
+		<Item class="Animation" referent="RBX5078F04BE8774ABB9FF6B6BB505CAB46">
+			<Properties>
+				<Content name="AnimationId"><url>http://www.roblox.com/Asset?ID=176177529</url></Content>
+				<string name="Name">Cannon</string>
+			</Properties>
+		</Item>
+		<Item class="Animation" referent="RBX9A435AEEE8F4465DAE287B5F50B6E23C">
+			<Properties>
+				<Content name="AnimationId"><url>rbxassetid://545217489</url></Content>
+				<string name="Name">R15Cannon</string>
+			</Properties>
+		</Item>
+	</Item>
+</roblox>

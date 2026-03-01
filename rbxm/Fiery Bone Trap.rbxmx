@@ -1,0 +1,516 @@
+<roblox xmlns:xmime="http://www.w3.org/2005/05/xmlmime" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.roblox.com/roblox.xsd" version="4">
+	<External>null</External>
+	<External>nil</External>
+	<Item class="Tool" referent="RBX0FE6CCBAA3C64128BDA62C0452453E41">
+		<Properties>
+			<bool name="CanBeDropped">true</bool>
+			<bool name="Enabled">true</bool>
+			<CoordinateFrame name="Grip">
+				<X>0</X>
+				<Y>0</Y>
+				<Z>-1</Z>
+				<R00>0</R00>
+				<R01>0</R01>
+				<R02>1</R02>
+				<R10>1</R10>
+				<R11>0</R11>
+				<R12>0</R12>
+				<R20>0</R20>
+				<R21>1</R21>
+				<R22>0</R22>
+			</CoordinateFrame>
+			<bool name="ManualActivationOnly">false</bool>
+			<string name="Name">BoneCage</string>
+			<bool name="RequiresHandle">true</bool>
+			<BinaryString name="Tags"></BinaryString>
+			<Content name="TextureId"><url>http://www.roblox.com/asset/?id=63216452</url></Content>
+			<string name="ToolTip"></string>
+		</Properties>
+		<Item class="Part" referent="RBX4744DBA8494E4836B009DED1D8718F93">
+			<Properties>
+				<bool name="Anchored">false</bool>
+				<float name="BackParamA">-0.5</float>
+				<float name="BackParamB">0.5</float>
+				<token name="BackSurface">0</token>
+				<token name="BackSurfaceInput">0</token>
+				<float name="BottomParamA">-0.5</float>
+				<float name="BottomParamB">0.5</float>
+				<token name="BottomSurface">4</token>
+				<token name="BottomSurfaceInput">0</token>
+				<CoordinateFrame name="CFrame">
+					<X>1.50000095</X>
+					<Y>5.60000801</Y>
+					<Z>-0.999997973</Z>
+					<R00>-1.62062486e-06</R00>
+					<R01>1</R01>
+					<R02>1.92932441e-11</R02>
+					<R10>-1.59889496e-05</R10>
+					<R11>-4.52053325e-11</R11>
+					<R12>1</R12>
+					<R20>1</R20>
+					<R21>1.62062486e-06</R21>
+					<R22>1.59889514e-05</R22>
+				</CoordinateFrame>
+				<bool name="CanCollide">true</bool>
+				<int name="CollisionGroupId">0</int>
+				<Color3uint8 name="Color3uint8">4288914085</Color3uint8>
+				<PhysicalProperties name="CustomPhysicalProperties">
+					<CustomPhysics>false</CustomPhysics>
+				</PhysicalProperties>
+				<float name="Elasticity">0.5</float>
+				<float name="Friction">0.300000012</float>
+				<float name="FrontParamA">-0.5</float>
+				<float name="FrontParamB">0.5</float>
+				<token name="FrontSurface">0</token>
+				<token name="FrontSurfaceInput">0</token>
+				<float name="LeftParamA">-0.5</float>
+				<float name="LeftParamB">0.5</float>
+				<token name="LeftSurface">0</token>
+				<token name="LeftSurfaceInput">0</token>
+				<bool name="Locked">true</bool>
+				<token name="Material">256</token>
+				<string name="Name">Handle</string>
+				<float name="Reflectance">0</float>
+				<float name="RightParamA">-0.5</float>
+				<float name="RightParamB">0.5</float>
+				<token name="RightSurface">0</token>
+				<token name="RightSurfaceInput">0</token>
+				<Vector3 name="RotVelocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<BinaryString name="Tags"></BinaryString>
+				<float name="TopParamA">-0.5</float>
+				<float name="TopParamB">0.5</float>
+				<token name="TopSurface">3</token>
+				<token name="TopSurfaceInput">0</token>
+				<float name="Transparency">0</float>
+				<Vector3 name="Velocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<token name="formFactorRaw">3</token>
+				<token name="shape">1</token>
+				<Vector3 name="size">
+					<X>1.79999733</X>
+					<Y>1.71999979</Y>
+					<Z>0.859999716</Z>
+				</Vector3>
+			</Properties>
+			<Item class="SpecialMesh" referent="RBX2F4D1D6D43174629926230FEFF5C2D95">
+				<Properties>
+					<token name="LODX">2</token>
+					<token name="LODY">2</token>
+					<Content name="MeshId"><url>http://www.roblox.com/asset/?id=63216379</url></Content>
+					<token name="MeshType">5</token>
+					<string name="Name">Mesh</string>
+					<Vector3 name="Offset">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+					</Vector3>
+					<Vector3 name="Scale">
+						<X>0.200000003</X>
+						<Y>0.200000003</Y>
+						<Z>0.200000003</Z>
+					</Vector3>
+					<BinaryString name="Tags"></BinaryString>
+					<Content name="TextureId"><url>http://www.roblox.com/asset/?id=63216416</url></Content>
+					<Vector3 name="VertexColor">
+						<X>1</X>
+						<Y>1</Y>
+						<Z>1</Z>
+					</Vector3>
+				</Properties>
+			</Item>
+			<Item class="Sound" referent="RBXBB0DA9EE3509403397502DB44DDDAE9F">
+				<Properties>
+					<float name="EmitterSize">10</float>
+					<bool name="Looped">false</bool>
+					<string name="Name">ChompSound</string>
+					<bool name="PlayOnRemove">false</bool>
+					<float name="PlaybackSpeed">1</float>
+					<bool name="Playing">false</bool>
+					<token name="RollOffMode">0</token>
+					<Ref name="SoundGroup">null</Ref>
+					<Content name="SoundId"><url>http://www.roblox.com/asset/?id=54061314</url></Content>
+					<BinaryString name="Tags"></BinaryString>
+					<double name="TimePosition">0</double>
+					<float name="Volume">0.5</float>
+					<float name="xmlRead_MaxDistance_3">10000</float>
+				</Properties>
+			</Item>
+			<Item class="Fire" referent="RBX70F3F18EAE814DF484D605A03D17DA20">
+				<Properties>
+					<Color3 name="Color">4294914816</Color3>
+					<bool name="Enabled">true</bool>
+					<string name="Name">Fire</string>
+					<Color3 name="SecondaryColor">4288217139</Color3>
+					<BinaryString name="Tags"></BinaryString>
+					<float name="heat_xml">-1</float>
+					<float name="size_xml">2</float>
+				</Properties>
+			</Item>
+			<Item class="Attachment" referent="RBX56F4441E3D0C4AFDAA4EF653F0CF56D2">
+				<Properties>
+					<CoordinateFrame name="CFrame">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>-0.99999994</Z>
+						<R00>-6.31088724e-30</R00>
+						<R01>0</R01>
+						<R02>1</R02>
+						<R10>1</R10>
+						<R11>0</R11>
+						<R12>6.31088724e-30</R12>
+						<R20>0</R20>
+						<R21>1</R21>
+						<R22>-0</R22>
+					</CoordinateFrame>
+					<string name="Name">RightGripAttachment</string>
+					<BinaryString name="Tags"></BinaryString>
+					<bool name="Visible">false</bool>
+				</Properties>
+			</Item>
+		</Item>
+		<Item class="LocalScript" referent="RBX42FE36B325DB48DBA7ACC46E2962E965">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">Local Gui</string>
+				<string name="ScriptGuid">{B12B1A30-ACA9-49C2-9DA7-172DD33AFE47}</string>
+				<ProtectedString name="Source"><![CDATA[Tool = script.Parent
+
+local stillEquipped = false
+
+function onEquippedLocal(mouse)
+	stillEquipped = true
+	if mouse == nil then 
+		print("Mouse not found")
+		return
+	end
+	while stillEquipped do 
+		print("Setting Mouse to go")
+		mouse.Icon = "rbxasset://textures\\GunCursor.png"
+		while Tool.Enabled and stillEquipped do 
+			wait(0.01)
+		end
+		print("Setting Mouse to wait")
+		mouse.Icon = "rbxasset://textures\\GunWaitCursor.png"
+		while not Tool.Enabled and stillEquipped do 
+			wait(0.01)
+		end	
+	end
+end
+
+
+function onUnequippedLocal()
+	stillEquipped = false
+end
+
+Tool.Equipped:connect(onEquippedLocal)
+Tool.Unequipped:connect(onUnequippedLocal)]]></ProtectedString>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+		</Item>
+		<Item class="IntValue" referent="RBX503284325E2D46A2A4C57965E331ED50">
+			<Properties>
+				<string name="Name">NumberOfTraps</string>
+				<BinaryString name="Tags"></BinaryString>
+				<int name="Value">10</int>
+			</Properties>
+		</Item>
+		<Item class="Sound" referent="RBX9944E9D388FC4F009F61A67B4D1C94FE">
+			<Properties>
+				<float name="EmitterSize">10</float>
+				<bool name="Looped">false</bool>
+				<string name="Name">NoTrapsBuzzer</string>
+				<bool name="PlayOnRemove">false</bool>
+				<float name="PlaybackSpeed">1</float>
+				<bool name="Playing">false</bool>
+				<token name="RollOffMode">0</token>
+				<Ref name="SoundGroup">null</Ref>
+				<Content name="SoundId"><url>http://www.roblox.com/asset/?id=54068096</url></Content>
+				<BinaryString name="Tags"></BinaryString>
+				<double name="TimePosition">0</double>
+				<float name="Volume">0.300000012</float>
+				<float name="xmlRead_MaxDistance_3">10000</float>
+			</Properties>
+		</Item>
+		<Item class="Script" referent="RBX9F108BBA64F745D9A12A229BD256B3F0">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">TrapCoreScript</string>
+				<string name="ScriptGuid">{3D63B6F7-046C-4613-9C39-5C36188DB167}</string>
+				<ProtectedString name="Source"><![CDATA[local Tool = script.Parent
+local Trap = Tool.Handle
+
+Tool.Enabled = true
+
+local vCharacter
+local vPlayer
+local numberOfTraps 
+local screenGui
+local buzzer 
+
+local myTorso
+local myHumanoid 
+
+local trapCFrame = CFrame.new(20.0000401, 5.59914494, 6.78400469, -0.596422911, -0.802671134, 0.000476135378, 0.000797182845, 8.43495968e-007, 0.999999642, -0.802670956, 0.59642309, 0.00063937268)
+
+function checkTrap(trap)	
+	if trap and trap.Parent == nil then 
+		numberOfTraps = Tool:FindFirstChild("NumberOfTraps")
+		if numberOfTraps and numberOfTraps.Value < 12 then numberOfTraps.Value = numberOfTraps.Value + 1 end 
+	end
+end
+
+function onActivated()	
+	if not Tool.Enabled then return end
+	numberOfTraps = Tool:FindFirstChild("NumberOfTraps")
+	if numberOfTraps then
+		if numberOfTraps.Value <= 0 then 
+			buzzer = Tool:FindFirstChild("NoTrapsBuzzer")
+			if buzzer then buzzer:Play() end
+		return end
+	end	
+	numberOfTraps.Value = numberOfTraps.Value - 1	
+	Tool.Enabled = false	
+	vCharacter = Tool.Parent
+	myTorso = vCharacter:FindFirstChild("Torso") or vCharacter:FindFirstChild("UpperTorso")
+	myHumanoid = vCharacter:FindFirstChild("Humanoid")
+	if not myTorso or not myHumanoid then return end
+	vPlayer = game.Players:GetPlayerFromCharacter(vCharacter)
+	if not vPlayer then return end
+
+	local fire = Trap:FindFirstChild("Fire")
+	if fire then fire.Enabled = false end
+	
+	local clonedTrap = Trap:Clone()
+	
+	bodyGyro = Instance.new("BodyGyro")	
+	bodyGyro.P = 10000
+	bodyGyro.maxTorque = Vector3.new(bodyGyro.P, bodyGyro.P, bodyGyro.P)	
+	--bodyGyro.cframe = (myTorso.CFrame + (myTorso.CFrame.lookVector * 2.0)) * CFrame.Angles(-math.pi/2, 0, 0)
+	bodyGyro.cframe = trapCFrame
+	bodyGyro.Parent = clonedTrap
+
+	clonedTrap.Parent = Workspace
+	clonedTrap.CanCollide = true
+	Trap.Transparency = 1.0
+	
+	local cloneScript = Tool.TrapScript:Clone()
+	cloneScript.Parent = clonedTrap
+	
+	local creatorTag = Instance.new("ObjectValue")
+	creatorTag.Value = vPlayer 
+	creatorTag.Name = "creator"
+	creatorTag.Parent = cloneScript 
+
+	cloneScript.Disabled = false	
+
+	wait(0.25)	
+	clonedTrap.AncestryChanged:connect(function() checkTrap(clonedTrap) end)
+	wait(4.5)
+	if fire then fire.Enabled = true end
+	Trap.Transparency = 0.0
+	Tool.Enabled = true
+end
+
+function onEquipped()
+	vCharacter = Tool.Parent  
+	vPlayer = game.Players:GetPlayerFromCharacter(vCharacter)
+
+	numberOfTraps = Tool:FindFirstChild("NumberOfTraps")	
+	
+	screenGui = Instance.new("ScreenGui")
+	screenGui.Name = "TrapsGui"
+	if vPlayer then
+		screenGui.Parent = vPlayer.PlayerGui
+	end	
+
+	frame = Instance.new("Frame")
+	frame.Name = "TrapContainer"
+	frame.Position = UDim2.new(0, 0, 0.75, 0)
+	frame.Size = UDim2.new(0, 75, 0, 75)
+	frame.Parent = screenGui
+	frame.BackgroundTransparency = 1.0
+
+	image = Instance.new("ImageLabel")
+	image.Name = "Trap"
+	image.Image = "http://www.roblox.com/asset/?id=63216452"
+	image.Parent = frame
+	image.Size = UDim2.new(0, 75, 0, 75)
+	image.BackgroundTransparency = 1.0
+
+	text = Instance.new("TextLabel")
+	text.Text = numberOfTraps.Value
+
+	numberOfTraps.Changed:connect(function() text.Text = numberOfTraps.Value end)
+	text.Position = UDim2.new(0.75, 0, 0.75, 0)
+	text.Size = UDim2.new(0.5, 0, 0.5, 0)
+	text.Parent = frame
+	text.BackgroundTransparency = 1.0
+	text.TextColor = BrickColor.new("Deep orange")
+	text.FontSize = 7	
+end
+
+function onUnequipped()
+	Trap.Transparency = 0.0
+	if screenGui then screenGui:Destroy() end
+end
+
+Tool.Activated:connect(onActivated)
+Tool.Equipped:connect(onEquipped)
+Tool.Unequipped:connect(onUnequipped)
+]]></ProtectedString>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+		</Item>
+		<Item class="Script" referent="RBX26836DE63A0D40B8BA08A2E458978D2A">
+			<Properties>
+				<bool name="Disabled">true</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">TrapScript</string>
+				<string name="ScriptGuid">{8ED6D34A-5B86-4EAA-926E-0255E97B94FA}</string>
+				<ProtectedString name="Source"><![CDATA[local Trap = script.Parent 
+local debounce = false
+
+local debris = game:GetService("Debris")
+
+local creatorTag
+
+if Trap.CFrame.lookVector:Dot(Vector3.new(0, 1, 0)) > 0 then Trap.CFrame = Trap.CFrame * CFrame.Angles(0, -math.pi, 0) end
+
+wait(1.5)
+Trap.Transparency = 0.9
+
+local burnSound 
+
+function burnAWhile(humanoid, torso)
+	local duration = 7
+	if humanoid and torso then 
+		fire = Instance.new("Fire")
+		fire.Parent = torso
+		fire.Heat = -1 
+		fire.Size = 5 	
+		while duration > 0 do 	
+			duration  = duration - 1 
+			humanoid:TakeDamage(7)
+			wait(0.5)
+		end
+		if fire then fire:Destroy() end
+	end
+end
+
+function tagHumanoid(humanoid)
+	if humanoid then 
+		creatorTag = script:FindFirstChild("creator")
+		if creatorTag then 
+			creatorTag.Parent = humanoid 
+			debris:AddItem(creator, 2.5) 
+		end
+	end
+end
+
+function trapThem(trap, hit)
+	if trap == nil or hit == nil or hit.Parent == nil then return end 	
+	local humanoid = hit.Parent:FindFirstChild("Humanoid")
+	if humanoid and not debounce then 
+		debounce = true		
+		humanoid.WalkSpeed = 0.0
+		local torso = hit.Parent:FindFirstChild("Torso") or hit.Parent:FindFirstChild("UpperTorso")
+		if torso then 
+			torso.Anchored = true 
+			trap.CFrame = torso.CFrame * CFrame.Angles(-math.pi/2, 0, 0)
+			trap.Anchored = true
+		end 
+		if trap:FindFirstChild("Mesh") then trap.Mesh.Scale = Vector3.new(0.8, 0.8, 1.3) end 
+		trap.Transparency = 0.0 
+		wait(1.5)
+		if trap:FindFirstChild("Fire") then
+			burnSound = script:FindFirstChild("BurnSound")
+			if burnSound then burnSound:Play() end
+			trap.Fire.Enabled = true 
+			trap.Fire.Size = 20
+		end
+		tagHumanoid(humanoid)
+		humanoid:TakeDamage(70)		
+		wait(2)		
+		if trap then trap:Destroy() end 
+		coroutine.resume(coroutine.create(function() burnAWhile(humanoid, torso) end))
+		if humanoid then humanoid.WalkSpeed = 16.0 end
+		if torso then torso.Anchored = false end	
+		debounce = false
+	end
+end
+
+Trap.Touched:connect(function(hit) trapThem(Trap, hit) end)
+wait(75) 
+if Trap then Trap:Destroy() end
+if script then script:Destroy() end
+]]></ProtectedString>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+			<Item class="Sound" referent="RBXB67412E2A85A4F838C6D13A20A06C189">
+				<Properties>
+					<float name="EmitterSize">10</float>
+					<bool name="Looped">false</bool>
+					<string name="Name">BurnSound</string>
+					<bool name="PlayOnRemove">false</bool>
+					<float name="PlaybackSpeed">1</float>
+					<bool name="Playing">false</bool>
+					<token name="RollOffMode">0</token>
+					<Ref name="SoundGroup">null</Ref>
+					<Content name="SoundId"><url>http://www.roblox.com/asset/?id=54516223</url></Content>
+					<BinaryString name="Tags"></BinaryString>
+					<double name="TimePosition">0</double>
+					<float name="Volume">1</float>
+					<float name="xmlRead_MaxDistance_3">10000</float>
+				</Properties>
+			</Item>
+		</Item>
+		<Item class="Camera" referent="RBX9AB269D4A725414A87DB9CD6BC520E7E">
+			<Properties>
+				<CoordinateFrame name="CFrame">
+					<X>4.41063261</X>
+					<Y>6.70635128</Y>
+					<Z>-0.0214387774</Z>
+					<R00>0.335443377</R00>
+					<R01>-0.360525608</R01>
+					<R02>0.870344222</R02>
+					<R10>7.45058149e-09</R10>
+					<R11>0.923873186</R11>
+					<R12>0.382699013</R12>
+					<R20>-0.942060471</R20>
+					<R21>-0.128373846</R21>
+					<R22>0.309907079</R22>
+				</CoordinateFrame>
+				<Ref name="CameraSubject">null</Ref>
+				<token name="CameraType">0</token>
+				<float name="FieldOfView">70</float>
+				<CoordinateFrame name="Focus">
+					<X>2.66994309</X>
+					<Y>5.94095278</Y>
+					<Z>-0.641253293</Z>
+					<R00>1</R00>
+					<R01>0</R01>
+					<R02>0</R02>
+					<R10>0</R10>
+					<R11>1</R11>
+					<R12>0</R12>
+					<R20>0</R20>
+					<R21>0</R21>
+					<R22>1</R22>
+				</CoordinateFrame>
+				<bool name="HeadLocked">true</bool>
+				<float name="HeadScale">1</float>
+				<string name="Name">ThumbnailCamera</string>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+		</Item>
+	</Item>
+</roblox>

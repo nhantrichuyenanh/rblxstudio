@@ -1,0 +1,1098 @@
+<roblox xmlns:xmime="http://www.w3.org/2005/05/xmlmime" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.roblox.com/roblox.xsd" version="4">
+	<External>null</External>
+	<External>nil</External>
+	<Item class="Tool" referent="RBXD6E42E8124474FE287CE1191A5024163">
+		<Properties>
+			<bool name="CanBeDropped">true</bool>
+			<bool name="Enabled">true</bool>
+			<CoordinateFrame name="Grip">
+				<X>0</X>
+				<Y>0</Y>
+				<Z>-1.5</Z>
+				<R00>0</R00>
+				<R01>0</R01>
+				<R02>1</R02>
+				<R10>1</R10>
+				<R11>0</R11>
+				<R12>0</R12>
+				<R20>0</R20>
+				<R21>1</R21>
+				<R22>0</R22>
+			</CoordinateFrame>
+			<bool name="ManualActivationOnly">false</bool>
+			<string name="Name">DualIllumina</string>
+			<Content name="TextureId"><url>http://www.roblox.com/asset/?id=101175663</url></Content>
+			<string name="ToolTip">Dual Illumina</string>
+		</Properties>
+		<Item class="Part" referent="RBX9D1691819164489586446AE0B7D09B72">
+			<Properties>
+				<bool name="Anchored">false</bool>
+				<float name="BackParamA">-0.5</float>
+				<float name="BackParamB">0.5</float>
+				<token name="BackSurface">0</token>
+				<token name="BackSurfaceInput">0</token>
+				<float name="BottomParamA">-0.5</float>
+				<float name="BottomParamB">0.5</float>
+				<token name="BottomSurface">0</token>
+				<token name="BottomSurfaceInput">0</token>
+				<int name="BrickColor">208</int>
+				<CoordinateFrame name="CFrame">
+					<X>0.708001137</X>
+					<Y>1.53900027</Y>
+					<Z>-0.562999725</Z>
+					<R00>0.0312432684</R00>
+					<R01>-0.0269570407</R01>
+					<R02>0.999148369</R02>
+					<R10>-0.678074121</R10>
+					<R11>-0.734992385</R11>
+					<R12>0.00137319439</R12>
+					<R20>0.734329402</R20>
+					<R21>-0.677539349</R21>
+					<R22>-0.0412424356</R22>
+				</CoordinateFrame>
+				<bool name="CanCollide">true</bool>
+				<float name="Elasticity">0.5</float>
+				<float name="Friction">0.300000012</float>
+				<float name="FrontParamA">-0.5</float>
+				<float name="FrontParamB">0.5</float>
+				<token name="FrontSurface">0</token>
+				<token name="FrontSurfaceInput">0</token>
+				<float name="LeftParamA">-0.5</float>
+				<float name="LeftParamB">0.5</float>
+				<token name="LeftSurface">0</token>
+				<token name="LeftSurfaceInput">0</token>
+				<bool name="Locked">true</bool>
+				<token name="Material">256</token>
+				<string name="Name">Handle</string>
+				<float name="Reflectance">0.699999988</float>
+				<float name="RightParamA">-0.5</float>
+				<float name="RightParamB">0.5</float>
+				<token name="RightSurface">0</token>
+				<token name="RightSurfaceInput">0</token>
+				<Vector3 name="RotVelocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<float name="TopParamA">-0.5</float>
+				<float name="TopParamB">0.5</float>
+				<token name="TopSurface">0</token>
+				<token name="TopSurfaceInput">0</token>
+				<float name="Transparency">0</float>
+				<Vector3 name="Velocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<token name="formFactorRaw">2</token>
+				<token name="shape">1</token>
+				<Vector3 name="size">
+					<X>1</X>
+					<Y>0.800000012</Y>
+					<Z>4</Z>
+				</Vector3>
+			</Properties>
+			<Item class="SpecialMesh" referent="RBXB32C4A0B6E2C47CF8007EE60CCDB7001">
+				<Properties>
+					<token name="LODX">2</token>
+					<token name="LODY">2</token>
+					<Content name="MeshId"><url>rbxasset://fonts/sword.mesh</url></Content>
+					<token name="MeshType">5</token>
+					<string name="Name">Mesh</string>
+					<Vector3 name="Offset">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+					</Vector3>
+					<Vector3 name="Scale">
+						<X>1</X>
+						<Y>1</Y>
+						<Z>1</Z>
+					</Vector3>
+					<Content name="TextureId"><null></null></Content>
+					<Vector3 name="VertexColor">
+						<X>1</X>
+						<Y>1</Y>
+						<Z>0</Z>
+					</Vector3>
+				</Properties>
+			</Item>
+			<Item class="Sparkles" referent="RBX0DF6B01A25F344BE9153CE131DE41BDB">
+				<Properties>
+					<bool name="Enabled">true</bool>
+					<string name="Name">IlluminaSparkles</string>
+					<Color3 name="SparkleColor">4294923775</Color3>
+				</Properties>
+			</Item>
+			<Item class="PointLight" referent="RBX57FD6E2902D94493AABB0491D9661A87">
+				<Properties>
+					<float name="Brightness">5</float>
+					<Color3 name="Color">4287633919</Color3>
+					<bool name="Enabled">true</bool>
+					<string name="Name">IlluminaLight</string>
+					<float name="Range">5</float>
+					<bool name="Shadows">false</bool>
+				</Properties>
+			</Item>
+			<Item class="Sound" referent="RBX5F2EF68B0BED44038249F8541374C097">
+				<Properties>
+					<bool name="Looped">false</bool>
+					<string name="Name">LungeSound</string>
+					<float name="Pitch">1</float>
+					<bool name="PlayOnRemove">false</bool>
+					<Content name="SoundId"><url>rbxasset://sounds//swordlunge.wav</url></Content>
+					<float name="Volume">0.600000024</float>
+				</Properties>
+			</Item>
+			<Item class="Sound" referent="RBX01CEF05776CA475FBF8352847C9F10BF">
+				<Properties>
+					<bool name="Looped">false</bool>
+					<string name="Name">SlashSound</string>
+					<float name="Pitch">1</float>
+					<bool name="PlayOnRemove">false</bool>
+					<Content name="SoundId"><url>rbxasset://sounds//swordslash.wav</url></Content>
+					<float name="Volume">0.699999988</float>
+				</Properties>
+			</Item>
+			<Item class="Sound" referent="RBX8AD7DB06879B48EBB2F88DD3E21C706A">
+				<Properties>
+					<bool name="Looped">false</bool>
+					<string name="Name">UnsheathSound</string>
+					<float name="Pitch">1</float>
+					<bool name="PlayOnRemove">false</bool>
+					<Content name="SoundId"><url>rbxasset://sounds//unsheath.wav</url></Content>
+					<float name="Volume">0.600000024</float>
+				</Properties>
+			</Item>
+			<Item class="Sound" referent="RBXBB853DC8BA44459EB9D273B0C86CFFD8">
+				<Properties>
+					<bool name="Looped">false</bool>
+					<string name="Name">StormSound</string>
+					<float name="Pitch">1</float>
+					<bool name="PlayOnRemove">false</bool>
+					<Content name="SoundId"><url>http://www.roblox.com/asset?id=101173442</url></Content>
+					<float name="Volume">1</float>
+				</Properties>
+			</Item>
+		</Item>
+		<Item class="Part" referent="RBXA8972EC4E4F0485290F71776C7F28863">
+			<Properties>
+				<bool name="Anchored">false</bool>
+				<float name="BackParamA">-0.5</float>
+				<float name="BackParamB">0.5</float>
+				<token name="BackSurface">0</token>
+				<token name="BackSurfaceInput">0</token>
+				<float name="BottomParamA">-0.5</float>
+				<float name="BottomParamB">0.5</float>
+				<token name="BottomSurface">0</token>
+				<token name="BottomSurfaceInput">0</token>
+				<int name="BrickColor">208</int>
+				<CoordinateFrame name="CFrame">
+					<X>-2.20700002</X>
+					<Y>3.74000001</Y>
+					<Z>1.59200001</Z>
+					<R00>0.999171913</R00>
+					<R01>-0.026966989</R01>
+					<R02>-0.030468734</R02>
+					<R10>0.000840289518</R10>
+					<R11>-0.73499167</R11>
+					<R12>0.678075671</R12>
+					<R20>-0.0406799242</R20>
+					<R21>-0.677539706</R21>
+					<R22>-0.734360337</R22>
+				</CoordinateFrame>
+				<bool name="CanCollide">true</bool>
+				<float name="Elasticity">0.5</float>
+				<float name="Friction">0.300000012</float>
+				<float name="FrontParamA">-0.5</float>
+				<float name="FrontParamB">0.5</float>
+				<token name="FrontSurface">0</token>
+				<token name="FrontSurfaceInput">0</token>
+				<float name="LeftParamA">-0.5</float>
+				<float name="LeftParamB">0.5</float>
+				<token name="LeftSurface">0</token>
+				<token name="LeftSurfaceInput">0</token>
+				<bool name="Locked">true</bool>
+				<token name="Material">256</token>
+				<string name="Name">DisplayHandle</string>
+				<float name="Reflectance">0.699999988</float>
+				<float name="RightParamA">-0.5</float>
+				<float name="RightParamB">0.5</float>
+				<token name="RightSurface">0</token>
+				<token name="RightSurfaceInput">0</token>
+				<Vector3 name="RotVelocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<float name="TopParamA">-0.5</float>
+				<float name="TopParamB">0.5</float>
+				<token name="TopSurface">0</token>
+				<token name="TopSurfaceInput">0</token>
+				<float name="Transparency">0</float>
+				<Vector3 name="Velocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<token name="formFactorRaw">2</token>
+				<token name="shape">1</token>
+				<Vector3 name="size">
+					<X>1</X>
+					<Y>0.800000012</Y>
+					<Z>4</Z>
+				</Vector3>
+			</Properties>
+			<Item class="SpecialMesh" referent="RBXF653FF2D05BB411DBF392EE455292414">
+				<Properties>
+					<token name="LODX">2</token>
+					<token name="LODY">2</token>
+					<Content name="MeshId"><url>rbxasset://fonts/sword.mesh</url></Content>
+					<token name="MeshType">5</token>
+					<string name="Name">Mesh</string>
+					<Vector3 name="Offset">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+					</Vector3>
+					<Vector3 name="Scale">
+						<X>1</X>
+						<Y>1</Y>
+						<Z>1</Z>
+					</Vector3>
+					<Content name="TextureId"><null></null></Content>
+					<Vector3 name="VertexColor">
+						<X>1</X>
+						<Y>1</Y>
+						<Z>0</Z>
+					</Vector3>
+				</Properties>
+			</Item>
+			<Item class="Sparkles" referent="RBXFD35D757061A467E9011E5567DBD9ED5">
+				<Properties>
+					<bool name="Enabled">true</bool>
+					<string name="Name">IlluminaSparkles</string>
+					<Color3 name="SparkleColor">4294923775</Color3>
+				</Properties>
+			</Item>
+			<Item class="PointLight" referent="RBX726CE6330FA34A888FFE675F63807349">
+				<Properties>
+					<float name="Brightness">5</float>
+					<Color3 name="Color">4287633919</Color3>
+					<bool name="Enabled">false</bool>
+					<string name="Name">IlluminaLight</string>
+					<float name="Range">5</float>
+					<bool name="Shadows">false</bool>
+				</Properties>
+			</Item>
+			<Item class="Script" referent="RBX4FEAFC8FC9B649FCB17B852F596BE2A8">
+				<Properties>
+					<bool name="Disabled">false</bool>
+					<Content name="LinkedSource"><null></null></Content>
+					<string name="Name">Script</string>
+					<ProtectedString name="Source">script.Parent:Destroy()</ProtectedString>
+				</Properties>
+			</Item>
+			<Item class="Weld" referent="RBX50A1EECA7037477991236EA2A3D1EDFB">
+				<Properties>
+					<CoordinateFrame name="C0">
+						<X>1.43486309</X>
+						<Y>0.768784404</Y>
+						<Z>-0.732730448</Z>
+						<R00>0.0312432684</R00>
+						<R01>-0.678074062</R01>
+						<R02>0.734329343</R02>
+						<R10>-0.0269570425</R10>
+						<R11>-0.734992385</R11>
+						<R12>-0.677539349</R12>
+						<R20>0.999148309</R20>
+						<R21>0.00137319579</R21>
+						<R22>-0.0412424318</R22>
+					</CoordinateFrame>
+					<CoordinateFrame name="C1">
+						<X>2.2667923</X>
+						<Y>3.76799583</Y>
+						<Z>-1.43414593</Z>
+						<R00>0.999171913</R00>
+						<R01>0.000840289518</R01>
+						<R02>-0.0406799242</R02>
+						<R10>-0.026966989</R10>
+						<R11>-0.73499167</R11>
+						<R12>-0.677539706</R12>
+						<R20>-0.030468734</R20>
+						<R21>0.678075671</R21>
+						<R22>-0.734360337</R22>
+					</CoordinateFrame>
+					<string name="Name">Weld</string>
+					<Ref name="Part0">RBX9D1691819164489586446AE0B7D09B72</Ref>
+					<Ref name="Part1">RBXA8972EC4E4F0485290F71776C7F28863</Ref>
+				</Properties>
+			</Item>
+		</Item>
+		<Item class="Animation" referent="RBX63157151AD45462582FE0E98950FA816">
+			<Properties>
+				<Content name="AnimationId"><url>http://www.roblox.com/asset/?id=185824714</url></Content>
+				<string name="Name">Idle</string>
+			</Properties>
+		</Item>
+		<Item class="Animation" referent="RBXDB1A0DF6333945DAAD00A124DBE4538F">
+			<Properties>
+				<Content name="AnimationId"><url>http://www.roblox.com/asset/?id=186002834</url></Content>
+				<string name="Name">Lunge</string>
+			</Properties>
+		</Item>
+		<Item class="Animation" referent="RBXDE56D558A1B9480BBF570D664571D4B8">
+			<Properties>
+				<Content name="AnimationId"><url>http://www.roblox.com/asset/?id=186001341</url></Content>
+				<string name="Name">Slash</string>
+			</Properties>
+		</Item>
+		<Item class="Animation" referent="RBX4B3B8D1B9FA14BF5973AD59ABFDB503E">
+			<Properties>
+				<Content name="AnimationId"><url>http://www.roblox.com/Asset?ID=27763939</url></Content>
+				<string name="Name">Spin</string>
+			</Properties>
+		</Item>
+		<Item class="LocalScript" referent="RBXF5399834139048988927C77F13A60636">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">LocalScript</string>
+				<ProtectedString name="Source"><![CDATA[--[[
+	Rewritten by ArceusInator
+	
+	This script will run the sword code on the client if filtering is disabled
+--]]
+local Tool = script.Parent
+local Sword = require(Tool:WaitForChild'Sword')
+local GLib = require(Tool:WaitForChild'GLib')
+GLib.Script.Name = 'GLib'
+GLib.Script.Parent = Tool
+local Handle = Tool:WaitForChild'Handle'
+local LeftSword
+local Tracks = {}
+local DisconnectOnUnquipped = {}
+local UIS, CAS = game:GetService'UserInputService', game:GetService'ContextActionService'
+
+if not workspace.FilteringEnabled then
+	-- Run the sword code on the client
+	
+	Sword:Initialize()
+end
+
+function onInput(input, type, state, key)
+	local type, state, key = type, state, key
+	if input then
+		type, state, key = input.UserInputType.Name, input.UserInputState.Name, input.KeyCode.Name
+	end
+	
+	if workspace.FilteringEnabled then
+		Tool.RemoteInput:FireServer(type, state, key)
+	else
+		Sword:InterpretInput(type, state, key)
+	end
+end
+
+function MotorAnimate(name, action)
+	local animation = Tool:FindFirstChild(name)
+	local track = Tracks[animation] or GLib.GetHumanoid(GLib.GetCharacterFromPart(Tool)):LoadAnimation(animation)
+	Tracks[animation] = track
+	
+	if action == 'Play' or action == nil then
+		track:Play()
+	elseif action == 'Stop' then
+		track:Stop()
+	end
+end
+
+local eqdone = true
+Tool.Equipped:connect(function(mouse)
+	if not eqdone then return end
+	eqdone = false
+	
+	if not Tool:FindFirstChild'LocalLeftSword' then
+		mouse.Button1Down:connect(function()
+			if workspace.FilteringEnabled then
+				-- Send input info to the server
+				Tool.RemoteClick:FireServer()
+			else
+				-- Interpret it on the client
+				Sword:Attack()
+			end
+		end)
+		
+		if not Tool:FindFirstChild'LeftSword' and not Tool:FindFirstChild'LocalLeftSword' then
+			LeftSword = Tool.Handle:Clone()
+			LeftSword.Name = 'LocalLeftSword'
+			LeftSword.Parent = Tool
+			local weld = Instance.new("ManualWeld")
+			weld.Part1 = LeftSword
+			weld.C0 = CFrame.new(0, -1, 0, 1, 0, -0, 0, 0, 1, 0, -1, -0)
+			weld.C1 = CFrame.new(0, 0, -1.5, 0, 0, 1, 1, 0, 0, 0, 1, 0)
+			weld.Part0 = Tool.Parent:FindFirstChild'Left Arm'
+			weld.Parent = LeftSword
+		end
+		LeftSword = Tool:FindFirstChild'LocalLeftSword'
+	end
+		
+	MotorAnimate('Idle', 'Play')
+	
+	table.insert(DisconnectOnUnquipped, UIS.InputBegan:connect(onInput))
+	if UIS.TouchEnabled then
+		local spinDisabled = false
+		CAS:BindActionToInputTypes(
+			'DualIllumina_Spin',
+			function(action, state)
+				GLib.FastSpawn(function()
+					if state == Enum.UserInputState.Begin then
+						if not spinDisabled then
+							if not Tool.Data.WhirlwindAvailable.Value then
+								spinDisabled = true
+								if workspace.FilteringEnabled then Tool.RemoteAction:FireServer'Spin' else Sword:ForceSpin() end
+								GLib.SetButtonCooldown('DualIllumina_Spin', 0.5)
+								wait(0.5)
+								GLib.SetButtonCooldown('DualIllumina_Spin', 0)
+								spinDisabled = false
+							else
+								Tool.Data.WhirlwindAvailable.Value = false
+								spinDisabled = true
+								if workspace.FilteringEnabled then Tool.RemoteAction:FireServer'Whirlwind' else Sword:Whirlwind() end
+								GLib.SetButtonCooldown('DualIllumina_Spin', 30)
+								wait(30)
+								GLib.SetButtonCooldown('DualIllumina_Spin', 0)
+								spinDisabled = false
+							end
+						end
+					end
+				end)
+			end,
+			true,
+			''
+		)
+		CAS:SetTitle('DualIllumina_Spin', 'Spin')
+		
+		table.insert(DisconnectOnUnquipped, Tool.Data.WhirlwindAvailable.Changed:connect(function(available)
+			if available then
+				CAS:SetTitle('DualIllumina_Spin', 'Whirlwind!')
+			else
+				CAS:SetTitle('DualIllumina_Spin', 'Spin')
+			end
+		end))
+	end
+	
+	eqdone = true
+end)
+
+local ueqdone = true
+Tool.Unequipped:connect(function()
+	if not ueqdone then return end
+	ueqdone = false
+	
+	if LeftSword then LeftSword:Destroy() end
+	
+	for name, track in next, Tracks do
+		track:Stop()
+	end
+	Tracks = {}
+	
+	for i, con in next, DisconnectOnUnquipped do con:disconnect() end
+	
+	if UIS.TouchEnabled then
+		CAS:UnbindAction'DualIllumina_Spin'
+	end
+	
+	ueqdone = true
+end)
+Tool.ChildAdded:connect(function(child)
+	if child.Name == 'LeftSword' then
+		if LeftSword then spawn(function() LeftSword:Destroy() LeftSword = nil end) end
+	end
+end)]]></ProtectedString>
+			</Properties>
+		</Item>
+		<Item class="RemoteEvent" referent="RBX568003CB59E64D8D8F46CCAA8FCC1A6D">
+			<Properties>
+				<string name="Name">RemoteAction</string>
+			</Properties>
+		</Item>
+		<Item class="RemoteEvent" referent="RBXC386C1D2BB9E4B81AB251FF41CA98533">
+			<Properties>
+				<string name="Name">RemoteClick</string>
+			</Properties>
+		</Item>
+		<Item class="RemoteEvent" referent="RBX6A0348FC645E4BEC84CDE8CC38613753">
+			<Properties>
+				<string name="Name">RemoteInput</string>
+			</Properties>
+		</Item>
+		<Item class="ModuleScript" referent="RBX6576FC523F2748249FDDA67E3889F6BD">
+			<Properties>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">Sword</string>
+				<ProtectedString name="Source"><![CDATA[--[[
+	Rewritten by ArceusInator
+	
+	This script is the Sword module.  This runs on either the server (when FilteringEnabled is on) or the client (when FilteringEnabled is off)
+--]]
+local Tool = script.Parent
+local Handle = Tool.Handle
+local Config = Tool:WaitForChild'Configurations'
+local GLib = require(Tool:WaitForChild'GLib') -- Library of useful functions
+GLib.Script.Name = 'GLib'
+GLib.Script.Parent = Tool
+
+local Sword = {
+	-- Advanced settings
+	DoubleClickMaxTime = 0.2,
+	
+	-- Variables
+	State = 'Idle', -- Idle, Slashing, Lunging
+	SlashingStartedAt = 0,
+	AttackTicket = 0,
+	Tracks = {},
+	LeftSword = nil,
+	ParticleTextures = {105075642,105075668,105075677,105230409,105230748,105230760},
+	SpinDebounce = false,
+	Spins = 0,
+	SpinTicket = 0,
+	StormEye = GLib.Create'Part'{
+		Name = 'DualIllumina_StormEye',
+		Transparency = 1,
+		FormFactor = 'Custom',
+		Size = Vector3.new(1,1,1)*3,
+		CanCollide = false,
+		
+		GLib.Create'BodyForce'{
+			Name = 'BodyForce'
+		},
+		GLib.Create'BodyPosition'{
+			Name = 'BodyPosition',
+			P = 100000,
+			maxForce = Vector3.new(1,1,1)*100000
+		}
+	},
+	SkullBase = GLib.Create'Part'{
+		Name = 'DualIllumina_Skull',
+		Transparency = 0.5,
+		Reflectance = 0.7,
+		FormFactor = 'Custom',
+		Size = Vector3.new(1,1,1)*.2,
+		CanCollide = false,
+		
+		GLib.Create'Motor6D'{
+			Name = 'SkullMotor',
+			MaxVelocity = 0.1,
+			C0 = CFrame.Angles(math.pi/2, 0, 0)
+		},
+		GLib.Create'SpecialMesh'{
+			Name = 'SkullMesh',
+			MeshId = 'rbxasset://fonts/sword.mesh',
+			MeshType = 'FileMesh',
+			VertexColor = Vector3.new(1, 1, 0)
+		}
+	},
+	SpinForce = GLib.Create'BodyAngularVelocity'{
+		Name = 'DualIllumina_SpinForce',
+		P = 1000000,
+		angularvelocity = Vector3.new(0, 20, 0),
+		maxTorque = Vector3.new(1,1,1)*1000000
+	},
+	StayUpright = GLib.Create'BodyGyro'{
+		Name = 'DualIllumina_StayUpright',
+		P = 1000000,
+		maxTorque = Vector3.new(1, 0, 1)*1000000,
+		cframe = CFrame.new()
+	}
+}
+
+--
+--
+function Sword:CreateSword(part)
+	
+	
+	return bbg
+end
+
+function Sword:Spin()
+	if Sword.State ~= 'Lunging' then return end
+	if Sword.SpinDebounce then return end
+	Sword.SpinDebounce = true
+	
+	local character = GLib.GetCharacterFromPart(Tool)
+	local root = character and (character:FindFirstChild'HumanoidRootPart' or character:FindFirstChild'Torso')
+	local humanoid = character and GLib.GetHumanoid(character)
+	
+	if character and root and root:IsA'BasePart' and humanoid and humanoid.Health>0 then
+		Sword.Spins = Sword.Spins + 1 print('spins',Sword.Spins)
+		Sword.SpinTicket = Sword.SpinTicket + 1
+		local mySpinTicket = Sword.SpinTicket
+		
+		if Sword.Spins >= Config.SpinsToWhirlwind.Value then
+			Sword:Whirlwind()
+			Sword.Spins = 0
+		else
+			if Sword.Spins == Config.SpinsToWhirlwind.Value-1 then
+				Tool.Data.WhirlwindAvailable.Value = true
+			end
+			
+			delay(3, function()
+				while mySpinTicket == Sword.SpinTicket do
+					Sword.Spins = Sword.Spins - 1
+					Tool.Data.WhirlwindAvailable.Value = false
+					
+					if Sword.Spins <= 0 then break end
+					wait(0.5)
+				end
+			end)
+			
+			Sword.SpinForce.Parent = root
+			Sword.StayUpright.Parent = root
+			Sword:MotorAnimate'Spin'
+			wait(0.5)
+			Sword:MotorAnimate('Spin', 'Stop')
+			Sword.SpinForce.Parent = nil
+			Sword.StayUpright.Parent = nil
+		end
+	end
+	
+	Sword.SpinDebounce = false
+end
+
+function Sword:ForceSpin() -- Used for mobile controls so that mobile users don't have to double-tap and then press the button
+	Sword.AttackTicket = Sword.AttackTicket+1
+	GLib.FastSpawn(function() Sword:Lunge(Sword.AttackTicket) end)
+	Sword:Spin() -- Now that we're lunging we can spin
+end
+
+function Sword:Whirlwind()
+	if Sword.WhirlwindDebounce then return end
+	Sword.WhirlwindDebounce = true
+	Tool.Data.WhirlwindAvailable.Value = false
+	
+	local character = GLib.GetCharacterFromPart(Tool)
+	local root = character and (character:FindFirstChild'HumanoidRootPart' or character:FindFirstChild'Torso')
+	local humanoid = character and GLib.GetHumanoid(character)
+	
+	if character and root and root:IsA'BasePart' and humanoid and humanoid.Health>0 then
+		Handle.StormSound:Play()
+		
+		local stormMass = 0
+		local skullParts = {}
+		
+		local angle = math.random()*math.pi*2
+		
+		local function skullPartHit(hit)
+			Sword:Blow(hit, Config.SkullDamage.Value)
+		end
+		
+		for i=1, Config.SkullParts.Value do
+			local radius = math.sqrt(i) + 4
+			local skull = Sword.SkullBase:Clone()
+			skull.SkullMotor.C1 = CFrame.Angles(math.pi/2, 0, 0) + radius*Vector3.new(math.sin(angle), -math.sqrt(i)*2/radius, math.cos(angle))
+			skull.SkullMotor.DesiredAngle = skull.SkullMotor.CurrentAngle + 5000*(math.random()-.5)*2
+			skull.SkullMotor.MaxVelocity = 0.05+math.random()*0.15
+			skull.SkullMotor.Part0 = Sword.StormEye
+			skull.SkullMotor.Part1 = skull
+			skull.Parent = Sword.StormEye
+			table.insert(skullParts, skull)
+			skull.Touched:connect(function(hit) Sword:Blow(hit, 20) end)
+			
+			stormMass = stormMass+skull:GetMass()
+		end
+		
+		stormMass = stormMass + Sword.StormEye:GetMass()
+		Sword.StormEye.BodyForce.force = Vector3.new(0, stormMass*196.2, 0)
+		Sword.StormEye.CFrame = root.CFrame
+		Sword.StormEye.BodyPosition.position = root.Position - Vector3.new(0, 3, 0)
+		
+		humanoid.WalkSpeed = 8
+		Sword.SpinForce.Parent = root
+		Sword.StayUpright.Parent = root
+		
+		local whirlwindActive = true
+		local whirlwindStartedAt = tick()
+		GLib.FastSpawn(function()
+			while whirlwindActive do
+				if Tool.Parent == character and whirlwindActive then
+					humanoid.WalkSpeed = humanoid.WalkSpeed + 0.2
+					Sword.StormEye.BodyPosition.position = root.Position
+				else
+					return
+				end
+				
+				wait()
+			end
+			
+			humanoid.WalkSpeed = 16
+		end)
+		
+		Sword.StormEye.Parent = workspace
+		for i=1, 5 do
+			wait(1)
+			if Tool.Parent == character then
+				Sword:MotorAnimate'Spin'
+			else
+				Sword:MotorAnimate('Spin', 'Stop')
+				return
+			end
+		end
+		
+		Sword.SpinForce.Parent = nil
+		Sword.StayUpright.Parent = nil
+		whirlwindActive = false
+		
+		for index, skull in next, skullParts do
+			skull.SkullMotor:Destroy()
+			skull.Velocity = 40*(skull.Position - root.Position).unit
+		end
+		
+		wait(4)
+		Sword.StormEye.Parent = nil
+		
+		wait(3)
+		for index, skull in next, skullParts do
+			skull:Destroy()
+		end
+	end
+	
+	Sword.WhirlwindDebounce = false
+end
+
+function Sword:Blow(hit, damage)
+	local myPlayer = GLib.GetPlayerFromPart(Tool)
+	local character, player, humanoid = GLib.GetCharacterFromPart(hit)
+	
+	if myPlayer~=nil and character~=nil and humanoid~=nil and myPlayer~=player then
+		local isTeammate = GLib.IsTeammate(myPlayer, player)
+		local myCharacter = myPlayer.Character
+		local myHumanoid = myCharacter and myCharacter:FindFirstChild'Humanoid'
+		
+		if (Config.CanTeamkill.Value==true or isTeammate~=true) and (myHumanoid and myHumanoid:IsA'Humanoid' and myHumanoid.Health > 0) and (Config.CanKillWithForceField.Value or myCharacter:FindFirstChild'ForceField'==nil) and humanoid.Health > 0 then
+			local doDamage = Config.IdleDamage.Value
+			if Sword.State == 'Slashing' then
+				doDamage = Config.SlashDamage.Value
+			elseif Sword.State == 'Lunging' then
+				doDamage = Config.LungeDamage.Value
+			end
+			if damage then doDamage=damage end
+			
+			GLib.TagHumanoid(humanoid, myPlayer, 1)
+			humanoid:TakeDamage(doDamage)
+		end
+	end
+end
+
+function Sword:Connect()
+	local function swordTouched(hit)
+		Sword:Blow(hit)
+	end
+	
+	Handle.Touched:connect(swordTouched)
+	
+	Tool.Unequipped:connect(function()
+		for name, track in next, Sword.Tracks do
+			track:Stop()
+		end
+		
+		Sword.Tracks = {}
+		
+		if Sword.LeftSword then Sword.LeftSword:Destroy() Sword.LeftSword=nil end
+	end)
+	Tool.Equipped:connect(function() if Sword.LeftSword then return end
+		Sword.LeftSword = Tool.Handle:Clone()
+		Sword.LeftSword.Name = 'LeftSword'
+		Sword.LeftSword.Parent = Tool
+		local weld = Instance.new("ManualWeld")
+		weld.Name = 'Weld'
+		weld.Part1 = Sword.LeftSword
+		weld.C0 = CFrame.new(0, -1, 0, 1, 0, -0, 0, 0, 1, 0, -1, -0)
+		weld.C1 = CFrame.new(0, 0, -1.5, 0, 0, 1, 1, 0, 0, 0, 1, 0)
+		weld.Part0 = Tool.Parent:FindFirstChild'Left Arm'
+		weld.Parent = Sword.LeftSword
+		
+		Sword.LeftSword.Touched:connect(swordTouched)
+	end)
+end
+
+function Sword:Attack()
+	local myCharacter, myPlayer, myHumanoid = GLib.GetCharacterFromPart(Tool)
+	
+	if myHumanoid~=nil and myHumanoid.Health > 0 then
+		if Config.CanKillWithForceField.Value or myCharacter:FindFirstChild'ForceField'==nil then
+			local now = tick()
+			
+			if Sword.State == 'Slashing' and now-Sword.SlashingStartedAt < Sword.DoubleClickMaxTime then
+				Sword.AttackTicket = Sword.AttackTicket+1
+				
+				Sword:Lunge(Sword.AttackTicket)
+			elseif Sword.State == 'Idle' then
+				Sword.AttackTicket = Sword.AttackTicket+1
+				Sword.SlashingStartedAt = now
+				
+				Sword:Slash(Sword.AttackTicket)
+			end
+		end
+	end
+end
+
+function Sword:Slash(ticket)
+	Sword.State = 'Slashing'
+	
+	Sword:MotorAnimate'Slash'
+	Handle.SlashSound:Play()
+	
+	wait(0.5)
+	
+	if Sword.AttackTicket == ticket then
+		Sword.State = 'Idle'
+	end
+end
+
+function Sword:Lunge(ticket)
+	Sword.State = 'Lunging'
+	
+	Sword:MotorAnimate'Lunge'
+	Handle.LungeSound:Play()
+	
+	local force = Instance.new'BodyVelocity'
+	force.velocity = Vector3.new(0, 10, 0)
+	force.maxForce = Vector3.new(0, 4000, 0)
+	force.Parent = Tool.Parent.Torso
+	
+	wait(0.25)
+	Tool.Grip = CFrame.new(0, 0, -1.5, 0, -1, -0, -1, 0, -0, 0, 0, -1)
+	if Tool:FindFirstChild'LeftSword' then
+		Tool.LeftSword.Weld.C0 = CFrame.new(0, -1, 0, 1, 0, -0, 0, 0, 1, 0, -1, -0)
+		Tool.LeftSword.Weld.C1 = CFrame.new(0, 0, -1.5, 0, -1, -0, -1, 0, -0, 0, 0, -1)
+	end
+	wait(0.25)
+	force:Destroy()
+	wait(0.5)
+	Tool.Grip = CFrame.new(0, 0, -1.5, 0, 0, 1, 1, 0, 0, 0, 1, 0)
+	if Tool:FindFirstChild'LeftSword' then
+		Tool.LeftSword.Weld.C0 = CFrame.new(0, -1, 0, 1, 0, -0, 0, 0, 1, 0, -1, -0)
+		Tool.LeftSword.Weld.C1 = CFrame.new(0, 0, -1.5, 0, 0, 1, 1, 0, 0, 0, 1, 0)
+	end
+	
+	Sword.State = 'Idle'
+end
+
+function Sword:Animate(name)
+	local tag = Instance.new'StringValue'
+	tag.Name = 'toolanim'
+	tag.Value = name
+	tag.Parent = Tool -- Tag gets removed by the animation script
+end
+
+function Sword:MotorAnimate(name, action)
+	local animation = Tool:FindFirstChild(name)
+	local character, player, humanoid = GLib.GetCharacterFromPart(Tool)
+	if humanoid then
+		local track = Sword.Tracks[animation] or humanoid:LoadAnimation(animation)
+		Sword.Tracks[animation] = track
+		
+		if action == 'Play' or action == nil then
+			track:Play()
+		elseif action == 'Stop' then
+			track:Stop()
+		end
+	end
+end
+
+function Sword:InterpretInput(type, state, keycode)
+	if (type == 'Keyboard' and state == 'Begin' and (keycode == 'E' or keycode == 'Q' or keycode == 'F'))
+		or (type == 'Gamepad1' and state == 'Begin' and keycode == 'ButtonX') then
+		Sword:Spin()
+	end
+end
+
+--
+function Sword:Initialize()
+	Sword:Connect()
+end
+
+--
+--
+return Sword]]></ProtectedString>
+			</Properties>
+		</Item>
+		<Item class="Configuration" referent="RBX0DF85CF34C8B487385C697FEE9A8A6AA">
+			<Properties>
+				<string name="Name">Configurations</string>
+			</Properties>
+			<Item class="BoolValue" referent="RBX8843B1CA5665496B8C75CBE5DBF27E96">
+				<Properties>
+					<string name="Name">CanTeamkill</string>
+					<bool name="Value">false</bool>
+				</Properties>
+			</Item>
+			<Item class="IntValue" referent="RBX82148B83B2CA4BE7AFD9C52EC59402F8">
+				<Properties>
+					<string name="Name">IdleDamage</string>
+					<int name="Value">20</int>
+				</Properties>
+			</Item>
+			<Item class="IntValue" referent="RBXC0B5260243EE48ABB1D6B0CA45E31F6C">
+				<Properties>
+					<string name="Name">SlashDamage</string>
+					<int name="Value">18</int>
+				</Properties>
+			</Item>
+			<Item class="IntValue" referent="RBXF06BEB3693134830AE90AAA845DC28D4">
+				<Properties>
+					<string name="Name">LungeDamage</string>
+					<int name="Value">36</int>
+				</Properties>
+			</Item>
+			<Item class="BoolValue" referent="RBX334DEBF312D34B86A743A0C156BEB665">
+				<Properties>
+					<string name="Name">CanKillWithForceField</string>
+					<bool name="Value">true</bool>
+				</Properties>
+			</Item>
+			<Item class="IntValue" referent="RBX60321E923BCF44D0932D0D067317DD37">
+				<Properties>
+					<string name="Name">SpinsToWhirlwind</string>
+					<int name="Value">3</int>
+				</Properties>
+			</Item>
+			<Item class="IntValue" referent="RBX6024E725426C40D1BF74E1A3F6DF6E88">
+				<Properties>
+					<string name="Name">SkullParts</string>
+					<int name="Value">200</int>
+				</Properties>
+			</Item>
+			<Item class="NumberValue" referent="RBXAEE08783085B4A81BEB9B2D7715323C3">
+				<Properties>
+					<string name="Name">SkullDamage</string>
+					<double name="Value">25</double>
+				</Properties>
+			</Item>
+		</Item>
+		<Item class="Configuration" referent="RBX3B9DDB7B66ED422A91E25C1350CE76EA">
+			<Properties>
+				<string name="Name">Data</string>
+			</Properties>
+			<Item class="BoolValue" referent="RBXF5DDB76FBE414FFB80BB2ABD7799181E">
+				<Properties>
+					<string name="Name">WhirlwindAvailable</string>
+					<bool name="Value">false</bool>
+				</Properties>
+			</Item>
+		</Item>
+		<Item class="Script" referent="RBX6343853EAEA04E999BC1AFE032EA9CC5">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">DualDrop</string>
+				<ProtectedString name="Source"><![CDATA[local GLib = require(206209239)
+local tool = script.Parent
+local secondary
+
+tool.Equipped:connect(function()
+	if secondary then secondary:Destroy() secondary=nil end
+end)
+tool.Unequipped:connect(function()
+	if secondary then return end
+	
+	secondary = tool:WaitForChild'Handle':Clone()
+	secondary.Name = 'DualDropHandle'
+	secondary.Archivable = false
+	secondary.Parent = tool.Handle
+	local weld = GLib.Create'Weld'{
+		Name = 'DualDropWeld',
+		Parent = secondary,
+		Part0 = tool.Handle,
+		Part1 = secondary,
+		C0 = CFrame.Angles(0, math.rad(90*3/4), 0)
+	}
+end)]]></ProtectedString>
+			</Properties>
+		</Item>
+		<Item class="Script" referent="RBX3897A8B323DE4F4193699BAD513EF807">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">Script</string>
+				<ProtectedString name="Source"><![CDATA[--[[
+	Rewritten by ArceusInator
+	- Completely rewrote the sword
+	- Added a Configurations folder so settings can be easily modified
+	- The sword runs on the client in non-FE to reduce the impression of input delay
+	- Fixed the floaty lunge issue
+	- Added a mobile spin button
+	- Removed the delay between equipping the sword and the second sword appearing
+	
+	This script will run the sword code on the server if filtering is enabled
+--]]
+local Tool = script.Parent
+local GLib = require(206209239)
+local GLibScript = GLib.Script
+GLibScript.Name = 'GLib'
+GLibScript.Parent = Tool
+local Sword = require(Tool:WaitForChild'Sword')
+
+if workspace.FilteringEnabled then
+	-- Run the sword code on the server and accept input from the client
+	Sword:Initialize()
+	
+	Tool:WaitForChild'RemoteClick'.OnServerEvent:connect(function(client, action)
+		if client.Character == Tool.Parent then
+			Sword:Attack()
+		end
+	end)
+	Tool:WaitForChild'RemoteInput'.OnServerEvent:connect(function(client, type, state, key)
+		if client.Character == Tool.Parent then
+			Sword:InterpretInput(type, state, key)
+		end
+	end)
+	Tool:WaitForChild'RemoteAction'.OnServerEvent:connect(function(client, action)
+		if client.Character == Tool.Parent then
+			if action == 'Whirlwind' then
+				Sword:Whirlwind()
+			elseif action == 'Spin' then
+				Sword:ForceSpin()
+			end
+		end
+	end)
+end]]></ProtectedString>
+			</Properties>
+		</Item>
+		<Item class="Camera" referent="RBX58379E8CD4314EF4A28DF8DF2BF1B0C0">
+			<Properties>
+				<Ref name="CameraSubject">null</Ref>
+				<token name="CameraType">0</token>
+				<CoordinateFrame name="CoordinateFrame">
+					<X>-16.4674664</X>
+					<Y>14.7656898</Y>
+					<Z>11.0655499</Z>
+					<R00>0.556948006</R00>
+					<R01>0.446407944</R01>
+					<R02>-0.700377703</R02>
+					<R10>-1.4901163e-008</R10>
+					<R11>0.843272507</R11>
+					<R12>0.537486374</R12>
+					<R20>0.830547452</R20>
+					<R21>-0.29935196</R21>
+					<R22>0.469658881</R22>
+				</CoordinateFrame>
+				<float name="FieldOfView">10</float>
+				<CoordinateFrame name="Focus">
+					<X>-0.0919327736</X>
+					<Y>2.19871902</Y>
+					<Z>0.0844531059</Z>
+					<R00>1</R00>
+					<R01>0</R01>
+					<R02>0</R02>
+					<R10>0</R10>
+					<R11>1</R11>
+					<R12>0</R12>
+					<R20>0</R20>
+					<R21>0</R21>
+					<R22>1</R22>
+				</CoordinateFrame>
+				<string name="Name">ThumbnailCamera</string>
+			</Properties>
+		</Item>
+	</Item>
+</roblox>

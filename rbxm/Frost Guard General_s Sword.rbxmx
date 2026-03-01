@@ -1,0 +1,643 @@
+<roblox xmlns:xmime="http://www.w3.org/2005/05/xmlmime" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.roblox.com/roblox.xsd" version="4">
+	<Meta name="ExplicitAutoJoints">false</Meta>
+	<External>null</External>
+	<External>nil</External>
+	<Item class="Tool" referent="RBX0744F4ADCAEC42B98E21B3B40AAA2252">
+		<Properties>
+			<bool name="CanBeDropped">true</bool>
+			<bool name="Enabled">true</bool>
+			<CoordinateFrame name="Grip">
+				<X>0</X>
+				<Y>-2.79999995</Y>
+				<Z>-0.100000001</Z>
+				<R00>1</R00>
+				<R01>0</R01>
+				<R02>0</R02>
+				<R10>0</R10>
+				<R11>1</R11>
+				<R12>0</R12>
+				<R20>0</R20>
+				<R21>0</R21>
+				<R22>1</R22>
+			</CoordinateFrame>
+			<bool name="ManualActivationOnly">false</bool>
+			<string name="Name">FrostGuardGeneralSword</string>
+			<bool name="RequiresHandle">true</bool>
+			<BinaryString name="Tags"></BinaryString>
+			<Content name="TextureId"><url>http://www.roblox.com/asset/?id=139555577</url></Content>
+			<string name="ToolTip"></string>
+		</Properties>
+		<Item class="Part" referent="RBXC0F41F3D890644899FDBC7E95B4D066A">
+			<Properties>
+				<bool name="Anchored">false</bool>
+				<float name="BackParamA">-0.5</float>
+				<float name="BackParamB">0.5</float>
+				<token name="BackSurface">0</token>
+				<token name="BackSurfaceInput">0</token>
+				<float name="BottomParamA">-0.5</float>
+				<float name="BottomParamB">0.5</float>
+				<token name="BottomSurface">4</token>
+				<token name="BottomSurfaceInput">0</token>
+				<CoordinateFrame name="CFrame">
+					<X>1.50000405</X>
+					<Y>3.34999895</Y>
+					<Z>-2.79999804</Z>
+					<R00>1</R00>
+					<R01>0</R01>
+					<R02>0</R02>
+					<R10>0</R10>
+					<R11>0.707107365</R11>
+					<R12>0.707106352</R12>
+					<R20>0</R20>
+					<R21>-0.707106352</R21>
+					<R22>0.707107365</R22>
+				</CoordinateFrame>
+				<bool name="CanCollide">true</bool>
+				<int name="CollisionGroupId">0</int>
+				<Color3uint8 name="Color3uint8">4288914085</Color3uint8>
+				<PhysicalProperties name="CustomPhysicalProperties">
+					<CustomPhysics>false</CustomPhysics>
+				</PhysicalProperties>
+				<float name="FrontParamA">-0.5</float>
+				<float name="FrontParamB">0.5</float>
+				<token name="FrontSurface">0</token>
+				<token name="FrontSurfaceInput">0</token>
+				<float name="LeftParamA">-0.5</float>
+				<float name="LeftParamB">0.5</float>
+				<token name="LeftSurface">0</token>
+				<token name="LeftSurfaceInput">0</token>
+				<bool name="Locked">false</bool>
+				<bool name="Massless">false</bool>
+				<token name="Material">256</token>
+				<string name="Name">Handle</string>
+				<float name="Reflectance">0</float>
+				<float name="RightParamA">-0.5</float>
+				<float name="RightParamB">0.5</float>
+				<token name="RightSurface">0</token>
+				<token name="RightSurfaceInput">0</token>
+				<int name="RootPriority">0</int>
+				<Vector3 name="RotVelocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<BinaryString name="Tags"></BinaryString>
+				<float name="TopParamA">-0.5</float>
+				<float name="TopParamB">0.5</float>
+				<token name="TopSurface">3</token>
+				<token name="TopSurfaceInput">0</token>
+				<float name="Transparency">0</float>
+				<Vector3 name="Velocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<token name="formFactorRaw">3</token>
+				<token name="shape">1</token>
+				<Vector3 name="size">
+					<X>0.5</X>
+					<Y>5.5</Y>
+					<Z>1.5</Z>
+				</Vector3>
+			</Properties>
+			<Item class="SpecialMesh" referent="RBXBF66229760C94DDBA4487BA9F1954F75">
+				<Properties>
+					<token name="LODX">2</token>
+					<token name="LODY">2</token>
+					<Content name="MeshId"><url>http://www.roblox.com/asset/?id=139434446</url></Content>
+					<token name="MeshType">5</token>
+					<string name="Name">Mesh</string>
+					<Vector3 name="Offset">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+					</Vector3>
+					<Vector3 name="Scale">
+						<X>3</X>
+						<Y>3</Y>
+						<Z>3</Z>
+					</Vector3>
+					<BinaryString name="Tags"></BinaryString>
+					<Content name="TextureId"><url>http://www.roblox.com/asset/?id=139434536</url></Content>
+					<Vector3 name="VertexColor">
+						<X>1</X>
+						<Y>1</Y>
+						<Z>1</Z>
+					</Vector3>
+				</Properties>
+			</Item>
+			<Item class="Attachment" referent="RBX3894AB20539B4ED0A6E094E563E15764">
+				<Properties>
+					<CoordinateFrame name="CFrame">
+						<X>0</X>
+						<Y>-2.79999995</Y>
+						<Z>-0.099999994</Z>
+						<R00>1</R00>
+						<R01>0</R01>
+						<R02>6.31088724e-30</R02>
+						<R10>0</R10>
+						<R11>1</R11>
+						<R12>-0</R12>
+						<R20>-6.31088724e-30</R20>
+						<R21>0</R21>
+						<R22>1</R22>
+					</CoordinateFrame>
+					<string name="Name">RightGripAttachment</string>
+					<BinaryString name="Tags"></BinaryString>
+					<bool name="Visible">false</bool>
+				</Properties>
+			</Item>
+			<Item class="Sound" referent="RBXEB2A57DB246243ECB55DE3046F68B71A">
+				<Properties>
+					<float name="EmitterSize">10</float>
+					<bool name="Looped">false</bool>
+					<string name="Name">CrystalExplosion</string>
+					<bool name="PlayOnRemove">false</bool>
+					<float name="PlaybackSpeed">1</float>
+					<bool name="Playing">false</bool>
+					<token name="RollOffMode">0</token>
+					<Ref name="SoundGroup">null</Ref>
+					<Content name="SoundId"><url>http://www.roblox.com/asset/?id=84937942</url></Content>
+					<BinaryString name="Tags"></BinaryString>
+					<double name="TimePosition">0</double>
+					<float name="Volume">1</float>
+					<float name="xmlRead_MaxDistance_3">10000</float>
+				</Properties>
+			</Item>
+		</Item>
+		<Item class="Script" referent="RBX5F414872DCAC4D49A79DDBBD8C3BF912">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">CrystalSword</string>
+				<string name="ScriptGuid">{D5C54342-B28D-4D0E-BDA3-64191229701F}</string>
+				<ProtectedString name="Source"><![CDATA[--Fixed by Luckymaxer
+
+--Crystal Sword
+
+local Tool = script.Parent
+Tool.Enabled = true
+local Handle = Tool.Handle
+local Character = nil
+local Humanoid = nil
+local Player = nil
+
+local EruptionID = 84929999
+local Eruption = game:GetService("InsertService"):LoadAsset(EruptionID):GetChildren()[1]
+
+function IsTeamMate(Player1, Player2)
+	return (Player1 and Player2 and not Player1.Neutral and not Player2.Neutral and Player1.TeamColor == Player2.TeamColor)
+end
+	
+function TagHumanoid(humanoid, player)
+	local Creator_Tag = Instance.new("ObjectValue")
+	Creator_Tag.Name = "creator";
+	Creator_Tag.Value = player;
+	game:GetService("Debris"):AddItem(Creator_Tag, 2)
+	Creator_Tag.Parent = humanoid
+end
+	
+function UntagHumanoid(humanoid)
+	for _, v in pairs(humanoid:GetChildren()) do
+		if v:IsA("ObjectValue") and v.Name == "creator" then
+			v:Destroy()
+		end
+	end
+end
+
+EruptionChildren = Eruption:GetChildren()
+if #EruptionChildren > 0 then
+	for _,child in pairs(EruptionChildren) do
+		if child:IsA('BasePart') then
+			if child.Name == 'Base' then
+				child.BrickColor = BrickColor.new(11)
+			elseif child.Name == 'Crystal' then
+				child.BrickColor = BrickColor.new(23)
+			else
+				child.BrickColor = BrickColor.new(11)
+			end
+		
+			child.Transparency = 0.25
+			child.Material = 'Ice'
+		end
+	end
+end
+
+
+local Debris = game.Debris
+
+
+local Damage = 5
+local Eruptions = 5
+local DistancePerObject = 7
+local TimeBetweenEruptions = .05
+local EruptionLife = 3
+local DamagePerTouch = 5
+
+Counters = {} --Fix implemented by Luckymaxer
+
+--Creates a random number of particles and lets them fall down from the sky.  
+function ParticleExplosion(Parent, Colors)
+	local NumParticles = math.random(5,15)
+	for i = 0, NumParticles do
+		--Create the parts for the particles to emit from
+		local ParticlePoint = Instance.new("Part")
+		ParticlePoint.Size = Vector3.new(1,1,1)
+		ParticlePoint.Parent = Parent
+		ParticlePoint.Position = Parent.Position + Vector3.new(math.random(-5,5), math.random(4, 7), math.random(-5,5)	)
+		ParticlePoint.Transparency = 1
+		
+		--Create the particles for display
+		local Particle = Instance.new("Fire")
+		local Color = Colors[math.random(1, #Colors)]
+		Particle.Color = Color
+		Particle.SecondaryColor = Color
+		Particle.Parent = ParticlePoint
+
+		--Send them flying
+		local ParticleForce = Instance.new("BodyForce")
+		ParticleForce.Parent = ParticlePoint
+		ParticleForce.force = Vector3.new(math.random(-20,20), 40, math.random(-20,20)) * 7
+		
+		local DespawnScript = script:WaitForChild("Despawn"):Clone()
+		DespawnScript.Parent = ParticlePoint
+		DespawnScript:WaitForChild("Time").Value = .1 + math.random()
+		DespawnScript.Disabled = false
+	end
+
+end
+
+
+--Fired when the crystal touches something
+--Add to the player's touched counter.  Damage will be done based on this number later
+function onCrystalTouched(part)
+	local Character = part.Parent
+	if not Character:FindFirstChildOfClass("Humanoid") then return end
+	
+	if Humanoid == Character:FindFirstChildOfClass("Humanoid") then return end
+
+	local Counter = Character:FindFirstChild("Counter")
+	if not Counter then --If we don't have a counter, add a new one
+		Counter = Instance.new("IntValue")
+		Counter.Name = "Counter"
+		Counter.Value = 0
+		Counter.Parent = Character.Humanoid
+		table.insert(Counters, Counter)
+		Debris:AddItem(Counter, .2)
+	end
+
+	Counter.Value = Counter.Value + 1
+end
+
+--Find the players with a counter variable, then kill them
+--If they survive, knock them over
+function ExplodePlayers()
+	for i, v in pairs(Counters) do
+		if v and v.Parent and v.Parent:IsA("Humanoid") and v.Parent ~= Humanoid and not IsTeamMate(Player,game:GetService("Players"):GetPlayerFromCharacter(v.Parent.Parent)) then
+			UntagHumanoid(v.Parent)
+			TagHumanoid(v.Parent,Player)
+			v.Parent:TakeDamage(v.Value * DamagePerTouch)
+		end
+	end
+	Counters = {}
+end
+
+
+Erupting  = false
+function DoEruption()
+	Erupting = true
+	local Torso = Character:FindFirstChild("HumanoidRootPart")
+	local Direction = Torso.CFrame.lookVector
+	local LastPosition = Torso.Position + Vector3.new(0, -2.5, 0)
+	
+	for i = 1, Eruptions do
+		--Create a new crystal formation
+		local EruptionClone = Eruption:Clone()
+		--Clean up after ourselves
+		Debris:AddItem(EruptionClone, EruptionLife)
+		EruptionClone.Name = "Eruption"
+		local Children = EruptionClone:GetChildren()
+		local BasePart = EruptionClone.BaseCenter
+		for z = 1, #Children do
+			--Move each part into position
+			if(Children[z] ~= BasePart) then
+				local part = Children[z]
+				part.Material = Enum.Material.Glass
+				local offset = part.CFrame.p - BasePart.CFrame.p
+				part.CFrame = part.CFrame - part.CFrame.p + (LastPosition + (Direction * DistancePerObject)) + offset
+				local cobj = part.Touched:Connect(onCrystalTouched)
+				delay(.5, function() cobj:Disconnect() end)
+			end
+		end
+		EruptionClone.Parent = workspace
+		
+		BasePart.CFrame = BasePart.CFrame - BasePart.CFrame.p + (LastPosition + (Direction * DistancePerObject))
+
+		--Play the particle and sound effects
+		ParticleExplosion(BasePart, {BrickColor.new(11).Color, BrickColor.new(23).Color} )
+		local Sound = script.CrystalExplosion:Clone()
+		Sound.Parent = BasePart
+		Sound:Play()
+
+		--Move on to the next eruption
+		LastPosition = LastPosition + (Direction * DistancePerObject)
+
+		--Kill any fool that happened to get caught in the explosion
+		ExplodePlayers()
+
+		wait(TimeBetweenEruptions)
+
+		--Let physics take over crystal for effect
+		delay(EruptionLife - 1.5, function()
+			local ChildrenClone = Children
+			for z= 1, #ChildrenClone do
+				ChildrenClone[z].Anchored = false
+				local DespawnScript = script:WaitForChild("Despawn"):Clone()
+				DespawnScript.Parent = ChildrenClone[z]
+				DespawnScript:WaitForChild("Time").Value = math.random()
+				DespawnScript.Disabled = false
+				--Debris:AddItem(ChildrenClone[z], math.random())
+			end
+		end)
+		
+
+	end
+	
+	Erupting = false
+
+end
+
+
+--Swing the sword
+function Swing()
+	--Add a particle effect to the sword when you swing it to make it seem powerful
+	local SwingParticle = Instance.new("Fire")
+	SwingParticle.Name = "SwingParticle"
+	SwingParticle.Parent = Handle
+
+	local Color = BrickColor.new(23).Color
+	SwingParticle.Color = Color
+	SwingParticle.SecondaryColor = Color
+	Debris:AddItem(SwingParticle, 1)
+
+	--Play the swing animation
+	local Animation = Instance.new("StringValue")
+	Animation.Name = "toolanim"
+	Animation.Value = "Slash"
+	Animation.Parent = Tool
+
+	--How do i shot crystals?
+	DoEruption()
+
+end
+
+
+
+function onActivated()
+	if not Tool.Enabled then return end
+	if Erupting then return end
+	if not Character then return end
+	Tool.Enabled = false
+	
+	Swing()
+
+	wait(EruptionLife)
+	Tool.Enabled = true
+
+end
+Tool.Activated:Connect(onActivated)
+
+local Touch
+function onEquipped()
+	Character = Tool.Parent
+	Humanoid = Tool.Parent:FindFirstChildOfClass("Humanoid")
+	Player = game:GetService("Players"):GetPlayerFromCharacter(Character)
+	Touch = Handle.Touched:Connect(function(hit)
+		if not hit or not hit.Parent then return end
+		local Hum = hit.Parent:FindFirstChildOfClass("Humanoid")
+		if not Hum or Hum ~= Humanoid or IsTeamMate(Player,game:GetService("Players"):GetPlayerFromCharacter(Hum.Parent)) then return end
+		Humanoid:TakeDamage(Damage)
+	end)
+end
+Tool.Equipped:Connect(onEquipped)
+
+function onUnequipped()
+	if Touch then Touch:Disconnect();Touch=nil end
+end
+Tool.Unequipped:Connect(onUnequipped)]]></ProtectedString>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+			<Item class="Script" referent="RBX0AD3807381374B93B3B26006F2CD571E">
+				<Properties>
+					<bool name="Disabled">true</bool>
+					<Content name="LinkedSource"><null></null></Content>
+					<string name="Name">Despawn</string>
+					<string name="ScriptGuid">{8015F111-CECC-4A76-B58F-0DA52ADC5A24}</string>
+					<ProtectedString name="Source"><![CDATA[wait(script:WaitForChild("Time").Value)
+script.Parent:Destroy()]]></ProtectedString>
+					<BinaryString name="Tags"></BinaryString>
+				</Properties>
+				<Item class="NumberValue" referent="RBXBE8DEFEF4C8E4A6B833FC6A01692EDC8">
+					<Properties>
+						<string name="Name">Time</string>
+						<BinaryString name="Tags"></BinaryString>
+						<double name="Value">0</double>
+					</Properties>
+				</Item>
+			</Item>
+			<Item class="Sound" referent="RBXC383DA677A8E471999A3FB2AB3733FC3">
+				<Properties>
+					<float name="EmitterSize">10</float>
+					<bool name="Looped">false</bool>
+					<string name="Name">CrystalExplosion</string>
+					<bool name="PlayOnRemove">false</bool>
+					<float name="PlaybackSpeed">1</float>
+					<bool name="Playing">false</bool>
+					<token name="RollOffMode">0</token>
+					<Ref name="SoundGroup">null</Ref>
+					<Content name="SoundId"><url>http://www.roblox.com/asset/?id=84937942</url></Content>
+					<BinaryString name="Tags"></BinaryString>
+					<double name="TimePosition">0</double>
+					<float name="Volume">1</float>
+					<float name="xmlRead_MaxDistance_3">10000</float>
+				</Properties>
+			</Item>
+		</Item>
+		<Item class="Camera" referent="RBX9F360507DBB1446D90ACDCE0CB3B6864">
+			<Properties>
+				<CoordinateFrame name="CFrame">
+					<X>5.86703253</X>
+					<Y>3.53184295</Y>
+					<Z>-2.81880903</Z>
+					<R00>-0.0279741529</R00>
+					<R01>-0.0366692394</R01>
+					<R02>0.998935878</R02>
+					<R10>1.16415322e-10</R10>
+					<R11>0.999327004</R11>
+					<R12>0.0366835929</R12>
+					<R20>-0.999608696</R20>
+					<R21>0.00102619256</R21>
+					<R22>-0.0279553235</R22>
+				</CoordinateFrame>
+				<Ref name="CameraSubject">null</Ref>
+				<token name="CameraType">0</token>
+				<float name="FieldOfView">70</float>
+				<CoordinateFrame name="Focus">
+					<X>3.8804853</X>
+					<Y>3.45889163</Y>
+					<Z>-2.7632153</Z>
+					<R00>1</R00>
+					<R01>0</R01>
+					<R02>0</R02>
+					<R10>0</R10>
+					<R11>1</R11>
+					<R12>0</R12>
+					<R20>0</R20>
+					<R21>0</R21>
+					<R22>1</R22>
+				</CoordinateFrame>
+				<bool name="HeadLocked">true</bool>
+				<float name="HeadScale">1</float>
+				<string name="Name">ThumbnailCamera</string>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+		</Item>
+		<Item class="Keyframe" referent="RBX5C012108525347D1AC7093165820D411">
+			<Properties>
+				<string name="Name">ThumbnailPose</string>
+				<BinaryString name="Tags"></BinaryString>
+				<float name="Time">0</float>
+			</Properties>
+			<Item class="Pose" referent="RBX48DCBD673A654B4DADF774B435A30047">
+				<Properties>
+					<CoordinateFrame name="CFrame">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+						<R00>1</R00>
+						<R01>0</R01>
+						<R02>0</R02>
+						<R10>0</R10>
+						<R11>1</R11>
+						<R12>0</R12>
+						<R20>0</R20>
+						<R21>0</R21>
+						<R22>1</R22>
+					</CoordinateFrame>
+					<token name="EasingDirection">1</token>
+					<token name="EasingStyle">0</token>
+					<string name="Name">UpperTorso</string>
+					<BinaryString name="Tags"></BinaryString>
+					<float name="Weight">0</float>
+				</Properties>
+				<Item class="Pose" referent="RBXB241B0DF4A8F4796B65D08D3D7C9E144">
+					<Properties>
+						<CoordinateFrame name="CFrame">
+							<X>0</X>
+							<Y>-6.70552254e-08</Y>
+							<Z>-5.96046448e-08</Z>
+							<R00>1</R00>
+							<R01>0</R01>
+							<R02>0</R02>
+							<R10>0</R10>
+							<R11>0.173648193</R11>
+							<R12>-0.98480773</R12>
+							<R20>0</R20>
+							<R21>0.98480773</R21>
+							<R22>0.173648193</R22>
+						</CoordinateFrame>
+						<token name="EasingDirection">1</token>
+						<token name="EasingStyle">0</token>
+						<string name="Name">RightUpperArm</string>
+						<BinaryString name="Tags"></BinaryString>
+						<float name="Weight">1</float>
+					</Properties>
+					<Item class="Pose" referent="RBX19CE0D486EBC4C059199B0A354E8B4B7">
+						<Properties>
+							<CoordinateFrame name="CFrame">
+								<X>0</X>
+								<Y>-1.49011612e-08</Y>
+								<Z>3.7252903e-09</Z>
+								<R00>1</R00>
+								<R01>0</R01>
+								<R02>0</R02>
+								<R10>0</R10>
+								<R11>0.98480773</R11>
+								<R12>-0.173648179</R12>
+								<R20>0</R20>
+								<R21>0.173648179</R21>
+								<R22>0.98480773</R22>
+							</CoordinateFrame>
+							<token name="EasingDirection">1</token>
+							<token name="EasingStyle">0</token>
+							<string name="Name">RightLowerArm</string>
+							<BinaryString name="Tags"></BinaryString>
+							<float name="Weight">1</float>
+						</Properties>
+						<Item class="Pose" referent="RBXD626EC9AE29740919BDFDB66EDA9B09E">
+							<Properties>
+								<CoordinateFrame name="CFrame">
+									<X>0</X>
+									<Y>0</Y>
+									<Z>0</Z>
+									<R00>1</R00>
+									<R01>0</R01>
+									<R02>0</R02>
+									<R10>0</R10>
+									<R11>1</R11>
+									<R12>0</R12>
+									<R20>0</R20>
+									<R21>0</R21>
+									<R22>1</R22>
+								</CoordinateFrame>
+								<token name="EasingDirection">1</token>
+								<token name="EasingStyle">0</token>
+								<string name="Name">RightHand</string>
+								<BinaryString name="Tags"></BinaryString>
+								<float name="Weight">1</float>
+							</Properties>
+						</Item>
+					</Item>
+				</Item>
+			</Item>
+		</Item>
+		<Item class="LocalScript" referent="RBX9118672952BC4387AA69F8337C90577D">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">MouseIcon</string>
+				<string name="ScriptGuid">{4BECAF3D-712E-4ED7-9E27-D3F7E70A5AA1}</string>
+				<ProtectedString name="Source"><![CDATA[--Made by Luckymaxer
+
+Mouse_Icon = "rbxasset://textures/GunCursor.png"
+Reloading_Icon = "rbxasset://textures/GunWaitCursor.png"
+
+Tool = script.Parent
+
+Mouse = nil
+
+function UpdateIcon()
+	if Mouse then
+		Mouse.Icon = Tool.Enabled and Mouse_Icon or Reloading_Icon
+	end
+end
+
+function OnEquipped(ToolMouse)
+	Mouse = ToolMouse
+	UpdateIcon()
+end
+
+function OnChanged(Property)
+	if Property == "Enabled" then
+		UpdateIcon()
+	end
+end
+
+Tool.Equipped:Connect(OnEquipped)
+Tool.Changed:Connect(OnChanged)
+]]></ProtectedString>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+		</Item>
+	</Item>
+</roblox>

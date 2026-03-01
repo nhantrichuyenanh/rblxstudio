@@ -1,0 +1,1125 @@
+<roblox xmlns:xmime="http://www.w3.org/2005/05/xmlmime" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.roblox.com/roblox.xsd" version="4">
+	<External>null</External>
+	<External>nil</External>
+	<Item class="Tool" referent="RBX0275260EDFF04AFC9C311A7F4A5A2814">
+		<Properties>
+			<bool name="CanBeDropped">true</bool>
+			<bool name="Enabled">true</bool>
+			<CoordinateFrame name="Grip">
+				<X>0</X>
+				<Y>-0.899999976</Y>
+				<Z>0.25</Z>
+				<R00>1</R00>
+				<R01>0</R01>
+				<R02>0</R02>
+				<R10>0</R10>
+				<R11>1</R11>
+				<R12>0</R12>
+				<R20>0</R20>
+				<R21>0</R21>
+				<R22>1</R22>
+			</CoordinateFrame>
+			<bool name="ManualActivationOnly">false</bool>
+			<string name="Name">KillerWhaleLauncher</string>
+			<bool name="RequiresHandle">true</bool>
+			<Content name="TextureId"><url>http://www.roblox.com/asset?id=187501002</url></Content>
+			<string name="ToolTip"></string>
+		</Properties>
+		<Item class="Part" referent="RBX53DEA76FEEA2475F8A702D0A1778E471">
+			<Properties>
+				<bool name="Anchored">false</bool>
+				<float name="BackParamA">-0.5</float>
+				<float name="BackParamB">0.5</float>
+				<token name="BackSurface">0</token>
+				<token name="BackSurfaceInput">0</token>
+				<float name="BottomParamA">-0.5</float>
+				<float name="BottomParamB">0.5</float>
+				<token name="BottomSurface">0</token>
+				<token name="BottomSurfaceInput">0</token>
+				<int name="BrickColor">194</int>
+				<CoordinateFrame name="CFrame">
+					<X>40.3000031</X>
+					<Y>5.69999981</Y>
+					<Z>-66.3000031</Z>
+					<R00>-0.258819044</R00>
+					<R01>0</R01>
+					<R02>0.965925813</R02>
+					<R10>0</R10>
+					<R11>1</R11>
+					<R12>0</R12>
+					<R20>-0.965925813</R20>
+					<R21>0</R21>
+					<R22>-0.258819044</R22>
+				</CoordinateFrame>
+				<bool name="CanCollide">true</bool>
+				<PhysicalProperties name="CustomPhysicalProperties">
+					<CustomPhysics>false</CustomPhysics>
+				</PhysicalProperties>
+				<float name="Elasticity">0.5</float>
+				<float name="Friction">0.300000012</float>
+				<float name="FrontParamA">-0.5</float>
+				<float name="FrontParamB">0.5</float>
+				<token name="FrontSurface">0</token>
+				<token name="FrontSurfaceInput">0</token>
+				<float name="LeftParamA">-0.5</float>
+				<float name="LeftParamB">0.5</float>
+				<token name="LeftSurface">0</token>
+				<token name="LeftSurfaceInput">0</token>
+				<bool name="Locked">true</bool>
+				<token name="Material">256</token>
+				<string name="Name">Handle</string>
+				<float name="Reflectance">0</float>
+				<float name="RightParamA">-0.5</float>
+				<float name="RightParamB">0.5</float>
+				<token name="RightSurface">0</token>
+				<token name="RightSurfaceInput">0</token>
+				<Vector3 name="RotVelocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<float name="TopParamA">-0.5</float>
+				<float name="TopParamB">0.5</float>
+				<token name="TopSurface">0</token>
+				<token name="TopSurfaceInput">0</token>
+				<float name="Transparency">0</float>
+				<Vector3 name="Velocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<token name="formFactorRaw">3</token>
+				<token name="shape">1</token>
+				<Vector3 name="size">
+					<X>1</X>
+					<Y>2</Y>
+					<Z>2.5</Z>
+				</Vector3>
+			</Properties>
+			<Item class="SpecialMesh" referent="RBX82D21D47F7A246CDBB6B36A674502F70">
+				<Properties>
+					<token name="LODX">2</token>
+					<token name="LODY">2</token>
+					<Content name="MeshId"><url>http://www.roblox.com/asset?id=187011066</url></Content>
+					<token name="MeshType">5</token>
+					<string name="Name">Mesh</string>
+					<Vector3 name="Offset">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+					</Vector3>
+					<Vector3 name="Scale">
+						<X>1</X>
+						<Y>1</Y>
+						<Z>1</Z>
+					</Vector3>
+					<Content name="TextureId"><url>http://www.roblox.com/asset?id=187011167</url></Content>
+					<Vector3 name="VertexColor">
+						<X>1</X>
+						<Y>1</Y>
+						<Z>1</Z>
+					</Vector3>
+				</Properties>
+			</Item>
+			<Item class="Sound" referent="RBXA5700AA66B8E47479C9D1E09B471E4E7">
+				<Properties>
+					<float name="EmitterSize">10</float>
+					<bool name="Looped">false</bool>
+					<string name="Name">Zoom</string>
+					<bool name="PlayOnRemove">false</bool>
+					<float name="PlaybackSpeed">1</float>
+					<bool name="Playing">false</bool>
+					<token name="RollOffMode">0</token>
+					<Ref name="SoundGroup">null</Ref>
+					<Content name="SoundId"><url>http://www.roblox.com/asset?id=187771720</url></Content>
+					<double name="TimePosition">0</double>
+					<float name="Volume">0.5</float>
+					<float name="xmlRead_MaxDistance_3">10000</float>
+				</Properties>
+			</Item>
+			<Item class="Sound" referent="RBXFBABA46D899145BB9B5BCA95C4B9C27E">
+				<Properties>
+					<float name="EmitterSize">10</float>
+					<bool name="Looped">false</bool>
+					<string name="Name">Reload</string>
+					<bool name="PlayOnRemove">false</bool>
+					<float name="PlaybackSpeed">1</float>
+					<bool name="Playing">false</bool>
+					<token name="RollOffMode">0</token>
+					<Ref name="SoundGroup">null</Ref>
+					<Content name="SoundId"><url>http://www.roblox.com/asset?id=187771708</url></Content>
+					<double name="TimePosition">0</double>
+					<float name="Volume">0.5</float>
+					<float name="xmlRead_MaxDistance_3">10000</float>
+				</Properties>
+			</Item>
+			<Item class="Sound" referent="RBX8EF374E225244BCAAA5F4EE61A5B0476">
+				<Properties>
+					<float name="EmitterSize">10</float>
+					<bool name="Looped">false</bool>
+					<string name="Name">Fire</string>
+					<bool name="PlayOnRemove">false</bool>
+					<float name="PlaybackSpeed">1</float>
+					<bool name="Playing">false</bool>
+					<token name="RollOffMode">0</token>
+					<Ref name="SoundGroup">null</Ref>
+					<Content name="SoundId"><url>http://www.roblox.com/asset?id=187771701</url></Content>
+					<double name="TimePosition">0</double>
+					<float name="Volume">0.5</float>
+					<float name="xmlRead_MaxDistance_3">10000</float>
+				</Properties>
+			</Item>
+		</Item>
+		<Item class="LocalScript" referent="RBX6C74730FC8884EE7BE53152418F346E5">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">LocalScript</string>
+				<string name="ScriptGuid"></string>
+				<ProtectedString name="Source"><![CDATA[--Made by Luckymaxer
+
+Tool = script.Parent
+Handle = Tool:WaitForChild("Handle")
+
+Players = game:GetService("Players")
+ContentProvider = game:GetService("ContentProvider")
+RunService = game:GetService("RunService")
+
+Camera = game:GetService("Workspace").CurrentCamera
+
+Animations = {}
+
+ServerControl = Tool:WaitForChild("ServerControl")
+ClientControl = Tool:WaitForChild("ClientControl")
+
+Equipped = false
+
+ClientControl.OnClientInvoke = (function(Mode, Value)
+	if Mode == "PlayAnimation" and Value and Equipped and Humanoid then
+		SetAnimation("PlayAnimation", Value)
+	elseif Mode == "StopAnimation" and Value then
+		SetAnimation("StopAnimation", Value)
+	elseif Mode == "Preload" and Value then
+		ContentProvider:Preload(Value)
+	elseif Mode == "PlaySound" and Value then
+		Value:Play()
+	elseif Mode == "StopSound" and Value then
+		Value:Stop()
+	elseif Mode == "MousePosition" then
+		return PlayerMouse.Hit.p
+	elseif Mode == "DisableJump" then
+		DisableJump(Value)
+	elseif Mode == "SetMouseIcon" and Value then
+		PlayerMouse.Icon = Value
+	elseif Mode == "SetLocalTransparencyModifier" and Value then
+		pcall(function()
+			Value.Object.LocalTransparencyModifier = Value.Transparency
+		end)
+	elseif Mode == "GetCamera" and Value then
+		local PropertyValue = nil
+		if Value.Property then
+			pcall(function()
+				PropertyValue = Camera[Value.Property]
+			end)
+		end
+		return PropertyValue
+	elseif Mode == "SetCamera" and Value then
+		if Value.Property and Value.Value then
+			pcall(function()
+				Camera[Value.Property] = Value.Value
+			end)
+		end
+	elseif Mode == "SetMouseSensitivity" and Value then
+		if Value.Sensitivity == 1 then
+			if MouseSensivityConnection then
+				MouseSensivityConnection:disconnect()
+			end
+		else
+			SetMouseSensitivity(Value.Sensitivity)
+		end
+	end
+end)
+
+function InvokeServer(Mode, Value)
+	pcall(function()
+		local ServerReturn = ServerControl:InvokeServer(Mode, Value)
+		return ServerReturn
+	end)
+end
+
+function SetAnimation(Mode, Value)
+	if Mode == "PlayAnimation" and Value and Equipped and Humanoid then
+		for i, v in pairs(Animations) do
+			if v.Animation == Value.Animation then
+				v.AnimationTrack:Stop()
+				table.remove(Animations, i)
+			end
+		end
+		local AnimationTrack = Humanoid:LoadAnimation(Value.Animation)
+		table.insert(Animations, {Animation = Value.Animation, AnimationTrack = AnimationTrack})
+		AnimationTrack:Play(Value.FadeTime, Value.Weight, Value.Speed)
+	elseif Mode == "StopAnimation" and Value then
+		for i, v in pairs(Animations) do
+			if v.Animation == Value.Animation then
+				v.AnimationTrack:Stop()
+				table.remove(Animations, i)
+			end
+		end
+	end
+end
+
+function DisableJump(Boolean)
+	if PreventJump then
+		PreventJump:disconnect()
+	end
+	if Boolean then
+		PreventJump = Humanoid.Changed:connect(function(Property)
+			if Property ==  "Jump" then
+				Humanoid.Jump = false
+			end
+		end)
+	end
+end
+
+function SetMouseSensitivity(Sensitivity)
+
+	if MouseSensivityConnection then
+		MouseSensivityConnection:disconnect()
+	end	
+	
+	local function EulerAnglesYX(cframe)
+		local X, Y, Z, R00, R01, R02, R10, R11, R12, R20, R21, R22 = cframe:components(cframe)
+		return -math.asin(R12), ((math.abs(R12) > 0.99999 and -math.atan2(-R20, R00)) or -math.atan2(-R02, R22))
+	end
+	
+	local DirectionX, DirectionY = EulerAnglesYX(Camera.CoordinateFrame)
+	
+	local function UpdateSensitivity()
+		local CFrameX, CFrameY = EulerAnglesYX(Camera.CoordinateFrame)
+		DirectionX = (DirectionX * (1 - Sensitivity) + (CFrameX + (math.pi * 2) * math.floor((DirectionX - CFrameX) / (math.pi * 2) + 0.5)) * Sensitivity)
+		DirectionY = (DirectionY * (1 - Sensitivity) + (CFrameY + (math.pi * 2) * math.floor((DirectionY - CFrameY) / (math.pi * 2) + 0.5)) * Sensitivity)
+		Camera.CoordinateFrame = CFrame.Angles(0, DirectionY, 0) * CFrame.Angles(DirectionX, 0, 0) * CFrame.new(0, 0, 0.5) + Camera.Focus.p
+	end
+	
+	MouseSensivityConnection = RunService.RenderStepped:connect(UpdateSensitivity)
+	
+end
+
+function CheckIfAlive()
+	return (Player and Player.Parent and Humanoid and Humanoid.Parent and Humanoid.Health > 0)
+end
+
+function Equipped(Mouse)
+	Character = Tool.Parent
+	Player = Players:GetPlayerFromCharacter(Character)
+	Humanoid = Character:FindFirstChild("Humanoid")
+	Equipped = true
+	if not CheckIfAlive() then
+		return
+	end
+	PlayerMouse = Player:GetMouse()
+	Mouse.Button1Down:connect(function()
+		InvokeServer("MouseClick", {Down = true})
+	end)
+	Mouse.KeyDown:connect(function(Key)
+		InvokeServer("KeyPress", {Key = Key, Down = true})
+	end)
+	Mouse.KeyUp:connect(function(Key)
+		InvokeServer("KeyPress", {Key = Key, Down = false})
+	end)
+	Mouse.WheelForward:connect(function()
+		InvokeServer("WheelMoved", {Forward = true})
+	end)
+	Mouse.WheelBackward:connect(function()
+		InvokeServer("WheelMoved", {Forward = false})
+	end)
+end
+
+function Unequipped()
+	Equipped = false
+	for i, v in pairs(Animations) do
+		if v and v.AnimationTrack then
+			v.AnimationTrack:Stop()
+		end
+	end
+	for i, v in pairs({PreventJump, MouseSensivityConnection}) do
+		if v then
+			v:disconnect()
+		end
+	end
+	PlayerMouse.Icon = ""
+	Animations = {}
+end
+
+Tool.Equipped:connect(Equipped)
+Tool.Unequipped:connect(Unequipped)]]></ProtectedString>
+			</Properties>
+		</Item>
+		<Item class="LocalScript" referent="RBXC49436E70CFF4BEB9DB718FE7F1D0E65">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">MouseIcon</string>
+				<string name="ScriptGuid"></string>
+				<ProtectedString name="Source"><![CDATA[--Made by Luckymaxer
+
+Tool = script.Parent
+
+Players = game:GetService("Players")
+
+Player = Players.LocalPlayer
+
+Icons = {
+	Normal = "rbxasset://textures/GunCursor.png",
+	Reloading = "rbxasset://textures/GunWaitCursor.png"
+}
+
+ToolEquipped = false
+
+function UpdateIcon()
+	if Mouse and ToolEquipped then
+		Mouse.Icon = (((Tool.Enabled and (Mouse.Icon == Icons.Reloading or Mouse.Icon == "")) and Icons.Normal) or ((not Tool.Enabled and (Mouse.Icon == Icons.Normal or Mouse.Icon == "")) and Icons.Reloading) or Mouse.Icon)
+	end
+end
+
+function Equipped()
+	ToolEquipped = true
+	Mouse = Player:GetMouse()
+	MouseChanged = Mouse.Changed:connect(Changed)
+	UpdateIcon()
+end
+
+function Unequipped()
+	ToolEquipped = false
+	Mouse.Icon = ""
+	if MouseChanged then
+		MouseChanged:disconnect()
+	end
+end
+
+function Changed(Property)
+	if Property == "Enabled" or (Property == "Icon" and Mouse.Icon == "") then
+		UpdateIcon()
+	end
+end
+
+Tool.Changed:connect(Changed)
+
+Tool.Equipped:connect(Equipped)
+Tool.Unequipped:connect(Unequipped)]]></ProtectedString>
+			</Properties>
+		</Item>
+		<Item class="Script" referent="RBXBB2C3265D09949219098FF35AE3FD8DF">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">Script</string>
+				<string name="ScriptGuid">{F4A9EB98-A86C-43E8-A51B-2D691C48574D}</string>
+				<ProtectedString name="Source"><![CDATA[--Made by Luckymaxer
+--Updated for R15 avatars by StarWars
+
+Tool = script.Parent
+Handle = Tool:WaitForChild("Handle")
+
+Players = game:GetService("Players")
+Debris = game:GetService("Debris")
+
+Remover = script:WaitForChild("Remover")
+
+Objects = require(Tool:WaitForChild("Objects"))
+R15 = false
+
+BasePart = Instance.new("Part")
+BasePart.Shape = Enum.PartType.Block
+BasePart.Material = Enum.Material.Plastic
+BasePart.TopSurface = Enum.SurfaceType.Smooth
+BasePart.BottomSurface = Enum.SurfaceType.Smooth
+BasePart.FormFactor = Enum.FormFactor.Custom
+BasePart.Size = Vector3.new(0.2, 0.2, 0.2)
+BasePart.CanCollide = true
+BasePart.Locked = true
+BasePart.Anchored = false
+
+KillerWhale = BasePart:Clone()
+KillerWhale.Name = "KillerWhale"
+KillerWhale.Size = Vector3.new(1, 1, 2.25)
+KillerWhaleMesh = Instance.new("SpecialMesh")
+KillerWhaleMesh.MeshType = Enum.MeshType.FileMesh
+KillerWhaleMesh.MeshId = "http://www.roblox.com/asset?id=187011088"
+KillerWhaleMesh.TextureId = "http://www.roblox.com/asset?id=187011121"
+KillerWhaleMesh.Scale = Vector3.new(0.5, 0.5, 0.5)
+KillerWhaleMesh.VertexColor = Vector3.new(1, 1, 1)
+KillerWhaleMesh.Parent = KillerWhale
+
+MouseIcon = "http://www.roblox.com/asset?id=187746799"
+
+Grips = {
+	Equipped = CFrame.new(0, -0.899999976, 0.25, 1, 0, 0, 0, 1, 0, 0, 0, 1),
+	Zoom = CFrame.new(0, -0.899999976, 0.25, 0.73201704, 0.0497210845, 0.679469526, -0.208041042, 0.966009676, 0.153441057, -0.648744941, -0.253679007, 0.717479587),
+	R15Zoom = CFrame.new(0, -0.899999976, 0.25),
+}
+
+Animations = {
+	Zoom = {Animation = Tool:WaitForChild("Zoom"), FadeTime = nil, Weight = nil, Speed = nil, Duration = nil},
+	ZoomFire = {Animation = Tool:WaitForChild("ZoomFire"), FadeTime = nil, Weight = nil, Speed = 2, Duration = 1},
+	Fire = {Animation = Tool:WaitForChild("Fire"), FadeTime = nil, Weight = nil, Speed = 2, Duration = 1},
+	R15Zoom = {Animation = Tool:WaitForChild("R15Zoom"), FadeTime = nil, Weight = nil, Speed = nil, Duration = nil},
+	R15ZoomFire = {Animation = Tool:WaitForChild("R15ZoomFire"), FadeTime = nil, Weight = nil, Speed = 2, Duration = 1},
+	R15Fire = {Animation = Tool:WaitForChild("R15Fire"), FadeTime = nil, Weight = nil, Speed = 2, Duration = 1},	
+}
+
+Sounds = {
+	Zoom = Handle:WaitForChild("Zoom"),
+	Reload = Handle:WaitForChild("Reload"),
+	Fire = Handle:WaitForChild("Fire")
+}
+
+ToolEquipped = false
+
+ReloadTime = 10
+
+SpreadCoolDownTime = 0.125
+ZoomSpread = 0
+
+Gravity = 196.20
+
+Zoomed = false
+
+DisplayModel = Tool:FindFirstChild("DisplayModel")
+if DisplayModel then
+	DisplayModel:Destroy()
+end
+
+ServerControl = (Tool:FindFirstChild("ServerControl") or Instance.new("RemoteFunction"))
+ServerControl.Name = "ServerControl"
+ServerControl.Parent = Tool
+
+ClientControl = (Tool:FindFirstChild("ClientControl") or Instance.new("RemoteFunction"))
+ClientControl.Name = "ClientControl"
+ClientControl.Parent = Tool
+
+Tool.Enabled = true
+
+ServerControl.OnServerInvoke = (function(player, Mode, Value)
+	if player == Player then
+		if Mode == "MouseClick" then
+			Activated()
+		elseif Mode == "KeyPress" then
+			local Key = Value.Key
+			local Down = Value.Down
+			if (Key == "q" or Key == "z") and Down then
+				Zoomed = not Zoomed
+				for i, v in pairs(Animations) do
+					InvokeClient("StopAnimation", v)
+				end
+				if Zoomed then
+					Player.CameraMode = Enum.CameraMode.LockFirstPerson
+					InvokeClient("SetLocalTransparencyModifier", {Object = Handle, Transparency = 1})
+					InvokeClient("SetMouseSensitivity", {Sensitivity = 0.1})
+					for i, v in pairs({ZoomGui, CrosshairGui}) do
+						if v and v.Parent then
+							v:Destroy()
+						end
+					end
+					if Humanoid and Humanoid.RigType == Enum.HumanoidRigType.R15 then
+						InvokeClient("PlayAnimation", Animations.R15Zoom)
+					else
+						InvokeClient("PlayAnimation", Animations.Zoom)
+					end
+					Tool.Grip = R15 and Grips.R15Zoom or Grips.Zoom
+					Zoomed = true
+					ZoomGui = Objects.CreateZoomGui()
+					ZoomGui.Parent = PlayerGui
+					local CrosshairGuiTable = Objects.CreateCrosshairGui()
+					CrosshairGui = CrosshairGuiTable.Gui
+					Spread = CrosshairGuiTable.Spread
+					CrosshairGui.Parent = PlayerGui
+					Spread:InvokeServer("SetSpread", ((Tool.Enabled and {Spread = ZoomSpread, Speed = 0.5}) or (Tool.Enabled and {Spread = SpreadCoolDownTime, Speed = 0})))
+					CrosshairGui.ReloadingLabel.Visible = ((not Tool.Enabled and true) or false)
+					InvokeClient("SetMouseIcon", MouseIcon)
+				else
+					Player.CameraMode = Enum.CameraMode.Classic
+					InvokeClient("SetCamera", {Property = "FieldOfView", Value = 70})
+					InvokeClient("SetLocalTransparencyModifier", {Object = Handle, Transparency = 0})
+					InvokeClient("SetMouseSensitivity", {Sensitivity = 1})
+					for i, v in pairs({ZoomGui, CrosshairGui}) do
+						if v and v.Parent then
+							v:Destroy()
+						end
+					end
+					InvokeClient("SetMouseIcon", "")
+					InvokeClient("StopAnimation", Animations.Zoom)
+					Tool.Grip = Grips.Equipped
+					Zoomed = false
+				end
+			end
+		elseif Mode == "WheelMoved" and Zoomed then
+			InvokeClient("PlaySound", Sounds.Zoom)
+			local FieldOfView = InvokeClient("GetCamera", {Property = "FieldOfView"})
+			local MinimumZoom = 70
+			local MaximumZoom = 1
+			local ChangeInterval = 2.5
+			if Value.Forward then
+				if FieldOfView and FieldOfView > MaximumZoom then
+					local NewFieldOfView = (((FieldOfView - ChangeInterval) < MaximumZoom and MaximumZoom) or (FieldOfView - ChangeInterval))
+					InvokeClient("SetCamera", {Property = "FieldOfView", Value = NewFieldOfView})
+					InvokeClient("SetMouseSensitivity", {Sensitivity = ((GetPercentage(MaximumZoom, MinimumZoom, NewFieldOfView) + 1) / 1000)})
+				end
+			else
+				if FieldOfView and FieldOfView < MinimumZoom then
+					local NewFieldOfView = (((FieldOfView + ChangeInterval) > MinimumZoom and MinimumZoom) or (FieldOfView + ChangeInterval))
+					InvokeClient("SetCamera", {Property = "FieldOfView", Value = NewFieldOfView})
+					InvokeClient("SetMouseSensitivity", {Sensitivity = ((GetPercentage(MaximumZoom, MinimumZoom, NewFieldOfView) + 1) / 1000)})
+				end
+			end
+		end
+	end
+end)
+
+function InvokeClient(Mode, Value)
+	local ClientReturn = nil
+	pcall(function()
+		ClientReturn = ClientControl:InvokeClient(Player, Mode, Value)
+	end)
+	return ClientReturn
+end
+
+function GetPercentage(Start, End, Number)
+	return (((Number - Start) / (End - Start)) * 100)
+end
+
+function RayCast(Position, Direction, MaxDistance, IgnoreList)
+	return game:GetService("Workspace"):FindPartOnRayWithIgnoreList(Ray.new(Position, Direction.unit * (MaxDistance or 999.999)), IgnoreList) 
+end
+
+function TagHumanoid(humanoid, player)
+	local Creator_Tag = Instance.new("ObjectValue")
+	Creator_Tag.Name = "creator"
+	Creator_Tag.Value = player
+	Debris:AddItem(Creator_Tag, 2)
+	Creator_Tag.Parent = humanoid
+end
+
+function UntagHumanoid(humanoid)
+	for i, v in pairs(humanoid:GetChildren()) do
+		if v:IsA("ObjectValue") and v.Name == "creator" then
+			v:Destroy()
+		end
+	end
+end
+
+function CreateKillerWhale()
+	
+	local MaxDistance = 500
+	local HandleCFrame = Handle.CFrame	
+	
+	local KillerWhaleClone = KillerWhale:Clone()
+	KillerWhaleClone.CanCollide = false
+		
+	local Destination = InvokeClient("MousePosition")	
+	local SpawnPosition = HandleCFrame + HandleCFrame.lookVector * ((Handle.Size.Z / 2) + (KillerWhale.Size.Z / 2))	
+	local Distance = (HandleCFrame.p - Destination).magnitude
+	
+	if Distance >= MaxDistance then
+		Destination = (SpawnPosition + CFrame.new(SpawnPosition.p, Destination).lookVector * MaxDistance).p
+	end
+	
+	Distance = (HandleCFrame.p - Destination).magnitude
+	
+	local MidPoint = HandleCFrame + CFrame.new(SpawnPosition.p, Destination).lookVector * (Distance / 2)
+	MidPoint = MidPoint.p + Vector3.new(0, (Distance / 2), 0)
+
+	local Direction = CFrame.new(SpawnPosition.p, MidPoint)
+	
+	local Mass = (KillerWhaleClone:GetMass() * Gravity * 10000)
+	local BodyPosition = Instance.new("BodyPosition")
+	BodyPosition.maxForce = Vector3.new(Mass, Mass, Mass)
+	BodyPosition.Parent = KillerWhaleClone
+	BodyPosition.position = SpawnPosition.p
+	
+	local BodyGyro = Instance.new("BodyGyro")
+	BodyGyro.maxTorque = Vector3.new(math.huge, math.huge, math.huge)
+	BodyGyro.Parent = KillerWhaleClone
+	BodyGyro.cframe = Direction
+	
+	local MaximumSize = Vector3.new(10, 10, 20)
+	
+	Debris:AddItem(KillerWhaleClone, 10)
+	KillerWhaleClone.Parent = game:GetService("Workspace")
+	KillerWhaleClone.CFrame = SpawnPosition
+	KillerWhaleClone.CFrame = Direction
+	
+	Delay(0.25, function()
+		if KillerWhaleClone and KillerWhaleClone.Parent then
+			KillerWhaleClone.CanCollide = true
+		end
+	end)
+	
+	local Touched = false
+
+	local CurrentPlayer = Player
+	local CurrentCharacter = Character
+	
+	local KillerWhaleHit = KillerWhaleClone.Touched:connect(function(Hit)
+		if not Hit or not Hit.Parent or KillerWhaleClone.Velocity.Y >= 10 then
+			return
+		end
+		local character = Hit.Parent
+		local humanoid = character:FindFirstChild("Humanoid")
+		if character == CurrentCharacter then
+			return
+		end
+		if humanoid and humanoid.Health > 0 then
+			for i, v in pairs(character:GetChildren()) do
+				if v:IsA("BasePart") then
+					v.Velocity = Vector3.new(0, 0, 0)
+					v.RotVelocity = Vector3.new(0, 0, 0)
+				end
+			end
+			UntagHumanoid(humanoid)
+			TagHumanoid(humanoid, CurrentPlayer)
+			humanoid:TakeDamage(10)
+		end
+	end)
+	
+	Spawn(function()
+		for i = 1, 10 do
+			local WhaleCFrame = KillerWhaleClone.CFrame
+			KillerWhaleClone.Size = ((MaximumSize / 10) * i)
+			KillerWhaleClone.Mesh.Scale = Vector3.new((KillerWhaleClone.Size.X / 2), (KillerWhaleClone.Size.Y / 2), (KillerWhaleClone.Size.Z / 4))
+			KillerWhaleClone.CFrame = WhaleCFrame
+			wait(0.01)
+		end
+	end)
+	
+	Spawn(function()
+		local AttemptTick = tick()
+		while KillerWhaleClone and KillerWhaleClone.Parent and BodyPosition and BodyPosition.Parent and BodyGyro and BodyGyro.Parent and (KillerWhaleClone.Position - MidPoint).magnitude > 10 and (tick() - AttemptTick) < 5 do
+			Direction = CFrame.new(KillerWhaleClone.Position, MidPoint)
+			BodyGyro.cframe = Direction
+			BodyPosition.position = BodyPosition.position + Direction.lookVector * 5
+			wait()
+		end
+		if KillerWhaleClone and KillerWhaleClone.Parent and BodyPosition and BodyPosition.Parent and BodyGyro and BodyGyro.Parent then
+			local AttemptTick = tick()
+			while KillerWhaleClone and KillerWhaleClone.Parent and BodyPosition and BodyPosition.Parent and BodyGyro and BodyGyro.Parent and (KillerWhaleClone.Position - Destination).magnitude > 10 and (tick() - AttemptTick) < 5 do
+				Direction = CFrame.new(KillerWhaleClone.Position, Destination)
+				BodyGyro.cframe = Direction * CFrame.Angles((math.pi / 4), 0, 0)
+				BodyPosition.position = BodyPosition.position + Direction.lookVector * 5
+				wait()
+			end
+			local RayHit, RayPos = RayCast(KillerWhaleClone.Position, Vector3.new(0, -1, 0), KillerWhaleClone.Size.Y, {CurrentCharacter, KillerWhaleClone})
+			if not RayHit then
+				if BodyPosition and BodyPosition.Parent then
+					BodyPosition.maxForce = Vector3.new(BodyPosition.maxForce.X, 0, BodyPosition.maxForce.Y)
+				end
+			end
+			Delay(2, function()
+				if KillerWhaleHit then
+					KillerWhaleHit:disconnect()
+				end
+			end)
+		end
+	end)
+end
+
+function Activated()
+	
+	if not Tool.Enabled or not ToolEquipped or not CheckIfAlive() then
+		return
+	end
+	
+	Tool.Enabled = false
+	
+	local CurrentlyEquipped = true
+	local ToolUnequipped = Tool.Unequipped:connect(function()
+		CurrentlyEquipped = false
+	end)
+	Sounds.Fire:Play()
+	
+	local Animation = ((Zoomed and Animations.ZoomFire) or Animations.Fire)
+	if Humanoid and Humanoid.RigType == Enum.HumanoidRigType.R15 then
+		Animation = ((Zoomed and Animations.R15ZoomFire) or Animations.R15Fire)
+	end
+	InvokeClient("PlayAnimation", Animation)
+	
+	if Zoomed and CrosshairGui and Spread then
+		CrosshairGui.ReloadingLabel.Visible = true
+		Spread:InvokeServer("SetSpread", {Spread = SpreadCoolDownTime, Speed = 0.5})
+	end
+	
+	Spawn(function()
+		CreateKillerWhale()
+	end)
+	
+	Spawn(function()
+		wait(Animation.Duration)
+		if CurrentlyEquipped then
+			if ToolUnequipped then
+				ToolUnequipped:disconnect()
+			end
+			InvokeClient("StopAnimation", Animation)
+		end
+	end)
+	
+	wait(ReloadTime)
+	
+	if ToolEquipped then
+		Sounds.Reload:Play()
+	end
+	
+	wait(0.25)
+	
+	if Zoomed and CrosshairGui and Spread then
+		CrosshairGui.ReloadingLabel.Visible = false
+		Spread:InvokeServer("SetSpread", {Spread = ZoomSpread, Speed = 0.25})
+	end
+	
+	Tool.Enabled = true
+end
+
+function CheckIfAlive()
+	return (Player and Player.Parent and PlayerGui and PlayerGui.Parent and Humanoid and Humanoid.Parent and Humanoid.Health > 0)
+end
+
+function Equipped()
+	Character = Tool.Parent
+	Player = Players:GetPlayerFromCharacter(Character)
+	PlayerGui = Player:FindFirstChild("PlayerGui")
+	Humanoid = Character:FindFirstChild("Humanoid")
+	if not CheckIfAlive() then
+		return
+	end
+	R15 = Humanoid.RigType == Enum.HumanoidRigType.R15
+	Tool.Grip = Grips.Equipped
+	for i, v in pairs(Animations) do
+		if v and v.Animation then
+			InvokeClient("Preload", v.Animation.AnimationId)
+		end
+	end
+	local RemoverScript = game:GetService("Workspace"):FindFirstChild(Player.Name .. Remover.Name)
+	if RemoverScript then
+		RemoverScript:Destroy()
+	end
+	local RemoverClone = Remover:Clone()
+	RemoverClone.Name = (Player.Name .. Remover.Name)
+	local CreatorValue = Instance.new("ObjectValue")
+	CreatorValue.Name = "Creator"
+	CreatorValue.Value = Player
+	CreatorValue.Parent = RemoverClone
+	local ToolValue = Instance.new("ObjectValue")
+	ToolValue.Name = "Tool"
+	ToolValue.Value = Tool
+	ToolValue.Parent = RemoverClone
+	RemoverClone.Disabled = false
+	RemoverClone.Parent = game:GetService("Workspace")
+	ToolEquipped = true
+end
+
+function Unequipped()
+	Zoomed = false
+	InvokeClient("SetCamera", {Property = "FieldOfView", Value = 70})
+	InvokeClient("SetMouseSensitivity", {Sensitivity = 1})
+	if Player and Player.Parent then
+		Player.CameraMode = Enum.CameraMode.Classic
+	end
+	for i, v in pairs({ZoomGui, CrosshairGui}) do
+		if v and v.Parent then
+			v:Destroy()
+		end
+	end
+	for i, v in pairs({ToolUnequipped}) do
+		if v then
+			v:disconnect()
+		end
+	end
+	for i, v in pairs(Animations) do
+		InvokeClient("StopAnimation", v)
+	end
+	InvokeClient("SetLocalTransparencyModifier", {Object = Handle, Transparency = 0})
+	ToolEquipped = false
+end
+
+Tool.Equipped:connect(Equipped)
+Tool.Unequipped:connect(Unequipped)]]></ProtectedString>
+			</Properties>
+			<Item class="Script" referent="RBX2EDC0E31742846568635FCC926602D1B">
+				<Properties>
+					<bool name="Disabled">true</bool>
+					<Content name="LinkedSource"><null></null></Content>
+					<string name="Name">Remover</string>
+					<string name="ScriptGuid"></string>
+					<ProtectedString name="Source"><![CDATA[--Made by Luckymaxer
+
+Model = script
+
+Debris = game:GetService("Debris")
+
+FixCamera = script:FindFirstChild("FixCamera")
+
+Creator = Model:FindFirstChild("Creator")
+Tool = Model:FindFirstChild("Tool")
+
+function DestroyModel()
+	Debris:AddItem(Model, 2)
+	if Creator and Creator.Parent then
+		local Backpack = Creator:FindFirstChild("Backpack")
+		local FixCameraClone = FixCamera:Clone()
+		FixCameraClone.Disabled = false
+		FixCameraClone.Parent = ((Backpack and Backpack) or Character)
+	end
+end
+
+if not FixCamera or not Creator or not Creator.Value or not Creator.Value:IsA("Player") or not Creator.Value.Parent or not Tool or not Tool.Value or not Tool.Value.Parent then
+	DestroyModel()
+	return
+end
+
+Creator = Creator.Value
+Tool = Tool.Value
+
+Character = Creator.Character
+if not Character then
+	DestroyModel()
+	return
+end
+
+Creator.Changed:connect(function(Property)
+	if Property == "Parent" and not Creator.Parent then
+		DestroyModel()
+	end
+end)
+
+Character.Changed:connect(function(Property)
+	if Property == "Parent" and not Character.Parent then
+		DestroyModel()
+	end
+end)
+
+Tool.Changed:connect(function(Property)
+	if Property == "Parent" and Tool.Parent ~= Character then
+		DestroyModel()
+	end
+end)]]></ProtectedString>
+				</Properties>
+				<Item class="LocalScript" referent="RBX452B3DA4D6CA4692A31A8F7FE19D67C8">
+					<Properties>
+						<bool name="Disabled">true</bool>
+						<Content name="LinkedSource"><null></null></Content>
+						<string name="Name">FixCamera</string>
+						<string name="ScriptGuid"></string>
+						<ProtectedString name="Source"><![CDATA[--Made by Luckymaxer
+
+Players = game:GetService("Players")
+Debris = game:GetService("Debris")
+
+Camera = game:GetService("Workspace").CurrentCamera
+Player = Players.LocalPlayer
+
+PlayerMouse = Player:GetMouse()
+
+Camera.FieldOfView = 70
+Player.CameraMode = Enum.CameraMode.Classic
+PlayerMouse.Icon = ""
+
+Debris:AddItem(script, 2)]]></ProtectedString>
+					</Properties>
+				</Item>
+			</Item>
+		</Item>
+		<Item class="ModuleScript" referent="RBXB649CC172CAC40E1A8156B47DA33F4C3">
+			<Properties>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">Objects</string>
+				<string name="ScriptGuid"></string>
+				<ProtectedString name="Source"><![CDATA[--Made by Luckymaxer
+
+ScreenAdjust = script:WaitForChild("ScreenAdjust")
+
+Objects = {}
+
+function Objects.CreateZoomGui()
+	local ZoomGui = Instance.new("ScreenGui")
+	ZoomGui.Name = "ZoomGui"
+	local Frame1 = Instance.new("Frame")
+	Frame1.Name = "Frame1"
+	Frame1.BackgroundColor3 = Color3.new(0, 0, 0)
+	Frame1.BorderColor3 = Color3.new(0, 0, 0)
+	Frame1.Position = UDim2.new(0, -10, 0, -10)
+	Frame1.Size = UDim2.new(0, 248, 1, 20)
+	Frame1.ZIndex = 1
+	Frame1.Parent = ZoomGui
+	local Frame2 = Instance.new("Frame")
+	Frame2.Name = "Frame2"
+	Frame2.BackgroundColor3 = Color3.new(0, 0, 0)
+	Frame2.BorderColor3 = Color3.new(0, 0, 0)
+	Frame2.Position = UDim2.new(1, -238, 0, -10)
+	Frame2.Size = UDim2.new(0, 248, 1, 20)
+	Frame2.ZIndex = 1
+	Frame2.Parent = ZoomGui
+	local Scope = Instance.new("ImageLabel")
+	Scope.Name = "Scope"
+	Scope.BackgroundColor3 = Color3.new(0, 0, 0)
+	Scope.BorderColor3 = Color3.new(0, 0, 0)
+	Scope.BackgroundTransparency = 1
+	Scope.Image = "http://www.roblox.com/asset/?id=72002022"
+	Scope.ImageColor3 = Color3.new(255, 255, 255)
+	Scope.Position = UDim2.new(0.5, -330, 0, -10)
+	Scope.Size = UDim2.new(0, 659, 0, 659)
+	Scope.ZIndex = 1
+	Scope.Parent = ZoomGui
+	local ScreenAdjustScript = ScreenAdjust:Clone()
+	ScreenAdjustScript.Disabled = false
+	ScreenAdjustScript.Parent = ZoomGui
+	return ZoomGui
+end
+
+function Objects.CreateCrosshairGui()
+	local CrosshairGui = Instance.new("ScreenGui")
+	CrosshairGui.Name = "CrosshairGui"
+	local CrosshairFrame = Instance.new("Frame")
+	CrosshairFrame.Name = "CrosshairFrame"
+	CrosshairFrame.BackgroundColor3 = Color3.new(0, 255, 0)
+	CrosshairFrame.BackgroundTransparency = 1
+	CrosshairFrame.Position = UDim2.new(0.5, -32, 0.5, -32)
+	CrosshairFrame.Size = UDim2.new(0, 64, 0, 64)
+	CrosshairFrame.BorderSizePixel = 0
+	CrosshairFrame.ZIndex = 1
+	CrosshairFrame.Parent = CrosshairGui
+	local TopFrame = Instance.new("Frame")
+	TopFrame.Name = "TopFrame"
+	TopFrame.BackgroundColor3 = Color3.new(0, 0, 0)
+	TopFrame.BorderColor3 = Color3.new(0, 255, 0)
+	TopFrame.BorderSizePixel = 1
+	TopFrame.Position = UDim2.new(0.5, -1, 0, -15)
+	TopFrame.Size = UDim2.new(0, 2, 0, 15)
+	TopFrame.ZIndex = 1
+	TopFrame.Parent = CrosshairFrame
+	local BottomFrame = Instance.new("Frame")
+	BottomFrame.Name = "BottomFrame"
+	BottomFrame.BackgroundColor3 = Color3.new(0, 0, 0)
+	BottomFrame.BorderColor3 = Color3.new(0, 255, 0)
+	BottomFrame.BorderSizePixel = 1
+	BottomFrame.Position = UDim2.new(0.5, -1, 1, 0)
+	BottomFrame.Size = UDim2.new(0, 2, 0, 15)
+	BottomFrame.ZIndex = 1
+	BottomFrame.Parent = CrosshairFrame
+	local LeftFrame = Instance.new("Frame")
+	LeftFrame.Name = "LeftFrame"
+	LeftFrame.BackgroundColor3 = Color3.new(0, 0, 0)
+	LeftFrame.BorderColor3 = Color3.new(0, 255, 0)
+	LeftFrame.BorderSizePixel = 1
+	LeftFrame.Position = UDim2.new(0, -15, 0.5, -1)
+	LeftFrame.Size = UDim2.new(0, 15, 0, 2)
+	LeftFrame.ZIndex = 1
+	LeftFrame.Parent = CrosshairFrame
+	local RightFrame = Instance.new("Frame")
+	RightFrame.Name = "RightFrame"
+	RightFrame.BackgroundColor3 = Color3.new(0, 0, 0)
+	RightFrame.BorderColor3 = Color3.new(0, 255, 0)
+	RightFrame.BorderSizePixel = 1
+	RightFrame.Position = UDim2.new(1, -0, 0.5, -1)
+	RightFrame.Size = UDim2.new(0, 15, 0, 2)
+	RightFrame.ZIndex = 1
+	RightFrame.Parent = CrosshairFrame
+	local ReloadingLabel = Instance.new("TextLabel")
+	ReloadingLabel.BackgroundTransparency = 1
+	ReloadingLabel.Name = "ReloadingLabel"
+	ReloadingLabel.Position = UDim2.new(0.5, 20, 0.5, -20)
+	ReloadingLabel.Size = UDim2.new(0, 0, 0)
+	ReloadingLabel.Font = Enum.Font.ArialBold
+	ReloadingLabel.FontSize = Enum.FontSize.Size18
+	ReloadingLabel.TextColor3 = Color3.new(0, 0, 0)
+	ReloadingLabel.TextStrokeColor3 = Color3.new(0, 255, 0)
+	ReloadingLabel.TextStrokeTransparency = 0
+	ReloadingLabel.TextTransparency = 0
+	ReloadingLabel.Text = "Reloading"
+	ReloadingLabel.TextXAlignment = Enum.TextXAlignment.Left
+	ReloadingLabel.TextYAlignment = Enum.TextYAlignment.Bottom
+	ReloadingLabel.ZIndex = 1
+	ReloadingLabel.Visible = false
+	ReloadingLabel.Parent = CrosshairGui
+	local Spread = 0.1
+	local SpreadChanged = Instance.new("RemoteFunction")
+	SpreadChanged.OnServerInvoke = (function(Player, Mode, Value)
+		if Mode == "SetSpread" and Value then
+			Spread = Value.Spread
+			local Speed = Value.Speed
+			CrosshairFrame:TweenPosition(UDim2.new(0.5, ((1 - (Spread * CrosshairGui.AbsoluteSize.Y)) / 2), 0.5, (1 - ((Spread * CrosshairGui.AbsoluteSize.Y)) / 2)), Enum.EasingDirection.InOut, Enum.EasingStyle.Quad, Speed, true, (function() end))
+			CrosshairFrame:TweenSize(UDim2.new(0, (Spread * CrosshairGui.AbsoluteSize.Y), 0, (Spread * CrosshairGui.AbsoluteSize.Y)), Enum.EasingDirection.InOut, Enum.EasingStyle.Quad, Speed, true, (function() end))
+		end
+	end)
+	return {Gui = CrosshairGui, Spread = SpreadChanged}
+end
+
+return Objects]]></ProtectedString>
+			</Properties>
+			<Item class="LocalScript" referent="RBX41F115D722A5448AB1BB5BF3E780BC52">
+				<Properties>
+					<bool name="Disabled">false</bool>
+					<Content name="LinkedSource"><null></null></Content>
+					<string name="Name">ScreenAdjust</string>
+					<string name="ScriptGuid">{1C4CF206-798A-4421-BD42-D20CC7C57C26}</string>
+					<ProtectedString name="Source"><![CDATA[--Made by Luckymaxer
+
+wait()
+
+ZoomGui = script.Parent
+Scope = ZoomGui:WaitForChild("Scope")
+Frame1 = ZoomGui:WaitForChild("Frame1")
+Frame2 = ZoomGui:WaitForChild("Frame2")
+
+function AdjustScreenSize()
+	Scope.Position = UDim2.new(0.5, (-10 - (ZoomGui.AbsoluteSize.Y / 2)), 0, -10)
+	Scope.Size = UDim2.new(0, (20 + ZoomGui.AbsoluteSize.Y), 0, (30 + ZoomGui.AbsoluteSize.Y), 1, 20)
+	Frame1.Size = UDim2.new(0, (30 + ((ZoomGui.AbsoluteSize.X - ZoomGui.AbsoluteSize.Y) / 2)), 1, 30)
+	Frame2.Size = UDim2.new(0, (30 + ((ZoomGui.AbsoluteSize.X - ZoomGui.AbsoluteSize.Y) / 2)), 1, 30)
+	Frame2.Position = UDim2.new(1, (-10 - ((ZoomGui.AbsoluteSize.X - ZoomGui.AbsoluteSize.Y) / 2)), 0, -10)
+end
+
+ZoomGui.Changed:connect(function()
+	AdjustScreenSize()
+end)
+
+AdjustScreenSize()]]></ProtectedString>
+				</Properties>
+			</Item>
+		</Item>
+		<Item class="Animation" referent="RBX1604204867C548CFA36310DA743A4FE4">
+			<Properties>
+				<Content name="AnimationId"><url>rbxassetid://546844015</url></Content>
+				<string name="Name">R15Fire</string>
+			</Properties>
+		</Item>
+		<Item class="Animation" referent="RBX0898F0A1944746E9ABE822FDC4FDCC0C">
+			<Properties>
+				<Content name="AnimationId"><url>http://www.roblox.com/asset?id=187633322</url></Content>
+				<string name="Name">Zoom</string>
+			</Properties>
+		</Item>
+		<Item class="Animation" referent="RBX5F3EFADE1E4442E1957FA0B38D31DF34">
+			<Properties>
+				<Content name="AnimationId"><url>rbxassetid://546861567</url></Content>
+				<string name="Name">R15ZoomFire</string>
+			</Properties>
+		</Item>
+		<Item class="Animation" referent="RBXAAD1C47B11D442728D47EAA1CBF7F6F5">
+			<Properties>
+				<Content name="AnimationId"><url>http://www.roblox.com/asset?id=187772539</url></Content>
+				<string name="Name">Fire</string>
+			</Properties>
+		</Item>
+		<Item class="Animation" referent="RBX58347D4EDD8D410B95043DB47299A68F">
+			<Properties>
+				<Content name="AnimationId"><url>rbxassetid://546849659</url></Content>
+				<string name="Name">R15Zoom</string>
+			</Properties>
+		</Item>
+		<Item class="Animation" referent="RBXCC9CD7B46DE149F7911A1B4E3E517254">
+			<Properties>
+				<Content name="AnimationId"><url>http://www.roblox.com/asset?id=187774830</url></Content>
+				<string name="Name">ZoomFire</string>
+			</Properties>
+		</Item>
+	</Item>
+</roblox>

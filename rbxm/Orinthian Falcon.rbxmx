@@ -1,0 +1,1097 @@
+<roblox xmlns:xmime="http://www.w3.org/2005/05/xmlmime" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.roblox.com/roblox.xsd" version="4">
+	<External>null</External>
+	<External>nil</External>
+	<Item class="Tool" referent="RBXCC0C3D986C7042D8AE2224D2C47B9E45">
+		<Properties>
+			<bool name="CanBeDropped">false</bool>
+			<bool name="Enabled">true</bool>
+			<CoordinateFrame name="Grip">
+				<X>0.600000024</X>
+				<Y>-1.5</Y>
+				<Z>-0.300000012</Z>
+				<R00>0.471396625</R00>
+				<R01>0</R01>
+				<R02>-0.881921172</R02>
+				<R10>0</R10>
+				<R11>1</R11>
+				<R12>0</R12>
+				<R20>0.881921172</R20>
+				<R21>0</R21>
+				<R22>0.471396625</R22>
+			</CoordinateFrame>
+			<bool name="ManualActivationOnly">false</bool>
+			<string name="Name">MechatronicFalcon</string>
+			<bool name="RequiresHandle">true</bool>
+			<Content name="TextureId"><url>http://www.roblox.com/asset?id=92634639</url></Content>
+			<string name="ToolTip">Click to direct Falcon</string>
+		</Properties>
+		<Item class="Part" referent="RBXC18559FE1D1D4A29996EA4D611C67935">
+			<Properties>
+				<bool name="Anchored">false</bool>
+				<float name="BackParamA">-0.5</float>
+				<float name="BackParamB">0.5</float>
+				<token name="BackSurface">0</token>
+				<token name="BackSurfaceInput">0</token>
+				<float name="BottomParamA">-0.5</float>
+				<float name="BottomParamB">0.5</float>
+				<token name="BottomSurface">0</token>
+				<token name="BottomSurfaceInput">0</token>
+				<int name="BrickColor">194</int>
+				<CoordinateFrame name="CFrame">
+					<X>-22.0000229</X>
+					<Y>0.500003815</Y>
+					<Z>-61.1000023</Z>
+					<R00>0</R00>
+					<R01>1</R01>
+					<R02>0</R02>
+					<R10>0</R10>
+					<R11>0</R11>
+					<R12>-1</R12>
+					<R20>-1</R20>
+					<R21>0</R21>
+					<R22>0</R22>
+				</CoordinateFrame>
+				<bool name="CanCollide">true</bool>
+				<int name="CollisionGroupId">0</int>
+				<Color3uint8 name="Color3uint8Internal">4288914085</Color3uint8>
+				<PhysicalProperties name="CustomPhysicalProperties">
+					<CustomPhysics>false</CustomPhysics>
+				</PhysicalProperties>
+				<float name="Elasticity">0.5</float>
+				<float name="Friction">0.300000012</float>
+				<float name="FrontParamA">-0.5</float>
+				<float name="FrontParamB">0.5</float>
+				<token name="FrontSurface">0</token>
+				<token name="FrontSurfaceInput">0</token>
+				<float name="LeftParamA">-0.5</float>
+				<float name="LeftParamB">0.5</float>
+				<token name="LeftSurface">0</token>
+				<token name="LeftSurfaceInput">0</token>
+				<bool name="Locked">false</bool>
+				<token name="Material">256</token>
+				<string name="Name">Handle</string>
+				<float name="Reflectance">0</float>
+				<float name="RightParamA">-0.5</float>
+				<float name="RightParamB">0.5</float>
+				<token name="RightSurface">0</token>
+				<token name="RightSurfaceInput">0</token>
+				<Vector3 name="RotVelocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<float name="TopParamA">-0.5</float>
+				<float name="TopParamB">0.5</float>
+				<token name="TopSurface">0</token>
+				<token name="TopSurfaceInput">0</token>
+				<float name="Transparency">0</float>
+				<Vector3 name="Velocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<token name="formFactorRaw">3</token>
+				<token name="shape">1</token>
+				<Vector3 name="size">
+					<X>0.599999964</X>
+					<Y>0.5</Y>
+					<Z>1.39999986</Z>
+				</Vector3>
+			</Properties>
+			<Item class="Part" referent="RBXD88516E8B7694CD68E2C5E511C0FB433">
+				<Properties>
+					<bool name="Anchored">false</bool>
+					<float name="BackParamA">-0.5</float>
+					<float name="BackParamB">0.5</float>
+					<token name="BackSurface">0</token>
+					<token name="BackSurfaceInput">0</token>
+					<float name="BottomParamA">-0.5</float>
+					<float name="BottomParamB">0.5</float>
+					<token name="BottomSurface">0</token>
+					<token name="BottomSurfaceInput">0</token>
+					<int name="BrickColor">194</int>
+					<CoordinateFrame name="CFrame">
+						<X>-21.9481201</X>
+						<Y>0.498004913</Y>
+						<Z>-62.2486038</Z>
+						<R00>0</R00>
+						<R01>1</R01>
+						<R02>0</R02>
+						<R10>0</R10>
+						<R11>0</R11>
+						<R12>-1</R12>
+						<R20>-1</R20>
+						<R21>0</R21>
+						<R22>0</R22>
+					</CoordinateFrame>
+					<bool name="CanCollide">false</bool>
+					<int name="CollisionGroupId">0</int>
+					<Color3uint8 name="Color3uint8Internal">4288914085</Color3uint8>
+					<PhysicalProperties name="CustomPhysicalProperties">
+						<CustomPhysics>false</CustomPhysics>
+					</PhysicalProperties>
+					<float name="Elasticity">0.5</float>
+					<float name="Friction">0.300000012</float>
+					<float name="FrontParamA">-0.5</float>
+					<float name="FrontParamB">0.5</float>
+					<token name="FrontSurface">0</token>
+					<token name="FrontSurfaceInput">0</token>
+					<float name="LeftParamA">-0.5</float>
+					<float name="LeftParamB">0.5</float>
+					<token name="LeftSurface">0</token>
+					<token name="LeftSurfaceInput">0</token>
+					<bool name="Locked">false</bool>
+					<token name="Material">256</token>
+					<string name="Name">RightWing</string>
+					<float name="Reflectance">0</float>
+					<float name="RightParamA">-0.5</float>
+					<float name="RightParamB">0.5</float>
+					<token name="RightSurface">0</token>
+					<token name="RightSurfaceInput">0</token>
+					<Vector3 name="RotVelocity">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+					</Vector3>
+					<float name="TopParamA">-0.5</float>
+					<float name="TopParamB">0.5</float>
+					<token name="TopSurface">0</token>
+					<token name="TopSurfaceInput">0</token>
+					<float name="Transparency">0</float>
+					<Vector3 name="Velocity">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+					</Vector3>
+					<token name="formFactorRaw">3</token>
+					<token name="shape">1</token>
+					<Vector3 name="size">
+						<X>1.9000001</X>
+						<Y>0.200000048</Y>
+						<Z>0.699999928</Z>
+					</Vector3>
+				</Properties>
+				<Item class="SpecialMesh" referent="RBX14E2D387C8B243BCA3133357139E5F8B">
+					<Properties>
+						<token name="LODX">2</token>
+						<token name="LODY">2</token>
+						<Content name="MeshId"><url>http://www.roblox.com/asset/?id=92634383</url></Content>
+						<token name="MeshType">5</token>
+						<string name="Name">Mesh</string>
+						<Vector3 name="Offset">
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</Vector3>
+						<Vector3 name="Scale">
+							<X>0.5</X>
+							<Y>0.5</Y>
+							<Z>0.5</Z>
+						</Vector3>
+						<Content name="TextureId"><url>http://www.roblox.com/asset/?id=92634666</url></Content>
+						<Vector3 name="VertexColor">
+							<X>1</X>
+							<Y>1</Y>
+							<Z>1</Z>
+						</Vector3>
+					</Properties>
+				</Item>
+			</Item>
+			<Item class="Part" referent="RBXC19009262FB94C52AC5AD7B2487DDFE2">
+				<Properties>
+					<bool name="Anchored">false</bool>
+					<float name="BackParamA">-0.5</float>
+					<float name="BackParamB">0.5</float>
+					<token name="BackSurface">0</token>
+					<token name="BackSurfaceInput">0</token>
+					<float name="BottomParamA">-0.5</float>
+					<float name="BottomParamB">0.5</float>
+					<token name="BottomSurface">0</token>
+					<token name="BottomSurfaceInput">0</token>
+					<int name="BrickColor">194</int>
+					<CoordinateFrame name="CFrame">
+						<X>-21.9522171</X>
+						<Y>0.496505737</Y>
+						<Z>-59.9464035</Z>
+						<R00>0</R00>
+						<R01>1</R01>
+						<R02>0</R02>
+						<R10>0</R10>
+						<R11>0</R11>
+						<R12>-1</R12>
+						<R20>-1</R20>
+						<R21>0</R21>
+						<R22>0</R22>
+					</CoordinateFrame>
+					<bool name="CanCollide">false</bool>
+					<int name="CollisionGroupId">0</int>
+					<Color3uint8 name="Color3uint8Internal">4288914085</Color3uint8>
+					<PhysicalProperties name="CustomPhysicalProperties">
+						<CustomPhysics>false</CustomPhysics>
+					</PhysicalProperties>
+					<float name="Elasticity">0.5</float>
+					<float name="Friction">0.300000012</float>
+					<float name="FrontParamA">-0.5</float>
+					<float name="FrontParamB">0.5</float>
+					<token name="FrontSurface">0</token>
+					<token name="FrontSurfaceInput">0</token>
+					<float name="LeftParamA">-0.5</float>
+					<float name="LeftParamB">0.5</float>
+					<token name="LeftSurface">0</token>
+					<token name="LeftSurfaceInput">0</token>
+					<bool name="Locked">false</bool>
+					<token name="Material">256</token>
+					<string name="Name">LeftWing</string>
+					<float name="Reflectance">0</float>
+					<float name="RightParamA">-0.5</float>
+					<float name="RightParamB">0.5</float>
+					<token name="RightSurface">0</token>
+					<token name="RightSurfaceInput">0</token>
+					<Vector3 name="RotVelocity">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+					</Vector3>
+					<float name="TopParamA">-0.5</float>
+					<float name="TopParamB">0.5</float>
+					<token name="TopSurface">0</token>
+					<token name="TopSurfaceInput">0</token>
+					<float name="Transparency">0</float>
+					<Vector3 name="Velocity">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+					</Vector3>
+					<token name="formFactorRaw">3</token>
+					<token name="shape">1</token>
+					<Vector3 name="size">
+						<X>1.9000001</X>
+						<Y>0.200000003</Y>
+						<Z>0.699999928</Z>
+					</Vector3>
+				</Properties>
+				<Item class="SpecialMesh" referent="RBX035F4E46740A4D8F8AAB4482F122418C">
+					<Properties>
+						<token name="LODX">2</token>
+						<token name="LODY">2</token>
+						<Content name="MeshId"><url>http://www.roblox.com/asset/?id=92634298</url></Content>
+						<token name="MeshType">5</token>
+						<string name="Name">Mesh</string>
+						<Vector3 name="Offset">
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</Vector3>
+						<Vector3 name="Scale">
+							<X>0.5</X>
+							<Y>0.5</Y>
+							<Z>0.5</Z>
+						</Vector3>
+						<Content name="TextureId"><url>http://www.roblox.com/asset/?id=92634666</url></Content>
+						<Vector3 name="VertexColor">
+							<X>1</X>
+							<Y>1</Y>
+							<Z>1</Z>
+						</Vector3>
+					</Properties>
+				</Item>
+			</Item>
+			<Item class="Script" referent="RBXE03BDC333B73494BA2396D034D46A047">
+				<Properties>
+					<bool name="Disabled">true</bool>
+					<Content name="LinkedSource"><null></null></Content>
+					<string name="Name">FalconScript</string>
+					<string name="ScriptGuid">{E300CEE9-EC19-4330-90A8-3C8E5D107E93}</string>
+					<ProtectedString name="Source"><![CDATA[--Falcon settings are here
+local Aggressive = true --Falcon will attack enemies
+local SmallDamage = 8
+local LargeDamage = 16 --Does more damage while tool is equipped
+local ShortReload = 1.5 --Shoots faster if given an assigned area to move to
+local LongReload = 2.25
+local EquipReloadBonus = -1.25 --Shoots faster when tool is equipped
+local AssignmentDuration = 8
+local MaxSpeed = 100
+local Acceleration = 40
+local SubAcceleration = 7 --Relative speed when approaching target
+
+local SearchRangeXZ = 35
+local SearchRangeY = 15
+local ChaseRange = 60
+
+local LastShotStart = "left"
+
+function WaitForChild(parent, child)
+	local result = parent:FindFirstChild(child)
+	delay(3, function() if not result then print("Probably Stuck", child) end end)
+	while not result do
+		parent.ChildAdded:wait()
+		result = parent:FindFirstChild(child)
+	end
+	return result
+end
+
+local debris = game:GetService("Debris")
+
+function getMassOfObject(obj)
+	local children
+	local mass = 0
+	if type(obj) == "userdata" then
+		children = obj:GetChildren()
+	elseif type(obj) == "table" then
+		children = obj
+	end
+	if children then
+		for i = 1, #children do
+			if children[i]:IsA("BasePart") then
+				mass = mass + children[i]:GetMass()
+			end
+			if #children[i]:GetChildren() > 1 then
+				mass = mass + getMassOfObject(children[i])
+			end
+		end
+	end
+	return mass
+end
+
+
+
+
+local Falcon = script.Parent
+Falcon.CanCollide = true
+
+local leftWing = WaitForChild(Falcon, "LeftWing")
+local rightWing = WaitForChild(Falcon, "RightWing")
+local leftWeld = WaitForChild(Falcon, "LeftWingWeld")
+local rightWeld = WaitForChild(Falcon, "RightWingWeld")
+local Owner = WaitForChild(Falcon, "OwnerRef")
+local TargetPoint = WaitForChild(Falcon, "TargetPoint")
+local SpawnSound = WaitForChild(Falcon, "SpawnSound")
+SpawnSound:Play()
+
+local MoveToPoint = Vector3.new(0,0,0)
+local EnemyTarget = nil
+
+local LastAssignment = tick() - 1000
+
+
+function IsToolEquipped()
+	local char = Owner.Value
+	if char and char.Parent then
+		local refObject = char:FindFirstChild("FalconRefObject")
+		local tool = char:FindFirstChild("FalconPet")
+		if refObject and refObject.Value == Falcon.Parent and tool then
+			return true
+		end
+	end
+	return false
+end
+
+
+
+function tagHumanoid(humanoid, player)
+	if humanoid ~= nil and player ~= nil then
+		local creatorTag = Instance.new("ObjectValue")
+		creatorTag.Name = "creator"
+		creatorTag.Value = player
+		creatorTag.Parent = humanoid
+		debris:AddItem(creatorTag, 1)
+	end
+end
+
+function blow(proj, hit)
+
+	local damage = SmallDamage
+	if IsToolEquipped() then
+		damage = LargeDamage
+	end
+
+	if hit and hit.Parent and proj then
+		local humanoid = hit.Parent:FindFirstChild("Humanoid")
+		local vCharacter = Owner.Value
+		local vPlayer = game.Players:GetPlayerFromCharacter(vCharacter)
+		if humanoid ~= nil and Owner.Value ~= hit.Parent then
+			tagHumanoid(humanoid, vPlayer)
+			humanoid:TakeDamage(damage)
+		end
+	end
+end
+
+
+local shooting = false
+
+function shoot(object)
+	if Falcon == nil or Falcon.Parent == nil then return false end
+	shooting = true
+	--local bodyGyro = Falcon:FindFirstChild("BodyGyro")
+	local startPosition = Falcon.Position
+	--direction = (object.Position - Falcon.Position).unit
+	--if bodyGyro then
+		--bodyGyro.cframe = CFrame.new(startPosition, startPosition + direction)
+	--end
+	--wait(.2)
+
+	if Falcon == nil or Falcon.Parent == nil or not object then return false end
+	local startPosition = Falcon.Position
+	--[[if LastShotStart == "left" then
+		startPosition = startPosition + Falcon.CFrame:vectorToWorldSpace(Vector3.new(1,0,0))
+		LastShotStart = "right"
+	else
+		startPosition = startPosition - Falcon.CFrame:vectorToWorldSpace(Vector3.new(-1,0,0))
+		LastShotStart = "left"
+	end]]
+
+	local direction = (object.Position - startPosition).unit
+
+	shootSound = Falcon:FindFirstChild("ShootSound")
+	if shootSound then
+		shootSound:Play()
+	end
+
+
+	local beamstart = startPosition
+	local beamend = beamstart + direction * 2
+
+	local dist=(beamstart-beamend).magnitude
+	local laser=Instance.new("Part")
+	laser.Name="Effect"
+	--laser.Anchored=true
+	laser.CanCollide=false
+	laser.Shape="Block"
+	laser.formFactor="Custom"
+	laser.Size=Vector3.new(.2,.2,.2)
+	laser.Transparency=0
+	laser.Material=Enum.Material.Plastic
+	laser.Locked=true
+	laser.TopSurface=0
+	laser.BottomSurface=0
+	laser.BrickColor=BrickColor.new("Really red")
+	--laser.CFrame=CFrame.new(beamend,beamstart)*CFrame.new(0,0,-dist/2)*CFrame.Angles(math.pi/2,0,0)
+	laser.CFrame=CFrame.new(startPosition,object.Position)*CFrame.new(0,0,-dist/2)*CFrame.Angles(math.pi/2,0,0)
+	local m=Instance.new("SpecialMesh")
+	m.Scale=Vector3.new(1,dist*5,1)
+	m.Parent=laser
+	debris:AddItem(laser,3)
+
+	laser.Parent=Workspace
+
+	laser.Touched:connect(function(hit) blow(laser, hit) end)
+
+	local laserBurn = Falcon:FindFirstChild('LaserBurn')
+	if laserBurn then
+		burnScriptClone = laserBurn:Clone()
+		burnScriptClone.Parent = laser
+		if burnScriptClone:FindFirstChild('Creator') then
+			burnScriptClone.Creator.Value = Falcon
+		end
+		burnScriptClone.Disabled = false
+	end
+
+	laser.Velocity = direction * 100
+
+	Instance.new('BodyForce', laser).force = Vector3.new(0, laser:GetMass() * 196.2, 0) -- Antigravity
+
+	--wait(.3)
+
+	shooting = false
+	local reloadTime
+	if tick() - LastAssignment < AssignmentDuration then
+		reloadTime = ShortReload
+	else
+		reloadTime = LongReload
+	end
+	if IsToolEquipped() then
+		reloadTime = reloadTime + EquipReloadBonus
+	end
+	wait(reloadTime - .8)
+	return true
+end
+
+
+function FlapWings()
+	local sign = 1
+	local count = 0
+
+	local initLC1
+	local initRC1
+
+	leftWeld = Falcon:FindFirstChild("LeftWingWeld")
+	rightWeld = Falcon:FindFirstChild("RightWingWeld")
+	if leftWeld and rightWeld then
+		initLC1 = leftWeld.C1
+		initRC1 = rightWeld.C1
+		while Falcon.Parent and leftWeld and rightWeld do
+			leftWeld.C1 = leftWeld.C1 * CFrame.Angles(0, -sign * math.pi/30, 0 )
+			rightWeld.C1 = rightWeld.C1 * CFrame.Angles(0, sign * math.pi/30, 0)
+			count = count + 1
+			if count > 7 then
+				sign = sign * -1
+				count = count%6
+			end
+			wait(1/15)
+		end
+	end
+end
+
+local MoveDelay = .1
+local CircleCounter = 0
+function MoveToTarget()
+	local bodyVelocity = Instance.new('BodyVelocity')
+	bodyVelocity.velocity = Vector3.new(0,0,0)
+	bodyVelocity.Parent = Falcon
+	bodyVelocity.maxForce = Vector3.new(10000,20000,10000) --It's strong enough to support your weight
+	local bodyGyro = Instance.new('BodyGyro')
+	bodyGyro.Name = "BodyGyro"
+	bodyGyro.maxTorque = Vector3.new(3000,3000,3000)
+	bodyGyro.Parent = Falcon
+	while Falcon and Falcon.Parent do
+		if Owner.Value == nil or Owner.Value.Parent == nil or Owner.Value:FindFirstChild("FalconRefObject") == nil then
+			debris:AddItem(Falcon.Parent, 3.5) --Kill the falcon if the owner dies
+			Delay(1.5, function()
+				Aggressive = false
+			end)
+		end
+		if not shooting then
+			if tick() - LastAssignment > AssignmentDuration and Owner.Value then
+				local torso = Owner.Value:FindFirstChild("Torso") or Owner.Value:FindFirstChild("UpperTorso")
+				if torso then
+					MoveToPoint = torso.Position
+				end
+			end
+			CircleCounter = CircleCounter+1
+
+			local adjustedMovePoint = MoveToPoint + CFrame.Angles(0,CircleCounter/7,0) * Vector3.new(10,15,0)
+			local furtherAdjustedMovePoint = MoveToPoint + CFrame.Angles(0,CircleCounter/7 + math.pi/10,0) * Vector3.new(10,15,0)
+			local moveVector = adjustedMovePoint - Falcon.Position
+			local targetSpeed = math.min(MaxSpeed, SubAcceleration * math.sqrt(moveVector.magnitude))
+			local curMag = bodyVelocity.velocity.magnitude
+			local newSpeed
+			if targetSpeed > curMag then
+				newSpeed = math.min(targetSpeed, curMag + Acceleration * MoveDelay)
+			else
+				newSpeed = math.max(targetSpeed, curMag - Acceleration * MoveDelay)
+			end
+			bodyVelocity.velocity = moveVector.unit * newSpeed
+			--print("target, vel", MoveToPoint, bodyVelocity.velocity)
+			bodyGyro.cframe = CFrame.new(Falcon.Position, furtherAdjustedMovePoint)
+		end
+		wait(MoveDelay)
+	end
+end
+
+delay(0, FlapWings)
+delay(0, MoveToTarget)
+
+TargetPoint.Changed:connect(function(val)
+	--print("target updated")
+	LastAssignment = tick()
+	MoveToPoint = val
+end)
+
+wait(1)
+
+while Falcon and Falcon.Parent do
+	if Aggressive and (not EnemyTarget or (tick() - LastAssignment < AssignmentDuration)) then
+		local pxPos = Falcon.Position + Vector3.new(0,-8,0)
+		local searchVec = Vector3.new(SearchRangeXZ, SearchRangeY, SearchRangeXZ)
+		local searchRegion = Region3.new(pxPos - searchVec, pxPos + searchVec)
+		local partList = game.Workspace:FindPartsInRegion3(searchRegion, Owner.Value, 50)
+		local closestPart
+		local closestDistance = ChaseRange
+		for i,part in pairs(partList) do
+			local partDistance = (part.Position - pxPos).magnitude
+			local hum = part.Parent:FindFirstChild("Humanoid")
+			if partDistance < closestDistance and hum and hum:IsA("Humanoid") and hum.Health>0 then
+				closestPart = part
+				closestDistance = partDistance
+			end
+		end
+		if closestPart then
+			EnemyTarget = closestPart.Parent
+			--print("found attack target")
+		end
+	end
+	if Aggressive and EnemyTarget then
+		local hum = EnemyTarget:FindFirstChild("Humanoid")
+		local torso = EnemyTarget:FindFirstChild("Torso") or EnemyTarget:FindFirstChild("UpperTorso")
+		while EnemyTarget and hum and torso and (Falcon and Falcon.Parent) do
+			local attackVec = torso.Position - Falcon.Position
+			if hum.Parent and hum.Health > 0 and attackVec.magnitude < ChaseRange then
+				local success = shoot(torso)
+				if not success then break end
+			else
+				EnemyTarget = nil
+			end
+			wait(.0001)
+		end
+	end
+
+	wait(1)
+end
+]]></ProtectedString>
+				</Properties>
+			</Item>
+			<Item class="ObjectValue" referent="RBXC433E335F37945839050AD76552B5F06">
+				<Properties>
+					<string name="Name">OwnerRef</string>
+					<Ref name="Value">null</Ref>
+				</Properties>
+			</Item>
+			<Item class="Vector3Value" referent="RBX654422B9E2364E91ABE659043545BD34">
+				<Properties>
+					<string name="Name">TargetPoint</string>
+					<Vector3 name="Value">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+					</Vector3>
+				</Properties>
+			</Item>
+			<Item class="Sound" referent="RBX673829A0BF4647F989E4673F597A5B68">
+				<Properties>
+					<float name="EmitterSize">10</float>
+					<bool name="Looped">false</bool>
+					<string name="Name">SpawnSound</string>
+					<bool name="PlayOnRemove">false</bool>
+					<float name="PlaybackSpeed">1</float>
+					<bool name="Playing">false</bool>
+					<token name="RollOffMode">0</token>
+					<Ref name="SoundGroup">null</Ref>
+					<Content name="SoundId"><url>http://www.roblox.com/asset/?id=92665366</url></Content>
+					<double name="TimePosition">0</double>
+					<float name="Volume">1</float>
+					<float name="xmlRead_MaxDistance_3">10000</float>
+				</Properties>
+			</Item>
+			<Item class="SpecialMesh" referent="RBX511C77EB91534077A1F76B4FDFA26093">
+				<Properties>
+					<token name="LODX">2</token>
+					<token name="LODY">2</token>
+					<Content name="MeshId"><url>http://www.roblox.com/asset/?id=92634005</url></Content>
+					<token name="MeshType">5</token>
+					<string name="Name">Mesh</string>
+					<Vector3 name="Offset">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+					</Vector3>
+					<Vector3 name="Scale">
+						<X>0.5</X>
+						<Y>0.5</Y>
+						<Z>0.5</Z>
+					</Vector3>
+					<Content name="TextureId"><url>http://www.roblox.com/asset/?id=92634666</url></Content>
+					<Vector3 name="VertexColor">
+						<X>1</X>
+						<Y>1</Y>
+						<Z>1</Z>
+					</Vector3>
+				</Properties>
+			</Item>
+			<Item class="Weld" referent="RBX46EBC9E70939480997607F1F2D1B1179">
+				<Properties>
+					<CoordinateFrame name="C0">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+						<R00>0</R00>
+						<R01>0</R01>
+						<R02>-1</R02>
+						<R10>0</R10>
+						<R11>1</R11>
+						<R12>0</R12>
+						<R20>1</R20>
+						<R21>0</R21>
+						<R22>0</R22>
+					</CoordinateFrame>
+					<CoordinateFrame name="C1">
+						<X>-1.14860153</X>
+						<Y>-0.051902771</Y>
+						<Z>-0.00199890137</Z>
+						<R00>0</R00>
+						<R01>0</R01>
+						<R02>-1</R02>
+						<R10>0</R10>
+						<R11>1</R11>
+						<R12>0</R12>
+						<R20>1</R20>
+						<R21>0</R21>
+						<R22>0</R22>
+					</CoordinateFrame>
+					<string name="Name">RightWingWeld</string>
+					<Ref name="Part0">RBXC18559FE1D1D4A29996EA4D611C67935</Ref>
+					<Ref name="Part1">RBXD88516E8B7694CD68E2C5E511C0FB433</Ref>
+				</Properties>
+			</Item>
+			<Item class="Weld" referent="RBXD2522C5D4A174328B9E8C5DC594A0AF0">
+				<Properties>
+					<CoordinateFrame name="C0">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+						<R00>0</R00>
+						<R01>0</R01>
+						<R02>-1</R02>
+						<R10>0</R10>
+						<R11>1</R11>
+						<R12>0</R12>
+						<R20>1</R20>
+						<R21>0</R21>
+						<R22>0</R22>
+					</CoordinateFrame>
+					<CoordinateFrame name="C1">
+						<X>1.15359879</X>
+						<Y>-0.0478057861</Y>
+						<Z>-0.00349807739</Z>
+						<R00>0</R00>
+						<R01>0</R01>
+						<R02>-1</R02>
+						<R10>0</R10>
+						<R11>1</R11>
+						<R12>0</R12>
+						<R20>1</R20>
+						<R21>0</R21>
+						<R22>0</R22>
+					</CoordinateFrame>
+					<string name="Name">LeftWingWeld</string>
+					<Ref name="Part0">RBXC18559FE1D1D4A29996EA4D611C67935</Ref>
+					<Ref name="Part1">RBXC19009262FB94C52AC5AD7B2487DDFE2</Ref>
+				</Properties>
+			</Item>
+			<Item class="Sound" referent="RBX6563F364894441C988B4061A51E3758D">
+				<Properties>
+					<float name="EmitterSize">10</float>
+					<bool name="Looped">false</bool>
+					<string name="Name">ShootSound</string>
+					<bool name="PlayOnRemove">false</bool>
+					<float name="PlaybackSpeed">1</float>
+					<bool name="Playing">false</bool>
+					<token name="RollOffMode">0</token>
+					<Ref name="SoundGroup">null</Ref>
+					<Content name="SoundId"><url>http://www.roblox.com/asset/?id=92651381</url></Content>
+					<double name="TimePosition">0</double>
+					<float name="Volume">1</float>
+					<float name="xmlRead_MaxDistance_3">10000</float>
+				</Properties>
+			</Item>
+			<Item class="Script" referent="RBXE832D34959B7478EAE49A88AD42BA0FC">
+				<Properties>
+					<bool name="Disabled">true</bool>
+					<Content name="LinkedSource"><null></null></Content>
+					<string name="Name">LaserBurn</string>
+					<string name="ScriptGuid">{187EA095-ED17-40B7-AD8B-B639516CF938}</string>
+					<ProtectedString name="Source"><![CDATA[local Laser = script.Parent
+local BurnScript = script.Burning
+local Creator = script.Creator.Value
+
+-- OnTouched: Do damage and move BurnScript
+Laser.Touched:connect(function(otherPart)
+	if otherPart and otherPart.Parent and otherPart.Parent:IsA("Model") then
+		local otherModel = otherPart.Parent
+		if otherModel ~= Creator and not otherModel:IsAncestorOf(Creator) then
+			local humanoid = otherModel:FindFirstChild("Humanoid")
+			if humanoid and humanoid.Health > 0 then
+				BurnScript.Parent = humanoid
+				BurnScript.Disabled = false
+			end
+		end
+	end
+end)
+]]></ProtectedString>
+				</Properties>
+				<Item class="Script" referent="RBXBD6E08A90EA54A1A93B77C94931E19BA">
+					<Properties>
+						<bool name="Disabled">true</bool>
+						<Content name="LinkedSource"><null></null></Content>
+						<string name="Name">Burning</string>
+						<string name="ScriptGuid">{2C14EC08-6B0C-4CD9-A169-5459C194B4EC}</string>
+						<ProtectedString name="Source"><![CDATA[-- Burn the humanoid this script is attached to
+local victim = script.Parent
+if victim and victim:IsA("Humanoid") then
+	local fire = Instance.new("Fire")
+	fire.Parent = victim.Parent:FindFirstChild("Torso") or victim.Parent:FindFirstChild("UpperTorso")
+	for i = 1, 8 do
+		if not fire or not fire.Enabled or not victim or victim.Health <= 0 then break end
+		victim:TakeDamage(2)
+		wait(1.5)
+	end
+	if fire then fire:Destroy() end
+end
+script:Destroy()
+]]></ProtectedString>
+					</Properties>
+				</Item>
+				<Item class="ObjectValue" referent="RBXA8C8A14CC7C04E08A12642246281DBE8">
+					<Properties>
+						<string name="Name">Creator</string>
+						<Ref name="Value">null</Ref>
+					</Properties>
+				</Item>
+			</Item>
+		</Item>
+		<Item class="Script" referent="RBX6E134755665448E7A1B34EA1B2643BA4">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">ToolScript</string>
+				<string name="ScriptGuid">{EBA608CC-3C43-47E0-9E2E-F23256710AEC}</string>
+				<ProtectedString name="Source"><![CDATA[local FalconDuration = 5*60
+
+function WaitForChild(parent, child)
+	local result = parent:FindFirstChild(child)
+	delay(3, function() if not result then print("Probably Stuck", child) end end)
+	while not result do
+		parent.ChildAdded:wait()
+		result = parent:FindFirstChild(child)
+	end
+	return result
+end
+
+function WaitForChildren(parent, childTable)
+	for i = 1, #childTable do
+		WaitForChild(parent, childTable[i])
+	end
+end
+
+local Tool = script.Parent
+local Falcon = Tool.Handle
+
+
+local prevHealth = 100
+
+
+
+local healthConnect
+
+local vCharacter
+local myTorso
+local myHumanoid
+
+local attacking
+
+Tool.Enabled = true
+
+local connection
+
+local debris = game:GetService("Debris")
+
+
+local leftWing = WaitForChild(Falcon, "LeftWing")
+local rightWing = WaitForChild(Falcon, "RightWing")
+local leftWeld = WaitForChild(Falcon, "LeftWingWeld")
+local rightWeld = WaitForChild(Falcon, "RightWingWeld")
+
+local FalconClone
+
+function getMassOfObject(obj)
+	local children
+	local mass = 0
+	if type(obj) == "userdata" then
+		children = obj:GetChildren()
+	elseif type(obj) == "table" then
+		children = obj
+	end
+	if children then
+		for i = 1, #children do
+			if children[i]:IsA("BasePart") then
+				mass = mass + children[i]:GetMass()
+			end
+			if #children[i]:GetChildren() > 1 then
+				mass = mass + getMassOfObject(children[i])
+			end
+		end
+	end
+	return mass
+end
+
+
+
+
+function HideTool()
+	local partTable = {Falcon, rightWing, leftWing}
+	for i, v in pairs(partTable) do
+		v.Transparency = 1
+	end
+	Falcon.CanCollide = false
+end
+
+function ShowTool()
+	local partTable = {Falcon, rightWing, leftWing}
+	local partTable = {Falcon, rightWing, leftWing}
+	for i, v in pairs(partTable) do
+		v.Transparency = 0
+	end
+	Falcon.CanCollide = true
+end
+
+
+function TrySpawnFalcon()
+	local oldFalconRef = Tool.Parent:FindFirstChild("FalconRefObject")
+	if oldFalconRef then
+		if oldFalconRef.Value and oldFalconRef.Value.Parent then
+			return false
+		else
+			oldFalconRef:Destroy()
+		end
+	else
+		WaitForChildren(Falcon, {"Mesh", "FalconScript", "OwnerRef", "TargetPoint", "LeftWing", "RightWing"})
+		WaitForChildren(Falcon.LeftWing, {"Mesh"})
+		WaitForChildren(Falcon.RightWing, {"Mesh"})
+		ShowTool()
+		if not (Falcon and Falcon:FindFirstChild("LeftWing") and Falcon:FindFirstChild("RightWing")) then return false end
+		FalconClone = Falcon:Clone()
+		FalconClone.Name = "Torso"
+		local falconModel = Instance.new("Model")
+		falconModel.Name = "Falcon"
+		FalconClone.Parent = falconModel
+		FalconClone.OwnerRef.Value = Tool.Parent
+		local falconRefObject = WaitForChild(Tool,"FalconRefObject"):Clone()
+		FalconClone.FalconScript.Disabled = false
+
+		debris:AddItem(falconRefObject, FalconDuration)
+		falconRefObject.Value = falconModel
+		falconRefObject.Parent = Tool.Parent
+
+		debris:AddItem(falconModel, FalconDuration + 6)
+		falconModel.Parent = game.Workspace
+		return true
+	end
+end
+
+function onActivated()
+	local humanoid = Tool.Parent:FindFirstChild("Humanoid")
+	if not (humanoid and humanoid.Health > 0) then return end
+	if TrySpawnFalcon() then
+		HideTool()
+		return
+	end
+	local oldFalconRef = Tool.Parent:FindFirstChild("FalconRefObject")
+	if oldFalconRef then
+		local falconModel = oldFalconRef.Value
+		if falconModel and falconModel.Parent then
+			local curFalcon = falconModel:FindFirstChild("Torso")
+			if not curFalcon then return end
+			local falconTarget = curFalcon:FindFirstChild("TargetPoint")
+			if falconTarget then
+				falconTarget.Value = humanoid.TargetPoint
+				return
+			end
+		end
+	end
+end
+
+
+local equipDebounce = false
+function onEquipped()
+	if equipDebounce then return end
+	equipDebounce = true
+	-- Horrendous is the name, for these checks
+	if leftWeld then
+		leftWeld.Parent = Falcon
+	end
+	if rightWeld then
+		rightWeld.Parent = Falcon
+	end
+
+	TrySpawnFalcon()
+
+	HideTool()
+
+	vCharacter = Tool.Parent
+	myTorso = vCharacter:FindFirstChild("Torso") or vCharacter:FindFirstChild("UpperTorso")
+	myHumanoid = vCharacter:FindFirstChild("Humanoid")
+	wait(.5)
+	equipDebounce = false
+end
+
+function onUnequipped()
+	--ShowTool()
+end
+
+Tool.Equipped:connect(onEquipped)
+Tool.Activated:connect(onActivated)
+Tool.Unequipped:connect(onUnequipped)
+]]></ProtectedString>
+			</Properties>
+		</Item>
+		<Item class="ObjectValue" referent="RBX07C2742AB8294758B077405FE251E136">
+			<Properties>
+				<string name="Name">FalconRefObject</string>
+				<Ref name="Value">null</Ref>
+			</Properties>
+		</Item>
+		<Item class="LocalScript" referent="RBX4BF0004CEC524A84BF1302BC99169E67">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">GunCursor</string>
+				<string name="ScriptGuid">{98C32E28-919D-44A8-A96E-C1EC6EBAC1E2}</string>
+				<ProtectedString name="Source"><![CDATA[local Tool = script.Parent
+
+local StillEquipped = false
+
+function onEquippedLocal(mouse)
+	StillEquipped = true
+
+	if not mouse then return end
+
+	while StillEquipped do
+		mouse.Icon = 'rbxasset://textures/GunCursor.png'
+		while Tool.Enabled and StillEquipped do
+			wait(0.01)
+		end
+		mouse.Icon = 'rbxasset://textures/GunWaitCursor.png'
+		while not Tool.Enabled and StillEquipped do
+			wait(0.01)
+		end
+	end
+end
+
+function onUnequippedLocal()
+	StillEquipped = false
+end
+
+Tool.Equipped:connect(onEquippedLocal)
+Tool.Unequipped:connect(onUnequippedLocal)
+]]></ProtectedString>
+			</Properties>
+		</Item>
+		<Item class="Camera" referent="RBXD25B93FEEA4F433D8516085E43A0ADF0">
+			<Properties>
+				<CoordinateFrame name="CFrame">
+					<X>-24.611887</X>
+					<Y>0.719332993</Y>
+					<Z>-61.1183281</Z>
+					<R00>-0.00701619731</R00>
+					<R01>0.0836755708</R01>
+					<R02>-0.996468365</R02>
+					<R10>-5.8207654e-11</R10>
+					<R11>0.996492863</R11>
+					<R12>0.0836776271</R12>
+					<R20>0.999975383</R20>
+					<R21>0.000587098824</R21>
+					<R22>-0.00699159084</R22>
+				</CoordinateFrame>
+				<Ref name="CameraSubject">null</Ref>
+				<token name="CameraType">0</token>
+				<float name="FieldOfView">70</float>
+				<CoordinateFrame name="Focus">
+					<X>-22.0000229</X>
+					<Y>0.500003815</Y>
+					<Z>-61.1000023</Z>
+					<R00>1</R00>
+					<R01>0</R01>
+					<R02>0</R02>
+					<R10>0</R10>
+					<R11>1</R11>
+					<R12>0</R12>
+					<R20>0</R20>
+					<R21>0</R21>
+					<R22>1</R22>
+				</CoordinateFrame>
+				<bool name="HeadLocked">true</bool>
+				<float name="HeadScale">1</float>
+				<string name="Name">ThumbnailCamera</string>
+			</Properties>
+		</Item>
+	</Item>
+</roblox>

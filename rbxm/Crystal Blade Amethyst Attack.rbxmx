@@ -1,0 +1,390 @@
+<roblox xmlns:xmime="http://www.w3.org/2005/05/xmlmime" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.roblox.com/roblox.xsd" version="4">
+	<External>null</External>
+	<External>nil</External>
+	<Item class="Tool" referent="RBX9370DD775018472CB192670C98A75D8A">
+		<Properties>
+			<bool name="CanBeDropped">true</bool>
+			<bool name="Enabled">true</bool>
+			<CoordinateFrame name="Grip">
+				<X>-0</X>
+				<Y>-2.38719559</Y>
+				<Z>-0</Z>
+				<R00>1</R00>
+				<R01>0</R01>
+				<R02>0</R02>
+				<R10>0</R10>
+				<R11>1</R11>
+				<R12>0</R12>
+				<R20>0</R20>
+				<R21>0</R21>
+				<R22>1</R22>
+			</CoordinateFrame>
+			<bool name="ManualActivationOnly">false</bool>
+			<string name="Name">AmethystBlade</string>
+			<bool name="RequiresHandle">true</bool>
+			<BinaryString name="Tags"></BinaryString>
+			<Content name="TextureId"><url>rbxassetid://1626717400</url></Content>
+			<string name="ToolTip"></string>
+		</Properties>
+		<Item class="Script" referent="RBX266D12654D0D46CD9065C3740E2D33C2">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">Script</string>
+				<string name="ScriptGuid">{179A6BF1-AA78-4D20-AD71-551573F7DD56}</string>
+				<ProtectedString name="Source"><![CDATA[-- // Created by StarWars
+local GearService = require(1075123174)
+local Gear = GearService:BindGear(script.Parent, "Sword")]]></ProtectedString>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+		</Item>
+		<Item class="Keyframe" referent="RBXE8A27ACD6F3C466B86B1624FBC435FBB">
+			<Properties>
+				<string name="Name">ThumbnailPose</string>
+				<BinaryString name="Tags"></BinaryString>
+				<float name="Time">0</float>
+			</Properties>
+			<Item class="Pose" referent="RBXEF51C0E7F5794FECA13F72FC4697ADC7">
+				<Properties>
+					<CoordinateFrame name="CFrame">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+						<R00>1</R00>
+						<R01>0</R01>
+						<R02>0</R02>
+						<R10>0</R10>
+						<R11>1</R11>
+						<R12>0</R12>
+						<R20>0</R20>
+						<R21>0</R21>
+						<R22>1</R22>
+					</CoordinateFrame>
+					<token name="EasingDirection">1</token>
+					<token name="EasingStyle">0</token>
+					<string name="Name">UpperTorso</string>
+					<BinaryString name="Tags"></BinaryString>
+					<float name="Weight">0</float>
+				</Properties>
+				<Item class="Pose" referent="RBX6D76F0FBB1954FCAA86327721E59B90B">
+					<Properties>
+						<CoordinateFrame name="CFrame">
+							<X>0</X>
+							<Y>-6.70552254e-08</Y>
+							<Z>-5.96046448e-08</Z>
+							<R00>1</R00>
+							<R01>0</R01>
+							<R02>0</R02>
+							<R10>0</R10>
+							<R11>0.173648193</R11>
+							<R12>-0.98480773</R12>
+							<R20>0</R20>
+							<R21>0.98480773</R21>
+							<R22>0.173648193</R22>
+						</CoordinateFrame>
+						<token name="EasingDirection">1</token>
+						<token name="EasingStyle">0</token>
+						<string name="Name">RightUpperArm</string>
+						<BinaryString name="Tags"></BinaryString>
+						<float name="Weight">1</float>
+					</Properties>
+					<Item class="Pose" referent="RBX4B6CDAF3F01240BF8FDABC5C28923687">
+						<Properties>
+							<CoordinateFrame name="CFrame">
+								<X>0</X>
+								<Y>-1.49011612e-08</Y>
+								<Z>3.7252903e-09</Z>
+								<R00>1</R00>
+								<R01>0</R01>
+								<R02>0</R02>
+								<R10>0</R10>
+								<R11>0.98480773</R11>
+								<R12>-0.173648179</R12>
+								<R20>0</R20>
+								<R21>0.173648179</R21>
+								<R22>0.98480773</R22>
+							</CoordinateFrame>
+							<token name="EasingDirection">1</token>
+							<token name="EasingStyle">0</token>
+							<string name="Name">RightLowerArm</string>
+							<BinaryString name="Tags"></BinaryString>
+							<float name="Weight">1</float>
+						</Properties>
+						<Item class="Pose" referent="RBX17D9760196E34C48953DE1C4776C8BCB">
+							<Properties>
+								<CoordinateFrame name="CFrame">
+									<X>0</X>
+									<Y>0</Y>
+									<Z>0</Z>
+									<R00>1</R00>
+									<R01>0</R01>
+									<R02>0</R02>
+									<R10>0</R10>
+									<R11>1</R11>
+									<R12>0</R12>
+									<R20>0</R20>
+									<R21>0</R21>
+									<R22>1</R22>
+								</CoordinateFrame>
+								<token name="EasingDirection">1</token>
+								<token name="EasingStyle">0</token>
+								<string name="Name">RightHand</string>
+								<BinaryString name="Tags"></BinaryString>
+								<float name="Weight">1</float>
+							</Properties>
+						</Item>
+					</Item>
+				</Item>
+			</Item>
+		</Item>
+		<Item class="MeshPart" referent="RBXA932ED8914DC45B7A68B4E53EC4B86DD">
+			<Properties>
+				<bool name="Anchored">false</bool>
+				<float name="BackParamA">-0.5</float>
+				<float name="BackParamB">0.5</float>
+				<token name="BackSurface">0</token>
+				<token name="BackSurfaceInput">0</token>
+				<float name="BottomParamA">-0.5</float>
+				<float name="BottomParamB">0.5</float>
+				<token name="BottomSurface">0</token>
+				<token name="BottomSurfaceInput">0</token>
+				<CoordinateFrame name="CFrame">
+					<X>0.00100199995</X>
+					<Y>0.356543005</Y>
+					<Z>-0.00681299996</Z>
+					<R00>0.926464975</R00>
+					<R01>-2.48497287e-07</R01>
+					<R02>-0.376381099</R02>
+					<R10>-0.207232997</R10>
+					<R11>0.834773183</R11>
+					<R12>-0.510106087</R12>
+					<R20>0.31419301</R20>
+					<R21>0.550593972</R21>
+					<R22>0.773388028</R22>
+				</CoordinateFrame>
+				<bool name="CanCollide">true</bool>
+				<token name="CollisionFidelity">0</token>
+				<int name="CollisionGroupId">0</int>
+				<Color3uint8 name="Color3uint8">4288914085</Color3uint8>
+				<PhysicalProperties name="CustomPhysicalProperties">
+					<CustomPhysics>false</CustomPhysics>
+				</PhysicalProperties>
+				<float name="Elasticity">0.5</float>
+				<float name="Friction">0.300000012</float>
+				<float name="FrontParamA">-0.5</float>
+				<float name="FrontParamB">0.5</float>
+				<token name="FrontSurface">0</token>
+				<token name="FrontSurfaceInput">0</token>
+				<Vector3 name="InitialSize">
+					<X>0.0152045004</X>
+					<Y>0.129806995</Y>
+					<Z>0.0436250009</Z>
+				</Vector3>
+				<float name="LeftParamA">-0.5</float>
+				<float name="LeftParamB">0.5</float>
+				<token name="LeftSurface">0</token>
+				<token name="LeftSurfaceInput">0</token>
+				<bool name="Locked">false</bool>
+				<token name="Material">256</token>
+				<Content name="MeshID"><url>rbxassetid://1626714161</url></Content>
+				<Content name="MeshId"><url>rbxassetid://1626714161</url></Content>
+				<string name="Name">Handle</string>
+				<BinaryString name="PhysicsData"><![CDATA[Q1NHUEhTBQAAABAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAgD/kAAAA
+BAAAAGD8vLW1WHK9tYBQPIuEdLpMQ3a9DwNAPGD8vLXse3a9Cv5MPH8+dDpMQ3a9DwNAPF5G
+1zog7AS9SapCPDxm/Tkg7AS9PtRMPGD8vLUg7AS9NhhQPEVp/rkg7AS9PtRMPGRp17og7AS9
+SapCPA1TcruvxX69466bO4eoAbusSIC906rkO2D8vLX6+n69QvgpPGD8vLUrd3q9u3A9PHmh
++LrlZgu9JAg3PASXATusSIC906rkO4pBcjuvxX69466bOy+c+DrlZgu9JAg3PDDJdjvw5QW9
+KdOIOjDJdjsg7AS97ZVkOmQtebsg7AS97ZVkOmQtebvw5QW9KdOIOjdxe7timn69V/0gO2D8
+vLUg7IS9WrSqO3LXd7uEl3G9VEaXO9Y3kLs0xXa9PS1YOhbslLsUqnW9AAAAANY3kLuIjXi9
+lzsFOtY3kLu8Onm9AAAAAGD8vLWOqIK9CZH5O6irILukxBO9BkESPLRfeztimn69V/0gO7wF
+jzu8Onm9AAAAALwFjzuIjXi9lzsFOvy5kzsUqnW9AAAAADwkezuEl3G9VEaXOyWaIDukxBO9
+BkESPA9RgTusTQe9AAAAAKL3ejsg7AS90iLaOdZbfbsg7AS90iLaOSmDgrusTQe9AAAAADdx
+e7timn69V/0gu2D8vLUg7IS9WrSqu9Y3kLs0xXa9PS1Yug1TcruvxX69466bu9Y3kLuIjXi9
+lzsFunLXd7uEl3G9VEaXu7Rfeztimn69V/0gu7wFjzuIjXi9lzsFuopBcjuvxX69466buzwk
+ezuEl3G9VEaXuzDJdjvw5QW9KdOIujDJdjsg7AS97ZVkuqL3ejsg7AS90iLauXJcfDsg7AS9
+AAAAAKbAfrsg7AS9AAAAANZbfbsg7AS90iLauWQtebsg7AS97ZVkumQtebvw5QW9KdOIuoeo
+AbusSIC906rku2D8vLWOqIK9CZH5uwSXATusSIC906rku3mh+LrlZgu9JAg3vIuEdLpMQ3a9
+DwNAvKirILukxBO9BkESvH8+dDpMQ3a9DwNAvC+c+DrlZgu9JAg3vCWaIDukxBO9BkESvF5G
+1zog7AS9SapCvGRp17og7AS9SapCvGD8vLX6+n69QvgpvGD8vLW1WHK9tYBQvGD8vLXse3a9
+Cv5MvGD8vLUrd3q9u3A9vDxm/Tkg7AS9PtRMvEVp/rkg7AS9PtRMvGD8vLUg7AS9NhhQvLwB
+AAAAAAAAAQAAAAIAAAAAAAAAAgAAAAMAAAAAAAAAAwAAAAQAAAAAAAAABAAAAAUAAAAAAAAA
+BQAAAAYAAAAAAAAABgAAAAcAAAAAAAAABwAAAAgAAAAAAAAACAAAAAEAAAABAAAACQAAAAoA
+AAABAAAACgAAAAsAAAABAAAACwAAAAwAAAABAAAADAAAAAIAAAABAAAACAAAAA0AAAABAAAA
+DQAAAAkAAAACAAAADAAAAAMAAAADAAAADAAAAAsAAAADAAAACwAAAA4AAAADAAAADgAAAA8A
+AAADAAAADwAAABAAAAADAAAAEAAAAAQAAAAEAAAAEAAAABEAAAAEAAAAEQAAABIAAAAEAAAA
+EgAAACUAAAAEAAAAJQAAADUAAAAEAAAANQAAADQAAAAEAAAANAAAADMAAAAEAAAAMwAAAEMA
+AAAEAAAAQwAAAEkAAAAEAAAASQAAAEsAAAAEAAAASwAAAEoAAAAEAAAASgAAAEQAAAAEAAAA
+RAAAADgAAAAEAAAAOAAAADcAAAAEAAAANwAAADYAAAAEAAAANgAAACYAAAAEAAAAJgAAABMA
+AAAEAAAAEwAAAAgAAAAEAAAACAAAAAcAAAAEAAAABwAAAAYAAAAEAAAABgAAAAUAAAAIAAAA
+EwAAABQAAAAIAAAAFAAAAA0AAAAJAAAAFQAAABYAAAAJAAAAFgAAAAoAAAAJAAAADQAAABcA
+AAAJAAAAFwAAABgAAAAJAAAAGAAAABkAAAAJAAAAGQAAABoAAAAJAAAAGgAAABsAAAAJAAAA
+GwAAABUAAAAKAAAAFgAAABwAAAAKAAAAHAAAAAsAAAALAAAAHAAAAA4AAAANAAAAFAAAAB0A
+AAANAAAAHQAAABcAAAAOAAAAHAAAABYAAAAOAAAAFgAAAA8AAAAPAAAAFgAAAB4AAAAPAAAA
+HgAAAB8AAAAPAAAAHwAAACAAAAAPAAAAIAAAACEAAAAPAAAAIQAAACIAAAAPAAAAIgAAABAA
+AAAQAAAAIgAAACMAAAAQAAAAIwAAABEAAAARAAAAIwAAACIAAAARAAAAIgAAACQAAAARAAAA
+JAAAABIAAAASAAAAJAAAACUAAAATAAAAJgAAACcAAAATAAAAJwAAABQAAAAUAAAAJwAAABcA
+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
+AAAEAAAAAgAAAAYAAAAHAAAAAgAAAAcAAAADAAAAAwAAAAgAAAAFAAAAAwAAAAcAAAAIAAAA
+BAAAAAUAAAAJAAAABQAAAAgAAAAKAAAABQAAAAoAAAALAAAABQAAAAsAAAAJAAAABgAAAAwA
+AAAHAAAABwAAAA0AAAAIAAAABwAAAAwAAAAOAAAABwAAAA4AAAANAAAACAAAAA0AAAAPAAAA
+CAAAAA8AAAAKAAAACQAAAAsAAAAQAAAACgAAAA8AAAARAAAACgAAABEAAAALAAAACwAAABEA
+AAASAAAACwAAABIAAAATAAAACwAAABMAAAAQAAAADAAAABQAAAAOAAAADQAAAA4AAAAVAAAA
+DQAAABUAAAAPAAAADgAAABQAAAAWAAAADgAAABYAAAAXAAAADgAAABcAAAAVAAAADwAAABUA
+AAAYAAAADwAAABgAAAARAAAAEQAAABgAAAAZAAAAEQAAABkAAAAVAAAAEQAAABUAAAAXAAAA
+EQAAABcAAAAfAAAAEQAAAB8AAAAnAAAAEQAAACcAAAAwAAAAEQAAADAAAAAxAAAAEQAAADEA
+AAAoAAAAEQAAACgAAAAgAAAAEQAAACAAAAAaAAAAEQAAABoAAAASAAAAEgAAABoAAAATAAAA
+EwAAABoAAAAbAAAAEwAAABsAAAAcAAAAFQAAABkAAAAYAAAAFgAAAB0AAAAeAAAAFgAAAB4A
+AAAfAAAAFgAAAB8AAAAXAAAAGgAAACAAAAAhAAAAGgAAACEAAAAbAAAAGwAAACEAAAAiAAAA
+GwAAACIAAAAcAAAAHAAAACIAAAAjAAAAHQAAACQAAAAlAAAAHQAAACUAAAAeAAAAHgAAACUA
+AAAmAAAAHgAAACYAAAAfAAAAHwAAACYAAAAnAAAAIAAAACgAAAAhAAAAIQAAACkAAAAqAAAA
+IQAAACoAAAAiAAAAIQAAACgAAAApAAAAIgAAACoAAAArAAAAIgAAACsAAAAsAAAAIgAAACwA
+AAAtAAAAIgAAAC0AAAAjAAAAJAAAAC4AAAAlAAAAJQAAACsAAAAqAAAAJQAAACoAAAAmAAAA
+JQAAAC4AAAAvAAAAJQAAAC8AAAArAAAAJgAAACoAAAApAAAAJgAAACkAAAAwAAAAJgAAADAA
+AAAnAAAAKAAAADEAAAApAAAAKQAAADEAAAAwAAAAKwAAAC8AAAAyAAAAKwAAADIAAAAsAAAA
+EAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAACAP2YAAAAEAAAAAAAAALP0
+Dz28r0o8TBz5uyXa/zweoCA6HbJ5u9h81TzXsgM8AAAAAGbTFjz7iRI8HbJ5O9h81TzXsgM8
+TBz5OyXa/zweoCA6Z9CjOzomQD10Aa06AAAAACDshD2QZ4o549yjuzomQD10Aa06Z4LVu7+k
+gTwTuDw7QjZpu3dIJj32YfC7Da2Bu0AmeDof2Zi7/aZjuwAAAADXNUo7AAAAAAAAAACv8Yw7
+8GhdOwAAAACGalM7Z4LVO7+kgTwTuDw7SR1pO3dIJj32YfC7Da2BO0AmeDof2Zi7Dj1gO5v3
+TT2fEPW6AAAAAA8COj3RRhq8BlZgu5v3TT2fEPW6qFWBuwAAAAA0yQK7sDyBuwAAAABMevM6
+nwpouwAAAAAYvD87AAAAAK9+BT28r0q8AAAAAJhtNTwnMC+8AAAAACBQ/Do1igO8uDkxuwAA
+AABItKq7AAAAACjGeDw4fzq8/aZjOwAAAADXNUo7sDyBOwAAAABMevM6qFWBOwAAAAA0yQK7
+uDkxOwAAAABItKq7AAAAAAAAAAA42NS7wAAAAAAAAAABAAAAAgAAAAAAAAACAAAAAwAAAAAA
+AAADAAAABAAAAAAAAAAEAAAABQAAAAAAAAAFAAAABgAAAAAAAAAGAAAABwAAAAAAAAAHAAAA
+CAAAAAAAAAAIAAAAAQAAAAEAAAAJAAAAAgAAAAEAAAAIAAAACgAAAAEAAAAKAAAACwAAAAEA
+AAALAAAACQAAAAIAAAAJAAAAAwAAAAMAAAAMAAAADQAAAAMAAAANAAAADgAAAAMAAAAOAAAA
+DwAAAAMAAAAPAAAABAAAAAMAAAAJAAAADAAAAAQAAAAPAAAABQAAAAUAAAAQAAAABgAAAAUA
+AAAPAAAAEQAAAAUAAAARAAAAEAAAAAYAAAAQAAAAEgAAAAYAAAASAAAABwAAAAcAAAASAAAA
+EAAAAAcAAAAQAAAAEwAAAAcAAAATAAAACgAAAAcAAAAKAAAAFAAAAAcAAAAUAAAACAAAAAgA
+AAAUAAAACgAAAAkAAAALAAAAFQAAAAkAAAAVAAAAFgAAAAkAAAAWAAAAFwAAAAkAAAAXAAAA
+DAAAAAoAAAATAAAAGAAAAAoAAAAYAAAACwAAAAsAAAAZAAAAGgAAAAsAAAAaAAAAGwAAAAsA
+AAAbAAAAFQAAAAsAAAAYAAAAHAAAAAsAAAAcAAAAGQAAAAwAAAAXAAAAFgAAAAwAAAAWAAAA
+FQAAAAwAAAAVAAAAGwAAAAwAAAAbAAAAIQAAAAwAAAAhAAAAIAAAAAwAAAAgAAAAHwAAAAwA
+AAAfAAAAHgAAAAwAAAAeAAAAHQAAAAwAAAAdAAAADgAAAAwAAAAOAAAADQAAAA4AAAAdAAAA
+DwAAAA8AAAAdAAAAHgAAAA8AAAAeAAAAHwAAAA8AAAAfAAAAEQAAABAAAAAYAAAAEwAAABAA
+AAARAAAAGAAAABEAAAAfAAAAIAAAABEAAAAgAAAAGgAAABEAAAAaAAAAGQAAABEAAAAZAAAA
+HAAAABEAAAAcAAAAGAAAABoAAAAgAAAAIQAAABoAAAAhAAAAGwAAAA==]]></BinaryString>
+				<float name="Reflectance">0</float>
+				<float name="RightParamA">-0.5</float>
+				<float name="RightParamB">0.5</float>
+				<token name="RightSurface">0</token>
+				<token name="RightSurfaceInput">0</token>
+				<Vector3 name="RotVelocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<BinaryString name="Tags"></BinaryString>
+				<Content name="TextureID"><url>rbxassetid://1626715568</url></Content>
+				<float name="TopParamA">-0.5</float>
+				<float name="TopParamB">0.5</float>
+				<token name="TopSurface">0</token>
+				<token name="TopSurfaceInput">0</token>
+				<float name="Transparency">0</float>
+				<Vector3 name="Velocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<Vector3 name="size">
+					<X>0.806999981</X>
+					<Y>6.88899994</Y>
+					<Z>2.31599998</Z>
+				</Vector3>
+			</Properties>
+			<Item class="Attachment" referent="RBX057B81F6EFC44EAB8C814A416E237B84">
+				<Properties>
+					<CoordinateFrame name="CFrame">
+						<X>-0</X>
+						<Y>-2.38719559</Y>
+						<Z>-0</Z>
+						<R00>1</R00>
+						<R01>0</R01>
+						<R02>0</R02>
+						<R10>0</R10>
+						<R11>1</R11>
+						<R12>0</R12>
+						<R20>0</R20>
+						<R21>0</R21>
+						<R22>1</R22>
+					</CoordinateFrame>
+					<string name="Name">RightGripAttachment</string>
+					<BinaryString name="Tags"></BinaryString>
+					<bool name="Visible">false</bool>
+				</Properties>
+			</Item>
+		</Item>
+		<Item class="Camera" referent="RBX17D768C086834BE3A15956E6F4B06A49">
+			<Properties>
+				<CoordinateFrame name="CFrame">
+					<X>-7.08589983</X>
+					<Y>0.728098512</Y>
+					<Z>0.191133201</Z>
+					<R00>0.0279203933</R00>
+					<R01>0.0523158088</R01>
+					<R02>-0.998240232</R02>
+					<R10>-1.16415322e-10</R10>
+					<R11>0.99862957</R11>
+					<R12>0.0523362122</R12>
+					<R20>0.999610126</R20>
+					<R21>-0.00146124756</R21>
+					<R22>0.027882129</R22>
+				</CoordinateFrame>
+				<Ref name="CameraSubject">null</Ref>
+				<token name="CameraType">0</token>
+				<float name="FieldOfView">70</float>
+				<CoordinateFrame name="Focus">
+					<X>0.00100201368</X>
+					<Y>0.356543064</Y>
+					<Z>-0.00681304932</Z>
+					<R00>1</R00>
+					<R01>0</R01>
+					<R02>0</R02>
+					<R10>0</R10>
+					<R11>1</R11>
+					<R12>0</R12>
+					<R20>0</R20>
+					<R21>0</R21>
+					<R22>1</R22>
+				</CoordinateFrame>
+				<bool name="HeadLocked">true</bool>
+				<float name="HeadScale">1</float>
+				<string name="Name">ThumbnailCamera</string>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+		</Item>
+	</Item>
+</roblox>

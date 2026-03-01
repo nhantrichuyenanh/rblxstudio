@@ -1,0 +1,447 @@
+<roblox xmlns:xmime="http://www.w3.org/2005/05/xmlmime" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.roblox.com/roblox.xsd" version="4">
+	<External>null</External>
+	<External>nil</External>
+	<Item class="Tool" referent="RBX910ED33FC9014CFCA1AACBA34C46E050">
+		<Properties>
+			<bool name="CanBeDropped">true</bool>
+			<bool name="Enabled">true</bool>
+			<CoordinateFrame name="Grip">
+				<X>0.0625</X>
+				<Y>-0.200000003</Y>
+				<Z>0.75</Z>
+				<R00>1</R00>
+				<R01>0</R01>
+				<R02>0</R02>
+				<R10>0</R10>
+				<R11>1</R11>
+				<R12>0</R12>
+				<R20>0</R20>
+				<R21>0</R21>
+				<R22>1</R22>
+			</CoordinateFrame>
+			<bool name="ManualActivationOnly">false</bool>
+			<string name="Name">8BitCrossbow</string>
+			<bool name="RequiresHandle">true</bool>
+			<Content name="TextureId"><url>rbxassetid://867725480</url></Content>
+			<string name="ToolTip"></string>
+		</Properties>
+		<Item class="LocalScript" referent="RBXC83B0CEA287E4F889AF719338A04CF88">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">MouseIcon</string>
+				<string name="ScriptGuid">{958CC01A-5491-44D3-9B24-F572972DC26A}</string>
+				<ProtectedString name="Source"><![CDATA[Mouse_Icon = "rbxasset://textures/GunCursor.png"
+Reloading_Icon = "rbxasset://textures/GunWaitCursor.png"
+
+Tool = script.Parent
+
+Mouse = nil
+
+function UpdateIcon()
+	if Mouse then
+		Mouse.Icon = Tool.Enabled and Mouse_Icon or Reloading_Icon
+	end
+end
+
+function OnEquipped(ToolMouse)
+	Mouse = ToolMouse
+	UpdateIcon()
+end
+
+Tool:GetPropertyChangedSignal("Enabled"):Connect(UpdateIcon)
+Tool.Equipped:connect(OnEquipped)]]></ProtectedString>
+			</Properties>
+		</Item>
+		<Item class="Script" referent="RBXC9F03850E4D44DC2BEB7084FA149660F">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">CrossbowLauncher</string>
+				<string name="ScriptGuid">{C0A46421-C8F7-4F4A-9192-AADD078E0A61}</string>
+				<ProtectedString name="Source"><![CDATA[Tool = script.Parent
+Handle = Tool:WaitForChild("Handle")
+
+FireSound = Handle:WaitForChild("FireSound")
+HitSound = Handle:WaitForChild("HitSound")
+
+Players = game:GetService("Players")
+Debris = game:GetService("Debris")
+
+local BaseUrl = "rbxassetid://"
+
+local Damage = 20
+
+local DisplayArrow = nil
+
+function FindCharacterAncestor(Parent)
+	if Parent and Parent ~= game:GetService("Workspace") then
+		local humanoid = Parent:FindFirstChild("Humanoid")
+		if humanoid then
+			return Parent, humanoid
+		else
+			return FindCharacterAncestor(Parent.Parent)
+		end
+	end
+	return nil
+end
+
+function CreateArrow()
+	local missile = Instance.new("Part")
+	missile.Material = Enum.Material.Plastic
+	missile.TopSurface = Enum.SurfaceType.Smooth
+	missile.BottomSurface = Enum.SurfaceType.Smooth
+	missile.CanCollide = false
+	missile.Name = "CrossbowBolt"
+	missile.Elasticity = 0
+	missile.Size = Vector3.new(0.25, 0.25, 3.25)
+
+	local mesh = Instance.new("SpecialMesh")
+	mesh.MeshType = Enum.MeshType.FileMesh
+	mesh.MeshId = BaseUrl .. 867725170
+	mesh.TextureId = BaseUrl .. 867725274
+	mesh.Parent = missile
+
+	local attachment = Instance.new("Attachment")
+	attachment.Name = "ArrowAttachment"
+	attachment.Orientation = Vector3.new(0, -90, 0)
+	attachment.Position = Vector3.new(0, 0, 1.766)
+	attachment.Axis = Vector3.new(0, 0, 1)
+	attachment.SecondaryAxis = Vector3.new(0, 1, 0)
+	attachment.Parent = missile		
+
+	return missile
+end 
+
+function PlaceArrowOnCrossbow()
+	if DisplayArrow then return end
+
+	DisplayArrow = CreateArrow()
+	DisplayArrow.Parent = Tool
+	local Weld = Instance.new("Weld")
+	Weld.Part0 = DisplayArrow
+	Weld.Part1 = Handle
+	Weld.C0 = DisplayArrow.ArrowAttachment.CFrame
+	Weld.C1 = Handle.ArrowAttachment.CFrame
+	Weld.Parent = DisplayArrow
+end 
+
+function Fire(v)
+
+	local missile = CreateArrow()
+	missile.Velocity =  v * 150
+
+	local BodyForce = Instance.new("BodyForce")
+	BodyForce.Force = Vector3.new(0, workspace.Gravity * 0.75 * missile:GetMass(), 0)
+	BodyForce.Parent = missile
+	
+	local gyro = Instance.new("BodyGyro")
+	gyro.maxTorque = Vector3.new(5e5, 5e5, 5e5)
+	gyro.Parent = missile
+	
+	local hitsound = HitSound:Clone()
+	hitsound.Parent = missile
+
+	local creator_tag = Instance.new("ObjectValue")
+	creator_tag.Value = Player
+	creator_tag.Name = "creator"
+	creator_tag.Parent = missile
+	
+	local TouchedConnection
+	
+	TouchedConnection = missile.Touched:connect(function(Hit)
+		if Hit and Hit.Parent and not Hit:FindFirstChild("ArrowAttachment") then
+			local character, humanoid = FindCharacterAncestor(Hit.Parent)
+			if character ~= Character then
+				TouchedConnection:disconnect()
+				local Weld = Instance.new("Weld")
+				Weld.Part0 = missile
+				Weld.Part1 = Hit
+				local CJ = CFrame.new(missile.Position)
+				local C0 = missile.CFrame:inverse() * CJ
+				local C1 = Hit.CFrame:inverse() * CJ
+				Weld.C0 = C0
+				Weld.C1 = C1
+				Weld.Parent = missile
+				gyro:Destroy()
+				BodyForce:Destroy()
+				hitsound:Play()
+				if humanoid and humanoid.Parent and humanoid.Health > 0 and Humanoid ~= humanoid then
+					humanoid:TakeDamage(Damage)
+					for i, v in pairs(humanoid:GetChildren()) do
+						if v.Name == "humanoid" then
+							v:Destroy()
+						end
+					end
+					local new_creator_tag = creator_tag:Clone()
+					Debris:AddItem(new_creator_tag, 2)
+					new_creator_tag.Parent = humanoid
+				end
+			end
+		end
+	end)
+
+	Debris:AddItem(missile, 20)
+
+	missile.Parent = game:GetService("Workspace")
+	
+ 	missile.CFrame = CFrame.new(Handle.Position, Humanoid.TargetPoint) + (Handle.CFrame.lookVector * (missile.Size.z * 2))
+	gyro.cframe = missile.CFrame
+		
+	Spawn(function()
+		for i = 1, 100 do
+			wait(0.1 * i)
+			if gyro and gyro.Parent then
+				gyro.cframe = CFrame.new(Vector3.new(0,0,0), -missile.Velocity.unit)
+			end
+		end
+	end)	
+end
+
+function Activated()
+
+	if not Tool.Enabled or not RootPart or not Humanoid or not Humanoid.Parent or Humanoid.Health == 0 or not Player or not Player.Parent then
+		return
+	end
+
+	Tool.Enabled = false
+
+	local TargetPos = Humanoid.TargetPoint
+
+	local LookAt = (TargetPos - RootPart.Position).unit
+
+	FireSound:Play()
+
+	DisplayArrow.Transparency = 1
+	Fire(LookAt)
+
+	wait(2)
+
+	DisplayArrow.Transparency = 0
+	Tool.Enabled = true
+
+end
+
+function Equipped()
+	Character = Tool.Parent
+	Humanoid = Character:FindFirstChildOfClass("Humanoid")
+	RootPart = Character:FindFirstChild("HumanoidRootPart")
+	Player = Players:GetPlayerFromCharacter(Character)
+
+	PlaceArrowOnCrossbow()
+end
+
+Tool.Activated:connect(Activated)
+Tool.Equipped:connect(Equipped)]]></ProtectedString>
+			</Properties>
+		</Item>
+		<Item class="Part" referent="RBX4369879FB87C468283E2BB983881901A">
+			<Properties>
+				<bool name="Anchored">false</bool>
+				<float name="BackParamA">-0.5</float>
+				<float name="BackParamB">0.5</float>
+				<token name="BackSurface">0</token>
+				<token name="BackSurfaceInput">0</token>
+				<float name="BottomParamA">-0.5</float>
+				<float name="BottomParamB">0.5</float>
+				<token name="BottomSurface">0</token>
+				<token name="BottomSurfaceInput">0</token>
+				<CoordinateFrame name="CFrame">
+					<X>0</X>
+					<Y>17.3249989</Y>
+					<Z>22.0149994</Z>
+					<R00>0</R00>
+					<R01>0</R01>
+					<R02>-1</R02>
+					<R10>0</R10>
+					<R11>1</R11>
+					<R12>0</R12>
+					<R20>1</R20>
+					<R21>0</R21>
+					<R22>0</R22>
+				</CoordinateFrame>
+				<bool name="CanCollide">false</bool>
+				<int name="CollisionGroupId">0</int>
+				<Color3uint8 name="Color3uint8">4288914085</Color3uint8>
+				<PhysicalProperties name="CustomPhysicalProperties">
+					<CustomPhysics>false</CustomPhysics>
+				</PhysicalProperties>
+				<float name="Elasticity">0.5</float>
+				<float name="Friction">0.300000012</float>
+				<float name="FrontParamA">-0.5</float>
+				<float name="FrontParamB">0.5</float>
+				<token name="FrontSurface">0</token>
+				<token name="FrontSurfaceInput">0</token>
+				<float name="LeftParamA">-0.5</float>
+				<float name="LeftParamB">0.5</float>
+				<token name="LeftSurface">0</token>
+				<token name="LeftSurfaceInput">0</token>
+				<bool name="Locked">false</bool>
+				<token name="Material">256</token>
+				<string name="Name">Handle</string>
+				<float name="Reflectance">0</float>
+				<float name="RightParamA">-0.5</float>
+				<float name="RightParamB">0.5</float>
+				<token name="RightSurface">0</token>
+				<token name="RightSurfaceInput">0</token>
+				<Vector3 name="RotVelocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<float name="TopParamA">-0.5</float>
+				<float name="TopParamB">0.5</float>
+				<token name="TopSurface">0</token>
+				<token name="TopSurfaceInput">0</token>
+				<float name="Transparency">0</float>
+				<Vector3 name="Velocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<token name="formFactorRaw">3</token>
+				<token name="shape">1</token>
+				<Vector3 name="size">
+					<X>1.75</X>
+					<Y>0.75</Y>
+					<Z>4</Z>
+				</Vector3>
+			</Properties>
+			<Item class="SpecialMesh" referent="RBX42962E1EBEEA4BE3A814EB8AB3B70F4D">
+				<Properties>
+					<token name="LODX">2</token>
+					<token name="LODY">2</token>
+					<Content name="MeshId"><url>rbxassetid://867724872</url></Content>
+					<token name="MeshType">5</token>
+					<string name="Name">Mesh</string>
+					<Vector3 name="Offset">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+					</Vector3>
+					<Vector3 name="Scale">
+						<X>1</X>
+						<Y>1</Y>
+						<Z>1</Z>
+					</Vector3>
+					<Content name="TextureId"><url>rbxassetid://867725274</url></Content>
+					<Vector3 name="VertexColor">
+						<X>1</X>
+						<Y>1</Y>
+						<Z>1</Z>
+					</Vector3>
+				</Properties>
+			</Item>
+			<Item class="Sound" referent="RBXD3F67572E31F4C2692BA90C1D978DC82">
+				<Properties>
+					<float name="EmitterSize">10</float>
+					<bool name="Looped">false</bool>
+					<string name="Name">FireSound</string>
+					<bool name="PlayOnRemove">false</bool>
+					<float name="PlaybackSpeed">1</float>
+					<bool name="Playing">false</bool>
+					<token name="RollOffMode">0</token>
+					<Ref name="SoundGroup">null</Ref>
+					<Content name="SoundId"><url>http://www.roblox.com/asset/?id=16211041</url></Content>
+					<double name="TimePosition">0</double>
+					<float name="Volume">1</float>
+					<float name="xmlRead_MaxDistance_3">10000</float>
+				</Properties>
+			</Item>
+			<Item class="Sound" referent="RBXC7AF8E07BA1E4F36860F3D625D1F62F4">
+				<Properties>
+					<float name="EmitterSize">10</float>
+					<bool name="Looped">false</bool>
+					<string name="Name">HitSound</string>
+					<bool name="PlayOnRemove">false</bool>
+					<float name="PlaybackSpeed">1</float>
+					<bool name="Playing">false</bool>
+					<token name="RollOffMode">0</token>
+					<Ref name="SoundGroup">null</Ref>
+					<Content name="SoundId"><url>http://www.roblox.com/asset/?id=16211030</url></Content>
+					<double name="TimePosition">0</double>
+					<float name="Volume">1</float>
+					<float name="xmlRead_MaxDistance_3">10000</float>
+				</Properties>
+			</Item>
+			<Item class="Attachment" referent="RBX42F23CA5BBEE43DF9C77730695AB5A3A">
+				<Properties>
+					<CoordinateFrame name="CFrame">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>2</Z>
+						<R00>0</R00>
+						<R01>0</R01>
+						<R02>-1</R02>
+						<R10>0</R10>
+						<R11>1</R11>
+						<R12>0</R12>
+						<R20>1</R20>
+						<R21>0</R21>
+						<R22>0</R22>
+					</CoordinateFrame>
+					<string name="Name">RightGripAttachment</string>
+					<bool name="Visible">false</bool>
+				</Properties>
+			</Item>
+			<Item class="Attachment" referent="RBXCC35C082B74344B692B0F1132EB2C4A0">
+				<Properties>
+					<CoordinateFrame name="CFrame">
+						<X>0</X>
+						<Y>0.75</Y>
+						<Z>1.25</Z>
+						<R00>0</R00>
+						<R01>0</R01>
+						<R02>-1</R02>
+						<R10>0</R10>
+						<R11>1</R11>
+						<R12>0</R12>
+						<R20>1</R20>
+						<R21>0</R21>
+						<R22>0</R22>
+					</CoordinateFrame>
+					<string name="Name">ArrowAttachment</string>
+					<bool name="Visible">false</bool>
+				</Properties>
+			</Item>
+		</Item>
+		<Item class="Camera" referent="RBX3B1C827633BF4E5796ABDA56D3FE989A">
+			<Properties>
+				<CoordinateFrame name="CFrame">
+					<X>2.95255995</X>
+					<Y>19.1781788</Y>
+					<Z>20.0533371</Z>
+					<R00>-0.553388834</R00>
+					<R01>-0.385889024</R01>
+					<R02>0.738139927</R02>
+					<R10>-1.49011612e-08</R10>
+					<R11>0.886204243</R11>
+					<R12>0.463294923</R12>
+					<R20>-0.832923055</R20>
+					<R21>0.256382227</R21>
+					<R22>-0.490415514</R22>
+				</CoordinateFrame>
+				<Ref name="CameraSubject">null</Ref>
+				<token name="CameraType">0</token>
+				<float name="FieldOfView">70</float>
+				<CoordinateFrame name="Focus">
+					<X>0</X>
+					<Y>17.3249989</Y>
+					<Z>22.0149994</Z>
+					<R00>1</R00>
+					<R01>0</R01>
+					<R02>0</R02>
+					<R10>0</R10>
+					<R11>1</R11>
+					<R12>0</R12>
+					<R20>0</R20>
+					<R21>0</R21>
+					<R22>1</R22>
+				</CoordinateFrame>
+				<bool name="HeadLocked">true</bool>
+				<float name="HeadScale">1</float>
+				<string name="Name">ThumbnailCamera</string>
+			</Properties>
+		</Item>
+	</Item>
+</roblox>

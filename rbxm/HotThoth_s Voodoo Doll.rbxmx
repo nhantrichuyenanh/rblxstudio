@@ -1,0 +1,640 @@
+<roblox xmlns:xmime="http://www.w3.org/2005/05/xmlmime" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.roblox.com/roblox.xsd" version="4">
+	<External>null</External>
+	<External>nil</External>
+	<Item class="Tool" referent="RBX892B693620C245B5A70A2A3D40C8182B">
+		<Properties>
+			<bool name="CanBeDropped">true</bool>
+			<bool name="Enabled">true</bool>
+			<CoordinateFrame name="Grip">
+				<X>0</X>
+				<Y>0</Y>
+				<Z>-0.400000006</Z>
+				<R00>1</R00>
+				<R01>0</R01>
+				<R02>0</R02>
+				<R10>0</R10>
+				<R11>0</R11>
+				<R12>-1</R12>
+				<R20>0</R20>
+				<R21>1</R21>
+				<R22>0</R22>
+			</CoordinateFrame>
+			<bool name="ManualActivationOnly">false</bool>
+			<string name="Name">HotThothVoodooDoll</string>
+			<bool name="RequiresHandle">true</bool>
+			<BinaryString name="Tags"></BinaryString>
+			<Content name="TextureId"><url>http://www.roblox.com/asset/?id=53057520 </url></Content>
+			<string name="ToolTip"></string>
+		</Properties>
+		<Item class="Part" referent="RBX5FFA711B831A47789D969677054B8CB8">
+			<Properties>
+				<bool name="Anchored">false</bool>
+				<float name="BackParamA">-0.5</float>
+				<float name="BackParamB">0.5</float>
+				<token name="BackSurface">0</token>
+				<token name="BackSurfaceInput">0</token>
+				<float name="BottomParamA">-0.5</float>
+				<float name="BottomParamB">0.5</float>
+				<token name="BottomSurface">0</token>
+				<token name="BottomSurfaceInput">0</token>
+				<CoordinateFrame name="CFrame">
+					<X>1.5</X>
+					<Y>5.60000801</Y>
+					<Z>-0.399998009</Z>
+					<R00>1</R00>
+					<R01>0</R01>
+					<R02>0</R02>
+					<R10>0</R10>
+					<R11>0</R11>
+					<R12>1</R12>
+					<R20>0</R20>
+					<R21>-1</R21>
+					<R22>0</R22>
+				</CoordinateFrame>
+				<bool name="CanCollide">true</bool>
+				<int name="CollisionGroupId">0</int>
+				<Color3uint8 name="Color3uint8">4284702562</Color3uint8>
+				<PhysicalProperties name="CustomPhysicalProperties">
+					<CustomPhysics>false</CustomPhysics>
+				</PhysicalProperties>
+				<float name="Elasticity">0.5</float>
+				<float name="Friction">0.300000012</float>
+				<float name="FrontParamA">-0.5</float>
+				<float name="FrontParamB">0.5</float>
+				<token name="FrontSurface">0</token>
+				<token name="FrontSurfaceInput">0</token>
+				<float name="LeftParamA">-0.5</float>
+				<float name="LeftParamB">0.5</float>
+				<token name="LeftSurface">0</token>
+				<token name="LeftSurfaceInput">0</token>
+				<bool name="Locked">true</bool>
+				<token name="Material">256</token>
+				<string name="Name">Handle</string>
+				<float name="Reflectance">0</float>
+				<float name="RightParamA">-0.5</float>
+				<float name="RightParamB">0.5</float>
+				<token name="RightSurface">0</token>
+				<token name="RightSurfaceInput">0</token>
+				<Vector3 name="RotVelocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<BinaryString name="Tags"></BinaryString>
+				<float name="TopParamA">-0.5</float>
+				<float name="TopParamB">0.5</float>
+				<token name="TopSurface">0</token>
+				<token name="TopSurfaceInput">0</token>
+				<float name="Transparency">0</float>
+				<Vector3 name="Velocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<token name="formFactorRaw">3</token>
+				<token name="shape">1</token>
+				<Vector3 name="size">
+					<X>1.46000206</X>
+					<Y>0.380000561</Y>
+					<Z>2.19999957</Z>
+				</Vector3>
+			</Properties>
+			<Item class="SpecialMesh" referent="RBX92F9A681B7AF4E6D9D65BB3AAC8C8462">
+				<Properties>
+					<token name="LODX">2</token>
+					<token name="LODY">2</token>
+					<Content name="MeshId"><url>http://www.roblox.com/asset/?id=53057389 </url></Content>
+					<token name="MeshType">5</token>
+					<string name="Name">Mesh</string>
+					<Vector3 name="Offset">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+					</Vector3>
+					<Vector3 name="Scale">
+						<X>1.5</X>
+						<Y>1.5</Y>
+						<Z>1.5</Z>
+					</Vector3>
+					<BinaryString name="Tags"></BinaryString>
+					<Content name="TextureId"><url>http://www.roblox.com/asset/?id=53057485 </url></Content>
+					<Vector3 name="VertexColor">
+						<X>1</X>
+						<Y>1</Y>
+						<Z>1</Z>
+					</Vector3>
+				</Properties>
+			</Item>
+			<Item class="Attachment" referent="RBX5E6CE4B9272C4E32AB49674BAE9680AB">
+				<Properties>
+					<CoordinateFrame name="CFrame">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>-0.400000006</Z>
+						<R00>1</R00>
+						<R01>0</R01>
+						<R02>6.31088724e-30</R02>
+						<R10>6.31088724e-30</R10>
+						<R11>0</R11>
+						<R12>-1</R12>
+						<R20>0</R20>
+						<R21>1</R21>
+						<R22>0</R22>
+					</CoordinateFrame>
+					<string name="Name">RightGripAttachment</string>
+					<BinaryString name="Tags"></BinaryString>
+					<bool name="Visible">false</bool>
+				</Properties>
+			</Item>
+		</Item>
+		<Item class="LocalScript" referent="RBXC8B789BBA8644E72BCF127EBC34FA79F">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">Local Gui</string>
+				<string name="ScriptGuid">{6E6118DA-6E08-4BAE-BB75-96BC6E6040D2}</string>
+				<ProtectedString name="Source"><![CDATA[Tool = script.Parent
+
+local stillEquipped = false
+
+function onEquippedLocal(mouse)
+	stillEquipped = true
+	if mouse == nil then 
+		print("Mouse not found")
+		return
+	end
+	while stillEquipped do 
+		print("Setting Mouse to go")
+		mouse.Icon = "rbxasset://textures\\GunCursor.png"
+		while Tool.Enabled and stillEquipped do 
+			wait(0.01)
+		end
+		print("Setting Mouse to wait")
+		mouse.Icon = "rbxasset://textures\\GunWaitCursor.png"		while not Tool.Enabled and stillEquipped do 
+			wait(0.01)
+		end	
+	end
+end
+
+
+function onUnequippedLocal()
+	stillEquipped = false
+end
+
+Tool.Equipped:connect(onEquippedLocal)
+Tool.Unequipped:connect(onUnequippedLocal)]]></ProtectedString>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+		</Item>
+		<Item class="Script" referent="RBX413FB157980D4B94985DDFD3FA17088C">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">Script</string>
+				<string name="ScriptGuid">{75B9A101-6FD7-4C5E-B501-AF531BB20C9A}</string>
+				<ProtectedString name="Source"><![CDATA[-- Voodoo Doll
+-- Can cast FireBall and IceBall
+
+--Rescripted by Luckymaxer
+
+Tool = script.Parent
+Handle = Tool:WaitForChild("Handle")
+
+Woohoo = Tool:WaitForChild("Woohoo")
+
+VoodooScript = script:WaitForChild("VoodooScript")
+
+Players = game:GetService("Players")
+Debris = game:GetService("Debris")
+
+Damage = 25
+
+BillboardGui = Instance.new("BillboardGui")
+BillboardGui.Name = "Announcement"
+BillboardGui.Active = false
+BillboardGui.Size = UDim2.new(1, 0, 1, 0)
+BillboardGui.StudsOffset = Vector3.new(0, 1, 0)
+BillboardGui.AlwaysOnTop = true
+TextLabel = Instance.new("TextLabel")
+TextLabel.Text = ""
+TextLabel.TextColor = BrickColor.new(Color3.new(1, 0, 0))
+TextLabel.Size = UDim2.new(1, 0, 1, 0)
+TextLabel.BackgroundTransparency = 1
+TextLabel.FontSize = 4
+TextLabel.Parent = BillboardGui
+
+Ball = Instance.new("Part")
+Ball.Name = "HC"
+Ball.Material = Enum.Material.Granite
+Ball.Shape = Enum.PartType.Ball
+Ball.TopSurface = Enum.SurfaceType.Smooth
+Ball.BottomSurface = Enum.SurfaceType.Smooth
+Ball.FormFactor = Enum.FormFactor.Custom
+Ball.Size = Vector3.new(1, 1, 1) 
+Ball.Transparency = 0.25
+Ball.CanCollide = false
+
+BodyForce = Instance.new("BodyForce") 
+BodyForce.force = Vector3.new(0, Ball:GetMass() * workspace.Gravity, 0)
+BodyForce.Name = "BodyForce"
+
+
+function TagHumanoid(humanoid, player)
+	local Creator_Tag = Instance.new("ObjectValue")
+	Creator_Tag.Name = "creator"
+	Creator_Tag.Value = player
+	Debris:AddItem(Creator_Tag, 2)
+	Creator_Tag.Parent = humanoid
+end
+
+function UntagHumanoid(humanoid)
+	for i, v in pairs(humanoid:GetChildren()) do
+		if v:IsA("ObjectValue") and v.Name == "creator" then
+			v:Destroy()
+		end
+	end
+end
+
+function Blow(Hit, BallClone)
+	if Hit and Hit.Parent then
+		local humanoid = Hit.Parent:FindFirstChild("Humanoid")
+		if humanoid and humanoid ~= Humanoid then
+			if not Hit.Parent:FindFirstChild(VoodooScript.Name) then
+				local VoodooScriptClone = VoodooScript:Clone()
+				VoodooScriptClone.Disabled = false
+				local creator = Instance.new("ObjectValue")
+				creator.Name = "creator"
+				creator.Value = Player
+				creator.Parent = VoodooScriptClone
+				local Tag = BallClone:FindFirstChild("Debuff")
+				Tag.Parent = VoodooScriptClone
+				VoodooScriptClone.Parent = Hit.Parent
+			end
+			UntagHumanoid(humanoid)
+			TagHumanoid(humanoid, Player)
+			humanoid:TakeDamage(Damage)
+		end
+	end
+	if BallClone and BallClone.Parent then
+		BallClone:Destroy()
+	end
+end
+
+function Shoot(Position)
+	local SpawnPosition = Torso.Position
+	SpawnPosition = SpawnPosition + Position.unit * 5
+
+	local BallClone = Ball:Clone()
+	BallClone.CFrame = CFrame.new(SpawnPosition, (SpawnPosition + Position))
+	Debris:AddItem(BallClone, 5)
+	BallClone.Parent = game:GetService("Workspace")
+	BallClone.Velocity = (Position * 75)
+	
+	local BallFloat = BodyForce:Clone()
+	BallFloat.Parent = BallClone
+
+	local Random = math.random(1, 2)	
+	
+	BallClone.BrickColor = BrickColor.new((Random == 1 and "Bright red") or "Pastel Blue")
+
+	local Tag = Instance.new("StringValue")
+	Tag.Name = "Debuff"
+	Tag.Value = ((Random == 1 and "Fire") or "Ice")
+	Tag.Parent = BallClone
+	local Fire = Instance.new("Fire")
+	Fire.Color = ((Random == 2 and Color3.new(0, 0, 10.75)) or Fire.Color)
+	Fire.Parent = BallClone
+
+	BallClone.Touched:connect(function(Hit)
+		Blow(Hit, BallClone)
+	end)
+	
+end
+
+function Activated()
+	
+	if not Tool.Enabled then
+		return
+	end
+	
+	Tool.Enabled = false
+
+	BillboardGui.Adornee = Head
+
+	Woohoo:Play()
+	
+	local Random = math.random(1, 2)
+	
+	if Random == 1 then
+		TextLabel.Text = "EXTRA HEALTH!!"
+		local Ratio = (Humanoid.Health / Humanoid.MaxHealth)
+		Humanoid.MaxHealth = 160
+		Humanoid.Health = (Ratio * 160)
+	else
+		TextLabel.Text = "HASTE!!"
+		Humanoid.WalkSpeed = 22
+	end
+	
+	wait(1)
+	
+	TextLabel.Text = ""
+
+	wait(5)
+	
+	local Ratio = (Humanoid.Health / Humanoid.MaxHealth)
+	Humanoid.Health = (Ratio * 100)
+	Humanoid.MaxHealth = 100
+	Humanoid.WalkSpeed = 16
+	
+	wait(2.0)
+	
+	Tool.Enabled = true
+	
+end
+
+function Equipped()
+	Character = Tool.Parent
+	Player = Players:GetPlayerFromCharacter(Character)
+	Humanoid = Character:FindFirstChild("Humanoid")
+	Head = Character:FindFirstChild("Head")
+	Torso = Character:FindFirstChild("Torso") or Character:FindFirstChild("UpperTorso")
+	if not Player or not Humanoid or Humanoid.Health == 0 or not Head or not Torso then
+		return
+	end
+	BillboardGui.Parent = Player.PlayerGui
+	
+	HumanoidDamagedConnection = Humanoid.ChildAdded:connect(function(Child)
+		if Child:IsA("ObjectValue") and Child.Name == "creator" then
+			local Enemy = Child.Value
+			if Enemy and Enemy.Parent and Enemy ~= Player then
+				local EnemyCharacter = Enemy.Character
+				local EnemyTorso = EnemyCharacter:FindFirstChild("Torso")
+				if EnemyTorso then
+					TextLabel.Text = "YOUR ENEMY IS MY ENEMY"
+					local Direction = (EnemyTorso.Position - Head.Position).unit
+					Shoot(Direction)
+				end
+			end
+		end
+	end)
+	
+end
+
+function Unequipped()
+	if BillboardGui and BillboardGui.Parent then
+		BillboardGui.Parent = nil
+	end
+	if HumanoidDamagedConnection then
+		HumanoidDamagedConnection:disconnect()
+	end
+	if Humanoid and Humanoid.Parent then
+		local Ratio = (Humanoid.Health / Humanoid.MaxHealth)
+		Humanoid.Health = (Ratio * 100)
+		Humanoid.MaxHealth = 100
+		Humanoid.WalkSpeed = 16
+	end
+	Woohoo:Stop()
+end
+
+Tool.Activated:connect(Activated)
+Tool.Equipped:connect(Equipped)
+Tool.Unequipped:connect(Unequipped)]]></ProtectedString>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+			<Item class="Script" referent="RBX04FE9493F46E4DE09FA260D5248E90DA">
+				<Properties>
+					<bool name="Disabled">true</bool>
+					<Content name="LinkedSource"><null></null></Content>
+					<string name="Name">VoodooScript</string>
+					<string name="ScriptGuid">{F72957AD-3EF9-4046-B6B9-3D69BEBED2FA}</string>
+					<ProtectedString name="Source"><![CDATA[--Rescripted by Luckymaxer
+
+Character = script.Parent
+Humanoid = Character:FindFirstChild("Humanoid")
+Torso = Character:FindFirstChild("Torso") or Character:FindFirstChild("UpperTorso")
+Tag = script:FindFirstChild("Debuff")
+Creator = script:FindFirstChild("creator")
+
+Debris = game:GetService("Debris")
+
+Duration = 5
+
+function TagHumanoid(humanoid, player)
+	local Creator_Tag = Instance.new("ObjectValue")
+	Creator_Tag.Name = "creator"
+	Creator_Tag.Value = player
+	Debris:AddItem(Creator_Tag, 2)
+	Creator_Tag.Parent = humanoid
+end
+
+function UntagHumanoid(humanoid)
+	for i, v in pairs(humanoid:GetChildren()) do
+		if v:IsA("ObjectValue") and v.Name == "creator" then
+			v:Destroy()
+		end
+	end
+end
+
+if Torso then
+	if Tag.Value == "Fire" then
+		local Fire = Instance.new("Fire")
+		Fire.Parent = Torso
+		local StartTick = tick()
+		while (tick() - StartTick) < Duration do
+			UntagHumanoid(Humanoid)
+			TagHumanoid(Humanoid, Creator.Value)
+			Humanoid:TakeDamage(5)
+			wait(1)
+		end
+		if Fire and Fire.Parent then
+			Fire:Destroy()
+		end
+	else 
+		local Ice = Instance.new("Fire")
+		Ice.Color = Color3.new(0, 0, 0.75)
+		Ice.Parent = Torso
+		local StartTick = tick()
+		while (tick() - StartTick) < Duration do
+			Humanoid.WalkSpeed = 8
+			UntagHumanoid(Humanoid)
+			TagHumanoid(Humanoid, Creator.Value)
+			Humanoid:TakeDamage(2)
+			wait(1)
+		end
+		if Ice and Ice.Parent then
+			Ice:Destroy()
+		end
+	end
+end
+
+Humanoid.WalkSpeed = 16
+
+wait(1)
+
+script:Destroy()
+]]></ProtectedString>
+					<BinaryString name="Tags"></BinaryString>
+				</Properties>
+			</Item>
+		</Item>
+		<Item class="Sound" referent="RBXADE5085B161A401490B8F9434BFC41AF">
+			<Properties>
+				<float name="EmitterSize">10</float>
+				<bool name="Looped">false</bool>
+				<string name="Name">Woohoo</string>
+				<bool name="PlayOnRemove">false</bool>
+				<float name="PlaybackSpeed">1</float>
+				<bool name="Playing">false</bool>
+				<token name="RollOffMode">0</token>
+				<Ref name="SoundGroup">null</Ref>
+				<Content name="SoundId"><url>http://www.roblox.com/asset/?id=53123300 </url></Content>
+				<BinaryString name="Tags"></BinaryString>
+				<double name="TimePosition">0</double>
+				<float name="Volume">0.5</float>
+				<float name="xmlRead_MaxDistance_3">10000</float>
+			</Properties>
+		</Item>
+		<Item class="Keyframe" referent="RBX47C41533215F4F7EBF57AD1FCE65004A">
+			<Properties>
+				<string name="Name">ThumbnailPose</string>
+				<BinaryString name="Tags"></BinaryString>
+				<float name="Time">0</float>
+			</Properties>
+			<Item class="Pose" referent="RBX9A4E89940BFE4AC1BFF90FDC995A764E">
+				<Properties>
+					<CoordinateFrame name="CFrame">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+						<R00>1</R00>
+						<R01>0</R01>
+						<R02>0</R02>
+						<R10>0</R10>
+						<R11>1</R11>
+						<R12>0</R12>
+						<R20>0</R20>
+						<R21>0</R21>
+						<R22>1</R22>
+					</CoordinateFrame>
+					<token name="EasingDirection">1</token>
+					<token name="EasingStyle">0</token>
+					<float name="MaskWeight">0</float>
+					<string name="Name">UpperTorso</string>
+					<BinaryString name="Tags"></BinaryString>
+					<float name="Weight">0</float>
+				</Properties>
+				<Item class="Pose" referent="RBXD0D51F66FCD04C40B089557E337497FF">
+					<Properties>
+						<CoordinateFrame name="CFrame">
+							<X>0</X>
+							<Y>-6.70552254e-08</Y>
+							<Z>-5.96046448e-08</Z>
+							<R00>1</R00>
+							<R01>0</R01>
+							<R02>0</R02>
+							<R10>0</R10>
+							<R11>0.173648193</R11>
+							<R12>-0.98480773</R12>
+							<R20>0</R20>
+							<R21>0.98480773</R21>
+							<R22>0.173648193</R22>
+						</CoordinateFrame>
+						<token name="EasingDirection">1</token>
+						<token name="EasingStyle">0</token>
+						<float name="MaskWeight">0</float>
+						<string name="Name">RightUpperArm</string>
+						<BinaryString name="Tags"></BinaryString>
+						<float name="Weight">1</float>
+					</Properties>
+					<Item class="Pose" referent="RBXB685E547C4BF4C569659CE72A91EDF02">
+						<Properties>
+							<CoordinateFrame name="CFrame">
+								<X>0</X>
+								<Y>-1.49011612e-08</Y>
+								<Z>3.7252903e-09</Z>
+								<R00>1</R00>
+								<R01>0</R01>
+								<R02>0</R02>
+								<R10>0</R10>
+								<R11>0.98480773</R11>
+								<R12>-0.173648179</R12>
+								<R20>0</R20>
+								<R21>0.173648179</R21>
+								<R22>0.98480773</R22>
+							</CoordinateFrame>
+							<token name="EasingDirection">1</token>
+							<token name="EasingStyle">0</token>
+							<float name="MaskWeight">0</float>
+							<string name="Name">RightLowerArm</string>
+							<BinaryString name="Tags"></BinaryString>
+							<float name="Weight">1</float>
+						</Properties>
+						<Item class="Pose" referent="RBXA5D0E0884C154E34918C2F306EBCC8E3">
+							<Properties>
+								<CoordinateFrame name="CFrame">
+									<X>0</X>
+									<Y>0</Y>
+									<Z>0</Z>
+									<R00>1</R00>
+									<R01>0</R01>
+									<R02>0</R02>
+									<R10>0</R10>
+									<R11>1</R11>
+									<R12>0</R12>
+									<R20>0</R20>
+									<R21>0</R21>
+									<R22>1</R22>
+								</CoordinateFrame>
+								<token name="EasingDirection">1</token>
+								<token name="EasingStyle">0</token>
+								<float name="MaskWeight">0</float>
+								<string name="Name">RightHand</string>
+								<BinaryString name="Tags"></BinaryString>
+								<float name="Weight">1</float>
+							</Properties>
+						</Item>
+					</Item>
+				</Item>
+			</Item>
+		</Item>
+		<Item class="Camera" referent="RBXC7AB51DC555F4F569B8AA0296D3E1E1B">
+			<Properties>
+				<CoordinateFrame name="CFrame">
+					<X>2.75656462</X>
+					<Y>6.64156246</Y>
+					<Z>-3.43099117</Z>
+					<R00>-0.919155598</R00>
+					<R01>-0.115838334</R01>
+					<R02>0.376476437</R02>
+					<R10>-0</R10>
+					<R11>0.955779374</R11>
+					<R12>0.294084489</R12>
+					<R20>-0.393894732</R20>
+					<R21>0.270309418</R21>
+					<R22>-0.878509939</R22>
+				</CoordinateFrame>
+				<Ref name="CameraSubject">null</Ref>
+				<token name="CameraType">0</token>
+				<float name="FieldOfView">70</float>
+				<CoordinateFrame name="Focus">
+					<X>2.00361156</X>
+					<Y>6.05339336</Y>
+					<Z>-1.67397082</Z>
+					<R00>1</R00>
+					<R01>0</R01>
+					<R02>0</R02>
+					<R10>0</R10>
+					<R11>1</R11>
+					<R12>0</R12>
+					<R20>0</R20>
+					<R21>0</R21>
+					<R22>1</R22>
+				</CoordinateFrame>
+				<bool name="HeadLocked">true</bool>
+				<float name="HeadScale">1</float>
+				<string name="Name">ThumbnailCamera</string>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+		</Item>
+	</Item>
+</roblox>

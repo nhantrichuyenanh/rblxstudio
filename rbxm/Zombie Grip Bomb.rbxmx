@@ -1,0 +1,823 @@
+<roblox xmlns:xmime="http://www.w3.org/2005/05/xmlmime" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.roblox.com/roblox.xsd" version="4">
+	<Meta name="ExplicitAutoJoints">true</Meta>
+	<External>null</External>
+	<External>nil</External>
+	<Item class="Tool" referent="RBX11C5C0D469674DBFA7C35C1B16BA7269">
+		<Properties>
+			<bool name="CanBeDropped">true</bool>
+			<bool name="Enabled">true</bool>
+			<CoordinateFrame name="Grip">
+				<X>0.200000003</X>
+				<Y>0</Y>
+				<Z>-0</Z>
+				<R00>-4.37113883e-08</R00>
+				<R01>-1</R01>
+				<R02>0</R02>
+				<R10>1</R10>
+				<R11>-4.37113883e-08</R11>
+				<R12>0</R12>
+				<R20>0</R20>
+				<R21>0</R21>
+				<R22>0.99999994</R22>
+			</CoordinateFrame>
+			<bool name="ManualActivationOnly">false</bool>
+			<string name="Name">ZombieGripBomb</string>
+			<bool name="RequiresHandle">true</bool>
+			<BinaryString name="Tags"></BinaryString>
+			<Content name="TextureId"><url>http://www.roblox.com/asset/?id=89391516</url></Content>
+			<string name="ToolTip">Drag your enemies six feet under!</string>
+		</Properties>
+		<Item class="LocalScript" referent="RBX071A1A941FE34F5FABD968421D9A8036">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">Client</string>
+				<string name="ScriptGuid">{EE56A711-AF05-4699-BB02-D1445AD3C81F}</string>
+				<ProtectedString name="Source"><![CDATA[local Tool = script.Parent
+
+local MouseInput = Tool:WaitForChild("MousePos",10)
+
+function MouseInput.OnClientInvoke()
+	return game.Players.LocalPlayer:GetMouse().Hit.p
+end]]></ProtectedString>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+		</Item>
+		<Item class="Script" referent="RBX59C1D4AE55974BC4B7692CF93E4EDBA3">
+			<Properties>
+				<bool name="Disabled">true</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">GrenadeScript</string>
+				<string name="ScriptGuid">{E202BF36-D957-4FE0-86E4-1BE0711992B1}</string>
+				<ProtectedString name="Source"><![CDATA[-- // Updated for R15 avatars by StarWars
+function Create(ty)
+	return function(data)
+		local obj = Instance.new(ty)
+		for k, v in pairs(data) do
+			if type(k) == 'number' then
+				v.Parent = obj
+			else
+				obj[k] = v
+			end
+		end
+		return obj
+	end
+end
+
+
+local Grenade = script.Parent
+local creator = script:WaitForChild("creator")
+
+local EFFECT_RADIUS = 10
+
+function IsTeamMate(Player1, Player2)
+	return (Player1 and Player2 and not Player1.Neutral and not Player2.Neutral and Player1.TeamColor == Player2.TeamColor)
+end
+
+local function FindHumanoid(part)
+	return (part.Parent or game):FindFirstChildOfClass('Humanoid') or
+	       ((part.Parent or game).Parent or game):FindFirstChildOfClass('Humanoid')
+end
+
+--wait for us to hit something that isn't a humanoid and is cancollide
+do
+	local hitSomethingEvent = Instance.new('BindableEvent')
+	Grenade.Touched:connect(function(part)
+		if part.CanCollide and not FindHumanoid(part) then
+			hitSomethingEvent:Fire()
+		end
+	end)
+	hitSomethingEvent.Event:Wait()
+end
+
+
+--remove the grenade
+Grenade.CanCollide = false
+Grenade.Anchored = true
+Grenade.Transparency = 1
+
+
+--generate our zombie effect
+local EffectAt = Grenade.Position
+
+local ZombieHands = {}
+for i = 1, 10 do
+	--find an location to put the hand at.
+	local at = EffectAt + Vector3.new(math.random(-EFFECT_RADIUS,EFFECT_RADIUS),
+	                                  0,
+	                                  math.random(-EFFECT_RADIUS,EFFECT_RADIUS))
+	local foundSpot;
+	local ignoreList = {}
+	local ray = Ray.new(at+Vector3.new(0, 20, 0), Vector3.new(0,-999,0))
+	while true do
+		local hit, at = game.Workspace:FindPartOnRayWithIgnoreList(ray, ignoreList)
+		if hit then
+			if not hit.CanCollide or FindHumanoid(hit) then
+				ignoreList[#ignoreList+1] = hit
+			else
+				foundSpot = at
+				break
+			end
+		else
+			break
+		end
+	end
+
+	if foundSpot then
+		--found a spot to place a hand at
+		local hand = {}
+		hand.CFrame = CFrame.new(foundSpot)*CFrame.Angles(0, 2*math.random()*math.pi, 0)
+
+		--make a bunch of bits of "earth" around the hand
+		hand.EarthBits = {}
+		for i = 1, 3 do
+			local bit = {}
+			bit.Part = Create('Part'){
+				Name = 'EarthBit';
+				Anchored = true;
+				CanCollide = false;
+				TopSurface = Enum.SurfaceType.Smooth;
+				BottomSurface = Enum.SurfaceType.Smooth;
+				Material = Enum.Material.Concrete;
+				FormFactor = 'Custom';
+				Size = Vector3.new(1 + math.random(),0.4,1+math.random());
+				BrickColor = BrickColor.new(217);
+			}
+			bit.C0 = CFrame.Angles(0, math.pi*2/3*i + math.random()*0.1, 0)
+			bit.C1 = CFrame.new(0, 0, 0.5)
+			hand.EarthBits[i] = bit
+		end
+
+		--make the part
+		hand.Part = Create('Part'){
+			Name = 'ZombieHand';
+			Anchored = true;
+			CanCollide = false;
+			FormFactor = 'Custom';
+			Size = Vector3.new(2,1,1);
+			--
+			Create('SpecialMesh'){
+				Name = 'Mesh';
+				MeshId = 'http://www.roblox.com/asset/?id=89391425';
+				TextureId = 'http://www.roblox.com/asset/?id=89391492';
+				Scale = Vector3.new(3,3,3);
+			};
+		}
+
+		--make some other data for the hand
+		hand.Level = 0
+		hand.Mode = 'Rise' --Rise / Search / Fall
+		hand.Caught = nil
+		hand.A = math.random()
+		hand.Delay = math.random()
+		ZombieHands[hand] = true
+	end
+end
+
+
+--set up touched handling for hands
+for hand, _ in pairs(ZombieHands) do
+	hand.Part.Touched:Connect(function(part)
+		local hum = FindHumanoid(part)
+		if hum and not IsTeamMate(creator.Value,game:GetService("Players"):GetPlayerFromCharacter(hum.Parent)) and creator.Value ~= game:GetService("Players"):GetPlayerFromCharacter(hum.Parent) then
+			local FF = hum.Parent:FindFirstChildOfClass("ForceField")
+			if not FF then
+				hand.Mode = 'Fall'
+				hand.Caught = hum
+				--tag
+				local tag = creator:Clone()
+				tag.Parent = hum
+				game:GetService("Debris"):AddItem(tag, 3)
+			end
+		end
+	end)
+end
+
+
+--9 seconds in we should start all of the hands falling
+delay(9, function()
+	for hand, _ in pairs(ZombieHands) do
+		hand.Mode = 'Fall'
+	end
+end)
+
+
+--animate it
+local StartTime = tick()
+local LastTime = StartTime
+while true do
+	local Now = tick()
+	local dt = Now-LastTime
+	LastTime = Now
+	local Elapsed = Now-StartTime
+
+	--end after 10 seconds
+	if Elapsed > 10 then break end
+	
+	--
+	for hand, _ in pairs(ZombieHands) do
+		local Elapsed = Elapsed - hand.Delay
+		if Elapsed > 0 then
+
+			--place the hand
+			hand.Part.Parent = Grenade
+			hand.Part.CFrame = hand.CFrame * 
+			                   CFrame.Angles(math.sin(Elapsed+hand.A)*0.5, 0, math.sin(Elapsed)*0.5) *
+			                   CFrame.new(0, hand.Level-1.2, 0) *
+			                   CFrame.Angles(math.pi/2, -math.pi/2, 0) *
+			                   CFrame.new(0, 0, -0.4)
+
+			--first, rise or fall the hand
+			if hand.Mode == 'Rise' then
+				hand.Level = math.min(2, hand.Level + dt*2)
+				if hand.Level >= 2 then
+					hand.Mode = 'Search'
+				end
+			elseif hand.Mode == 'Fall' then
+				hand.Level = math.max(0, hand.Level - dt*2)
+				if hand.Level <= 0 then
+					ZombieHands[hand] = nil
+					hand.Part:Destroy()
+
+					--make sure we kill the caught
+					if hand.Caught then
+						hand.Caught.Parent:BreakJoints()
+						--hand.Caught:TakeDamage(hand.Caught.Health)
+					end
+				end
+
+				--if it captured something then drag it down
+				if hand.Caught then
+					local torso,FF = hand.Caught.Parent:FindFirstChild('HumanoidRootPart'),hand.Caught.Parent:FindFirstChildOfClass('ForceField')
+				
+					if not IsTeamMate(creator.Value,game:GetService("Players"):GetPlayerFromCharacter(hand.Caught.Parent)) and not FF and creator.Value ~= game:GetService("Players"):GetPlayerFromCharacter(hand.Caught.Parent) then
+						if torso then
+							torso.Anchored = true
+							torso.CFrame = CFrame.new(0,-dt*4,0)*torso.CFrame
+							hand.Caught:TakeDamage(2)
+						else
+							hand.Caught.Parent:BreakJoints()
+							--hand.Caught:TakeDamage(hand.Caught.Health)
+							hand.Caught = nil
+						end
+					end
+					
+				end
+			else
+				--nothing to do
+			end
+
+			--now if it's just started rising move the dirt bits
+			if Elapsed < 0.8 then
+				local T = Elapsed/0.8
+				for _, bit in pairs(hand.EarthBits) do
+					bit.Part.Parent = Grenade
+					bit.Part.CFrame = hand.CFrame * bit.C0 * 
+					                  CFrame.Angles(T*0.3, 0, 0) * CFrame.new(0, 0.2+0.2*T, T*0.5) *   
+					                  bit.C1
+				end
+			end
+
+			--
+			if hand.Mode == 'Fall' then
+				for _, bit in pairs(hand.EarthBits) do
+					bit.Part.Transparency = 1-(hand.Level/2)
+				end
+			end
+		end
+	end
+	--
+	wait()
+end
+
+--kill any remaining caught players
+for hand, _ in pairs(ZombieHands) do
+	if hand.Caught then
+		hand.Caught:TakeDamage(hand.Caught.Health)
+	end
+end
+
+
+--destroy us. All of our stuff has been parented to the grenade so this will do cleanup
+Grenade:Destroy()
+
+]]></ProtectedString>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+		</Item>
+		<Item class="Part" referent="RBXEAFAA03ADE4940CEA01887F99EDC546C">
+			<Properties>
+				<bool name="Anchored">false</bool>
+				<float name="BackParamA">-0.5</float>
+				<float name="BackParamB">0.5</float>
+				<token name="BackSurface">0</token>
+				<token name="BackSurfaceInput">0</token>
+				<float name="BottomParamA">-0.5</float>
+				<float name="BottomParamB">0.5</float>
+				<token name="BottomSurface">4</token>
+				<token name="BottomSurfaceInput">0</token>
+				<CoordinateFrame name="CFrame">
+					<X>1.5</X>
+					<Y>8.2175045</Y>
+					<Z>-1.16250098</Z>
+					<R00>0</R00>
+					<R01>1</R01>
+					<R02>-0</R02>
+					<R10>-1</R10>
+					<R11>0</R11>
+					<R12>0</R12>
+					<R20>0</R20>
+					<R21>0</R21>
+					<R22>1</R22>
+				</CoordinateFrame>
+				<bool name="CanCollide">true</bool>
+				<bool name="CastShadow">true</bool>
+				<int name="CollisionGroupId">0</int>
+				<Color3uint8 name="Color3uint8">4288914085</Color3uint8>
+				<PhysicalProperties name="CustomPhysicalProperties">
+					<CustomPhysics>false</CustomPhysics>
+				</PhysicalProperties>
+				<float name="FrontParamA">-0.5</float>
+				<float name="FrontParamB">0.5</float>
+				<token name="FrontSurface">0</token>
+				<token name="FrontSurfaceInput">0</token>
+				<float name="LeftParamA">-0.5</float>
+				<float name="LeftParamB">0.5</float>
+				<token name="LeftSurface">0</token>
+				<token name="LeftSurfaceInput">0</token>
+				<bool name="Locked">false</bool>
+				<bool name="Massless">false</bool>
+				<token name="Material">256</token>
+				<string name="Name">Handle</string>
+				<float name="Reflectance">0</float>
+				<float name="RightParamA">-0.5</float>
+				<float name="RightParamB">0.5</float>
+				<token name="RightSurface">0</token>
+				<token name="RightSurfaceInput">0</token>
+				<int name="RootPriority">0</int>
+				<Vector3 name="RotVelocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<BinaryString name="Tags"></BinaryString>
+				<float name="TopParamA">-0.5</float>
+				<float name="TopParamB">0.5</float>
+				<token name="TopSurface">3</token>
+				<token name="TopSurfaceInput">0</token>
+				<float name="Transparency">0</float>
+				<Vector3 name="Velocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<token name="formFactorRaw">3</token>
+				<token name="shape">1</token>
+				<Vector3 name="size">
+					<X>1</X>
+					<Y>1</Y>
+					<Z>1</Z>
+				</Vector3>
+			</Properties>
+			<Item class="SpecialMesh" referent="RBX2D3FA535A35842A48DF09A3F14649CC2">
+				<Properties>
+					<token name="LODX">2</token>
+					<token name="LODY">2</token>
+					<Content name="MeshId"><url>http://www.roblox.com/asset/?id=89391446</url></Content>
+					<token name="MeshType">5</token>
+					<string name="Name">Mesh</string>
+					<Vector3 name="Offset">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+					</Vector3>
+					<Vector3 name="Scale">
+						<X>3</X>
+						<Y>3</Y>
+						<Z>3</Z>
+					</Vector3>
+					<BinaryString name="Tags"></BinaryString>
+					<Content name="TextureId"><url>http://www.roblox.com/asset/?id=89391492</url></Content>
+					<Vector3 name="VertexColor">
+						<X>0.800000012</X>
+						<Y>1</Y>
+						<Z>0.800000012</Z>
+					</Vector3>
+				</Properties>
+			</Item>
+			<Item class="Sound" referent="RBXDA642B229BFE4552B6718EFF4600C9F9">
+				<Properties>
+					<float name="EmitterSize">10</float>
+					<bool name="Looped">false</bool>
+					<string name="Name">ExplodeSound</string>
+					<bool name="PlayOnRemove">false</bool>
+					<float name="PlaybackSpeed">1</float>
+					<bool name="Playing">false</bool>
+					<token name="RollOffMode">0</token>
+					<Ref name="SoundGroup">null</Ref>
+					<Content name="SoundId"><url>rbxasset://sounds/collide.wav</url></Content>
+					<BinaryString name="Tags"></BinaryString>
+					<double name="TimePosition">0</double>
+					<float name="Volume">1</float>
+					<float name="xmlRead_MaxDistance_3">10000</float>
+				</Properties>
+			</Item>
+			<Item class="Sound" referent="RBXBDD746B65D154D63850958941A8B977C">
+				<Properties>
+					<float name="EmitterSize">10</float>
+					<bool name="Looped">false</bool>
+					<string name="Name">ThrowSound</string>
+					<bool name="PlayOnRemove">false</bool>
+					<float name="PlaybackSpeed">1</float>
+					<bool name="Playing">false</bool>
+					<token name="RollOffMode">0</token>
+					<Ref name="SoundGroup">null</Ref>
+					<Content name="SoundId"><url>rbxasset://sounds//swordslash.wav</url></Content>
+					<BinaryString name="Tags"></BinaryString>
+					<double name="TimePosition">0</double>
+					<float name="Volume">0.699999988</float>
+					<float name="xmlRead_MaxDistance_3">10000</float>
+				</Properties>
+			</Item>
+			<Item class="Attachment" referent="RBXA0B17A208C2B4272910186CC9C5B01BE">
+				<Properties>
+					<CoordinateFrame name="CFrame">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+						<R00>1</R00>
+						<R01>0</R01>
+						<R02>6.31088724e-30</R02>
+						<R10>0</R10>
+						<R11>1</R11>
+						<R12>-0</R12>
+						<R20>-6.31088724e-30</R20>
+						<R21>0</R21>
+						<R22>1</R22>
+					</CoordinateFrame>
+					<string name="Name">RightGripAttachment</string>
+					<BinaryString name="Tags"></BinaryString>
+					<bool name="Visible">false</bool>
+				</Properties>
+			</Item>
+		</Item>
+		<Item class="Animation" referent="RBX7FE431F364FB4010A073F5C63CAACDBA">
+			<Properties>
+				<Content name="AnimationId"><url>rbxassetid://782862782</url></Content>
+				<string name="Name">R15ThrowAnim</string>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+		</Item>
+		<Item class="Animation" referent="RBX644945CB94E3435EAD43117DE7B4A1BA">
+			<Properties>
+				<Content name="AnimationId"><url>rbxassetid://88743566</url></Content>
+				<string name="Name">ThrowAnim</string>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+		</Item>
+		<Item class="Keyframe" referent="RBXB4F4A3CE87DE49A3B87BF828A2D4BC2C">
+			<Properties>
+				<string name="Name">ThumbnailPose</string>
+				<BinaryString name="Tags"></BinaryString>
+				<float name="Time">0</float>
+			</Properties>
+			<Item class="Pose" referent="RBX13DBA1D1738C4583BADF3F43DB7E5BBF">
+				<Properties>
+					<CoordinateFrame name="CFrame">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+						<R00>1</R00>
+						<R01>0</R01>
+						<R02>0</R02>
+						<R10>0</R10>
+						<R11>1</R11>
+						<R12>0</R12>
+						<R20>0</R20>
+						<R21>0</R21>
+						<R22>1</R22>
+					</CoordinateFrame>
+					<token name="EasingDirection">1</token>
+					<token name="EasingStyle">0</token>
+					<string name="Name">UpperTorso</string>
+					<BinaryString name="Tags"></BinaryString>
+					<float name="Weight">0</float>
+				</Properties>
+				<Item class="Pose" referent="RBX3CFD9023163F45E0B60EB3A3E5EA0AFF">
+					<Properties>
+						<CoordinateFrame name="CFrame">
+							<X>0</X>
+							<Y>-6.70552254e-08</Y>
+							<Z>-5.96046448e-08</Z>
+							<R00>1</R00>
+							<R01>0</R01>
+							<R02>0</R02>
+							<R10>0</R10>
+							<R11>0.173648193</R11>
+							<R12>-0.98480773</R12>
+							<R20>0</R20>
+							<R21>0.98480773</R21>
+							<R22>0.173648193</R22>
+						</CoordinateFrame>
+						<token name="EasingDirection">1</token>
+						<token name="EasingStyle">0</token>
+						<string name="Name">RightUpperArm</string>
+						<BinaryString name="Tags"></BinaryString>
+						<float name="Weight">1</float>
+					</Properties>
+					<Item class="Pose" referent="RBXE40208B80DA44823A73FB23692157236">
+						<Properties>
+							<CoordinateFrame name="CFrame">
+								<X>0</X>
+								<Y>-1.49011612e-08</Y>
+								<Z>3.7252903e-09</Z>
+								<R00>1</R00>
+								<R01>0</R01>
+								<R02>0</R02>
+								<R10>0</R10>
+								<R11>0.98480773</R11>
+								<R12>-0.173648179</R12>
+								<R20>0</R20>
+								<R21>0.173648179</R21>
+								<R22>0.98480773</R22>
+							</CoordinateFrame>
+							<token name="EasingDirection">1</token>
+							<token name="EasingStyle">0</token>
+							<string name="Name">RightLowerArm</string>
+							<BinaryString name="Tags"></BinaryString>
+							<float name="Weight">1</float>
+						</Properties>
+						<Item class="Pose" referent="RBXB611B32BEC514063BB417EC4FA6C32EB">
+							<Properties>
+								<CoordinateFrame name="CFrame">
+									<X>0</X>
+									<Y>0</Y>
+									<Z>0</Z>
+									<R00>1</R00>
+									<R01>0</R01>
+									<R02>0</R02>
+									<R10>0</R10>
+									<R11>1</R11>
+									<R12>0</R12>
+									<R20>0</R20>
+									<R21>0</R21>
+									<R22>1</R22>
+								</CoordinateFrame>
+								<token name="EasingDirection">1</token>
+								<token name="EasingStyle">0</token>
+								<string name="Name">RightHand</string>
+								<BinaryString name="Tags"></BinaryString>
+								<float name="Weight">1</float>
+							</Properties>
+						</Item>
+					</Item>
+				</Item>
+			</Item>
+		</Item>
+		<Item class="Script" referent="RBXD7DE204604D74268B9C014B3C0FB3215">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">Server</string>
+				<string name="ScriptGuid">{B9C3E0F6-5350-46E6-A3CA-76E1AD3C1EA9}</string>
+				<ProtectedString name="Source"><![CDATA[-- // Updated for R15 avatars by StarWars
+
+function Create(ty)
+	return function(data)
+		local obj = Instance.new(ty)
+		for k, v in pairs(data) do
+			if type(k) == 'number' then
+				v.Parent = obj
+			else
+				obj[k] = v
+			end
+		end
+		return obj
+	end
+end
+
+local Tool = script.Parent
+Tool.Enabled = true
+local Character;
+local Player;
+
+local Humanoid = nil
+
+local RELOAD_TIME = 13
+
+local Handle = Tool:WaitForChild("Handle")
+local ThrowSound = Handle:WaitForChild("ThrowSound")
+
+local MouseInput = (Tool:FindFirstChild("MousePos") or Create("RemoteFunction"){
+	Name = "MousePos",
+	Parent = Tool
+})
+
+local GrenadeScript = Tool:WaitForChild("GrenadeScript")
+
+local Animations = {
+	Throw = Tool:WaitForChild("ThrowAnim");	
+	R15Throw = Tool:WaitForChild("R15ThrowAnim")
+}
+
+local ThrowAnimation = nil
+
+local function Now()
+	return game.Workspace.DistributedGameTime
+end
+
+---------------------------------------------
+
+local Velocity = 120
+function computeLaunchAngle(dx, dy, grav)	
+	-- This function is nasty or what? :P 
+	-- There are ways to solve launch angle of a projectile given a point in 3D space 
+	-- This one solves for tan(theta) 
+		
+	-- Simplify the distance formula of a projectile 
+	local g = math.abs(grav)
+	local inRoot = (Velocity * Velocity * Velocity * Velocity) - (g * ((g * dx * dx) + (2 * dy * Velocity * Velocity)))
+	if inRoot <= 0 then
+		return 0.25 * math.pi
+	end
+	local root = math.sqrt(inRoot)
+	local inATan1 = ((Velocity * Velocity) + root) / (g*dx)
+
+	local inATan2 = ((Velocity * Velocity) - root) / (g*dx)
+	local a1 = math.atan(inATan1)
+	local a2 = math.atan(inATan2)
+	if a1 < a2 then return a1 end
+	return a2
+end
+
+---------------------------------------------
+
+local Events = {}
+
+Tool.Equipped:Connect(function()
+	Character = Tool.Parent
+	Player = game.Players:GetPlayerFromCharacter(Character)
+	Humanoid = Character:FindFirstChildOfClass("Humanoid")
+
+	if Humanoid and Humanoid.Health > 0 then
+		if Humanoid.RigType == Enum.HumanoidRigType.R15 then
+			ThrowAnimation = Humanoid:LoadAnimation(Animations["R15Throw"])
+		elseif Humanoid.RigType == Enum.HumanoidRigType.R6 then
+			ThrowAnimation = Humanoid:LoadAnimation(Animations["Throw"])
+		end
+	end
+
+
+	Events[#Events+1] = Tool.Activated:Connect(function()
+		if Tool.Enabled then
+			Tool.Enabled = false
+			local gr = Handle:Clone()
+			gr.CanCollide = false
+			local sc = GrenadeScript:Clone()
+			sc.Parent = gr
+			sc.Disabled = false
+			Create("ObjectValue"){
+				Name = "creator",
+				Value = Player,
+				Parent = sc
+			}
+
+			--calc velocity
+			
+			local sucess,MousePosition = pcall(function() return MouseInput:InvokeClient(game.Players:GetPlayerFromCharacter(Character)) end)
+			MousePosition = (sucess and MousePosition) or Vector3.new(0,0,0)
+			
+			local toTarget = MousePosition - gr.Position
+			local dy = toTarget.y
+			toTarget = Vector3.new(toTarget.x, 0, toTarget.z)
+			local dx = toTarget.Magnitude
+			toTarget = toTarget.Unit
+
+			Velocity = math.min(120, 40 + dx)
+
+			local theta = computeLaunchAngle(dx, dy, workspace.Gravity)
+
+			local vY = math.sin(theta)*Velocity
+			local vX = toTarget.x * math.cos(theta) * Velocity
+			local vZ = toTarget.z * math.cos(theta) * Velocity
+
+			gr.CanCollide = false
+			delay(0.1, function()
+				gr.CanCollide = true
+			end)
+			gr.Velocity = Vector3.new(vX, vY, vZ)
+			gr.Parent = workspace
+			gr:SetNetworkOwner(nil)
+
+			--play sound / anim
+			ThrowSound:Play()
+			ThrowAnimation:Play(0, 1, 1)
+
+			--reload
+			Handle.Transparency = 1
+			wait(RELOAD_TIME)
+			Handle.Transparency = 0
+			Tool.Enabled = true
+		end
+	end)
+end)
+
+Tool.Unequipped:Connect(function()
+	for i=1,#Events do
+		if Events[i] then
+			Events[i]:Disconnect();
+		end
+	end
+	Events = {}
+	if ThrowSound then
+		ThrowSound:Stop()
+	end
+	
+	if ThrowAnimation then
+		ThrowAnimation:Stop()
+		ThrowAnimation = nil
+	end
+
+end)]]></ProtectedString>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+		</Item>
+		<Item class="LocalScript" referent="RBX8D2C0049872341C9996FE56CB78DFFB4">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">MouseIcon</string>
+				<string name="ScriptGuid">{EF7A803B-6027-4019-BCC6-5B083A1069A8}</string>
+				<ProtectedString name="Source"><![CDATA[--Rescripted by Luckymaxer
+
+Mouse_Icon = "rbxasset://textures/GunCursor.png"
+Reloading_Icon = "rbxasset://textures/GunWaitCursor.png"
+
+Tool = script.Parent
+
+Mouse = nil
+
+function UpdateIcon()
+	if Mouse then
+		Mouse.Icon = Tool.Enabled and Mouse_Icon or Reloading_Icon
+	end
+end
+
+function OnEquipped(ToolMouse)
+	Mouse = ToolMouse
+	UpdateIcon()
+end
+
+function OnChanged(Property)
+	if Property == "Enabled" then
+		UpdateIcon()
+	end
+end
+
+Tool.Equipped:Connect(OnEquipped)
+Tool.Changed:Connect(OnChanged)
+]]></ProtectedString>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+		</Item>
+		<Item class="Camera" referent="RBX86BCAD59D37947FEA1430F378ADD4DAB">
+			<Properties>
+				<CoordinateFrame name="CFrame">
+					<X>0.436002403</X>
+					<Y>8.33861256</Y>
+					<Z>-1.89594579</Z>
+					<R00>-0.573923767</R00>
+					<R01>0.0926381126</R01>
+					<R02>-0.813652039</R02>
+					<R10>-0</R10>
+					<R11>0.993580878</R11>
+					<R12>0.113123842</R12>
+					<R20>0.818908811</R20>
+					<R21>0.0649244636</R21>
+					<R22>-0.570239663</R22>
+				</CoordinateFrame>
+				<Ref name="CameraSubject">null</Ref>
+				<token name="CameraType">0</token>
+				<float name="FieldOfView">70</float>
+				<CoordinateFrame name="Focus">
+					<X>2.06330729</X>
+					<Y>8.11236477</Y>
+					<Z>-0.755465865</Z>
+					<R00>1</R00>
+					<R01>0</R01>
+					<R02>0</R02>
+					<R10>0</R10>
+					<R11>1</R11>
+					<R12>0</R12>
+					<R20>0</R20>
+					<R21>0</R21>
+					<R22>1</R22>
+				</CoordinateFrame>
+				<bool name="HeadLocked">true</bool>
+				<float name="HeadScale">1</float>
+				<string name="Name">ThumbnailCamera</string>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+		</Item>
+	</Item>
+</roblox>

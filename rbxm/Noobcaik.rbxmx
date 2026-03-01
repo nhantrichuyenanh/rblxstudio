@@ -1,0 +1,525 @@
+<roblox xmlns:xmime="http://www.w3.org/2005/05/xmlmime" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.roblox.com/roblox.xsd" version="4">
+	<External>null</External>
+	<External>nil</External>
+	<Item class="Tool" referent="RBX0">
+		<Properties>
+			<bool name="CanBeDropped">true</bool>
+			<bool name="Enabled">true</bool>
+			<CoordinateFrame name="Grip">
+				<X>0</X>
+				<Y>0.200000003</Y>
+				<Z>0.800000072</Z>
+				<R00>1</R00>
+				<R01>0</R01>
+				<R02>0</R02>
+				<R10>0</R10>
+				<R11>1</R11>
+				<R12>0</R12>
+				<R20>0</R20>
+				<R21>0</R21>
+				<R22>1</R22>
+			</CoordinateFrame>
+			<bool name="ManualActivationOnly">false</bool>
+			<string name="Name">Fake_Cake</string>
+			<bool name="RequiresHandle">true</bool>
+			<Content name="TextureId"><url>http://www.roblox.com/asset/?id=107432825</url></Content>
+			<string name="ToolTip">It&apos;s funny because it&apos;s a reference...yeah.</string>
+		</Properties>
+		<Item class="Part" referent="RBX1">
+			<Properties>
+				<bool name="Anchored">false</bool>
+				<float name="BackParamA">-0.5</float>
+				<float name="BackParamB">0.5</float>
+				<token name="BackSurface">0</token>
+				<token name="BackSurfaceInput">0</token>
+				<float name="BottomParamA">-0.5</float>
+				<float name="BottomParamB">0.5</float>
+				<token name="BottomSurface">0</token>
+				<token name="BottomSurfaceInput">0</token>
+				<int name="BrickColor">194</int>
+				<CoordinateFrame name="CFrame">
+					<X>-0.580000043</X>
+					<Y>0.140000001</Y>
+					<Z>0.210000008</Z>
+					<R00>1</R00>
+					<R01>0</R01>
+					<R02>0</R02>
+					<R10>0</R10>
+					<R11>1</R11>
+					<R12>0</R12>
+					<R20>0</R20>
+					<R21>0</R21>
+					<R22>1</R22>
+				</CoordinateFrame>
+				<bool name="CanCollide">true</bool>
+				<PhysicalProperties name="CustomPhysicalProperties">
+					<CustomPhysics>false</CustomPhysics>
+				</PhysicalProperties>
+				<float name="Elasticity">0.5</float>
+				<float name="Friction">0.300000012</float>
+				<float name="FrontParamA">-0.5</float>
+				<float name="FrontParamB">0.5</float>
+				<token name="FrontSurface">0</token>
+				<token name="FrontSurfaceInput">0</token>
+				<float name="LeftParamA">-0.5</float>
+				<float name="LeftParamB">0.5</float>
+				<token name="LeftSurface">0</token>
+				<token name="LeftSurfaceInput">0</token>
+				<bool name="Locked">false</bool>
+				<token name="Material">256</token>
+				<string name="Name">Handle</string>
+				<float name="Reflectance">0</float>
+				<float name="RightParamA">-0.5</float>
+				<float name="RightParamB">0.5</float>
+				<token name="RightSurface">0</token>
+				<token name="RightSurfaceInput">0</token>
+				<Vector3 name="RotVelocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<float name="TopParamA">-0.5</float>
+				<float name="TopParamB">0.5</float>
+				<token name="TopSurface">0</token>
+				<token name="TopSurfaceInput">0</token>
+				<float name="Transparency">0</float>
+				<Vector3 name="Velocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<token name="formFactorRaw">3</token>
+				<token name="shape">1</token>
+				<Vector3 name="size">
+					<X>1.38999987</X>
+					<Y>0.629999995</Y>
+					<Z>1.51999974</Z>
+				</Vector3>
+			</Properties>
+			<Item class="SpecialMesh" referent="RBX2">
+				<Properties>
+					<token name="LODX">2</token>
+					<token name="LODY">2</token>
+					<Content name="MeshId"><url>http://www.roblox.com/asset/?id=107432887</url></Content>
+					<token name="MeshType">5</token>
+					<string name="Name">Mesh</string>
+					<Vector3 name="Offset">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+					</Vector3>
+					<Vector3 name="Scale">
+						<X>1</X>
+						<Y>1</Y>
+						<Z>1</Z>
+					</Vector3>
+					<Content name="TextureId"><url>http://www.roblox.com/asset/?id=107432992</url></Content>
+					<Vector3 name="VertexColor">
+						<X>1</X>
+						<Y>1</Y>
+						<Z>1</Z>
+					</Vector3>
+				</Properties>
+			</Item>
+			<Item class="Script" referent="RBX3">
+				<Properties>
+					<bool name="Disabled">true</bool>
+					<Content name="LinkedSource"><null></null></Content>
+					<string name="Name">PoisonedFood</string>
+					<string name="ScriptGuid"></string>
+					<ProtectedString name="Source"><![CDATA[local PlayersService = Game:GetService('Players')
+
+local Food = script.Parent
+
+while not script:FindFirstChild("Creator") or not script.Creator.Value do wait() end
+local creator = script.Creator.Value
+
+while not script:FindFirstChild("Eating") do wait() end
+local eatingScript = script.Eating
+
+while not script:FindFirstChild("TextSpammer") do wait() end
+local TextSpammer = script.TextSpammer
+
+
+function AddGuis(player)
+	local playerGui= player.PlayerGui
+	if not playerGui then return end
+	local screenGui = Instance.new('ScreenGui')
+	screenGui.Parent = playerGui
+	local nscript = TextSpammer:Clone()
+	nscript.Parent = screenGui
+	nscript.Disabled = false
+end
+
+-- When someone steps on the food, drop what they're holding and attach the food to them along with an eatingScript
+-- (They must: Not be the creator, be alive, have a right arm, not be eating, and not be poisoned)
+Food.Touched:connect(function(otherPart)
+	if otherPart and otherPart.Parent and otherPart.Parent:IsA("Model") and not otherPart.Parent:FindFirstChild('ForceField') then
+		local otherModel = otherPart.Parent
+		local otherPlayer = PlayersService:GetPlayerFromCharacter(otherModel)
+		if otherPlayer and otherPlayer == creator then
+			return
+		end
+		if otherModel:FindFirstChild("Humanoid") and otherModel.Humanoid.Health > 0 and otherModel:FindFirstChild("Right Arm") then
+			local otherHumanoid = otherModel.Humanoid
+			if not otherHumanoid:FindFirstChild(eatingScript.Name) and not otherHumanoid:FindFirstChild("Poisoned") then
+				if Food:FindFirstChild("SelfDestruct") then Food.SelfDestruct:Destroy() end -- lol
+				if Food:FindFirstChild("BodyGyro") then Food.BodyGyro:Destroy() end
+				local children = otherModel:GetChildren()
+				for i = 1, #children do -- Remove current Tool
+					local child = children[i]
+					if child and child:IsA("Tool") then
+						child.Parent = Workspace
+						break
+					end
+				end
+				if otherPlayer then
+					Spawn(function() AddGuis(otherPlayer) end)
+				end
+				Food.Parent = otherModel
+				local weld = Instance.new("Weld", Game.JointsService)
+				weld.Part0 = otherModel["Right Arm"]
+				weld.Part1 = Food
+				weld.C1 = CFrame.Angles(math.pi/2, 0, 0) + Vector3.new(0, 0, 1.4)
+				local eatingScriptClone = eatingScript:Clone()
+				Game:GetService("Debris"):AddItem(eatingScriptClone, 30) -- In case non-player humanoids pick it up
+				eatingScriptClone.Parent = otherHumanoid
+				eatingScriptClone.Disabled = false
+				--script:Destroy()
+			end
+		end
+	end
+end)
+]]></ProtectedString>
+				</Properties>
+				<Item class="LocalScript" referent="RBX4">
+					<Properties>
+						<bool name="Disabled">true</bool>
+						<Content name="LinkedSource"><null></null></Content>
+						<string name="Name">Eating</string>
+						<string name="ScriptGuid"></string>
+						<ProtectedString name="Source"><![CDATA[local hungryHumanoid = script.Parent
+
+-- Waits for script.childName to exist then returns it
+local function scriptWaitForChild(childName)
+	while not script:FindFirstChild(childName) do wait() end
+	return script[childName]
+end
+
+local eatAnimation = scriptWaitForChild("EatAnimation")
+
+-- Feed the Humanoid this script is attached to, then remove their food and attach poisonScript
+if hungryHumanoid and hungryHumanoid:IsA("Humanoid") and hungryHumanoid.Parent then
+	local food = hungryHumanoid.Parent:FindFirstChild("Food")
+	local eatAnimTrack = hungryHumanoid:LoadAnimation(eatAnimation)
+	if eatAnimTrack then eatAnimTrack:Play() end
+	
+	wait(2.2) -- Nom nom nom
+	if food then food:Destroy() end
+end
+wait(20)
+script:Destroy()
+]]></ProtectedString>
+					</Properties>
+					<Item class="Animation" referent="RBX5">
+						<Properties>
+							<Content name="AnimationId"><url>http://www.roblox.com/Asset?ID=107456513</url></Content>
+							<string name="Name">EatAnimation</string>
+						</Properties>
+					</Item>
+				</Item>
+				<Item class="LocalScript" referent="RBX6">
+					<Properties>
+						<bool name="Disabled">true</bool>
+						<Content name="LinkedSource"><null></null></Content>
+						<string name="Name">TextSpammer</string>
+						<string name="ScriptGuid"></string>
+						<ProtectedString name="Source"><![CDATA[--[[local oldMessages = 
+{
+	"IT'S A LIE",
+	"YOU'LL NEVER MAKE IT",
+	"YOU'RE JUST LIKE EVERYONE ELSE",
+	"I DIDN'T EVEN BAKE IT",
+	"YOU'RE WASTING YOUR TIME",
+	"YOU NEVER APPRECIATE ME",
+	"IT'S TOO LATE",
+}--]]
+
+
+local Messages = 
+{
+	"REPOST FOR FREE BC",
+	"PLZ DONATE",
+	"IM SUCH A HAXOR",
+	"PLAY MY ESCAPE THE OBBY FOR FREE VIP/ADMIN",
+	"WHAT A NOOB",
+	"THIS IS SO EPIC!!",
+	"F1RST",
+	"WHY U SO MAD BRO",
+	"YOLO",
+}
+
+local StartPositions =
+{
+	function() return UDim2.new(1,0,math.random(),0),'Right' end,
+	function() return UDim2.new(-1,0,math.random(),0),'Left' end,
+	function() return UDim2.new(math.random(),0,1,0),'Right' end,
+	function() return UDim2.new(math.random(),0,-1,0),'Left' end,
+}
+Game:GetService("ContentProvider"):Preload("http://www.roblox.com/asset/?id=107450062")
+local TalkSound = Instance.new('Sound')
+TalkSound.SoundId = 'http://www.roblox.com/asset/?id=107450062'
+TalkSound.Parent = script.Parent
+wait(1)
+TalkSound:Play()
+
+--game.Debris:AddItem(TalkSound,
+
+local TemplateText = Instance.new('TextLabel')
+TemplateText.Font = 'ArialBold'
+TemplateText.FontSize = 'Size48'
+TemplateText.TextXAlignment = 'Left'
+TemplateText.TextYAlignment = 'Top'
+
+local spawnedAll = false
+
+for i=1,400,1 do
+	Spawn(function()
+		local text = TemplateText:Clone()
+		text.Position, text.TextXAlignment = StartPositions[math.random(1,4)]()
+		text.Text = Messages[math.random(#Messages)]
+		if math.random(1,20)==1 then
+			text.TextColor3 = Color3.new(1,1,1   )
+			text.ZIndex = 2
+		end
+		text.Parent = script.Parent
+		text:TweenPosition(UDim2.new((math.random()*.6)+.2,0,math.random(),0), "Out", "Quad", (math.random()*2)+1, true)
+		while not spawnedAll do wait() end
+		wait(3)
+		for i = 1, 20,1 do
+			text.TextTransparency = text.TextTransparency+(1/20)
+			wait(1/20)
+		end
+	end)
+		wait((math.random()+.1)/30)
+end
+spawnedAll=true
+wait(3)
+for i = 1, 20,1 do
+	TalkSound.Volume = TalkSound.Volume-(.5*(1/20))
+	wait(1/20)
+end
+wait(10)
+TalkSound:Destroy()
+script.Parent:Destroy()
+
+]]></ProtectedString>
+					</Properties>
+				</Item>
+			</Item>
+			<Item class="Script" referent="RBX7">
+				<Properties>
+					<bool name="Disabled">true</bool>
+					<Content name="LinkedSource"><null></null></Content>
+					<string name="Name">SelfDestruct</string>
+					<string name="ScriptGuid"></string>
+					<ProtectedString name="Source"><![CDATA[-- Calls Destroy on this script's Parent after TimeToLive
+while not script:FindFirstChild("TimeToLive") do wait() end -- Irony
+wait(script.TimeToLive.Value)
+if script.Parent then script.Parent:Destroy() end
+]]></ProtectedString>
+				</Properties>
+				<Item class="NumberValue" referent="RBX8">
+					<Properties>
+						<string name="Name">TimeToLive</string>
+						<double name="Value">30</double>
+					</Properties>
+				</Item>
+			</Item>
+			<Item class="Sound" referent="RBX9">
+				<Properties>
+					<float name="EmitterSize">10</float>
+					<bool name="Looped">false</bool>
+					<string name="Name">Throw</string>
+					<bool name="PlayOnRemove">false</bool>
+					<float name="PlaybackSpeed">1</float>
+					<bool name="Playing">false</bool>
+					<token name="RollOffMode">0</token>
+					<Ref name="SoundGroup">null</Ref>
+					<Content name="SoundId"><url>http://www.roblox.com/asset/?id=105943656</url></Content>
+					<double name="TimePosition">0</double>
+					<float name="Volume">0.5</float>
+					<float name="xmlRead_MaxDistance_3">10000</float>
+				</Properties>
+			</Item>
+		</Item>
+		<Item class="Script" referent="RBX10">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">ThrowingTool</string>
+				<string name="ScriptGuid"></string>
+				<ProtectedString name="Source"><![CDATA[local COOLDOWN = 0.75 -- Seconds until another can be thrown
+local TIME_TO_LIVE = 10 -- Seconds until each old one is destroyed
+local THROW_SPEED = 100
+
+-- Waits for parent.child to exist, then returns it
+local function WaitForChild(parent, childName)
+	assert(parent, "ERROR: WaitForChild: parent is nil")
+	while not parent:FindFirstChild(childName) do parent.ChildAdded:wait() end
+	return parent[childName]
+end
+
+local PlayersService = Game:GetService('Players')
+local DebrisService = Game:GetService('Debris')
+
+local Tool = script.Parent
+local ToolHandle = Tool.Handle
+
+local ThrowSound = WaitForChild(ToolHandle, 'Throw')
+
+--[[
+-- {PoisonApple, PoisonCake, PoisonPorkChop}
+local BaseIdUrl = 'http://www.roblox.com/asset/?id='
+local IconIds = {'87862872', '87863072', '87871704'}
+local MeshIds = {'87862943', '87863104', '87863169'}
+local TextureIds = {'87862921', '87863090', '87863148'}
+local HandleSizes = {Vector3.new(1.2, 1.2, 1.2), Vector3.new(1.08, 1.11, 1.14), Vector3.new(0.45, 1.82, 1.33)}
+--]]
+
+local MyModel = nil
+local MyPlayer = nil
+
+local function OnEquipped()
+	MyModel = Tool.Parent
+	MyPlayer = PlayersService:GetPlayerFromCharacter(MyModel)
+end
+
+local function OnActivated()
+	if not MyModel or not MyModel:FindFirstChild('Humanoid') or not Tool.Enabled then return end
+	Tool.Enabled = false
+	ToolHandle.Transparency = 1
+
+	ThrowSound:Play()
+
+	local handleClone = ToolHandle:Clone()
+	DebrisService:AddItem(handleClone, 30)
+	handleClone.Velocity = (MyModel.Humanoid.TargetPoint - ToolHandle.CFrame.p).unit * THROW_SPEED
+	handleClone.Name = 'Food'
+	handleClone.Parent = Workspace
+	handleClone.Transparency = 0
+	handleClone.CanCollide = true
+	Instance.new('BodyGyro', handleClone) -- Keeps it upright
+	local selfDestructScript = handleClone:FindFirstChild('SelfDestruct')
+	if selfDestructScript and selfDestructScript:FindFirstChild('TimeToLive') then
+		selfDestructScript.TimeToLive.Value = TIME_TO_LIVE
+		selfDestructScript.Disabled = false
+	end
+	local foodScript = handleClone:FindFirstChild('PoisonedFood')
+	if foodScript then
+		local creator = Instance.new('ObjectValue', foodScript)
+		creator.Name = 'Creator'
+		creator.Value = MyPlayer
+		foodScript.Disabled = false
+	end
+
+	--[[ Load new item (while we wait)
+	local index = math.random(3)
+	ToolHandle.Mesh.MeshId = BaseIdUrl .. MeshIds[index]
+	ToolHandle.Mesh.TextureId = BaseIdUrl .. TextureIds[index]
+	ToolHandle.Size = HandleSizes[index] -- This breaks the weld
+	MyWeld.Parent = Game.JointsService -- Fix the weld
+	Tool.TextureId = BaseIdUrl .. IconIds[index] -- Change the tool icon
+	--]]
+
+	wait(COOLDOWN)
+
+	ToolHandle.Transparency = 0
+	Tool.Enabled = true
+end
+
+local function OnUnequipped()
+	ToolHandle.Transparency = 0
+end
+
+Tool.Equipped:connect(OnEquipped)
+Tool.Activated:connect(OnActivated)
+Tool.Unequipped:connect(OnUnequipped)
+]]></ProtectedString>
+			</Properties>
+		</Item>
+		<Item class="LocalScript" referent="RBX11">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">MouseIcon</string>
+				<string name="ScriptGuid"></string>
+				<ProtectedString name="Source"><![CDATA[local MOUSE_ICON = 'rbxasset://textures/GunCursor.png'
+local RELOADING_ICON = 'rbxasset://textures/GunWaitCursor.png'
+
+local Tool = script.Parent
+
+local Mouse = nil
+
+local function UpdateIcon()
+	if Mouse then
+		Mouse.Icon = Tool.Enabled and MOUSE_ICON or RELOADING_ICON
+	end
+end
+
+local function OnEquipped(mouse)
+	Mouse = mouse
+	UpdateIcon()
+end
+
+local function OnChanged(property)
+	if property == 'Enabled' then
+		UpdateIcon()
+	end
+end
+
+Tool.Equipped:connect(OnEquipped)
+Tool.Changed:connect(OnChanged)
+]]></ProtectedString>
+			</Properties>
+		</Item>
+		<Item class="Camera" referent="RBX12">
+			<Properties>
+				<CoordinateFrame name="CFrame">
+					<X>0.601464272</X>
+					<Y>0.717151165</Y>
+					<Z>-1.08813715</Z>
+					<R00>-0.724173009</R00>
+					<R01>-0.316295028</R01>
+					<R02>0.612805724</R02>
+					<R10>1.4901163e-008</R10>
+					<R11>0.888615727</R11>
+					<R12>0.458652288</R12>
+					<R20>-0.689618349</R20>
+					<R21>0.332143605</R21>
+					<R22>-0.643511534</R22>
+				</CoordinateFrame>
+				<Ref name="CameraSubject">null</Ref>
+				<token name="CameraType">0</token>
+				<float name="FieldOfView">70</float>
+				<CoordinateFrame name="Focus">
+					<X>-0.330000043</X>
+					<Y>0.0200000107</Y>
+					<Z>-0.110000014</Z>
+					<R00>1</R00>
+					<R01>0</R01>
+					<R02>0</R02>
+					<R10>0</R10>
+					<R11>1</R11>
+					<R12>0</R12>
+					<R20>0</R20>
+					<R21>0</R21>
+					<R22>1</R22>
+				</CoordinateFrame>
+				<bool name="HeadLocked">true</bool>
+				<float name="HeadScale">1</float>
+				<string name="Name">ThumbnailCamera</string>
+			</Properties>
+		</Item>
+	</Item>
+</roblox>

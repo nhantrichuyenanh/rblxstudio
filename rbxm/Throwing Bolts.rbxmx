@@ -1,0 +1,417 @@
+<roblox xmlns:xmime="http://www.w3.org/2005/05/xmlmime" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.roblox.com/roblox.xsd" version="4">
+	<External>null</External>
+	<External>nil</External>
+	<Item class="Tool" referent="RBXCF6B0CA585FD4227A3A4E866EC5F5670">
+		<Properties>
+			<bool name="CanBeDropped">true</bool>
+			<bool name="Enabled">true</bool>
+			<CoordinateFrame name="Grip">
+				<X>0</X>
+				<Y>0</Y>
+				<Z>0</Z>
+				<R00>1</R00>
+				<R01>0</R01>
+				<R02>0</R02>
+				<R10>0</R10>
+				<R11>1</R11>
+				<R12>0</R12>
+				<R20>0</R20>
+				<R21>0</R21>
+				<R22>1</R22>
+			</CoordinateFrame>
+			<bool name="ManualActivationOnly">false</bool>
+			<string name="Name">ThrowableBolts</string>
+			<bool name="RequiresHandle">true</bool>
+			<BinaryString name="Tags"></BinaryString>
+			<Content name="TextureId"><url>rbxassetid://1450707863</url></Content>
+			<string name="ToolTip"></string>
+		</Properties>
+		<Item class="Script" referent="RBX6AD9DE8A9E9B4E8BAD77E06C6A6FF9B3">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">Script</string>
+				<string name="ScriptGuid">{EBF2A026-9734-4BE6-A3AD-A3F329D8BABF}</string>
+				<ProtectedString name="Source"><![CDATA[-- // Created by StarWars
+local Debris = game:GetService("Debris")
+local RunService = game:GetService("RunService")
+
+local GearService = require(1075123174)
+
+local BASE_URL = "rbxassetid://"
+local THROW_SPEED = 50
+local BASE_DAMAGE = 10
+local TIME_OUT = 30
+local RELOAD_TIME = 1
+
+local BasePart = Instance.new("Part")
+BasePart.Anchored = false
+BasePart.CanCollide = false
+BasePart.Size = Vector3.new(0.2, 0.2, 0.2)
+
+local BaseQuiver = BasePart:Clone()
+BaseQuiver.Name = "Quiver"
+
+local BaseBlot = BasePart:Clone()
+BaseBlot.Name = "Bolt"
+BaseBlot.Anchored = true
+
+local BaseMesh = Instance.new("SpecialMesh")
+
+local BaseLightningParticle = script.ParticleEmitter
+
+local BaseQuiverMesh = BaseMesh:Clone()
+BaseQuiverMesh.TextureId = BASE_URL .. 1450707336
+BaseQuiverMesh.MeshId = BASE_URL .. 1450702804
+BaseQuiverMesh.Offset = Vector3.new(-0.5, 1, 0.2)
+BaseQuiverMesh.Parent = BaseQuiver
+
+local BaseBoltMesh = BaseMesh:Clone()
+BaseBoltMesh.TextureId = BASE_URL .. 1450707601
+BaseBoltMesh.MeshId = BASE_URL .. 1450702331
+BaseBoltMesh.Parent = BaseBlot
+
+local Tool = script.Parent
+Tool.RequiresHandle = false
+
+local Handle = Tool:FindFirstChild("Handle")
+if Handle then
+	Handle:Destroy()
+end
+
+local Gear = GearService:BindGear(Tool)
+Gear:SetupRemoteFunctions()
+Gear:SetupLocalScript("MouseIcon")
+
+local FlyingBolts = {}
+
+local Animations = {
+	BoltThrow = {Animation = Tool.Animations.R6.Throw},
+	R15BoltThrow = {Animation = Tool.Animations.R15.Throw}
+}
+
+local CurrentQuiver = nil
+
+function InvokeClient(Mode, Value)
+	local Result = nil
+	pcall(function()
+		Result = Gear.ClientControls:InvokeClient(Gear.Player, Mode, Value)
+	end)
+	
+	return Result
+end
+
+function EquipQuiver()
+	if Gear:IsPlayerAlive() then
+		CurrentQuiver = BaseQuiver:Clone()
+		
+		local BodyBackAttachment = Gear.Character:FindFirstChild("BodyBackAttachment", true)
+		if BodyBackAttachment then
+			CurrentQuiver.Parent = Gear.Character
+			local NewMotor = Instance.new("Motor6D")
+			NewMotor.Name = "QuiverJoint"
+			NewMotor.Part0 = CurrentQuiver
+			NewMotor.Part1 = BodyBackAttachment.Parent
+			NewMotor.C1 = BodyBackAttachment.CFrame
+			NewMotor.Parent = CurrentQuiver
+		end	
+	end
+end
+
+function ThrowBolt()
+	local MouseData = InvokeClient("GetMouseData")
+	
+	if MouseData then
+		local Animation = Animations.BoltThrow
+		if Gear.Humanoid and Gear.Humanoid.RigType == Enum.HumanoidRigType.R15 then
+			Animation = Animations.R15BoltThrow
+		end
+		InvokeClient("PlayAnimation", Animation)
+		wait(0.25)
+		local NewBolt = BaseBlot:Clone()
+		local Direction = (MouseData.Position - Gear.RootPart.CFrame.p).Unit
+		local StartCFrame = Gear.RootPart.CFrame * CFrame.new(1.5, 0, -2)
+		local Velocity = Direction * THROW_SPEED
+		
+		FlyingBolts[NewBolt] = {Position = CFrame.new(StartCFrame.p, StartCFrame.p + Direction), Velocity = Velocity, Direction = Direction, Part = NewBolt, StartTime = tick()}
+		NewBolt.CFrame = CFrame.new(StartCFrame.p, StartCFrame.p + Direction)
+		NewBolt.Parent = workspace
+	end
+end
+
+Gear:BindEquippedFunction("blot_equipped", EquipQuiver)
+
+Gear:BindUnequippedFunction("blot_unequipped", function()
+	if CurrentQuiver then
+		CurrentQuiver:Destroy()
+	end
+	
+	CurrentQuiver = nil
+end)
+
+Gear:BindActivateFunction("blot_activate", function()
+	ThrowBolt()
+	
+	wait(RELOAD_TIME)
+end)
+
+RunService.Heartbeat:Connect(function(Step)
+	local Now = tick()
+	
+	for Key, Bolt in next, FlyingBolts do
+		local StepVector = Bolt.Velocity * Step
+		local NewPoint = Bolt.Position.p + StepVector
+		local NewRay = Ray.new(Bolt.Position.p, (Bolt.Position.p - NewPoint).Unit)
+		
+		local Orientation = Bolt.Position - Bolt.Position.p
+		Bolt.Part.CFrame = CFrame.new(NewPoint) * Orientation		 
+		
+		local Hit, Endpoint = workspace:FindPartOnRayWithIgnoreList(NewRay, {Gear.Character})
+		if Hit and Hit.Parent then
+			local ParentTo = Hit.Parent
+			if ParentTo:IsA("Tool") or ParentTo:IsA("Accessory") then
+				ParentTo = ParentTo.Parent
+			end
+			
+			local HitHumanoid = ParentTo:FindFirstChildOfClass("Humanoid")
+			if HitHumanoid then
+				local CacheSpeed = HitHumanoid.WalkSpeed
+				HitHumanoid:TakeDamage(BASE_DAMAGE)
+				
+				local NewParticle = BaseLightningParticle:Clone()
+				NewParticle.Parent = HitHumanoid.RootPart
+				NewParticle.Enabled = true	
+				HitHumanoid.WalkSpeed = 0
+				delay(3, function()
+					if HitHumanoid then
+						HitHumanoid.WalkSpeed = CacheSpeed
+					end
+				end)
+				
+				Debris:AddItem(NewParticle, 3)			
+			end
+
+			Bolt.Part:Destroy()
+			FlyingBolts[Key] = nil
+		elseif Now - Bolt.StartTime >= TIME_OUT then
+			Bolt.Part:Destroy()
+			FlyingBolts[Key] = nil
+		elseif Bolt.Position.Y < workspace.FallenPartsDestroyHeight then
+			Bolt.Part:Destroy()
+			FlyingBolts[Key] = nil
+		end
+		
+		Bolt.Position = CFrame.new(NewPoint) * Orientation
+	end
+end)]]></ProtectedString>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+			<Item class="ParticleEmitter" referent="RBX7742311DB319437A8866460F03114366">
+				<Properties>
+					<Vector3 name="Acceleration">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+					</Vector3>
+					<ColorSequence name="Color">0 1 1 1 0 1 1 1 1 0 </ColorSequence>
+					<float name="Drag">0</float>
+					<token name="EmissionDirection">1</token>
+					<bool name="Enabled">false</bool>
+					<NumberRange name="Lifetime">1 2 </NumberRange>
+					<float name="LightEmission">1</float>
+					<float name="LightInfluence">0</float>
+					<bool name="LockedToPart">false</bool>
+					<string name="Name">ParticleEmitter</string>
+					<float name="Rate">2</float>
+					<NumberRange name="RotSpeed">-5 5 </NumberRange>
+					<NumberRange name="Rotation">20 40 </NumberRange>
+					<NumberSequence name="Size">0 1 0 1 1 0 </NumberSequence>
+					<NumberRange name="Speed">2 2 </NumberRange>
+					<Vector2 name="SpreadAngle">
+						<X>-45</X>
+						<Y>45</Y>
+					</Vector2>
+					<BinaryString name="Tags"></BinaryString>
+					<Content name="Texture"><url>rbxassetid://1482871224</url></Content>
+					<NumberSequence name="Transparency">0 0 0 1 1 0 </NumberSequence>
+					<float name="VelocityInheritance">0</float>
+					<float name="ZOffset">0</float>
+				</Properties>
+			</Item>
+		</Item>
+		<Item class="MeshPart" referent="RBX275F48BFB2DD4B63BAC2B73E43DADFA2">
+			<Properties>
+				<bool name="Anchored">false</bool>
+				<float name="BackParamA">-0.5</float>
+				<float name="BackParamB">0.5</float>
+				<token name="BackSurface">0</token>
+				<token name="BackSurfaceInput">0</token>
+				<float name="BottomParamA">-0.5</float>
+				<float name="BottomParamB">0.5</float>
+				<token name="BottomSurface">0</token>
+				<token name="BottomSurfaceInput">0</token>
+				<CoordinateFrame name="CFrame">
+					<X>0.0258050002</X>
+					<Y>1.09122503</Y>
+					<Z>-1.20351005</Z>
+					<R00>0</R00>
+					<R01>1</R01>
+					<R02>0</R02>
+					<R10>0</R10>
+					<R11>0</R11>
+					<R12>1</R12>
+					<R20>1</R20>
+					<R21>0</R21>
+					<R22>0</R22>
+				</CoordinateFrame>
+				<bool name="CanCollide">true</bool>
+				<token name="CollisionFidelity">0</token>
+				<int name="CollisionGroupId">0</int>
+				<Color3uint8 name="Color3uint8">4288914085</Color3uint8>
+				<PhysicalProperties name="CustomPhysicalProperties">
+					<CustomPhysics>false</CustomPhysics>
+				</PhysicalProperties>
+				<float name="Elasticity">0.5</float>
+				<float name="Friction">0.300000012</float>
+				<float name="FrontParamA">-0.5</float>
+				<float name="FrontParamB">0.5</float>
+				<token name="FrontSurface">0</token>
+				<token name="FrontSurfaceInput">0</token>
+				<Vector3 name="InitialSize">
+					<X>0.148389995</X>
+					<Y>0.60245049</Y>
+					<Z>2.64701509</Z>
+				</Vector3>
+				<float name="LeftParamA">-0.5</float>
+				<float name="LeftParamB">0.5</float>
+				<token name="LeftSurface">0</token>
+				<token name="LeftSurfaceInput">0</token>
+				<bool name="Locked">false</bool>
+				<token name="Material">256</token>
+				<Content name="MeshID"><url>rbxassetid://1450702331</url></Content>
+				<Content name="MeshId"><url>rbxassetid://1450702331</url></Content>
+				<string name="Name">Handle</string>
+				<BinaryString name="PhysicsData">Q1NHSzVlNWRmZmVmOWM1MmYxNDdlNmU4OGVlYmE2NTMyZjIx</BinaryString>
+				<float name="Reflectance">0</float>
+				<float name="RightParamA">-0.5</float>
+				<float name="RightParamB">0.5</float>
+				<token name="RightSurface">0</token>
+				<token name="RightSurfaceInput">0</token>
+				<Vector3 name="RotVelocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<BinaryString name="Tags"></BinaryString>
+				<Content name="TextureID"><url>rbxassetid://1450707601</url></Content>
+				<float name="TopParamA">-0.5</float>
+				<float name="TopParamB">0.5</float>
+				<token name="TopSurface">0</token>
+				<token name="TopSurfaceInput">0</token>
+				<float name="Transparency">0</float>
+				<Vector3 name="Velocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<Vector3 name="size">
+					<X>0.148389995</X>
+					<Y>0.60245049</Y>
+					<Z>2.64701509</Z>
+				</Vector3>
+			</Properties>
+			<Item class="Attachment" referent="RBXE0D2A63BBC6F46A1A572A983B440753F">
+				<Properties>
+					<CoordinateFrame name="CFrame">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>1</Z>
+						<R00>1</R00>
+						<R01>0</R01>
+						<R02>-0</R02>
+						<R10>0</R10>
+						<R11>0</R11>
+						<R12>1</R12>
+						<R20>0</R20>
+						<R21>-1</R21>
+						<R22>0</R22>
+					</CoordinateFrame>
+					<string name="Name">RightGripAttachment</string>
+					<BinaryString name="Tags"></BinaryString>
+					<bool name="Visible">false</bool>
+				</Properties>
+			</Item>
+		</Item>
+		<Item class="Folder" referent="RBXDD7A10D779AC4D978CE8FAAA38A63C45">
+			<Properties>
+				<string name="Name">Animations</string>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+			<Item class="Folder" referent="RBX9335B93B0CA945DB8B1267A72428047E">
+				<Properties>
+					<string name="Name">R15</string>
+					<BinaryString name="Tags"></BinaryString>
+				</Properties>
+				<Item class="Animation" referent="RBXDBC562E66D764CB3A900BA5F8E5F0673">
+					<Properties>
+						<Content name="AnimationId"><url>rbxassetid://1482875572</url></Content>
+						<string name="Name">Throw</string>
+						<BinaryString name="Tags"></BinaryString>
+					</Properties>
+				</Item>
+			</Item>
+			<Item class="Folder" referent="RBX6DFE35CE5C7D49AEB0807DBC6F7BC8D9">
+				<Properties>
+					<string name="Name">R6</string>
+					<BinaryString name="Tags"></BinaryString>
+				</Properties>
+				<Item class="Animation" referent="RBXEE21EDB0E1154E4FA4D5D73499E520DD">
+					<Properties>
+						<Content name="AnimationId"><url>rbxassetid://1482878249</url></Content>
+						<string name="Name">Throw</string>
+						<BinaryString name="Tags"></BinaryString>
+					</Properties>
+				</Item>
+			</Item>
+		</Item>
+		<Item class="Camera" referent="RBXB0A8E8458679400D971FF11FCAF9E685">
+			<Properties>
+				<CoordinateFrame name="CFrame">
+					<X>1.26534128</X>
+					<Y>1.26987326</Y>
+					<Z>0.352250457</Z>
+					<R00>0.783358812</R00>
+					<R01>-0.0545253865</R01>
+					<R02>0.619173646</R02>
+					<R10>-3.72529074e-09</R10>
+					<R11>0.99614501</R11>
+					<R12>0.0877220631</R12>
+					<R20>-0.621569872</R20>
+					<R21>-0.0687178522</R21>
+					<R22>0.780338883</R22>
+				</CoordinateFrame>
+				<Ref name="CameraSubject">null</Ref>
+				<token name="CameraType">0</token>
+				<float name="FieldOfView">70</float>
+				<CoordinateFrame name="Focus">
+					<X>0.0269940197</X>
+					<Y>1.09442914</Y>
+					<Z>-1.20842731</Z>
+					<R00>1</R00>
+					<R01>0</R01>
+					<R02>0</R02>
+					<R10>0</R10>
+					<R11>1</R11>
+					<R12>0</R12>
+					<R20>0</R20>
+					<R21>0</R21>
+					<R22>1</R22>
+				</CoordinateFrame>
+				<bool name="HeadLocked">true</bool>
+				<float name="HeadScale">1</float>
+				<string name="Name">ThumbnailCamera</string>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+		</Item>
+	</Item>
+</roblox>

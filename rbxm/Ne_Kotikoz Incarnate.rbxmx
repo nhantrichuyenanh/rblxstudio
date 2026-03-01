@@ -1,0 +1,523 @@
+<roblox xmlns:xmime="http://www.w3.org/2005/05/xmlmime" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.roblox.com/roblox.xsd" version="4">
+	<External>null</External>
+	<External>nil</External>
+	<Item class="Tool" referent="RBXF1700D6211984819A99A0D2443C3F5CA">
+		<Properties>
+			<bool name="CanBeDropped">true</bool>
+			<bool name="Enabled">true</bool>
+			<CoordinateFrame name="Grip">
+				<X>0.300000012</X>
+				<Y>0</Y>
+				<Z>-1.20000005</Z>
+				<R00>1</R00>
+				<R01>0</R01>
+				<R02>0</R02>
+				<R10>0</R10>
+				<R11>0</R11>
+				<R12>-1</R12>
+				<R20>0</R20>
+				<R21>1</R21>
+				<R22>0</R22>
+			</CoordinateFrame>
+			<bool name="ManualActivationOnly">false</bool>
+			<string name="Name">AlienDoll</string>
+			<bool name="RequiresHandle">true</bool>
+			<BinaryString name="Tags"></BinaryString>
+			<Content name="TextureId"><url>http://www.roblox.com/asset/?id=61364777 </url></Content>
+			<string name="ToolTip"></string>
+		</Properties>
+		<Item class="Part" referent="RBX50FA4C76EF6E4AE8A6B4842E9F1F763E">
+			<Properties>
+				<bool name="Anchored">false</bool>
+				<float name="BackParamA">-0.5</float>
+				<float name="BackParamB">0.5</float>
+				<token name="BackSurface">0</token>
+				<token name="BackSurfaceInput">0</token>
+				<float name="BottomParamA">-0.5</float>
+				<float name="BottomParamB">0.5</float>
+				<token name="BottomSurface">4</token>
+				<token name="BottomSurfaceInput">0</token>
+				<CoordinateFrame name="CFrame">
+					<X>1.20000196</X>
+					<Y>5.60000801</Y>
+					<Z>-1.19999802</Z>
+					<R00>1</R00>
+					<R01>1.62063088e-06</R01>
+					<R02>1.71809234e-11</R02>
+					<R10>-6.34475849e-12</R10>
+					<R11>8.16583633e-06</R11>
+					<R12>1.00000203</R12>
+					<R20>1.62061599e-06</R20>
+					<R21>-1.0000006</R21>
+					<R22>-2.5331974e-07</R22>
+				</CoordinateFrame>
+				<bool name="CanCollide">true</bool>
+				<int name="CollisionGroupId">0</int>
+				<Color3uint8 name="Color3uint8">4288914085</Color3uint8>
+				<PhysicalProperties name="CustomPhysicalProperties">
+					<CustomPhysics>false</CustomPhysics>
+				</PhysicalProperties>
+				<float name="Elasticity">0.5</float>
+				<float name="Friction">0.300000012</float>
+				<float name="FrontParamA">-0.5</float>
+				<float name="FrontParamB">0.5</float>
+				<token name="FrontSurface">0</token>
+				<token name="FrontSurfaceInput">0</token>
+				<float name="LeftParamA">-0.5</float>
+				<float name="LeftParamB">0.5</float>
+				<token name="LeftSurface">0</token>
+				<token name="LeftSurfaceInput">0</token>
+				<bool name="Locked">false</bool>
+				<token name="Material">256</token>
+				<string name="Name">Handle</string>
+				<float name="Reflectance">0</float>
+				<float name="RightParamA">-0.5</float>
+				<float name="RightParamB">0.5</float>
+				<token name="RightSurface">0</token>
+				<token name="RightSurfaceInput">0</token>
+				<Vector3 name="RotVelocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<BinaryString name="Tags"></BinaryString>
+				<float name="TopParamA">-0.5</float>
+				<float name="TopParamB">0.5</float>
+				<token name="TopSurface">3</token>
+				<token name="TopSurfaceInput">0</token>
+				<float name="Transparency">0</float>
+				<Vector3 name="Velocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<token name="formFactorRaw">3</token>
+				<token name="shape">1</token>
+				<Vector3 name="size">
+					<X>1.46999943</X>
+					<Y>0.710000157</Y>
+					<Z>2.67000365</Z>
+				</Vector3>
+			</Properties>
+			<Item class="SpecialMesh" referent="RBX904B9409C9154139A12548A2E56C8D73">
+				<Properties>
+					<token name="LODX">2</token>
+					<token name="LODY">2</token>
+					<Content name="MeshId"><url>http://www.roblox.com/asset/?id=61365567 </url></Content>
+					<token name="MeshType">5</token>
+					<string name="Name">Mesh</string>
+					<Vector3 name="Offset">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+					</Vector3>
+					<Vector3 name="Scale">
+						<X>1</X>
+						<Y>1</Y>
+						<Z>1</Z>
+					</Vector3>
+					<BinaryString name="Tags"></BinaryString>
+					<Content name="TextureId"><url>http://www.roblox.com/asset/?id=61365531 </url></Content>
+					<Vector3 name="VertexColor">
+						<X>1</X>
+						<Y>1</Y>
+						<Z>1</Z>
+					</Vector3>
+				</Properties>
+			</Item>
+			<Item class="Attachment" referent="RBX35B312A1B26E4D8981849A9D40253F5A">
+				<Properties>
+					<CoordinateFrame name="CFrame">
+						<X>0.299999952</X>
+						<Y>0</Y>
+						<Z>-1.19999993</Z>
+						<R00>1</R00>
+						<R01>0</R01>
+						<R02>6.31088724e-30</R02>
+						<R10>6.31088724e-30</R10>
+						<R11>0</R11>
+						<R12>-1</R12>
+						<R20>0</R20>
+						<R21>1</R21>
+						<R22>0</R22>
+					</CoordinateFrame>
+					<string name="Name">RightGripAttachment</string>
+					<BinaryString name="Tags"></BinaryString>
+					<bool name="Visible">false</bool>
+				</Properties>
+			</Item>
+		</Item>
+		<Item class="LocalScript" referent="RBXE27BF17FE18E408DA3F1FB6215569DE0">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">Local Gui</string>
+				<string name="ScriptGuid">{2E525986-1545-43F8-B05B-82EA2C85AD40}</string>
+				<ProtectedString name="Source"><![CDATA[Tool = script.Parent
+
+local stillEquipped = false
+
+function onEquippedLocal(mouse)
+	stillEquipped = true
+	if mouse == nil then 
+		print("Mouse not found")
+		return
+	end
+	while stillEquipped do 
+		print("Setting Mouse to go")
+		mouse.Icon = "rbxasset://textures\\GunCursor.png"
+		while Tool.Enabled and stillEquipped do 
+			wait(0.01)
+		end
+		print("Setting Mouse to wait")
+		mouse.Icon = "rbxasset://textures\\GunWaitCursor.png"
+		while not Tool.Enabled and stillEquipped do 
+			wait(0.01)
+		end	
+	end
+end
+
+
+function onUnequippedLocal()
+	stillEquipped = false
+end
+
+Tool.Equipped:connect(onEquippedLocal)
+Tool.Unequipped:connect(onUnequippedLocal)]]></ProtectedString>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+		</Item>
+		<Item class="Script" referent="RBXB2B84C6B24A94889BAA55CDF06F65716">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">DollScript</string>
+				<string name="ScriptGuid">{7D9A8EFE-59DF-4B8A-A21D-2CD1B2429110}</string>
+				<ProtectedString name="Source"><![CDATA[--[[
+	Fixed by ArceusInator.  Uses new spawning that works no matter where the player is.  Fixed teamkilling.
+--]]
+
+local Tool = script.Parent
+local Doll = Tool.Handle
+
+local GLib = require(206209239)
+
+local vCharacter
+local myHumanoid
+local myTorso
+
+Tool.Enabled = true 
+
+local dollClone
+local dollFire
+local dollModel
+
+local prevHealth = 100
+
+local connection
+
+local ray = Instance.new("Part")
+ray.FormFactor = 3
+ray.Shape = "Ball"
+ray.Size = Vector3.new(0.4, 0.4, 0.4)
+ray.CanCollide = false
+ray.Transparency = 0.0
+
+local bullet = Instance.new("SpecialMesh")
+bullet.MeshId = "http://www.roblox.com/asset/?id=57810032"
+bullet.TextureId = "http://www.roblox.com/asset/?id=57809568"
+bullet.Parent = ray
+bullet.Scale = Vector3.new(4, 4, 4)
+
+local debris = game:GetService("Debris")
+
+local shootSound
+local alienSound
+
+local attacking = false
+
+function follow()	
+	local stopped = false
+	local bv
+	if dollClone then bv = dollClone:FindFirstChild("FollowBV") end
+	while dollClone and dollModel and myTorso and bv do 
+		local distance = (myTorso.Position - dollClone.Position).magnitude
+		if distance > 5.0 then 	
+			stopped = false
+			dollClone.CFrame = CFrame.new(dollClone.Position, myTorso.Position + Vector3.new(0, dollClone.Position.Y - myTorso.Position.Y, 0))  * CFrame.Angles(-math.pi/2, 0, 0)
+			bv.Parent = dollClone
+			if distance > 8.0 then 
+				bv.velocity = (myTorso.Position - dollClone.Position).unit * 20.0 + Vector3.new(0, 2, 0)
+			else 
+				bv.velocity = (myTorso.Position - dollClone.Position).unit * 20.0 * (distance/24) + Vector3.new(0, 2, 0)
+			end
+		else 			
+			if not stopped then 
+				stopped = true
+				bv.velocity = Vector3.new(0, 0, 0)
+				dollClone.Velocity = Vector3.new(0, 0, 0)
+				bv.Parent = nil
+			end
+		end
+		wait()
+	end
+	Doll.Transparency = 0.0
+end
+
+function blow(ray, hit)
+	local owner, target = GLib.GetPlayerFromPart(script), GLib.GetPlayerFromPart(hit)
+	
+	if ray and hit and hit.Parent and hit.Parent ~= vCharacter and not GLib.IsTeammate(owner, target) then 
+		humanoid = hit.Parent:FindFirstChild("Humanoid")
+		if humanoid then 
+			humanoid:TakeDamage(30)
+			if myHumanoid and myHumanoid.Health + 5 <=  myHumanoid.MaxHealth then 
+				myHumanoid.Health = myHumanoid.Health + 5
+			end
+		end
+	end
+end
+
+function shoot(torso)
+	if dollClone == nil then return end
+	shootSound = Tool:FindFirstChild("ShootSound")
+	if shootSound then shootSound:Play() end
+	local direction = (torso.Position - dollClone.Position).unit 
+	
+	local spawnPos = dollClone.Position + direction * 3.0
+
+	local rayC = ray:Clone()
+	rayC.CFrame = CFrame.new(spawnPos, spawnPos + direction)
+	rayC.Velocity = direction * 50.0
+
+	local float = Instance.new("BodyForce")
+	float.force = Vector3.new(0, rayC:GetMass() * workspace.Gravity, 0)
+	float.Parent = rayC
+	
+	local fire = Instance.new("Fire")
+	fire.Parent = rayC
+	fire.Color = Color3.new(0, 153/255, 0)
+	fire.SecondaryColor = Color3.new(102/255, 51/255, 0)
+
+	rayC.Parent = game.Workspace
+
+	rayC.Touched:connect(function(hit) blow(rayC, hit) end)
+	debris:AddItem(rayC, 5.0)	
+end
+
+function attack()
+	if myHumanoid == nil then return end
+	if myHumanoid.Health < prevHealth and dollClone and not attacking then
+		prevHealth = myHumanoid.Health
+		local owner = GLib.GetPlayerFromPart(myHumanoid)
+		if owner then 
+			local playr = owner 
+			if playr:IsA("Player") then 
+				local character = playr.Character
+				if character and (character:FindFirstChild("Torso") or character:FindFirstChild("UpperTorso")) then 
+					attacking = true
+					local torso = character.Torso
+					print(1)
+					shoot(torso)					
+					attacking = false
+				end
+			end
+		end
+	end
+end
+
+function onActivated()
+	if Tool.Enabled == false then 
+		return 
+	end
+
+	vCharacter = Tool.Parent
+	myTorso = vCharacter:FindFirstChild("Torso") or vCharacter:FindFirstChild("UpperTorso")
+	myHumanoid = vCharacter:FindFirstChild("Humanoid")
+
+	connection = myHumanoid.HealthChanged:connect(attack)
+	
+	if myTorso == nil or myHumanoid == nil then 
+		return 
+	end
+
+	if dollClone == nil  then 
+
+		Tool.Enabled = false
+
+		alienSound = Tool:FindFirstChild("AlienSound")
+		if alienSound then alienSound:Play() end
+
+		dollModel = Instance.new("Model")
+		dollModel.Name = "DollModel"
+
+		dollClone = Doll:Clone()
+		dollClone.CanCollide = false 
+		dollClone.Parent = dollModel
+		dollClone.Name = "AlienVoodoo"
+		dollModel.Parent = vCharacter
+
+		Doll.Transparency = 1.0
+
+		dollFire = Instance.new("Fire")
+		dollFire.Parent  = dollClone
+		dollFire.Color = Color3.new(0, 153/255, 0)
+		dollFire.SecondaryColor = Color3.new(102/255, 51/255, 0)
+
+--		dollClone.CFrame = CFrame.Angles(0, math.pi/2, math.pi/2) * (myTorso.CFrame - myTorso.CFrame.lookVector * 3.0) + Vector3.new(0, 3, 0)
+--		dollClone.CFrame = dollClone.CFrame * CFrame.Angles(-math.pi/2, 0, 0)
+		dollClone.CFrame = myTorso.CFrame * CFrame.new(0, 20, 20) * CFrame.Angles(-math.pi/2, 0, 0)
+
+		local dollFloat = Instance.new("BodyForce")
+		dollFloat.Name = "DollFloat"
+		dollFloat.Parent = dollClone
+		dollFloat.force = Vector3.new(0, dollClone:GetMass() * 196, 0)	
+
+		local bv = Instance.new("BodyVelocity")
+		bv.Name = "FollowBV"
+		bv.Parent = dollClone
+		bv.maxForce = Vector3.new(50000, 50000, 50000)
+		bv.P = 50000
+		
+		dollCo = coroutine.create(follow)
+		coroutine.resume(dollCo)
+	else 
+		-- make the doll Attack
+		attack()
+	end
+
+	wait(2.0)
+	Tool.Enabled = true
+end
+
+function onEquipped()
+end
+
+function onUnequipped()
+	if dollClone then dollClone:Destroy() dollClone = nil end
+	if dollModel then dollModel:Destroy() dollModel = nil end	
+	Doll.Transparency = 0.0
+	if connection then connection:disconnect() end
+	if shootSound then shootSound:Stop() end
+end
+
+Tool.Activated:connect(onActivated)
+Tool.Equipped:connect(onEquipped)
+Tool.Unequipped:connect(onUnequipped)
+]]></ProtectedString>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+		</Item>
+		<Item class="LocalScript" referent="RBXDE7A2E9A82F94A7DA809C2F1CB8B39A4">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">DollLocalScript</string>
+				<string name="ScriptGuid">{28807EBD-537A-4DC9-B65A-22991F02DD81}</string>
+				<ProtectedString name="Source"><![CDATA[local Tool = script.Parent
+local Doll = Tool.Handle
+
+local vCharacter
+local myHumanoid
+
+function swap(key)
+	if key:lower() == "q" and myTorso then
+		local dollModel = vCharacter:FindFirstChild("DollModel")
+		local dollClone = vCharacter:FindFirstChild("AlienVoodoo")			
+		if dollClone then 
+			myTorso.CFrame = dollClone.CFrame
+			dollClone:Destroy() 
+		end
+		if dollModel then dollModel:Destroy() end
+	end
+end
+
+function onEquipped(mouse)
+	vCharacter = Tool.Parent
+	myHumanoid = vCharacter:FindFirstChild("Humanoid")
+	myTorso = vCharacter:FindFirstChild("Torso") or vCharacter:FindFirstChild("UpperTorso")
+	if mouse then 
+		mouse.KeyDown:connect(swap)
+	end
+end
+
+Tool.Equipped:connect(onEquipped)
+]]></ProtectedString>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+		</Item>
+		<Item class="Sound" referent="RBX920E8EEF3539447BA8F9616D04A41D22">
+			<Properties>
+				<float name="EmitterSize">10</float>
+				<bool name="Looped">false</bool>
+				<string name="Name">ShootSound</string>
+				<bool name="PlayOnRemove">false</bool>
+				<float name="PlaybackSpeed">2</float>
+				<bool name="Playing">false</bool>
+				<token name="RollOffMode">0</token>
+				<Ref name="SoundGroup">null</Ref>
+				<Content name="SoundId"><url>http://www.roblox.com/asset/?id=61425219 </url></Content>
+				<BinaryString name="Tags"></BinaryString>
+				<double name="TimePosition">0</double>
+				<float name="Volume">1</float>
+				<float name="xmlRead_MaxDistance_3">10000</float>
+			</Properties>
+		</Item>
+		<Item class="Sound" referent="RBXC3B7E726CD114A81A819EA0B1945AB96">
+			<Properties>
+				<float name="EmitterSize">10</float>
+				<bool name="Looped">false</bool>
+				<string name="Name">AlienSound</string>
+				<bool name="PlayOnRemove">false</bool>
+				<float name="PlaybackSpeed">2</float>
+				<bool name="Playing">false</bool>
+				<token name="RollOffMode">0</token>
+				<Ref name="SoundGroup">null</Ref>
+				<Content name="SoundId"><url>http://www.roblox.com/asset/?id=61453640 </url></Content>
+				<BinaryString name="Tags"></BinaryString>
+				<double name="TimePosition">0</double>
+				<float name="Volume">1</float>
+				<float name="xmlRead_MaxDistance_3">10000</float>
+			</Properties>
+		</Item>
+		<Item class="Camera" referent="RBXCCAEEA3E73A545039B66B8937C701D4F">
+			<Properties>
+				<CoordinateFrame name="CFrame">
+					<X>3.14065003</X>
+					<Y>6.12395954</Y>
+					<Z>-5.56243134</Z>
+					<R00>-0.913546562</R00>
+					<R01>-0.0446348898</R01>
+					<R02>0.404277623</R02>
+					<R10>3.7252903e-09</R10>
+					<R11>0.993960381</R11>
+					<R12>0.109739728</R12>
+					<R20>-0.406734139</R20>
+					<R21>0.100252353</R21>
+					<R22>-0.908029139</R22>
+				</CoordinateFrame>
+				<Ref name="CameraSubject">null</Ref>
+				<token name="CameraType">0</token>
+				<float name="FieldOfView">70</float>
+				<CoordinateFrame name="Focus">
+					<X>2.33209443</X>
+					<Y>5.90447998</Y>
+					<Z>-3.74637222</Z>
+					<R00>1</R00>
+					<R01>0</R01>
+					<R02>0</R02>
+					<R10>0</R10>
+					<R11>1</R11>
+					<R12>0</R12>
+					<R20>0</R20>
+					<R21>0</R21>
+					<R22>1</R22>
+				</CoordinateFrame>
+				<bool name="HeadLocked">true</bool>
+				<float name="HeadScale">1</float>
+				<string name="Name">ThumbnailCamera</string>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+		</Item>
+	</Item>
+</roblox>

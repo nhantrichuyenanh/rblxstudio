@@ -1,0 +1,847 @@
+<roblox xmlns:xmime="http://www.w3.org/2005/05/xmlmime" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.roblox.com/roblox.xsd" version="4">
+	<External>null</External>
+	<External>nil</External>
+	<Item class="Tool" referent="RBX06C0F3112D3742C4839D09BBC47C2A40">
+		<Properties>
+			<bool name="CanBeDropped">true</bool>
+			<bool name="Enabled">true</bool>
+			<CoordinateFrame name="Grip">
+				<X>0</X>
+				<Y>0</Y>
+				<Z>0</Z>
+				<R00>1</R00>
+				<R01>0</R01>
+				<R02>0</R02>
+				<R10>0</R10>
+				<R11>1</R11>
+				<R12>0</R12>
+				<R20>0</R20>
+				<R21>0</R21>
+				<R22>1</R22>
+			</CoordinateFrame>
+			<bool name="ManualActivationOnly">false</bool>
+			<string name="Name">SpeedySnowBoots</string>
+			<bool name="RequiresHandle">true</bool>
+			<BinaryString name="Tags"></BinaryString>
+			<Content name="TextureId"><url>rbxassetid://1230433596</url></Content>
+			<string name="ToolTip"></string>
+		</Properties>
+		<Item class="Script" referent="RBX0B8B1BC814AD4667A760A8BB9DEEAA78">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">Script</string>
+				<string name="ScriptGuid">{421A8EF3-82E0-4DA2-888A-331EE6416DCE}</string>
+				<ProtectedString name="Source"><![CDATA[Tool = script.Parent
+Handle = Tool:WaitForChild("Handle")
+
+Players = game:GetService("Players")
+Debris = game:GetService("Debris")
+
+SpeedBoostGui = script:WaitForChild("SpeedBoostGui")
+
+BasePart = Instance.new("Part")
+BasePart.Shape = Enum.PartType.Block
+BasePart.Material = Enum.Material.Plastic
+BasePart.TopSurface = Enum.SurfaceType.Smooth
+BasePart.BottomSurface = Enum.SurfaceType.Smooth
+BasePart.FormFactor = Enum.FormFactor.Custom
+BasePart.Size = Vector3.new(0.2, 0.2, 0.2)
+BasePart.CanCollide = true
+BasePart.Locked = true
+BasePart.Anchored = false
+
+SpeedBoost = {
+	MaxFuel = 100,
+	CurrentFuel = 100,
+	IncreaseRate = 0.25,
+	DecreaseRate = 0.5,
+	UsageRate = (1 / 30),
+	Regenerating = false,
+	Active = false
+}
+
+Gravity = workspace.Gravity
+
+Equipped = false
+
+ServerControl = (Tool:FindFirstChild("ServerControl") or Instance.new("RemoteFunction"))
+ServerControl.Name = "ServerControl"
+ServerControl.Parent = Tool
+
+ClientControl = (Tool:FindFirstChild("ClientControl") or Instance.new("RemoteFunction"))
+ClientControl.Name = "ClientControl"
+ClientControl.Parent = Tool
+
+Handle.Transparency = 0
+Tool.Enabled = true
+
+ServerControl.OnServerInvoke = (function(player, Mode, Value)
+	if player == Player then
+		if Mode == "MouseClick" and Value.Down then
+			Activated()
+		elseif Mode == "KeyPress" and Value.Key == "0" then
+			if Value.Down and not SpeedBoost.Active and SpeedBoost.CurrentFuel > (SpeedBoost.MaxFuel / 2) then
+				if Humanoid and Humanoid.Parent then
+					Humanoid.WalkSpeed = 32
+				end
+				SpeedBoost.Active = true
+				while Equipped and SpeedBoost.Active and SpeedBoost.CurrentFuel > 0 do
+					SpeedBoost.CurrentFuel = (SpeedBoost.CurrentFuel - SpeedBoost.DecreaseRate)
+					FuelDisplay.Size = UDim2.new((1 / (SpeedBoost.MaxFuel / SpeedBoost.CurrentFuel)), 0, 1, 0)
+					wait(SpeedBoost.Rate)
+				end
+				if Equipped and Humanoid and Humanoid.Parent then
+					Humanoid.WalkSpeed = 24
+				end
+				SpeedBoost.Active = false
+				SpeedBoost.CurrentFuel = ((SpeedBoost.CurrentFuel < 0 and 0) or SpeedBoost.CurrentFuel)
+				RegenerateFuel()
+			else
+				if Equipped and Humanoid and Humanoid.Parent then
+					Humanoid.WalkSpeed = 24
+				end
+				SpeedBoost.Active = false
+				RegenerateFuel()
+			end
+		end
+	end
+end)
+
+function InvokeClient(Mode, Value)
+	pcall(function()
+		local ClientReturn = ClientControl:InvokeClient(Player, Mode, Value)
+		return ClientReturn
+	end)
+end
+
+function RegenerateFuel()
+	Spawn(function()
+		if SpeedBoost.Regenerating then
+			return
+		end
+		while --[[Equipped and]] not SpeedBoost.Active and SpeedBoost.CurrentFuel < SpeedBoost.MaxFuel do
+			SpeedBoost.Regenerating = true
+			SpeedBoost.CurrentFuel = (SpeedBoost.CurrentFuel + SpeedBoost.IncreaseRate)
+			FuelDisplay.Size = UDim2.new((1 / (SpeedBoost.MaxFuel / SpeedBoost.CurrentFuel)), 0, 1, 0)
+			wait(SpeedBoost.UsageRate)
+		end
+		SpeedBoost.Regenerating = false
+		SpeedBoost.CurrentFuel = ((SpeedBoost.CurrentFuel > SpeedBoost.MaxFuel and SpeedBoost.MaxFuel) or SpeedBoost.CurrentFuel)
+	end)
+end
+
+function Activated()
+	if not Tool.Enabled then
+		return
+	end
+end
+
+function weldAttachments(attach1, attach2)
+    local weld = Instance.new("Motor6D")
+    weld.Part0 = attach1.Parent
+    weld.Part1 = attach2.Parent
+    weld.C0 = attach1.CFrame
+    weld.C1 = attach2.CFrame
+    weld.Parent = attach1.Parent
+    return weld
+end
+
+function EquipShoes()
+	if not Character or not Character.Parent then
+		return
+	end
+	local Shoe = BasePart:Clone()
+	Shoe.CanCollide = false
+	Shoe.Size = Vector3.new(1.181, 1.726, 1.237)
+	local Mesh = Instance.new("SpecialMesh")
+	Mesh.MeshType = Enum.MeshType.FileMesh
+	Mesh.Scale = Vector3.new(1, 1, 1)
+	Mesh.TextureId = "rbxassetid://1230433331"
+	Mesh.Parent = Shoe
+	local Attachment = Instance.new("Attachment")
+	Attachment.CFrame = CFrame.new(0, 0.3, 0.2, -1, 0, 0, 0, 0, 1, 0, 1, -0)
+	Attachment.Parent = Shoe 
+	LeftLeg = Character:FindFirstChild("Left Leg") or Character:FindFirstChild("LeftFoot")
+	RightLeg = Character:FindFirstChild("Right Leg") or Character:FindFirstChild("RightFoot")
+	local Offset = Humanoid and Humanoid.RigType == Enum.HumanoidRigType.R6 and -0.2 or 0
+	if LeftLeg then	
+		LeftShoe = Shoe:Clone()
+		LeftShoe.Name = "LeftShoe"
+		LeftShoe.Mesh.MeshId = "rbxassetid://909445948"		
+		local LeftAttachment = LeftShoe:FindFirstChildOfClass("Attachment")
+		if LeftAttachment then 
+			LeftAttachment.Name = "LeftAnkleRigAttachment"	
+		end
+		local LeftAnkleAttachment = LeftLeg:FindFirstChild("LeftAnkleRigAttachment")
+		if LeftAnkleAttachment then 
+			weldAttachments(LeftAttachment, LeftAnkleAttachment)
+		else
+			local LeftWeld = Instance.new("Motor6D")
+			LeftWeld.Part0 = LeftLeg
+			LeftWeld.Part1 = LeftShoe
+			
+			LeftWeld.C0 = LeftAttachment.CFrame
+			LeftWeld.C1 = CFrame.new(0, 0.52, 0.8)
+			LeftWeld.Parent = LeftShoe
+		end
+		local Attachment0 = Instance.new("Attachment")
+		Attachment0.CFrame = CFrame.new(-1.49999964, -2.3499999, 0.49999997, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+		Attachment0.Parent = Humanoid.RootPart 
+		local Attachment1 = Instance.new("Attachment")				
+		Attachment1.CFrame = CFrame.new(-0.550000072, -2.3499999, 0.49999997, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+		Attachment1.Parent = Humanoid.RootPart  
+		local Trail = Instance.new("Trail")
+		Trail.Texture = "rbxassetid://1230455325"
+		Trail.Attachment0 = Attachment0
+		Trail.Attachment1 = Attachment1	
+		Trail.TextureMode = Enum.TextureMode.Static	
+		Trail.Transparency = NumberSequence.new({NumberSequenceKeypoint.new(0, 0), NumberSequenceKeypoint.new(1, 1)})	
+		Trail.Lifetime = 10					
+		Trail.Parent = Humanoid.RootPart  		
+		
+		LeftShoe.Parent = Character 
+	end
+	if RightLeg then
+		RightShoe = Shoe:Clone()
+		RightShoe.Name = "RightShoe"
+		RightShoe.Mesh.MeshId = "rbxassetid://909446254"		
+		
+		local RightAttachment = RightShoe:FindFirstChildOfClass("Attachment")
+		if RightAttachment then 
+			RightAttachment.Name = "RightAnkleRigAttachment"	
+		end	
+		local RightAnkleAttachment = RightLeg:FindFirstChild("RightAnkleRigAttachment")
+		if RightAnkleAttachment then 
+			weldAttachments(RightAttachment, RightAnkleAttachment)
+		else
+			local RightWeld = Instance.new("Motor6D")
+			RightWeld.Part0 = RightLeg
+			RightWeld.Part1 = RightShoe
+			RightWeld.C0 = RightAttachment.CFrame
+			RightWeld.C1 = CFrame.new(0, 0.52, 0.8)
+			RightWeld.Parent = RightShoe
+		
+		end
+		local Attachment0 = Instance.new("Attachment")
+		Attachment0.CFrame = CFrame.new(0.500000417, -2.3499999, 0.49999997, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+		Attachment0.Parent = Humanoid.RootPart 
+		local Attachment1 = Instance.new("Attachment")				
+		Attachment1.CFrame = CFrame.new(1.44999993, -2.3499999, 0.49999997, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+		Attachment1.Parent = Humanoid.RootPart 
+		local Trail = Instance.new("Trail")
+		Trail.Texture = "rbxassetid://1230455325"
+		Trail.Attachment0 = Attachment0
+		Trail.Attachment1 = Attachment1	 				
+		Trail.TextureMode = Enum.TextureMode.Static	
+		Trail.Transparency = NumberSequence.new({NumberSequenceKeypoint.new(0, 0), NumberSequenceKeypoint.new(1, 1)})
+		Trail.Lifetime = 10
+		Trail.Parent = Humanoid.RootPart  	
+		
+		RightShoe.Parent = Character
+	end
+end
+
+function GetTotalMass(Parent)
+	local Mass = 0
+	local function GetMass(Parent)
+		for i, v in pairs(Parent:GetChildren()) do
+			if v:IsA("BasePart") then
+				Mass = (Mass + v:GetMass())
+			end
+			GetMass(v)
+		end
+	end
+	GetMass(Parent)
+	return Mass
+end
+
+function Equipped()
+	Character = Tool.Parent
+	Player = Players:GetPlayerFromCharacter(Character)
+	Humanoid = Character:FindFirstChild("Humanoid")
+	Torso = Character:FindFirstChild("Torso") or Character:FindFirstChild("UpperTorso")
+	if not Player or not Humanoid or Humanoid.Health == 0 or not Torso then
+		return
+	end
+	PlayerGui = Player:FindFirstChild("PlayerGui")
+	Handle.Transparency = 1
+	local Unequipped = false
+	ToolUnequipped = Tool.Unequipped:connect(function()
+		Unequipped = true
+	end)
+	wait()
+	if not Unequipped and Humanoid.Parent then
+		Equipped = true
+		HumanoidJumped = Humanoid.Jumping:connect(function(Boolean)
+			if Boolean and SpeedBoost.Active then
+				if BodyVelocity and BodyVelocity.Parent then
+					BodyVelocity:Destroy()
+				end
+				local Mass = (GetTotalMass(Character) * Gravity)
+				BodyVelocity = Instance.new("BodyVelocity")
+				BodyVelocity.maxForce = Vector3.new(0, (Mass), 0)
+				BodyVelocity.velocity = Vector3.new(0, 1, 0) * 20
+				Debris:AddItem(BodyVelocity, 0.5)
+				BodyVelocity.Parent = Torso
+			end
+		end)
+		if PlayerGui then
+			SpeedBoostGuiClone = SpeedBoostGui:Clone()
+			FuelDisplay = SpeedBoostGuiClone.Frame.FuelDisplay
+			FuelDisplay.Size = UDim2.new((1 / (SpeedBoost.MaxFuel / SpeedBoost.CurrentFuel)), 0, 1, 0)
+			SpeedBoostGuiClone.Parent = PlayerGui
+		end
+		EquipShoes()
+		Humanoid.WalkSpeed = 20
+		Humanoid.StateChanged:Connect(function(oldState, newState)
+			local Enabled = true
+			if newState == Enum.HumanoidStateType.FallingDown or newState == Enum.HumanoidStateType.Freefall or newState == Enum.HumanoidStateType.Jumping then
+				Enabled = false
+			end
+			for _, v in next, Humanoid.RootPart:GetChildren() do
+				if v:IsA("Trail") then
+					v.Enabled = Enabled
+				end
+			end				
+		end)
+		RegenerateFuel()
+	end
+end
+
+function Unequipped()
+	Equipped = false
+	Handle.Transparency = 0
+	for i, v in pairs({ToolUnequipped, HumanoidJumped}) do
+		if v then
+			v:disconnect()
+		end
+	end
+	for i, v in pairs({LeftShoe, RightShoe, SpeedBoostGuiClone, BodyVelocity}) do
+		if v and v.Parent then
+			v:Destroy()
+		end
+	end
+	if Humanoid and Humanoid.Parent then
+		Humanoid.WalkSpeed = 16
+	end
+	
+	for _, v in next, Humanoid.RootPart:GetChildren() do
+		if v:IsA("Trail") or v.Name == "Attachment0" or v.Name == "Attachment1" then
+			v:Destroy()
+		end
+	end
+end
+
+Tool.Equipped:connect(Equipped)
+Tool.Unequipped:connect(Unequipped)
+
+workspace:GetPropertyChangedSignal("Gravity"):Connect(function()
+	Gravity = workspace.Gravity
+end)]]></ProtectedString>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+			<Item class="ScreenGui" referent="RBXE6FC4B15B50D449DB993590C7347E7AF">
+				<Properties>
+					<int name="DisplayOrder">0</int>
+					<bool name="Enabled">true</bool>
+					<bool name="Localize">true</bool>
+					<string name="Name">SpeedBoostGui</string>
+					<bool name="ResetOnSpawn">true</bool>
+					<BinaryString name="Tags"></BinaryString>
+					<token name="ZIndexBehavior">0</token>
+				</Properties>
+				<Item class="Frame" referent="RBX0A640159A1B84F808F9649143EDEA447">
+					<Properties>
+						<bool name="Active">false</bool>
+						<Vector2 name="AnchorPoint">
+							<X>0</X>
+							<Y>0</Y>
+						</Vector2>
+						<Color3 name="BackgroundColor3">4294967295</Color3>
+						<float name="BackgroundTransparency">0</float>
+						<Color3 name="BorderColor3">4278247134</Color3>
+						<int name="BorderSizePixel">2</int>
+						<bool name="ClipsDescendants">false</bool>
+						<bool name="Draggable">false</bool>
+						<int name="LayoutOrder">0</int>
+						<bool name="Localize">true</bool>
+						<string name="Name">Frame</string>
+						<Ref name="NextSelectionDown">null</Ref>
+						<Ref name="NextSelectionLeft">null</Ref>
+						<Ref name="NextSelectionRight">null</Ref>
+						<Ref name="NextSelectionUp">null</Ref>
+						<UDim2 name="Position">
+							<XS>0.75</XS>
+							<XO>0</XO>
+							<YS>0.899999976</YS>
+							<YO>0</YO>
+						</UDim2>
+						<float name="Rotation">0</float>
+						<bool name="Selectable">false</bool>
+						<Ref name="SelectionImageObject">null</Ref>
+						<UDim2 name="Size">
+							<XS>0.200000003</XS>
+							<XO>0</XO>
+							<YS>0.075000003</YS>
+							<YO>0</YO>
+						</UDim2>
+						<token name="SizeConstraint">0</token>
+						<bool name="SizeFromContents">false</bool>
+						<token name="Style">0</token>
+						<BinaryString name="Tags"></BinaryString>
+						<bool name="Visible">true</bool>
+						<int name="ZIndex">1</int>
+					</Properties>
+					<Item class="TextLabel" referent="RBX20EE58466549401ABDE8871D9A71D90F">
+						<Properties>
+							<bool name="Active">false</bool>
+							<Vector2 name="AnchorPoint">
+								<X>0</X>
+								<Y>0</Y>
+							</Vector2>
+							<Color3 name="BackgroundColor3">4294967295</Color3>
+							<float name="BackgroundTransparency">1</float>
+							<Color3 name="BorderColor3">4279970357</Color3>
+							<int name="BorderSizePixel">0</int>
+							<bool name="ClipsDescendants">false</bool>
+							<bool name="Draggable">false</bool>
+							<token name="Font">1</token>
+							<int name="LayoutOrder">0</int>
+							<float name="LineHeight">1</float>
+							<bool name="Localize">true</bool>
+							<string name="Name">TextLabel</string>
+							<Ref name="NextSelectionDown">null</Ref>
+							<Ref name="NextSelectionLeft">null</Ref>
+							<Ref name="NextSelectionRight">null</Ref>
+							<Ref name="NextSelectionUp">null</Ref>
+							<UDim2 name="Position">
+								<XS>0</XS>
+								<XO>0</XO>
+								<YS>0.200000003</YS>
+								<YO>0</YO>
+							</UDim2>
+							<float name="Rotation">0</float>
+							<bool name="Selectable">false</bool>
+							<Ref name="SelectionImageObject">null</Ref>
+							<UDim2 name="Size">
+								<XS>1</XS>
+								<XO>0</XO>
+								<YS>0.800000012</YS>
+								<YO>0</YO>
+							</UDim2>
+							<token name="SizeConstraint">0</token>
+							<bool name="SizeFromContents">false</bool>
+							<BinaryString name="Tags"></BinaryString>
+							<string name="Text">Speed Boost</string>
+							<Color3 name="TextColor3">4278212095</Color3>
+							<bool name="TextScaled">true</bool>
+							<float name="TextSize">14</float>
+							<Color3 name="TextStrokeColor3">4278190335</Color3>
+							<float name="TextStrokeTransparency">0.949999988</float>
+							<float name="TextTransparency">0.5</float>
+							<bool name="TextWrapped">true</bool>
+							<token name="TextXAlignment">2</token>
+							<token name="TextYAlignment">1</token>
+							<bool name="Visible">true</bool>
+							<int name="ZIndex">3</int>
+						</Properties>
+					</Item>
+					<Item class="Frame" referent="RBXE7D3799AF6344756BDA106B863DF1F07">
+						<Properties>
+							<bool name="Active">true</bool>
+							<Vector2 name="AnchorPoint">
+								<X>0</X>
+								<Y>0</Y>
+							</Vector2>
+							<Color3 name="BackgroundColor3">4278255615</Color3>
+							<float name="BackgroundTransparency">0</float>
+							<Color3 name="BorderColor3">4278247134</Color3>
+							<int name="BorderSizePixel">0</int>
+							<bool name="ClipsDescendants">false</bool>
+							<bool name="Draggable">false</bool>
+							<int name="LayoutOrder">0</int>
+							<bool name="Localize">true</bool>
+							<string name="Name">FuelDisplay</string>
+							<Ref name="NextSelectionDown">null</Ref>
+							<Ref name="NextSelectionLeft">null</Ref>
+							<Ref name="NextSelectionRight">null</Ref>
+							<Ref name="NextSelectionUp">null</Ref>
+							<UDim2 name="Position">
+								<XS>0</XS>
+								<XO>0</XO>
+								<YS>0</YS>
+								<YO>0</YO>
+							</UDim2>
+							<float name="Rotation">0</float>
+							<bool name="Selectable">false</bool>
+							<Ref name="SelectionImageObject">null</Ref>
+							<UDim2 name="Size">
+								<XS>1</XS>
+								<XO>0</XO>
+								<YS>1</YS>
+								<YO>0</YO>
+							</UDim2>
+							<token name="SizeConstraint">0</token>
+							<bool name="SizeFromContents">false</bool>
+							<token name="Style">0</token>
+							<BinaryString name="Tags"></BinaryString>
+							<bool name="Visible">true</bool>
+							<int name="ZIndex">2</int>
+						</Properties>
+					</Item>
+					<Item class="TextLabel" referent="RBX34E15EC2BFD045B7BDFE332064518433">
+						<Properties>
+							<bool name="Active">false</bool>
+							<Vector2 name="AnchorPoint">
+								<X>0</X>
+								<Y>0</Y>
+							</Vector2>
+							<Color3 name="BackgroundColor3">4294967295</Color3>
+							<float name="BackgroundTransparency">1</float>
+							<Color3 name="BorderColor3">4279970357</Color3>
+							<int name="BorderSizePixel">0</int>
+							<bool name="ClipsDescendants">false</bool>
+							<bool name="Draggable">false</bool>
+							<token name="Font">0</token>
+							<int name="LayoutOrder">0</int>
+							<float name="LineHeight">1</float>
+							<bool name="Localize">true</bool>
+							<string name="Name">TextLabel</string>
+							<Ref name="NextSelectionDown">null</Ref>
+							<Ref name="NextSelectionLeft">null</Ref>
+							<Ref name="NextSelectionRight">null</Ref>
+							<Ref name="NextSelectionUp">null</Ref>
+							<UDim2 name="Position">
+								<XS>0</XS>
+								<XO>0</XO>
+								<YS>0</YS>
+								<YO>0</YO>
+							</UDim2>
+							<float name="Rotation">0</float>
+							<bool name="Selectable">false</bool>
+							<Ref name="SelectionImageObject">null</Ref>
+							<UDim2 name="Size">
+								<XS>1</XS>
+								<XO>0</XO>
+								<YS>0.349999994</YS>
+								<YO>0</YO>
+							</UDim2>
+							<token name="SizeConstraint">0</token>
+							<bool name="SizeFromContents">false</bool>
+							<BinaryString name="Tags"></BinaryString>
+							<string name="Text">(Hold Shift to Sprint)</string>
+							<Color3 name="TextColor3">4278190080</Color3>
+							<bool name="TextScaled">true</bool>
+							<float name="TextSize">14</float>
+							<Color3 name="TextStrokeColor3">4278190080</Color3>
+							<float name="TextStrokeTransparency">0.949999988</float>
+							<float name="TextTransparency">0.5</float>
+							<bool name="TextWrapped">true</bool>
+							<token name="TextXAlignment">2</token>
+							<token name="TextYAlignment">1</token>
+							<bool name="Visible">true</bool>
+							<int name="ZIndex">3</int>
+						</Properties>
+					</Item>
+				</Item>
+			</Item>
+		</Item>
+		<Item class="LocalScript" referent="RBX58DEF0F372E942ABBA303C160B551F14">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">LocalScript</string>
+				<string name="ScriptGuid">{7BEB49B4-A52C-4F57-B608-6CEAF9CBBE54}</string>
+				<ProtectedString name="Source"><![CDATA[Tool = script.Parent
+Handle = Tool:WaitForChild("Handle")
+
+Players = game:GetService("Players")
+
+Animations = {}
+
+ServerControl = Tool:WaitForChild("ServerControl")
+ClientControl = Tool:WaitForChild("ClientControl")
+
+ClientControl.OnClientInvoke = (function(Mode, Value)
+	if Mode == "PlayAnimation" and Humanoid then
+		for i, v in pairs(Animations) do
+			if v.Animation == Value.Animation then
+				v.AnimationTrack:Stop()
+				table.remove(Animations, i)
+			end
+		end
+		local AnimationTrack = Humanoid:LoadAnimation(Value.Animation)
+		table.insert(Animations, {Animation = Value.Animation, AnimationTrack = AnimationTrack})
+		AnimationTrack:Play(Value.FadeTime, Value.Weight, Value.Speed)
+	elseif Mode == "StopAnimation" and Value then
+		for i, v in pairs(Animations) do
+			if v.Animation == Value then
+				v.AnimationTrack:Stop()
+				table.remove(Animations, i)
+			end
+		end
+	end
+end)
+
+function InvokeServer(Mode, Value)
+	pcall(function()
+		local ServerReturn = ServerControl:InvokeServer(Mode, Value)
+		return ServerReturn
+	end)
+end
+
+function CheckIfAlive()
+	return (Player and Player.Parent and Humanoid and Humanoid.Parent and Humanoid.Health > 0)
+end
+
+function Equipped(Mouse)
+	Character = Tool.Parent
+	Player = Players:GetPlayerFromCharacter(Character)
+	Humanoid = Character:FindFirstChild("Humanoid")
+	if not CheckIfAlive() then
+		return
+	end
+	Mouse.Button1Down:connect(function()
+		InvokeServer("MouseClick", {Down = true})
+	end)
+	Mouse.KeyDown:connect(function(Key)
+		InvokeServer("KeyPress", {Key = Key, Down = true})
+	end)
+	Mouse.KeyUp:connect(function(Key)
+		InvokeServer("KeyPress", {Key = Key, Down = false})
+	end)
+end
+
+function Unequipped()
+	for i, v in pairs(Animations) do
+		if v and v.AnimationTrack then
+			v.AnimationTrack:Stop()
+		end
+	end
+	Animations = {}
+end
+
+Tool.Equipped:connect(Equipped)
+Tool.Unequipped:connect(Unequipped)]]></ProtectedString>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+		</Item>
+		<Item class="LocalScript" referent="RBX4456CD5F8D2B4AB7B80AD926734EFE39">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">MouseIcon</string>
+				<string name="ScriptGuid">{8879C2F8-3242-47E8-A9E5-48AFDE531438}</string>
+				<ProtectedString name="Source"><![CDATA[--Made by Luckymaxer
+
+Mouse_Icon = "rbxasset://textures/GunCursor.png"
+Reloading_Icon = "rbxasset://textures/GunWaitCursor.png"
+
+Tool = script.Parent
+
+Mouse = nil
+
+function UpdateIcon()
+	if Mouse then
+		Mouse.Icon = Tool.Enabled and Mouse_Icon or Reloading_Icon
+	end
+end
+
+function OnEquipped(ToolMouse)
+	Mouse = ToolMouse
+	UpdateIcon()
+end
+
+function OnChanged(Property)
+	if Property == "Enabled" then
+		UpdateIcon()
+	end
+end
+
+Tool.Equipped:connect(OnEquipped)
+Tool.Changed:connect(OnChanged)
+]]></ProtectedString>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+		</Item>
+		<Item class="Part" referent="RBXE34BF6A20CA449C5AA09B945048128AE">
+			<Properties>
+				<bool name="Anchored">false</bool>
+				<float name="BackParamA">-0.5</float>
+				<float name="BackParamB">0.5</float>
+				<token name="BackSurface">0</token>
+				<token name="BackSurfaceInput">0</token>
+				<float name="BottomParamA">-0.5</float>
+				<float name="BottomParamB">0.5</float>
+				<token name="BottomSurface">0</token>
+				<token name="BottomSurfaceInput">0</token>
+				<CoordinateFrame name="CFrame">
+					<X>-19.1410789</X>
+					<Y>6.29871416</Y>
+					<Z>26.8666897</Z>
+					<R00>-0.941280127</R00>
+					<R01>-0.0937457159</R01>
+					<R02>0.324350327</R02>
+					<R10>-1.90557614e-09</R10>
+					<R11>0.960678816</R11>
+					<R12>0.277661324</R12>
+					<R20>-0.337626129</R20>
+					<R21>0.261357099</R21>
+					<R22>-0.904268026</R22>
+				</CoordinateFrame>
+				<bool name="CanCollide">true</bool>
+				<int name="CollisionGroupId">0</int>
+				<Color3uint8 name="Color3uint8">4288914085</Color3uint8>
+				<PhysicalProperties name="CustomPhysicalProperties">
+					<CustomPhysics>false</CustomPhysics>
+				</PhysicalProperties>
+				<float name="Elasticity">0.5</float>
+				<float name="Friction">0.300000012</float>
+				<float name="FrontParamA">-0.5</float>
+				<float name="FrontParamB">0.5</float>
+				<token name="FrontSurface">0</token>
+				<token name="FrontSurfaceInput">0</token>
+				<float name="LeftParamA">-0.5</float>
+				<float name="LeftParamB">0.5</float>
+				<token name="LeftSurface">0</token>
+				<token name="LeftSurfaceInput">0</token>
+				<bool name="Locked">true</bool>
+				<token name="Material">256</token>
+				<string name="Name">Handle</string>
+				<float name="Reflectance">0</float>
+				<float name="RightParamA">-0.5</float>
+				<float name="RightParamB">0.5</float>
+				<token name="RightSurface">0</token>
+				<token name="RightSurfaceInput">0</token>
+				<Vector3 name="RotVelocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<BinaryString name="Tags"></BinaryString>
+				<float name="TopParamA">-0.5</float>
+				<float name="TopParamB">0.5</float>
+				<token name="TopSurface">0</token>
+				<token name="TopSurfaceInput">0</token>
+				<float name="Transparency">0</float>
+				<Vector3 name="Velocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<token name="formFactorRaw">3</token>
+				<token name="shape">1</token>
+				<Vector3 name="size">
+					<X>1.20000005</X>
+					<Y>0.449999988</Y>
+					<Z>0.99999994</Z>
+				</Vector3>
+			</Properties>
+			<Item class="SpecialMesh" referent="RBX61496655D0424D51A3821351689064B9">
+				<Properties>
+					<token name="LODX">2</token>
+					<token name="LODY">2</token>
+					<Content name="MeshId"><url>rbxassetid://904532060</url></Content>
+					<token name="MeshType">5</token>
+					<string name="Name">Mesh</string>
+					<Vector3 name="Offset">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+					</Vector3>
+					<Vector3 name="Scale">
+						<X>0.75</X>
+						<Y>0.75</Y>
+						<Z>0.75</Z>
+					</Vector3>
+					<BinaryString name="Tags"></BinaryString>
+					<Content name="TextureId"><url>rbxassetid://1230433331</url></Content>
+					<Vector3 name="VertexColor">
+						<X>1</X>
+						<Y>1</Y>
+						<Z>1</Z>
+					</Vector3>
+				</Properties>
+			</Item>
+			<Item class="Attachment" referent="RBX50DC5C39DEA040A38242C9B0ED896568">
+				<Properties>
+					<CoordinateFrame name="CFrame">
+						<X>0</X>
+						<Y>-0.179999977</Y>
+						<Z>0.49999997</Z>
+						<R00>0</R00>
+						<R01>0</R01>
+						<R02>-1</R02>
+						<R10>0</R10>
+						<R11>1</R11>
+						<R12>0</R12>
+						<R20>1</R20>
+						<R21>0</R21>
+						<R22>0</R22>
+					</CoordinateFrame>
+					<string name="Name">RightGripAttachment</string>
+					<BinaryString name="Tags"></BinaryString>
+					<bool name="Visible">false</bool>
+				</Properties>
+			</Item>
+			<Item class="Trail" referent="RBXAD50CAC90C20435CB5F08B5C441491FF">
+				<Properties>
+					<Ref name="Attachment0">null</Ref>
+					<Ref name="Attachment1">null</Ref>
+					<ColorSequence name="Color">0 1 1 1 0 1 1 1 1 0 </ColorSequence>
+					<bool name="Enabled">true</bool>
+					<bool name="FaceCamera">false</bool>
+					<float name="Lifetime">2</float>
+					<float name="LightEmission">0</float>
+					<float name="MinLength">0.100000001</float>
+					<string name="Name">Trail</string>
+					<BinaryString name="Tags"></BinaryString>
+					<Content name="Texture"><null></null></Content>
+					<float name="TextureLength">1</float>
+					<token name="TextureMode">0</token>
+					<NumberSequence name="Transparency">0 0.5 0 1 0.5 0 </NumberSequence>
+				</Properties>
+			</Item>
+		</Item>
+		<Item class="Camera" referent="RBX0FF44AEB32DC4A158D1AEBEC82513A13">
+			<Properties>
+				<CoordinateFrame name="CFrame">
+					<X>-18.1680317</X>
+					<Y>6.52021837</Y>
+					<Z>28.5973625</Z>
+					<R00>0.872770965</R00>
+					<R01>-0.0538463295</R01>
+					<R02>0.485150993</R02>
+					<R10>-0</R10>
+					<R11>0.99389708</R11>
+					<R12>0.110311441</R12>
+					<R20>-0.488130063</R20>
+					<R21>-0.096276626</R21>
+					<R22>0.867444456</R22>
+				</CoordinateFrame>
+				<Ref name="CameraSubject">null</Ref>
+				<token name="CameraType">0</token>
+				<float name="FieldOfView">70</float>
+				<CoordinateFrame name="Focus">
+					<X>-19.1383343</X>
+					<Y>6.29959536</Y>
+					<Z>26.8624725</Z>
+					<R00>1</R00>
+					<R01>0</R01>
+					<R02>0</R02>
+					<R10>0</R10>
+					<R11>1</R11>
+					<R12>0</R12>
+					<R20>0</R20>
+					<R21>0</R21>
+					<R22>1</R22>
+				</CoordinateFrame>
+				<bool name="HeadLocked">true</bool>
+				<float name="HeadScale">1</float>
+				<string name="Name">ThumbnailCamera</string>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+		</Item>
+	</Item>
+</roblox>

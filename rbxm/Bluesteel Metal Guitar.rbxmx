@@ -1,0 +1,704 @@
+<roblox xmlns:xmime="http://www.w3.org/2005/05/xmlmime" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.roblox.com/roblox.xsd" version="4">
+	<External>null</External>
+	<External>nil</External>
+	<Item class="Tool" referent="RBX46F49260A41B4563AD832D0C60A05585">
+		<Properties>
+			<bool name="CanBeDropped">true</bool>
+			<bool name="Enabled">true</bool>
+			<CoordinateFrame name="Grip">
+				<X>0</X>
+				<Y>0</Y>
+				<Z>0</Z>
+				<R00>1</R00>
+				<R01>0</R01>
+				<R02>0</R02>
+				<R10>0</R10>
+				<R11>-1</R11>
+				<R12>0</R12>
+				<R20>0</R20>
+				<R21>0</R21>
+				<R22>-1</R22>
+			</CoordinateFrame>
+			<bool name="ManualActivationOnly">false</bool>
+			<string name="Name">MetalGuitarOfAwesomeness</string>
+			<bool name="RequiresHandle">true</bool>
+			<BinaryString name="Tags"></BinaryString>
+			<Content name="TextureId"><url>rbxassetid://1082985937</url></Content>
+			<string name="ToolTip"></string>
+		</Properties>
+		<Item class="Part" referent="RBXE1C76B850CAB4CD0870442EBC4536C7B">
+			<Properties>
+				<bool name="Anchored">false</bool>
+				<float name="BackParamA">-0.5</float>
+				<float name="BackParamB">0.5</float>
+				<token name="BackSurface">0</token>
+				<token name="BackSurfaceInput">0</token>
+				<float name="BottomParamA">-0.5</float>
+				<float name="BottomParamB">0.5</float>
+				<token name="BottomSurface">0</token>
+				<token name="BottomSurfaceInput">0</token>
+				<CoordinateFrame name="CFrame">
+					<X>0.0999979973</X>
+					<Y>17.6000004</Y>
+					<Z>21.8000011</Z>
+					<R00>-0.707106769</R00>
+					<R01>0.707106769</R01>
+					<R02>0</R02>
+					<R10>-0.707106769</R10>
+					<R11>-0.707106769</R11>
+					<R12>0</R12>
+					<R20>0</R20>
+					<R21>0</R21>
+					<R22>1</R22>
+				</CoordinateFrame>
+				<bool name="CanCollide">true</bool>
+				<int name="CollisionGroupId">0</int>
+				<Color3uint8 name="Color3uint8">4284702562</Color3uint8>
+				<PhysicalProperties name="CustomPhysicalProperties">
+					<CustomPhysics>false</CustomPhysics>
+				</PhysicalProperties>
+				<float name="Elasticity">0.5</float>
+				<float name="Friction">0.300000012</float>
+				<float name="FrontParamA">-0.5</float>
+				<float name="FrontParamB">0.5</float>
+				<token name="FrontSurface">0</token>
+				<token name="FrontSurfaceInput">0</token>
+				<float name="LeftParamA">-0.5</float>
+				<float name="LeftParamB">0.5</float>
+				<token name="LeftSurface">0</token>
+				<token name="LeftSurfaceInput">0</token>
+				<bool name="Locked">true</bool>
+				<token name="Material">256</token>
+				<string name="Name">Handle</string>
+				<float name="Reflectance">0</float>
+				<float name="RightParamA">-0.5</float>
+				<float name="RightParamB">0.5</float>
+				<token name="RightSurface">0</token>
+				<token name="RightSurfaceInput">0</token>
+				<Vector3 name="RotVelocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<BinaryString name="Tags"></BinaryString>
+				<float name="TopParamA">-0.5</float>
+				<float name="TopParamB">0.5</float>
+				<token name="TopSurface">0</token>
+				<token name="TopSurfaceInput">0</token>
+				<float name="Transparency">0</float>
+				<Vector3 name="Velocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<token name="formFactorRaw">3</token>
+				<token name="shape">1</token>
+				<Vector3 name="size">
+					<X>2.16999936</X>
+					<Y>6.2299962</Y>
+					<Z>0.400000006</Z>
+				</Vector3>
+			</Properties>
+			<Item class="SpecialMesh" referent="RBX87DF2CDCAE4E4587ADFAD25BED91FA82">
+				<Properties>
+					<token name="LODX">2</token>
+					<token name="LODY">2</token>
+					<Content name="MeshId"><url>http://www.roblox.com/asset/?id=60605894 </url></Content>
+					<token name="MeshType">5</token>
+					<string name="Name">Mesh</string>
+					<Vector3 name="Offset">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+					</Vector3>
+					<Vector3 name="Scale">
+						<X>0.800000012</X>
+						<Y>0.800000012</Y>
+						<Z>0.800000012</Z>
+					</Vector3>
+					<BinaryString name="Tags"></BinaryString>
+					<Content name="TextureId"><url>rbxassetid://1082984101</url></Content>
+					<Vector3 name="VertexColor">
+						<X>1</X>
+						<Y>1</Y>
+						<Z>1</Z>
+					</Vector3>
+				</Properties>
+			</Item>
+			<Item class="Sound" referent="RBXC8A9C67747524BEDB38AE2A4AEAA9DE0">
+				<Properties>
+					<float name="EmitterSize">10</float>
+					<bool name="Looped">false</bool>
+					<string name="Name">S1</string>
+					<bool name="PlayOnRemove">false</bool>
+					<float name="PlaybackSpeed">1</float>
+					<bool name="Playing">false</bool>
+					<token name="RollOffMode">0</token>
+					<Ref name="SoundGroup">null</Ref>
+					<Content name="SoundId"><url>http://www.roblox.com/asset/?id=60621891 </url></Content>
+					<BinaryString name="Tags"></BinaryString>
+					<double name="TimePosition">0</double>
+					<float name="Volume">1</float>
+					<float name="xmlRead_MaxDistance_3">10000</float>
+				</Properties>
+			</Item>
+			<Item class="Sound" referent="RBX7E040965E2A44E329EB51DDAC28D68C2">
+				<Properties>
+					<float name="EmitterSize">10</float>
+					<bool name="Looped">false</bool>
+					<string name="Name">S2</string>
+					<bool name="PlayOnRemove">false</bool>
+					<float name="PlaybackSpeed">1</float>
+					<bool name="Playing">false</bool>
+					<token name="RollOffMode">0</token>
+					<Ref name="SoundGroup">null</Ref>
+					<Content name="SoundId"><url>http://www.roblox.com/asset/?id=60619309</url></Content>
+					<BinaryString name="Tags"></BinaryString>
+					<double name="TimePosition">0</double>
+					<float name="Volume">1</float>
+					<float name="xmlRead_MaxDistance_3">10000</float>
+				</Properties>
+			</Item>
+			<Item class="Sound" referent="RBXFDC8C596856949A084454CB3FB8F80AC">
+				<Properties>
+					<float name="EmitterSize">10</float>
+					<bool name="Looped">false</bool>
+					<string name="Name">S3</string>
+					<bool name="PlayOnRemove">false</bool>
+					<float name="PlaybackSpeed">1</float>
+					<bool name="Playing">false</bool>
+					<token name="RollOffMode">0</token>
+					<Ref name="SoundGroup">null</Ref>
+					<Content name="SoundId"><url>http://www.roblox.com/asset/?id=60619326</url></Content>
+					<BinaryString name="Tags"></BinaryString>
+					<double name="TimePosition">0</double>
+					<float name="Volume">1</float>
+					<float name="xmlRead_MaxDistance_3">10000</float>
+				</Properties>
+			</Item>
+			<Item class="Sound" referent="RBX64675D174F9F4FADA1F1D1DC2BF76276">
+				<Properties>
+					<float name="EmitterSize">10</float>
+					<bool name="Looped">false</bool>
+					<string name="Name">S4</string>
+					<bool name="PlayOnRemove">false</bool>
+					<float name="PlaybackSpeed">1</float>
+					<bool name="Playing">false</bool>
+					<token name="RollOffMode">0</token>
+					<Ref name="SoundGroup">null</Ref>
+					<Content name="SoundId"><url>http://www.roblox.com/asset/?id=60661796 </url></Content>
+					<BinaryString name="Tags"></BinaryString>
+					<double name="TimePosition">0</double>
+					<float name="Volume">1</float>
+					<float name="xmlRead_MaxDistance_3">10000</float>
+				</Properties>
+			</Item>
+		</Item>
+		<Item class="Animation" referent="RBX2BE9A8DFFC5F4C038C78414A0698642E">
+			<Properties>
+				<Content name="AnimationId"><url>http://www.roblox.com/Asset?ID=52602039</url></Content>
+				<string name="Name">Equipped</string>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+		</Item>
+		<Item class="LocalScript" referent="RBX7CCA373768DB4F79A09CE44936243CDC">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">MouseIcon</string>
+				<string name="ScriptGuid">{2f2b83f6-bf1f-4ab0-a409-16227de88eb6}</string>
+				<ProtectedString name="Source"><![CDATA[--Made by Luckymaxer
+
+Mouse_Icon = "rbxasset://textures/GunCursor.png"
+Reloading_Icon = "http://www.roblox.com/asset/?id=1088199"
+
+Tool = script.Parent
+
+Mouse = nil
+
+function UpdateIcon()
+	if Mouse then
+		Mouse.Icon = Tool.Enabled and Mouse_Icon or Reloading_Icon
+	end
+end
+
+function OnEquipped(ToolMouse)
+	Mouse = ToolMouse
+	UpdateIcon()
+end
+
+function OnChanged(Property)
+	if Property == "Enabled" then
+		UpdateIcon()
+	end
+end
+
+Tool.Equipped:connect(OnEquipped)
+Tool.Changed:connect(OnChanged)]]></ProtectedString>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+		</Item>
+		<Item class="Script" referent="RBX2096BFBC165A4AE78545A63ED2928720">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">Script</string>
+				<string name="ScriptGuid">{267d2daf-10b6-48d6-b914-053d5136f803}</string>
+				<ProtectedString name="Source"><![CDATA[--Rescripted by Luckymaxer
+
+Tool = script.Parent
+Handle = Tool:WaitForChild("Handle")
+
+Players = game:GetService("Players")
+Debris = game:GetService("Debris")
+
+Module = require(185791213)
+
+GuitarDanceScript = script:WaitForChild("GuitarDanceScript")
+
+Sounds = {
+	S1 = Handle:WaitForChild("S1"),
+	S2 = Handle:WaitForChild("S2"),
+	S3 = Handle:WaitForChild("S3"),
+	S4 = Handle:WaitForChild("S4")
+}
+
+Animations = {
+	Equipped = {Animation = Tool:WaitForChild("Equipped"), FadeTime = nil, Weight = nil, Speed = nil, Duration = nil},
+}
+
+BasePart = Instance.new("Part")
+BasePart.Material = Enum.Material.Plastic
+BasePart.TopSurface = Enum.SurfaceType.Smooth
+BasePart.BottomSurface = Enum.SurfaceType.Smooth
+BasePart.FormFactor = Enum.FormFactor.Custom
+BasePart.Locked = true
+BasePart.CanCollide = true
+BasePart.Anchored = false
+
+Gravity = 196.20
+
+NoteTextures = {60667024, 60667032, 60667053, 60667087}
+
+DanceEnabled = true
+DanceReload = 10
+
+ClientControl = (Tool:FindFirstChild("ClientControl") or Instance.new("RemoteFunction"))
+ClientControl.Name = "ClientControl"
+ClientControl.Parent = Tool
+
+ServerControl = (Tool:FindFirstChild("ServerControl") or Instance.new("RemoteFunction"))
+ServerControl.Name = "ServerControl"
+ServerControl.Parent = Tool
+
+for i, v in pairs(Tool:GetChildren()) do
+	if v:IsA("BasePart") and v.Name == "FakeHandle" then
+		v:Destroy()
+	end
+end
+
+ServerControl.OnServerInvoke = (function(player, Mode, Value)
+	if Mode == "KeyPress" and Value then
+		local Key = string.lower(Value.Key)
+		local ByteKey = string.byte(Key)
+		local Down = Value.Down
+		if Value.Down and Tool.Enabled then
+			if Key == "q" and DanceEnabled then
+				
+				Tool.Enabled = false
+				
+				DanceEnabled = false
+				
+				SetUpGuitar()
+				
+				
+				if ToolUnequipped then
+					ToolUnequipped:disconnect()
+				end
+				local CurrentlyEquipped = true
+				ToolUnequipped = Tool.Unequipped:connect(function()
+					CurrentlyEquipped = false
+				end)
+				
+				local Sound = Sounds.S4
+				Module.PlaySound(FakeHandle, {Sound = Sound, SoundId = Sound.SoundId}, Sound.Pitch, nil)
+				for i = 1, 12 do
+				
+					local Note = BasePart:Clone()
+					Note.Name = "Note"
+					Note.Size = Vector3.new(1, 1, 1)
+					Note.CanCollide = false
+	
+					local NoteMesh = Instance.new("SpecialMesh")
+					NoteMesh.MeshId = "http://www.roblox.com/asset/?id=60666966"
+					NoteMesh.TextureId = ("http://www.roblox.com/asset/?id=" .. NoteTextures[math.random(1, #NoteTextures)])
+					NoteMesh.Parent = Note
+	
+					local BF = Instance.new("BodyForce")
+					BF.force = Vector3.new(0, (Note:GetMass() * Gravity), 0)
+					BF.Parent = Note
+						
+					local Pos = CFrame.Angles(-(math.pi / 12), (i * (math.pi / 6)), 0) * Torso.CFrame.lookVector
+					local SpawnPos = Torso.Position + (Pos * 5)
+					
+					Note.Velocity = Pos * 4
+					Debris:AddItem(Note, 2)
+					
+					Note.Parent = game:GetService("Workspace")
+					
+					Note.CFrame = CFrame.new(SpawnPos, (SpawnPos + Pos)) 
+				
+				end
+
+				local Radius = 10
+				local Parts = game:GetService("Workspace"):FindPartsInRegion3WithIgnoreList(Region3.new(Torso.Position - Vector3.new(Radius, Radius, Radius), Torso.Position + Vector3.new(Radius, Radius, Radius)), {Character}, 100)
+				for i, v in pairs(Parts) do
+					if v and v.Parent then
+						local character = v.Parent
+						local humanoid = character:FindFirstChild("Humanoid")
+						if humanoid and humanoid.Health > 0 and not character:FindFirstChild(GuitarDanceScript.Name) then
+							local GuitarDanceScriptClone = GuitarDanceScript:Clone()
+							GuitarDanceScriptClone.Disabled = false
+							Debris:AddItem(GuitarDanceScriptClone, 7.5)
+							GuitarDanceScriptClone.Parent = character
+						end
+					end
+				end
+				
+				wait(2)
+				
+				if CurrentlyEquipped then
+					if ToolUnequipped then
+						ToolUnequipped:disconnect()
+					end
+					DismountGuitar()
+				end
+				
+				Tool.Enabled = true
+				
+				wait(DanceReload)				
+				
+				DanceEnabled = true
+			
+			end			
+		end
+	end
+end)
+
+Tool.Enabled = true
+
+function InvokeClient(Mode, Value)
+	local ClientReturn = nil
+	pcall(function()
+		ClientReturn = ClientControl:InvokeClient(Player, Mode, Value)
+	end)
+	return ClientReturn
+end
+
+function Activated()
+	
+	if not Tool.Enabled or not CheckIfAlive() then
+		return
+	end
+	
+	local LeftArm = Character:FindFirstChild("Left Arm")
+	local RightArm = Character:FindFirstChild("Right Arm")
+	if not LeftArm or not RightArm then
+		return
+	end
+
+	Tool.Enabled = false
+	
+	if ToolUnequipped then
+		ToolUnequipped:disconnect()
+	end
+	local CurrentlyEquipped = true
+	ToolUnequipped = Tool.Unequipped:connect(function()
+		CurrentlyEquipped = false
+	end)
+	
+	SetUpGuitar()
+	
+	local Duration = 10	
+	
+	local RandomSongs = {Sounds.S1, Sounds.S2, Sounds.S3}
+	local RandomSong = RandomSongs[math.random(1, #RandomSongs)]
+	
+	Module.PlaySound(FakeHandle, {Sound = RandomSong, SoundId = RandomSong.SoundId}, RandomSong.Pitch, Duration)
+	
+	wait(Duration)
+	
+	if ToolUnequipped then
+		ToolUnequipped:disconnect()
+	end
+	
+	DismountGuitar()
+	
+	Tool.Enabled = true
+end
+
+function SetUpGuitar()
+	Handle.Transparency = 1
+	FakeHandle = Handle:Clone()
+	FakeHandle.Name = "FakeHandle"
+	FakeHandle.Transparency = 0
+	TorsoWeld = Instance.new("Weld")
+	TorsoWeld.Part0 = Torso
+	TorsoWeld.Part1 = FakeHandle
+	TorsoWeld.C1 = CFrame.Angles(math.pi, 0, -(math.pi / 4)) + Vector3.new(0, 0.2, -0.9)	
+	TorsoWeld.Parent = FakeHandle
+	FakeHandle.Parent = Tool
+	InvokeClient("PlayAnimation", Animations.Equipped)
+end
+
+function DismountGuitar()
+	InvokeClient("StopAnimation", Animations.Equipped)
+	if FakeHandle and FakeHandle.Parent then
+		FakeHandle:Destroy()
+	end
+	Handle.Transparency = 0
+end
+
+function CheckIfAlive()
+	return (Player and Player.Parent and Humanoid and Humanoid.Parent and Humanoid.Health > 0 and Torso and Torso.Parent)
+end
+
+function Equipped(Mouse)
+	Equipped = true
+	Character = Tool.Parent
+	Player = Players:GetPlayerFromCharacter(Character)
+	Humanoid = Character:FindFirstChild("Humanoid")
+	Torso = Character:FindFirstChild("Torso")
+	if not CheckIfAlive() then
+		return
+	end
+end
+
+function Unequipped()
+	Equipped = false
+	if ToolUnequipped then
+		ToolUnequipped:disconnect()
+	end
+	for i, v in pairs(Animations) do
+		InvokeClient("StopAnimation", v)
+	end
+	for i, v in pairs(Sounds) do
+		if v and v.Parent then
+			v:Stop()
+		end
+	end
+	DismountGuitar()
+end
+
+Tool.Activated:connect(Activated)
+Tool.Equipped:connect(Equipped)
+Tool.Unequipped:connect(Unequipped)]]></ProtectedString>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+			<Item class="LocalScript" referent="RBXCDDCDF7DF2A9406795732E9913F6BB6B">
+				<Properties>
+					<bool name="Disabled">true</bool>
+					<Content name="LinkedSource"><null></null></Content>
+					<string name="Name">GuitarDanceScript</string>
+					<string name="ScriptGuid">{c7557ed6-cacf-4886-8c98-f0375b316ce6}</string>
+					<ProtectedString name="Source"><![CDATA[--Rescripted by Luckymaxer
+
+Character = script.Parent
+Humanoid = Character:WaitForChild("Humanoid")
+
+Debris = game:GetService("Debris")
+
+Dance = script:WaitForChild("DanceAnim")
+
+Humanoid.WalkSpeed = 0
+
+DanceAnim = Humanoid:LoadAnimation(Dance)
+
+if DanceAnim then
+	DanceAnim:Play()
+end
+
+wait(4.5)
+
+Humanoid.Sit = true
+
+wait(0.5)
+
+Humanoid.Sit = false
+
+Humanoid.WalkSpeed = 16
+
+Debris:AddItem(script, 0)]]></ProtectedString>
+					<BinaryString name="Tags"></BinaryString>
+				</Properties>
+				<Item class="Animation" referent="RBX15204B79043948C391145EDF1E266794">
+					<Properties>
+						<Content name="AnimationId"><url>http://www.roblox.com/Asset?ID=45834924</url></Content>
+						<string name="Name">DanceAnim</string>
+						<BinaryString name="Tags"></BinaryString>
+					</Properties>
+				</Item>
+			</Item>
+		</Item>
+		<Item class="LocalScript" referent="RBX741F4394D40846A8988165A6652F77E6">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">LocalScript</string>
+				<string name="ScriptGuid">{bff2ce14-9c0d-4324-ab0d-8d88c5d84bc7}</string>
+				<ProtectedString name="Source"><![CDATA[--Made by Luckymaxer
+
+Tool = script.Parent
+Handle = Tool:WaitForChild("Handle")
+
+Players = game:GetService("Players")
+ContentProvider = game:GetService("ContentProvider")
+
+Camera = game:GetService("Workspace").CurrentCamera
+
+Animations = {}
+
+ServerControl = Tool:WaitForChild("ServerControl")
+ClientControl = Tool:WaitForChild("ClientControl")
+
+ClientControl.OnClientInvoke = (function(Mode, Value)
+	if Mode == "PlayAnimation" and Humanoid then
+		for i, v in pairs(Animations) do
+			if v.Animation == Value.Animation then
+				v.AnimationTrack:Stop()
+				table.remove(Animations, i)
+			end
+		end
+		local AnimationTrack = Humanoid:LoadAnimation(Value.Animation)
+		table.insert(Animations, {Animation = Value.Animation, AnimationTrack = AnimationTrack})
+		AnimationTrack:Play(Value.FadeTime, Value.Weight, Value.Speed)
+	elseif Mode == "StopAnimation" and Value then
+		for i, v in pairs(Animations) do
+			if v.Animation == Value.Animation then
+				v.AnimationTrack:Stop()
+				table.remove(Animations, i)
+			end
+		end
+	elseif Mode == "Preload" and Value then
+		ContentProvider:Preload(Value)
+	elseif Mode == "PlaySound" and Value then
+		Value:Play()
+	elseif Mode == "StopSound" and Value then
+		Value:Stop()
+	elseif Mode == "MousePosition" then
+		return PlayerMouse.Hit.p
+	elseif Mode == "DisableJump" then
+		DisableJump(Value)
+	elseif Mode == "SetCamera" and Value then
+		if Value.Subject and Value.Type then
+			Camera.CameraSubject = Value.Subject
+			Camera.CameraType = Value.Type
+		end
+	end
+end)
+
+function InvokeServer(Mode, Value)
+	local ServerReturn = nil
+	pcall(function()
+		ServerReturn = ServerControl:InvokeServer(Mode, Value)
+	end)
+	return ServerReturn
+end
+
+function DisableJump(Boolean)
+	if PreventJump then
+		PreventJump:disconnect()
+	end
+	if Boolean then
+		PreventJump = Humanoid.Changed:connect(function(Property)
+			if Property ==  "Jump" then
+				Humanoid.Jump = false
+			end
+		end)
+	end
+end
+
+function CheckIfAlive()
+	return (Player and Player.Parent and Humanoid and Humanoid.Parent and Humanoid.Health > 0)
+end
+
+function Equipped(Mouse)
+	Character = Tool.Parent
+	Player = Players:GetPlayerFromCharacter(Character)
+	Humanoid = Character:FindFirstChild("Humanoid")
+	if not CheckIfAlive() then
+		return
+	end
+	PlayerMouse = Player:GetMouse()
+	Mouse.Button1Down:connect(function()
+		InvokeServer("MouseClick", {Down = true})
+	end)
+	Mouse.Button1Up:connect(function()
+		InvokeServer("MouseClick", {Down = false})
+	end)
+	Mouse.KeyDown:connect(function(Key)
+		InvokeServer("KeyPress", {Key = Key, Down = true})
+	end)
+	Mouse.KeyUp:connect(function(Key)
+		InvokeServer("KeyPress", {Key = Key, Down = false})
+	end)
+end
+
+function Unequipped()
+	for i, v in pairs(Animations) do
+		if v and v.AnimationTrack then
+			v.AnimationTrack:Stop()
+		end
+	end
+	if PreventJump then
+		PreventJump:disconnect()
+	end
+	Animations = {}
+end
+
+Tool.Equipped:connect(Equipped)
+Tool.Unequipped:connect(Unequipped)]]></ProtectedString>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+		</Item>
+		<Item class="Camera" referent="RBXa210763621a84a09bcb9cf1173bb5e23">
+			<Properties>
+				<CoordinateFrame name="CFrame">
+					<X>3.33043408</X>
+					<Y>18.1014366</Y>
+					<Z>26.7591152</Z>
+					<R00>0.837901831</R00>
+					<R01>-0.0460788719</R01>
+					<R02>0.543872476</R02>
+					<R10>3.7252903e-09</R10>
+					<R11>0.996430159</R11>
+					<R12>0.0844212174</R12>
+					<R20>-0.545820951</R20>
+					<R21>-0.0707366914</R21>
+					<R22>0.834910631</R22>
+				</CoordinateFrame>
+				<Ref name="CameraSubject">null</Ref>
+				<token name="CameraType">0</token>
+				<float name="FieldOfView">70</float>
+				<CoordinateFrame name="Focus">
+					<X>0.0999979973</X>
+					<Y>17.6000004</Y>
+					<Z>21.8000011</Z>
+					<R00>1</R00>
+					<R01>0</R01>
+					<R02>0</R02>
+					<R10>0</R10>
+					<R11>1</R11>
+					<R12>0</R12>
+					<R20>0</R20>
+					<R21>0</R21>
+					<R22>1</R22>
+				</CoordinateFrame>
+				<bool name="HeadLocked">true</bool>
+				<float name="HeadScale">1</float>
+				<string name="Name">ThumbnailCamera</string>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+		</Item>
+	</Item>
+</roblox>

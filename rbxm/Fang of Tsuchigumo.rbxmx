@@ -1,0 +1,990 @@
+<roblox xmlns:xmime="http://www.w3.org/2005/05/xmlmime" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.roblox.com/roblox.xsd" version="4">
+	<External>null</External>
+	<External>nil</External>
+	<Item class="Tool" referent="RBX4A8972E4EBA94059BB2959E51B25297C">
+		<Properties>
+			<bool name="CanBeDropped">true</bool>
+			<bool name="Enabled">true</bool>
+			<CoordinateFrame name="Grip">
+				<X>0</X>
+				<Y>-2.20000005</Y>
+				<Z>0</Z>
+				<R00>0</R00>
+				<R01>0</R01>
+				<R02>-1</R02>
+				<R10>0</R10>
+				<R11>1</R11>
+				<R12>0</R12>
+				<R20>1</R20>
+				<R21>0</R21>
+				<R22>0</R22>
+			</CoordinateFrame>
+			<bool name="ManualActivationOnly">false</bool>
+			<string name="Name">FangOfTsuchigumo</string>
+			<bool name="RequiresHandle">true</bool>
+			<BinaryString name="Tags"></BinaryString>
+			<Content name="TextureId"><url>rbxassetid://1237534726</url></Content>
+			<string name="ToolTip"></string>
+		</Properties>
+		<Item class="Part" referent="RBXB753D87D99D9410194EA17E4FD8708A4">
+			<Properties>
+				<bool name="Anchored">false</bool>
+				<float name="BackParamA">-0.5</float>
+				<float name="BackParamB">0.5</float>
+				<token name="BackSurface">0</token>
+				<token name="BackSurfaceInput">0</token>
+				<float name="BottomParamA">-0.5</float>
+				<float name="BottomParamB">0.5</float>
+				<token name="BottomSurface">0</token>
+				<token name="BottomSurfaceInput">0</token>
+				<CoordinateFrame name="CFrame">
+					<X>-3.75999999</X>
+					<Y>2.80352092</Y>
+					<Z>-1.94999695</Z>
+					<R00>0</R00>
+					<R01>-1</R01>
+					<R02>0</R02>
+					<R10>0</R10>
+					<R11>0</R11>
+					<R12>-1</R12>
+					<R20>1</R20>
+					<R21>0</R21>
+					<R22>0</R22>
+				</CoordinateFrame>
+				<bool name="CanCollide">true</bool>
+				<int name="CollisionGroupId">0</int>
+				<Color3uint8 name="Color3uint8">4284702562</Color3uint8>
+				<PhysicalProperties name="CustomPhysicalProperties">
+					<CustomPhysics>false</CustomPhysics>
+				</PhysicalProperties>
+				<float name="Elasticity">0.5</float>
+				<float name="Friction">0.300000012</float>
+				<float name="FrontParamA">-0.5</float>
+				<float name="FrontParamB">0.5</float>
+				<token name="FrontSurface">0</token>
+				<token name="FrontSurfaceInput">0</token>
+				<float name="LeftParamA">-0.5</float>
+				<float name="LeftParamB">0.5</float>
+				<token name="LeftSurface">0</token>
+				<token name="LeftSurfaceInput">0</token>
+				<bool name="Locked">true</bool>
+				<token name="Material">816</token>
+				<string name="Name">Handle</string>
+				<float name="Reflectance">0</float>
+				<float name="RightParamA">-0.5</float>
+				<float name="RightParamB">0.5</float>
+				<token name="RightSurface">0</token>
+				<token name="RightSurfaceInput">0</token>
+				<Vector3 name="RotVelocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<BinaryString name="Tags"></BinaryString>
+				<float name="TopParamA">-0.5</float>
+				<float name="TopParamB">0.5</float>
+				<token name="TopSurface">0</token>
+				<token name="TopSurfaceInput">0</token>
+				<float name="Transparency">0</float>
+				<Vector3 name="Velocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<token name="formFactorRaw">3</token>
+				<token name="shape">1</token>
+				<Vector3 name="size">
+					<X>0.940000176</X>
+					<Y>6.29000473</Y>
+					<Z>0.750000298</Z>
+				</Vector3>
+			</Properties>
+			<Item class="SpecialMesh" referent="RBXE098794434D14174B22A89564AFB462C">
+				<Properties>
+					<token name="LODX">2</token>
+					<token name="LODY">2</token>
+					<Content name="MeshId"><url>http://www.roblox.com/asset/?id=117500241</url></Content>
+					<token name="MeshType">5</token>
+					<string name="Name">Mesh</string>
+					<Vector3 name="Offset">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+					</Vector3>
+					<Vector3 name="Scale">
+						<X>0.75</X>
+						<Y>0.75</Y>
+						<Z>0.75</Z>
+					</Vector3>
+					<BinaryString name="Tags"></BinaryString>
+					<Content name="TextureId"><url>rbxassetid://1237534479</url></Content>
+					<Vector3 name="VertexColor">
+						<X>1</X>
+						<Y>1</Y>
+						<Z>1</Z>
+					</Vector3>
+				</Properties>
+			</Item>
+			<Item class="Sound" referent="RBX6F1353B674B54CBB99D9C39EF943EAD1">
+				<Properties>
+					<float name="EmitterSize">10</float>
+					<bool name="Looped">false</bool>
+					<string name="Name">SlashSound</string>
+					<bool name="PlayOnRemove">false</bool>
+					<float name="PlaybackSpeed">1</float>
+					<bool name="Playing">false</bool>
+					<token name="RollOffMode">0</token>
+					<Ref name="SoundGroup">null</Ref>
+					<Content name="SoundId"><url>http://www.roblox.com/asset/?id=62337944 </url></Content>
+					<BinaryString name="Tags"></BinaryString>
+					<double name="TimePosition">0</double>
+					<float name="Volume">0.5</float>
+					<float name="xmlRead_MaxDistance_3">10000</float>
+				</Properties>
+			</Item>
+			<Item class="Part" referent="RBX48E5B22626A1469C81C1BEDE604013D0">
+				<Properties>
+					<bool name="Anchored">false</bool>
+					<float name="BackParamA">-0.5</float>
+					<float name="BackParamB">0.5</float>
+					<token name="BackSurface">0</token>
+					<token name="BackSurfaceInput">0</token>
+					<float name="BottomParamA">-0.5</float>
+					<float name="BottomParamB">0.5</float>
+					<token name="BottomSurface">0</token>
+					<token name="BottomSurfaceInput">0</token>
+					<CoordinateFrame name="CFrame">
+						<X>-3.75999999</X>
+						<Y>2.80352092</Y>
+						<Z>-1.94999695</Z>
+						<R00>0</R00>
+						<R01>-1</R01>
+						<R02>0</R02>
+						<R10>0</R10>
+						<R11>0</R11>
+						<R12>-1</R12>
+						<R20>1</R20>
+						<R21>0</R21>
+						<R22>0</R22>
+					</CoordinateFrame>
+					<bool name="CanCollide">true</bool>
+					<int name="CollisionGroupId">0</int>
+					<Color3uint8 name="Color3uint8">4288914085</Color3uint8>
+					<PhysicalProperties name="CustomPhysicalProperties">
+						<CustomPhysics>false</CustomPhysics>
+					</PhysicalProperties>
+					<float name="Elasticity">0.5</float>
+					<float name="Friction">0.300000012</float>
+					<float name="FrontParamA">-0.5</float>
+					<float name="FrontParamB">0.5</float>
+					<token name="FrontSurface">0</token>
+					<token name="FrontSurfaceInput">0</token>
+					<float name="LeftParamA">-0.5</float>
+					<float name="LeftParamB">0.5</float>
+					<token name="LeftSurface">0</token>
+					<token name="LeftSurfaceInput">0</token>
+					<bool name="Locked">false</bool>
+					<token name="Material">256</token>
+					<string name="Name">FirePart</string>
+					<float name="Reflectance">0</float>
+					<float name="RightParamA">-0.5</float>
+					<float name="RightParamB">0.5</float>
+					<token name="RightSurface">0</token>
+					<token name="RightSurfaceInput">0</token>
+					<Vector3 name="RotVelocity">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+					</Vector3>
+					<BinaryString name="Tags"></BinaryString>
+					<float name="TopParamA">-0.5</float>
+					<float name="TopParamB">0.5</float>
+					<token name="TopSurface">0</token>
+					<token name="TopSurfaceInput">0</token>
+					<float name="Transparency">1</float>
+					<Vector3 name="Velocity">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+					</Vector3>
+					<token name="formFactorRaw">3</token>
+					<token name="shape">1</token>
+					<Vector3 name="size">
+						<X>0.200000003</X>
+						<Y>0.200000003</Y>
+						<Z>0.200000003</Z>
+					</Vector3>
+				</Properties>
+				<Item class="Fire" referent="RBXB56277D33FA44363AA650F7A0D00742D">
+					<Properties>
+						<Color3 name="Color">4285114880</Color3>
+						<bool name="Enabled">true</bool>
+						<string name="Name">DarkFire</string>
+						<Color3 name="SecondaryColor">4280887593</Color3>
+						<BinaryString name="Tags"></BinaryString>
+						<float name="heat_xml">25</float>
+						<float name="size_xml">2.20000005</float>
+					</Properties>
+				</Item>
+			</Item>
+		</Item>
+		<Item class="LocalScript" referent="RBX1B1EAE42BC744BC7903A223B2388B8E9">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">Local Gui</string>
+				<string name="ScriptGuid">{9E596341-356B-40EF-B20F-873AF617912E}</string>
+				<ProtectedString name="Source"><![CDATA[Tool = script.Parent 
+
+local stillEquipped = true
+
+function onEquippedLocal(mouse)
+	stillEquipped = true
+	if mouse == nil then
+		return
+	end
+	while stillEquipped do 
+		mouse.Icon = "rbxasset://textures\\GunCursor.png"
+		while Tool.Enabled and stillEquipped do
+			wait(0.01)
+		end
+		mouse.Icon = "rbxasset://textures\\GunWaitCursor.png"
+		while not Tool.Enabled and stillEquipped do
+			wait(0.01)
+		end		
+	end
+end
+
+function onUnequippedLocal()
+	stillEquipped = false
+end
+
+Tool.Equipped:connect(onEquippedLocal)
+Tool.Unequipped:connect(onUnequippedLocal)
+]]></ProtectedString>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+		</Item>
+		<Item class="Script" referent="RBX62A29CFD5AB345549E7B3807CC9F6EDB">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">SwordScript</string>
+				<string name="ScriptGuid">{D560ECC2-AD54-4825-BD72-D3816A8743D6}</string>
+				<ProtectedString name="Source"><![CDATA[-- // Fixed by StarWars for R15 avatars
+function waitForChild(parent, instance)
+	while parent:FindFirstChild(instance) == nil do print(instance) wait() end 
+	return parent:FindFirstChild(instance)
+end 
+
+local Tool = script.Parent 
+local Sword = Tool.Handle 
+
+local Character
+local Player
+local Torso
+local Humanoid 
+
+Tool.Enabled = true 
+
+local Fanged_BoolValue = waitForChild(Tool, "Fanged")
+local Fang_Weld = waitForChild(Tool, "FangWeld")  
+local Fire_Part = waitForChild(Sword, "FirePart")
+local Fang_Fire = waitForChild(Fire_Part, "DarkFire") 
+
+local Damage = 16
+
+local RBX_Debris = game:GetService("Debris")
+
+local NumSpiders = 8
+local AnansiId = 117508233
+local Anansi = Game:GetService('InsertService'):LoadAsset(AnansiId):GetChildren()[1]
+
+local function Cut(hit)
+	if hit and hit.Parent then 
+		local humanoid = hit.Parent:FindFirstChild("Humanoid")
+		if hit.Parent:IsA("Accessory") then
+			humanoid = hit.Parent.Parent:FindFirstChild("Humanoid")
+		end 
+		if humanoid and humanoid ~= Humanoid and Humanoid then 
+			humanoid:TakeDamage(Damage)
+			if Fang_Fire and Fang_Fire.Enabled == true then
+				coroutine.resume(coroutine.create(function()
+					if humanoid and humanoid.Parent and (humanoid.Parent:FindFirstChild("Torso") or humanoid.Parent:FindFirstChild("UpperTorso")) and not humanoid.Parent.Torso:FindFirstChild("DarkFire") then						
+						local cFire = Fang_Fire:Clone()
+						cFire.Parent = humanoid.Parent:FindFirstChild("Torso") or humanoid.Parent:FindFirstChild("UpperTorso") 
+						RBX_Debris:AddItem(cFire, 4) 
+						if math.random() < 0.25 then 
+							local anansi = Anansi:Clone()						
+							local aScript = Tool:WaitForChild('AnansiAIScript'):Clone()
+							aScript.Parent = Character
+							aScript:WaitForChild('Anansi').Value = anansi
+							anansi:WaitForChild('Target').Value = humanoid.Parent:FindFirstChild("Torso") or humanoid.Parent:FindFirstChild("UpperTorso") 
+							anansi.Parent = workspace 
+							aScript.Disabled = false
+							RBX_Debris:AddItem(anansi, 30.0)
+							RBX_Debris:AddItem(aScript, 30.0)
+							anansi:MoveTo(Torso.CFrame.p + Torso.CFrame.lookVector * 4.0, Torso)
+						end 
+						local duration = 4
+						while duration > 0 do
+							humanoid:TakeDamage(3)
+							duration = duration - 1 
+							wait(1.0) 
+						end  					
+					end 
+				end)) 
+			end 
+		end 
+	end 
+end
+
+local function OnEquipped() 
+	if Fang_Weld then 
+		Fang_Weld.Parent = Tool 
+	end 	
+	Character = Tool.Parent 
+	Player = game.Players:GetPlayerFromCharacter(Character)
+	Humanoid = Character:FindFirstChild("Humanoid")
+	Torso = Character:FindFirstChild("Torso") or Character:FindFirstChild("UpperTorso")
+end 
+
+Tool.Equipped:connect(OnEquipped)
+Sword.Touched:connect(Cut)
+
+local function FireSpiderCannon()
+	local parts_List = {} 
+
+	local ray = Instance.new("Part")
+	ray.Parent = game.Workspace 
+	ray.Anchored = true
+	ray.CanCollide = false 
+	ray.Size = Vector3.new(1, 0.2, 1)
+	ray.Material = Enum.Material.Plastic
+	ray.BrickColor = BrickColor.new("Bright green")
+	ray.Locked = true 
+	ray.CFrame = CFrame.new(Fire_Part.CFrame.p, Vector3.new(0, 1, 0)) 	
+			
+	while ray.Size.Y < 100 do 		
+		ray.Size = ray.Size *  Vector3.new(1, 2, 1) 
+		ray.CFrame = CFrame.new(Fire_Part.CFrame.p) * CFrame.new(0, 0, -ray.Size/2)		
+		wait(0.05)
+	end 
+
+	for i = 1, 8 do 
+		local p = Instance.new('Part')
+		p.Parent = Game.Workspace
+		p.FormFactor = 3 
+		p.Size = Vector3.new(1, 1, 1)
+		p.CFrame = ray.CFrame * CFrame.Angles(0, 0, 2*i*math.pi/8)
+		p.Anchored = true 
+		p.BrickColor = BrickColor.new('Black')
+		p.CanCollide = false
+
+		table.insert(parts_List, p)
+	end 	
+
+	local duration = 3.0 
+	while duration > 0  do 
+		local count = 0 
+		for _, part in pairs(parts_List) do 
+			count = count + 1
+			if part.Size.Y < 30 then 
+				part.Size = part.Size + Vector3.new(0, 1, 0)
+				part.CFrame = (ray.CFrame + Vector3.new(0, ray.Size.Y/2, 0)) * CFrame.Angles(0, 0, count * math.pi/8)
+			end 
+		end 
+		wait()
+		duration = duration - wait(0.25)
+	end 
+	
+	wait(1.0)	
+	ray:Destroy()
+	for _, part in pairs(parts_List) do
+--		print('Anansi!')
+		local anansi = Anansi:Clone()						
+		local aScript = Tool:WaitForChild('AnansiAIScript'):Clone() 
+		aScript:WaitForChild('Anansi').Value = anansi		
+		anansi.Parent = workspace 
+		aScript.Parent = Character 
+		aScript.Disabled = false
+		anansi:MoveTo(part.CFrame.p + Vector3.new(math.random(1, 5), 0, math.random(1, 5)), Torso)
+		RBX_Debris:AddItem(anansi, 30.0)
+		RBX_Debris:AddItem(aScript, 30.0)
+		part:Destroy()
+		wait()
+	end 
+end 
+
+Fanged_BoolValue.Changed:connect(function()	
+	if Fanged_BoolValue.Value == true and Humanoid then 
+		Fang_Fire.Enabled = true 
+		Damage = 29
+		Humanoid.WalkSpeed = 0.0 		
+		FireSpiderCannon() 
+		Humanoid.WalkSpeed = 21.0		
+		wait(30)
+		Damage = 16 
+		Humanoid.WalkSpeed = 16.0
+		Fang_Fire.Enabled = false 		
+		wait(15)
+		Fanged_BoolValue.Value = false
+	else 		
+		if not Humanoid then 
+			if Fanged_BoolValue then 
+				Fanged_BoolValue.Value = false 
+			end 
+		end  
+	end  
+end) 
+
+
+
+]]></ProtectedString>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+		</Item>
+		<Item class="LocalScript" referent="RBXF860CD74104140D9BBE0A929732847AD">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">AnimateScript</string>
+				<string name="ScriptGuid">{911F6B35-38DA-40A4-85FB-2E923D001112}</string>
+				<ProtectedString name="Source"><![CDATA[-- // Fixed by StarWars for R15 avatars
+local Tool = script.Parent 
+local Sword = Tool.Handle
+
+local vCharacter
+local vPlayer 
+local vTorso 
+local vHumanoid 
+
+local RBX_Debris = game:GetService("Debris")
+
+local Slash_Animation
+local Stab_Animation
+local Darken_Animation 
+
+local Charge_Animation 
+
+local Slash_Sound 
+
+local MouseDown_Bool = false 
+
+local Camera = game.Workspace.CurrentCamera
+
+local Darken_BoolValue 
+local Animating_Bool = false 
+
+local Animations =
+{
+	ChargeAnim = nil;
+	DarkenAnim = nil;
+	SlashAnim = nil;
+	StabAnim = nil;
+}
+
+local function CountAnansi()
+	local nAnansi = 0
+	for _, child in pairs(vCharacter:GetChildren()) do 
+		if child:IsA('Model') and child.Name == 'Anansi' then 
+			nAnansi = nAnansi + 1
+		end 
+	end 
+	return nAnansi
+end 
+
+local function onEquipped(mouse)
+	vCharacter = Tool.Parent 
+	vPlayer = game.Players:GetPlayerFromCharacter(vCharacter)
+	vTorso = vCharacter:FindFirstChild("Torso") or vCharacter:FindFirstChild("UpperTorso")
+	vHumanoid = vCharacter:FindFirstChild("Humanoid") 
+
+	if vHumanoid and vHumanoid.RigType == Enum.HumanoidRigType.R15 then
+		Animations =
+		{
+			ChargeAnim = Tool:WaitForChild("Animations"):WaitForChild("R15"):WaitForChild("ChargeAnim");
+			DarkenAnim = Tool:WaitForChild("Animations"):WaitForChild("R15"):WaitForChild("DarkenAnim");
+			SlashAnim = Tool:WaitForChild("Animations"):WaitForChild("R15"):WaitForChild("SlashAnim");
+			StabAnim = Tool:WaitForChild("Animations"):WaitForChild("R15"):WaitForChild("StabAnim");
+		}	
+	else
+		Animations =
+		{
+			ChargeAnim = Tool:WaitForChild("Animations"):WaitForChild("R6"):WaitForChild("ChargeAnim");
+			DarkenAnim = Tool:WaitForChild("Animations"):WaitForChild("R6"):WaitForChild("DarkenAnim");
+			SlashAnim = Tool:WaitForChild("Animations"):WaitForChild("R6"):WaitForChild("SlashAnim");
+			StabAnim = Tool:WaitForChild("Animations"):WaitForChild("R6"):WaitForChild("StabAnim");
+		}					
+	end
+
+	mouse.Button1Down:connect(function()
+		if Animating_Bool == false then 
+			MouseDown_Bool = true 
+			Charge_Animation = vHumanoid:LoadAnimation(Animations.ChargeAnim)
+			Charge_Animation:Play() 
+			local currentSpeed = vHumanoid.WalkSpeed
+			while MouseDown_Bool do 				
+				vHumanoid.WalkSpeed = math.min(vHumanoid.WalkSpeed + 0.1, 23) 				
+				wait() 
+			end 
+			if Charge_Animation then Charge_Animation:Stop() end 
+			local vDirection = (vTorso.Position - Camera.CoordinateFrame.p).unit 
+			local mDirection = (vHumanoid.TargetPoint - Camera.CoordinateFrame.p).unit 
+
+			local angleBetweenVectors = math.abs(math.acos(vDirection:Dot(mDirection)))			
+			if angleBetweenVectors < 0.5 then 
+				Slash_Animation = vHumanoid:LoadAnimation(Animations.SlashAnim)
+				Slash_Animation:Play() 								
+			else 
+				Stab_Animation = vHumanoid:LoadAnimation(Animations.StabAnim)
+				Stab_Animation:Play() 
+				Tool.Grip = CFrame.new(0, -1.75, 0, 0.99999994, 0, -0, 0, -0.691990137, -0.72190702, -0, 0.72190702, -0.691990137)
+				wait(1.3)
+				Tool.Grip = CFrame.new(0, -2.20000005, 0, 0, 0, -1, -0, 1, 0, 1, 0, 0)
+			end 					
+			vHumanoid.WalkSpeed = currentSpeed 
+		else 					
+		end 
+	end) 
+
+	mouse.Button1Up:connect(function()
+		MouseDown_Bool = false 
+		if Animating_Bool == false then 
+			Tool.Enabled = false
+			Animating_Bool = true 
+			wait(1.5)			
+			Tool.Enabled = true 
+			Animating_Bool = false 		
+		end 		
+	end)
+
+	mouse.KeyDown:connect(function(key)
+		key = key:lower() 
+		if key == "q" then 
+			Darken_BoolValue = Tool:FindFirstChild("Fanged")
+			if Darken_BoolValue and Darken_BoolValue.Value == false and CountAnansi() < 4 then 
+				Animating_Bool = true 
+				Darken_Animation = vHumanoid:LoadAnimation(Animations.DarkenAnim)
+				Darken_Animation:Play() 	
+				wait(0.4)
+				vHumanoid.WalkSpeed = 0.0 
+				Darken_BoolValue.Value = true				
+				wait(2.0)
+				Animating_Bool = false 
+			end  
+		end 
+	end) 
+end 
+
+local function onUnequipped()
+	-- Do stuff
+	if Charge_Animation  then Charge_Animation:Stop() end 
+	if Slash_Animation then Slash_Animation:Stop() end 
+	if Stab_Animation then Stab_Animation:Stop() end 
+	if Darken_Animation then Darken_Animation:Stop() end 
+	Animating_Bool = false 	
+	Tool.Grip = CFrame.new(0, -2.20000005, 0, 0, 0, -1, -0, 1, 0, 1, 0, 0)
+	MouseDown_Bool = false 
+	vHumanoid.WalkSpeed = 16.0
+end 
+
+Tool.Equipped:connect(onEquipped)
+Tool.Unequipped:connect(onUnequipped)]]></ProtectedString>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+		</Item>
+		<Item class="BoolValue" referent="RBX87DE9BFC00EB4BC985F0CAD98590487C">
+			<Properties>
+				<string name="Name">Fanged</string>
+				<BinaryString name="Tags"></BinaryString>
+				<bool name="Value">false</bool>
+			</Properties>
+		</Item>
+		<Item class="Weld" referent="RBXC03CEEC17B1441B096AD9A30379A0911">
+			<Properties>
+				<CoordinateFrame name="C0">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+					<R00>1</R00>
+					<R01>0</R01>
+					<R02>0</R02>
+					<R10>0</R10>
+					<R11>1</R11>
+					<R12>0</R12>
+					<R20>0</R20>
+					<R21>0</R21>
+					<R22>1</R22>
+				</CoordinateFrame>
+				<CoordinateFrame name="C1">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+					<R00>1</R00>
+					<R01>0</R01>
+					<R02>0</R02>
+					<R10>0</R10>
+					<R11>1</R11>
+					<R12>0</R12>
+					<R20>0</R20>
+					<R21>0</R21>
+					<R22>1</R22>
+				</CoordinateFrame>
+				<string name="Name">FangWeld</string>
+				<Ref name="Part0">RBXB753D87D99D9410194EA17E4FD8708A4</Ref>
+				<Ref name="Part1">RBX48E5B22626A1469C81C1BEDE604013D0</Ref>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+		</Item>
+		<Item class="LocalScript" referent="RBX8D6B5EAAB035487A9131A5A5C09B96CB">
+			<Properties>
+				<bool name="Disabled">true</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">AnansiAIScript</string>
+				<string name="ScriptGuid">{4143B6B8-8BA2-4AF9-BE75-FE84E5A2D80F}</string>
+				<ProtectedString name="Source"><![CDATA[-- // Fixed by StarWars for R15 avatars
+while script:FindFirstChild("Anansi") == nil do 
+	wait()
+end
+
+local petAnansi = script.Anansi
+
+while petAnansi.Value == nil do 
+	wait()
+end 
+
+petAnansi = petAnansi.Value
+
+while petAnansi:FindFirstChild("Target") == nil do 
+	wait()
+end
+
+print(0.1) 
+
+local target = petAnansi.Target
+
+local targetEnemyTorso 
+
+if target.Value == nil then 
+	--petAnansi:Remove()
+end 
+
+-- Best part about doing this from the character 
+local vCharacter = script.Parent
+local myTorso = vCharacter:FindFirstChild("Torso") or vCharacter:FindFirstChild("UpperTorso")
+local myHumanoid = vCharacter:FindFirstChild("Humanoid")
+
+local petAnansiHumanoid = petAnansi:FindFirstChild("Humanoid")
+local petAnansiTorso = petAnansi:FindFirstChild("Torso")
+
+local debris = game:GetService("Debris")
+
+local enemyHumanoid = target.Value 
+
+if petAnansiHumanoid then 	
+	petAnansiHumanoid.WalkSpeed = 18.0
+	
+	while petAnansiHumanoid.MaxHealth < 150 do 
+		petAnansiHumanoid.MaxHealth = 150 
+		wait()
+	end
+
+	while petAnansiHumanoid.Health < 150 do 
+		petAnansiHumanoid.Health = 150 
+		wait()
+	end
+	
+	petAnansiHumanoid.Died:connect(function()
+		petAnansi:Destroy() 
+		script:Destroy() 
+	end)
+end 
+
+print(0.2)
+
+local healCount = 0
+
+function slash(hit)	
+	if hit and not hit:IsA('Terrain') and hit.Parent and hit.Parent.Name ~= 'Anansi' then           		
+		local humanoid = hit.Parent:FindFirstChild("Humanoid")
+		if humanoid and humanoid ~= petAnansiHumanoid and humanoid ~= myHumanoid then                			
+			humanoid:TakeDamage(15)     			
+			if humanoid.Health == 0 then 					
+				targetEnemyTorso = nil 				
+				followCharacter = true 			
+			else 				
+			end 
+		end
+	end
+end 
+
+local petAnansiLeftArm  = petAnansi:FindFirstChild("Left Arm")
+local petAnansiRightArm  = petAnansi:FindFirstChild("Right Arm")
+--[[local petAnansiRightMidArm = petAnansi:FindFirstChild("Right MidArm")
+local petAnansiLeftMidArm = petAnansi:FindFirstChild("Left MidArm")
+local petAnansiLeftForeArm = petAnansi:FindFirstChild("Left ForeArm")
+local petAnansiRightForeArm = petAnansi:FindFirstChild("Right ForeArm")]]
+
+
+if petAnansiLeftArm  then
+	petAnansiLeftArm.Touched:connect(slash)
+end
+
+if petAnansiRightArm  then 
+	petAnansiRightArm.Touched:connect(slash)
+end 
+
+--[[if petAnansiLeftForeArm then
+	petAnansiLeftForeArm.Touched:connect(slash)
+end 
+
+if petAnansiRightForeArm then 
+	petAnansiRightForeArm.Touched:connect(slash)
+end 
+
+if petAnansiRightMidArm then 
+	petAnansiRightMidArm.Touched:connect(slash)
+end 
+
+if petAnansiLeftMidArm then 
+	petAnansiLeftMidArm.Touched:connect(slash)
+end ]]
+
+local petAnansiHead = petAnansi:FindFirstChild('Head')
+if petAnansiHead then 
+	petAnansiHead.Touched:connect(slash)
+end 
+
+print(0.4) 
+
+
+petAnansiTorso.Touched:connect(slash)
+
+local children = petAnansi:GetChildren()
+for i = 1, #children do 
+	if children[i].ClassName == "Tool" then 
+		if children[i]:FindFirstChild("Handle") then 
+			children[i].Handle.Touched:connect(slash) 
+		end 
+	end 
+end 
+
+
+local targetEnemy 
+if enemyHumanoid then targetEnemy = enemyHumanoid.Parent end
+
+if targetEnemy then 
+	targetEnemyTorso = targetEnemy:FindFirstChild("Torso") or targetEnemy:FindFirstChild("UpperTorso")
+	targetEnemyHumanoid = targetEnemy:FindFirstChild('Humanoid') 
+	if targetEnemyTorso == nil then
+		--petAnansi:Remove()
+	end 
+else 
+	--petAnansi:Remove() 
+end 
+
+target.Changed:connect(function()
+	if target.Value then 
+		enemyHumanoid = target.Value 
+		targetEnemy = enemyHumanoid.Parent 
+		if targetEnemy then 
+			targetEnemyTorso = targetEnemy:FindFirstChild("Torso") or targetEnemy:FindFirstChild("UpperTorso")
+		end 
+	end 
+end) 
+
+local animating = false
+
+local checkAOE = Vector3.new(15, 15, 15)
+
+local function FindNearestTorso()
+	local parts = Game.Workspace:FindPartsInRegion3(Region3.new(petAnansiTorso.Position - checkAOE, petAnansiTorso.Position + checkAOE), vCharacter, 100)
+	for _, part in pairs(parts) do 
+		local Torso = part.Parent:FindFirstChild('Torso') or part.Parent:FindFirstChild("UpperTorso")
+		if part and part.Parent and Torso and part.Parent ~= "Anansi" then 
+			return Torso, part.Parent:FindFirstChild('Humanoid')  	
+		end 
+	end 
+end 
+
+print(0.45) 
+
+local duration = 30 
+
+while duration > 0 do     
+	local ray = game.Workspace:FindPartOnRay(Ray.new(petAnansiHead.Position, petAnansiHead.CFrame.lookVector * 5.0), petAnansi)
+	if ray and petAnansiHumanoid and ray.Parent ~= petAnansi and ray.Parent ~= vCharacter and ray.Parent.Name == 'Anansi' then
+		petAnansiHumanoid.Jump = true		
+	end     
+	if targetEnemyTorso and targetEnemyHumanoid and targetEnemyHumanoid.Health > 0 then       		
+		local distance = (targetEnemyTorso.Position - petAnansiTorso.Position).magnitude
+		local targetEnemy = targetEnemyTorso.Parent
+		if distance < 60 then 			
+			petAnansiHumanoid:MoveTo(targetEnemyTorso.Position, targetEnemyTorso)     
+			if distance < 4 and not animating then 
+				animating = true
+				local biteAnim = petAnansiHumanoid:LoadAnimation(script:FindFirstChild("BiteAnim"))
+				if biteAnim then biteAnim:Play() end 
+				coroutine.resume(coroutine.create(function() wait(1.25) animating = false end))
+			end 
+		else 
+			if myTorso then 
+				petAnansiHumanoid:MoveTo(myTorso.Position + Vector3.new(4, 0, 4), myTorso)
+			end 
+		end 
+	else
+		targetEnemyTorso, targetEnemyHumanoid = FindNearestTorso() 
+		if not targetEnemyHumanoid or targetEnemyHumanoid.Health == 0 then 
+			targetEnemyTorso = nil
+		end 
+		if not targetEnemyTorso and myTorso then 
+			petAnansiHumanoid:MoveTo(myTorso.Position + Vector3.new(4, 0, 4), myTorso)
+		end 
+	end
+	wait(0.1)
+	duration = duration - wait(0.1) 
+end 
+
+petAnansi:Destroy()
+script:Destroy() 
+]]></ProtectedString>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+			<Item class="ObjectValue" referent="RBX3BCF9966D711402EB88DE94C1B2D4C30">
+				<Properties>
+					<string name="Name">Anansi</string>
+					<BinaryString name="Tags"></BinaryString>
+					<Ref name="Value">null</Ref>
+				</Properties>
+			</Item>
+			<Item class="Animation" referent="RBX6F66BA9038304979B96180FCE4928A9A">
+				<Properties>
+					<Content name="AnimationId"><url>http://www.roblox.com/Asset?ID=76138892</url></Content>
+					<string name="Name">BiteAnim2</string>
+					<BinaryString name="Tags"></BinaryString>
+				</Properties>
+			</Item>
+			<Item class="Animation" referent="RBX03055502C2934B6EAA8235B482ECF939">
+				<Properties>
+					<Content name="AnimationId"><url>http://www.roblox.com/Asset?ID=76138892</url></Content>
+					<string name="Name">BiteAnim</string>
+					<BinaryString name="Tags"></BinaryString>
+				</Properties>
+			</Item>
+		</Item>
+		<Item class="Folder" referent="RBX0B331E3F2CFF4DACBEBA268E4846466E">
+			<Properties>
+				<string name="Name">Animations</string>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+			<Item class="Folder" referent="RBX7E9E8CD695994ADA9D07EB8CACC41A85">
+				<Properties>
+					<string name="Name">R15</string>
+					<BinaryString name="Tags"></BinaryString>
+				</Properties>
+				<Item class="Animation" referent="RBX5E59859F03FC48FD9A66105B52384835">
+					<Properties>
+						<Content name="AnimationId"><url>rbxassetid://857094125</url></Content>
+						<string name="Name">ChargeAnim</string>
+						<BinaryString name="Tags"></BinaryString>
+					</Properties>
+				</Item>
+				<Item class="Animation" referent="RBX0C071FE530FB4BA1A1CC44C51B73A8B9">
+					<Properties>
+						<Content name="AnimationId"><url>rbxassetid://1237931511</url></Content>
+						<string name="Name">DarkenAnim</string>
+						<BinaryString name="Tags"></BinaryString>
+					</Properties>
+				</Item>
+				<Item class="Animation" referent="RBX766AA427CC3B4560AC9CFF3E4EA8B767">
+					<Properties>
+						<Content name="AnimationId"><url>rbxassetid://857093422</url></Content>
+						<string name="Name">SlashAnim</string>
+						<BinaryString name="Tags"></BinaryString>
+					</Properties>
+				</Item>
+				<Item class="Animation" referent="RBX8DD0C7C4CB9A424196C158A5B56B686E">
+					<Properties>
+						<Content name="AnimationId"><url>rbxassetid://854483914</url></Content>
+						<string name="Name">StabAnim</string>
+						<BinaryString name="Tags"></BinaryString>
+					</Properties>
+				</Item>
+			</Item>
+			<Item class="Folder" referent="RBX0EC480FDEF194BFB9F68F57F6D9B3B84">
+				<Properties>
+					<string name="Name">R6</string>
+					<BinaryString name="Tags"></BinaryString>
+				</Properties>
+				<Item class="Animation" referent="RBX1C10E6837A62451AAEC1E22D4E91D19C">
+					<Properties>
+						<Content name="AnimationId"><url>http://www.roblox.com/Asset?ID=77320917</url></Content>
+						<string name="Name">ChargeAnim</string>
+						<BinaryString name="Tags"></BinaryString>
+					</Properties>
+				</Item>
+				<Item class="Animation" referent="RBX3AAD4B00C64C46F98D395A039C2D5EA1">
+					<Properties>
+						<Content name="AnimationId"><url>http://www.roblox.com/Asset?ID=77329203</url></Content>
+						<string name="Name">DarkenAnim</string>
+						<BinaryString name="Tags"></BinaryString>
+					</Properties>
+				</Item>
+				<Item class="Animation" referent="RBX8043065FF9F74554ABA96D1528A6B7E4">
+					<Properties>
+						<Content name="AnimationId"><url>http://www.roblox.com/Asset?ID=54584713</url></Content>
+						<string name="Name">SlashAnim</string>
+						<BinaryString name="Tags"></BinaryString>
+					</Properties>
+				</Item>
+				<Item class="Animation" referent="RBXE8391336CF7D48D1B50AA3B37F4C94EC">
+					<Properties>
+						<Content name="AnimationId"><url>http://www.roblox.com/Asset?ID=77319318</url></Content>
+						<string name="Name">StabAnim</string>
+						<BinaryString name="Tags"></BinaryString>
+					</Properties>
+				</Item>
+			</Item>
+		</Item>
+		<Item class="Camera" referent="RBX1FE8700D4A634ABEB11A6D9CC6156D09">
+			<Properties>
+				<CoordinateFrame name="CFrame">
+					<X>-3.10857201</X>
+					<Y>9.01609325</Y>
+					<Z>-2.68745446</Z>
+					<R00>-0.749469459</R00>
+					<R01>-0.653888226</R01>
+					<R02>0.103565507</R02>
+					<R10>-0</R10>
+					<R11>0.156434178</R11>
+					<R12>0.987688482</R12>
+					<R20>-0.662038922</R20>
+					<R21>0.740242362</R21>
+					<R22>-0.117242634</R22>
+				</CoordinateFrame>
+				<Ref name="CameraSubject">null</Ref>
+				<token name="CameraType">0</token>
+				<float name="FieldOfView">70</float>
+				<CoordinateFrame name="Focus">
+					<X>-3.76000023</X>
+					<Y>2.80352092</Y>
+					<Z>-1.94999695</Z>
+					<R00>1</R00>
+					<R01>0</R01>
+					<R02>0</R02>
+					<R10>0</R10>
+					<R11>1</R11>
+					<R12>0</R12>
+					<R20>0</R20>
+					<R21>0</R21>
+					<R22>1</R22>
+				</CoordinateFrame>
+				<bool name="HeadLocked">true</bool>
+				<float name="HeadScale">1</float>
+				<string name="Name">ThumbnailCamera</string>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+		</Item>
+	</Item>
+</roblox>

@@ -1,0 +1,791 @@
+<roblox xmlns:xmime="http://www.w3.org/2005/05/xmlmime" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.roblox.com/roblox.xsd" version="4">
+	<External>null</External>
+	<External>nil</External>
+	<Item class="Tool" referent="RBXFB77339616B14D2E87E8356B294250AF">
+		<Properties>
+			<bool name="CanBeDropped">true</bool>
+			<bool name="Enabled">true</bool>
+			<CoordinateFrame name="Grip">
+				<X>0.150000006</X>
+				<Y>-0.200000003</Y>
+				<Z>0</Z>
+				<R00>0.99999994</R00>
+				<R01>0</R01>
+				<R02>0</R02>
+				<R10>0</R10>
+				<R11>1</R11>
+				<R12>0</R12>
+				<R20>0</R20>
+				<R21>0</R21>
+				<R22>1</R22>
+			</CoordinateFrame>
+			<bool name="ManualActivationOnly">false</bool>
+			<string name="Name">BowTieAffair</string>
+			<bool name="RequiresHandle">true</bool>
+			<BinaryString name="Tags"></BinaryString>
+			<Content name="TextureId"><url>http://www.roblox.com/asset/?id=191269121</url></Content>
+			<string name="ToolTip"></string>
+		</Properties>
+		<Item class="Part" referent="RBX35B4B8C2189949D2AD9D0DDF0DE72BA5">
+			<Properties>
+				<bool name="Anchored">false</bool>
+				<float name="BackParamA">-0.5</float>
+				<float name="BackParamB">0.5</float>
+				<token name="BackSurface">0</token>
+				<token name="BackSurfaceInput">0</token>
+				<float name="BottomParamA">-0.5</float>
+				<float name="BottomParamB">0.5</float>
+				<token name="BottomSurface">0</token>
+				<token name="BottomSurfaceInput">0</token>
+				<CoordinateFrame name="CFrame">
+					<X>1.35000002</X>
+					<Y>3.24999833</Y>
+					<Z>-0.199997962</Z>
+					<R00>1</R00>
+					<R01>-8.10357562e-07</R01>
+					<R02>-1.40308487e-06</R02>
+					<R10>2.43124659e-10</R10>
+					<R11>0.866024017</R11>
+					<R12>-0.500002563</R12>
+					<R20>1.62028573e-06</R20>
+					<R21>0.500002563</R21>
+					<R22>0.866024017</R22>
+				</CoordinateFrame>
+				<bool name="CanCollide">true</bool>
+				<int name="CollisionGroupId">0</int>
+				<Color3uint8 name="Color3uint8">4288914085</Color3uint8>
+				<PhysicalProperties name="CustomPhysicalProperties">
+					<CustomPhysics>false</CustomPhysics>
+				</PhysicalProperties>
+				<float name="Elasticity">0.5</float>
+				<float name="Friction">0.300000012</float>
+				<float name="FrontParamA">-0.5</float>
+				<float name="FrontParamB">0.5</float>
+				<token name="FrontSurface">0</token>
+				<token name="FrontSurfaceInput">0</token>
+				<float name="LeftParamA">-0.5</float>
+				<float name="LeftParamB">0.5</float>
+				<token name="LeftSurface">0</token>
+				<token name="LeftSurfaceInput">0</token>
+				<bool name="Locked">true</bool>
+				<token name="Material">256</token>
+				<string name="Name">Handle</string>
+				<float name="Reflectance">0</float>
+				<float name="RightParamA">-0.5</float>
+				<float name="RightParamB">0.5</float>
+				<token name="RightSurface">0</token>
+				<token name="RightSurfaceInput">0</token>
+				<Vector3 name="RotVelocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<BinaryString name="Tags"></BinaryString>
+				<float name="TopParamA">-0.5</float>
+				<float name="TopParamB">0.5</float>
+				<token name="TopSurface">0</token>
+				<token name="TopSurfaceInput">0</token>
+				<float name="Transparency">0</float>
+				<Vector3 name="Velocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<token name="formFactorRaw">3</token>
+				<token name="shape">1</token>
+				<Vector3 name="size">
+					<X>0.5</X>
+					<Y>1.75</Y>
+					<Z>2.75</Z>
+				</Vector3>
+			</Properties>
+			<Item class="SpecialMesh" referent="RBXD731E65E80984D3BA23F182D20C6BEC9">
+				<Properties>
+					<token name="LODX">2</token>
+					<token name="LODY">2</token>
+					<Content name="MeshId"><url>http://www.roblox.com/asset/?id=191268870</url></Content>
+					<token name="MeshType">5</token>
+					<string name="Name">Mesh</string>
+					<Vector3 name="Offset">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+					</Vector3>
+					<Vector3 name="Scale">
+						<X>2</X>
+						<Y>2</Y>
+						<Z>2</Z>
+					</Vector3>
+					<BinaryString name="Tags"></BinaryString>
+					<Content name="TextureId"><url>http://www.roblox.com/asset/?id=191269030</url></Content>
+					<Vector3 name="VertexColor">
+						<X>1</X>
+						<Y>1</Y>
+						<Z>1</Z>
+					</Vector3>
+				</Properties>
+			</Item>
+			<Item class="Sound" referent="RBXB9AA590ADF484A51AA680D04D572F7BC">
+				<Properties>
+					<float name="EmitterSize">10</float>
+					<bool name="Looped">false</bool>
+					<string name="Name">Fire</string>
+					<bool name="PlayOnRemove">false</bool>
+					<float name="PlaybackSpeed">0.800000012</float>
+					<bool name="Playing">false</bool>
+					<token name="RollOffMode">0</token>
+					<Ref name="SoundGroup">null</Ref>
+					<Content name="SoundId"><url>http://www.roblox.com/asset/?id=79236960</url></Content>
+					<BinaryString name="Tags"></BinaryString>
+					<double name="TimePosition">0</double>
+					<float name="Volume">1</float>
+					<float name="xmlRead_MaxDistance_3">10000</float>
+				</Properties>
+			</Item>
+			<Item class="Attachment" referent="RBX2EA3D5668F1D4CBC96AF4B150BDA5C6C">
+				<Properties>
+					<CoordinateFrame name="CFrame">
+						<X>0.149999976</X>
+						<Y>-0.200000003</Y>
+						<Z>0</Z>
+						<R00>1</R00>
+						<R01>0</R01>
+						<R02>6.31088799e-30</R02>
+						<R10>0</R10>
+						<R11>1</R11>
+						<R12>-0</R12>
+						<R20>-6.31088799e-30</R20>
+						<R21>0</R21>
+						<R22>1</R22>
+					</CoordinateFrame>
+					<string name="Name">RightGripAttachment</string>
+					<BinaryString name="Tags"></BinaryString>
+					<bool name="Visible">false</bool>
+				</Properties>
+			</Item>
+		</Item>
+		<Item class="Animation" referent="RBXCF37F282023341FD9CA4F82ED1D1311E">
+			<Properties>
+				<Content name="AnimationId"><url>http://www.roblox.com/asset?id=182631367</url></Content>
+				<string name="Name">Equip</string>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+		</Item>
+		<Item class="Script" referent="RBX7FEA60186FDB4B0AB568AD1FA4DC8F5B">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">Script</string>
+				<string name="ScriptGuid">{9630098C-4707-4B89-A8B4-BD94063D766D}</string>
+				<ProtectedString name="Source"><![CDATA[--Made by Luckymaxer
+
+local PackageLib = require(836581200)
+
+Tool = script.Parent
+Handle = Tool:WaitForChild("Handle")
+
+Players = game:GetService("Players")
+Debris = game:GetService("Debris")
+InsertService = game:GetService("InsertService")
+
+GuiHandler = script:WaitForChild("GuiHandler")
+
+BasePart = Instance.new("Part")
+BasePart.Shape = Enum.PartType.Block
+BasePart.Material = Enum.Material.Plastic
+BasePart.TopSurface = Enum.SurfaceType.Smooth
+BasePart.BottomSurface = Enum.SurfaceType.Smooth
+BasePart.FormFactor = Enum.FormFactor.Custom
+BasePart.Size = Vector3.new(0.2, 0.2, 0.2)
+BasePart.CanCollide = true
+BasePart.Locked = true
+BasePart.Anchored = false
+
+BaseProjectile = BasePart:Clone()
+BaseProjectile.Name = "Projectile"
+BaseProjectile.Size = Vector3.new(1.3, 0.5, 0.2)
+BaseProjectile.CanCollide = false
+BowTieMesh = Instance.new("SpecialMesh")
+BowTieMesh.MeshType = Enum.MeshType.FileMesh
+BowTieMesh.MeshId = "http://www.roblox.com/asset/?id=191294895"
+BowTieMesh.TextureId = "http://www.roblox.com/asset/?id=191269030"
+BowTieMesh.Scale = Vector3.new(2, 2, 2)
+BowTieMesh.VertexColor = Vector3.new(1, 1, 1)
+BowTieMesh.Parent = BaseProjectile
+
+BowTie = Instance.new("Accessory")
+BowTie.Name = "BlackBowTie"
+BowTie.AttachmentPoint = CFrame.new(0, 1.4, 0.5, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+BowTieHandle = BaseProjectile:Clone()
+BowTieHandle.Name = "Handle"
+BowTieHandle.CanCollide = true
+BowTieHandle.Parent = BowTie
+
+Outfits = {
+	Assets = {191344083},
+	Suits = {
+		{
+			Name = "The Londoner",
+			Image = "http://www.roblox.com/asset/?id=191387352",
+			Assets = {124909182, 124909333, 124909400, 124909450, 124909574, 124909603}
+		},
+		{
+			Name = "The Crook",
+			Image = "http://www.roblox.com/asset/?id=191387330",
+			Assets = {116791307, 116791347, 116791368, 116791410, 116791445, 116791503}
+		},
+		{
+			Name = "Chicago News Man",
+			Image = "http://www.roblox.com/asset/?id=191387286",
+			Assets = {122329350, 122329449, 122329493, 122329521, 122329554, 122329611}
+		},
+		{
+			Name = "Basic Black Tuxedo",
+			Image = "http://www.roblox.com/asset/?id=191387263",
+			Assets = {14463095, 12786197, 12786204, 27112025, 27112039, 27112052, 27112056, 27112068}
+		},
+		{
+			Name = "Basic White Tuxedo",
+			Image = "http://www.roblox.com/asset/?id=191387408",
+			Assets = {186956940, 188258102, 188409259, 27112025, 27112039, 27112052, 27112056, 27112068}
+		}
+	}
+}
+
+CurrentIndex = 1
+
+MaxFramesDisplayed = 3
+MainFrameSize = UDim2.new(0, 200, 0, 300)
+FrameSize = (MainFrameSize.Y.Offset / MaxFramesDisplayed)
+OutfitGui = Instance.new("ScreenGui")
+OutfitGui.Name = "OutfitGui"
+ScrollingFrame = Instance.new("ScrollingFrame")
+ScrollingFrame.BackgroundColor3 = Color3.new((0 / 255), (0 / 255), (0 / 255))
+ScrollingFrame.BorderColor3 = Color3.new((0 / 255), (0 / 255), (0 / 255))
+ScrollingFrame.BorderSizePixel = 2
+ScrollingFrame.BackgroundTransparency = 0.35
+ScrollingFrame.Size = MainFrameSize
+ScrollingFrame.CanvasPosition = Vector2.new(0, 0)
+ScrollingFrame.Position = UDim2.new(0, 25, 0, 25, 0)
+ScrollingFrame.ZIndex = 1
+ScrollingFrame.Parent = OutfitGui
+for i, v in pairs(Outfits.Suits) do
+	local ImageButton = Instance.new("ImageButton")
+	ImageButton.Name = v.Name
+	ImageButton.Image = v.Image
+	ImageButton.BackgroundColor3 = Color3.new((75 / 255), (75 / 255), (75 / 255))
+	ImageButton.BorderColor3 = Color3.new((0 / 255), (0 / 255), (0 / 255))
+	ImageButton.BackgroundTransparency = 0.75
+	ImageButton.ImageColor3 = Color3.new((255 / 255), (255 / 255), (255 / 255))
+	ImageButton.Size = UDim2.new(1, 0, 0, FrameSize)
+	ImageButton.Position = UDim2.new(0, 0, 0, (FrameSize * (i - 1)))
+	ImageButton.ZIndex = 2
+	local Index = Instance.new("IntValue")
+	Index.Name = "Index"
+	Index.Value = i
+	Index.Parent = ImageButton
+	if i == #Outfits.Suits then
+		ScrollingFrame.CanvasSize = UDim2.new(0, 0, 0, (ImageButton.Position.Y.Offset + ImageButton.Size.Y.Offset))
+	end
+	ImageButton.Parent = ScrollingFrame
+end
+
+Grips = {
+	Equipped = CFrame.new(0.15, -0.2, 0, 0.968230426, 0, 0.250059545, 0, 1, -0, -0.250059515, 0, 0.968230546),
+	Unequipped = CFrame.new(0.15, -0.2, 0, 0.99999994, 0, 0, 0, 1, 0, 0, 0, 1)
+}
+
+Animations = {
+	Equip = {Animation = Tool:WaitForChild("Equip"), FadeTime = nil, Weight = nil, Speed = nil, Duration = nil},
+	R15Equip = {Animation = Tool:WaitForChild("R15Equip"), FadeTime = nil, Weight = nil, Speed = nil, Duration = nil},
+}
+
+Sounds = {
+	Fire = Handle:WaitForChild("Fire")
+}
+
+Gravity = workspace.Gravity
+
+ReloadTime = 5
+
+ServerControl = (Tool:FindFirstChild("ServerControl") or Instance.new("RemoteFunction"))
+ServerControl.Name = "ServerControl"
+ServerControl.Parent = Tool
+
+ClientControl = (Tool:FindFirstChild("ClientControl") or Instance.new("RemoteFunction"))
+ClientControl.Name = "ClientControl"
+ClientControl.Parent = Tool
+
+Tool.Grip = Grips.Unequipped
+Tool.Enabled = true
+
+ServerControl.OnServerInvoke = (function(player, Mode, Value)
+	if player == Player then
+		if Mode == "MouseClick" and Value.Down then
+			Activated()
+		elseif Mode == "KeyPress" then
+			local Key = Value.Key
+			local Down = Value.Down
+		elseif Mode == "SetIndex" and Value then
+			CurrentIndex = ((Value.Index > #Outfits.Suits and #Outfits.Suits) or (Value.Index < 0 and 1) or Value.Index)
+		elseif Mode == "GetIndex" then
+			return {Index = CurrentIndex}
+		end
+	end
+end)
+
+function InvokeClient(Mode, Value)
+	local ClientReturn = nil
+	pcall(function()
+		ClientReturn = ClientControl:InvokeClient(Player, Mode, Value)
+	end)
+	return ClientReturn
+end
+
+function InsertAsset(AssetId)
+	local AssetModel = InsertService:LoadAsset(AssetId)
+	local Asset = (AssetModel:FindFirstChild("R15") and AssetModel:FindFirstChild("R6") and AssetModel:Clone()) or AssetModel:GetChildren()[1]:Clone()
+	if AssetModel and AssetModel.Parent then
+		AssetModel:Destroy()
+	end
+	return Asset
+end
+
+function GetSpecifiedClasses(Parent, Classes)
+	local Instances = {}
+	local function GetClasses(Parent)
+		for i, v in pairs(Parent:GetChildren()) do
+			local ClassFound = false
+			for ii, vv in pairs(Classes) do
+				if v:IsA(vv) then
+					ClassFound = true
+				end
+			end
+			if ClassFound then
+				table.insert(Instances, v)
+			end
+			GetClasses(v)
+		end
+	end
+	GetClasses(Parent)
+	return Instances
+end
+
+function DressCharacter(character, Objects)
+	if not character or not character.Parent then
+		return
+	end
+	local Head = character:FindFirstChild("Head")
+	for i, v in pairs(Objects) do
+		local Object = v:Clone()
+		if v:IsA("Accessory") then
+			local handle = v:FindFirstChild("Handle")
+			if handle and Head then
+				handle = handle:Clone()
+				handle.Name = v.Name
+				local FakeHat = Instance.new("StringValue")
+				FakeHat.Name = "FakeHat"
+				FakeHat.Parent = handle
+				local HeadWeld = Instance.new("Weld")
+				HeadWeld.Name = "HeadWeld"
+				HeadWeld.Part0 = Head
+				HeadWeld.Part1 = handle
+				HeadWeld.C0 = CFrame.new(0, 0.5, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+				HeadWeld.C1 = CFrame.new(
+					v.AttachmentPos.X, --Pos X
+					v.AttachmentPos.Y, --Pos Y
+					v.AttachmentPos.Z, --Pos Z
+					math.abs(v.AttachmentRight.X), --R00
+					v.AttachmentUp.X, --R01
+					math.abs(v.AttachmentForward.X), --R02
+					v.AttachmentRight.Y, --R10
+					v.AttachmentUp.Y, --R11
+					(math.abs(v.AttachmentForward.Y) * -1), --R12
+					v.AttachmentRight.Z, --R20
+					v.AttachmentUp.Z, --R21
+					math.abs(v.AttachmentForward.Z) --R22
+				)
+				HeadWeld.Parent = handle
+				handle.Parent = character
+			end
+		elseif v:IsA("Clothing") then
+			Object.Parent = character
+		elseif v:FindFirstChild("R15") and v:FindFirstChild("R6") then
+ 			PackageLib.ApplyBodyPart(character, v.R15, v.R6)
+ 		end
+	end
+end
+
+function PositionPart(Part, X, Y, Z)
+	local PartClone = Part:Clone()
+	local PartCloneY = PartClone:Clone()
+	PartCloneY.CFrame = PartCloneY.CFrame * CFrame.Angles(-math.rad(90), 0, 0)		
+	PartCloneY.CFrame = PartCloneY.CFrame - PartCloneY.CFrame.lookVector * Y
+	local PartCloneZ = PartCloneY:Clone()
+	PartCloneZ.CFrame = PartCloneZ.CFrame + PartClone.CFrame.lookVector * Z
+	local PartCloneX = PartCloneZ:Clone()
+	PartCloneX.CFrame = PartCloneZ.CFrame * CFrame.Angles(0, math.rad(90), 0)
+	PartCloneX.CFrame = PartCloneX.CFrame - PartCloneX.CFrame.lookVector * X
+	return PartCloneX.CFrame
+end
+
+function FireProjectile(SpawnPosition, TargetPosition)
+	local Force = 150
+	local Projectile = BaseProjectile:Clone()
+	local Mass = (Projectile:GetMass() * Gravity)
+	TargetPosition = ((not TargetPosition and (SpawnPosition + Handle.CFrame.lookVector * 2).p) or TargetPosition)
+	local Direction = CFrame.new(SpawnPosition.p, TargetPosition)
+	local Orientation = (Direction + Direction.lookVector * (Projectile.Size.Y * 0.5)) * CFrame.Angles(0, 0, 0)
+	local Velocity = Direction.lookVector * Force
+	local BodyVelocity = Instance.new("BodyVelocity")
+	BodyVelocity.maxForce = Vector3.new(Mass, Mass, Mass)
+	BodyVelocity.velocity = Velocity
+	BodyVelocity.Parent = Projectile
+	Projectile.Velocity = Velocity
+	local BodyGyro = Instance.new("BodyGyro")
+	BodyGyro.maxTorque = Vector3.new(math.huge, math.huge, math.huge)
+	BodyGyro.cframe = Orientation
+	BodyGyro.Parent = Projectile
+	Debris:AddItem(Projectile, 5)
+	Projectile.Parent = workspace
+	Projectile.CFrame = Orientation
+	return Projectile
+end
+
+function Activated()
+	if not Tool.Enabled then
+		return
+	end
+	Tool.Enabled = false
+	Sounds.Fire:Play()
+	local SpawnPosition = PositionPart(Handle, -0.1, 0.5, ((Handle.Size.Z * 0.5) - 0.06))
+	local TargetPosition = InvokeClient("MousePosition")
+	local Projectile = FireProjectile(SpawnPosition, TargetPosition)
+	Projectile.Touched:connect(function(Hit)
+		if not Hit or not Hit.Parent then
+			return
+		end
+		if Hit.Parent ~= Tool then
+			Projectile:Destroy()
+		end
+		local character = Hit.Parent
+		if character:IsA("Accessory") or character:IsA("Tool") and character.Parent then
+			character = character.Parent
+		end
+		local humanoid = character:FindFirstChild("Humanoid")
+		if humanoid and humanoid ~= Humanoid and humanoid.Health > 0 then
+			local Outfit = Outfits.Suits[1]
+			local AppearanceAssets = GetSpecifiedClasses(character, {"Accessory", "Clothing", "CharacterMesh", "MeshPart"})
+			for i, v in pairs(character:GetChildren()) do
+				if v:IsA("BasePart") and v:FindFirstChild("FakeHat") then
+					table.insert(AppearanceAssets, v)
+				end
+			end
+			local NewAppearanceAssets = {}
+			for i, v in pairs(Outfits.Suits[CurrentIndex].Assets) do
+				table.insert(NewAppearanceAssets, v)
+			end
+			for i, v in pairs(NewAppearanceAssets) do
+				NewAppearanceAssets[i] = InsertAsset(v)
+			end
+			table.insert(NewAppearanceAssets, BowTie:Clone())
+			DressCharacter(character, NewAppearanceAssets)
+			for i, v in pairs(AppearanceAssets) do
+				if v and v.Parent then
+					v:Destroy()
+				end
+			end
+		end
+	end)
+	wait(ReloadTime)
+	Tool.Enabled = true
+end
+
+function Equipped()
+	Character = Tool.Parent
+	Player = Players:GetPlayerFromCharacter(Character)
+	PlayerGui = Player:FindFirstChild("PlayerGui")
+	Humanoid = Character:FindFirstChild("Humanoid")
+	if not Player or not Humanoid or Humanoid.Health == 0 then
+		return
+	end
+	for i, v in pairs(Animations) do
+		if v and v.Animation then
+			InvokeClient("Preload", v.Animation.AnimationId)
+		end
+	end
+	if Humanoid then
+		if Humanoid.RigType == Enum.HumanoidRigType.R15 then
+			InvokeClient("PlayAnimation", Animations.R15Equip)
+		elseif Humanoid.RigType == Enum.HumanoidRigType.R6 then
+			InvokeClient("PlayAnimation", Animations.Equip)
+		end
+	end
+	
+	Tool.Grip = Grips.Equipped
+	if PlayerGui then
+		OutfitGuiClone = OutfitGui:Clone()
+		local GuiHandlerClone = GuiHandler:Clone()
+		GuiHandlerClone.Disabled = false
+		GuiHandlerClone.Parent = OutfitGuiClone
+		local ServerControlValue = Instance.new("ObjectValue")
+		ServerControlValue.Name = "ServerControl"
+		ServerControlValue.Value = ServerControl
+		ServerControlValue.Parent = OutfitGuiClone
+		OutfitGuiClone.Parent = PlayerGui
+	end
+end
+
+function Unequipped()
+	if OutfitGuiClone and OutfitGuiClone.Parent then
+		OutfitGuiClone:Destroy()
+	end
+	for i, v in pairs(Animations) do
+		InvokeClient("StopAnimation", v)
+	end
+	for i, v in pairs(Sounds) do
+		InvokeClient("StopSound", v)
+		v:Stop()
+	end
+	Tool.Grip = Grips.Unequipped
+end
+
+Tool.Equipped:connect(Equipped)
+Tool.Unequipped:connect(Unequipped)
+workspace:GetPropertyChangedSignal("Gravity"):Connect(function()
+	Gravity = workspace.Gravity
+end)]]></ProtectedString>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+			<Item class="LocalScript" referent="RBX7056BBCA693E43F3B7809D661AECD5B0">
+				<Properties>
+					<bool name="Disabled">true</bool>
+					<Content name="LinkedSource"><null></null></Content>
+					<string name="Name">GuiHandler</string>
+					<string name="ScriptGuid">{1476F36C-63E0-415B-A121-B654A608E97A}</string>
+					<ProtectedString name="Source"><![CDATA[--Made by Luckymaxer
+
+ScreenGui = script.Parent
+ScrollingFrame = ScreenGui:WaitForChild("ScrollingFrame")
+
+ServerControl = ScreenGui:WaitForChild("ServerControl").Value
+
+FrameSize = ScrollingFrame.Position
+
+ScrollingFrame.Position = UDim2.new(0, (ScreenGui.AbsoluteSize.X - ScrollingFrame.AbsoluteSize.X - FrameSize.X.Offset), 0, (ScreenGui.AbsoluteSize.Y - ScrollingFrame.AbsoluteSize.Y - FrameSize.Y.Offset))
+
+LastFrame = nil
+
+function InvokeServer(Mode, Value)
+	local ServerReturn = nil
+	pcall(function()
+		ServerReturn = ServerControl:InvokeServer(Mode, Value)
+	end)
+	return ServerReturn
+end
+
+function SelectFrame(Frame)
+	if LastFrame then
+		LastFrame.Frame.BackgroundTransparency = LastFrame.Copy.BackgroundTransparency
+		LastFrame.Frame.BackgroundColor3 = LastFrame.Copy.BackgroundColor3
+	end
+	if Frame then
+		LastFrame = {Frame = Frame, Copy = Frame:Clone()}
+		InvokeServer("SetIndex", {Index = ((LastFrame.Frame:FindFirstChild("Index") and LastFrame.Frame:FindFirstChild("Index").Value) or 1)})
+		Frame.BackgroundTransparency = 0.75
+		Frame.BackgroundColor3 = Color3.new((0 / 255), (0 / 255), (0 / 255))
+	end
+end
+
+FrameInformation = InvokeServer("GetIndex")
+
+for i, v in pairs(ScrollingFrame:GetChildren()) do
+	if v:IsA("GuiButton") then
+		local Index = v:FindFirstChild("Index")
+		if Index and Index.Value == FrameInformation.Index then
+			SelectFrame(v)
+		end
+		v.MouseButton1Down:connect(function()
+			SelectFrame(v)
+		end)
+	end
+end
+
+ScreenGui.Changed:connect(function(Property)
+	if Property == "AbsoluteSize" or Property == "AbsolutePosition" then
+		ScrollingFrame.Position = UDim2.new(0, (ScreenGui.AbsoluteSize.X - ScrollingFrame.AbsoluteSize.X - FrameSize.X.Offset), 0, (ScreenGui.AbsoluteSize.Y - ScrollingFrame.AbsoluteSize.Y - FrameSize.Y.Offset))
+	end
+end)]]></ProtectedString>
+					<BinaryString name="Tags"></BinaryString>
+				</Properties>
+			</Item>
+		</Item>
+		<Item class="LocalScript" referent="RBX39A585001B2B46C8A9CFA90BCDD7220C">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">LocalScript</string>
+				<string name="ScriptGuid">{E2CEFBB1-ADFD-4F83-99E4-AA0D3FEE3852}</string>
+				<ProtectedString name="Source"><![CDATA[--Made by Luckymaxer
+
+Tool = script.Parent
+Handle = Tool:WaitForChild("Handle")
+
+Players = game:GetService("Players")
+ContentProvider = game:GetService("ContentProvider")
+
+Animations = {}
+
+ServerControl = Tool:WaitForChild("ServerControl")
+ClientControl = Tool:WaitForChild("ClientControl")
+
+ClientControl.OnClientInvoke = (function(Mode, Value)
+	if Mode == "PlayAnimation" and Humanoid then
+		for i, v in pairs(Animations) do
+			if v.Animation == Value.Animation then
+				v.AnimationTrack:Stop()
+				table.remove(Animations, i)
+			end
+		end
+		local AnimationTrack = Humanoid:LoadAnimation(Value.Animation)
+		table.insert(Animations, {Animation = Value.Animation, AnimationTrack = AnimationTrack})
+		AnimationTrack:Play(Value.FadeTime, Value.Weight, Value.Speed)
+	elseif Mode == "StopAnimation" and Value then
+		for i, v in pairs(Animations) do
+			if v.Animation == Value.Animation then
+				v.AnimationTrack:Stop()
+				table.remove(Animations, i)
+			end
+		end
+	elseif Mode == "Preload" and Value then
+		ContentProvider:Preload(Value)
+	elseif Mode == "PlaySound" and Value then
+		Value:Play()
+	elseif Mode == "StopSound" and Value then
+		Value:Stop()
+	elseif Mode == "MousePosition" then
+		return PlayerMouse.Hit.p
+	end
+end)
+
+function InvokeServer(Mode, Value)
+	pcall(function()
+		local ServerReturn = ServerControl:InvokeServer(Mode, Value)
+		return ServerReturn
+	end)
+end
+
+function CheckIfAlive()
+	return (Player and Player.Parent and Humanoid and Humanoid.Parent and Humanoid.Health > 0)
+end
+
+function Equipped(Mouse)
+	Character = Tool.Parent
+	Player = Players:GetPlayerFromCharacter(Character)
+	Humanoid = Character:FindFirstChild("Humanoid")
+	if not CheckIfAlive() then
+		return
+	end
+	PlayerMouse = Player:GetMouse()
+	Mouse.Button1Down:connect(function()
+		InvokeServer("MouseClick", {Down = true})
+	end)
+	Mouse.KeyDown:connect(function(Key)
+		InvokeServer("KeyPress", {Key = Key, Down = true})
+	end)
+	Mouse.KeyUp:connect(function(Key)
+		InvokeServer("KeyPress", {Key = Key, Down = false})
+	end)
+end
+
+function Unequipped()
+	for i, v in pairs(Animations) do
+		if v and v.AnimationTrack then
+			v.AnimationTrack:Stop()
+		end
+	end
+	Animations = {}
+end
+
+Tool.Equipped:connect(Equipped)
+Tool.Unequipped:connect(Unequipped)]]></ProtectedString>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+		</Item>
+		<Item class="LocalScript" referent="RBXFEF795D9300D4CCFB12741497605270F">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">MouseIcon</string>
+				<string name="ScriptGuid">{75DDDC34-4916-4B1C-999C-AA4FE560D0D5}</string>
+				<ProtectedString name="Source"><![CDATA[Mouse_Icon = "rbxasset://textures/GunCursor.png"
+Reloading_Icon = "rbxasset://textures/GunWaitCursor.png"
+
+Tool = script.Parent
+
+Mouse = nil
+
+function UpdateIcon()
+	if Mouse then
+		Mouse.Icon = Tool.Enabled and Mouse_Icon or Reloading_Icon
+	end
+end
+
+function OnEquipped(ToolMouse)
+	Mouse = ToolMouse
+	UpdateIcon()
+end
+
+Tool:GetPropertyChangedSignal("Enabled"):Connect(UpdateIcon)
+Tool.Equipped:connect(OnEquipped)]]></ProtectedString>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+		</Item>
+		<Item class="Animation" referent="RBXFFA661B440A643D7849101686DFA2E62">
+			<Properties>
+				<Content name="AnimationId"><url>rbxassetid://793427443</url></Content>
+				<string name="Name">R15Equip</string>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+		</Item>
+		<Item class="Camera" referent="RBX1BB4A3BB8A3C48B19CFFDA79B67C05D1">
+			<Properties>
+				<CoordinateFrame name="CFrame">
+					<X>5.95761967</X>
+					<Y>3.64964271</Y>
+					<Z>-0.517107368</Z>
+					<R00>-0.0627997667</R00>
+					<R01>0.00520749111</R01>
+					<R02>0.998012543</R02>
+					<R10>-0</R10>
+					<R11>0.99998641</R11>
+					<R12>-0.00521779014</R12>
+					<R20>-0.998026192</R20>
+					<R21>-0.000327676011</R21>
+					<R22>-0.0627989098</R22>
+				</CoordinateFrame>
+				<Ref name="CameraSubject">null</Ref>
+				<token name="CameraType">0</token>
+				<float name="FieldOfView">70</float>
+				<CoordinateFrame name="Focus">
+					<X>3.96159434</X>
+					<Y>3.66007829</Y>
+					<Z>-0.391509533</Z>
+					<R00>1</R00>
+					<R01>0</R01>
+					<R02>0</R02>
+					<R10>0</R10>
+					<R11>1</R11>
+					<R12>0</R12>
+					<R20>0</R20>
+					<R21>0</R21>
+					<R22>1</R22>
+				</CoordinateFrame>
+				<bool name="HeadLocked">true</bool>
+				<float name="HeadScale">1</float>
+				<string name="Name">ThumbnailCamera</string>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+		</Item>
+	</Item>
+</roblox>

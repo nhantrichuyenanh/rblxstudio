@@ -1,0 +1,1265 @@
+<roblox xmlns:xmime="http://www.w3.org/2005/05/xmlmime" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.roblox.com/roblox.xsd" version="4">
+	<Meta name="ExplicitAutoJoints">true</Meta>
+	<External>null</External>
+	<External>nil</External>
+	<Item class="Tool" referent="RBX7FB45EF02F674DE0883A02F4C15F18AE">
+		<Properties>
+			<bool name="CanBeDropped">true</bool>
+			<bool name="Enabled">true</bool>
+			<CoordinateFrame name="Grip">
+				<X>-0.0999999717</X>
+				<Y>-0.5</Y>
+				<Z>0.199999988</Z>
+				<R00>1</R00>
+				<R01>0</R01>
+				<R02>4.37113883e-08</R02>
+				<R10>0</R10>
+				<R11>1</R11>
+				<R12>-1.91068547e-15</R12>
+				<R20>-4.37113883e-08</R20>
+				<R21>1.91068547e-15</R21>
+				<R22>1</R22>
+			</CoordinateFrame>
+			<bool name="ManualActivationOnly">false</bool>
+			<string name="Name">BearMineGun</string>
+			<bool name="RequiresHandle">true</bool>
+			<BinaryString name="Tags"></BinaryString>
+			<Content name="TextureId"><url>http://www.roblox.com/asset/?id=90706265</url></Content>
+			<string name="ToolTip">Bear hug!</string>
+		</Properties>
+		<Item class="Script" referent="RBX263402D10DA24AE4B9491FBE605FFEF8">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">Firescript</string>
+				<string name="ScriptGuid">{334C071E-04DF-4576-97A9-9BFC29775F31}</string>
+				<ProtectedString name="Source"><![CDATA[-- Made by Stickmasterluke
+-- edited by fusroblox
+-- Fixed by TakeoHonorable
+
+local Tool = script.Parent
+local check = true
+
+local GunDamage = 10 -- Base output damage per shot.
+local FireRate = .5 -- How often the weapon can fire.
+local Automatic = false -- hold down to continue firing
+local Range = 250 -- Max distance that the weapon can fire.
+local Spread = 1 -- The bigger the spread, the more inaccurate the shots will be.
+local ClipSize = 2 -- Shots in a clip
+local ReloadTime = 6 -- Time it takes to reload the tool.
+local StartingClips = 10 -- If you want infinit clips, remove the IntValue named "Clips" from the tool.
+local SegmentLength = 40 -- How long the shot segments are, or the speed of the shot.
+local FadeDelayTime = 1/30
+
+
+local BarrelPos = CFrame.new(0, 0, - 1.2) -- L, F, U
+local Rate = 1/30
+local Intangibles = {"Shock", "Bolt", "Bullet", "Plasma", "Effect", "Laser", "Handle", "Effects", "Effect", "Flash"}
+local Colors = {BrickColor.new("Bright red"), BrickColor.new("Really red"), BrickColor.new("Dusty Rose"), BrickColor.new("Medium red")}
+local FlashColors = {"Medium red", "Dusty Rose", "Bright red", "Really red"}
+
+local Reloading = false
+local Debris = game:GetService("Debris")
+
+local Bear1=nil
+local Bear2=nil
+
+--used to identify this pair of bears from other players
+local MyIdent=math.random(100000)
+
+local Ammo = Tool:FindFirstChild("Ammo")
+if Ammo then
+	Ammo.Value = ClipSize
+end
+local Clips = Tool:FindFirstChild("Clips")
+if Clips then
+	Clips.Value = StartingClips
+end
+
+Tool.Equipped:Connect(function()
+	Tool.Handle.Fire:Stop()
+	Tool.Handle.Reload:Stop()
+end)
+Tool.Unequipped:Connect(function()
+	Tool.Handle.Fire:Stop()
+	Tool.Handle.Reload:Stop()
+end)
+
+function Round(number, decimal)
+	decimal = decimal or 0
+	local mult = 10^decimal
+	return math.floor(number * mult + .5)/mult
+end
+
+function CheckIntangible(t)
+	for i3, v3 in ipairs(Intangibles) do
+		if string.lower(v3) == string.lower(t.Name) or t.Transparency == 1 then
+			return true
+		end
+	end
+	return false
+end
+
+function Reload()
+	Reloading = true
+	Tool.Reloading.Value = true
+	if Clips then
+		if Clips.Value > 0 then
+			Clips.Value = Clips.Value - 1
+		else
+			Reloading = false
+			Tool.Reloading.Value = false
+			return
+		end
+	end
+	Tool.Handle.Reload:Play()
+	for i = 1, ClipSize do
+		wait(ReloadTime/ClipSize)
+		Ammo.Value = i
+	end
+	Reloading = false
+	Tool.Reloading.Value = false
+end
+
+function CastRay(startpos, vec, length, ignore, delayifhit)
+	if length > 999 then
+		length = 999
+	end
+	hit, endpos2 = workspace:FindPartOnRay(Ray.new(startpos, vec * length), ignore)
+	if hit then
+		if CheckIntangible(hit) then
+			if delayifhit then
+				wait()
+			end
+			hit, endpos2 = CastRay(endpos2 + (vec * .01), vec, length - ((startpos - endpos2).magnitude), ignore, delayifhit)
+		end
+	end
+	return hit, endpos2
+end
+
+function SendBullet(boltstart, targetpos, fuzzyness, SegmentLength, ignore, clr, damage, fadedelay)
+	if Ammo then
+		if Ammo.Value > 0 then
+			
+		else
+			Reload()
+			return
+		end
+	end
+	Tool.Handle.Fire.Pitch = (math.random() * .5) + .75
+	Tool.Handle.Fire:Play()
+	Tool.DoFireAni.Value = not Tool.DoFireAni.Value
+--	print(Tool.Handle.Fire.Pitch)
+	local boltdist = Range
+	local clickdist = (boltstart - targetpos).magnitude
+	local targetpos = targetpos + (Vector3.new(math.random() - .5, math.random() - .5, math.random() - .5) * (clickdist/100) * fuzzyness)
+	local boltvec = (targetpos - boltstart).unit
+	local totalsegments = math.ceil(boltdist/SegmentLength)
+	local lastpos = boltstart
+	for i = 1, totalsegments do
+		local newpos = (boltstart + (boltvec * (boltdist * (i/totalsegments))))
+		local segvec = (newpos - lastpos).unit
+		local boltlength = (newpos - lastpos).magnitude
+		local bolthit, endpos = CastRay(lastpos, segvec, boltlength, ignore, false)
+		DrawBeam(lastpos, endpos, clr, fadedelay)
+		if bolthit then
+			local h = bolthit.Parent:FindFirstChildOfClass("Humanoid")
+			if h then
+				local plr = game.Players:GetPlayerFromCharacter(Tool.Parent)
+				if plr then
+					local creator = Instance.new("ObjectValue")
+					creator.Name = "creator"
+					creator.Value = plr
+					creator.Parent = h
+				end
+					--ApplyBearLiberally(h)
+			else
+				Ammo.Value = Ammo.Value - 1
+				delay(0, function() PlaceBear(endpos, 5) end)
+			end
+			break
+		end
+		lastpos = endpos
+		wait(Rate)
+	end
+end
+
+function ApplyBearLiberally()
+	local bearScript=script.Parent.BearScript:Clone()
+	bearScript:WaitForChild("creator").Value = game:GetService("Players"):GetPlayerFromCharacter(Tool.Parent)
+	bearScript.Bear1.Value=Bear1
+	bearScript.Bear2.Value=Bear2
+	bearScript.Parent=workspace
+	game.Debris:AddItem(bearScript,25)
+	game.Debris:AddItem(Bear1,30)
+	game.Debris:AddItem(Bear2,30)
+	bearScript.Disabled=false
+	Bear1=nil
+	Bear2=nil
+	
+end
+
+function DrawBeam(beamstart, beamend, clr, fadedelay)
+	local dis = (beamstart - beamend).magnitude
+	local laser = Instance.new("Part")
+	laser.Name = "Bullet"
+	laser.Anchored = true
+	laser.CanCollide = false
+	laser.Shape = "Block"
+	laser.formFactor = "Custom"
+	laser.Size = Vector3.new(.2, .2, dis + .2)
+	laser.Material = Enum.Material.Neon
+	laser.Locked = true
+	laser.TopSurface = 0
+	laser.BottomSurface = 0
+	laser.BrickColor = clr
+	laser.CFrame = CFrame.new(beamend, beamstart) * CFrame.new(0, 0, - dis/2)
+	laser.Parent = workspace
+	Debris:AddItem(laser, fadedelay)
+end
+
+function SigNum(num)
+	if num == 0 then return 1 end
+	return math.abs(num)/num
+end
+
+function MakeSpark(pos)
+	local effect = Instance.new("Part")
+	effect.Name = "Effect"
+	effect.Anchored = false
+	effect.CanCollide = false
+	effect.Shape = "Block"
+	effect.Material = Enum.Material.Neon
+	effect.Locked = true
+	effect.TopSurface = 0
+	effect.BottomSurface = 0
+	effect.BrickColor = Colors[1]
+	effect.CFrame = CFrame.new(pos)
+	effect.Parent = workspace
+ -- effect.velocity = Vector3.new(math.random() * 10, math.random() * 10, math.random() * 10)
+ -- effect.Size = Vector3.new(effect.velocity.x, effect.velocity.y, effect.velocity.z)
+	local effectVel = Instance.new("BodyVelocity")
+	effectVel.maxForce = Vector3.new(99999, 99999, 99999)
+	effectVel.velocity = Vector3.new(math.random() * 15 * SigNum(math.random( - 10, 10)), 		math.random() * 15 * SigNum(math.random( - 10, 10)), math.random() * 15 * SigNum(math.random( - 10, 10)))
+	effectVel.Parent = effect
+	effect.Size = Vector3.new(math.abs(effectVel.velocity.x)/20, math.abs(effectVel.velocity.y)/20, math.abs(effectVel.velocity.z)/20)
+	wait()
+	effectVel:Destroy()
+	local effecttime = .25
+	Debris:AddItem(effect, effecttime * 2)
+	local startTime = time()
+	while time() - startTime < effecttime do
+		if effect ~= nil then
+			effect.Transparency = (time() - startTime)/effecttime
+		end
+		wait()
+	end
+	if effect then
+		effect.Parent = nil
+	end
+end
+
+function PlaceBear(pos)
+	if not Bear1 or not Bear2 then
+		local tbear= Instance.new('Part')
+		tbear.Size=Vector3.new(5, 9, 4.5)
+		tbear.CFrame= CFrame.new(Vector3.new(pos.x,pos.y+4.5,pos.z))
+		local mesh= Instance.new('SpecialMesh')
+		mesh.MeshId='http://www.roblox.com/asset/?id=90706629'
+		mesh.TextureId='http://www.roblox.com/asset/?id=90706701'
+		mesh.Parent=tbear
+		mesh.Scale=Vector3.new(2.8,2.8,2.8)
+
+		local BGyro2= Instance.new('BodyGyro')
+		BGyro2.Name='bearGyro'
+		BGyro2.maxTorque=Vector3.new(99999999,99999999,99999999)
+		--BGyro2.P=999999999
+		--BGyro2.D=999999999
+		BGyro2.Parent=tbear
+		if not Bear1 then
+			Bear1=tbear
+			tbear.Name='Bear'.. MyIdent
+		else
+			Bear2=tbear
+			tbear.Name='Bear'.. MyIdent+1
+		end
+		tbear.Parent=workspace
+		tbear:SetNetworkOwner(nil)
+	end
+	
+	if Bear1 and Bear2 then
+		ApplyBearLiberally()
+	end
+	
+	for i = 0, 10, 1 do
+		local thread = coroutine.create(MakeSpark)
+		coroutine.resume(thread, pos)
+	end
+	
+end
+
+Tool.Down.Changed:Connect(function()
+	while Tool.Down.Value and check and not Reloading do
+		check = false
+		local humanoid = Tool.Parent:FindFirstChildOfClass("Humanoid")
+		local plr1 = game.Players:GetPlayerFromCharacter(Tool.Parent)
+		if humanoid and plr1 then
+			if humanoid.Health > 0 then
+				spos1 = (Tool.Handle.CFrame * BarrelPos).p
+				delay(0, function() SendBullet(spos1, Tool.Aim.Value, Spread, SegmentLength, Tool.Parent, Colors[1], GunDamage, FadeDelayTime) end)
+			else
+				check = true
+				break
+			end
+		else
+			check = true
+			break
+		end
+		wait(FireRate)
+		check = true
+		if not Automatic then
+			break
+		end
+	end
+end)
+]]></ProtectedString>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+		</Item>
+		<Item class="LocalScript" referent="RBX6C1974CB0A1C4714A3F5D07B5ABD595E">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">LocalScript</string>
+				<string name="ScriptGuid">{9403A4F6-E087-4A47-92FD-DEF6D6C6C5E2}</string>
+				<ProtectedString name="Source"><![CDATA[local Cursors = {
+"http://www.roblox.com/asset/?id=90875398",--50912619", -- red -- change the cursors
+"http://www.roblox.com/asset/?id=50912641", -- blue
+"http://www.roblox.com/asset/?id=90875896", -- purple
+Reloading = "http://www.roblox.com/asset/?id=90875896", }--50911776", }
+
+local Tool = script.Parent
+
+script.Parent.Equipped:Connect(function(mouse)
+	Equipped = true
+	
+	mouse.Button1Down:Connect(function()
+		script.Parent.RemoteEvent:FireServer('ClickDown',mouse.Hit)
+	end)
+	mouse.Button1Up:connect(function()
+		script.Parent.RemoteEvent:FireServer('ClickUp')
+	end)
+	
+	mouse.Icon = Cursors[1]
+	Tool.Reloading.Changed:Connect(function(val)
+		if mouse and Equipped then
+			if val then
+				mouse.Icon = Cursors.Reloading
+			else
+				mouse.Icon = Cursors[1]
+			end
+		end
+	end)
+end)
+
+script.Parent.Unequipped:Connect(function()
+	Equipped = false
+end)]]></ProtectedString>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+		</Item>
+		<Item class="Part" referent="RBXA4CD8A107282429A9F227EBA15ACD8E7">
+			<Properties>
+				<bool name="Anchored">false</bool>
+				<float name="BackParamA">-0.5</float>
+				<float name="BackParamB">0.5</float>
+				<token name="BackSurface">0</token>
+				<token name="BackSurfaceInput">0</token>
+				<float name="BottomParamA">-0.5</float>
+				<float name="BottomParamB">0.5</float>
+				<token name="BottomSurface">4</token>
+				<token name="BottomSurfaceInput">0</token>
+				<CoordinateFrame name="CFrame">
+					<X>1.60000098</X>
+					<Y>3.049999</Y>
+					<Z>-0.499997973</Z>
+					<R00>1</R00>
+					<R01>-9.65341314e-07</R01>
+					<R02>-1.30239039e-06</R02>
+					<R10>4.37371064e-08</R10>
+					<R11>0.819150746</R11>
+					<R12>-0.573578358</R12>
+					<R20>1.62055278e-06</R20>
+					<R21>0.573578358</R21>
+					<R22>0.819150746</R22>
+				</CoordinateFrame>
+				<bool name="CanCollide">true</bool>
+				<bool name="CastShadow">true</bool>
+				<int name="CollisionGroupId">0</int>
+				<Color3uint8 name="Color3uint8">4278226844</Color3uint8>
+				<PhysicalProperties name="CustomPhysicalProperties">
+					<CustomPhysics>false</CustomPhysics>
+				</PhysicalProperties>
+				<float name="FrontParamA">-0.5</float>
+				<float name="FrontParamB">0.5</float>
+				<token name="FrontSurface">0</token>
+				<token name="FrontSurfaceInput">0</token>
+				<float name="LeftParamA">-0.5</float>
+				<float name="LeftParamB">0.5</float>
+				<token name="LeftSurface">0</token>
+				<token name="LeftSurfaceInput">0</token>
+				<bool name="Locked">true</bool>
+				<bool name="Massless">false</bool>
+				<token name="Material">256</token>
+				<string name="Name">Handle</string>
+				<float name="Reflectance">0</float>
+				<float name="RightParamA">-0.5</float>
+				<float name="RightParamB">0.5</float>
+				<token name="RightSurface">0</token>
+				<token name="RightSurfaceInput">0</token>
+				<int name="RootPriority">0</int>
+				<Vector3 name="RotVelocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<BinaryString name="Tags"></BinaryString>
+				<float name="TopParamA">-0.5</float>
+				<float name="TopParamB">0.5</float>
+				<token name="TopSurface">3</token>
+				<token name="TopSurfaceInput">0</token>
+				<float name="Transparency">0</float>
+				<Vector3 name="Velocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<token name="formFactorRaw">3</token>
+				<token name="shape">1</token>
+				<Vector3 name="size">
+					<X>0.840000033</X>
+					<Y>1.18000245</Y>
+					<Z>1.75999904</Z>
+				</Vector3>
+			</Properties>
+			<Item class="SpecialMesh" referent="RBX328847B7B6E447C0AB2C632698E3B0F1">
+				<Properties>
+					<token name="LODX">2</token>
+					<token name="LODY">2</token>
+					<Content name="MeshId"><url>http://www.roblox.com/asset/?id=90706424</url></Content>
+					<token name="MeshType">5</token>
+					<string name="Name">Mesh</string>
+					<Vector3 name="Offset">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+					</Vector3>
+					<Vector3 name="Scale">
+						<X>2.70000005</X>
+						<Y>2.70000005</Y>
+						<Z>2.70000005</Z>
+					</Vector3>
+					<BinaryString name="Tags"></BinaryString>
+					<Content name="TextureId"><url>http://www.roblox.com/asset/?id=90706324</url></Content>
+					<Vector3 name="VertexColor">
+						<X>1</X>
+						<Y>1</Y>
+						<Z>1</Z>
+					</Vector3>
+				</Properties>
+			</Item>
+			<Item class="Sound" referent="RBXA534D8CD1D964F009DDBF58197881325">
+				<Properties>
+					<float name="EmitterSize">10</float>
+					<bool name="Looped">false</bool>
+					<string name="Name">Fire</string>
+					<bool name="PlayOnRemove">false</bool>
+					<float name="PlaybackSpeed">1</float>
+					<bool name="Playing">false</bool>
+					<token name="RollOffMode">0</token>
+					<Ref name="SoundGroup">null</Ref>
+					<Content name="SoundId"><url>http://www.roblox.com/asset/?id=90869127</url></Content>
+					<BinaryString name="Tags"></BinaryString>
+					<double name="TimePosition">0</double>
+					<float name="Volume">0.75</float>
+					<float name="xmlRead_MaxDistance_3">10000</float>
+				</Properties>
+			</Item>
+			<Item class="Sound" referent="RBX60386174FF0341F6A0A4E0B732509F73">
+				<Properties>
+					<float name="EmitterSize">10</float>
+					<bool name="Looped">false</bool>
+					<string name="Name">Reload</string>
+					<bool name="PlayOnRemove">false</bool>
+					<float name="PlaybackSpeed">1</float>
+					<bool name="Playing">false</bool>
+					<token name="RollOffMode">0</token>
+					<Ref name="SoundGroup">null</Ref>
+					<Content name="SoundId"><url>http://www.roblox.com/asset/?id=90716464</url></Content>
+					<BinaryString name="Tags"></BinaryString>
+					<double name="TimePosition">0</double>
+					<float name="Volume">0.5</float>
+					<float name="xmlRead_MaxDistance_3">10000</float>
+				</Properties>
+			</Item>
+			<Item class="Attachment" referent="RBXE4E6E09E78E24BCF9E5EF0A6F07B2B8E">
+				<Properties>
+					<CoordinateFrame name="CFrame">
+						<X>-0.0999999046</X>
+						<Y>-0.49999997</Y>
+						<Z>0.199999988</Z>
+						<R00>1</R00>
+						<R01>8.3518591e-23</R01>
+						<R02>4.37113883e-08</R02>
+						<R10>0</R10>
+						<R11>1</R11>
+						<R12>-1.91068271e-15</R12>
+						<R20>-4.37113883e-08</R20>
+						<R21>1.91068271e-15</R21>
+						<R22>1</R22>
+					</CoordinateFrame>
+					<string name="Name">RightGripAttachment</string>
+					<BinaryString name="Tags"></BinaryString>
+					<bool name="Visible">false</bool>
+				</Properties>
+			</Item>
+		</Item>
+		<Item class="Vector3Value" referent="RBX32C81ADC20524AB9849A537E56BBAF9A">
+			<Properties>
+				<string name="Name">Aim</string>
+				<BinaryString name="Tags"></BinaryString>
+				<Vector3 name="Value">
+					<X>-101.971649</X>
+					<Y>3.3496871</Y>
+					<Z>-140.312485</Z>
+				</Vector3>
+			</Properties>
+		</Item>
+		<Item class="IntValue" referent="RBX0AA38DF8466C4183A2DC727C77D396CB">
+			<Properties>
+				<string name="Name">Ammo</string>
+				<BinaryString name="Tags"></BinaryString>
+				<int64 name="Value">2</int64>
+			</Properties>
+		</Item>
+		<Item class="BoolValue" referent="RBX9B036D62C76F46F8B9B1438BC29B3DF8">
+			<Properties>
+				<string name="Name">Down</string>
+				<BinaryString name="Tags"></BinaryString>
+				<bool name="Value">false</bool>
+			</Properties>
+		</Item>
+		<Item class="IntValue" referent="RBX38A8106DF4144455AF61F146CA6B6A79">
+			<Properties>
+				<string name="Name">NoClips</string>
+				<BinaryString name="Tags"></BinaryString>
+				<int64 name="Value">0</int64>
+			</Properties>
+		</Item>
+		<Item class="BoolValue" referent="RBXC9BD8E357D36431F86C4C35C0DCE1DAF">
+			<Properties>
+				<string name="Name">Reloading</string>
+				<BinaryString name="Tags"></BinaryString>
+				<bool name="Value">false</bool>
+			</Properties>
+		</Item>
+		<Item class="Animation" referent="RBXF3595289DAA34520A0A88474B3883A76">
+			<Properties>
+				<Content name="AnimationId"><url>http://www.roblox.com/Asset?ID=89456847</url></Content>
+				<string name="Name">FireAni</string>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+		</Item>
+		<Item class="BoolValue" referent="RBXBE7E7E6523BF465190CECDD39BEB2D48">
+			<Properties>
+				<string name="Name">DoFireAni</string>
+				<BinaryString name="Tags"></BinaryString>
+				<bool name="Value">false</bool>
+			</Properties>
+		</Item>
+		<Item class="Script" referent="RBXF63F7600923747D793FAD95A8895149B">
+			<Properties>
+				<bool name="Disabled">true</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">BearScript</string>
+				<string name="ScriptGuid">{C8465375-42FD-4257-8659-AA907A331E94}</string>
+				<ProtectedString name="Source"><![CDATA[--The beast has been slain!(Server-crashing bug fixed)
+function Create(ty)
+	return function(data)
+		local obj = Instance.new(ty)
+		for k, v in pairs(data) do
+			if type(k) == 'number' then
+				v.Parent = obj
+			else
+				obj[k] = v
+			end
+		end
+		return obj
+	end
+end
+
+local Services = {
+	Players = (game:FindService("Players") or game:GetService("Players")),
+	TweenService = (game:FindService("TweenService") or game:GetService("TweenService")),
+	RunService = (game:FindService("RunService") or game:GetService("RunService")),
+	Debris = (game:FindService("Debris") or game:GetService("Debris")),
+	ReplicatedStorage = (game:FindService("ReplicatedStorage") or game:GetService("ReplicatedStorage")),
+	Lighting = (game:FindService("Lighting") or game:GetService("Lighting")),
+	ServerScriptService = (game:FindService("ServerScriptService") or game:GetService("ServerScriptService"))
+}
+
+function IsInTable(Table,Value)
+	for _,v in pairs(Table) do
+		if v == Value then
+			return true
+		end
+	end
+	return false
+end
+
+function IsTeamMate(Player1, Player2)
+	return (Player1 and Player2 and not Player1.Neutral and not Player2.Neutral and Player1.TeamColor == Player2.TeamColor)
+end
+
+function TagHumanoid(humanoid, player)
+	local Creator_Tag = Instance.new("ObjectValue")
+	Creator_Tag.Name = "creator"
+	Creator_Tag.Value = player
+	Services.Debris:AddItem(Creator_Tag, 2)
+	Creator_Tag.Parent = humanoid
+end
+
+function UntagHumanoid(humanoid)
+	for i, v in pairs(humanoid:GetChildren()) do
+		if v:IsA("ObjectValue") and v.Name == "creator" then
+			v:Destroy()
+		end
+	end
+end
+
+local MyCharacter=script.Parent
+local Creator = script:WaitForChild("creator")
+local LeadSound=script.BearLead
+local HitSound=script.BearHit
+local Bear1=script.Bear1
+local Bear2=script.Bear2
+local target= (Bear1.Value.CFrame.p+Bear2.Value.CFrame.p)/2.0
+local distance=(Bear1.Value.CFrame.p-Bear2.Value.CFrame.p).magnitude
+local soundLength=1.45
+local speed=distance/(soundLength*2)
+local exploding=false
+Bear1.Value.CFrame=CFrame.new(Bear1.Value.CFrame.p,Bear2.Value.CFrame.p)
+Bear1.Value.bearGyro.cframe=Bear1.Value.CFrame
+Bear2.Value.CFrame=CFrame.new(Bear2.Value.CFrame.p,Bear1.Value.CFrame.p)
+Bear2.Value.bearGyro.cframe=Bear2.Value.CFrame
+
+local BThrust1= Instance.new('BodyVelocity')
+BThrust1.maxForce=Vector3.new(math.huge,50,math.huge)
+BThrust1.velocity=(target-Bear1.Value.CFrame.p).unit*speed
+BThrust1.Parent=Bear1.Value
+
+local temptag=Instance.new('StringValue')
+	temptag.Name="BEAR_TAG"
+	temptag.Value=Bear1.Value.Name
+	temptag.Parent=Bear1.Value
+
+
+local BThrust2= Instance.new('BodyVelocity')
+BThrust2.maxForce=Vector3.new(math.huge,50,math.huge)
+BThrust2.velocity=(target-Bear2.Value.CFrame.p).unit*speed
+BThrust2.Parent=Bear2.Value
+
+temptag=Instance.new('StringValue')
+	temptag.Name="BEAR_TAG"
+	temptag.Value=Bear2.Value.Name
+	temptag.Parent=Bear2.Value
+
+local LeadSound1=script.BearLead:Clone()
+LeadSound1.Parent=Bear1.Value
+LeadSound1:Play()
+
+local LeadSound2=script.BearLead:Clone()
+LeadSound2.Parent=Bear2.Value
+LeadSound2:Play()
+
+local TouchEvents = {}
+function DoAwesomeness()
+	if exploding then return end
+	exploding=true
+	for _,events in pairs(TouchEvents) do
+		if events then 
+			events:Disconnect()
+		end
+	end
+	BThrust1:Destroy()
+	BThrust2:Destroy()
+	Bear1.Value.Anchored=true
+	Bear2.Value.Anchored=true
+	local explosion= Instance.new('Explosion')
+	explosion.Position=Bear1.Value.CFrame.p
+	explosion.BlastPressure=0
+	explosion.DestroyJointRadiusPercent = 0
+	explosion.BlastRadius=25
+	explosion.ExplosionType='CratersAndDebris'
+	explosion.Parent=workspace
+	explosion.Hit:Connect(function(hit)
+		local hum = hit.Parent and hit.Parent:FindFirstChildOfClass('Humanoid')
+		if hum and hum.Health ~= 0 and not IsTeamMate(Services.Players:GetPlayerFromCharacter(hum.Parent),Services.Players:GetPlayerFromCharacter(Creator.Value)) then
+			UntagHumanoid(hum)
+			TagHumanoid(hum,Services.Players:GetPlayerFromCharacter(MyCharacter))
+			hum:TakeDamage(hum.MaxHealth)
+		end
+	end)
+	local explosionSound= script.BearHit:Clone()
+	explosionSound.Parent=Bear1.Value
+	wait()
+	explosionSound:Play()
+	
+	local startPos=Vector3.new(0, -7, -20)
+	local endPos=Vector3.new(0, 50, -20)
+
+	local bearGuis= {}
+	local iter = 0
+	for _, player in pairs(game.Players:GetPlayers()) do
+		iter=iter+1 
+		local billGui=script.AmericaGui:Clone()
+		billGui.Name='BearMericaGui'
+		billGui.Adornee=Bear1.Value
+		billGui.StudsOffset = startPos
+		billGui.Parent=player.PlayerGui
+		billGui.ImageLabel.Visible = true
+		bearGuis[iter]=billGui
+		Services.Debris:AddItem(billGui,5)
+	end
+	local startTime=time()
+	local waitTime=4.5
+
+	while time()-startTime<waitTime do
+		for i=1,iter,1 do
+			bearGuis[i].StudsOffset=startPos:Lerp(endPos,(time()-startTime)/waitTime)
+		end
+		if math.random(5)==1 then
+			local explosion2= Instance.new('Explosion')
+			explosion2.Position=Bear1.Value.CFrame.p+Vector3.new(math.random(100)-50,math.random(50),math.random(5))
+			explosion2.DestroyJointRadiusPercent = 0
+			explosion2.BlastPressure = 0
+			explosion2.Parent=workspace
+			
+			explosion2.Hit:Connect(function(hit)
+				local hum = hit.Parent and hit.Parent:FindFirstChildOfClass('Humanoid')
+				if hum and not IsTeamMate(Services.Players:GetPlayerFromCharacter(hum.Parent),Services.Players:GetPlayerFromCharacter(Creator.Value)) and hum.Health ~= 0 then
+					UntagHumanoid(hum)
+					TagHumanoid(hum,Services.Players:GetPlayerFromCharacter(MyCharacter))
+					hum:TakeDamage(hum.MaxHealth)
+				end
+			end)
+		end
+		
+		wait()
+	end
+	wait(2)
+	Bear1.Value:Destroy()
+	Bear2.Value:Destroy()
+	script:Destroy()
+	for i=1,iter-1,1 do
+			bearGuis[i]:Destroy()
+		end
+end
+
+local CaughtParts = {}
+
+function OnTouched(origin, myPart, hit)
+	if not hit or not hit.Parent or hit.Anchored then return end
+	
+	if hit:FindFirstChild("BEAR_TAG") and hit.BEAR_TAG.Value~=origin.Name then
+			DoAwesomeness()
+		return
+	end
+
+	if hit.Parent:FindFirstChild("BEAR_TAG") and hit.Parent.BEAR_TAG.Value~=origin.Name then
+			DoAwesomeness()
+		return
+	end
+	
+	--[[local tweld = Instance.new("Weld")
+	tweld.Part0 = hit
+	tweld.Part1 = myPart
+	tweld.C0 = CFrame.new()
+	tweld.C1 = origin.CFrame:inverse() * hit.CFrame
+	tweld.Parent = origin]]
+if not IsInTable(CaughtParts,hit) and hit.Parent:FindFirstChildOfClass("Humanoid") and not IsTeamMate(Services.Players:GetPlayerFromCharacter(hit.Parent),Services.Players:GetPlayerFromCharacter(Creator.Value)) and not hit.Parent:IsA("Accoutrement") and not hit.Parent:IsA("Tool") and not hit.Parent:FindFirstChildOfClass("ForceField") then
+		CaughtParts[#CaughtParts+1] = hit
+		local tweld = Create("WeldConstraint"){
+			Name = "BearWeld",
+			Part0 = hit,
+			Part1 = myPart,
+			Parent = origin,
+			Enabled = true
+		}
+		TouchEvents[#TouchEvents+1] = hit.Touched:Connect(function(hit2) OnTouched(myPart,myPart,hit2) end)
+end
+	
+	
+	
+	
+	if not hit:FindFirstChild("BEAR_TAG") or hit.Parent:FindFirstChild("BEAR_TAG") then
+		local tag=Instance.new('StringValue')
+		tag.Name="BEAR_TAG"
+		tag.Value=origin.Name
+		if hit.Parent:FindFirstChildOfClass('Humanoid') then
+			tag.Parent=hit.Parent
+		else
+			tag.Parent=hit
+		end
+		game.Debris:AddItem(tag,15)
+	end
+	
+end
+
+TouchEvents[#TouchEvents+1] = Bear1.Value.Touched:Connect(function(hit) OnTouched(Bear1.Value,Bear1.Value,hit) end)
+TouchEvents[#TouchEvents+1] = Bear2.Value.Touched:Connect(function(hit) OnTouched(Bear2.Value,Bear2.Value,hit) end)
+]]></ProtectedString>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+			<Item class="Sound" referent="RBXCD7CBD73A36A40B98D649187F3EE44B7">
+				<Properties>
+					<float name="EmitterSize">10</float>
+					<bool name="Looped">false</bool>
+					<string name="Name">BearHit</string>
+					<bool name="PlayOnRemove">false</bool>
+					<float name="PlaybackSpeed">1</float>
+					<bool name="Playing">false</bool>
+					<token name="RollOffMode">0</token>
+					<Ref name="SoundGroup">null</Ref>
+					<Content name="SoundId"><url>http://www.roblox.com/Asset?ID=90696602</url></Content>
+					<BinaryString name="Tags"></BinaryString>
+					<double name="TimePosition">0</double>
+					<float name="Volume">0.5</float>
+					<float name="xmlRead_MaxDistance_3">10000</float>
+				</Properties>
+			</Item>
+			<Item class="Sound" referent="RBXE05266E602D041E9BDF1B59029781416">
+				<Properties>
+					<float name="EmitterSize">10</float>
+					<bool name="Looped">false</bool>
+					<string name="Name">BearLead</string>
+					<bool name="PlayOnRemove">false</bool>
+					<float name="PlaybackSpeed">1</float>
+					<bool name="Playing">false</bool>
+					<token name="RollOffMode">0</token>
+					<Ref name="SoundGroup">null</Ref>
+					<Content name="SoundId"><url>http://www.roblox.com/Asset?ID=90695285</url></Content>
+					<BinaryString name="Tags"></BinaryString>
+					<double name="TimePosition">0</double>
+					<float name="Volume">1</float>
+					<float name="xmlRead_MaxDistance_3">10000</float>
+				</Properties>
+			</Item>
+			<Item class="ObjectValue" referent="RBX4C466CDA007349AFA3E75888EC8D6A9F">
+				<Properties>
+					<string name="Name">Bear1</string>
+					<BinaryString name="Tags"></BinaryString>
+					<Ref name="Value">null</Ref>
+				</Properties>
+			</Item>
+			<Item class="ObjectValue" referent="RBX01853D3F8D3A4143A10097B4E7F7D886">
+				<Properties>
+					<string name="Name">Bear2</string>
+					<BinaryString name="Tags"></BinaryString>
+					<Ref name="Value">null</Ref>
+				</Properties>
+			</Item>
+			<Item class="BillboardGui" referent="RBX44B26276252E48C68F4D60B641C355D0">
+				<Properties>
+					<bool name="Active">false</bool>
+					<Ref name="Adornee">null</Ref>
+					<bool name="AlwaysOnTop">false</bool>
+					<bool name="AutoLocalize">true</bool>
+					<bool name="ClipsDescendants">false</bool>
+					<float name="DistanceLowerLimit">-1</float>
+					<float name="DistanceStep">0</float>
+					<float name="DistanceUpperLimit">-1</float>
+					<bool name="Enabled">true</bool>
+					<Vector3 name="ExtentsOffset">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+					</Vector3>
+					<Vector3 name="ExtentsOffsetWorldSpace">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+					</Vector3>
+					<float name="LightInfluence">0</float>
+					<float name="MaxDistance">INF</float>
+					<string name="Name">AmericaGui</string>
+					<Ref name="PlayerToHideFrom">null</Ref>
+					<bool name="ResetOnSpawn">true</bool>
+					<Ref name="RootLocalizationTable">null</Ref>
+					<UDim2 name="Size">
+						<XS>100</XS>
+						<XO>0</XO>
+						<YS>70</YS>
+						<YO>0</YO>
+					</UDim2>
+					<Vector2 name="SizeOffset">
+						<X>0</X>
+						<Y>0</Y>
+					</Vector2>
+					<Vector3 name="StudsOffset">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+					</Vector3>
+					<Vector3 name="StudsOffsetWorldSpace">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+					</Vector3>
+					<BinaryString name="Tags"></BinaryString>
+					<token name="ZIndexBehavior">0</token>
+				</Properties>
+				<Item class="ImageLabel" referent="RBXD7CA811EC7914A11AD025D9DD4697A00">
+					<Properties>
+						<bool name="Active">false</bool>
+						<Vector2 name="AnchorPoint">
+							<X>0</X>
+							<Y>0</Y>
+						</Vector2>
+						<bool name="AutoLocalize">true</bool>
+						<Color3 name="BackgroundColor3">
+							<R>0.639215708</R>
+							<G>0.635294139</G>
+							<B>0.647058845</B>
+						</Color3>
+						<float name="BackgroundTransparency">0</float>
+						<Color3 name="BorderColor3">
+							<R>0.105882362</R>
+							<G>0.164705887</G>
+							<B>0.207843155</B>
+						</Color3>
+						<int name="BorderSizePixel">1</int>
+						<bool name="ClipsDescendants">false</bool>
+						<bool name="Draggable">false</bool>
+						<Content name="Image"><url>http://www.roblox.com/Asset?ID=90698952</url></Content>
+						<Color3 name="ImageColor3">
+							<R>1</R>
+							<G>1</G>
+							<B>1</B>
+						</Color3>
+						<Vector2 name="ImageRectOffset">
+							<X>0</X>
+							<Y>0</Y>
+						</Vector2>
+						<Vector2 name="ImageRectSize">
+							<X>0</X>
+							<Y>0</Y>
+						</Vector2>
+						<float name="ImageTransparency">0</float>
+						<int name="LayoutOrder">0</int>
+						<string name="Name">ImageLabel</string>
+						<Ref name="NextSelectionDown">null</Ref>
+						<Ref name="NextSelectionLeft">null</Ref>
+						<Ref name="NextSelectionRight">null</Ref>
+						<Ref name="NextSelectionUp">null</Ref>
+						<UDim2 name="Position">
+							<XS>0</XS>
+							<XO>0</XO>
+							<YS>0</YS>
+							<YO>0</YO>
+						</UDim2>
+						<Ref name="RootLocalizationTable">null</Ref>
+						<float name="Rotation">0</float>
+						<token name="ScaleType">0</token>
+						<bool name="Selectable">false</bool>
+						<Ref name="SelectionImageObject">null</Ref>
+						<UDim2 name="Size">
+							<XS>1</XS>
+							<XO>0</XO>
+							<YS>1</YS>
+							<YO>0</YO>
+						</UDim2>
+						<token name="SizeConstraint">0</token>
+						<Rect2D name="SliceCenter">
+							<min>
+								<X>0</X>
+								<Y>0</Y>
+							</min>
+							<max>
+								<X>0</X>
+								<Y>0</Y>
+							</max>
+						</Rect2D>
+						<float name="SliceScale">1</float>
+						<BinaryString name="Tags"></BinaryString>
+						<UDim2 name="TileSize">
+							<XS>1</XS>
+							<XO>0</XO>
+							<YS>1</YS>
+							<YO>0</YO>
+						</UDim2>
+						<bool name="Visible">false</bool>
+						<int name="ZIndex">1</int>
+					</Properties>
+				</Item>
+			</Item>
+			<Item class="ObjectValue" referent="RBXF471D8F4461E476499FA0A92CD1009B8">
+				<Properties>
+					<string name="Name">creator</string>
+					<BinaryString name="Tags"></BinaryString>
+					<Ref name="Value">null</Ref>
+				</Properties>
+			</Item>
+		</Item>
+		<Item class="Script" referent="RBX12A2C784854B47B5B6015AF2AF18F2A0">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">Script</string>
+				<string name="ScriptGuid">{482A4266-5186-48FC-9CF8-8E72C303636D}</string>
+				<ProtectedString name="Source"><![CDATA[-- Made by Stickmasterluke
+ -- edited by fusroblox
+--[[
+	Fixed by ArceusInator
+	1/23/2015 - Made it work with FE
+--]]
+
+function WaitForChild(obj, name)
+	while not obj:FindFirstChild(name) do
+		wait()
+		print("1waiting for " .. name)
+	end
+	return obj:FindFirstChild(name)
+end
+
+local Reloading = "http://www.roblox.com/asset/?id=50911776"
+
+local Cursors = {
+"http://www.roblox.com/asset/?id=90875398",--50912619", -- red -- change the cursors
+"http://www.roblox.com/asset/?id=50912641", -- blue
+"http://www.roblox.com/asset/?id=90875896", -- purple
+Reloading = "http://www.roblox.com/asset/?id=90875896", }--50911776", }
+
+local ClipSize = 45
+local Equipped = false
+
+local Tool = script.Parent
+local Player = game.Players.localPlayer
+local Ammo = WaitForChild(Tool,"Ammo")
+local Clips = nil
+
+
+function UpdateGui()
+	
+end
+
+Tool.RemoteEvent.OnServerEvent:Connect(function(client, action, ...)
+	if client.Character == Tool.Parent then
+		if action == 'ClickDown' then
+			local hit = ...
+			
+			if not Tool.Down.Value then
+				Tool.Aim.Value = hit.p
+				Tool.Down.Value = true
+				while Tool.Down.Value do
+					Tool.Aim.Value = hit.p
+					wait()
+				end
+			end
+		elseif action == 'ClickUp' then
+			Tool.Down.Value = false
+		end
+	end
+end)
+
+function OnEquipped(mouse)
+	Equipped = true
+	local Player = game.Players.LocalPlayer
+	if Player then
+		UpdateGui()
+	end
+end
+
+function OnUnequipped()
+	Equipped = false
+end
+
+Tool.Equipped:Connect(OnEquipped)
+Tool.Unequipped:Connect(OnUnequipped)
+
+
+while Tool:FindFirstChild("Reloading") == nil do
+	wait(1)
+end
+Tool.Reloading.Changed:connect(function()
+	UpdateGui()
+end)
+
+function PlayFireAni()
+	local Humanoid = WaitForChild(Tool.Parent, "Humanoid")
+	local Animation = Tool.FireAni
+	if Humanoid and Humanoid.RigType == Enum.HumanoidRigType.R15 then
+		Animation = Tool.R15FireAni
+	end 
+	local aniTrack = Humanoid:LoadAnimation(Animation)
+	aniTrack:Play()
+end
+
+Tool.DoFireAni.Changed:connect(PlayFireAni)
+]]></ProtectedString>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+		</Item>
+		<Item class="RemoteEvent" referent="RBX8DB48371F6BB419D9B416D1C2D2D3453">
+			<Properties>
+				<string name="Name">RemoteEvent</string>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+		</Item>
+		<Item class="Animation" referent="RBX39D82913D5004344836635933913FD3A">
+			<Properties>
+				<Content name="AnimationId"><url>rbxassetid://858708190</url></Content>
+				<string name="Name">R15FireAni</string>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+		</Item>
+		<Item class="Keyframe" referent="RBX7B263D22526E424E80231E0C0EB895A4">
+			<Properties>
+				<string name="Name">ThumbnailPose</string>
+				<BinaryString name="Tags"></BinaryString>
+				<float name="Time">0</float>
+			</Properties>
+			<Item class="Pose" referent="RBX4693D517EDC244F6AD8FA2CFBD1ABC82">
+				<Properties>
+					<CoordinateFrame name="CFrame">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+						<R00>1</R00>
+						<R01>0</R01>
+						<R02>0</R02>
+						<R10>0</R10>
+						<R11>1</R11>
+						<R12>0</R12>
+						<R20>0</R20>
+						<R21>0</R21>
+						<R22>1</R22>
+					</CoordinateFrame>
+					<token name="EasingDirection">1</token>
+					<token name="EasingStyle">0</token>
+					<string name="Name">UpperTorso</string>
+					<BinaryString name="Tags"></BinaryString>
+					<float name="Weight">0</float>
+				</Properties>
+				<Item class="Pose" referent="RBXAEEAFE757F2C4882A7AA940EF08170E8">
+					<Properties>
+						<CoordinateFrame name="CFrame">
+							<X>0</X>
+							<Y>-6.70552254e-08</Y>
+							<Z>-5.96046448e-08</Z>
+							<R00>1</R00>
+							<R01>0</R01>
+							<R02>0</R02>
+							<R10>0</R10>
+							<R11>0.173648193</R11>
+							<R12>-0.98480773</R12>
+							<R20>0</R20>
+							<R21>0.98480773</R21>
+							<R22>0.173648193</R22>
+						</CoordinateFrame>
+						<token name="EasingDirection">1</token>
+						<token name="EasingStyle">0</token>
+						<string name="Name">RightUpperArm</string>
+						<BinaryString name="Tags"></BinaryString>
+						<float name="Weight">1</float>
+					</Properties>
+					<Item class="Pose" referent="RBXBF88A10D8DA6460D829AC47494F39C5B">
+						<Properties>
+							<CoordinateFrame name="CFrame">
+								<X>0</X>
+								<Y>-1.49011612e-08</Y>
+								<Z>3.7252903e-09</Z>
+								<R00>1</R00>
+								<R01>0</R01>
+								<R02>0</R02>
+								<R10>0</R10>
+								<R11>0.98480773</R11>
+								<R12>-0.173648179</R12>
+								<R20>0</R20>
+								<R21>0.173648179</R21>
+								<R22>0.98480773</R22>
+							</CoordinateFrame>
+							<token name="EasingDirection">1</token>
+							<token name="EasingStyle">0</token>
+							<string name="Name">RightLowerArm</string>
+							<BinaryString name="Tags"></BinaryString>
+							<float name="Weight">1</float>
+						</Properties>
+						<Item class="Pose" referent="RBXDEECE19B48614B358175D4B66A57E03E">
+							<Properties>
+								<CoordinateFrame name="CFrame">
+									<X>0</X>
+									<Y>0</Y>
+									<Z>0</Z>
+									<R00>1</R00>
+									<R01>0</R01>
+									<R02>0</R02>
+									<R10>0</R10>
+									<R11>1</R11>
+									<R12>0</R12>
+									<R20>0</R20>
+									<R21>0</R21>
+									<R22>1</R22>
+								</CoordinateFrame>
+								<token name="EasingDirection">1</token>
+								<token name="EasingStyle">0</token>
+								<string name="Name">RightHand</string>
+								<BinaryString name="Tags"></BinaryString>
+								<float name="Weight">1</float>
+							</Properties>
+						</Item>
+					</Item>
+				</Item>
+			</Item>
+		</Item>
+		<Item class="Camera" referent="RBX8DF34EB7E2B94427A947E16C2667D82D">
+			<Properties>
+				<CoordinateFrame name="CFrame">
+					<X>5.22099781</X>
+					<Y>2.82724977</Y>
+					<Z>0.0675477237</Z>
+					<R00>0.0488451235</R00>
+					<R01>0.0418102592</R01>
+					<R02>0.997930884</R02>
+					<R10>-2.32830671e-10</R10>
+					<R11>0.999123514</R11>
+					<R12>-0.0418602228</R12>
+					<R20>-0.998806417</R20>
+					<R21>0.00204466749</R21>
+					<R22>0.048802305</R22>
+				</CoordinateFrame>
+				<Ref name="CameraSubject">null</Ref>
+				<token name="CameraType">0</token>
+				<float name="FieldOfView">70</float>
+				<CoordinateFrame name="Focus">
+					<X>3.22513604</X>
+					<Y>2.91097021</Y>
+					<Z>-0.0300568864</Z>
+					<R00>1</R00>
+					<R01>0</R01>
+					<R02>0</R02>
+					<R10>0</R10>
+					<R11>1</R11>
+					<R12>0</R12>
+					<R20>0</R20>
+					<R21>0</R21>
+					<R22>1</R22>
+				</CoordinateFrame>
+				<bool name="HeadLocked">true</bool>
+				<float name="HeadScale">1</float>
+				<string name="Name">ThumbnailCamera</string>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+		</Item>
+	</Item>
+</roblox>

@@ -1,0 +1,579 @@
+<roblox xmlns:xmime="http://www.w3.org/2005/05/xmlmime" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.roblox.com/roblox.xsd" version="4">
+	<External>null</External>
+	<External>nil</External>
+	<Item class="Tool" referent="RBX19F757DADFA94588B82C652BC1508247">
+		<Properties>
+			<bool name="CanBeDropped">true</bool>
+			<bool name="Enabled">true</bool>
+			<CoordinateFrame name="Grip">
+				<X>0</X>
+				<Y>0</Y>
+				<Z>0</Z>
+				<R00>1</R00>
+				<R01>0</R01>
+				<R02>0</R02>
+				<R10>0</R10>
+				<R11>1</R11>
+				<R12>0</R12>
+				<R20>0</R20>
+				<R21>0</R21>
+				<R22>1</R22>
+			</CoordinateFrame>
+			<bool name="ManualActivationOnly">false</bool>
+			<string name="Name">MeteorStaff</string>
+			<bool name="RequiresHandle">true</bool>
+			<BinaryString name="Tags"></BinaryString>
+			<Content name="TextureId"><url>http://www.roblox.com/asset?id=86374224</url></Content>
+			<string name="ToolTip"></string>
+		</Properties>
+		<Item class="Part" referent="RBX4278120D0DF1468F941FC0911EAD3877">
+			<Properties>
+				<bool name="Anchored">false</bool>
+				<float name="BackParamA">-0.5</float>
+				<float name="BackParamB">0.5</float>
+				<token name="BackSurface">0</token>
+				<token name="BackSurfaceInput">0</token>
+				<float name="BottomParamA">-0.5</float>
+				<float name="BottomParamB">0.5</float>
+				<token name="BottomSurface">4</token>
+				<token name="BottomSurfaceInput">0</token>
+				<CoordinateFrame name="CFrame">
+					<X>1.5</X>
+					<Y>-0.782495975</Y>
+					<Z>-1.16250098</Z>
+					<R00>0.707106352</R00>
+					<R01>0.707107365</R01>
+					<R02>0</R02>
+					<R10>-0.707107365</R10>
+					<R11>0.707106352</R11>
+					<R12>0</R12>
+					<R20>0</R20>
+					<R21>0</R21>
+					<R22>1</R22>
+				</CoordinateFrame>
+				<bool name="CanCollide">true</bool>
+				<int name="CollisionGroupId">0</int>
+				<Color3uint8 name="Color3uint8">4288914085</Color3uint8>
+				<PhysicalProperties name="CustomPhysicalProperties">
+					<CustomPhysics>false</CustomPhysics>
+				</PhysicalProperties>
+				<float name="Elasticity">0.5</float>
+				<float name="Friction">0.300000012</float>
+				<float name="FrontParamA">-0.5</float>
+				<float name="FrontParamB">0.5</float>
+				<token name="FrontSurface">0</token>
+				<token name="FrontSurfaceInput">0</token>
+				<float name="LeftParamA">-0.5</float>
+				<float name="LeftParamB">0.5</float>
+				<token name="LeftSurface">0</token>
+				<token name="LeftSurfaceInput">0</token>
+				<bool name="Locked">false</bool>
+				<token name="Material">256</token>
+				<string name="Name">Handle</string>
+				<float name="Reflectance">0</float>
+				<float name="RightParamA">-0.5</float>
+				<float name="RightParamB">0.5</float>
+				<token name="RightSurface">0</token>
+				<token name="RightSurfaceInput">0</token>
+				<Vector3 name="RotVelocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<BinaryString name="Tags"></BinaryString>
+				<float name="TopParamA">-0.5</float>
+				<float name="TopParamB">0.5</float>
+				<token name="TopSurface">3</token>
+				<token name="TopSurfaceInput">0</token>
+				<float name="Transparency">0</float>
+				<Vector3 name="Velocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<token name="formFactorRaw">1</token>
+				<token name="shape">1</token>
+				<Vector3 name="size">
+					<X>1</X>
+					<Y>7.20000029</Y>
+					<Z>1</Z>
+				</Vector3>
+			</Properties>
+			<Item class="SpecialMesh" referent="RBXF358B701DBBA40258B0C8D85894B7530">
+				<Properties>
+					<token name="LODX">2</token>
+					<token name="LODY">2</token>
+					<Content name="MeshId"><url>http://www.roblox.com/asset?id=86374096</url></Content>
+					<token name="MeshType">5</token>
+					<string name="Name">Mesh</string>
+					<Vector3 name="Offset">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+					</Vector3>
+					<Vector3 name="Scale">
+						<X>1</X>
+						<Y>1</Y>
+						<Z>1</Z>
+					</Vector3>
+					<BinaryString name="Tags"></BinaryString>
+					<Content name="TextureId"><url>http://www.roblox.com/asset?id=86374184</url></Content>
+					<Vector3 name="VertexColor">
+						<X>1</X>
+						<Y>1</Y>
+						<Z>1</Z>
+					</Vector3>
+				</Properties>
+			</Item>
+			<Item class="Attachment" referent="RBXEA6F5616931E43AC8D2060062C0CEFFE">
+				<Properties>
+					<CoordinateFrame name="CFrame">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+						<R00>1</R00>
+						<R01>0</R01>
+						<R02>6.31088724e-30</R02>
+						<R10>0</R10>
+						<R11>1</R11>
+						<R12>-0</R12>
+						<R20>-6.31088724e-30</R20>
+						<R21>0</R21>
+						<R22>1</R22>
+					</CoordinateFrame>
+					<string name="Name">RightGripAttachment</string>
+					<BinaryString name="Tags"></BinaryString>
+					<bool name="Visible">false</bool>
+				</Properties>
+			</Item>
+		</Item>
+		<Item class="Script" referent="RBX0B15FD0F71A647598A370500CC8987C1">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">StaffScript</string>
+				<string name="ScriptGuid">{5462A887-C951-4459-BD46-A1F4AAAA743E}</string>
+				<ProtectedString name="Source"><![CDATA[--Gallaron's Abysal Carnesphere!
+local Workspace = game.Workspace
+local Debris = game.Debris
+
+local function waitForChild(parent, child)
+	while parent:FindFirstChild(child) == nil do 
+		wait()
+	end 
+	return parent[child] 
+end 
+
+local Tool = script.Parent
+local Character = nil
+local Torso = nil
+local Summon = waitForChild(script, "Summon")
+
+local MeteorID = 86374494
+local Meteor = game:GetService("InsertService"):LoadAsset(MeteorID):GetChildren()[1]
+
+
+local MeteorLifeTime = 7
+local StaffCooldownTime = 8
+
+function SummonMeteor()
+	
+	Summon:Play()
+	wait(1)
+	local ChaosMeteor = Meteor:Clone()
+	ChaosMeteor.Name = "Meteor"
+	local chilluns = ChaosMeteor:GetChildren()
+	local angx, angy, angz = Torso.CFrame:toEulerAnglesXYZ()
+	for i = 1, #chilluns do
+		chilluns[i].CFrame = CFrame.Angles(angx, angy, angz) + (Torso.Position + (Torso.CFrame.lookVector * 5) + Vector3.new(0, 100, 0))
+	end
+	ChaosMeteor.Parent = Workspace
+
+	local RockScript = Tool.MeteorScript:Clone()
+	RockScript.Parent = ChaosMeteor
+	RockScript.Disabled = false
+
+	local Owner = Instance.new("ObjectValue")
+	Owner.Name = "Owner"
+	Owner.Value = Character
+	Owner.Parent = RockScript
+	
+	
+	Debris:AddItem(ChaosMeteor, MeteorLifeTime)
+
+end
+
+
+Tool.Enabled = true
+function onActivated()
+	if not Tool.Enabled then return end
+	Tool.Enabled = false
+
+	SummonMeteor()
+
+	wait(StaffCooldownTime)
+	
+	Tool.Enabled = true
+
+end
+Tool.Activated:connect(onActivated)
+
+
+function onEquipped()
+	Character = Tool.Parent
+	Torso = Character:FindFirstChild("Torso") or Character:FindFirstChild("UpperTorso")
+
+end
+Tool.Equipped:connect(onEquipped)
+
+
+function onUnequipped()
+	Character = nil
+	Torso = nil
+end
+
+Tool.Unequipped:connect(onUnequipped)
+
+]]></ProtectedString>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+			<Item class="Sound" referent="RBXEC1C8F2BD3204B0389D62E3FDCACFC81">
+				<Properties>
+					<float name="EmitterSize">10</float>
+					<bool name="Looped">false</bool>
+					<string name="Name">Summon</string>
+					<bool name="PlayOnRemove">false</bool>
+					<float name="PlaybackSpeed">1</float>
+					<bool name="Playing">false</bool>
+					<token name="RollOffMode">0</token>
+					<Ref name="SoundGroup">null</Ref>
+					<Content name="SoundId"><url>http://www.roblox.com/asset/?id=86260684</url></Content>
+					<BinaryString name="Tags"></BinaryString>
+					<double name="TimePosition">0</double>
+					<float name="Volume">0.5</float>
+					<float name="xmlRead_MaxDistance_3">10000</float>
+				</Properties>
+			</Item>
+		</Item>
+		<Item class="Script" referent="RBX25E85E0965D5451893EF21265C558C3D">
+			<Properties>
+				<bool name="Disabled">true</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">MeteorScript</string>
+				<string name="ScriptGuid">{F0227613-474F-4B2E-A90C-1D25CB938871}</string>
+				<ProtectedString name="Source"><![CDATA[--Exort Wex Exort!
+
+local function waitForChild(parent, child)
+	while parent:FindFirstChild(child) == nil do 
+		wait()
+	end 
+	return parent[child] 
+end 
+
+local Meteor = script.Parent
+local Rock = Meteor.ArmageddonMeteor
+
+local Explosion = waitForChild(script, "Explosion")
+local Rumble = waitForChild(script, "Rumble")
+local Fall = waitForChild(script, "Fall")
+
+local Owner = waitForChild(script, "Owner")
+
+Fall:Play()
+
+
+local TouchedEvent
+
+
+Rock.Elasticity = 0
+
+local ForceMultiplier = 2000
+local FallForceMultiplier = 5000
+
+local FallVelocity = Instance.new("BodyVelocity")
+FallVelocity.Name = "FallPush"
+FallVelocity.velocity = Rock.CFrame.lookVector * FallForceMultiplier
+FallVelocity.maxForce = Vector3.new(FallForceMultiplier, FallForceMultiplier, FallForceMultiplier)
+FallVelocity.P = FallForceMultiplier
+FallVelocity.Parent = Rock
+
+
+
+
+--Creates a random number of particles and lets them fall down from the sky.  
+function ParticleExplosion(Parent, Colors, MinParticles, MaxParticles, Offset, Lifetime)
+	local Debris = game.Debris
+	
+	--Initialize to default values
+	MinParticles = MinParticles or 0
+	MaxParticles = MaxParticles or 5
+	Offset = Offset or Vector3.new(0,0,0)
+	Lifetime = Lifetime or 1
+	
+	local NumParticles = math.random(MinParticles, MaxParticles)
+	for i = 0, NumParticles do
+		--Create the parts for the particles to emit from
+		local ParticlePoint = Instance.new("Part")
+		ParticlePoint.Size = Vector3.new(1,1,1)
+		ParticlePoint.Parent = Parent
+		ParticlePoint.Position = Parent.Position + Vector3.new(math.random(-5,5), math.random(4, 7), math.random(-5,5)	) + Offset
+		ParticlePoint.Transparency = 1
+		
+		--Create the particles for display
+		local Particle = Instance.new("Fire")
+		local Color = Colors[math.random(1, #Colors)]
+		Particle.Color = Color
+		Particle.SecondaryColor = Color
+		Particle.Parent = ParticlePoint
+
+		--Send them flying
+		local ParticleForce = Instance.new("BodyForce")
+		ParticleForce.Parent = ParticlePoint
+		ParticleForce.force = Vector3.new(math.random(-20,20), 40, math.random(-20,20)) * 7
+		Debris:AddItem(ParticleForce, .3)
+		
+		Debris:AddItem(ParticlePoint, Lifetime + math.random())
+	end
+
+end
+	
+
+
+
+
+function RollingBallOfDeath(part)
+	if(part.Parent:FindFirstChild("Humanoid") and Owner.Value ~= part.Parent) then part.Parent:FindFirstChild("Humanoid"):TakeDamage(100) end
+end
+
+
+
+
+
+
+
+
+function onHitGround(part)
+	Fall:Stop()
+	Explosion:Play()
+
+
+	Rock.Velocity = Vector3.new(0,0,0)
+		
+	Rock.FallPush:Destroy()
+
+	local RockRotation = Instance.new("BodyVelocity")
+	RockRotation.maxForce = Vector3.new(ForceMultiplier, ForceMultiplier, ForceMultiplier)
+	RockRotation.P = ForceMultiplier
+	RockRotation.velocity = Rock.CFrame.lookVector * ForceMultiplier
+	RockRotation.Parent = Rock
+
+	ParticleExplosion(Rock, {Color3.new(1,0,0), Color3.new(1, .5, 0)}, 15, 20, Vector3.new(0, -1, 0), .5)
+
+	Rumble:Play()
+	TouchedEvent:disconnect()
+
+	Rock.Touched:connect(RollingBallOfDeath)
+	
+
+end
+TouchedEvent = Rock.Touched:connect(onHitGround)
+
+]]></ProtectedString>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+			<Item class="Sound" referent="RBX91C3734A42CA416E871A4ECBF4F2F5DF">
+				<Properties>
+					<float name="EmitterSize">10</float>
+					<bool name="Looped">true</bool>
+					<string name="Name">Rumble</string>
+					<bool name="PlayOnRemove">false</bool>
+					<float name="PlaybackSpeed">1</float>
+					<bool name="Playing">false</bool>
+					<token name="RollOffMode">0</token>
+					<Ref name="SoundGroup">null</Ref>
+					<Content name="SoundId"><url>http://www.roblox.com/asset/?id=86260644</url></Content>
+					<BinaryString name="Tags"></BinaryString>
+					<double name="TimePosition">0</double>
+					<float name="Volume">0.200000003</float>
+					<float name="xmlRead_MaxDistance_3">10000</float>
+				</Properties>
+			</Item>
+			<Item class="Sound" referent="RBXB8B2954475D54DB08C663D8CFD8645CF">
+				<Properties>
+					<float name="EmitterSize">10</float>
+					<bool name="Looped">false</bool>
+					<string name="Name">Explosion</string>
+					<bool name="PlayOnRemove">false</bool>
+					<float name="PlaybackSpeed">1</float>
+					<bool name="Playing">false</bool>
+					<token name="RollOffMode">0</token>
+					<Ref name="SoundGroup">null</Ref>
+					<Content name="SoundId"><url>http://www.roblox.com/asset/?id=86260556</url></Content>
+					<BinaryString name="Tags"></BinaryString>
+					<double name="TimePosition">0</double>
+					<float name="Volume">0.5</float>
+					<float name="xmlRead_MaxDistance_3">10000</float>
+				</Properties>
+			</Item>
+			<Item class="Sound" referent="RBXBD8F37B98844442FAC6285C2AAF9D02B">
+				<Properties>
+					<float name="EmitterSize">10</float>
+					<bool name="Looped">true</bool>
+					<string name="Name">Fall</string>
+					<bool name="PlayOnRemove">false</bool>
+					<float name="PlaybackSpeed">1</float>
+					<bool name="Playing">false</bool>
+					<token name="RollOffMode">0</token>
+					<Ref name="SoundGroup">null</Ref>
+					<Content name="SoundId"><url>http://www.roblox.com/asset/?id=86262331</url></Content>
+					<BinaryString name="Tags"></BinaryString>
+					<double name="TimePosition">0</double>
+					<float name="Volume">1</float>
+					<float name="xmlRead_MaxDistance_3">10000</float>
+				</Properties>
+			</Item>
+		</Item>
+		<Item class="Keyframe" referent="RBX56716B7296394D97912733964769EE67">
+			<Properties>
+				<string name="Name">ThumbnailPose</string>
+				<BinaryString name="Tags"></BinaryString>
+				<float name="Time">0</float>
+			</Properties>
+			<Item class="Pose" referent="RBX0EF221C58B374F858B7FFEE0F2ECEDB2">
+				<Properties>
+					<CoordinateFrame name="CFrame">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+						<R00>1</R00>
+						<R01>0</R01>
+						<R02>0</R02>
+						<R10>0</R10>
+						<R11>1</R11>
+						<R12>0</R12>
+						<R20>0</R20>
+						<R21>0</R21>
+						<R22>1</R22>
+					</CoordinateFrame>
+					<token name="EasingDirection">1</token>
+					<token name="EasingStyle">0</token>
+					<float name="MaskWeight">0</float>
+					<string name="Name">UpperTorso</string>
+					<BinaryString name="Tags"></BinaryString>
+					<float name="Weight">0</float>
+				</Properties>
+				<Item class="Pose" referent="RBX57B9E4BA9FA94789A1E00B4C88FFC23F">
+					<Properties>
+						<CoordinateFrame name="CFrame">
+							<X>0</X>
+							<Y>-6.70552254e-08</Y>
+							<Z>-5.96046448e-08</Z>
+							<R00>1</R00>
+							<R01>0</R01>
+							<R02>0</R02>
+							<R10>0</R10>
+							<R11>0.173648193</R11>
+							<R12>-0.98480773</R12>
+							<R20>0</R20>
+							<R21>0.98480773</R21>
+							<R22>0.173648193</R22>
+						</CoordinateFrame>
+						<token name="EasingDirection">1</token>
+						<token name="EasingStyle">0</token>
+						<float name="MaskWeight">0</float>
+						<string name="Name">RightUpperArm</string>
+						<BinaryString name="Tags"></BinaryString>
+						<float name="Weight">1</float>
+					</Properties>
+					<Item class="Pose" referent="RBXA1A77824F41C418ABF91830725F9861A">
+						<Properties>
+							<CoordinateFrame name="CFrame">
+								<X>0</X>
+								<Y>-1.49011612e-08</Y>
+								<Z>3.7252903e-09</Z>
+								<R00>1</R00>
+								<R01>0</R01>
+								<R02>0</R02>
+								<R10>0</R10>
+								<R11>0.98480773</R11>
+								<R12>-0.173648179</R12>
+								<R20>0</R20>
+								<R21>0.173648179</R21>
+								<R22>0.98480773</R22>
+							</CoordinateFrame>
+							<token name="EasingDirection">1</token>
+							<token name="EasingStyle">0</token>
+							<float name="MaskWeight">0</float>
+							<string name="Name">RightLowerArm</string>
+							<BinaryString name="Tags"></BinaryString>
+							<float name="Weight">1</float>
+						</Properties>
+						<Item class="Pose" referent="RBXCB8B777DCA9E48878FF39E1631B96A44">
+							<Properties>
+								<CoordinateFrame name="CFrame">
+									<X>0</X>
+									<Y>0</Y>
+									<Z>0</Z>
+									<R00>1</R00>
+									<R01>0</R01>
+									<R02>0</R02>
+									<R10>0</R10>
+									<R11>1</R11>
+									<R12>0</R12>
+									<R20>0</R20>
+									<R21>0</R21>
+									<R22>1</R22>
+								</CoordinateFrame>
+								<token name="EasingDirection">1</token>
+								<token name="EasingStyle">0</token>
+								<float name="MaskWeight">0</float>
+								<string name="Name">RightHand</string>
+								<BinaryString name="Tags"></BinaryString>
+								<float name="Weight">1</float>
+							</Properties>
+						</Item>
+					</Item>
+				</Item>
+			</Item>
+		</Item>
+		<Item class="Camera" referent="RBX34997EE421354193AA07A899FA63E2CE">
+			<Properties>
+				<CoordinateFrame name="CFrame">
+					<X>2.3381052</X>
+					<Y>0.322933286</Y>
+					<Z>6.46069717</Z>
+					<R00>0.997047901</R00>
+					<R01>-0.00843277853</R01>
+					<R02>0.0763182193</R02>
+					<R10>-0</R10>
+					<R11>0.993950844</R11>
+					<R12>0.10982655</R12>
+					<R20>-0.0767826959</R20>
+					<R21>-0.10950233</R21>
+					<R22>0.991016507</R22>
+				</CoordinateFrame>
+				<Ref name="CameraSubject">null</Ref>
+				<token name="CameraType">0</token>
+				<float name="FieldOfView">70</float>
+				<CoordinateFrame name="Focus">
+					<X>2.18546867</X>
+					<Y>0.103280053</Y>
+					<Z>4.47866297</Z>
+					<R00>1</R00>
+					<R01>0</R01>
+					<R02>0</R02>
+					<R10>0</R10>
+					<R11>1</R11>
+					<R12>0</R12>
+					<R20>0</R20>
+					<R21>0</R21>
+					<R22>1</R22>
+				</CoordinateFrame>
+				<bool name="HeadLocked">true</bool>
+				<float name="HeadScale">1</float>
+				<string name="Name">ThumbnailCamera</string>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+		</Item>
+	</Item>
+</roblox>

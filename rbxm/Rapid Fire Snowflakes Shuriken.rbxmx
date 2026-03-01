@@ -1,0 +1,1008 @@
+<roblox xmlns:xmime="http://www.w3.org/2005/05/xmlmime" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.roblox.com/roblox.xsd" version="4">
+	<External>null</External>
+	<External>nil</External>
+	<Item class="Tool" referent="RBX29AEB42067064A6796799DA6E3386128">
+		<Properties>
+			<bool name="CanBeDropped">true</bool>
+			<bool name="Enabled">true</bool>
+			<CoordinateFrame name="Grip">
+				<X>-0.75</X>
+				<Y>0</Y>
+				<Z>-0.125</Z>
+				<R00>-0</R00>
+				<R01>1</R01>
+				<R02>-0</R02>
+				<R10>1</R10>
+				<R11>0</R11>
+				<R12>8.90154915e-005</R12>
+				<R20>8.90154915e-005</R20>
+				<R21>0</R21>
+				<R22>-1</R22>
+			</CoordinateFrame>
+			<bool name="ManualActivationOnly">false</bool>
+			<string name="Name">RapidFireThrowingSnowflakes</string>
+			<bool name="RequiresHandle">true</bool>
+			<Content name="TextureId"><url>http://www.roblox.com/asset/?id=187687229</url></Content>
+			<string name="ToolTip"></string>
+		</Properties>
+		<Item class="LocalScript" referent="RBX04582C8F1AA24736979834A6CC436A3B">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">MouseIcon</string>
+				<string name="ScriptGuid"></string>
+				<ProtectedString name="Source"><![CDATA[--Made by Luckymaxer
+
+Mouse_Icon = "rbxasset://textures/GunCursor.png"
+Reloading_Icon = "rbxasset://textures/GunWaitCursor.png"
+
+Tool = script.Parent
+
+Mouse = nil
+
+function UpdateIcon()
+	if Mouse then
+		Mouse.Icon = Tool.Enabled and Mouse_Icon or Reloading_Icon
+	end
+end
+
+function OnEquipped(ToolMouse)
+	Mouse = ToolMouse
+	UpdateIcon()
+end
+
+function OnChanged(Property)
+	if Property == "Enabled" then
+		UpdateIcon()
+	end
+end
+
+Tool.Equipped:connect(OnEquipped)
+Tool.Changed:connect(OnChanged)
+]]></ProtectedString>
+			</Properties>
+		</Item>
+		<Item class="Script" referent="RBX07CD9B57EDFF4BF4BFF0ED1347B19C3D">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">Script</string>
+				<string name="ScriptGuid">{FFC152D6-0A94-4029-A24B-3F1D1EC8B81D}</string>
+				<ProtectedString name="Source"><![CDATA[--Made by Luckymaxer
+--Updated for R15 avatars by StarWars
+
+Tool = script.Parent
+Handle = Tool:WaitForChild("Handle")
+Mesh = Handle:WaitForChild("Mesh")
+
+Players = game:GetService("Players")
+Debris = game:GetService("Debris")
+
+HitScript = script:WaitForChild("HitScript")
+
+DisplayModel = Tool:FindFirstChild("DisplayModel")
+if DisplayModel then
+	DisplayModel:Destroy()
+end
+
+BasePart = Instance.new("Part")
+BasePart.Shape = Enum.PartType.Block
+BasePart.Material = Enum.Material.Plastic
+BasePart.TopSurface = Enum.SurfaceType.Smooth
+BasePart.BottomSurface = Enum.SurfaceType.Smooth
+BasePart.FormFactor = Enum.FormFactor.Custom
+BasePart.Size = Vector3.new(0.2, 0.2, 0.2)
+BasePart.CanCollide = true
+BasePart.Locked = true
+BasePart.Anchored = false
+
+Animations = {
+	Throw = {Animation = Tool:WaitForChild("Throw"), FadeTime = nil, Weight = nil, Speed = 2, Duration = 0.5},
+	R15Throw = {Animation = Tool:WaitForChild("R15Throw"), FadeTime = nil, Weight = nil, Speed = .5, Duration = .5}
+}
+
+Sounds = {
+	Fire = Handle:WaitForChild("Fire"),
+	Hit = Handle:WaitForChild("Hit")
+}
+
+NinjaStars = {
+	Meshes = {187687161, 187687175, 187687193},
+	Textures = {187687219}
+}
+
+FireRate = 0.5
+Power = 100
+
+Gravity = 196.20
+
+ToolEquipped = false
+
+ServerControl = (Tool:FindFirstChild("ServerControl") or Instance.new("RemoteFunction"))
+ServerControl.Name = "ServerControl"
+ServerControl.Parent = Tool
+
+ClientControl = (Tool:FindFirstChild("ClientControl") or Instance.new("RemoteFunction"))
+ClientControl.Name = "ClientControl"
+ClientControl.Parent = Tool
+
+Handle.Transparency = 0
+Tool.Enabled = true
+
+ServerControl.OnServerInvoke = (function(player, Mode, Value)
+	if player == Player then
+		if Mode == "MouseClick" and Value.Down then
+			Activated()
+		elseif Mode == "KeyPress" then
+			local Key = Value.Key
+			local ByteKey = string.byte(Key)
+			local Down = Value.Down
+			if Key == "x" and Down then
+			end
+		end
+	end
+end)
+
+function InvokeClient(Mode, Value)
+	local ClientReturn = nil
+	pcall(function()
+		ClientReturn = ClientControl:InvokeClient(Player, Mode, Value)
+	end)
+	return ClientReturn
+end
+
+function TagHumanoid(humanoid, player)
+	local Creator_Tag = Instance.new("ObjectValue")
+	Creator_Tag.Name = "creator"
+	Creator_Tag.Value = player
+	Debris:AddItem(Creator_Tag, 2)
+	Creator_Tag.Parent = humanoid
+end
+
+function UntagHumanoid(humanoid)
+	for i, v in pairs(humanoid:GetChildren()) do
+		if v:IsA("ObjectValue") and v.Name == "creator" then
+			v:Destroy()
+		end
+	end
+end
+
+function RandomizeStar()
+	Mesh.MeshId = "http://www.roblox.com/asset?id=" .. NinjaStars.Meshes[math.random(1, #NinjaStars.Meshes)]
+	Mesh.TextureId = "http://www.roblox.com/asset?id=" .. NinjaStars.Textures[math.random(1, #NinjaStars.Textures)]
+end
+
+function ThrowStar(Destination)
+	if not Destination then
+		return
+	end
+	local Star = BasePart:Clone()
+	Star.Name = "Effect"
+	Star.Size = Handle.Size
+	Star.CanCollide = true
+	local Smoke = Instance.new("Smoke")
+	Smoke.Color = Color3.new((255 / 255), (255 / 255), (255 / 255))
+	Smoke.Opacity = 0.125
+	Smoke.RiseVelocity = 0.05
+	Smoke.Size = 0.1
+	Smoke.Enabled = true
+	Smoke.Parent = Star
+	local Fire = Instance.new("Fire")
+	Fire.Color = Color3.new((0 / 255), (255 / 255), (255 / 255))
+	Fire.SecondaryColor = Color3.new((0 / 255), (0 / 255), (255 / 255))
+	Fire.Heat = 2
+	Fire.Size = 2
+	Fire.Enabled = true
+	Fire.Parent = Star
+	local StarMesh = Instance.new("SpecialMesh")
+	StarMesh.MeshType = Enum.MeshType.FileMesh
+	StarMesh.MeshId = Mesh.MeshId
+	StarMesh.TextureId = Mesh.TextureId
+	StarMesh.Scale = Mesh.Scale
+	StarMesh.VertexColor = Mesh.VertexColor
+	StarMesh.Parent = Star
+	local Mass = (Star:GetMass() * Gravity)
+	local BodyVelocity = Instance.new("BodyVelocity")
+	BodyVelocity.maxForce = Vector3.new(Mass, Mass, Mass)
+	BodyVelocity.Parent = Star
+	local Snowflake = Instance.new("StringValue")
+	Snowflake.Name = "Snowflake"
+	Snowflake.Parent = Star
+	local Creator = Instance.new("ObjectValue")
+	Creator.Name = "Creator"
+	Creator.Value = Player
+	Creator.Parent = Star
+	local HitSound = Sounds.Hit:Clone()
+	HitSound.Parent = Star
+	local HitScriptClone = HitScript:Clone()
+	HitScriptClone.Disabled = false
+	HitScriptClone.Parent = Star
+	Debris:AddItem(Star, 15)
+	Star.Parent = game:GetService("Workspace")
+	Star.CFrame = Handle.CFrame
+	local Direction = CFrame.new(Star.Position, Destination)
+	local Velocity = (Direction.lookVector  * Power)
+	Star.Velocity = Velocity
+	BodyVelocity.velocity = Velocity
+	Star.CFrame = Direction * CFrame.Angles((math.pi / 2), 0, (math.pi / 2))
+	Star.CFrame = Star.CFrame * CFrame.Angles(0, (math.pi / 2), 0)
+end
+
+function Activated()
+	if Tool.Enabled and CheckIfAlive() and ToolEquipped then
+		Tool.Enabled = false
+		local Animation = Animations.Throw
+		if Humanoid and Humanoid.RigType == Enum.HumanoidRigType.R15 then
+			Animation = Animations.R15Throw
+		end
+		InvokeClient("PlayAnimation", Animation)
+		Sounds.Fire:Play()
+		local MousePosition = InvokeClient("MousePosition")
+		ThrowStar(MousePosition)
+		Handle.Transparency = 1
+		wait(FireRate)
+		RandomizeStar()
+		Handle.Transparency = 0
+		Tool.Enabled = true
+	end
+end
+
+function CheckIfAlive()
+	return (Player and Player.Parent and Humanoid and Humanoid.Parent and Humanoid.Health > 0 and Torso and Torso.Parent)
+end
+
+function Equipped()
+	Character = Tool.Parent
+	Player = Players:GetPlayerFromCharacter(Character)
+	Humanoid = Character:FindFirstChild("Humanoid")
+	Torso = Character:FindFirstChild("Torso") or Character:FindFirstChild("UpperTorso")
+	if not CheckIfAlive() then
+		return
+	end
+	for i, v in pairs(Animations) do
+		if v and v.Animation then
+			InvokeClient("Preload", v.Animation.AnimationId)
+		end
+	end
+	ToolEquipped = true
+end
+
+function Unequipped()
+	Handle.Transparency = 0
+	for i ,v in pairs(Sounds) do
+		InvokeClient("StopSound", v)
+		v:Stop()
+	end
+	for i, v in pairs(Animations) do
+		InvokeClient("StopAnimation", v)
+	end
+	ToolEquipped = false
+end
+
+RandomizeStar()
+
+Tool.Equipped:connect(Equipped)
+Tool.Unequipped:connect(Unequipped)]]></ProtectedString>
+			</Properties>
+			<Item class="Script" referent="RBX00EBB86843344AC1884B789AE7A6634C">
+				<Properties>
+					<bool name="Disabled">true</bool>
+					<Content name="LinkedSource"><null></null></Content>
+					<string name="Name">HitScript</string>
+					<string name="ScriptGuid"></string>
+					<ProtectedString name="Source"><![CDATA[--Made by Luckymaxer
+
+Star = script.Parent
+
+Players = game:GetService("Players")
+Debris = game:GetService("Debris")
+RunService = game:GetService("RunService")
+
+Creator = Star:WaitForChild("Creator")
+HitSound = Star:WaitForChild("Hit")
+
+BasePart = Instance.new("Part")
+BasePart.Shape = Enum.PartType.Block
+BasePart.Material = Enum.Material.Plastic
+BasePart.TopSurface = Enum.SurfaceType.Smooth
+BasePart.BottomSurface = Enum.SurfaceType.Smooth
+BasePart.FormFactor = Enum.FormFactor.Custom
+BasePart.Size = Vector3.new(0.2, 0.2, 0.2)
+BasePart.CanCollide = true
+BasePart.Locked = true
+BasePart.Anchored = false
+
+Damage = {
+	Min = 5,
+	Max = 10
+}
+
+IceCubeDuration = 20
+
+Stuck = false
+
+function TagHumanoid(humanoid, player)
+	local Creator_Tag = Instance.new("ObjectValue")
+	Creator_Tag.Name = "creator"
+	Creator_Tag.Value = player
+	Debris:AddItem(Creator_Tag, 2)
+	Creator_Tag.Parent = humanoid
+end
+
+function UntagHumanoid(humanoid)
+	for i, v in pairs(humanoid:GetChildren()) do
+		if v:IsA("ObjectValue") and v.Name == "creator" then
+			v:Destroy()
+		end
+	end
+end
+
+function CheckTableForInstance(Table, Instance)
+	for i, v in pairs(Table) do
+		if v == Instance then
+			return true
+		end
+	end
+	return false
+end
+
+function GetAllConnectedParts(Parent)
+	local Parts = {}
+	local function GetConnectedParts(Parent)
+		for i, v in pairs(Parent:GetChildren()) do
+			if v:IsA("BasePart") then
+				for ii, vv in pairs(v:GetConnectedParts()) do
+					if vv:IsA("BasePart") and not CheckTableForInstance(Parts, vv) then
+						table.insert(Parts, vv)
+					end
+				end
+			end
+			GetConnectedParts(v)
+		end
+	end
+	GetConnectedParts(Parent)
+	return Parts
+end
+
+Star.Touched:connect(function(Hit)
+	if not Hit or not Hit.Parent or Stuck or Hit.Name == "Handle" or Hit.Name == "Effect" then
+		return
+	end
+	local character = Hit.Parent
+	if character:IsA("Hat") or character:IsA("Tool") then
+		character = character.Parent
+	end
+	local humanoid = character:FindFirstChild("Humanoid")
+	local Player = Creator.Value
+	Player = Players:GetPlayerFromCharacter(character)
+	if Player and Player.Character and Player.Character == character then
+		return
+	end
+	Stuck = true
+	local Weld = Instance.new("Weld")
+	Weld.Part0 = Hit
+	Weld.Part1 = Star
+	Weld.C0 = Hit.CFrame:toObjectSpace(Star.CFrame)
+	Weld.Parent = Star
+	Star.Velocity = Vector3.new(0, 0, 0)
+	Star.RotVelocity = Vector3.new(0, 0, 0)
+	local BodyVelocity = Star:FindFirstChild("BodyVelocity")
+	if BodyVelocity then
+		BodyVelocity:Destroy()
+	end
+	local Fire = Star:FindFirstChild("Fire")
+	if Fire then
+		Fire.Enabled = false
+	end
+	Star.CanCollide = false
+	HitSound:Play()
+	if humanoid and humanoid.Health > 0 then
+		TagHumanoid(humanoid, Creator.Value)
+		local DeterminedDamage = (math.random((Damage.Min * 1000), (Damage.Max * 1000)) * 0.001)
+		humanoid:TakeDamage(DeterminedDamage)
+		local ConnectedParts = GetAllConnectedParts(character)
+		local Stars = {}
+		if not character:FindFirstChild("SnowflakeEffect") then
+			for i, v in pairs(ConnectedParts) do
+				if v:IsA("BasePart") and v.Name == Star.Name and v:FindFirstChild("Snowflake") then
+					table.insert(Stars, v)
+				end
+			end
+			if #Stars >= 5 then
+				local SnowflakeEffect = Instance.new("StringValue")
+				SnowflakeEffect.Name = "SnowflakeEffect"
+				Debris:AddItem(SnowflakeEffect, (IceCubeDuration + 3))
+				SnowflakeEffect.Parent = character
+				for i, v in pairs(Stars) do
+					if v and v.Parent then
+						for ii, vv in pairs(v:GetChildren()) do
+							if vv:IsA("Fire") then
+								vv.Enabled = true
+							end
+						end
+					end
+				end
+				local torso = character:FindFirstChild("Torso")
+				wait(2)
+				for i, v in pairs(Stars) do
+					if v and v.Parent then
+						for ii, vv in pairs(v:GetChildren()) do
+							if vv:IsA("Fire") then
+								vv.Enabled = false
+							end
+						end
+					end
+				end
+				if torso then
+					local CharacterSize = character:GetModelSize()
+					local IceCube = BasePart:Clone()
+					IceCube.Name = "IceCube"
+					IceCube.BrickColor = BrickColor.new("Bright blue")
+					IceCube.Transparency = 0.25
+					IceCube.Material = Enum.Material.Ice
+					IceCube.Size = (Vector3.new(CharacterSize.Y, CharacterSize.Y, CharacterSize.Y) + Vector3.new(1.5, 1.5, 1.5))
+					IceCube.Anchored = true
+					IceCube.CFrame = torso.CFrame
+					local Weld = Instance.new("Weld")
+					Weld.Part0 = IceCube
+					Weld.Part1 = torso
+					Weld.Parent = IceCube
+					Debris:AddItem(IceCube, IceCubeDuration)
+					IceCube.Parent = game:GetService("Workspace")
+				end
+			end
+		end
+	end
+	wait(5)
+	Star:Destroy()
+end)
+
+RunService.RenderStepped:connect(function()
+	if not Stuck then
+		Star.RotVelocity = (Star.CFrame * CFrame.Angles(math.pi/2, 0, 0)).lookVector * 100
+	end
+	wait()
+end)]]></ProtectedString>
+				</Properties>
+			</Item>
+		</Item>
+		<Item class="LocalScript" referent="RBX7AAB2DF5B3064ADA8F66C5576A36A1D3">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">LocalScript</string>
+				<string name="ScriptGuid"></string>
+				<ProtectedString name="Source"><![CDATA[--Made by Luckymaxer
+
+Tool = script.Parent
+Handle = Tool:WaitForChild("Handle")
+
+Players = game:GetService("Players")
+ContentProvider = game:GetService("ContentProvider")
+
+Animations = {}
+
+ServerControl = Tool:WaitForChild("ServerControl")
+ClientControl = Tool:WaitForChild("ClientControl")
+
+Equipped = false
+
+ClientControl.OnClientInvoke = (function(Mode, Value)
+	if Mode == "PlayAnimation" and Equipped and Humanoid then
+		for i, v in pairs(Animations) do
+			if v.Animation == Value.Animation then
+				v.AnimationTrack:Stop()
+				table.remove(Animations, i)
+			end
+		end
+		local AnimationTrack = Humanoid:LoadAnimation(Value.Animation)
+		table.insert(Animations, {Animation = Value.Animation, AnimationTrack = AnimationTrack})
+		AnimationTrack:Play(Value.FadeTime, Value.Weight, Value.Speed)
+	elseif Mode == "StopAnimation" and Value then
+		for i, v in pairs(Animations) do
+			if v.Animation == Value.Animation then
+				v.AnimationTrack:Stop()
+				table.remove(Animations, i)
+			end
+		end
+	elseif Mode == "Preload" and Value then
+		ContentProvider:Preload(Value)
+	elseif Mode == "PlaySound" and Value then
+		Value:Play()
+	elseif Mode == "StopSound" and Value then
+		Value:Stop()
+	elseif Mode == "MousePosition" then
+		return PlayerMouse.Hit.p
+	elseif Mode == "DisableJump" then
+		DisableJump(Value)
+	end
+end)
+
+function InvokeServer(Mode, Value)
+	pcall(function()
+		local ServerReturn = ServerControl:InvokeServer(Mode, Value)
+		return ServerReturn
+	end)
+end
+
+function DisableJump(Boolean)
+	if PreventJump then
+		PreventJump:disconnect()
+	end
+	if Boolean then
+		PreventJump = Humanoid.Changed:connect(function(Property)
+			if Property ==  "Jump" then
+				Humanoid.Jump = false
+			end
+		end)
+	end
+end
+
+function CheckIfAlive()
+	return (Player and Player.Parent and Humanoid and Humanoid.Parent and Humanoid.Health > 0)
+end
+
+function Equipped(Mouse)
+	Character = Tool.Parent
+	Player = Players:GetPlayerFromCharacter(Character)
+	Humanoid = Character:FindFirstChild("Humanoid")
+	Equipped = true
+	if not CheckIfAlive() then
+		return
+	end
+	PlayerMouse = Player:GetMouse()
+	Mouse.Button1Down:connect(function()
+		InvokeServer("MouseClick", {Down = true})
+	end)
+	Mouse.KeyDown:connect(function(Key)
+		InvokeServer("KeyPress", {Key = Key, Down = true})
+	end)
+	Mouse.KeyUp:connect(function(Key)
+		InvokeServer("KeyPress", {Key = Key, Down = false})
+	end)
+end
+
+function Unequipped()
+	Equipped = false
+	for i, v in pairs(Animations) do
+		if v and v.AnimationTrack then
+			v.AnimationTrack:Stop()
+		end
+	end
+	if PreventJump then
+		PreventJump:disconnect()
+	end
+	Animations = {}
+end
+
+Tool.Equipped:connect(Equipped)
+Tool.Unequipped:connect(Unequipped)]]></ProtectedString>
+			</Properties>
+		</Item>
+		<Item class="Animation" referent="RBX8D2995E6A50D4F7CBEED87409398C8F0">
+			<Properties>
+				<Content name="AnimationId"><url>http://www.roblox.com/asset?id=188491904</url></Content>
+				<string name="Name">Throw</string>
+			</Properties>
+		</Item>
+		<Item class="Model" referent="RBX40E11CE209A247B7A4ED292B86938133">
+			<Properties>
+				<CoordinateFrame name="ModelInPrimary">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+					<R00>1</R00>
+					<R01>0</R01>
+					<R02>0</R02>
+					<R10>0</R10>
+					<R11>1</R11>
+					<R12>0</R12>
+					<R20>0</R20>
+					<R21>0</R21>
+					<R22>1</R22>
+				</CoordinateFrame>
+				<string name="Name">DisplayModel</string>
+				<Ref name="PrimaryPart">null</Ref>
+			</Properties>
+			<Item class="Part" referent="RBXF23AF2E5C64A46A19DFCAFF9284D3DC2">
+				<Properties>
+					<bool name="Anchored">false</bool>
+					<float name="BackParamA">-0.5</float>
+					<float name="BackParamB">0.5</float>
+					<token name="BackSurface">0</token>
+					<token name="BackSurfaceInput">0</token>
+					<float name="BottomParamA">-0.5</float>
+					<float name="BottomParamB">0.5</float>
+					<token name="BottomSurface">0</token>
+					<token name="BottomSurfaceInput">0</token>
+					<int name="BrickColor">194</int>
+					<CoordinateFrame name="CFrame">
+						<X>62.8383293</X>
+						<Y>6.81430149</Y>
+						<Z>-31.2598019</Z>
+						<R00>0.00390049652</R00>
+						<R01>0.987012684</R01>
+						<R02>0.160594568</R02>
+						<R10>0.0239776671</R10>
+						<R11>-0.160641924</R11>
+						<R12>0.986721456</R12>
+						<R20>0.999704838</R20>
+						<R21>1.96695328e-006</R21>
+						<R22>-0.0242928714</R22>
+					</CoordinateFrame>
+					<bool name="CanCollide">true</bool>
+					<PhysicalProperties name="CustomPhysicalProperties">
+						<CustomPhysics>false</CustomPhysics>
+					</PhysicalProperties>
+					<float name="Elasticity">0.5</float>
+					<float name="Friction">0.300000012</float>
+					<float name="FrontParamA">-0.5</float>
+					<float name="FrontParamB">0.5</float>
+					<token name="FrontSurface">0</token>
+					<token name="FrontSurfaceInput">0</token>
+					<float name="LeftParamA">-0.5</float>
+					<float name="LeftParamB">0.5</float>
+					<token name="LeftSurface">0</token>
+					<token name="LeftSurfaceInput">0</token>
+					<bool name="Locked">true</bool>
+					<token name="Material">256</token>
+					<string name="Name">Snowflake</string>
+					<float name="Reflectance">0</float>
+					<float name="RightParamA">-0.5</float>
+					<float name="RightParamB">0.5</float>
+					<token name="RightSurface">0</token>
+					<token name="RightSurfaceInput">0</token>
+					<Vector3 name="RotVelocity">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+					</Vector3>
+					<float name="TopParamA">-0.5</float>
+					<float name="TopParamB">0.5</float>
+					<token name="TopSurface">0</token>
+					<token name="TopSurfaceInput">0</token>
+					<float name="Transparency">0</float>
+					<Vector3 name="Velocity">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+					</Vector3>
+					<token name="formFactorRaw">3</token>
+					<token name="shape">1</token>
+					<Vector3 name="size">
+						<X>0.899999976</X>
+						<Y>0.200000003</Y>
+						<Z>0.899999976</Z>
+					</Vector3>
+				</Properties>
+				<Item class="SpecialMesh" referent="RBX221A8F8633F44437BA94877494C65AA3">
+					<Properties>
+						<token name="LODX">2</token>
+						<token name="LODY">2</token>
+						<Content name="MeshId"><url>http://www.roblox.com/asset?id=187687161</url></Content>
+						<token name="MeshType">5</token>
+						<string name="Name">Mesh</string>
+						<Vector3 name="Offset">
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</Vector3>
+						<Vector3 name="Scale">
+							<X>2</X>
+							<Y>2</Y>
+							<Z>2</Z>
+						</Vector3>
+						<Content name="TextureId"><url>http://www.roblox.com/asset?id=187687219</url></Content>
+						<Vector3 name="VertexColor">
+							<X>1</X>
+							<Y>1</Y>
+							<Z>1</Z>
+						</Vector3>
+					</Properties>
+				</Item>
+				<Item class="Weld" referent="RBX30E571E27EF54FF5AE30B676CA2D0BEE">
+					<Properties>
+						<CoordinateFrame name="C0">
+							<X>0.5</X>
+							<Y>0</Y>
+							<Z>1</Z>
+							<R00>1</R00>
+							<R01>0</R01>
+							<R02>0</R02>
+							<R10>0</R10>
+							<R11>1</R11>
+							<R12>0</R12>
+							<R20>0</R20>
+							<R21>0</R21>
+							<R22>1</R22>
+						</CoordinateFrame>
+						<CoordinateFrame name="C1">
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+							<R00>1</R00>
+							<R01>0</R01>
+							<R02>0</R02>
+							<R10>0</R10>
+							<R11>1</R11>
+							<R12>0</R12>
+							<R20>0</R20>
+							<R21>0</R21>
+							<R22>1</R22>
+						</CoordinateFrame>
+						<string name="Name">Weld</string>
+						<Ref name="Part0">RBX52EE89770983415B80C0E1F121F55429</Ref>
+						<Ref name="Part1">RBXF23AF2E5C64A46A19DFCAFF9284D3DC2</Ref>
+					</Properties>
+				</Item>
+			</Item>
+			<Item class="Part" referent="RBXCF8B84975B3343ADAEBA778DE43EBD8F">
+				<Properties>
+					<bool name="Anchored">false</bool>
+					<float name="BackParamA">-0.5</float>
+					<float name="BackParamB">0.5</float>
+					<token name="BackSurface">0</token>
+					<token name="BackSurfaceInput">0</token>
+					<float name="BottomParamA">-0.5</float>
+					<float name="BottomParamB">0.5</float>
+					<token name="BottomSurface">0</token>
+					<token name="BottomSurfaceInput">0</token>
+					<int name="BrickColor">194</int>
+					<CoordinateFrame name="CFrame">
+						<X>62.7007332</X>
+						<Y>5.96890354</Y>
+						<Z>-30.4887657</Z>
+						<R00>0.00390049652</R00>
+						<R01>0.987012684</R01>
+						<R02>0.160594568</R02>
+						<R10>0.0239776671</R10>
+						<R11>-0.160641924</R11>
+						<R12>0.986721456</R12>
+						<R20>0.999704838</R20>
+						<R21>1.96695328e-006</R21>
+						<R22>-0.0242928714</R22>
+					</CoordinateFrame>
+					<bool name="CanCollide">true</bool>
+					<PhysicalProperties name="CustomPhysicalProperties">
+						<CustomPhysics>false</CustomPhysics>
+					</PhysicalProperties>
+					<float name="Elasticity">0.5</float>
+					<float name="Friction">0.300000012</float>
+					<float name="FrontParamA">-0.5</float>
+					<float name="FrontParamB">0.5</float>
+					<token name="FrontSurface">0</token>
+					<token name="FrontSurfaceInput">0</token>
+					<float name="LeftParamA">-0.5</float>
+					<float name="LeftParamB">0.5</float>
+					<token name="LeftSurface">0</token>
+					<token name="LeftSurfaceInput">0</token>
+					<bool name="Locked">true</bool>
+					<token name="Material">256</token>
+					<string name="Name">Snowflake</string>
+					<float name="Reflectance">0</float>
+					<float name="RightParamA">-0.5</float>
+					<float name="RightParamB">0.5</float>
+					<token name="RightSurface">0</token>
+					<token name="RightSurfaceInput">0</token>
+					<Vector3 name="RotVelocity">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+					</Vector3>
+					<float name="TopParamA">-0.5</float>
+					<float name="TopParamB">0.5</float>
+					<token name="TopSurface">0</token>
+					<token name="TopSurfaceInput">0</token>
+					<float name="Transparency">0</float>
+					<Vector3 name="Velocity">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+					</Vector3>
+					<token name="formFactorRaw">3</token>
+					<token name="shape">1</token>
+					<Vector3 name="size">
+						<X>0.899999976</X>
+						<Y>0.200000003</Y>
+						<Z>0.899999976</Z>
+					</Vector3>
+				</Properties>
+				<Item class="SpecialMesh" referent="RBX2B33625D5F354B69B8B4489BBB463F43">
+					<Properties>
+						<token name="LODX">2</token>
+						<token name="LODY">2</token>
+						<Content name="MeshId"><url>http://www.roblox.com/asset?id=187687193</url></Content>
+						<token name="MeshType">5</token>
+						<string name="Name">Mesh</string>
+						<Vector3 name="Offset">
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</Vector3>
+						<Vector3 name="Scale">
+							<X>2</X>
+							<Y>2</Y>
+							<Z>2</Z>
+						</Vector3>
+						<Content name="TextureId"><url>http://www.roblox.com/asset?id=187687219</url></Content>
+						<Vector3 name="VertexColor">
+							<X>1</X>
+							<Y>1</Y>
+							<Z>1</Z>
+						</Vector3>
+					</Properties>
+				</Item>
+				<Item class="Weld" referent="RBX7CE9CD5EA4334F4490017E430DFF6FFC">
+					<Properties>
+						<CoordinateFrame name="C0">
+							<X>1.25</X>
+							<Y>0</Y>
+							<Z>0.125</Z>
+							<R00>1</R00>
+							<R01>0</R01>
+							<R02>0</R02>
+							<R10>0</R10>
+							<R11>1</R11>
+							<R12>0</R12>
+							<R20>0</R20>
+							<R21>0</R21>
+							<R22>1</R22>
+						</CoordinateFrame>
+						<CoordinateFrame name="C1">
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+							<R00>1</R00>
+							<R01>0</R01>
+							<R02>0</R02>
+							<R10>0</R10>
+							<R11>1</R11>
+							<R12>0</R12>
+							<R20>0</R20>
+							<R21>0</R21>
+							<R22>1</R22>
+						</CoordinateFrame>
+						<string name="Name">Weld</string>
+						<Ref name="Part0">RBX52EE89770983415B80C0E1F121F55429</Ref>
+						<Ref name="Part1">RBXCF8B84975B3343ADAEBA778DE43EBD8F</Ref>
+					</Properties>
+				</Item>
+			</Item>
+		</Item>
+		<Item class="Part" referent="RBX52EE89770983415B80C0E1F121F55429">
+			<Properties>
+				<bool name="Anchored">false</bool>
+				<float name="BackParamA">-0.5</float>
+				<float name="BackParamB">0.5</float>
+				<token name="BackSurface">0</token>
+				<token name="BackSurfaceInput">0</token>
+				<float name="BottomParamA">-0.5</float>
+				<float name="BottomParamB">0.5</float>
+				<token name="BottomSurface">0</token>
+				<token name="BottomSurfaceInput">0</token>
+				<int name="BrickColor">194</int>
+				<CoordinateFrame name="CFrame">
+					<X>62.6757851</X>
+					<Y>5.81559134</Y>
+					<Z>-31.7353611</Z>
+					<R00>0.00390049652</R00>
+					<R01>0.987012684</R01>
+					<R02>0.160594568</R02>
+					<R10>0.0239776671</R10>
+					<R11>-0.160641924</R11>
+					<R12>0.986721456</R12>
+					<R20>0.999704838</R20>
+					<R21>1.96695328e-006</R21>
+					<R22>-0.0242928714</R22>
+				</CoordinateFrame>
+				<bool name="CanCollide">false</bool>
+				<PhysicalProperties name="CustomPhysicalProperties">
+					<CustomPhysics>false</CustomPhysics>
+				</PhysicalProperties>
+				<float name="Elasticity">0.5</float>
+				<float name="Friction">0.300000012</float>
+				<float name="FrontParamA">-0.5</float>
+				<float name="FrontParamB">0.5</float>
+				<token name="FrontSurface">0</token>
+				<token name="FrontSurfaceInput">0</token>
+				<float name="LeftParamA">-0.5</float>
+				<float name="LeftParamB">0.5</float>
+				<token name="LeftSurface">0</token>
+				<token name="LeftSurfaceInput">0</token>
+				<bool name="Locked">true</bool>
+				<token name="Material">256</token>
+				<string name="Name">Handle</string>
+				<float name="Reflectance">0</float>
+				<float name="RightParamA">-0.5</float>
+				<float name="RightParamB">0.5</float>
+				<token name="RightSurface">0</token>
+				<token name="RightSurfaceInput">0</token>
+				<Vector3 name="RotVelocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<float name="TopParamA">-0.5</float>
+				<float name="TopParamB">0.5</float>
+				<token name="TopSurface">0</token>
+				<token name="TopSurfaceInput">0</token>
+				<float name="Transparency">0</float>
+				<Vector3 name="Velocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<token name="formFactorRaw">3</token>
+				<token name="shape">1</token>
+				<Vector3 name="size">
+					<X>0.899999976</X>
+					<Y>0.200000003</Y>
+					<Z>0.899999976</Z>
+				</Vector3>
+			</Properties>
+			<Item class="SpecialMesh" referent="RBX98F3252CF0BC4DD6BB24925FA1AB45A9">
+				<Properties>
+					<token name="LODX">2</token>
+					<token name="LODY">2</token>
+					<Content name="MeshId"><url>http://www.roblox.com/asset?id=187687175</url></Content>
+					<token name="MeshType">5</token>
+					<string name="Name">Mesh</string>
+					<Vector3 name="Offset">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+					</Vector3>
+					<Vector3 name="Scale">
+						<X>2</X>
+						<Y>2</Y>
+						<Z>2</Z>
+					</Vector3>
+					<Content name="TextureId"><url>http://www.roblox.com/asset?id=187687219</url></Content>
+					<Vector3 name="VertexColor">
+						<X>1</X>
+						<Y>1</Y>
+						<Z>1</Z>
+					</Vector3>
+				</Properties>
+			</Item>
+			<Item class="Sound" referent="RBXEF105C124AD84D848D727D461886009C">
+				<Properties>
+					<float name="EmitterSize">10</float>
+					<bool name="Looped">false</bool>
+					<string name="Name">Fire</string>
+					<bool name="PlayOnRemove">false</bool>
+					<float name="PlaybackSpeed">1</float>
+					<bool name="Playing">false</bool>
+					<token name="RollOffMode">0</token>
+					<Ref name="SoundGroup">null</Ref>
+					<Content name="SoundId"><url>rbxasset://sounds/swoosh.wav</url></Content>
+					<double name="TimePosition">0</double>
+					<float name="Volume">0.699999988</float>
+					<float name="xmlRead_MaxDistance_3">10000</float>
+				</Properties>
+			</Item>
+			<Item class="Sound" referent="RBX582A803DACCA4FFA960ADCF2077D0500">
+				<Properties>
+					<float name="EmitterSize">10</float>
+					<bool name="Looped">false</bool>
+					<string name="Name">Hit</string>
+					<bool name="PlayOnRemove">false</bool>
+					<float name="PlaybackSpeed">1</float>
+					<bool name="Playing">false</bool>
+					<token name="RollOffMode">0</token>
+					<Ref name="SoundGroup">null</Ref>
+					<Content name="SoundId"><url>http://www.roblox.com/asset?id=11113679</url></Content>
+					<double name="TimePosition">0</double>
+					<float name="Volume">0.5</float>
+					<float name="xmlRead_MaxDistance_3">10000</float>
+				</Properties>
+			</Item>
+		</Item>
+		<Item class="Animation" referent="RBX57181A17591E4143B74EE299021EB845">
+			<Properties>
+				<Content name="AnimationId"><url>rbxassetid://546834623</url></Content>
+				<string name="Name">R15Throw</string>
+			</Properties>
+		</Item>
+	</Item>
+</roblox>

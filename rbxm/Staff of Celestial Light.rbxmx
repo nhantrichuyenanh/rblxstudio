@@ -1,0 +1,543 @@
+<roblox xmlns:xmime="http://www.w3.org/2005/05/xmlmime" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.roblox.com/roblox.xsd" version="4">
+	<External>null</External>
+	<External>nil</External>
+	<Item class="Tool" referent="RBXAAF3553BF965440FB4F4BB91D83A1FD1">
+		<Properties>
+			<bool name="CanBeDropped">true</bool>
+			<bool name="Enabled">true</bool>
+			<CoordinateFrame name="Grip">
+				<X>0</X>
+				<Y>0</Y>
+				<Z>-1.39999998</Z>
+				<R00>0</R00>
+				<R01>0</R01>
+				<R02>-1</R02>
+				<R10>-1</R10>
+				<R11>0</R11>
+				<R12>0</R12>
+				<R20>0</R20>
+				<R21>1</R21>
+				<R22>0</R22>
+			</CoordinateFrame>
+			<bool name="ManualActivationOnly">false</bool>
+			<string name="Name">StaffOfCelestialLight</string>
+			<bool name="RequiresHandle">true</bool>
+			<BinaryString name="Tags"></BinaryString>
+			<Content name="TextureId"><url>http://www.roblox.com/asset/?id=49367564 </url></Content>
+			<string name="ToolTip"></string>
+		</Properties>
+		<Item class="Part" referent="RBX7F3A736FC27042DABE1639B9EBA8274D">
+			<Properties>
+				<bool name="Anchored">false</bool>
+				<float name="BackParamA">-0.5</float>
+				<float name="BackParamB">0.5</float>
+				<token name="BackSurface">0</token>
+				<token name="BackSurfaceInput">0</token>
+				<float name="BottomParamA">-0.5</float>
+				<float name="BottomParamB">0.5</float>
+				<token name="BottomSurface">0</token>
+				<token name="BottomSurfaceInput">0</token>
+				<CoordinateFrame name="CFrame">
+					<X>1.50000203</X>
+					<Y>0.617501974</Y>
+					<Z>1.18751097</Z>
+					<R00>0</R00>
+					<R01>-1</R01>
+					<R02>0</R02>
+					<R10>-0.707107365</R10>
+					<R11>0</R11>
+					<R12>0.707106352</R12>
+					<R20>-0.707106352</R20>
+					<R21>0</R21>
+					<R22>-0.707107365</R22>
+				</CoordinateFrame>
+				<bool name="CanCollide">true</bool>
+				<int name="CollisionGroupId">0</int>
+				<Color3uint8 name="Color3uint8">4288914085</Color3uint8>
+				<PhysicalProperties name="CustomPhysicalProperties">
+					<CustomPhysics>false</CustomPhysics>
+				</PhysicalProperties>
+				<float name="Elasticity">0.5</float>
+				<float name="Friction">0.300000012</float>
+				<float name="FrontParamA">-0.5</float>
+				<float name="FrontParamB">0.5</float>
+				<token name="FrontSurface">0</token>
+				<token name="FrontSurfaceInput">0</token>
+				<float name="LeftParamA">-0.5</float>
+				<float name="LeftParamB">0.5</float>
+				<token name="LeftSurface">0</token>
+				<token name="LeftSurfaceInput">0</token>
+				<bool name="Locked">true</bool>
+				<token name="Material">256</token>
+				<string name="Name">Handle</string>
+				<float name="Reflectance">0</float>
+				<float name="RightParamA">-0.5</float>
+				<float name="RightParamB">0.5</float>
+				<token name="RightSurface">0</token>
+				<token name="RightSurfaceInput">0</token>
+				<Vector3 name="RotVelocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<BinaryString name="Tags"></BinaryString>
+				<float name="TopParamA">-0.5</float>
+				<float name="TopParamB">0.5</float>
+				<token name="TopSurface">0</token>
+				<token name="TopSurfaceInput">0</token>
+				<float name="Transparency">0</float>
+				<Vector3 name="Velocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<token name="formFactorRaw">3</token>
+				<token name="shape">1</token>
+				<Vector3 name="size">
+					<X>0.25000006</X>
+					<Y>0.520000696</Y>
+					<Z>5.24999571</Z>
+				</Vector3>
+			</Properties>
+			<Item class="SpecialMesh" referent="RBX9FDEC35AB15E44DFB7AE406165B91DB6">
+				<Properties>
+					<token name="LODX">2</token>
+					<token name="LODY">2</token>
+					<Content name="MeshId"><url>http://www.roblox.com/asset/?id=49367758 </url></Content>
+					<token name="MeshType">5</token>
+					<string name="Name">Mesh</string>
+					<Vector3 name="Offset">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+					</Vector3>
+					<Vector3 name="Scale">
+						<X>1.39999998</X>
+						<Y>1.39999998</Y>
+						<Z>1.39999998</Z>
+					</Vector3>
+					<BinaryString name="Tags"></BinaryString>
+					<Content name="TextureId"><url>http://www.roblox.com/asset/?id=49367585 </url></Content>
+					<Vector3 name="VertexColor">
+						<X>1</X>
+						<Y>1</Y>
+						<Z>1</Z>
+					</Vector3>
+				</Properties>
+			</Item>
+			<Item class="Attachment" referent="RBXFC383F991B034A9596EFF0295C826C28">
+				<Properties>
+					<CoordinateFrame name="CFrame">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>-1.39999986</Z>
+						<R00>6.31088724e-30</R00>
+						<R01>0</R01>
+						<R02>-1</R02>
+						<R10>-1</R10>
+						<R11>0</R11>
+						<R12>-6.31088724e-30</R12>
+						<R20>0</R20>
+						<R21>1</R21>
+						<R22>0</R22>
+					</CoordinateFrame>
+					<string name="Name">RightGripAttachment</string>
+					<BinaryString name="Tags"></BinaryString>
+					<bool name="Visible">false</bool>
+				</Properties>
+			</Item>
+		</Item>
+		<Item class="LocalScript" referent="RBX9D73FCDB7FF04BFF8839169D303D1852">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">Local Gui</string>
+				<string name="ScriptGuid">{ED91E924-E743-4F75-868A-C63F26B17851}</string>
+				<ProtectedString name="Source"><![CDATA[Tool = script.Parent
+
+local stillEquipped = false
+
+function onEquippedLocal(mouse)
+	stillEquipped = true
+	if mouse == nil then 
+		print("Mouse not found")
+		return
+	end
+	while stillEquipped do
+		print("Setting Mouse to go")
+		mouse.Icon = "rbxasset://textures\\GunCursor.png"
+		while Tool.Enabled and stillEquipped do 
+			wait(0.01)
+		end
+		print("Setting Mouse to wait")
+		mouse.Icon = "rbxasset://textures\\GunWaitCursor.png"
+		while not Tool.Enabled and stillEquipped do 
+			wait(0.01)
+		end
+	end
+end
+
+function onUnequippedLocal()
+	stillEquipped = false
+end
+
+Tool.Equipped:connect(onEquippedLocal)
+Tool.Unequipped:connect(onUnequippedLocal)
+
+]]></ProtectedString>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+		</Item>
+		<Item class="Script" referent="RBX10CD0CE76D734EFE822557D500166FF7">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">StaffScript</string>
+				<string name="ScriptGuid">{FFA3CF56-45A3-4E35-8386-32C6CC70F718}</string>
+				<ProtectedString name="Source"><![CDATA[local Tool = script.Parent
+local Staff = Tool.Handle
+
+local vCharacter 
+local numChar = 0
+
+Tool.Enabled = true
+local staffSound 
+
+local staffAOE = Vector3.new(20.0, 20.0, 20.0)
+
+local healField = Instance.new("Part")
+healField.Name = "Field"
+healField.Size = Vector3.new(1, 1, 1)
+healField.Transparency = 0.8
+
+
+local fieldMesh = Instance.new("SpecialMesh")
+fieldMesh.MeshType = "FileMesh"
+fieldMesh.Name = "Mesh"
+fieldMesh.MeshId = "http://www.roblox.com/asset/?id=48423624"
+fieldMesh.TextureId = "http://www.roblox.com/asset/?id=49457234"
+fieldMesh.Scale = Vector3.new(0.2, 0.2, 0.2)
+fieldMesh.Parent = healField
+
+function onActivated()
+
+	if Tool.Enabled == false then 
+		return
+	end
+
+	Tool.Enabled = false
+
+	vCharacter = Tool.Parent
+	myTorso = vCharacter:FindFirstChild("Torso")
+
+	if myTorso == nil then 
+		return
+	end
+
+	myHumanoid = vCharacter:FindFirstChild("Humanoid")
+	if myHumanoid == nil then
+		return
+	end
+
+	staffSound = Tool:FindFirstChild("StaffSound")
+	if staffSound then staffSound:Play() end
+
+	parts = game.Workspace:FindPartsInRegion3(Region3.new(myTorso.Position - staffAOE, myTorso.Position + staffAOE), vCharacter, 100)
+	
+	for i = 1, #parts do 
+		tempChar = parts[i].Parent
+		tempHumanoid = tempChar:FindFirstChild("Humanoid")
+		if tempHumanoid ~= nil then 
+			healing = tempHumanoid:FindFirstChild("Healing")
+			if healing == nil then 
+				healing = Instance.new("StringValue")
+				healing.Name = "Healing"
+				healing.Parent = tempHumanoid
+				healing.Value = "Healing"
+				
+				newScript = Tool.LightInsertScript:Clone()
+				newScript.Parent = tempChar
+				newScript.Disabled = false
+				numChar = numChar + 1
+	
+				field = healField:Clone()
+				field.Parent = tempChar.Torso
+
+				fieldWeld = Instance.new("Weld")
+				fieldWeld.Part0 = tempChar.Torso
+				fieldWeld.Part1 = field
+				fieldWeld.Parent = tempChar.Torso				
+			end
+		end
+	end
+
+	charScript = vCharacter:FindFirstChild("CharScript")
+	if numChar > 0 and charScript == nil then 
+
+		field = healField:Clone()
+		field.Parent = vCharacter	
+
+		fieldWeld = Instance.new("Weld")
+		fieldWeld.Part0 = myTorso
+		fieldWeld.Part1 = field
+		fieldWeld.Parent = myTorso
+		fieldWeld.Name = "FieldWeld"
+
+		buff = Instance.new("StringValue")
+		buff.Name = "Buff"
+		buff.Parent = myHumanoid
+		buff.Value = "Buff"	
+
+		newScript = Tool.CharScript:Clone()
+		newScript.Parent = vCharacter
+
+		nChar = newScript.NumChar
+		nChar.Value = numChar
+		newScript.Disabled = false	
+	
+	end
+
+	wait(8.0)
+	Tool.Enabled = true
+	numChar = 0
+end
+
+function onEquipped()
+end
+
+function onUnequipped()
+	if staffSound then staffSound:Stop() end
+end
+
+Tool.Activated:connect(onActivated)
+Tool.Equipped:connect(onEquipped)
+Tool.Unequipped:connect(onUnequipped)
+]]></ProtectedString>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+		</Item>
+		<Item class="LocalScript" referent="RBX9EFD54B19602400A8B514AD25BCEB8ED">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">AnimateScript</string>
+				<string name="ScriptGuid">{050EAFF4-EAB2-419C-98FB-179FDCB8B2B5}</string>
+				<ProtectedString name="Source"><![CDATA[local Tool = script.Parent
+
+-- Animations
+local staffAnim
+
+function onActivatedL()
+	vCharacter = Tool.Parent
+
+	myHumanoid = vCharacter:FindFirstChild("Humanoid")
+	if myHumanoid == nil then 
+		return
+	end
+	
+	if Tool.Enabled then
+		staffAnim = myHumanoid:LoadAnimation(Tool.LightStaffAnim)
+		staffAnim:Play()	
+	end
+end
+
+function onEquippedL()
+end
+
+function onUnequippedL()
+	if staffAnim then staffAnim:Stop() end	
+end
+
+Tool.Activated:connect(onActivatedL)
+Tool.Equipped:connect(onEquippedL)
+Tool.Unequipped:connect(onUnequippedL)]]></ProtectedString>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+		</Item>
+		<Item class="Script" referent="RBXC08AD2D627EB4598A8B6F49C675CE24E">
+			<Properties>
+				<bool name="Disabled">true</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">LightInsertScript</string>
+				<string name="ScriptGuid">{B5B4E79A-40EC-4F10-88CF-E1A510D3CB72}</string>
+				<ProtectedString name="Source"><![CDATA[vChar = script.Parent
+humanoid = vChar:FindFirstChild("Humanoid")
+local co 
+healing = humanoid:FindFirstChild("Healing")
+
+
+local sign = -0.2
+
+
+function reset()
+	wait(10.0)
+	if humanoid.Health > 70 then humanoid.Health = humanoid.Health - 50 end
+	if humanoid.MaxHealth > 100 then humanoid.MaxHealth = 100 end
+	healed = humanoid:FindFirstChild("Healing")
+	if healed then healed:Remove() end
+	field = vChar.Torso:FindFirstChild("Field")	
+	if field then field:Remove() end
+	script:Remove()
+end
+
+
+if humanoid ~= nil then 
+	if humanoid.MaxHealth == 100 and humanoid.Health <= humanoid.MaxHealth then 
+		humanoid.MaxHealth = 150 
+		humanoid.Health = humanoid.Health + 50
+		co = coroutine.create(reset)
+		coroutine.resume(co)
+	end
+end
+	
+while healing do 	
+	field = vChar.Torso:FindFirstChild("Field")	
+	while field == nil do wait(1.0) field = vChar.Torso:FindFirstChild("Field") end	
+	field.Transparency = field.Transparency + sign
+	sign = sign * -1
+	wait(1.0)
+end]]></ProtectedString>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+		</Item>
+		<Item class="Script" referent="RBXEA69A7BA20BF42C3BC8C47A5076CEC00">
+			<Properties>
+				<bool name="Disabled">true</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">CharScript</string>
+				<string name="ScriptGuid">{2EF1FA8B-5054-42F2-99D2-6D4B5893A039}</string>
+				<ProtectedString name="Source"><![CDATA[local vChar = script.Parent
+local torso = vChar.Torso
+buff = vChar.Humanoid:FindFirstChild("Buff")
+numChar = script.NumChar
+
+buffDuration = 35 -- Number of seconds the buff should last
+
+sign = -0.2
+local co
+
+humanoid = vChar:FindFirstChild("Humanoid")
+
+if humanoid ~= nil then 	
+	maximumHealth = humanoid.MaxHealth + numChar.Value * 40
+	if maximumHealth < 800 and humanoid.Health <= humanoid.MaxHealth then 		
+		percentage = humanoid.Health/humanoid.MaxHealth			
+		humanoid.MaxHealth = (humanoid.MaxHealth * 1.5) + numChar.Value * 40
+		humanoid.Health = percentage * humanoid.MaxHealth
+	else 
+		percentage = humanoid.Health/humanoid.MaxHealth	
+		humanoid.MaxHealth = 800
+		humanoid.Health = humanoid.MaxHealth * percentage
+	end	
+	
+end
+
+
+
+while buff do 
+
+field = vChar:FindFirstChild("Field") 
+while field == nil do wait(1.0) field  = vChar:FindFirstChild("Field") buffDuration = buffDuration - 1 end
+ 
+if buffDuration  < 7 then	
+	field.Transparency = field.Transparency + sign
+	sign = sign * -1
+end
+
+if buffDuration <= 0 then 	
+	percentage = humanoid.Health/humanoid.MaxHealth 
+	humanoid.MaxHealth = 100
+	humanoid.Health = percentage * humanoid.MaxHealth
+	if field then field:Remove() end	
+	if buff then buff:Remove() end	
+	buffDuration = 35
+	script:Remove()	
+end
+
+buffDuration = buffDuration - 1
+wait(1.0)
+end
+
+]]></ProtectedString>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+			<Item class="NumberValue" referent="RBX96540A68487C48B4A838B208854C7D80">
+				<Properties>
+					<string name="Name">NumChar</string>
+					<BinaryString name="Tags"></BinaryString>
+					<double name="Value">0</double>
+				</Properties>
+			</Item>
+		</Item>
+		<Item class="Animation" referent="RBXC6A9B6A8C90E4D05A2E57F13CB8E748A">
+			<Properties>
+				<Content name="AnimationId"><url>http://www.roblox.com/Asset?ID=49457126</url></Content>
+				<string name="Name">LightStaffAnim</string>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+		</Item>
+		<Item class="Sound" referent="RBX309E8839E0DF4D3B82C43784E7C802E2">
+			<Properties>
+				<float name="EmitterSize">10</float>
+				<bool name="Looped">false</bool>
+				<string name="Name">StaffSound</string>
+				<bool name="PlayOnRemove">false</bool>
+				<float name="PlaybackSpeed">1</float>
+				<bool name="Playing">false</bool>
+				<token name="RollOffMode">0</token>
+				<Ref name="SoundGroup">null</Ref>
+				<Content name="SoundId"><url>http://www.roblox.com/asset/?id=49460524 </url></Content>
+				<BinaryString name="Tags"></BinaryString>
+				<double name="TimePosition">0</double>
+				<float name="Volume">1</float>
+				<float name="xmlRead_MaxDistance_3">10000</float>
+			</Properties>
+		</Item>
+		<Item class="Animation" referent="RBX938B8B2E39644E9AA59E1104ED65642B">
+			<Properties>
+				<Content name="AnimationId"><url>rbxassetid://857260729</url></Content>
+				<string name="Name">R15LightStaffAnim</string>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+		</Item>
+		<Item class="Camera" referent="RBX954B2A65C07448D5B6FEACE78C2F0410">
+			<Properties>
+				<CoordinateFrame name="CFrame">
+					<X>6.93659735</X>
+					<Y>1.83644867</Y>
+					<Z>0.868518531</Z>
+					<R00>-0.0141183408</R00>
+					<R01>-0.187536478</R01>
+					<R02>0.982156157</R02>
+					<R10>-0</R10>
+					<R11>0.982254088</R11>
+					<R12>0.187555164</R12>
+					<R20>-0.999900341</R20>
+					<R21>0.00264796778</R21>
+					<R22>-0.0138677973</R22>
+				</CoordinateFrame>
+				<Ref name="CameraSubject">null</Ref>
+				<token name="CameraType">0</token>
+				<float name="FieldOfView">70</float>
+				<CoordinateFrame name="Focus">
+					<X>4.97228527</X>
+					<Y>1.4613384</Y>
+					<Z>0.896254122</Z>
+					<R00>1</R00>
+					<R01>0</R01>
+					<R02>0</R02>
+					<R10>0</R10>
+					<R11>1</R11>
+					<R12>0</R12>
+					<R20>0</R20>
+					<R21>0</R21>
+					<R22>1</R22>
+				</CoordinateFrame>
+				<bool name="HeadLocked">true</bool>
+				<float name="HeadScale">1</float>
+				<string name="Name">ThumbnailCamera</string>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+		</Item>
+	</Item>
+</roblox>

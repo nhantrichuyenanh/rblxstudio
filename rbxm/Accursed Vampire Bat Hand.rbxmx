@@ -1,0 +1,476 @@
+<roblox xmlns:xmime="http://www.w3.org/2005/05/xmlmime" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.roblox.com/roblox.xsd" version="4">
+	<External>null</External>
+	<External>nil</External>
+	<Item class="Tool" referent="RBX8D9A211359884FACA3FD030BF63FEA18">
+		<Properties>
+			<bool name="CanBeDropped">true</bool>
+			<bool name="Enabled">true</bool>
+			<CoordinateFrame name="Grip">
+				<X>0.5</X>
+				<Y>0</Y>
+				<Z>-0.5</Z>
+				<R00>0</R00>
+				<R01>0</R01>
+				<R02>1</R02>
+				<R10>1</R10>
+				<R11>0</R11>
+				<R12>0</R12>
+				<R20>0</R20>
+				<R21>1</R21>
+				<R22>0</R22>
+			</CoordinateFrame>
+			<bool name="ManualActivationOnly">false</bool>
+			<string name="Name">BatHand</string>
+			<bool name="RequiresHandle">true</bool>
+			<BinaryString name="Tags"></BinaryString>
+			<Content name="TextureId"><url>http://www.roblox.com/asset/?id=63617749 </url></Content>
+			<string name="ToolTip"></string>
+		</Properties>
+		<Item class="Part" referent="RBXFAE48A84D3E946F18D63677EE4A9E9DC">
+			<Properties>
+				<bool name="Anchored">false</bool>
+				<float name="BackParamA">-0.5</float>
+				<float name="BackParamB">0.5</float>
+				<token name="BackSurface">0</token>
+				<token name="BackSurfaceInput">0</token>
+				<float name="BottomParamA">-0.5</float>
+				<float name="BottomParamB">0.5</float>
+				<token name="BottomSurface">4</token>
+				<token name="BottomSurfaceInput">0</token>
+				<CoordinateFrame name="CFrame">
+					<X>1.50000095</X>
+					<Y>5.10000801</Y>
+					<Z>-0.499998003</Z>
+					<R00>-1.62063907e-06</R00>
+					<R01>1</R01>
+					<R02>2.03215222e-11</R02>
+					<R10>-1.55866146e-05</R10>
+					<R11>-4.7212019e-11</R11>
+					<R12>1.00000429</R12>
+					<R20>0.99999994</R20>
+					<R21>1.62063691e-06</R21>
+					<R22>1.61156058e-05</R22>
+				</CoordinateFrame>
+				<bool name="CanCollide">true</bool>
+				<int name="CollisionGroupId">0</int>
+				<Color3uint8 name="Color3uint8">4288914085</Color3uint8>
+				<PhysicalProperties name="CustomPhysicalProperties">
+					<CustomPhysics>false</CustomPhysics>
+				</PhysicalProperties>
+				<float name="Elasticity">0.5</float>
+				<float name="Friction">0.300000012</float>
+				<float name="FrontParamA">-0.5</float>
+				<float name="FrontParamB">0.5</float>
+				<token name="FrontSurface">0</token>
+				<token name="FrontSurfaceInput">0</token>
+				<float name="LeftParamA">-0.5</float>
+				<float name="LeftParamB">0.5</float>
+				<token name="LeftSurface">0</token>
+				<token name="LeftSurfaceInput">0</token>
+				<bool name="Locked">false</bool>
+				<token name="Material">256</token>
+				<string name="Name">Handle</string>
+				<float name="Reflectance">0</float>
+				<float name="RightParamA">-0.5</float>
+				<float name="RightParamB">0.5</float>
+				<token name="RightSurface">0</token>
+				<token name="RightSurfaceInput">0</token>
+				<Vector3 name="RotVelocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<BinaryString name="Tags"></BinaryString>
+				<float name="TopParamA">-0.5</float>
+				<float name="TopParamB">0.5</float>
+				<token name="TopSurface">3</token>
+				<token name="TopSurfaceInput">0</token>
+				<float name="Transparency">0</float>
+				<Vector3 name="Velocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<token name="formFactorRaw">3</token>
+				<token name="shape">1</token>
+				<Vector3 name="size">
+					<X>1.75999916</X>
+					<Y>0.560000539</Y>
+					<Z>1.37000692</Z>
+				</Vector3>
+			</Properties>
+			<Item class="SpecialMesh" referent="RBXED9EBCE31B074ABBA48CE9EBA68DB9C1">
+				<Properties>
+					<token name="LODX">2</token>
+					<token name="LODY">2</token>
+					<Content name="MeshId"><url>http://www.roblox.com/asset/?id=63617686 </url></Content>
+					<token name="MeshType">5</token>
+					<string name="Name">Mesh</string>
+					<Vector3 name="Offset">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+					</Vector3>
+					<Vector3 name="Scale">
+						<X>1.5</X>
+						<Y>1.5</Y>
+						<Z>1.5</Z>
+					</Vector3>
+					<BinaryString name="Tags"></BinaryString>
+					<Content name="TextureId"><url>http://www.roblox.com/asset/?id=63617722 </url></Content>
+					<Vector3 name="VertexColor">
+						<X>1</X>
+						<Y>1</Y>
+						<Z>1</Z>
+					</Vector3>
+				</Properties>
+			</Item>
+			<Item class="Attachment" referent="RBX6791C3EE56AF4EE197E0760EAD56BF85">
+				<Properties>
+					<CoordinateFrame name="CFrame">
+						<X>0.5</X>
+						<Y>0</Y>
+						<Z>-0.49999997</Z>
+						<R00>-6.31088724e-30</R00>
+						<R01>0</R01>
+						<R02>1</R02>
+						<R10>1</R10>
+						<R11>0</R11>
+						<R12>6.31088724e-30</R12>
+						<R20>0</R20>
+						<R21>1</R21>
+						<R22>-0</R22>
+					</CoordinateFrame>
+					<string name="Name">RightGripAttachment</string>
+					<BinaryString name="Tags"></BinaryString>
+					<bool name="Visible">false</bool>
+				</Properties>
+			</Item>
+		</Item>
+		<Item class="LocalScript" referent="RBX4753FBB27C27418BAD41B89693E78DD9">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">Local Gui</string>
+				<string name="ScriptGuid">{9BFB4C16-05D1-47A5-99D9-F6028EAFE779}</string>
+				<ProtectedString name="Source"><![CDATA[Tool = script.Parent
+
+local stillEquipped = false
+
+function onEquippedLocal(mouse)
+	stillEquipped = true
+	if mouse == nil then 
+		print("Mouse not found")
+		return
+	end
+	while stillEquipped do 
+		print("Setting Mouse to go")
+		mouse.Icon = "rbxasset://textures\\GunCursor.png"
+		while Tool.Enabled and stillEquipped do 
+			wait(0.01)
+		end
+		print("Setting Mouse to wait")
+		mouse.Icon = "rbxasset://textures\\GunWaitCursor.png"
+		while not Tool.Enabled and stillEquipped do 
+			wait(0.01)
+		end	
+	end
+end
+
+
+function onUnequippedLocal()
+	stillEquipped = false
+end
+
+Tool.Equipped:connect(onEquippedLocal)
+Tool.Unequipped:connect(onUnequippedLocal)]]></ProtectedString>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+		</Item>
+		<Item class="Script" referent="RBX411AD2D8B52E4B908D90BEDE6FC7256A">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">HandScript</string>
+				<string name="ScriptGuid">{014E230F-9F52-46D3-9040-2B8BDB55FAC9}</string>
+				<ProtectedString name="Source"><![CDATA[-- Default number of bats is 3
+-- Depending on the number of players in the vicinity this might increase to about 6
+-- bats do tons of damage to the enemies and chase them around for a while
+-- 10% lifesteal back to the hand wielder
+
+-- Should each bat be able to pick on a different character?
+
+
+local Tool = script.Parent
+local Hand = Tool.Handle
+
+local vCharacter
+local myTorso
+local myHumanoid
+
+Tool.Enabled = true
+
+local numBats = 3
+
+local numActiveBats = 0
+
+local duration = 30
+
+local damage = 14
+
+local bats = {}
+
+local meshes = {63693995, 63694839, 63694853}
+
+local debris = game:GetService("Debris")
+
+local bat = Instance.new("Part")
+bat.FormFactor = 3
+bat.Size = Vector3.new(0.6, 0.6, 0.6)
+bat.CanCollide = true
+bat.Transparency = 0.0
+bat.Name = "Bat"
+
+local batMesh = Instance.new("SpecialMesh")
+batMesh.MeshId = "http://www.roblox.com/asset/?id=63693995" -- front, 63694839  --back, 63694853  
+batMesh.TextureId = "http://www.roblox.com/asset/?id=63694777"
+batMesh.Scale = Vector3.new(1.5, 1.5, 1.5)
+batMesh.Parent = bat
+
+local AOE = Vector3.new(20, 20, 20) 
+
+function tagHumanoid(humanoid, player)
+	if humanoid then 
+		local creatorTag = Instance.new("ObjectValue")
+		creatorTag.Value = player
+		creatorTag.Name = "creator"
+		creatorTag.Parent = humanoid
+		debris:AddItem(creatorTag, 1)
+	end
+end
+
+function blow(hit, batObj)
+	if hit and hit.Parent and vCharacter and myHumanoid then 
+		local vPlayer = game.Players:GetPlayerFromCharacter(vCharacter)
+		local humanoid = hit.Parent:FindFirstChild("Humanoid")
+		if humanoid and myHumanoid and myHumanoid ~= humanoid then 
+			tagHumanoid(humanoid, vPlayer)
+			humanoid:TakeDamage(damage)
+			if myHumanoid.Health + 0.3 * damage < myHumanoid.MaxHealth then 
+				myHumanoid.Health = myHumanoid.Health + 0.3 * damage
+			end			
+			if humanoid.Health < 30 then batObj.Target = myTorso end -- Just to save the guy from a crazy bat death
+		end
+	end
+end
+
+function chaseEnemies()
+	print("Commencing Chase")
+	while duration > 0 do 
+		for i = 1, #bats do
+			local distance = 0
+			if bats[i] then				
+				if bats[i] then distance = (bats[i].Target.Position - bats[i][1].Position).magnitude end
+				if bats[i] and bats[i].Target == myTorso then		
+					if distance and distance > 5.0 then       													
+						if bats[i] then bats[i].BV.Parent = bats[i][1] end						
+						bats[i].BV.velocity = (myTorso.Position - bats[i][1].Position).unit * 20.0
+						bats[i][1].CFrame = CFrame.new(bats[i][1].Position, bats[i].Target.Position)
+					else
+						if bats[i] then							
+							bats[i].BV.velocity = Vector3.new(0, 0 ,0)
+							bats[i].BV.Parent = nil					
+						end
+					end 
+				else	
+					if distance > 1 and bats[i] then 						
+						bats[i].BV.Parent = bats[i][1]
+						bats[i].BV.velocity = (bats[i].Target.Position - bats[i][1].Position).unit * 18.0
+						bats[i][1].CFrame = CFrame.new(bats[i][1].Position, bats[i].Target.Position)
+					else 
+						if bats[i] then							
+							bats[i].BV.velocity = Vector3.new(0, 0 ,0)
+							bats[i].BV.Parent = nil		
+						end
+					end	
+				end		
+			end
+		end
+		duration = duration - wait()
+		wait()
+	end
+	for i = #bats, 1 do 		
+		if bats[i] and bats[i][1] then bats[i][1]:Destroy() bats[i][1] = nil end
+	end
+	bats = {}	
+	Hand.Transparency = 0.0
+	wait(3.0)
+	Tool.Enabled = true
+	duration = 30
+end
+
+function markEnemies()
+	local noTarget = false
+	for i = 1, #bats do 				
+		local parts = game.Workspace:FindPartsInRegion3(Region3.new(bats[i][1].Position - AOE, bats[i][1].Position + AOE), vCharacter, 100)
+		for j = 1, #parts do 
+			if parts[j] and parts[j].Parent then
+				local torso = parts[j].Parent:FindFirstChild("Torso") parts[j].Parent:FindFirstChild("UpperTorso")
+				if torso then 
+					bats[i].Target = torso 
+				end
+			end
+		end
+		if bats[i].Target == nil then bats[i].Target = myTorso end 		
+	end	
+	for i = 1, #bats do 
+		print(bats[i].Target.Parent)
+	end
+	chaseEnemies()
+end
+
+function flapWings(bat)	
+	local meshCount = 1
+	while bat and #bats > 0 do 
+		local mesh = bat:FindFirstChild("Mesh")
+		if mesh then 
+			mesh.MeshId = "http://www.roblox.com/asset/?id=" .. meshes[meshCount]
+			meshCount = meshCount + 1 
+			meshCount = meshCount%3 + 1
+		end
+		wait(0.1)
+	end
+end
+
+function spawnBats()
+	for i = 1, numBats do 
+		tick()
+		local batObj = {}
+		local batClone = bat:Clone()
+		batClone.CFrame = Hand.CFrame + Vector3.new(math.random(-3, 3), 1, math.random(-3, 3)) 		
+		
+		local floatForce = Instance.new("BodyForce")
+		floatForce.force = Vector3.new(0, bat:GetMass() * workspace.Gravity, 0)	
+		floatForce.Parent = batClone
+
+		local bv = Instance.new("BodyVelocity")
+		bv.P = 400
+		bv.maxForce = Vector3.new(bv.P, bv.P, bv.P)
+		bv.Parent = batClone
+		bv.Name = "BV"
+		bv.velocity = Vector3.new(0, 0, 0)
+
+		batClone.Parent = game.Workspace			
+
+		batObj.Target = nil
+		batObj.Duration = 30
+		batObj.BV = bv
+	
+		table.insert(batObj, batClone)		
+		table.insert(bats, batObj)
+
+		batClone.Touched:connect(function(hit) blow(hit, batObj)	end)
+
+		coroutine.resume(coroutine.create(function() flapWings(batClone) end))
+	end
+	print("Number of bats", #bats)	
+	markEnemies()
+end
+
+function onActivated()
+	if Tool.Enabled == false then 
+		return 
+	end
+
+	vCharacter = Tool.Parent
+	myTorso = vCharacter:FindFirstChild("Torso") or vCharacter:FindFirstChild("UpperTorso")
+	myHumanoid = vCharacter:FindFirstChild("Humanoid")
+	
+	if myTorso == nil or myHumanoid == nil then 
+		return 
+	end
+
+	Tool.Enabled = false 
+
+	Hand.Transparency = 1.0
+
+	local players = game.Players:GetChildren()
+	local count = 1
+	for i = 1, #players do 
+		if players[i] and players[i].Character and players[i].Character ~= vCharacter then 
+			local torso = players[i].Character:FindFirstChild("Torso") or players[i].Character:FindFirstChild("UpperTorso")
+			if torso then
+				local distance = (myTorso.Position - torso.Position).magnitude 
+				if distance < 25 then
+					count = count + 1
+					if count/2 > 1 then 
+						numBats = numBats + math.ceil(count/2)
+					end
+				end
+			end
+		end
+	end
+	if numBats > 6 then numBats = 6 end 
+	spawnBats()		
+end
+
+function onEquipped()	
+end
+
+function onUnequipped()
+	numBats = 3
+	for i = 1, #bats do 		
+		if bats[i] and bats[i][1] then bats[i][1]:Destroy() bats[i][1] = nil end
+	end
+	bats = {}
+	Hand.Transparency = 0.0
+end
+
+Tool.Activated:connect(onActivated)
+Tool.Equipped:connect(onEquipped)
+Tool.Unequipped:connect(onUnequipped)
+]]></ProtectedString>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+		</Item>
+		<Item class="Camera" referent="RBXB63317DBFA3B4BAE950F439F3F03674E">
+			<Properties>
+				<CoordinateFrame name="CFrame">
+					<X>4.02121925</X>
+					<Y>5.73212481</Y>
+					<Z>-2.07012033</Z>
+					<R00>-0.512047708</R00>
+					<R01>-0.191773146</R01>
+					<R02>0.837275505</R02>
+					<R10>-0</R10>
+					<R11>0.974758327</R11>
+					<R12>0.223262787</R12>
+					<R20>-0.858957052</R20>
+					<R21>0.114321195</R21>
+					<R22>-0.499122739</R22>
+				</CoordinateFrame>
+				<Ref name="CameraSubject">null</Ref>
+				<token name="CameraType">0</token>
+				<float name="FieldOfView">70</float>
+				<CoordinateFrame name="Focus">
+					<X>2.34666824</X>
+					<Y>5.28559923</Y>
+					<Z>-1.07187486</Z>
+					<R00>1</R00>
+					<R01>0</R01>
+					<R02>0</R02>
+					<R10>0</R10>
+					<R11>1</R11>
+					<R12>0</R12>
+					<R20>0</R20>
+					<R21>0</R21>
+					<R22>1</R22>
+				</CoordinateFrame>
+				<bool name="HeadLocked">true</bool>
+				<float name="HeadScale">1</float>
+				<string name="Name">ThumbnailCamera</string>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+		</Item>
+	</Item>
+</roblox>

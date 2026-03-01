@@ -1,0 +1,271 @@
+<roblox xmlns:xmime="http://www.w3.org/2005/05/xmlmime" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.roblox.com/roblox.xsd" version="4">
+	<External>null</External>
+	<External>nil</External>
+	<Item class="Tool" referent="RBX16F74822AA5340CEA81D8C2EBEBEE50E">
+		<Properties>
+			<bool name="CanBeDropped">true</bool>
+			<bool name="Enabled">true</bool>
+			<CoordinateFrame name="Grip">
+				<X>-0.600000024</X>
+				<Y>0</Y>
+				<Z>0</Z>
+				<R00>0</R00>
+				<R01>0</R01>
+				<R02>-1</R02>
+				<R10>0</R10>
+				<R11>1</R11>
+				<R12>0</R12>
+				<R20>1</R20>
+				<R21>0</R21>
+				<R22>0</R22>
+			</CoordinateFrame>
+			<bool name="ManualActivationOnly">false</bool>
+			<string name="Name">Pot O&apos; Gold</string>
+			<bool name="RequiresHandle">true</bool>
+			<Content name="TextureId"><url>http://www.roblox.com/asset/?id=24009039</url></Content>
+			<string name="ToolTip"></string>
+		</Properties>
+		<Item class="Part" referent="RBX69FA1873D89D4D34ABEC02334D63E9E8">
+			<Properties>
+				<bool name="Anchored">false</bool>
+				<float name="BackParamA">-0.5</float>
+				<float name="BackParamB">0.5</float>
+				<token name="BackSurface">0</token>
+				<token name="BackSurfaceInput">0</token>
+				<float name="BottomParamA">-0.5</float>
+				<float name="BottomParamB">0.5</float>
+				<token name="BottomSurface">0</token>
+				<token name="BottomSurfaceInput">0</token>
+				<int name="BrickColor">1002</int>
+				<CoordinateFrame name="CFrame">
+					<X>0.0623626709</X>
+					<Y>0.689787269</Y>
+					<Z>-2.86102295e-005</Z>
+					<R00>-0.999999523</R00>
+					<R01>-9.04471017e-006</R01>
+					<R02>2.48451997e-005</R02>
+					<R10>-8.99407678e-006</R10>
+					<R11>1</R11>
+					<R12>-1.47936089e-005</R12>
+					<R20>-2.47880726e-005</R20>
+					<R21>-1.48334029e-005</R21>
+					<R22>-1.00000012</R22>
+				</CoordinateFrame>
+				<bool name="CanCollide">true</bool>
+				<PhysicalProperties name="CustomPhysicalProperties">
+					<CustomPhysics>false</CustomPhysics>
+				</PhysicalProperties>
+				<float name="Elasticity">0.5</float>
+				<float name="Friction">0.300000012</float>
+				<float name="FrontParamA">-0.5</float>
+				<float name="FrontParamB">0.5</float>
+				<token name="FrontSurface">0</token>
+				<token name="FrontSurfaceInput">0</token>
+				<float name="LeftParamA">-0.5</float>
+				<float name="LeftParamB">0.5</float>
+				<token name="LeftSurface">0</token>
+				<token name="LeftSurfaceInput">0</token>
+				<bool name="Locked">true</bool>
+				<token name="Material">256</token>
+				<string name="Name">Handle</string>
+				<float name="Reflectance">0</float>
+				<float name="RightParamA">-0.5</float>
+				<float name="RightParamB">0.5</float>
+				<token name="RightSurface">0</token>
+				<token name="RightSurfaceInput">0</token>
+				<Vector3 name="RotVelocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<float name="TopParamA">-0.5</float>
+				<float name="TopParamB">0.5</float>
+				<token name="TopSurface">0</token>
+				<token name="TopSurfaceInput">0</token>
+				<float name="Transparency">0</float>
+				<Vector3 name="Velocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<token name="formFactorRaw">2</token>
+				<token name="shape">1</token>
+				<Vector3 name="size">
+					<X>2</X>
+					<Y>1.20000005</Y>
+					<Z>2</Z>
+				</Vector3>
+			</Properties>
+			<Item class="SpecialMesh" referent="RBXCFBF04A2D78C41B7BB639DA56E5C9A0A">
+				<Properties>
+					<token name="LODX">2</token>
+					<token name="LODY">2</token>
+					<Content name="MeshId"><url>http://www.roblox.com/asset/?id=24000971</url></Content>
+					<token name="MeshType">5</token>
+					<string name="Name">Mesh</string>
+					<Vector3 name="Offset">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+					</Vector3>
+					<Vector3 name="Scale">
+						<X>0.899999976</X>
+						<Y>0.899999976</Y>
+						<Z>0.899999976</Z>
+					</Vector3>
+					<Content name="TextureId"><url>http://www.roblox.com/asset/?id=24000962</url></Content>
+					<Vector3 name="VertexColor">
+						<X>1</X>
+						<Y>1</Y>
+						<Z>1</Z>
+					</Vector3>
+				</Properties>
+			</Item>
+			<Item class="Sound" referent="RBX81DEE1350B7E4B7A9FE5EC4796A83488">
+				<Properties>
+					<float name="EmitterSize">10</float>
+					<bool name="Looped">false</bool>
+					<string name="Name">CoinSound</string>
+					<bool name="PlayOnRemove">false</bool>
+					<float name="PlaybackSpeed">1</float>
+					<bool name="Playing">false</bool>
+					<token name="RollOffMode">0</token>
+					<Ref name="SoundGroup">null</Ref>
+					<Content name="SoundId"><url>http://www.roblox.com/asset/?id=19073176</url></Content>
+					<double name="TimePosition">0</double>
+					<float name="Volume">1</float>
+					<float name="xmlRead_MaxDistance_3">10000</float>
+				</Properties>
+			</Item>
+			<Item class="Attachment" referent="RBX48D81B53ADA549598BB82ACD3945E3F7">
+				<Properties>
+					<CoordinateFrame name="CFrame">
+						<X>-1</X>
+						<Y>0</Y>
+						<Z>0</Z>
+						<R00>-1</R00>
+						<R01>0</R01>
+						<R02>0</R02>
+						<R10>0</R10>
+						<R11>1</R11>
+						<R12>0</R12>
+						<R20>0</R20>
+						<R21>0</R21>
+						<R22>-1</R22>
+					</CoordinateFrame>
+					<string name="Name">RightGripAttachment</string>
+					<bool name="Visible">false</bool>
+				</Properties>
+			</Item>
+		</Item>
+		<Item class="Script" referent="RBXEE8A0A2AFF9546FCBB6E153877964831">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">MoneyBagScript</string>
+				<string name="ScriptGuid">{992EBE8F-9309-4310-94AD-69C4D99043C0}</string>
+				<ProtectedString name="Source"><![CDATA[local Tool = script.Parent;
+debris = game:GetService("Debris")
+
+enabled = true
+
+
+
+function MakeABuck(pos)
+
+	--PLAY COIN SOUND
+	Tool.Handle.CoinSound:Play()
+
+	for i=1,5 do
+		local p = Instance.new("Part")
+		p.BrickColor = BrickColor.new(23)
+		p.formFactor = 2
+		p.Size = Vector3.new(1,.2,1)
+		p.TopSurface = 0
+		p.BottomSurface = 0
+		
+		local a = math.random() * 6.28 
+		local d = Vector3.new(math.cos(a), 0, math.sin(a)).unit
+		p.Velocity = d * 25
+		p.RotVelocity = d
+		p.Position = pos + Vector3.new(0,2,0) + Vector3.new(0, math.random() * 3, 0) + (d * 2)
+		p.Parent = game.Workspace
+		Tool.Mesh:Clone().Parent = p
+
+		debris:AddItem(p, 60)
+	end
+
+end
+
+function onActivated()
+	if not enabled  then
+		return
+	end
+
+	enabled = false
+
+	local char = Tool.Parent
+
+
+	MakeABuck(Tool.Handle.Position)
+
+--	char.Torso["Right Shoulder"].MaxVelocity = 0.5
+--	char.Torso["Right Shoulder"].DesiredAngle = 3
+--	wait(.2)
+--	char.Torso["Right Shoulder"].MaxVelocity = 0.5
+--	char.Torso["Right Shoulder"].DesiredAngle = 3
+--	wait(.2)
+--	char.Torso["Right Shoulder"].MaxVelocity = 0.5
+--	char.Torso["Right Shoulder"].DesiredAngle = 3
+--	wait(.2)
+--	char.Torso["Right Shoulder"].MaxVelocity = 0.5
+--	char.Torso["Right Shoulder"].DesiredAngle = 3
+--	wait(.2)
+--
+--
+--	char.Torso["Right Shoulder"].MaxVelocity = 1
+
+--[[
+	Tool.GripForward = Vector3.new(0,-1,0)
+	Tool.GripPos = Vector3.new(0,0,2)
+	Tool.GripRight = Vector3.new(1,0,0)
+	Tool.GripUp = Vector3.new(0,0,-1)
+]]--
+	enabled = true
+
+end
+
+
+
+script.Parent.Activated:connect(onActivated)
+
+]]></ProtectedString>
+			</Properties>
+		</Item>
+		<Item class="SpecialMesh" referent="RBX7449EC95BAAA42D1A6FAB42800EDC158">
+			<Properties>
+				<token name="LODX">2</token>
+				<token name="LODY">2</token>
+				<Content name="MeshId"><url>http://www.roblox.com/asset/?id=19059116</url></Content>
+				<token name="MeshType">5</token>
+				<string name="Name">Mesh</string>
+				<Vector3 name="Offset">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<Vector3 name="Scale">
+					<X>1</X>
+					<Y>1</Y>
+					<Z>1</Z>
+				</Vector3>
+				<Content name="TextureId"><url>http://www.roblox.com/asset/?id=19059111</url></Content>
+				<Vector3 name="VertexColor">
+					<X>1</X>
+					<Y>1</Y>
+					<Z>1</Z>
+				</Vector3>
+			</Properties>
+		</Item>
+	</Item>
+</roblox>

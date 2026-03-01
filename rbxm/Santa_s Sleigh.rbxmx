@@ -1,0 +1,688 @@
+<roblox xmlns:xmime="http://www.w3.org/2005/05/xmlmime" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.roblox.com/roblox.xsd" version="4">
+	<External>null</External>
+	<External>nil</External>
+	<Item class="Tool" referent="RBX9ABF977F0AAF4FFCBB89B0FA05CE1D7F">
+		<Properties>
+			<bool name="CanBeDropped">true</bool>
+			<bool name="Enabled">true</bool>
+			<CoordinateFrame name="Grip">
+				<X>-0.800000012</X>
+				<Y>0</Y>
+				<Z>-1</Z>
+				<R00>0</R00>
+				<R01>0</R01>
+				<R02>-1</R02>
+				<R10>-1</R10>
+				<R11>0</R11>
+				<R12>0</R12>
+				<R20>0</R20>
+				<R21>1</R21>
+				<R22>0</R22>
+			</CoordinateFrame>
+			<bool name="ManualActivationOnly">false</bool>
+			<string name="Name">SantaSleigh</string>
+			<bool name="RequiresHandle">true</bool>
+			<BinaryString name="Tags"></BinaryString>
+			<Content name="TextureId"><url>http://www.roblox.com/asset/?id=67730819 </url></Content>
+			<string name="ToolTip"></string>
+		</Properties>
+		<Item class="Part" referent="RBX8BA136A0545C4B71B8530980D777DE21">
+			<Properties>
+				<bool name="Anchored">false</bool>
+				<float name="BackParamA">-0.5</float>
+				<float name="BackParamB">0.5</float>
+				<token name="BackSurface">0</token>
+				<token name="BackSurfaceInput">0</token>
+				<float name="BottomParamA">-0.5</float>
+				<float name="BottomParamB">0.5</float>
+				<token name="BottomSurface">4</token>
+				<token name="BottomSurfaceInput">0</token>
+				<CoordinateFrame name="CFrame">
+					<X>1.50000095</X>
+					<Y>0.217502996</Y>
+					<Z>0.387510002</Z>
+					<R00>0</R00>
+					<R01>-1</R01>
+					<R02>0</R02>
+					<R10>0</R10>
+					<R11>0</R11>
+					<R12>1</R12>
+					<R20>-1</R20>
+					<R21>0</R21>
+					<R22>0</R22>
+				</CoordinateFrame>
+				<bool name="CanCollide">true</bool>
+				<int name="CollisionGroupId">0</int>
+				<Color3uint8 name="Color3uint8">4288914085</Color3uint8>
+				<PhysicalProperties name="CustomPhysicalProperties">
+					<CustomPhysics>false</CustomPhysics>
+				</PhysicalProperties>
+				<float name="Elasticity">0.5</float>
+				<float name="Friction">0.300000012</float>
+				<float name="FrontParamA">-0.5</float>
+				<float name="FrontParamB">0.5</float>
+				<token name="FrontSurface">0</token>
+				<token name="FrontSurfaceInput">0</token>
+				<float name="LeftParamA">-0.5</float>
+				<float name="LeftParamB">0.5</float>
+				<token name="LeftSurface">0</token>
+				<token name="LeftSurfaceInput">0</token>
+				<bool name="Locked">false</bool>
+				<token name="Material">256</token>
+				<string name="Name">Handle</string>
+				<float name="Reflectance">0</float>
+				<float name="RightParamA">-0.5</float>
+				<float name="RightParamB">0.5</float>
+				<token name="RightSurface">0</token>
+				<token name="RightSurfaceInput">0</token>
+				<Vector3 name="RotVelocity">
+					<X>1</X>
+					<Y>1</Y>
+					<Z>1</Z>
+				</Vector3>
+				<BinaryString name="Tags"></BinaryString>
+				<float name="TopParamA">-0.5</float>
+				<float name="TopParamB">0.5</float>
+				<token name="TopSurface">3</token>
+				<token name="TopSurfaceInput">0</token>
+				<float name="Transparency">0</float>
+				<Vector3 name="Velocity">
+					<X>-1.40129846e-45</X>
+					<Y>0</Y>
+					<Z>1.40129846e-45</Z>
+				</Vector3>
+				<token name="formFactorRaw">3</token>
+				<token name="shape">1</token>
+				<Vector3 name="size">
+					<X>2.13000083</X>
+					<Y>1.48000014</Y>
+					<Z>2.33999944</Z>
+				</Vector3>
+			</Properties>
+			<Item class="SpecialMesh" referent="RBX0356D53C93DB42DE9BD641C2D6EB55C0">
+				<Properties>
+					<token name="LODX">2</token>
+					<token name="LODY">2</token>
+					<Content name="MeshId"><url>http://www.roblox.com/asset/?id=67730602 </url></Content>
+					<token name="MeshType">5</token>
+					<string name="Name">Mesh</string>
+					<Vector3 name="Offset">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+					</Vector3>
+					<Vector3 name="Scale">
+						<X>0.699999988</X>
+						<Y>0.699999988</Y>
+						<Z>0.699999988</Z>
+					</Vector3>
+					<BinaryString name="Tags"></BinaryString>
+					<Content name="TextureId"><url>http://www.roblox.com/asset/?id=67730764 </url></Content>
+					<Vector3 name="VertexColor">
+						<X>1</X>
+						<Y>1</Y>
+						<Z>1</Z>
+					</Vector3>
+				</Properties>
+			</Item>
+			<Item class="Sound" referent="RBX31057D5E4CFD40088A71F091B178E74C">
+				<Properties>
+					<float name="EmitterSize">10</float>
+					<bool name="Looped">false</bool>
+					<string name="Name">SantaSound</string>
+					<bool name="PlayOnRemove">false</bool>
+					<float name="PlaybackSpeed">2</float>
+					<bool name="Playing">false</bool>
+					<token name="RollOffMode">0</token>
+					<Ref name="SoundGroup">null</Ref>
+					<Content name="SoundId"><url>http://www.roblox.com/asset/?id=67740342 </url></Content>
+					<BinaryString name="Tags"></BinaryString>
+					<double name="TimePosition">0</double>
+					<float name="Volume">1</float>
+					<float name="xmlRead_MaxDistance_3">10000</float>
+				</Properties>
+			</Item>
+			<Item class="Attachment" referent="RBX2CF1A24DBA0144B4A3D2BDEE0DD0F06B">
+				<Properties>
+					<CoordinateFrame name="CFrame">
+						<X>-0.799999952</X>
+						<Y>0</Y>
+						<Z>-0.99999994</Z>
+						<R00>6.31088724e-30</R00>
+						<R01>0</R01>
+						<R02>-1</R02>
+						<R10>-1</R10>
+						<R11>0</R11>
+						<R12>-6.31088724e-30</R12>
+						<R20>0</R20>
+						<R21>1</R21>
+						<R22>0</R22>
+					</CoordinateFrame>
+					<string name="Name">RightGripAttachment</string>
+					<BinaryString name="Tags"></BinaryString>
+					<bool name="Visible">false</bool>
+				</Properties>
+			</Item>
+		</Item>
+		<Item class="Script" referent="RBX854A76ED48294722B8185B958DB2EF0E">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">SleighScript</string>
+				<string name="ScriptGuid">{03B68EFC-8CE8-41FF-BF54-D80FEFE8296A}</string>
+				<ProtectedString name="Source"><![CDATA[local Tool = script.Parent
+local Sleigh = Tool.Handle
+
+local flightSpin 
+local flightPower 
+local flightHold 
+
+local cooldownCo
+
+local vCharacter
+local myTorso
+local myHumanoid
+
+local fire 
+
+local sleighActive 
+
+local debris = game:GetService("Debris")
+
+Tool.Enabled = true
+
+local santaSound
+
+local giftAssets = {6125503, 6203087, 66897125, 41452698}
+
+function tagHumanoid(humanoid, player)
+	if humanoid ~= nil then 
+		creator = Instance.new("ObjectValue")
+		creator.Parent = humanoid
+		creator.Value = player
+		creator.Name = "creator"
+		debris:AddItem(creator, 1)
+	end
+end
+
+function cooldown()
+	wait(40.0)	
+	if flightSpin then flightSpin:Destroy() end
+	if flightPower then flightPower:Destroy() end
+	if flightHold then flightHold:Destroy() end
+	ratio = myHumanoid.Health/myHumanoid.MaxHealth
+	myHumanoid.MaxHealth = 100
+	wait(0.1)
+	myHumanoid.Health = ratio * 100
+	Tool.Enabled = false 
+	if fire then fire:Destroy() end
+	sleighUp()
+	wait(15.0)	
+	Tool.Enabled = true 
+	Sleigh.Transparency = 0.0
+	if sleighActive then sleighActive.Value = 0 end	
+end
+
+function sleighUp()
+	Tool.GripForward = Vector3.new(1, 0, 0)
+	Tool.GripPos = Vector3.new(-0.8, 0, -1)
+	Tool.GripRight = Vector3.new(0, 1, 0)
+	Tool.GripUp = Vector3.new(0, 0, 1)
+	Tool.GripForward = Vector3.new(1, 0, 0)	
+	Sleigh.Mesh.Scale = Vector3.new(0.7, 0.7, 0.7)
+end 
+
+function sleighMid()
+	Tool.GripForward = Vector3.new(1, 0, 0)
+	Tool.GripPos = Vector3.new(1.2, -1.5, 1.7)
+	Tool.GripRight = Vector3.new(0, 1, 0)
+	Tool.GripUp = Vector3.new(0, 0, 1)
+	Tool.GripForward = Vector3.new(1, 0, 0)	
+	Sleigh.Mesh.Scale = Vector3.new(1.4, 1.4, 1.4)
+end 
+
+function onActivated()
+	vCharacter = Tool.Parent
+	if vCharacter ~= nil then
+		myHumanoid = vCharacter:FindFirstChild("Humanoid")
+		if myHumanoid then
+			myTorso = vCharacter:FindFirstChild("Torso") or vCharacter:FindFirstChild("UpperTorso")
+			sleighActive = Tool:FindFirstChild("SleighActive")			
+			if myTorso then
+				if cooldownCo == nil or coroutine.status(cooldownCo) == 'dead' then
+					--Sleigh.Transparency = 1.0	
+
+					sleighMid()
+					
+					ratio = myHumanoid.Health/myHumanoid.MaxHealth
+					myHumanoid.MaxHealth = 200
+					wait(0.1)
+					myHumanoid.Health = ratio * 200
+					
+					flightSpin = myTorso:FindFirstChild("FlightSpin")
+					flightPower = myTorso:FindFirstChild("FlightPower")
+					flightHold = myTorso:FindFirstChild("FlightHold")
+					if flightSpin ~= nil or flightPower ~= nil or flightHold ~= nil then debounce = false return end					
+					if sleighActive then print("Setting Sleigh Active") sleighActive.Value = 1 end				
+					flightSpin = Instance.new("BodyGyro")
+					flightPower = Instance.new("BodyVelocity")
+
+					flightHold = Instance.new("BodyPosition")
+					flightHold.Name = "FlightHold"
+					flightHold.P = 100000
+					flightHold.maxForce = Vector3.new(0,0,0)
+
+
+					flightPower.Name = "FlightPower"
+					flightPower.velocity = Vector3.new(0,0,0)
+					flightPower.P = 1000000
+					flightPower.maxForce = Vector3.new(flightPower.P, flightPower.P, flightPower.P)
+					flightPower.P = 10000
+
+					flightSpin.Name = "FlightSpin"
+					flightSpin.P = 1000000
+					flightSpin.maxTorque = Vector3.new(flightSpin.P, flightSpin.P, flightSpin.P)
+
+					flightSpin.cframe = myTorso.CFrame
+					flightSpin.Parent = myTorso
+					flightHold.position = myTorso.Position
+					flightHold.Parent = myTorso
+					flightPower.Parent = myTorso
+
+					myTorso.Velocity = Vector3.new(0,0,0)
+					myTorso.RotVelocity = Vector3.new(0,0,0)	
+
+					myHumanoid.Sit = true 
+					
+					cooldownCo = coroutine.create(cooldown)
+					coroutine.resume(cooldownCo)
+
+				elseif Tool.Enabled then
+					if sleighActive and sleighActive.Value == 1 then 
+						local players = game.Players:GetChildren() 
+						for i = 1, #players do 
+							if players[i] and players[i].Character and (players[i].Character:FindFirstChild("Torso") or players[i].Character:FindFirstChild("UpperTorso")) and players[i] ~= vPlayer then 
+								local torso = players[i].Character:FindFirstChild("Torso") or players[i].Character:FindFirstChild("UpperTorso")
+								local distance = (torso.Position - myTorso.Position).magnitude 
+								if distance < 25 then 
+									print("Close enough")
+									local asset = game:GetService("InsertService"):LoadAsset(giftAssets[math.random(1, #giftAssets)]):GetChildren()[1]
+									print(asset, #asset:GetChildren())
+									if asset and asset:FindFirstChild("Handle") then 
+										santaSound = Sleigh:FindFirstChild("SantaSound")
+										if santaSound then santaSound:Play() end 
+										asset.Parent = game.Workspace
+										asset.Handle.CFrame = myTorso.CFrame + myTorso.CFrame.lookVector * 5.0 
+										asset.Handle.Velocity = (torso.Position - myTorso.Position).unit * 40.0 
+										Tool.Enabled = false 
+										debris:AddItem(asset, 20)
+										wait(5.5)
+										Tool.Enabled = true 
+										break 
+									end 
+								end 
+							end 
+						end 
+					end 					
+				end
+			end
+		end
+	end
+end
+
+function onEquipped()
+	vCharacter = Tool.Parent 
+	myTorso = vCharacter:FindFirstChild("Torso") or vCharacter:FindFirstChild("UpperTorso")
+	myHumanoid = vCharacter:FindFirstChild("Humanoid")
+	vPlayer = game.Players:GetPlayerFromCharacter(vCharacter)
+end 
+
+function onUnequipped()		
+	if flightPower then flightPower:Destroy() end
+	if flightSpin then flightSpin:Destroy() end
+	if flightHold then flightHold:Destroy() end
+
+	if myHumanoid then 
+		ratio = myHumanoid.Health/myHumanoid.MaxHealth
+		myHumanoid.MaxHealth = 100
+		wait(0.1)
+		myHumanoid.Health = ratio * 100
+	end
+	sleighUp()
+	if santaSound then santaSound:Stop() end 
+end
+
+
+Tool.Activated:connect(onActivated)
+Tool.Equipped:connect(onEquipped)
+Tool.Unequipped:connect(onUnequipped)
+
+]]></ProtectedString>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+		</Item>
+		<Item class="NumberValue" referent="RBX9307B735F5BD42BC834A8D98ED8C7DA4">
+			<Properties>
+				<string name="Name">SleighActive</string>
+				<BinaryString name="Tags"></BinaryString>
+				<double name="Value">0</double>
+			</Properties>
+		</Item>
+		<Item class="LocalScript" referent="RBXF4FE0FD02E904B73B1FF4736CFD06FCE">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">FlightControl</string>
+				<string name="ScriptGuid">{F3EDAE2B-E1D1-4EAC-A401-8BF1E0BC0CEF}</string>
+				<ProtectedString name="Source"><![CDATA[local Tool = script.Parent
+
+local flightPower 
+local flightSpin 
+local flightHold 
+
+local camSpeedZ = 60
+local camSpeedX = 40
+
+local forwards = false
+local back = false
+local left = false
+local right = false
+
+local movementHandlerCo 
+
+local hover = -.1
+
+local sleighActive
+
+local myTorso
+local vCharacter
+
+function handleMovementFrame()
+	local newPush = Vector3.new(0,0,0)
+	local forwardVector = game.Workspace.CurrentCamera.CoordinateFrame:vectorToWorldSpace(Vector3.new(0, 0, -1))
+
+	if forwards and not back then newPush = forwardVector * camSpeedZ end
+	if back and not forwards then newPush = newPush + forwardVector * -camSpeedZ end
+	if left and not right then newPush = newPush + game.Workspace.CurrentCamera.CoordinateFrame:vectorToWorldSpace(Vector3.new(-1, 0, 0)) * camSpeedX end
+	if right and not left then newPush = newPush + game.Workspace.CurrentCamera.CoordinateFrame:vectorToWorldSpace(Vector3.new(1, 0, 0)) * camSpeedX end
+
+	flightSpin.cframe = CFrame.new(Vector3.new(0,0,0), forwardVector) -- have torso face forwards
+	if newPush.magnitude < 1 then
+		flightHold.maxForce = Vector3.new(flightHold.P, flightHold.P, flightHold.P)
+		flightPower.maxForce = Vector3.new(0, 0, 0)
+		if myTorso then flightHold.position = myTorso.Position end
+	else
+		flightHold.maxForce = Vector3.new(0, 0, 0)
+		flightPower.maxForce = Vector3.new(flightPower.P*100, flightPower.P*100, flightPower.P*100)
+	end
+		flightPower.velocity = newPush
+end
+
+function handleMovement()	
+	sleighActive = Tool:FindFirstChild("SleighActive")
+	if sleighActive then
+		while sleighActive.Value == 1 do
+			handleMovementFrame()
+			wait()
+		end
+	end
+end
+
+function keyUpFunc(key)	
+	if key == nil then return end
+	local key = key:lower()
+	if key == "w" then
+		forwards = false
+	elseif key == "a" then
+		left = false
+	elseif key == "s" then
+		back = false
+	elseif key == "d" then
+		right = false
+	end	
+end
+
+function keyDownFunc(key)	
+	if key == nil then return end
+	local key = key:lower()
+	if key == "w" then
+		forwards = true
+	elseif key == "a" then
+		left = true
+	elseif key == "s" then
+		back = true
+	elseif key == "d" then
+		right = true
+	end	
+end
+
+function sleighActivate()	
+	sleighActive = Tool:FindFirstChild("SleighActive")
+	if sleighActive then
+		if sleighActive.Value == 0 then return end
+	end
+	local vCharacter = Tool.Parent
+	myTorso = vCharacter:FindFirstChild("Torso") or vCharacter:FindFirstChild("UpperTorso")
+	if myTorso == nil then return end
+	
+	flightPower = myTorso:FindFirstChild("FlightPower")
+	flightSpin = myTorso:FindFirstChild("FlightSpin")
+	flightHold = myTorso:FindFirstChild("FlightHold")
+
+	while myTorso and (flightPower == nil or flightSpin == nil or flightHold == nil) do		
+		myTorso.ChildAdded:wait()
+		flightPower = myTorso:FindFirstChild("FlightPower")
+		flightSpin = myTorso:FindFirstChild("FlightSpin")
+		flightHold = myTorso:FindFirstChild("FlightHold")
+	end		
+	print("Handling Movement")
+	movementHandlerCo = coroutine.create(handleMovement)	
+	coroutine.resume(movementHandlerCo)	
+end
+
+function onEquipped(mouse)	
+	print("Equipped")
+	if mouse then		
+		forwards = false
+		back = false
+		left = false
+		right = false				
+		mouse.KeyDown:connect(keyDownFunc)
+		mouse.KeyUp:connect(keyUpFunc)				
+	end
+	sleighActive = Tool:FindFirstChild("SleighActive")
+	if sleighActive then print("Connection established") sleighActive.Changed:connect(sleighActivate) end
+end
+
+Tool.Equipped:connect(onEquipped)
+
+print("Done")
+
+]]></ProtectedString>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+		</Item>
+		<Item class="LocalScript" referent="RBXF0F6AED867E44927BD3BDA23EA0CF549">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">Local Gui</string>
+				<string name="ScriptGuid">{B1B478EB-6785-4537-94AA-8F03685B505B}</string>
+				<ProtectedString name="Source"><![CDATA[Tool = script.Parent
+
+local stillEquipped = false
+
+function onEquippedLocal(mouse)
+	stillEquipped = true
+	if mouse == nil then 
+		print("Mouse not found")
+		return
+	end
+	while stillEquipped do 
+		print("Setting Mouse to go")
+		mouse.Icon = "rbxasset://textures\\GunCursor.png"
+		while Tool.Enabled and stillEquipped do 
+			wait(0.01)
+		end
+		print("Setting Mouse to wait")
+		mouse.Icon = "rbxasset://textures\\GunWaitCursor.png"
+		while not Tool.Enabled and stillEquipped do 
+			wait(0.01)
+		end	
+	end
+end
+
+
+function onUnequippedLocal()
+	stillEquipped = false
+end
+
+Tool.Equipped:connect(onEquippedLocal)
+Tool.Unequipped:connect(onUnequippedLocal)]]></ProtectedString>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+		</Item>
+		<Item class="Keyframe" referent="RBX6B2732F71C13469F8C180CE69390A8E5">
+			<Properties>
+				<string name="Name">ThumbnailPose</string>
+				<BinaryString name="Tags"></BinaryString>
+				<float name="Time">0</float>
+			</Properties>
+			<Item class="Pose" referent="RBX72529808E9B04616A15403E6D6B5AD14">
+				<Properties>
+					<CoordinateFrame name="CFrame">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+						<R00>1</R00>
+						<R01>0</R01>
+						<R02>0</R02>
+						<R10>0</R10>
+						<R11>1</R11>
+						<R12>0</R12>
+						<R20>0</R20>
+						<R21>0</R21>
+						<R22>1</R22>
+					</CoordinateFrame>
+					<token name="EasingDirection">1</token>
+					<token name="EasingStyle">0</token>
+					<float name="MaskWeight">0</float>
+					<string name="Name">UpperTorso</string>
+					<BinaryString name="Tags"></BinaryString>
+					<float name="Weight">0</float>
+				</Properties>
+				<Item class="Pose" referent="RBX5806D02412A5485D966B380DFDE4D967">
+					<Properties>
+						<CoordinateFrame name="CFrame">
+							<X>0</X>
+							<Y>-6.70552254e-08</Y>
+							<Z>-5.96046448e-08</Z>
+							<R00>1</R00>
+							<R01>0</R01>
+							<R02>0</R02>
+							<R10>0</R10>
+							<R11>0.173648193</R11>
+							<R12>-0.98480773</R12>
+							<R20>0</R20>
+							<R21>0.98480773</R21>
+							<R22>0.173648193</R22>
+						</CoordinateFrame>
+						<token name="EasingDirection">1</token>
+						<token name="EasingStyle">0</token>
+						<float name="MaskWeight">0</float>
+						<string name="Name">RightUpperArm</string>
+						<BinaryString name="Tags"></BinaryString>
+						<float name="Weight">1</float>
+					</Properties>
+					<Item class="Pose" referent="RBX2590B68EDCC84B79A9198885F889F637">
+						<Properties>
+							<CoordinateFrame name="CFrame">
+								<X>0</X>
+								<Y>-1.49011612e-08</Y>
+								<Z>3.7252903e-09</Z>
+								<R00>1</R00>
+								<R01>0</R01>
+								<R02>0</R02>
+								<R10>0</R10>
+								<R11>0.98480773</R11>
+								<R12>-0.173648179</R12>
+								<R20>0</R20>
+								<R21>0.173648179</R21>
+								<R22>0.98480773</R22>
+							</CoordinateFrame>
+							<token name="EasingDirection">1</token>
+							<token name="EasingStyle">0</token>
+							<float name="MaskWeight">0</float>
+							<string name="Name">RightLowerArm</string>
+							<BinaryString name="Tags"></BinaryString>
+							<float name="Weight">1</float>
+						</Properties>
+						<Item class="Pose" referent="RBXEB130436DC404EF890B729EDB0CABFAF">
+							<Properties>
+								<CoordinateFrame name="CFrame">
+									<X>0</X>
+									<Y>0</Y>
+									<Z>0</Z>
+									<R00>1</R00>
+									<R01>0</R01>
+									<R02>0</R02>
+									<R10>0</R10>
+									<R11>1</R11>
+									<R12>0</R12>
+									<R20>0</R20>
+									<R21>0</R21>
+									<R22>1</R22>
+								</CoordinateFrame>
+								<token name="EasingDirection">1</token>
+								<token name="EasingStyle">0</token>
+								<float name="MaskWeight">0</float>
+								<string name="Name">RightHand</string>
+								<BinaryString name="Tags"></BinaryString>
+								<float name="Weight">1</float>
+							</Properties>
+						</Item>
+					</Item>
+				</Item>
+			</Item>
+		</Item>
+		<Item class="Camera" referent="RBXE81E9202F636461F93BEE106DEB63C60">
+			<Properties>
+				<CoordinateFrame name="CFrame">
+					<X>5.52248621</X>
+					<Y>2.50074029</Y>
+					<Z>-3.415277</Z>
+					<R00>-0.679530263</R00>
+					<R01>-0.244996414</R01>
+					<R02>0.691531241</R02>
+					<R10>-1.49011612e-08</R10>
+					<R11>0.942593336</R11>
+					<R12>0.33394292</R12>
+					<R20>-0.733647525</R20>
+					<R21>0.2269243</R21>
+					<R22>-0.640520632</R22>
+				</CoordinateFrame>
+				<Ref name="CameraSubject">null</Ref>
+				<token name="CameraType">0</token>
+				<float name="FieldOfView">70</float>
+				<CoordinateFrame name="Focus">
+					<X>4.13942385</X>
+					<Y>1.83285451</Y>
+					<Z>-2.13423586</Z>
+					<R00>1</R00>
+					<R01>0</R01>
+					<R02>0</R02>
+					<R10>0</R10>
+					<R11>1</R11>
+					<R12>0</R12>
+					<R20>0</R20>
+					<R21>0</R21>
+					<R22>1</R22>
+				</CoordinateFrame>
+				<bool name="HeadLocked">true</bool>
+				<float name="HeadScale">1</float>
+				<string name="Name">ThumbnailCamera</string>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+		</Item>
+	</Item>
+</roblox>

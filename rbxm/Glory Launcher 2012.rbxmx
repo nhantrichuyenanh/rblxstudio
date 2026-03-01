@@ -1,0 +1,480 @@
+<roblox xmlns:xmime="http://www.w3.org/2005/05/xmlmime" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.roblox.com/roblox.xsd" version="4">
+	<External>null</External>
+	<External>nil</External>
+	<Item class="Tool" referent="RBX5834D2F7E1B24AD6B9548F225DABC840">
+		<Properties>
+			<bool name="CanBeDropped">true</bool>
+			<bool name="Enabled">true</bool>
+			<CoordinateFrame name="Grip">
+				<X>0.400000006</X>
+				<Y>-1.5</Y>
+				<Z>-1.10000002</Z>
+				<R00>1</R00>
+				<R01>0</R01>
+				<R02>0</R02>
+				<R10>0</R10>
+				<R11>0</R11>
+				<R12>-1</R12>
+				<R20>0</R20>
+				<R21>1</R21>
+				<R22>0</R22>
+			</CoordinateFrame>
+			<bool name="ManualActivationOnly">false</bool>
+			<string name="Name">HeatMissileLauncher</string>
+			<bool name="RequiresHandle">true</bool>
+			<Content name="TextureId"><url>http://www.roblox.com/asset/?id=74320152</url></Content>
+			<string name="ToolTip"></string>
+		</Properties>
+		<Item class="Part" referent="RBX0D49B8500ED84C41948B321432B30FFA">
+			<Properties>
+				<bool name="Anchored">false</bool>
+				<float name="BackParamA">-0.5</float>
+				<float name="BackParamB">0.5</float>
+				<token name="BackSurface">0</token>
+				<token name="BackSurfaceInput">0</token>
+				<float name="BottomParamA">-0.5</float>
+				<float name="BottomParamB">0.5</float>
+				<token name="BottomSurface">0</token>
+				<token name="BottomSurfaceInput">0</token>
+				<int name="BrickColor">199</int>
+				<CoordinateFrame name="CFrame">
+					<X>21.6606007</X>
+					<Y>2.26276135</Y>
+					<Z>9.33050156</Z>
+					<R00>0.919108391</R00>
+					<R01>-0.394004762</R01>
+					<R02>5.77718019e-005</R02>
+					<R10>-5.25861979e-005</R10>
+					<R11>2.38418579e-005</R11>
+					<R12>0.99999994</R12>
+					<R20>-0.394004762</R20>
+					<R21>-0.919108331</R21>
+					<R22>1.1920929e-006</R22>
+				</CoordinateFrame>
+				<bool name="CanCollide">true</bool>
+				<PhysicalProperties name="CustomPhysicalProperties">
+					<CustomPhysics>false</CustomPhysics>
+				</PhysicalProperties>
+				<float name="Elasticity">0.5</float>
+				<float name="Friction">0.300000012</float>
+				<float name="FrontParamA">-0.5</float>
+				<float name="FrontParamB">0.5</float>
+				<token name="FrontSurface">0</token>
+				<token name="FrontSurfaceInput">0</token>
+				<float name="LeftParamA">-0.5</float>
+				<float name="LeftParamB">0.5</float>
+				<token name="LeftSurface">0</token>
+				<token name="LeftSurfaceInput">0</token>
+				<bool name="Locked">true</bool>
+				<token name="Material">256</token>
+				<string name="Name">Handle</string>
+				<float name="Reflectance">0</float>
+				<float name="RightParamA">-0.5</float>
+				<float name="RightParamB">0.5</float>
+				<token name="RightSurface">0</token>
+				<token name="RightSurfaceInput">0</token>
+				<Vector3 name="RotVelocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<float name="TopParamA">-0.5</float>
+				<float name="TopParamB">0.5</float>
+				<token name="TopSurface">0</token>
+				<token name="TopSurfaceInput">0</token>
+				<float name="Transparency">0</float>
+				<Vector3 name="Velocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<token name="formFactorRaw">3</token>
+				<token name="shape">1</token>
+				<Vector3 name="size">
+					<X>0.719999909</X>
+					<Y>3.8599999</Y>
+					<Z>1.35000026</Z>
+				</Vector3>
+			</Properties>
+			<Item class="SpecialMesh" referent="RBX2E5C6C0FF1D9458586223B32FB11B191">
+				<Properties>
+					<token name="LODX">2</token>
+					<token name="LODY">2</token>
+					<Content name="MeshId"><url>http://www.roblox.com/asset/?id=74320147</url></Content>
+					<token name="MeshType">5</token>
+					<string name="Name">Mesh</string>
+					<Vector3 name="Offset">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+					</Vector3>
+					<Vector3 name="Scale">
+						<X>1.20000005</X>
+						<Y>1.20000005</Y>
+						<Z>1.20000005</Z>
+					</Vector3>
+					<Content name="TextureId"><url>http://www.roblox.com/asset/?id=74320150</url></Content>
+					<Vector3 name="VertexColor">
+						<X>1</X>
+						<Y>1</Y>
+						<Z>1</Z>
+					</Vector3>
+				</Properties>
+			</Item>
+			<Item class="Attachment" referent="RBXD4FD35C3FC1B4A10AA6A992DA767284F">
+				<Properties>
+					<CoordinateFrame name="CFrame">
+						<X>0.200000018</X>
+						<Y>-1.92999864</Y>
+						<Z>-0.5</Z>
+						<R00>0</R00>
+						<R01>1</R01>
+						<R02>-0</R02>
+						<R10>-1</R10>
+						<R11>0</R11>
+						<R12>0</R12>
+						<R20>0</R20>
+						<R21>0</R21>
+						<R22>1</R22>
+					</CoordinateFrame>
+					<string name="Name">RightGripAttachment</string>
+					<bool name="Visible">false</bool>
+				</Properties>
+			</Item>
+		</Item>
+		<Item class="LocalScript" referent="RBX4CC4D1E12AC74608A60629F1C980868B">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">Local Gui</string>
+				<string name="ScriptGuid"></string>
+				<ProtectedString name="Source"><![CDATA[Tool = script.Parent
+
+local stillEquipped = false
+
+function onEquippedLocal(mouse)
+	stillEquipped = true
+	if mouse == nil then 
+		print("No mouse")
+		return
+	end
+	while stillEquipped do 
+		print("Setting Mouse to go")
+		mouse.Icon = "rbxasset://textures\\GunCursor.png"
+		while Tool.Enabled and stillEquipped do 
+			wait(0.01)
+		end
+		print("Setting Mouse to wait")
+		mouse.Icon = "rbxasset://textures\\GunWaitCursor.png"
+		while not Tool.Enabled and stillEquipped do 
+			wait(0.01)
+		end
+	end
+end
+
+function onUnequippedLocal()
+	stillEquipped = false
+end
+
+Tool.Equipped:connect(onEquippedLocal)
+Tool.Unequipped:connect(onUnequippedLocal)]]></ProtectedString>
+			</Properties>
+		</Item>
+		<Item class="Script" referent="RBXD95A83D592B04EE88BF8373DD7AE8F92">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">LauncherScript</string>
+				<string name="ScriptGuid">{1C4C9ECA-C598-429D-8379-8450C1912E3B}</string>
+				<ProtectedString name="Source"><![CDATA[local Tool = script.Parent
+local Cannon = Tool.Handle
+
+local debris = game:GetService("Debris")
+
+Tool.Enabled = true 
+
+local rocket = Instance.new("Part")
+rocket.Size = Vector3.new(0.5, 3, 0.5)
+rocket.Transparency = 0.0
+rocket.Shape = "Block"
+rocket.FormFactor = 3
+rocket.Name ="RocketClone"
+
+local rocketMesh = Instance.new("SpecialMesh")
+rocketMesh.MeshType = "FileMesh"
+rocketMesh.Name = "Mesh"
+rocketMesh.MeshId = "http://www.roblox.com/asset/?id=74333739"
+rocketMesh.TextureId = "http://www.roblox.com/asset/?id=74320150"
+rocketMesh.Scale = Vector3.new(2, 2, 2)
+rocketMesh.Parent = rocket
+
+local propulsion = Instance.new("RocketPropulsion") 
+propulsion.CartoonFactor = 1.0 
+propulsion.TargetRadius = 5.0 
+propulsion.MaxSpeed = 70.0 
+propulsion.ThrustD = 0.001
+propulsion.ThrustP = 5 
+propulsion.MaxTorque = Vector3.new(400000, 400000, 400000)
+propulsion.TurnD = 500 
+propulsion.TurnP = 3000
+propulsion.TargetOffset = Vector3.new(0, 0.1, 0) 
+
+local fireSound
+local boom
+
+local rocketClones = {}
+local rocketClone 
+
+local cooldown = false
+
+local damage = 15
+
+function blow(part, hit)
+	if hit.Name ~= "RocketClone" and hit.Parent ~= vCharacter and hit.Parent ~= Tool and part then	
+		print(hit) 
+		humanoid = hit.Parent:FindFirstChild("Humanoid")		
+		local e = Instance.new("Explosion")
+		e.Name = "SPLODE"
+		e.BlastPressure = 9999999
+		e.BlastRadius = 3.5
+		e.Position = part.Position		
+		e.Parent = game.Workspace
+		debris:AddItem(e, 1.0)				
+		vCharacter = Tool.Parent
+		if part then part:Remove() end
+		vPlayer = game.Players:GetPlayerFromCharacter(vCharacter)
+		if humanoid and vPlayer then 
+			tagHumanoid(humanoid, vPlayer)
+			humanoid:TakeDamage(damage)			
+		end
+	end
+end
+
+function tagHumanoid(humanoid, player)
+	if humanoid ~= nil then 
+		creatorTag = Instance.new("ObjectValue")
+		creatorTag.Name = "creator"
+		creatorTag.Parent = humanoid
+		creatorTag.Value = player
+		debris:AddItem(creatorTag, 1)
+	end
+end
+
+function shoot(pos, numToes, target)
+	vCharacter = Tool.Parent	
+	if vCharacter == nil or vCharacter:FindFirstChild("Humanoid") == nil then 		
+		return
+	end	
+
+	vPlayer = game.Players:GetPlayerFromCharacter(vCharacter)
+	if vPlayer == nil then 		
+		return
+	end	
+
+	local radius = 0.25
+	local sign = -1	
+
+	if target == nil then
+		for i = 1, numToes do 
+			if fireSound then fireSound:Play()end	
+			rocketClones[i] = rocket:Clone()
+			rocketClones[i].CanCollide = false		
+
+			local spawnPos = Cannon.Position
+			spawnPos = spawnPos + pos.unit * 5.0
+			if numToes > 1 then spawnPos = spawnPos + (CFrame.Angles(math.random(), 0, math.random()) * pos + Vector3.new(0, 0.15, 0)).unit * 7.0 end 				
+			
+			rocketClones[i].CFrame = CFrame.new(spawnPos, spawnPos + pos) --* CFrame.Angles(-math.pi/2, 0, 0) --+ radius * Vector3.new(0, 1, 0)				
+			rocketClones[i].Velocity = pos * 60.0	
+			rocketClones[i].Name ="RocketClone"
+			rocketClones[i].Parent = game.Workspace					
+
+			local toeCloneFloat = Instance.new("BodyForce")
+			toeCloneFloat.force =  Vector3.new(0.0, rocketClones[i]:GetMass() * 196.1, 0.0)
+			toeCloneFloat.Parent = rocketClones[i]
+
+			rocketClones[i].Touched:connect(function(hit) blow(rocketClones[i], hit) end)
+		
+			debris:AddItem(rocketClones[i], 5)
+			wait(0.25)
+		end
+	else  
+		rocketClone = rocket:Clone()
+		rocket.CanCollide = false 
+
+		local rocketCloneFloat = Instance.new("BodyForce") 
+		rocketCloneFloat.force = Vector3.new(0, rocketClone:GetMass() * 196.1, 0)
+		--rocketCloneFloat.Parent = rocketClone 
+
+		local spawnPos = Cannon.Position
+		spawnPos = spawnPos + pos.unit * 5.0
+			
+			
+		rocketClone.CFrame = CFrame.new(spawnPos, spawnPos + pos)-- * CFrame.Angles(-math.pi/2, 0, 0) --+ radius * Vector3.new(0, 1, 0)		
+
+		local rPropulsion = propulsion:Clone()
+		rPropulsion.Parent = rocketClone 
+		rPropulsion.Target = target
+
+		rocketClone.Parent = game.Workspace 
+		rocketClone.Touched:connect(function(hit) blow(rocketClone, hit) end)
+		debris:AddItem(rocketClone, 50)
+
+		rPropulsion:Fire() 
+	end 
+end
+
+function onActivated()
+	if Tool.Enabled == false then 
+		return
+	end
+	Tool.Enabled = false
+
+	vCharacter = Tool.Parent
+	myHumanoid = vCharacter:FindFirstChild("Humanoid")
+	if myHumanoid == nil then 
+		print("Humanoid not found")
+		return
+	end
+
+	myTorso = vCharacter:FindFirstChild("Torso") or vCharacter:FindFirstChild("UpperTorso")
+	if myTorso == nil then 
+		print("Torso not found")
+		return
+	end
+
+	boom = Tool:FindFirstChild("BOOM")
+	
+	target = myHumanoid.TargetPoint
+	lookAt = (target - Cannon.Position).unit
+	local rocketTarget 
+
+	local findPart = game.Workspace:FindPartOnRay(Ray.new(Cannon.Position, lookAt * 500.0), vCharacter)	
+	if findPart and findPart:GetMass() > 2000 then findPart = nil end 
+	myHumanoid.WalkSpeed = 0.0
+	myTorso.Anchored = true
+
+	fireSound = Tool:FindFirstChild("FireSound")	
+	local rapidFire = Tool:FindFirstChild("RapidFire")
+	if rapidFire and rapidFire.Value == true and not cooldown then
+		cooldown = true 
+		shoot(lookAt, 6, findPart)	
+		wait(1.5) 
+		myHumanoid.WalkSpeed = 16.0
+		myTorso.Anchored = false
+		coroutine.resume(coroutine.create(function() 
+			wait(6 * 2.75)
+			local rapidFire = Tool:FindFirstChild("RapidFire")
+			if rapidFire and rapidFire.Value == true then rapidFire.Value = false end		
+			cooldown = false
+		end))
+		wait(1.0)
+	else 
+		shoot(lookAt, 1, findPart)
+		wait(0.5)
+		myHumanoid.WalkSpeed = 16.0
+		myTorso.Anchored = false
+		wait(2.5)
+	end 
+
+	myHumanoid.WalkSpeed = 16.0
+	myTorso.Anchored = false
+	wait(0.5)	
+	Tool.Enabled = true
+end
+
+function onEquipped()
+	vCharacter = Tool.Parent
+	myHumanoid = vCharacter:FindFirstChild("Humanoid")
+	if myHumanoid then 
+		ratio = myHumanoid.Health/myHumanoid.MaxHealth
+		myHumanoid.MaxHealth = 200
+		myHumanoid.Health = ratio * 200
+		while myHumanoid.Health < ratio * 200 do 
+			myHumanoid.Health = ratio * 200
+			wait()
+		end
+	end
+end
+
+function onUnequipped()
+	if fireSound then fireSound:Stop()end
+	if boom then boom:Stop() end
+
+	if myHumanoid then 
+		myHumanoid.WalkSpeed = 16.0 
+		ratio = myHumanoid.Health/myHumanoid.MaxHealth 
+		myHumanoid.Health = ratio * 100
+		myHumanoid.MaxHealth = 100
+	end
+	if myTorso then myTorso.Anchored = false end
+end
+
+Tool.Activated:connect(onActivated)
+Tool.Equipped:connect(onEquipped)
+Tool.Unequipped:connect(onUnequipped)
+
+
+]]></ProtectedString>
+			</Properties>
+		</Item>
+		<Item class="Sound" referent="RBX694EA7E912374C6FB3C7F5ADE2FD893B">
+			<Properties>
+				<float name="EmitterSize">10</float>
+				<bool name="Looped">false</bool>
+				<string name="Name">FireSound</string>
+				<bool name="PlayOnRemove">false</bool>
+				<float name="PlaybackSpeed">1</float>
+				<bool name="Playing">false</bool>
+				<token name="RollOffMode">0</token>
+				<Ref name="SoundGroup">null</Ref>
+				<Content name="SoundId"><url>http://www.roblox.com/asset/?id=66868084 </url></Content>
+				<double name="TimePosition">0</double>
+				<float name="Volume">0.699999988</float>
+				<float name="xmlRead_MaxDistance_3">10000</float>
+			</Properties>
+		</Item>
+		<Item class="LocalScript" referent="RBX020D91E4AF1B43AFA14269D8E6691637">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">RapidFireScript</string>
+				<string name="ScriptGuid"></string>
+				<ProtectedString name="Source"><![CDATA[local Tool = script.Parent
+local Cannon = Tool.Handle
+
+local vCharacter 
+local myTorso 
+local myHumanoid 
+
+function toggleRapidFire(key)
+	if key:lower() == "q" then 
+		local rapidFire = Tool:FindFirstChild("RapidFire") 
+		if rapidFire and rapidFire.Value == false then 
+			rapidFire.Value = true 
+		end 
+	end 
+end 
+
+function onEquipped(mouse)
+	vCharacter = Tool.Parent 
+	myTorso = vCharacter:FindFirstChild("Torso")
+	myHumanoid = vCharacter:FindFirstChild("Humanoid") 
+	if mouse then 
+		mouse.KeyDown:connect(toggleRapidFire)
+	end 
+end 
+
+Tool.Equipped:connect(onEquipped)
+
+]]></ProtectedString>
+			</Properties>
+		</Item>
+		<Item class="BoolValue" referent="RBXE39FBFEB17C6446EA4DC965B0B7CBB9C">
+			<Properties>
+				<string name="Name">RapidFire</string>
+				<bool name="Value">false</bool>
+			</Properties>
+		</Item>
+	</Item>
+</roblox>

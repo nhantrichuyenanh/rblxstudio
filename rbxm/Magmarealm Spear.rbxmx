@@ -1,0 +1,600 @@
+<roblox xmlns:xmime="http://www.w3.org/2005/05/xmlmime" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.roblox.com/roblox.xsd" version="4">
+	<External>null</External>
+	<External>nil</External>
+	<Item class="Tool" referent="RBX0907CD09162C4017A602587730459C03">
+		<Properties>
+			<bool name="CanBeDropped">true</bool>
+			<bool name="Enabled">true</bool>
+			<CoordinateFrame name="Grip">
+				<X>0</X>
+				<Y>0</Y>
+				<Z>-1.5</Z>
+				<R00>-1</R00>
+				<R01>0</R01>
+				<R02>0</R02>
+				<R10>0</R10>
+				<R11>0</R11>
+				<R12>1</R12>
+				<R20>0</R20>
+				<R21>1</R21>
+				<R22>-0</R22>
+			</CoordinateFrame>
+			<bool name="ManualActivationOnly">false</bool>
+			<string name="Name">DragonHunterSpear</string>
+			<bool name="RequiresHandle">true</bool>
+			<BinaryString name="Tags"></BinaryString>
+			<Content name="TextureId"><url>http://www.roblox.com/asset/?id=43644897</url></Content>
+			<string name="ToolTip"></string>
+		</Properties>
+		<Item class="Part" referent="RBX69C708CAA05F41BF8A4D6B674AF19FA9">
+			<Properties>
+				<bool name="Anchored">false</bool>
+				<float name="BackParamA">-0.5</float>
+				<float name="BackParamB">0.5</float>
+				<token name="BackSurface">0</token>
+				<token name="BackSurfaceInput">0</token>
+				<float name="BottomParamA">-0.5</float>
+				<float name="BottomParamB">0.5</float>
+				<token name="BottomSurface">4</token>
+				<token name="BottomSurfaceInput">0</token>
+				<CoordinateFrame name="CFrame">
+					<X>1.50000203</X>
+					<Y>5.60000849</Y>
+					<Z>-1.49999762</Z>
+					<R00>1.21948528e-06</R00>
+					<R01>1</R01>
+					<R02>3.51139192e-06</R02>
+					<R10>0.707107663</R10>
+					<R11>-3.34523156e-06</R11>
+					<R12>0.707110524</R12>
+					<R20>0.707110524</R20>
+					<R21>1.62059587e-06</R21>
+					<R22>-0.707107663</R22>
+				</CoordinateFrame>
+				<bool name="CanCollide">true</bool>
+				<int name="CollisionGroupId">0</int>
+				<Color3uint8 name="Color3uint8">4278226844</Color3uint8>
+				<PhysicalProperties name="CustomPhysicalProperties">
+					<CustomPhysics>false</CustomPhysics>
+				</PhysicalProperties>
+				<float name="Elasticity">0.5</float>
+				<float name="Friction">0.300000012</float>
+				<float name="FrontParamA">-0.5</float>
+				<float name="FrontParamB">0.5</float>
+				<token name="FrontSurface">0</token>
+				<token name="FrontSurfaceInput">0</token>
+				<float name="LeftParamA">-0.5</float>
+				<float name="LeftParamB">0.5</float>
+				<token name="LeftSurface">0</token>
+				<token name="LeftSurfaceInput">0</token>
+				<bool name="Locked">true</bool>
+				<token name="Material">256</token>
+				<string name="Name">Handle</string>
+				<float name="Reflectance">0</float>
+				<float name="RightParamA">-0.5</float>
+				<float name="RightParamB">0.5</float>
+				<token name="RightSurface">0</token>
+				<token name="RightSurfaceInput">0</token>
+				<Vector3 name="RotVelocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<BinaryString name="Tags"></BinaryString>
+				<float name="TopParamA">-0.5</float>
+				<float name="TopParamB">0.5</float>
+				<token name="TopSurface">3</token>
+				<token name="TopSurfaceInput">0</token>
+				<float name="Transparency">0</float>
+				<Vector3 name="Velocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<token name="formFactorRaw">3</token>
+				<token name="shape">1</token>
+				<Vector3 name="size">
+					<X>1.17999983</X>
+					<Y>0.20000048</Y>
+					<Z>5.95000458</Z>
+				</Vector3>
+			</Properties>
+			<Item class="SpecialMesh" referent="RBX2A71D57B99A74B3E870BB795D8B8815B">
+				<Properties>
+					<token name="LODX">2</token>
+					<token name="LODY">2</token>
+					<Content name="MeshId"><url>http://www.roblox.com/asset/?id=43645078</url></Content>
+					<token name="MeshType">5</token>
+					<string name="Name">Mesh</string>
+					<Vector3 name="Offset">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+					</Vector3>
+					<Vector3 name="Scale">
+						<X>1.5</X>
+						<Y>1.5</Y>
+						<Z>1.5</Z>
+					</Vector3>
+					<BinaryString name="Tags"></BinaryString>
+					<Content name="TextureId"><url>http://www.roblox.com/asset/?id=43644917</url></Content>
+					<Vector3 name="VertexColor">
+						<X>1</X>
+						<Y>1</Y>
+						<Z>1</Z>
+					</Vector3>
+				</Properties>
+			</Item>
+			<Item class="Attachment" referent="RBXA6E4C9C6E6EC4D4BA9685BC5BA40E497">
+				<Properties>
+					<CoordinateFrame name="CFrame">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>-1.49999988</Z>
+						<R00>-1</R00>
+						<R01>0</R01>
+						<R02>-6.31088724e-30</R02>
+						<R10>-6.31088724e-30</R10>
+						<R11>0</R11>
+						<R12>1</R12>
+						<R20>0</R20>
+						<R21>1</R21>
+						<R22>0</R22>
+					</CoordinateFrame>
+					<string name="Name">RightGripAttachment</string>
+					<BinaryString name="Tags"></BinaryString>
+					<bool name="Visible">false</bool>
+				</Properties>
+			</Item>
+		</Item>
+		<Item class="Script" referent="RBXDF686110DDFF4FCAA775390D5785B724">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">DragonSpear</string>
+				<string name="ScriptGuid">{1BEE3D38-D24E-451E-906A-42B6A6068553}</string>
+				<ProtectedString name="Source"><![CDATA[-------- OMG HAX
+
+r = game:service("RunService")
+debris = game:GetService("Debris")
+
+local damage = 3
+
+local myHumanoid = nil
+
+local slash_damage = 6
+
+sword = script.Parent.Handle
+Tool = script.Parent
+
+
+
+local SmashSound = Instance.new("Sound")
+--SmashSound.SoundId = "http://www.roblox.com/asset/?id=21433696"
+SmashSound.SoundId = "rbxasset://sounds\\swordslash.wav"
+SmashSound.Parent = sword
+SmashSound.Volume = .7
+SmashSound.Pitch = 1
+
+local SmashSound2 = Instance.new("Sound")
+--SmashSound2.SoundId = "http://www.roblox.com/asset/?id=21433711"
+SmashSound2.SoundId = "rbxasset://sounds\\swordlunge.wav"
+SmashSound2.Parent = sword
+SmashSound2.Volume = .7
+SmashSound2.Pitch = .4
+
+local SmashSound3 = Instance.new("Sound")
+SmashSound3.SoundId = "rbxasset://sounds\\swordslash.wav"
+SmashSound3.Parent = sword
+SmashSound3.Volume = .2
+SmashSound3.Pitch = 2
+
+local sounds = {SmashSound, SmashSound2, SmashSound3}
+
+local UnsheathSound = Instance.new("Sound")
+UnsheathSound.SoundId = "rbxasset://sounds\\unsheath.wav"
+UnsheathSound.Parent = sword
+UnsheathSound.Volume = .5
+UnsheathSound.Pitch = 1.5
+
+
+function blow(hit)
+
+	if (Tool.Enabled) then return end -- only damages on a swing
+	if hit == nil or hit.Parent == nil then return end
+
+	local humanoid = hit.Parent:findFirstChild("Humanoid")
+	local vCharacter = Tool.Parent
+	local vPlayer = game.Players:playerFromCharacter(vCharacter)
+	local hum = vCharacter:findFirstChild("Humanoid") -- non-nil if tool held by a character
+	if humanoid~=nil and humanoid ~= hum and hum ~= nil then
+		-- final check, make sure sword is in-hand
+
+		local right_arm = vCharacter:FindFirstChild("Right Arm") or vCharacter:FindFirstChild("RightHand")
+		if (right_arm ~= nil) then
+			local joint = right_arm:FindFirstChild("RightGrip")
+			if (joint ~= nil and (joint.Part0 == sword or joint.Part1 == sword)) then
+				tagHumanoid(humanoid, vPlayer)
+				humanoid:TakeDamage(damage)
+				wait(1)
+				untagHumanoid(humanoid)
+			end
+		end
+	end
+end
+
+
+function tagHumanoid(humanoid, player)
+	local creator_tag = Instance.new("ObjectValue")
+	creator_tag.Value = player
+	creator_tag.Name = "creator"
+	creator_tag.Parent = humanoid
+end
+
+function untagHumanoid(humanoid)
+	if humanoid ~= nil then
+		local tag = humanoid:findFirstChild("creator")
+		if tag ~= nil then
+			tag.Parent = nil
+		end
+	end
+end
+
+
+function attack()
+	damage = slash_damage
+
+	local anim = Instance.new("StringValue")
+	anim.Name = "toolanim"
+	anim.Value = "Slash"
+	anim.Parent = Tool
+end
+
+function swordUp()
+	Tool.GripForward = Vector3.new(0,-1,0)
+	Tool.GripRight = Vector3.new(-1,0,0)
+	Tool.GripUp = Vector3.new(0,0,1)
+end
+
+function swordOut(angle)
+	Tool.GripForward = Vector3.new(math.sin(angle),-math.cos(angle),0)
+	Tool.GripRight = Vector3.new(-math.cos(angle),math.sin(angle),0)
+	Tool.GripUp = Vector3.new(0,0,1)
+
+	--Tool.GripForward = Vector3.new(0,-math.cos(angle),-math.sin(angle))
+	--Tool.GripUp = Vector3.new(0,-math.sin(angle),math.cos(angle))
+end
+
+function swordAcross()
+	-- parry
+end
+
+
+Tool.Enabled = true
+local last_attack = -5
+local charge = 0
+local dragonFire = nil
+function onActivated()
+
+	if not Tool.Enabled then
+		return
+	end
+
+	Tool.Enabled = false
+
+	print(charge)
+
+	local character = Tool.Parent;
+	local humanoid = character.Humanoid
+	if humanoid == nil then
+		print("Humanoid not found")
+		return 
+	end
+
+	swordOut(math.pi/40 * charge)
+
+	t = r.Stepped:wait()
+
+	if (t - last_attack < .5) then
+		sounds[3]:Play()
+		attack()
+		if charge < 60 then
+			wait(.05)
+			swordOut(math.pi/40 * (charge + 1))
+			wait(.05)
+			swordOut(math.pi/40 * (charge + 2))
+			wait(.05)
+			swordOut(math.pi/40 * (charge + 3))
+			charge = charge + 4
+
+		if dragonFire == nil or dragonFire.Parent == nil then
+			dragonFire = Instance.new("Part")
+			dragonFire.Name = "DragonFire"
+			dragonFire.CanCollide = false
+			dragonFire.Shape = 0
+			dragonFire.Size = Vector3.new(charge/15,charge/15,charge/15)
+			dragonFire.Transparency = 0
+			dragonFire.CFrame = Tool.Handle.CFrame
+			dragonFire.Material = "Corroded Metal"
+			dragonFire.BrickColor = BrickColor.new("Bright red")
+			dragonFire.TopSurface = 0
+			dragonFire.BottomSurface = 0
+
+			dragonWeld = Instance.new("Weld")
+			dragonWeld.Name = "DragonWeld"
+			dragonWeld.Part0 = dragonFire
+			dragonWeld.Part1 = Tool.Handle
+			dHeat = Instance.new("Fire")
+			dHeat.Color = Color3.new(1,0,0)
+			dHeat.SecondaryColor = Color3.new(0,1,0)
+			dHeat.Heat = charge / 3
+			dHeat.Name = "DragonHeat"
+			dHeat.Size = charge / 10
+			dHeat.Parent = dragonFire
+			dragonFire.Parent = Tool
+			dragonWeld.Parent = dragonFire
+		end
+
+		dHeat = dragonFire.DragonHeat
+		dHeat.Heat = charge / 3
+		dHeat.Size = charge / 10
+		dragonFire.Size = Vector3.new(charge/15, charge/15, charge/15)
+		dragonWeld = Instance.new("Weld")
+		dragonWeld.Name = "DragonWeld"
+		dragonWeld.Part0 = dragonFire
+		dragonWeld.C1 = CFrame.new(0,0,5)
+		dragonWeld.Part1 = Tool.Handle
+		dragonWeld.Parent = dragonFire
+
+		else wait(.15) end
+
+	else
+		
+	
+
+		attack()
+
+		if charge > 0 and myHumanoid ~= nil then 
+			sounds[2]:Play()
+			-- fireball!!
+			dweld = dragonFire:FindFirstChild("DragonWeld")
+			newNV = Instance.new("NumberValue")
+			newNV.Name = "Damage"
+			newNV.Value = charge
+			newNV.Parent = dragonFire
+			if dweld ~= nil then dweld:remove() end
+			lookAt = myHumanoid.TargetPoint - dragonFire.Position
+			dragonFire.Velocity = lookAt.unit*50
+			dragonFire.Position = dragonFire.Position + lookAt.unit*5
+			dragonFire.Parent = game.Workspace
+			dragonFire.CanCollide = true
+			dFloat = Instance.new("BodyForce")
+			dFloat.force = Vector3.new(0, dragonFire:GetMass()*workspace.Gravity, 0)
+			dFloat.Name = "DFloat"
+			dFloat.Parent = dragonFire
+
+			dScript = Tool.FireballScript:Clone()
+			dScript.Parent = dragonFire
+			dScript.Disabled = false
+
+			dragonFire = nil
+		end
+		if charge <= 0 then
+			sounds[1]:Play()
+			wait(.1)
+		elseif dragonFire ~= nil and dragonFire.Parent ~= nil then
+			while dragonFire.Transparency < 1 do
+				dragonFire.Transparency = dragonFire.Transparency + .05
+				if charge > 0 then 
+					charge = charge - 1
+					swordOut(math.pi/40 * charge)
+				end
+				wait(.05)
+			end
+			while charge > 0 do
+				charge = charge - 1
+				swordOut(math.pi/40 * charge)
+				wait(.05)
+			end
+			dragonFire:remove()
+			wait(2)
+		else
+			while charge > 0 do
+				charge = charge - 2
+				swordOut(math.pi/40 * charge)
+				wait(.05)
+			end
+			wait(2)
+		end
+		-- potentially fire and uncharge
+	end
+
+	last_attack = t
+
+	Tool.Enabled = true
+end
+
+
+function onEquipped()
+	vChar = Tool.Parent
+	myHumanoid = vChar:FindFirstChild("Humanoid")
+	UnsheathSound:play()
+end
+
+
+script.Parent.Activated:connect(onActivated)
+script.Parent.Equipped:connect(onEquipped)
+
+
+connection = sword.Touched:connect(blow)
+
+
+]]></ProtectedString>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+		</Item>
+		<Item class="Script" referent="RBX2EDF6B5C457D4FC5A9D4CD4EF9BAB9E5">
+			<Properties>
+				<bool name="Disabled">true</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">FireballScript</string>
+				<string name="ScriptGuid">{0A1E2136-5DD8-4FB3-A0DA-9C0F19FCBE75}</string>
+				<ProtectedString name="Source"><![CDATA[local fireball = script.Parent
+local debris = game:GetService("Debris")
+
+local chargeForce = fireball.Damage.Value
+local damageToDeal = .50 + chargeForce/100
+
+local ember = Instance.new("Part")
+ember.Transparency = 1
+ember.Shape = 0
+ember.formFactor = 0
+ember.Size = Vector3.new(0,0,0)
+ember.TopSurface = 0
+ember.BottomSurface = 0
+ember.Locked = true
+
+local emberFire = Instance.new("Fire")
+emberFire.Color = Color3.new(1,160/255,51/255)
+emberFire.Size = 2
+emberFire.Parent = ember
+
+local force = Instance.new("BodyForce")
+force.force = Vector3.new(0,90,0)
+force.Parent = ember
+
+function makeEmbers()
+
+	for i = 1, 5 do
+		local er = ember:clone()
+		er.Position = fireball.Position
+		er.Velocity = Vector3.new(math.random(-20,20),math.random(10,25),math.random(-20,20))
+		er.Parent = game.Workspace
+		debris:AddItem(er,2)
+	end
+
+end
+
+local touching = false
+
+fireball.Touched:connect(function(part)
+	
+	local human = part.Parent:FindFirstChild("Humanoid")
+	if human ~= nil and touching == false then
+		script.Parent = human.Parent
+		touching = true
+		makeEmbers()
+		local fire = fireball.DragonHeat:clone()
+		fireball.DragonHeat:Destroy()
+		fire.Parent = part
+		debris:AddItem(fire, 10)
+		fireball:Destroy()
+		for i = 1, 100 do
+			--if fire.Enabled == true then human:TakeDamage(0.59) end -- make this go from .25 to .96 based on size of projectile!
+			if fire.Enabled == true then human:TakeDamage(damageToDeal) end
+			wait(0.1)
+		end
+		script:Destroy()
+		touching = false
+	end
+
+end)
+
+
+wait(8)
+fireball.Parent = nil
+]]></ProtectedString>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+		</Item>
+		<Item class="LocalScript" referent="RBXCF947C927C724081A214AAAD991C0636">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">Local Gui</string>
+				<string name="ScriptGuid">{1E66EE33-6362-4120-85D0-3E9672656D1A}</string>
+				<ProtectedString name="Source"><![CDATA[local Tool = script.Parent;
+
+enabled = true
+function onButton1Down(mouse)
+	if not enabled then
+		return
+	end
+	print("ending")
+	enabled = false
+
+	while Tool.Enabled do
+		wait(.01)
+	end
+
+	print("Setting Mouse To Wait")
+	mouse.Icon = "rbxasset://textures\\GunWaitCursor.png"
+
+	while not Tool.Enabled do
+		wait(.01)
+	end
+
+	print("Setting Mouse to Go")
+	mouse.Icon = "rbxasset://textures\\GunCursor.png"
+
+	enabled = true
+end
+
+function onEquippedLocal(mouse)
+
+	if mouse == nil then
+		print("Mouse not found")
+		return 
+	end
+
+	mouse.Icon = "rbxasset://textures\\GunCursor.png"
+	mouse.Button1Down:connect(function() onButton1Down(mouse) end)
+end
+
+
+Tool.Equipped:connect(onEquippedLocal)
+]]></ProtectedString>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+		</Item>
+		<Item class="Camera" referent="RBX86C0936C996D41F48FBB17E6A0156AE7">
+			<Properties>
+				<CoordinateFrame name="CFrame">
+					<X>8.34338379</X>
+					<Y>5.75773811</Y>
+					<Z>-2.17255235</Z>
+					<R00>-0.0697803721</R00>
+					<R01>0.0104391621</R01>
+					<R02>0.997507811</R02>
+					<R10>5.8207654e-11</R10>
+					<R11>0.999945343</R11>
+					<R12>-0.0104646711</R12>
+					<R20>-0.997562408</R20>
+					<R21>-0.00073022861</R21>
+					<R22>-0.0697765499</R22>
+				</CoordinateFrame>
+				<Ref name="CameraSubject">null</Ref>
+				<token name="CameraType">0</token>
+				<float name="FieldOfView">70</float>
+				<CoordinateFrame name="Focus">
+					<X>6.34836864</X>
+					<Y>5.77866745</Y>
+					<Z>-2.03299928</Z>
+					<R00>1</R00>
+					<R01>0</R01>
+					<R02>0</R02>
+					<R10>0</R10>
+					<R11>1</R11>
+					<R12>0</R12>
+					<R20>0</R20>
+					<R21>0</R21>
+					<R22>1</R22>
+				</CoordinateFrame>
+				<bool name="HeadLocked">true</bool>
+				<float name="HeadScale">1</float>
+				<string name="Name">ThumbnailCamera</string>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+		</Item>
+	</Item>
+</roblox>

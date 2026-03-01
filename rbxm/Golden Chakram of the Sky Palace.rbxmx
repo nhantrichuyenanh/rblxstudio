@@ -1,0 +1,507 @@
+<roblox xmlns:xmime="http://www.w3.org/2005/05/xmlmime" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.roblox.com/roblox.xsd" version="4">
+	<External>null</External>
+	<External>nil</External>
+	<Item class="Tool" referent="RBX4282C189818F4707B66F0D5EEAAAE54D">
+		<Properties>
+			<bool name="CanBeDropped">true</bool>
+			<bool name="Enabled">true</bool>
+			<CoordinateFrame name="Grip">
+				<X>0.449999988</X>
+				<Y>0</Y>
+				<Z>0</Z>
+				<R00>1</R00>
+				<R01>0</R01>
+				<R02>0</R02>
+				<R10>0</R10>
+				<R11>0</R11>
+				<R12>-1</R12>
+				<R20>0</R20>
+				<R21>1</R21>
+				<R22>0</R22>
+			</CoordinateFrame>
+			<bool name="ManualActivationOnly">false</bool>
+			<string name="Name">Chakra</string>
+			<bool name="RequiresHandle">true</bool>
+			<BinaryString name="Tags"></BinaryString>
+			<Content name="TextureId"><url>http://www.roblox.com/asset/?id=47282021 </url></Content>
+			<string name="ToolTip"></string>
+		</Properties>
+		<Item class="Part" referent="RBXD56EB68143BA45E1B6128FE520EFE967">
+			<Properties>
+				<bool name="Anchored">false</bool>
+				<float name="BackParamA">-0.5</float>
+				<float name="BackParamB">0.5</float>
+				<token name="BackSurface">0</token>
+				<token name="BackSurfaceInput">0</token>
+				<float name="BottomParamA">-0.5</float>
+				<float name="BottomParamB">0.5</float>
+				<token name="BottomSurface">4</token>
+				<token name="BottomSurfaceInput">0</token>
+				<CoordinateFrame name="CFrame">
+					<X>1.04999995</X>
+					<Y>5.60000801</Y>
+					<Z>0</Z>
+					<R00>1</R00>
+					<R01>1.26916612e-22</R01>
+					<R02>1.62062088e-06</R02>
+					<R10>2.76820442e-23</R10>
+					<R11>-1</R11>
+					<R12>6.12324353e-17</R12>
+					<R20>1.62062088e-06</R20>
+					<R21>-6.12324353e-17</R21>
+					<R22>-1</R22>
+				</CoordinateFrame>
+				<bool name="CanCollide">true</bool>
+				<int name="CollisionGroupId">0</int>
+				<Color3uint8 name="Color3uint8">4278226844</Color3uint8>
+				<PhysicalProperties name="CustomPhysicalProperties">
+					<CustomPhysics>false</CustomPhysics>
+				</PhysicalProperties>
+				<float name="Elasticity">0.5</float>
+				<float name="Friction">0.300000012</float>
+				<float name="FrontParamA">-0.5</float>
+				<float name="FrontParamB">0.5</float>
+				<token name="FrontSurface">0</token>
+				<token name="FrontSurfaceInput">0</token>
+				<float name="LeftParamA">-0.5</float>
+				<float name="LeftParamB">0.5</float>
+				<token name="LeftSurface">0</token>
+				<token name="LeftSurfaceInput">0</token>
+				<bool name="Locked">true</bool>
+				<token name="Material">256</token>
+				<string name="Name">Handle</string>
+				<float name="Reflectance">0</float>
+				<float name="RightParamA">-0.5</float>
+				<float name="RightParamB">0.5</float>
+				<token name="RightSurface">0</token>
+				<token name="RightSurfaceInput">0</token>
+				<Vector3 name="RotVelocity">
+					<X>1</X>
+					<Y>1</Y>
+					<Z>1</Z>
+				</Vector3>
+				<BinaryString name="Tags"></BinaryString>
+				<float name="TopParamA">-0.5</float>
+				<float name="TopParamB">0.5</float>
+				<token name="TopSurface">3</token>
+				<token name="TopSurfaceInput">0</token>
+				<float name="Transparency">0</float>
+				<Vector3 name="Velocity">
+					<X>-1.40129846e-45</X>
+					<Y>0</Y>
+					<Z>1.40129846e-45</Z>
+				</Vector3>
+				<token name="formFactorRaw">3</token>
+				<token name="shape">1</token>
+				<Vector3 name="size">
+					<X>1.65999985</X>
+					<Y>1.33000064</Y>
+					<Z>0.200000003</Z>
+				</Vector3>
+			</Properties>
+			<Item class="SpecialMesh" referent="RBXEC4B009D15EE46029D6FA1501B250329">
+				<Properties>
+					<token name="LODX">2</token>
+					<token name="LODY">2</token>
+					<Content name="MeshId"><url>http://www.roblox.com/asset/?id=47260990 </url></Content>
+					<token name="MeshType">5</token>
+					<string name="Name">Mesh</string>
+					<Vector3 name="Offset">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+					</Vector3>
+					<Vector3 name="Scale">
+						<X>1.5</X>
+						<Y>1.5</Y>
+						<Z>1.5</Z>
+					</Vector3>
+					<BinaryString name="Tags"></BinaryString>
+					<Content name="TextureId"><url>http://www.roblox.com/asset/?id=47261060 </url></Content>
+					<Vector3 name="VertexColor">
+						<X>1</X>
+						<Y>1</Y>
+						<Z>1</Z>
+					</Vector3>
+				</Properties>
+			</Item>
+			<Item class="Attachment" referent="RBXE8A55430E1C04E3EAFEFBE71B01BE3F4">
+				<Properties>
+					<CoordinateFrame name="CFrame">
+						<X>0.449999928</X>
+						<Y>0</Y>
+						<Z>-1.13686838e-13</Z>
+						<R00>1</R00>
+						<R01>0</R01>
+						<R02>6.31088724e-30</R02>
+						<R10>6.31088724e-30</R10>
+						<R11>0</R11>
+						<R12>-1</R12>
+						<R20>0</R20>
+						<R21>1</R21>
+						<R22>0</R22>
+					</CoordinateFrame>
+					<string name="Name">RightGripAttachment</string>
+					<BinaryString name="Tags"></BinaryString>
+					<bool name="Visible">false</bool>
+				</Properties>
+			</Item>
+		</Item>
+		<Item class="LocalScript" referent="RBX79978D9F61654B109E5A80027C8827AB">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">Local Gui</string>
+				<string name="ScriptGuid">{62BF6E04-3052-4869-A77B-DF8A9A020730}</string>
+				<ProtectedString name="Source"><![CDATA[local Tool = script.Parent;
+
+local stillEquipped = true
+function onEquippedLocal(mouse)
+	stillEquipped = true
+	if mouse == nil then
+		print("Mouse not found")
+		return
+	end
+	
+	while stillEquipped do
+		print("Setting Mouse to Go")
+		mouse.Icon = "rbxasset://textures\\GunCursor.png"
+
+		while Tool.Enabled and stillEquipped do
+			wait(.01)
+		end
+	
+		print("Setting Mouse To Wait")
+		mouse.Icon = "rbxasset://textures\\GunWaitCursor.png"
+
+		while not Tool.Enabled and stillEquipped do
+			wait(.01)
+		end
+	end
+end
+
+function onUnequippedLocal()
+	stillEquipped = false
+end
+
+
+Tool.Equipped:connect(onEquippedLocal)
+Tool.Unequipped:connect(onUnequippedLocal)
+]]></ProtectedString>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+		</Item>
+		<Item class="Sound" referent="RBX6127A8C1662146F1ADEA3326E26773BD">
+			<Properties>
+				<float name="EmitterSize">10</float>
+				<bool name="Looped">true</bool>
+				<string name="Name">ChakraSpin</string>
+				<bool name="PlayOnRemove">false</bool>
+				<float name="PlaybackSpeed">1</float>
+				<bool name="Playing">false</bool>
+				<token name="RollOffMode">0</token>
+				<Ref name="SoundGroup">null</Ref>
+				<Content name="SoundId"><url>http://www.roblox.com/asset?id=47281078 </url></Content>
+				<BinaryString name="Tags"></BinaryString>
+				<double name="TimePosition">0</double>
+				<float name="Volume">1</float>
+				<float name="xmlRead_MaxDistance_3">10000</float>
+			</Properties>
+		</Item>
+		<Item class="Animation" referent="RBX11D218BDA14D4EFAAADBB31DA824D9EE">
+			<Properties>
+				<Content name="AnimationId"><url>http://www.roblox.com/Asset?ID=47277200</url></Content>
+				<string name="Name">ChakraThrow</string>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+		</Item>
+		<Item class="Script" referent="RBX2E66C5D0CF36420F91C82CCCA1DD48A9">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">StarScript</string>
+				<string name="ScriptGuid">{7437B5D5-AEAF-4F99-A786-ABF55DE7138A}</string>
+				<ProtectedString name="Source"><![CDATA[local Tool = script.Parent
+
+local damage = 15
+
+local debris = game:GetService("Debris")
+Tool.Enabled = true 
+
+local starClone
+
+local maxDistance = 60.0
+local count = 0
+
+local AwayFromCharacter = true
+
+
+-- Sounds
+local chakraSpin = nil
+while chakraSpin == nil do
+	chakraSpin = Tool:FindFirstChild("ChakraSpin")
+	wait(.5)
+end
+
+-- Animation
+local chakraThrow 
+
+-- connection!
+local connection
+
+
+function returnToCharacter()
+	--print("RETURNING TO CHARACTER")
+	--print(starClone)
+	local torso = Tool.Parent:FindFirstChild("Torso") or Tool.Parent:FindFirstChild("UpperTorso")
+
+--	if starClone then
+--		newBP = starClone:FindFirstChild("starPos")
+--		if newBP == nil then
+--			newBP = Instance.new("BodyPosition")
+--			newBP.P = 1
+--			newBP.maxForce = Vector3.new(newBP.P, newBP.P, newBP.P)
+--			if starClone then newBP.Parent = starClone end
+--		end
+	--end
+	
+	if starClone and torso then 
+		local distance = (torso.Position - starClone.Position).magnitude
+		--print(Tool.Parent.Torso.Position)
+		--print(starClone.Position)
+		--print(distance)
+		local lookAt  = torso.Position - starClone.Position
+		while distance > 4.0 and starClone ~= nil do 			
+			--print("INSIDE WHILE LOOP")
+			--starClone.Velocity = lookAt.unit * 30.0
+			starClone.Velocity = lookAt.unit * 30
+			--starClone.starPos.position = torso.Position
+			--print(starClone.Velocity)
+			--print(distance)
+
+			starClone.RotVelocity = Vector3.new(0.0, -50.0, 0.0)
+			if starClone ~= nil then 
+				lookAt  = torso.Position - starClone.Position
+				distance = lookAt.magnitude
+			end
+			--if distance < 5.0 then print("DISTANCE = ", distance) end
+			wait(0.1)
+		end		
+	end	
+	starClone.Parent = nil
+	Tool.Handle.Transparency = 0
+	if connection then connection:disconnect() end
+	Tool.Enabled = true
+	AwayFromCharacter = true
+	if chakraSpin then chakraSpin:Stop() end
+end
+
+
+
+-- Shoot!!
+function shoot(pos, star)
+	print("In Shoot")
+	
+	local vCharacter = Tool.Parent
+	if vCharacter == nil or vCharacter:findFirstChild("Humanoid") == nil then 
+		print("NO Character")
+		Tool.Enabled = true
+		return
+	end
+	
+	local vPlayer = game.Players:playerFromCharacter(vCharacter)
+	if vPlayer == nil then print("NO PLAYER?") end
+	-- Spawning position of the clone star
+	local sPos = vCharacter.PrimaryPart.Position
+	sPos = sPos + pos*5
+	--print("SPAWN POS", sPos)
+	
+	star.CFrame = CFrame.new(sPos, sPos+pos)  * CFrame.Angles(math.pi/2,0.0, 0.0)
+	star.Velocity = pos*30
+
+	--star.Velocity = pos * 30
+	star.RotVelocity = Vector3.new(0.0, 50.0, 0.0)
+	star.Name = "ThrownStar"
+	star.CanCollide = false
+	star.Parent = game.Workspace
+
+
+	-- Touched event must be added HERE!
+	if connection ~= nil then connection:disconnect() end
+	connection = starClone.Touched:connect(doDamage)
+
+
+	-- To keep the star afloat
+	local starFloat = Instance.new("BodyForce")
+	starFloat.force = Vector3.new(0.0, star:GetMass() * 196.1, 0.0)	
+	starFloat.Parent = star
+	distance = (star.Position - sPos).magnitude
+	chakraSpin:Play()
+	while AwayFromCharacter and distance < maxDistance and star ~= nil do 		
+		wait(.25)
+		-- print("INFINITE WAIT")
+		distance = (star.Position - sPos).magnitude
+		
+		--else Tool.Enabled = true break end
+	end
+	AwayFromCharacter = false
+	if star then returnToCharacter() end
+	
+	-- Play Sounds here
+	--
+end
+
+function doDamage(hit)
+	print("hit")
+	if hit == nil or hit.Parent == nil then return end
+	local humanoid = hit.Parent:FindFirstChild("Humanoid")
+	local vCharacter = Tool.Parent
+	if vCharacter == nil then return end
+	local vPlayer = game.Players:playerFromCharacter(vCharacter)
+	if vPlayer == nil then return end
+	local myHumanoid = vCharacter:FindFirstChild("Humanoid")
+	if myHumanoid == nil then return end
+
+	if humanoid ~= nil and myHumanoid ~= humanoid then 		
+		tagHumanoid(humanoid, vPlayer)
+		humanoid:TakeDamage(damage)
+		AwayFromCharacter = false
+		wait(1.0)
+		untagHumanoid(humanoid)
+		print(hit.Parent)
+	end
+	if humanoid == nil and hit.Parent.Name ~= "Chakra" then
+		print(hit.Parent)
+		AwayFromCharacter = false
+	end
+end
+
+
+
+
+function tagHumanoid(humanoid, player)
+	local creatorTag = Instance.new("ObjectValue")
+	creatorTag.Name = "creator"
+	creatorTag.Parent = humanoid
+	creatorTag.Value = player
+end
+
+function untagHumanoid()
+	if humanoid ~= nil then 
+		local tag = humanoid:FindFirstChild("creator")
+		if tag ~= nil then 
+			tag.Parent = nil
+		end
+	end
+end
+
+function onActivated()
+	--if game.Workspace:FindFirstChild("ThrownStar") ~= nil then game.Workspace:FindFirstChild("ThrownStar"):Remove() end
+	if not Tool.Enabled then 
+		return
+	end
+	
+	Tool.Enabled = false
+	local character = Tool.Parent
+	if character == nil then
+		print("No character")
+		Tool.Enabled = true
+		return
+	end
+	local humanoid = character.Humanoid
+	if humanoid  == nil then 
+		print("No Humanoid")
+		Tool.Enabled = true
+		return
+	end
+	
+	local Animation = Tool.ChakraThrow
+	if humanoid and humanoid.RigType == Enum.HumanoidRigType.R15 then
+		Animation = Tool.R15ChakraThrow
+	end
+	
+	chakraThrow = humanoid:LoadAnimation(Animation)
+
+	starClone = Tool.Handle:Clone()
+	starClone.Transparency = 0
+	local targetPos = humanoid.TargetPoint
+	local lookAt = (targetPos - character.Head.Position).unit
+	--local ThrowAnim = humanoid:	LoadAnimation(Tool.Spin)
+	--ThrowAnim:Play()
+	if chakraThrow then chakraThrow:Play() end
+	wait(0.2)
+	Tool.Handle.Transparency = 1.0	
+	shoot(lookAt, starClone)
+end
+
+function onEquipped()
+	count = 0
+	Tool.Handle.Transparency = 0.0
+	AwayFromCharacter = true
+	wait(1.0)
+	Tool.Enabled = true
+end
+
+function onUnequipped()
+	Tool.Handle.Transparency = 0.0
+	if starClone then starClone:Destroy() end
+	if chakraSpin then chakraSpin:Stop() end
+	if chakraThrow then chakraThrow:Stop() end
+	if connection then connection:disconnect() end
+	count = 0
+end
+
+Tool.Activated:connect(onActivated)
+Tool.Equipped:connect(onEquipped)
+Tool.Unequipped:connect(onUnequipped)]]></ProtectedString>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+		</Item>
+		<Item class="Animation" referent="RBX33BEA059168F40B79FC4EFB4D95759C1">
+			<Properties>
+				<Content name="AnimationId"><url>rbxassetid://821961491</url></Content>
+				<string name="Name">R15ChakraThrow</string>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+		</Item>
+		<Item class="Camera" referent="RBXDC5F4E1F15594BEC9E142DFA5EF1980A">
+			<Properties>
+				<CoordinateFrame name="CFrame">
+					<X>0.741010427</X>
+					<Y>5.5267148</Y>
+					<Z>-2.06700563</Z>
+					<R00>-0.9912135</R00>
+					<R01>-0.00345976301</R01>
+					<R02>-0.132226765</R02>
+					<R10>2.32830671e-10</R10>
+					<R11>0.999657989</R11>
+					<R12>-0.0261564255</R12>
+					<R20>0.13227202</R20>
+					<R21>-0.0259266011</R21>
+					<R22>-0.99087441</R22>
+				</CoordinateFrame>
+				<Ref name="CameraSubject">null</Ref>
+				<token name="CameraType">0</token>
+				<float name="FieldOfView">70</float>
+				<CoordinateFrame name="Focus">
+					<X>1.00546396</X>
+					<Y>5.57902765</Y>
+					<Z>-0.085256815</Z>
+					<R00>1</R00>
+					<R01>0</R01>
+					<R02>0</R02>
+					<R10>0</R10>
+					<R11>1</R11>
+					<R12>0</R12>
+					<R20>0</R20>
+					<R21>0</R21>
+					<R22>1</R22>
+				</CoordinateFrame>
+				<bool name="HeadLocked">true</bool>
+				<float name="HeadScale">1</float>
+				<string name="Name">ThumbnailCamera</string>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+		</Item>
+	</Item>
+</roblox>

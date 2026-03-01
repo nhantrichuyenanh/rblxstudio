@@ -1,0 +1,554 @@
+<roblox xmlns:xmime="http://www.w3.org/2005/05/xmlmime" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.roblox.com/roblox.xsd" version="4">
+	<External>null</External>
+	<External>nil</External>
+	<Item class="Tool" referent="RBXB282E6731D67494CABBE33FF85DD276B">
+		<Properties>
+			<bool name="CanBeDropped">true</bool>
+			<bool name="Enabled">true</bool>
+			<CoordinateFrame name="Grip">
+				<X>0.150000006</X>
+				<Y>0</Y>
+				<Z>-0.5</Z>
+				<R00>1</R00>
+				<R01>0</R01>
+				<R02>0</R02>
+				<R10>0</R10>
+				<R11>0</R11>
+				<R12>-1</R12>
+				<R20>0</R20>
+				<R21>1</R21>
+				<R22>0</R22>
+			</CoordinateFrame>
+			<bool name="ManualActivationOnly">false</bool>
+			<string name="Name">Carrot</string>
+			<bool name="RequiresHandle">true</bool>
+			<BinaryString name="Tags"></BinaryString>
+			<Content name="TextureId"><url>http://www.roblox.com/asset/?id=50452912 </url></Content>
+			<string name="ToolTip"></string>
+		</Properties>
+		<Item class="Sound" referent="RBXF0A5CFDF480545F28F5818C2579DFD68">
+			<Properties>
+				<float name="EmitterSize">10</float>
+				<bool name="Looped">false</bool>
+				<string name="Name">BiteSound</string>
+				<bool name="PlayOnRemove">false</bool>
+				<float name="PlaybackSpeed">1</float>
+				<bool name="Playing">false</bool>
+				<token name="RollOffMode">0</token>
+				<Ref name="SoundGroup">null</Ref>
+				<Content name="SoundId"><url>http://www.roblox.com/asset/?id=50442259</url></Content>
+				<BinaryString name="Tags"></BinaryString>
+				<double name="TimePosition">0</double>
+				<float name="Volume">1</float>
+				<float name="xmlRead_MaxDistance_3">10000</float>
+			</Properties>
+		</Item>
+		<Item class="IntValue" referent="RBX1CF342BCA63E4EFAB699D5914F987489">
+			<Properties>
+				<string name="Name">BunnyActive</string>
+				<BinaryString name="Tags"></BinaryString>
+				<int name="Value">0</int>
+			</Properties>
+		</Item>
+		<Item class="Script" referent="RBXE2AB0C14E5EF4F4DAD79B40CD1991057">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">BunnyScript</string>
+				<string name="ScriptGuid">{EA112B9E-E028-4042-BA90-4496A32E9CB9}</string>
+				<ProtectedString name="Source"><![CDATA[local InsertService = game:GetService("InsertService")
+
+local Tool = script.Parent
+local Carrot = Tool.Handle
+
+local PackageMaker = require(836581200)
+
+Tool.Enabled = true
+local vCharacter = Tool.Parent
+
+local insertTable = {}
+local headTable = {}
+local torsoTable = {}
+
+local co
+
+local biteSound
+
+local bunnyActive = Tool:FindFirstChild("BunnyActive")
+
+-- getBunny
+bunnyLeftArm = InsertService:LoadAsset(50383173)
+bunnyLeftLeg = InsertService:LoadAsset(50383219)
+bunnyRightArm = InsertService:LoadAsset(50383126)
+bunnyRightLeg = InsertService:LoadAsset(50383252)
+bunnyTorso = InsertService:LoadAsset(50383074)
+
+bunnyFace = InsertService:LoadAsset(1080949)
+
+
+--if bunnyLeftArm then bunnyLeftArm = bunnyLeftArm:GetChildren() bunnyLeftArm = bunnyLeftArm[1] end
+--if bunnyRightArm then bunnyRightArm = bunnyRightArm:GetChildren() bunnyRightArm = bunnyRightArm[1] end
+--if bunnyLeftLeg then bunnyLeftLeg = bunnyLeftLeg:GetChildren() bunnyLeftLeg = bunnyLeftLeg[1] end
+--if bunnyRightLeg then bunnyRightLeg = bunnyRightLeg:GetChildren() bunnyRightLeg = bunnyRightLeg[1] end
+--if bunnyTorso then bunnyTorso = bunnyTorso:GetChildren() bunnyTorso = bunnyTorso[1] end
+if bunnyFace then bunnyFace = bunnyFace:GetChildren() bunnyFace = bunnyFace[1] end
+
+--
+
+-- Wait until Tool is picked up or equipped by Character
+while vCharacter:FindFirstChild("Humanoid") == nil do
+	wait()
+	vCharacter = Tool.Parent
+end
+
+charChildren = vCharacter:GetChildren()
+for c = 1, #charChildren do 
+	if not charChildren[c]:IsA("BasePart") and not charChildren[c]:IsA("BaseScript") and not charChildren[c]:IsA("Humanoid") and not charChildren[c]:IsA("Tool") and not charChildren[c]:IsA("ForceField") then 
+		clone = charChildren[c]:Clone()
+		table.insert(insertTable, clone)						
+	end
+	if charChildren[c].Name == "Head" then
+		headChildren = charChildren[c]:GetChildren()
+		for a =1, #headChildren do 
+			if headChildren[a]:IsA("Decal") or headChildren[a]:IsA("SpecialMesh") then
+				clone = headChildren[a]:Clone()
+				table.insert(headTable, clone)											
+			end
+		end
+	end
+	if charChildren[c].Name == "Torso" or charChildren[c].Name == "UpperTorso" then 
+		torsoChildren = charChildren[c]:GetChildren()
+		for x=1, #torsoChildren do 
+			if torsoChildren[x]:IsA("Decal") then 
+				clone = torsoChildren[x]:Clone()
+				table.insert(torsoTable, clone)
+			end
+		end
+	end
+end
+
+function onActivated()	
+
+	if Tool.Enabled == false then
+		return
+	end	
+
+	Tool.Enabled = false
+
+	biteSound = Tool:FindFirstChild("BiteSound")
+
+	vCharacter = Tool.Parent
+	myHumanoid = vCharacter:FindFirstChild("Humanoid")
+	if myHumanoid == nil then
+		return
+	end
+
+	if biteSound then biteSound:Play() end
+
+	graphics = vCharacter:GetChildren()
+	myHumanoid:RemoveAccessories()
+	for j = 1, #graphics do 
+		if not graphics[j]:IsA("BasePart") and not graphics[j]:IsA("BaseScript") and not graphics[j]:IsA("Humanoid") and not graphics[j]:IsA("Tool") and not graphics[j]:IsA("ForceField") then					
+			graphics[j]:Destroy()					
+		end	
+	end
+
+--	bLA = bunnyLeftArm:Clone() bLA.Parent = vCharacter
+--	bLL = bunnyLeftLeg:Clone() bLL.Parent = vCharacter
+--	bRA = bunnyRightArm:Clone() bRA.Parent = vCharacter
+--	bRL = bunnyRightLeg:Clone() bRL.Parent = vCharacter
+--	bT = bunnyTorso:Clone() bT.Parent = vCharacter
+
+	PackageMaker.ApplyBodyPart(vCharacter, bunnyLeftArm.R15, bunnyLeftArm.R6) 
+	PackageMaker.ApplyBodyPart(vCharacter, bunnyLeftLeg.R15, bunnyLeftLeg.R6) 
+	PackageMaker.ApplyBodyPart(vCharacter, bunnyRightArm.R15, bunnyRightArm.R6) 
+	PackageMaker.ApplyBodyPart(vCharacter, bunnyRightLeg.R15, bunnyRightLeg.R6) 
+	PackageMaker.ApplyBodyPart(vCharacter, bunnyTorso.R15, bunnyTorso.R6)
+
+	myHumanoid:AddAccessory(bunnyFace:Clone())
+
+	if co == nil or coroutine.status(co) == 'dead' then
+		print("Coroutine created")
+		co = coroutine.create(reset)		
+		coroutine.resume(co)
+		bunnyActive.Value = 1
+	else
+		print(coroutine.status(co))
+		-- do nothing
+	end
+
+	Carrot.Transparency = 1.0
+
+	if myHumanoid then myHumanoid.WalkSpeed = 28 end
+	
+	while bunnyActive.Value == 1 do wait(1) end
+	Tool.Enabled = true
+end
+
+function reset()
+	wait(25)
+	bunnyActive.Value = 0
+	Carrot.Transparency = 0.0
+
+	myHumanoid = vCharacter:FindFirstChild("Humanoid")
+	if myHumanoid then 
+		myHumanoid.WalkSpeed = 16
+	end
+	if insertTable ~= nil then 
+		if morphResetSound then morphResetSound:Play() end
+		graphics = vCharacter:GetChildren()
+		for j = 1, #graphics do 
+			if not graphics[j]:IsA("BasePart") and not graphics[j]:IsA("BaseScript") and not graphics[j]:IsA("Humanoid") and not graphics[j]:IsA("Tool") then					
+				graphics[j]:Destroy()					
+			end
+		end
+		for i =1, #insertTable do 
+			clone = insertTable[i]:Clone()
+			clone.Parent = vCharacter
+		end		
+	end
+end
+
+function onEquipped()
+	if bunnyActive.Value == 1 then Carrot.Transparency = 1.0 end
+end
+
+function onUnequipped()	
+	--if bunnyActive then bunnyActive.Value = 0 end
+	if Carrot then Carrot.Transparency = 0.0 end
+end
+
+Tool.Activated:connect(onActivated)
+Tool.Equipped:connect(onEquipped)
+Tool.Unequipped:connect(onUnequipped)
+]]></ProtectedString>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+		</Item>
+		<Item class="LocalScript" referent="RBX35673046C06F46F69D9B26523E29766A">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">BunnyPunchScript</string>
+				<string name="ScriptGuid">{CFE7FA4E-B9BB-4C00-8EE3-5CDF63A17A8A}</string>
+				<ProtectedString name="Source"><![CDATA[local Tool = script.Parent
+local Carrot = Tool.Handle
+
+local vCharacter
+local connection
+
+local bunnyActive = Tool:FindFirstChild("BunnyActive")
+
+function blow(hit)
+	humanoid = hit.Parent:FindFirstChild("Humanoid")
+	torso = hit.Parent:FindFirstChild("Torso") or hit.Parent:FindFirstChild("UpperTorso")
+	vCharacter = Tool.Parent
+	myHumanoid = vCharacter:FindFirstChild("Humanoid")
+	vPlayer = game.Players:GetPlayerFromCharacter(vCharacter)
+	if humanoid ~= nil and myHumanoid ~= nil and humanoid ~= myHumanoid then 
+		rightArm = vCharacter:FindFirstChild("Right Arm") or vCharacter:FindFirstChild("RightHand")
+		if rightArm then 
+			rightGrip = rightArm:FindFirstChild("RightGrip")
+			if rightGrip and (rightGrip.Part0 == Carrot or rightGrip.Part1 == Carrot) then 
+				fire = Carrot:FindFirstChild("Fire")
+				if fire then 
+					fire:Destroy()
+				end
+				if connection then 
+					connection:disconnect()
+				end
+				tagHumanoid(humanoid, vPlayer)
+				humanoid:TakeDamage(60)
+				bv = Instance.new("BodyVelocity")
+				bv.P = 100000
+				bv.maxForce = Vector3.new(bv.P, bv.P, bv.P)
+				bv.velocity = (torso.Position - vCharacter.Torso.Position).unit * 50.0
+				bv.Parent = torso
+				wait(1.0)
+				untagHumanoid(humanoid)				
+				if bv then bv:Destroy() end
+			end
+		end
+	end
+end
+
+function tagHumanoid(humanoid, player)
+	if humanoid then 
+		creatorTag = Instance.new("ObjectValue")
+		creatorTag.Name = "creator"
+		creatorTag.Value = player
+		creatorTag.Parent = humanoid 
+	end
+end
+
+function untagHumanoid(humanoid)
+	if humanoid then 
+		tag = humanoid:FindFirstChild("creator")
+		if tag then 
+			tag:Destroy() 
+		end
+	end
+end
+
+function onKeyDown(key)
+	if key:lower() == "q" and bunnyActive.Value == 1 then 
+		fire = Carrot:FindFirstChild("Fire")
+		if fire == nil then
+			wait(1.0)
+			vCharacter = Tool.Parent
+			myTorso = vCharacter:FindFirstChild("Torso") or vCharacter:FindFirstChild("UpperTorso")
+			if myTorso then 
+				fire = Instance.new("Fire")
+				fire.Parent = Carrot 			
+				connection = Carrot.Touched:connect(blow)
+			end
+		end
+	end
+end
+
+function onActivatedL()
+end
+
+function onEquippedL(mouse)
+	mouse.KeyDown:connect(onKeyDown)
+end
+
+function onUnequippedL()
+end
+
+Tool.Activated:connect(onActivatedL)
+Tool.Equipped:connect(onEquippedL)
+Tool.Unequipped:connect(onUnequippedL)]]></ProtectedString>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+		</Item>
+		<Item class="LocalScript" referent="RBX747C440E7DD24D5B974E3D2196822FE3">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">Local Gui</string>
+				<string name="ScriptGuid">{BC98FD28-DC46-442E-B8B2-FC01581B7804}</string>
+				<ProtectedString name="Source"><![CDATA[Tool = script.Parent
+
+local stillEquipped = false
+
+function onEquippedLocal(mouse)
+	
+	stillEquipped = true
+	if mouse == nil then 
+		print("Mouse not found")
+		return
+	end
+	
+	while stillEquipped  do 
+		print("Setting Mouse to go")
+		mouse.Icon = "rbxasset://textures\\GunCursor.png"
+		while Tool.Enabled and stillEquipped do 
+			wait(0.01)
+		end
+		print("Setting Mouse to go")
+		mouse.Icon = "rbxasset://textures\\GunWaitCursor.png"
+		while not Tool.Enabled and stillEquipped do
+			wait(0.01)
+		end		
+	end
+end
+
+function onUnequippedLocal()
+	stillEquipped = false
+end
+
+Tool.Equipped:connect(onEquippedLocal)
+Tool.Unequipped:connect(onUnequippedLocal)
+]]></ProtectedString>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+		</Item>
+		<Item class="Part" referent="RBXF6AE0F24776B4AF590439A83BEF33EFC">
+			<Properties>
+				<bool name="Anchored">false</bool>
+				<float name="BackParamA">-0.5</float>
+				<float name="BackParamB">0.5</float>
+				<token name="BackSurface">0</token>
+				<token name="BackSurfaceInput">0</token>
+				<float name="BottomParamA">-0.5</float>
+				<float name="BottomParamB">0.5</float>
+				<token name="BottomSurface">0</token>
+				<token name="BottomSurfaceInput">0</token>
+				<CoordinateFrame name="CFrame">
+					<X>1.35000098</X>
+					<Y>5.60000801</Y>
+					<Z>-0.499997884</Z>
+					<R00>1</R00>
+					<R01>1.14595355e-06</R01>
+					<R02>1.14595093e-06</R02>
+					<R10>-1.60369894e-12</R10>
+					<R11>-0.707105637</R11>
+					<R12>0.707108438</R12>
+					<R20>1.62062076e-06</R20>
+					<R21>-0.707108438</R21>
+					<R22>-0.707105637</R22>
+				</CoordinateFrame>
+				<bool name="CanCollide">true</bool>
+				<int name="CollisionGroupId">0</int>
+				<Color3uint8 name="Color3uint8">4284702562</Color3uint8>
+				<PhysicalProperties name="CustomPhysicalProperties">
+					<CustomPhysics>false</CustomPhysics>
+				</PhysicalProperties>
+				<float name="Elasticity">0.5</float>
+				<float name="Friction">0.300000012</float>
+				<float name="FrontParamA">-0.5</float>
+				<float name="FrontParamB">0.5</float>
+				<token name="FrontSurface">0</token>
+				<token name="FrontSurfaceInput">0</token>
+				<float name="LeftParamA">-0.5</float>
+				<float name="LeftParamB">0.5</float>
+				<token name="LeftSurface">0</token>
+				<token name="LeftSurfaceInput">0</token>
+				<bool name="Locked">true</bool>
+				<token name="Material">256</token>
+				<string name="Name">Handle</string>
+				<float name="Reflectance">0</float>
+				<float name="RightParamA">-0.5</float>
+				<float name="RightParamB">0.5</float>
+				<token name="RightSurface">0</token>
+				<token name="RightSurfaceInput">0</token>
+				<Vector3 name="RotVelocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<BinaryString name="Tags"></BinaryString>
+				<float name="TopParamA">-0.5</float>
+				<float name="TopParamB">0.5</float>
+				<token name="TopSurface">0</token>
+				<token name="TopSurfaceInput">0</token>
+				<float name="Transparency">0</float>
+				<Vector3 name="Velocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<token name="formFactorRaw">3</token>
+				<token name="shape">1</token>
+				<Vector3 name="size">
+					<X>0.210000351</X>
+					<Y>0.249999717</Y>
+					<Z>1.52999973</Z>
+				</Vector3>
+			</Properties>
+			<Item class="SpecialMesh" referent="RBXE28E0241DD824A3185943F77DE076C7D">
+				<Properties>
+					<token name="LODX">2</token>
+					<token name="LODY">2</token>
+					<Content name="MeshId"><url>http://www.roblox.com/asset/?id= 50452834 </url></Content>
+					<token name="MeshType">5</token>
+					<string name="Name">Mesh</string>
+					<Vector3 name="Offset">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+					</Vector3>
+					<Vector3 name="Scale">
+						<X>0.400000006</X>
+						<Y>0.400000006</Y>
+						<Z>0.400000006</Z>
+					</Vector3>
+					<BinaryString name="Tags"></BinaryString>
+					<Content name="TextureId"><url>http://www.roblox.com/asset/?id=50368013</url></Content>
+					<Vector3 name="VertexColor">
+						<X>1</X>
+						<Y>1</Y>
+						<Z>1</Z>
+					</Vector3>
+				</Properties>
+			</Item>
+			<Item class="Attachment" referent="RBX5A07FEA1E46047F1AD04B539B019C04E">
+				<Properties>
+					<CoordinateFrame name="CFrame">
+						<X>0.150000095</X>
+						<Y>0</Y>
+						<Z>-0.49999997</Z>
+						<R00>1</R00>
+						<R01>0</R01>
+						<R02>6.31088724e-30</R02>
+						<R10>6.31088724e-30</R10>
+						<R11>0</R11>
+						<R12>-1</R12>
+						<R20>0</R20>
+						<R21>1</R21>
+						<R22>0</R22>
+					</CoordinateFrame>
+					<string name="Name">RightGripAttachment</string>
+					<BinaryString name="Tags"></BinaryString>
+					<bool name="Visible">false</bool>
+				</Properties>
+			</Item>
+		</Item>
+		<Item class="SpecialMesh" referent="RBX9527F7EDAB234B9F8FAF62E2B0BA0C4B">
+			<Properties>
+				<token name="LODX">2</token>
+				<token name="LODY">2</token>
+				<Content name="MeshId"><url>http://www.roblox.com/asset/?id=50443257</url></Content>
+				<token name="MeshType">5</token>
+				<string name="Name">Mesh</string>
+				<Vector3 name="Offset">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<Vector3 name="Scale">
+					<X>0.400000006</X>
+					<Y>0.400000006</Y>
+					<Z>0.400000006</Z>
+				</Vector3>
+				<BinaryString name="Tags"></BinaryString>
+				<Content name="TextureId"><url>http://www.roblox.com/asset/?id=50368013</url></Content>
+				<Vector3 name="VertexColor">
+					<X>1</X>
+					<Y>1</Y>
+					<Z>1</Z>
+				</Vector3>
+			</Properties>
+		</Item>
+		<Item class="Camera" referent="RBXA4C21F2D99F5465FB9A978BDB7E358BC">
+			<Properties>
+				<CoordinateFrame name="CFrame">
+					<X>3.04755282</X>
+					<Y>5.63320541</Y>
+					<Z>-0.926330328</Z>
+					<R00>-0.146096513</R00>
+					<R01>0.0155181959</R01>
+					<R02>0.989148617</R02>
+					<R10>-0</R10>
+					<R11>0.999876976</R11>
+					<R12>-0.0156865064</R12>
+					<R20>-0.989270389</R20>
+					<R21>-0.00229174388</R21>
+					<R22>-0.146078527</R22>
+				</CoordinateFrame>
+				<Ref name="CameraSubject">null</Ref>
+				<token name="CameraType">0</token>
+				<float name="FieldOfView">70</float>
+				<CoordinateFrame name="Focus">
+					<X>1.06925488</X>
+					<Y>5.66457844</Y>
+					<Z>-0.634173155</Z>
+					<R00>1</R00>
+					<R01>0</R01>
+					<R02>0</R02>
+					<R10>0</R10>
+					<R11>1</R11>
+					<R12>0</R12>
+					<R20>0</R20>
+					<R21>0</R21>
+					<R22>1</R22>
+				</CoordinateFrame>
+				<bool name="HeadLocked">true</bool>
+				<float name="HeadScale">1</float>
+				<string name="Name">ThumbnailCamera</string>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+		</Item>
+	</Item>
+</roblox>

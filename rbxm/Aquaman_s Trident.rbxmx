@@ -1,0 +1,614 @@
+<roblox xmlns:xmime="http://www.w3.org/2005/05/xmlmime" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.roblox.com/roblox.xsd" version="4">
+	<Meta name="ExplicitAutoJoints">false</Meta>
+	<External>null</External>
+	<External>nil</External>
+	<Item class="Tool" referent="RBXEC1FE83FC52F4179ADD34D5499A37EEB">
+		<Properties>
+			<bool name="CanBeDropped">true</bool>
+			<bool name="Enabled">true</bool>
+			<CoordinateFrame name="Grip">
+				<X>0</X>
+				<Y>-0.429466248</Y>
+				<Z>0</Z>
+				<R00>1</R00>
+				<R01>0</R01>
+				<R02>0</R02>
+				<R10>0</R10>
+				<R11>1</R11>
+				<R12>-1.19248806e-08</R12>
+				<R20>0</R20>
+				<R21>1.19248806e-08</R21>
+				<R22>1</R22>
+			</CoordinateFrame>
+			<bool name="ManualActivationOnly">false</bool>
+			<string name="Name">AquamanTrident</string>
+			<bool name="RequiresHandle">true</bool>
+			<BinaryString name="Tags"></BinaryString>
+			<Content name="TextureId"><url>rbxassetid://2548898714</url></Content>
+			<string name="ToolTip"></string>
+		</Properties>
+		<Item class="Script" referent="RBX28F96211941B46A892A610AEEFE68AEB">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">Script</string>
+				<string name="ScriptGuid">{C36257E2-7D1D-46A9-B290-B8968F5C8A42}</string>
+				<ProtectedString name="Source"><![CDATA[local Tool = script.Parent
+local last_attack = 0
+local r = game:service("RunService")
+local humanoid = nil
+
+function onTouched(part)
+
+	local h = part.Parent:FindFirstChild("Humanoid")
+	if h ~= nil and h ~= humanoid and Tool.Attacking.Value == true then
+		h:TakeDamage(5)
+	end
+
+end
+
+function onEquipped()
+	humanoid = Tool.Parent:FindFirstChild("Humanoid")
+end
+
+Tool.Equipped:connect(onEquipped)
+Tool.Handle.Touched:connect(onTouched)
+
+function throwTrident()
+
+	wait(0.3)
+
+	local v = (humanoid.TargetPoint - Tool.Parent.Head.Position).unit
+
+	local trident = Tool.Handle:clone()
+	trident.CanCollide = true
+	trident.Locked = true
+	trident.Position = Vector3.new(trident.Position.x,trident.Position.y + 5, trident.Position.z)
+	trident.Velocity = v * 70
+	trident.CFrame = CFrame.new(trident.Position, humanoid.TargetPoint)
+	trident.CFrame = trident.CFrame * CFrame.Angles(math.rad(-90),0,0)
+
+	local script = Tool.TridentScript:clone()
+	script.Parent = trident
+	script.Disabled = false
+	
+	local force = Instance.new("BodyForce")
+	force.force = Vector3.new(0,workspace.Gravity * trident:GetMass() * 0.98,0)
+	force.Parent = trident
+
+	Tool.Handle.Transparency = 1
+	trident.Name = "Trident"
+	trident.Parent = game.Workspace
+
+	wait(4)
+	Tool.Handle.Transparency = 0
+
+end
+
+Tool.Enabled = true
+function onActivated()
+
+	if not Tool.Enabled then
+		return
+	end
+
+	Tool.Enabled = false
+
+	t = r.Stepped:wait()
+
+	if (t - last_attack < .2) then
+		changeValueTo("throw")
+		Tool.Handle.Throw:Play()
+		throwTrident()
+	else
+		Tool.Handle.Stab:Play()
+		changeValueTo("stab")
+	end
+
+	last_attack = t
+
+	Tool.Enabled = true
+	
+end
+
+function changeValueTo(string)
+
+	Tool.Action.Value = "changer"
+	wait()
+	Tool.Action.Value = string
+	
+end
+
+
+Tool.Activated:connect(onActivated)
+]]></ProtectedString>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+		</Item>
+		<Item class="LocalScript" referent="RBXE023EFF028084A15ADBEDB3A8BBC0F4D">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">LocalScript</string>
+				<string name="ScriptGuid">{0EBF6A0A-F801-4A82-A6D0-A7D3FD938B4F}</string>
+				<ProtectedString name="Source"><![CDATA[local Tool = script.Parent
+local stabAnim = nil
+local throwAnim = nil
+local h = nil
+local con = nil
+
+local animations =
+{
+	tridentstab = nil;
+	tridentthrow = nil;
+}
+
+function standardGrip()
+	Tool.GripPos = Vector3.new(0,0,0)
+end
+
+
+function onEquippedLocal(mouse)
+
+	h = Tool.Parent:FindFirstChild("Humanoid")
+	if h == nil then return end
+	if h and h.RigType == Enum.HumanoidRigType.R15 then
+		animations =
+		{
+			tridentstab = Tool.Animations.R15.tridentstab;
+			tridentthrow = Tool.Animations.R15.tridentthrow;
+		}
+	else
+		animations =
+		{
+			tridentstab = Tool.Animations.R6.tridentstab;
+			tridentthrow = Tool.Animations.R6.tridentthrow;
+		}
+	end
+	stabAnim = h:LoadAnimation(animations.tridentstab)
+	
+	stabAnim.KeyframeReached:connect(function(key)
+		if key == "end" then
+			Tool.Attacking.Value = false
+		end
+	end)
+
+	throwAnim = h:LoadAnimation(animations.tridentthrow)
+	mouse.Icon = "rbxasset://textures\\GunCursor.png"
+
+end
+
+function onUnequippedLocal()
+
+	stabAnim:Stop()
+	stabAnim:Destroy()
+
+	throwAnim:Stop()
+	throwAnim:Destroy()
+
+end
+
+Tool.Equipped:connect(onEquippedLocal)
+Tool.Unequipped:connect(onUnequippedLocal)
+
+function animationManager(value)
+	
+	if value == "stab" then
+		Tool.GripPos = Vector3.new(0,-1.8,0)
+		Tool.Attacking.Value = true
+		stabAnim:Play()
+		delay(1.1,standardGrip)
+	elseif value == "throw"then
+		Tool.GripUp = Vector3.new(0,-1,0)
+		throwAnim:Play()
+		wait(1)
+		Tool.GripUp = Vector3.new(0,1,0)
+		wait(4)
+	end
+
+end
+
+con = Tool:WaitForChild("Action").Changed:connect(animationManager)
+
+]]></ProtectedString>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+		</Item>
+		<Item class="StringValue" referent="RBXD89D64A6F2B148D2BACBB43FD4AA6261">
+			<Properties>
+				<string name="Name">Action</string>
+				<BinaryString name="Tags"></BinaryString>
+				<string name="Value">beginnings</string>
+			</Properties>
+		</Item>
+		<Item class="Script" referent="RBXFD301AAB7C6B40CAAE20D259FA71FE02">
+			<Properties>
+				<bool name="Disabled">true</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">TridentScript</string>
+				<string name="ScriptGuid">{CBB30B70-3641-4853-8429-5D47D9198957}</string>
+				<ProtectedString name="Source"><![CDATA[local trident = script.Parent
+local debris = game:GetService("Debris")
+local impaled = false
+
+function onTouched(part)
+
+	if not impaled then
+		
+		impaled = true
+		debris:AddItem(trident, 5)
+
+		local weld = Instance.new("Weld")
+		weld.Part0 = trident
+		weld.Parent = trident
+
+		local h = part.Parent:FindFirstChild("Humanoid")
+		if h ~= nil then
+			h:TakeDamage(21)
+			weld.Part1 = h.Parent.Torso
+		else	
+			weld.Part1 = part
+			weld.C0 = CFrame.new(trident.Position - part.Position)
+		end
+
+	end
+
+end
+
+trident.Touched:connect(onTouched)
+
+wait(10)
+
+trident:remove()
+]]></ProtectedString>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+		</Item>
+		<Item class="BoolValue" referent="RBX2657D9F2A6A04F6D83EFF80DF4F0A7CA">
+			<Properties>
+				<string name="Name">Attacking</string>
+				<BinaryString name="Tags"></BinaryString>
+				<bool name="Value">false</bool>
+			</Properties>
+		</Item>
+		<Item class="Folder" referent="RBX625E4505B6554E0EBBD78CF27359806C">
+			<Properties>
+				<string name="Name">Animations</string>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+			<Item class="Folder" referent="RBX34549A3EDE1B4DBAA4A91114ACB85494">
+				<Properties>
+					<string name="Name">R15</string>
+					<BinaryString name="Tags"></BinaryString>
+				</Properties>
+				<Item class="Animation" referent="RBX3B7F5E85972C4ED5A531EA68769DA471">
+					<Properties>
+						<Content name="AnimationId"><url>rbxassetid://854413741</url></Content>
+						<string name="Name">tridentthrow</string>
+						<BinaryString name="Tags"></BinaryString>
+					</Properties>
+				</Item>
+				<Item class="Animation" referent="RBX8E0086036D424EF8B51A5DDF60A8003E">
+					<Properties>
+						<Content name="AnimationId"><url>rbxassetid://854412630</url></Content>
+						<string name="Name">tridentstab</string>
+						<BinaryString name="Tags"></BinaryString>
+					</Properties>
+				</Item>
+			</Item>
+			<Item class="Folder" referent="RBX61E77D0FFEA0427E8958FD2B2076E965">
+				<Properties>
+					<string name="Name">R6</string>
+					<BinaryString name="Tags"></BinaryString>
+				</Properties>
+				<Item class="Animation" referent="RBX07BD282B53F8471C827392BFA90BCE75">
+					<Properties>
+						<Content name="AnimationId"><url>http://www.roblox.com/Asset?ID=30704030</url></Content>
+						<string name="Name">tridentthrow</string>
+						<BinaryString name="Tags"></BinaryString>
+					</Properties>
+				</Item>
+				<Item class="Animation" referent="RBX6A21C3FD083A45D990915476F15ED87F">
+					<Properties>
+						<Content name="AnimationId"><url>http://www.roblox.com/Asset?ID=30704021</url></Content>
+						<string name="Name">tridentstab</string>
+						<BinaryString name="Tags"></BinaryString>
+					</Properties>
+				</Item>
+			</Item>
+		</Item>
+		<Item class="Part" referent="RBXB19470E5187E49CBA4A24C84DCE04292">
+			<Properties>
+				<bool name="Anchored">false</bool>
+				<float name="BackParamA">-0.5</float>
+				<float name="BackParamB">0.5</float>
+				<token name="BackSurface">0</token>
+				<token name="BackSurfaceInput">0</token>
+				<float name="BottomParamA">-0.5</float>
+				<float name="BottomParamB">0.5</float>
+				<token name="BottomSurface">4</token>
+				<token name="BottomSurfaceInput">0</token>
+				<CoordinateFrame name="CFrame">
+					<X>0</X>
+					<Y>17.3300018</Y>
+					<Z>22.0100002</Z>
+					<R00>0.491485178</R00>
+					<R01>0.728183985</R01>
+					<R02>0.477692872</R02>
+					<R10>-0.609099209</R10>
+					<R11>0.679458439</R11>
+					<R12>-0.409065366</R12>
+					<R20>-0.622447252</R20>
+					<R21>-0.0899127722</R21>
+					<R22>0.777480066</R22>
+				</CoordinateFrame>
+				<bool name="CanCollide">true</bool>
+				<int name="CollisionGroupId">0</int>
+				<Color3uint8 name="Color3uint8">4288914085</Color3uint8>
+				<PhysicalProperties name="CustomPhysicalProperties">
+					<CustomPhysics>false</CustomPhysics>
+				</PhysicalProperties>
+				<float name="FrontParamA">-0.5</float>
+				<float name="FrontParamB">0.5</float>
+				<token name="FrontSurface">0</token>
+				<token name="FrontSurfaceInput">0</token>
+				<float name="LeftParamA">-0.5</float>
+				<float name="LeftParamB">0.5</float>
+				<token name="LeftSurface">0</token>
+				<token name="LeftSurfaceInput">0</token>
+				<bool name="Locked">true</bool>
+				<bool name="Massless">false</bool>
+				<token name="Material">256</token>
+				<string name="Name">Handle</string>
+				<float name="Reflectance">0</float>
+				<float name="RightParamA">-0.5</float>
+				<float name="RightParamB">0.5</float>
+				<token name="RightSurface">0</token>
+				<token name="RightSurfaceInput">0</token>
+				<int name="RootPriority">0</int>
+				<Vector3 name="RotVelocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<BinaryString name="Tags"></BinaryString>
+				<float name="TopParamA">-0.5</float>
+				<float name="TopParamB">0.5</float>
+				<token name="TopSurface">3</token>
+				<token name="TopSurfaceInput">0</token>
+				<float name="Transparency">0</float>
+				<Vector3 name="Velocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<token name="formFactorRaw">2</token>
+				<token name="shape">1</token>
+				<Vector3 name="size">
+					<X>1</X>
+					<Y>0.400000006</Y>
+					<Z>6</Z>
+				</Vector3>
+			</Properties>
+			<Item class="SpecialMesh" referent="RBX13323AB98FBC4911B7A589FA5E00A8CB">
+				<Properties>
+					<token name="LODX">2</token>
+					<token name="LODY">2</token>
+					<Content name="MeshId"><url>rbxassetid://2548898227</url></Content>
+					<token name="MeshType">5</token>
+					<string name="Name">Mesh</string>
+					<Vector3 name="Offset">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+					</Vector3>
+					<Vector3 name="Scale">
+						<X>4</X>
+						<Y>4</Y>
+						<Z>4</Z>
+					</Vector3>
+					<BinaryString name="Tags"></BinaryString>
+					<Content name="TextureId"><url>rbxassetid://2548898507</url></Content>
+					<Vector3 name="VertexColor">
+						<X>1</X>
+						<Y>1</Y>
+						<Z>1</Z>
+					</Vector3>
+				</Properties>
+			</Item>
+			<Item class="Sound" referent="RBXC5FCC065D22846848C7012BF3459C1EB">
+				<Properties>
+					<float name="EmitterSize">10</float>
+					<bool name="Looped">false</bool>
+					<string name="Name">Throw</string>
+					<bool name="PlayOnRemove">false</bool>
+					<float name="PlaybackSpeed">1</float>
+					<bool name="Playing">false</bool>
+					<token name="RollOffMode">0</token>
+					<Ref name="SoundGroup">null</Ref>
+					<Content name="SoundId"><url>http://www.roblox.com/asset/?id=30715302</url></Content>
+					<BinaryString name="Tags"></BinaryString>
+					<double name="TimePosition">0</double>
+					<float name="Volume">0.5</float>
+					<float name="xmlRead_MaxDistance_3">10000</float>
+				</Properties>
+			</Item>
+			<Item class="Sound" referent="RBX917B05FA10F1442381CEF59264EC3D2D">
+				<Properties>
+					<float name="EmitterSize">10</float>
+					<bool name="Looped">false</bool>
+					<string name="Name">Stab</string>
+					<bool name="PlayOnRemove">false</bool>
+					<float name="PlaybackSpeed">1</float>
+					<bool name="Playing">false</bool>
+					<token name="RollOffMode">0</token>
+					<Ref name="SoundGroup">null</Ref>
+					<Content name="SoundId"><url>http://www.roblox.com/asset/?id=30715280</url></Content>
+					<BinaryString name="Tags"></BinaryString>
+					<double name="TimePosition">0</double>
+					<float name="Volume">0.5</float>
+					<float name="xmlRead_MaxDistance_3">10000</float>
+				</Properties>
+			</Item>
+			<Item class="Attachment" referent="RBX6D6B0EEDC275445B8C1394921FF12AA3">
+				<Properties>
+					<CoordinateFrame name="CFrame">
+						<X>0</X>
+						<Y>-0.429466248</Y>
+						<Z>0</Z>
+						<R00>1</R00>
+						<R01>0</R01>
+						<R02>0</R02>
+						<R10>0</R10>
+						<R11>1</R11>
+						<R12>-1.19248806e-08</R12>
+						<R20>0</R20>
+						<R21>1.19248806e-08</R21>
+						<R22>1</R22>
+					</CoordinateFrame>
+					<string name="Name">RightGripAttachment</string>
+					<BinaryString name="Tags"></BinaryString>
+					<bool name="Visible">false</bool>
+				</Properties>
+			</Item>
+		</Item>
+		<Item class="Keyframe" referent="RBX0C9FA6720F2943069CAC6B95AD340A29">
+			<Properties>
+				<string name="Name">ThumbnailPose</string>
+				<BinaryString name="Tags"></BinaryString>
+				<float name="Time">0</float>
+			</Properties>
+			<Item class="Pose" referent="RBX440E9B4DD78D4E6EAB8434E7F2696501">
+				<Properties>
+					<CoordinateFrame name="CFrame">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+						<R00>1</R00>
+						<R01>0</R01>
+						<R02>0</R02>
+						<R10>0</R10>
+						<R11>1</R11>
+						<R12>0</R12>
+						<R20>0</R20>
+						<R21>0</R21>
+						<R22>1</R22>
+					</CoordinateFrame>
+					<token name="EasingDirection">1</token>
+					<token name="EasingStyle">0</token>
+					<string name="Name">UpperTorso</string>
+					<BinaryString name="Tags"></BinaryString>
+					<float name="Weight">0</float>
+				</Properties>
+				<Item class="Pose" referent="RBX728A388C63F94EC1B3E174ACB34F5C48">
+					<Properties>
+						<CoordinateFrame name="CFrame">
+							<X>0</X>
+							<Y>-6.70552254e-08</Y>
+							<Z>-5.96046448e-08</Z>
+							<R00>1</R00>
+							<R01>0</R01>
+							<R02>0</R02>
+							<R10>0</R10>
+							<R11>0.173648193</R11>
+							<R12>-0.98480773</R12>
+							<R20>0</R20>
+							<R21>0.98480773</R21>
+							<R22>0.173648193</R22>
+						</CoordinateFrame>
+						<token name="EasingDirection">1</token>
+						<token name="EasingStyle">0</token>
+						<string name="Name">RightUpperArm</string>
+						<BinaryString name="Tags"></BinaryString>
+						<float name="Weight">1</float>
+					</Properties>
+					<Item class="Pose" referent="RBX4AC75A623A2A478DB6A9C20EC8039D21">
+						<Properties>
+							<CoordinateFrame name="CFrame">
+								<X>0</X>
+								<Y>-1.49011612e-08</Y>
+								<Z>3.7252903e-09</Z>
+								<R00>1</R00>
+								<R01>0</R01>
+								<R02>0</R02>
+								<R10>0</R10>
+								<R11>0.98480773</R11>
+								<R12>-0.173648179</R12>
+								<R20>0</R20>
+								<R21>0.173648179</R21>
+								<R22>0.98480773</R22>
+							</CoordinateFrame>
+							<token name="EasingDirection">1</token>
+							<token name="EasingStyle">0</token>
+							<string name="Name">RightLowerArm</string>
+							<BinaryString name="Tags"></BinaryString>
+							<float name="Weight">1</float>
+						</Properties>
+						<Item class="Pose" referent="RBX7D8E65A26D7C49B28785F8B0A6A59202">
+							<Properties>
+								<CoordinateFrame name="CFrame">
+									<X>0</X>
+									<Y>0</Y>
+									<Z>0</Z>
+									<R00>1</R00>
+									<R01>0</R01>
+									<R02>0</R02>
+									<R10>0</R10>
+									<R11>1</R11>
+									<R12>0</R12>
+									<R20>0</R20>
+									<R21>0</R21>
+									<R22>1</R22>
+								</CoordinateFrame>
+								<token name="EasingDirection">1</token>
+								<token name="EasingStyle">0</token>
+								<string name="Name">RightHand</string>
+								<BinaryString name="Tags"></BinaryString>
+								<float name="Weight">1</float>
+							</Properties>
+						</Item>
+					</Item>
+				</Item>
+			</Item>
+		</Item>
+		<Item class="Camera" referent="RBX232C29AED8FF4E4EA8F5A7D244681599">
+			<Properties>
+				<CoordinateFrame name="CFrame">
+					<X>-2.58990455</X>
+					<Y>22.0188541</Y>
+					<Z>26.8766003</Z>
+					<R00>0.865064263</R00>
+					<R01>0.324209601</R01>
+					<R02>-0.382821202</R02>
+					<R10>-0</R10>
+					<R11>0.763107121</R11>
+					<R12>0.646272063</R12>
+					<R20>0.501661181</R20>
+					<R21>-0.559066892</R21>
+					<R22>0.66013664</R22>
+				</CoordinateFrame>
+				<Ref name="CameraSubject">null</Ref>
+				<token name="CameraType">0</token>
+				<float name="FieldOfView">70</float>
+				<CoordinateFrame name="Focus">
+					<X>-1.82426262</X>
+					<Y>20.7263107</Y>
+					<Z>25.5563278</Z>
+					<R00>1</R00>
+					<R01>0</R01>
+					<R02>0</R02>
+					<R10>0</R10>
+					<R11>1</R11>
+					<R12>0</R12>
+					<R20>0</R20>
+					<R21>0</R21>
+					<R22>1</R22>
+				</CoordinateFrame>
+				<bool name="HeadLocked">true</bool>
+				<float name="HeadScale">1</float>
+				<string name="Name">ThumbnailCamera</string>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+		</Item>
+	</Item>
+</roblox>

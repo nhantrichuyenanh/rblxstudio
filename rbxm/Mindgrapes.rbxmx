@@ -1,0 +1,649 @@
+<roblox xmlns:xmime="http://www.w3.org/2005/05/xmlmime" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.roblox.com/roblox.xsd" version="4">
+	<External>null</External>
+	<External>nil</External>
+	<Item class="Tool" referent="RBX48C56E3BB7664A36B620A0D034053557">
+		<Properties>
+			<bool name="CanBeDropped">true</bool>
+			<bool name="Enabled">true</bool>
+			<CoordinateFrame name="Grip">
+				<X>0</X>
+				<Y>1.30000007</Y>
+				<Z>0</Z>
+				<R00>0.217036352</R00>
+				<R01>0</R01>
+				<R02>0.976163507</R02>
+				<R10>0</R10>
+				<R11>1</R11>
+				<R12>-0</R12>
+				<R20>-0.976163507</R20>
+				<R21>0</R21>
+				<R22>0.217036352</R22>
+			</CoordinateFrame>
+			<bool name="ManualActivationOnly">false</bool>
+			<string name="Name">Mindgrapes</string>
+			<bool name="RequiresHandle">true</bool>
+			<Content name="TextureId"><url>http://www.roblox.com/asset/?id=16941323</url></Content>
+			<string name="ToolTip"></string>
+		</Properties>
+		<Item class="Part" referent="RBXCD5B3CBEC09044FAB7F8325D0D318B60">
+			<Properties>
+				<bool name="Anchored">false</bool>
+				<float name="BackParamA">-0.5</float>
+				<float name="BackParamB">0.5</float>
+				<token name="BackSurface">0</token>
+				<token name="BackSurfaceInput">0</token>
+				<float name="BottomParamA">-0.5</float>
+				<float name="BottomParamB">0.5</float>
+				<token name="BottomSurface">0</token>
+				<token name="BottomSurfaceInput">0</token>
+				<int name="BrickColor">1002</int>
+				<CoordinateFrame name="CFrame">
+					<X>-58.7373123</X>
+					<Y>3.67307806</Y>
+					<Z>41.3614197</Z>
+					<R00>-0.153708041</R00>
+					<R01>-0.336092383</R01>
+					<R02>-0.929201841</R02>
+					<R10>0.169305235</R10>
+					<R11>0.917512059</R11>
+					<R12>-0.359870732</R12>
+					<R20>0.97350347</R20>
+					<R21>-0.212633833</R21>
+					<R22>-0.0841266662</R22>
+				</CoordinateFrame>
+				<bool name="CanCollide">true</bool>
+				<PhysicalProperties name="CustomPhysicalProperties">
+					<CustomPhysics>false</CustomPhysics>
+				</PhysicalProperties>
+				<float name="Elasticity">0.5</float>
+				<float name="Friction">0.300000012</float>
+				<float name="FrontParamA">-0.5</float>
+				<float name="FrontParamB">0.5</float>
+				<token name="FrontSurface">0</token>
+				<token name="FrontSurfaceInput">0</token>
+				<float name="LeftParamA">-0.5</float>
+				<float name="LeftParamB">0.5</float>
+				<token name="LeftSurface">0</token>
+				<token name="LeftSurfaceInput">0</token>
+				<bool name="Locked">true</bool>
+				<token name="Material">256</token>
+				<string name="Name">Handle</string>
+				<float name="Reflectance">0</float>
+				<float name="RightParamA">-0.5</float>
+				<float name="RightParamB">0.5</float>
+				<token name="RightSurface">0</token>
+				<token name="RightSurfaceInput">0</token>
+				<Vector3 name="RotVelocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<float name="TopParamA">-0.5</float>
+				<float name="TopParamB">0.5</float>
+				<token name="TopSurface">0</token>
+				<token name="TopSurfaceInput">0</token>
+				<float name="Transparency">0</float>
+				<Vector3 name="Velocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<token name="formFactorRaw">2</token>
+				<token name="shape">1</token>
+				<Vector3 name="size">
+					<X>1</X>
+					<Y>2.4000001</Y>
+					<Z>1</Z>
+				</Vector3>
+			</Properties>
+			<Item class="SpecialMesh" referent="RBX408E57E9DA174CDC832BE051D5928C8B">
+				<Properties>
+					<token name="LODX">2</token>
+					<token name="LODY">2</token>
+					<Content name="MeshId"><url>http://www.roblox.com/asset/?id=16940906</url></Content>
+					<token name="MeshType">5</token>
+					<string name="Name">Mesh</string>
+					<Vector3 name="Offset">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+					</Vector3>
+					<Vector3 name="Scale">
+						<X>0.800000012</X>
+						<Y>0.800000012</Y>
+						<Z>0.800000012</Z>
+					</Vector3>
+					<Content name="TextureId"><url>http://www.roblox.com/asset/?id=16940893</url></Content>
+					<Vector3 name="VertexColor">
+						<X>1</X>
+						<Y>1</Y>
+						<Z>1</Z>
+					</Vector3>
+				</Properties>
+			</Item>
+			<Item class="Sound" referent="RBX3CEC8F84B1BC4AF6BC0F1BB5696E0FD2">
+				<Properties>
+					<float name="EmitterSize">0</float>
+					<bool name="Looped">false</bool>
+					<string name="Name">Drink</string>
+					<bool name="PlayOnRemove">false</bool>
+					<float name="PlaybackSpeed">1</float>
+					<bool name="Playing">false</bool>
+					<token name="RollOffMode">0</token>
+					<Ref name="SoundGroup">null</Ref>
+					<Content name="SoundId"><url>http://www.roblox.com/asset/?id=16950449</url></Content>
+					<double name="TimePosition">0</double>
+					<float name="Volume">1</float>
+					<float name="xmlRead_MaxDistance_3">10000</float>
+				</Properties>
+			</Item>
+			<Item class="Attachment" referent="RBX1B4000E0B7B34A4FB6A42A61C523A841">
+				<Properties>
+					<CoordinateFrame name="CFrame">
+						<X>0</X>
+						<Y>1</Y>
+						<Z>-0.5</Z>
+						<R00>0</R00>
+						<R01>0</R01>
+						<R02>1</R02>
+						<R10>0</R10>
+						<R11>1</R11>
+						<R12>-0</R12>
+						<R20>-1</R20>
+						<R21>0</R21>
+						<R22>0</R22>
+					</CoordinateFrame>
+					<string name="Name">RightGripAttachment</string>
+					<bool name="Visible">false</bool>
+				</Properties>
+			</Item>
+		</Item>
+		<Item class="LocalScript" referent="RBX95BDB6FDBE534738BE2186F12033DC0C">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">MouseIcon</string>
+				<string name="ScriptGuid"></string>
+				<ProtectedString name="Source"><![CDATA[--Rescripted by Luckymaxer
+
+Mouse_Icon = "rbxasset://textures/GunCursor.png"
+Reloading_Icon = "rbxasset://textures/GunWaitCursor.png"
+
+Tool = script.Parent
+
+Mouse = nil
+
+function UpdateIcon()
+	if Mouse then
+		Mouse.Icon = Tool.Enabled and Mouse_Icon or Reloading_Icon
+	end
+end
+
+function OnEquipped(ToolMouse)
+	Mouse = ToolMouse
+	UpdateIcon()
+end
+
+function OnChanged(Property)
+	if Property == "Enabled" then
+		UpdateIcon()
+	end
+end
+
+Tool.Equipped:connect(OnEquipped)
+Tool.Changed:connect(OnChanged)]]></ProtectedString>
+			</Properties>
+		</Item>
+		<Item class="Script" referent="RBX4946098805D94B62955D6A64137F29D5">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">Script</string>
+				<string name="ScriptGuid">{311E2C5E-CB44-4F52-BFFB-FD7AF8F56CDB}</string>
+				<ProtectedString name="Source"><![CDATA[--Rescripted by Luckymaxer
+
+Tool = script.Parent
+Handle = Tool:WaitForChild("Handle")
+
+Players = game:GetService("Players")
+Debris = game:GetService("Debris")
+
+BaseUrl = "http://www.roblox.com/asset/?id="
+
+Sounds = {
+	Drink = Handle:WaitForChild("Drink"),
+}
+
+Grips = {
+	Normal = CFrame.new(0, 1.29999995, 0, 0.217036337, 0, 0.976163626, 0, 1, -0, -0.976163507, 0, 0.217036366),
+	Active = CFrame.new(0, 1.29999995, 0, 0.357813597, 0.900898635, 0.245664507, 0.932332993, -0.329962879, -0.147918284, -0.0521992147, 0.281968266, -0.958002746),
+}
+
+Gui = script:WaitForChild("GrapeGUI")
+MindGrapeEffect = script:WaitForChild("MindGrapeEffect")
+
+ToolEquipped = false
+
+Handle.Transparency = 0
+Tool.Enabled = true
+
+function CheckIfAlive()
+	return (((Character and Character.Parent and Humanoid and Humanoid.Parent and Humanoid.Health > 0 and Player and Player.Parent) and true) or false)
+end
+
+function Activated()
+	if not ToolEquipped or not CheckIfAlive() or not Tool.Enabled then
+		return
+	end
+	Tool.Enabled = false
+	Tool.Grip = Grips.Active
+	Sounds.Drink:Play()
+	wait(3)
+	if CheckIfAlive() then
+		local PlayerGui = Player:FindFirstChild("PlayerGui")
+		if PlayerGui then
+			local Grapes = Character:FindFirstChild(MindGrapeEffect.Name) 
+			if not Grapes then
+				local GuiCopy = Gui:Clone()
+				Gui.Parent = PlayerGui
+				local EffectCopy = MindGrapeEffect:Clone()
+				local Value = Instance.new("IntValue")
+				Value.Name = "GrapeTroubleCountdown"
+				Value.Value = 30
+				Value.Parent = EffectCopy
+				EffectCopy.Disabled = false
+				EffectCopy.Parent = Character
+			else
+				Grapes.GrapeTroubleCountdown.Value = (Grapes.GrapeTroubleCountdown.Value + 15)
+			end
+		end
+	end
+	Tool.Grip = Grips.Normal
+	wait(8)
+	Tool.Enabled = true
+end
+
+function Equipped()
+	Character = Tool.Parent
+	Humanoid = Character:FindFirstChild("Humanoid")
+	Player = Players:GetPlayerFromCharacter(Character)
+	if not CheckIfAlive() then
+		return
+	end
+	ToolEquipped = true
+end
+
+function Unequipped()
+	ToolEquipped = false
+end
+
+Tool.Activated:connect(Activated)
+Tool.Equipped:connect(Equipped)
+Tool.Unequipped:connect(Unequipped)]]></ProtectedString>
+			</Properties>
+			<Item class="GuiMain" referent="RBXA08E1814002B412B83040B2ABB20DFFC">
+				<Properties>
+					<bool name="Enabled">false</bool>
+					<string name="Name">GrapeGUI</string>
+					<bool name="ResetOnSpawn">true</bool>
+				</Properties>
+				<Item class="Frame" referent="RBX61D12CE56CE74EAE96C0968B5EB7C31C">
+					<Properties>
+						<bool name="Active">false</bool>
+						<Color3 name="BackgroundColor3">4285215356</Color3>
+						<float name="BackgroundTransparency">0.5</float>
+						<Color3 name="BorderColor3">4279970357</Color3>
+						<int name="BorderSizePixel">1</int>
+						<bool name="ClipsDescendants">false</bool>
+						<bool name="Draggable">false</bool>
+						<string name="Name">Frame</string>
+						<Ref name="NextSelectionDown">null</Ref>
+						<Ref name="NextSelectionLeft">null</Ref>
+						<Ref name="NextSelectionRight">null</Ref>
+						<Ref name="NextSelectionUp">null</Ref>
+						<UDim2 name="Position">
+							<XS>0.5</XS>
+							<XO>-150</XO>
+							<YS>0.0500000007</YS>
+							<YO>0</YO>
+						</UDim2>
+						<float name="Rotation">0</float>
+						<bool name="Selectable">false</bool>
+						<Ref name="SelectionImageObject">null</Ref>
+						<UDim2 name="Size">
+							<XS>0</XS>
+							<XO>300</XO>
+							<YS>0</YS>
+							<YO>100</YO>
+						</UDim2>
+						<token name="SizeConstraint">0</token>
+						<token name="Style">0</token>
+						<bool name="Visible">true</bool>
+						<int name="ZIndex">1</int>
+					</Properties>
+					<Item class="Frame" referent="RBXA11117D79DF143B292154C5E32E2C53F">
+						<Properties>
+							<bool name="Active">false</bool>
+							<Color3 name="BackgroundColor3">4285215356</Color3>
+							<float name="BackgroundTransparency">0.5</float>
+							<Color3 name="BorderColor3">4279970357</Color3>
+							<int name="BorderSizePixel">1</int>
+							<bool name="ClipsDescendants">false</bool>
+							<bool name="Draggable">false</bool>
+							<string name="Name">Frame</string>
+							<Ref name="NextSelectionDown">null</Ref>
+							<Ref name="NextSelectionLeft">null</Ref>
+							<Ref name="NextSelectionRight">null</Ref>
+							<Ref name="NextSelectionUp">null</Ref>
+							<UDim2 name="Position">
+								<XS>0</XS>
+								<XO>5</XO>
+								<YS>0</YS>
+								<YO>5</YO>
+							</UDim2>
+							<float name="Rotation">0</float>
+							<bool name="Selectable">false</bool>
+							<Ref name="SelectionImageObject">null</Ref>
+							<UDim2 name="Size">
+								<XS>0</XS>
+								<XO>290</XO>
+								<YS>0</YS>
+								<YO>90</YO>
+							</UDim2>
+							<token name="SizeConstraint">0</token>
+							<token name="Style">0</token>
+							<bool name="Visible">true</bool>
+							<int name="ZIndex">1</int>
+						</Properties>
+						<Item class="ImageLabel" referent="RBX4091531E837546C48B4613A1757541CD">
+							<Properties>
+								<bool name="Active">false</bool>
+								<Color3 name="BackgroundColor3">4279308561</Color3>
+								<float name="BackgroundTransparency">0</float>
+								<Color3 name="BorderColor3">4294506744</Color3>
+								<int name="BorderSizePixel">1</int>
+								<bool name="ClipsDescendants">false</bool>
+								<bool name="Draggable">false</bool>
+								<Content name="Image"><url>http://www.roblox.com/asset/?id=16941323</url></Content>
+								<Color3 name="ImageColor3">4294967295</Color3>
+								<Vector2 name="ImageRectOffset">
+									<X>0</X>
+									<Y>0</Y>
+								</Vector2>
+								<Vector2 name="ImageRectSize">
+									<X>0</X>
+									<Y>0</Y>
+								</Vector2>
+								<float name="ImageTransparency">0</float>
+								<string name="Name">ImageLabel</string>
+								<Ref name="NextSelectionDown">null</Ref>
+								<Ref name="NextSelectionLeft">null</Ref>
+								<Ref name="NextSelectionRight">null</Ref>
+								<Ref name="NextSelectionUp">null</Ref>
+								<UDim2 name="Position">
+									<XS>0</XS>
+									<XO>5</XO>
+									<YS>0</YS>
+									<YO>5</YO>
+								</UDim2>
+								<float name="Rotation">0</float>
+								<token name="ScaleType">0</token>
+								<bool name="Selectable">false</bool>
+								<Ref name="SelectionImageObject">null</Ref>
+								<UDim2 name="Size">
+									<XS>0</XS>
+									<XO>80</XO>
+									<YS>0</YS>
+									<YO>80</YO>
+								</UDim2>
+								<token name="SizeConstraint">0</token>
+								<Rect2D name="SliceCenter">
+									<min>
+										<X>0</X>
+										<Y>0</Y>
+									</min>
+									<max>
+										<X>0</X>
+										<Y>0</Y>
+									</max>
+								</Rect2D>
+								<bool name="Visible">true</bool>
+								<int name="ZIndex">1</int>
+							</Properties>
+						</Item>
+						<Item class="TextLabel" referent="RBXAB44423561A948CABF379ED9EB9D78C0">
+							<Properties>
+								<bool name="Active">false</bool>
+								<Color3 name="BackgroundColor3">4279308561</Color3>
+								<float name="BackgroundTransparency">0</float>
+								<Color3 name="BorderColor3">4294506744</Color3>
+								<int name="BorderSizePixel">1</int>
+								<bool name="ClipsDescendants">false</bool>
+								<bool name="Draggable">false</bool>
+								<token name="Font">0</token>
+								<token name="FontSize">0</token>
+								<string name="Name">Time</string>
+								<Ref name="NextSelectionDown">null</Ref>
+								<Ref name="NextSelectionLeft">null</Ref>
+								<Ref name="NextSelectionRight">null</Ref>
+								<Ref name="NextSelectionUp">null</Ref>
+								<UDim2 name="Position">
+									<XS>0</XS>
+									<XO>90</XO>
+									<YS>0</YS>
+									<YO>25</YO>
+								</UDim2>
+								<float name="Rotation">0</float>
+								<bool name="Selectable">false</bool>
+								<Ref name="SelectionImageObject">null</Ref>
+								<UDim2 name="Size">
+									<XS>0</XS>
+									<XO>195</XO>
+									<YS>0</YS>
+									<YO>60</YO>
+								</UDim2>
+								<token name="SizeConstraint">0</token>
+								<string name="Text">30 Seconds</string>
+								<Color3 name="TextColor3">4294506744</Color3>
+								<bool name="TextScaled">false</bool>
+								<float name="TextSize">8</float>
+								<Color3 name="TextStrokeColor3">4278190080</Color3>
+								<float name="TextStrokeTransparency">1</float>
+								<float name="TextTransparency">0</float>
+								<bool name="TextWrapped">false</bool>
+								<token name="TextXAlignment">2</token>
+								<token name="TextYAlignment">1</token>
+								<bool name="Visible">true</bool>
+								<int name="ZIndex">1</int>
+							</Properties>
+						</Item>
+						<Item class="TextLabel" referent="RBX15F23DC78DB74EA8AE024D5135DA0C8C">
+							<Properties>
+								<bool name="Active">false</bool>
+								<Color3 name="BackgroundColor3">4279308561</Color3>
+								<float name="BackgroundTransparency">0</float>
+								<Color3 name="BorderColor3">4294506744</Color3>
+								<int name="BorderSizePixel">1</int>
+								<bool name="ClipsDescendants">false</bool>
+								<bool name="Draggable">false</bool>
+								<token name="Font">0</token>
+								<token name="FontSize">0</token>
+								<string name="Name">Warning</string>
+								<Ref name="NextSelectionDown">null</Ref>
+								<Ref name="NextSelectionLeft">null</Ref>
+								<Ref name="NextSelectionRight">null</Ref>
+								<Ref name="NextSelectionUp">null</Ref>
+								<UDim2 name="Position">
+									<XS>0</XS>
+									<XO>90</XO>
+									<YS>0</YS>
+									<YO>5</YO>
+								</UDim2>
+								<float name="Rotation">0</float>
+								<bool name="Selectable">false</bool>
+								<Ref name="SelectionImageObject">null</Ref>
+								<UDim2 name="Size">
+									<XS>0</XS>
+									<XO>195</XO>
+									<YS>0</YS>
+									<YO>20</YO>
+								</UDim2>
+								<token name="SizeConstraint">0</token>
+								<string name="Text">Mindgrapes Ok...</string>
+								<Color3 name="TextColor3">4294901951</Color3>
+								<bool name="TextScaled">false</bool>
+								<float name="TextSize">8</float>
+								<Color3 name="TextStrokeColor3">4278190080</Color3>
+								<float name="TextStrokeTransparency">1</float>
+								<float name="TextTransparency">0</float>
+								<bool name="TextWrapped">false</bool>
+								<token name="TextXAlignment">2</token>
+								<token name="TextYAlignment">1</token>
+								<bool name="Visible">true</bool>
+								<int name="ZIndex">1</int>
+							</Properties>
+						</Item>
+					</Item>
+				</Item>
+			</Item>
+			<Item class="Script" referent="RBX5818F7CFA134467796BCB468CA1442BB">
+				<Properties>
+					<bool name="Disabled">true</bool>
+					<Content name="LinkedSource"><null></null></Content>
+					<string name="Name">MindGrapeEffect</string>
+					<string name="ScriptGuid">{BAE44010-D00A-4A0D-966F-1DCB038B2546}</string>
+					<ProtectedString name="Source"><![CDATA[--Rescripted by Luckymaxer
+--Updated for R15 avatars by StarWars
+
+Character = script.Parent
+Humanoid = Character:FindFirstChild("Humanoid")
+Head = Character:FindFirstChild("Head")
+Torso = Character:FindFirstChild("Torso") or Character:FindFirstChild("UpperTorso")
+
+Players = game:GetService("Players")
+Debris = game:GetService("Debris")
+
+Player = Players:GetPlayerFromCharacter(Character)
+
+Count = script:FindFirstChild("GrapeTroubleCountdown")
+
+Sounds = {
+	Hyper = script:WaitForChild("Hyper"),
+	Explosion = script:WaitForChild("Explosion"),
+}
+
+function DestroyScript()
+	Debris:AddItem(script, 0.5)
+	script:Destroy()
+end
+
+if not Head or not Humanoid or Humanoid.Health == 0 or not Player or not Count or Count.Value <= 0 then
+	DestroyScript()
+	return
+end
+
+function GrapeMe()
+	for i, v in pairs(Character:GetChildren()) do
+		if v:IsA("Clothing") then
+			v:Destroy()
+		elseif v:IsA("BasePart") then
+			v.Material = Enum.Material.Ice
+			v.BrickColor = BrickColor.new("Magenta")
+		end
+	end
+end
+
+
+
+function UpdateUI(timeleft)
+	local PlayerGui = Player:FindFirstChild("PlayerGui")
+	if not PlayerGui then
+		return
+	end
+	local GrapeGui = PlayerGui:FindFirstChild("GrapeGUI")
+	GrapeGui.Frame.Frame.Time.Text = (timeleft .. " seconds")
+	if (timeleft < 10) then
+		GrapeGui.Frame.Frame.Warning.TextColor = BrickColor.new("Really red")
+		if (timeleft % 2 == 1) then
+			GrapeGui.Frame.Frame.Warning.Text = "WARNING"
+		else
+			GrapeGui.Frame.Frame.Warning.Text = "MindGrapes on FIRE!!!"
+		end
+	else
+		GrapeGui.Frame.Frame.Warning.TextColor = BrickColor.new("Hot pink")
+		GrapeGui.Frame.Frame.Warning.Text = "MindGrapes Ok..."
+	end
+end
+
+Humanoid.WalkSpeed = (16 * 2)
+Humanoid.MaxHealth = (100 * 0.25)
+
+
+HyperSound = Sounds.Hyper:Clone()
+HyperSound.Parent = Head
+HyperSound:Play()
+
+GrapeMe()
+
+Played = false
+
+while true do
+	Count.Value = (Count.Value - 1)
+	if Count.Value < 0 then
+		ExplosionSound = Sounds.Explosion:Clone()
+		ExplosionSound.Parent = Head
+		ExplosionSound:Play()
+			
+		local Explosion = Instance.new("Explosion")
+		Explosion.ExplosionType = Enum.ExplosionType.NoCraters
+		Explosion.BlastRadius = 2
+		Explosion.BlastPressure = 1000000
+		Explosion.Position = Torso.Position
+		Explosion.Parent = game:GetService("Workspace")
+	else
+		if (not HyperSound.IsPlaying and not Played) then
+			HyperSound:Play()
+			Played = true
+		end
+		UpdateUI(Count.Value)
+	end
+
+	wait(1)
+end]]></ProtectedString>
+				</Properties>
+				<Item class="Sound" referent="RBX4D5EB9FAEB2A4CFC934A126078A57299">
+					<Properties>
+						<float name="EmitterSize">0</float>
+						<bool name="Looped">false</bool>
+						<string name="Name">Hyper</string>
+						<bool name="PlayOnRemove">false</bool>
+						<float name="PlaybackSpeed">1</float>
+						<bool name="Playing">false</bool>
+						<token name="RollOffMode">0</token>
+						<Ref name="SoundGroup">null</Ref>
+						<Content name="SoundId"><url>http://www.roblox.com/asset/?id=16950418</url></Content>
+						<double name="TimePosition">0</double>
+						<float name="Volume">0.5</float>
+						<float name="xmlRead_MaxDistance_3">10000</float>
+					</Properties>
+				</Item>
+				<Item class="Sound" referent="RBXF639CDF386F64BC59E1D379EFDF0C7CC">
+					<Properties>
+						<float name="EmitterSize">0</float>
+						<bool name="Looped">false</bool>
+						<string name="Name">Explosion</string>
+						<bool name="PlayOnRemove">false</bool>
+						<float name="PlaybackSpeed">1</float>
+						<bool name="Playing">false</bool>
+						<token name="RollOffMode">0</token>
+						<Ref name="SoundGroup">null</Ref>
+						<Content name="SoundId"><url>http://www.roblox.com/asset/?id=12222084</url></Content>
+						<double name="TimePosition">0</double>
+						<float name="Volume">1</float>
+						<float name="xmlRead_MaxDistance_3">10000</float>
+					</Properties>
+				</Item>
+			</Item>
+		</Item>
+	</Item>
+</roblox>

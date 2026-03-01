@@ -1,0 +1,1764 @@
+<roblox xmlns:xmime="http://www.w3.org/2005/05/xmlmime" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.roblox.com/roblox.xsd" version="4">
+	<External>null</External>
+	<External>nil</External>
+	<Item class="Tool" referent="RBX6B85C7EAA123404A9B20FA29D23EA838">
+		<Properties>
+			<bool name="CanBeDropped">true</bool>
+			<bool name="Enabled">true</bool>
+			<CoordinateFrame name="Grip">
+				<X>0</X>
+				<Y>0</Y>
+				<Z>0</Z>
+				<R00>1</R00>
+				<R01>0</R01>
+				<R02>0</R02>
+				<R10>0</R10>
+				<R11>1</R11>
+				<R12>0</R12>
+				<R20>0</R20>
+				<R21>0</R21>
+				<R22>1</R22>
+			</CoordinateFrame>
+			<bool name="ManualActivationOnly">false</bool>
+			<string name="Name">AttackSeagullFlock</string>
+			<bool name="RequiresHandle">true</bool>
+			<Content name="TextureId"><url>http://www.roblox.com/asset?id=233692373</url></Content>
+			<string name="ToolTip"></string>
+		</Properties>
+		<Item class="Part" referent="RBX42D7DDF0DDAA47CE8D54DB73E4E658DA">
+			<Properties>
+				<bool name="Anchored">false</bool>
+				<float name="BackParamA">-0.5</float>
+				<float name="BackParamB">0.5</float>
+				<token name="BackSurface">0</token>
+				<token name="BackSurfaceInput">0</token>
+				<float name="BottomParamA">-0.5</float>
+				<float name="BottomParamB">0.5</float>
+				<token name="BottomSurface">0</token>
+				<token name="BottomSurfaceInput">0</token>
+				<int name="BrickColor">194</int>
+				<CoordinateFrame name="CFrame">
+					<X>1.40344083</X>
+					<Y>0.304489613</Y>
+					<Z>0.0566330999</Z>
+					<R00>0.992465973</R00>
+					<R01>0.0555456169</R01>
+					<R02>-0.109205708</R02>
+					<R10>-0.0506130643</R10>
+					<R11>0.997591257</R11>
+					<R12>0.0474339612</R12>
+					<R20>0.111577421</R20>
+					<R21>-0.0415493362</R21>
+					<R22>0.992886722</R22>
+				</CoordinateFrame>
+				<bool name="CanCollide">true</bool>
+				<PhysicalProperties name="CustomPhysicalProperties">
+					<CustomPhysics>false</CustomPhysics>
+				</PhysicalProperties>
+				<float name="Elasticity">0.5</float>
+				<float name="Friction">0.300000012</float>
+				<float name="FrontParamA">-0.5</float>
+				<float name="FrontParamB">0.5</float>
+				<token name="FrontSurface">0</token>
+				<token name="FrontSurfaceInput">0</token>
+				<float name="LeftParamA">-0.5</float>
+				<float name="LeftParamB">0.5</float>
+				<token name="LeftSurface">0</token>
+				<token name="LeftSurfaceInput">0</token>
+				<bool name="Locked">true</bool>
+				<token name="Material">256</token>
+				<string name="Name">Handle</string>
+				<float name="Reflectance">0</float>
+				<float name="RightParamA">-0.5</float>
+				<float name="RightParamB">0.5</float>
+				<token name="RightSurface">0</token>
+				<token name="RightSurfaceInput">0</token>
+				<Vector3 name="RotVelocity">
+					<X>-4.10003948</X>
+					<Y>-3.54081821</Y>
+					<Z>-0.89109236</Z>
+				</Vector3>
+				<float name="TopParamA">-0.5</float>
+				<float name="TopParamB">0.5</float>
+				<token name="TopSurface">0</token>
+				<token name="TopSurfaceInput">0</token>
+				<float name="Transparency">1</float>
+				<Vector3 name="Velocity">
+					<X>1.8072381</X>
+					<Y>-6.53390312</Y>
+					<Z>9.40296841</Z>
+				</Vector3>
+				<token name="formFactorRaw">3</token>
+				<token name="shape">1</token>
+				<Vector3 name="size">
+					<X>2.75</X>
+					<Y>0.25</Y>
+					<Z>1.125</Z>
+				</Vector3>
+			</Properties>
+			<Item class="SpecialMesh" referent="RBXA3FC9AD44A314E3683E4D9C15643097A">
+				<Properties>
+					<token name="LODX">2</token>
+					<token name="LODY">2</token>
+					<Content name="MeshId"><url>http://www.roblox.com/asset?id=233692108</url></Content>
+					<token name="MeshType">5</token>
+					<string name="Name">Mesh</string>
+					<Vector3 name="Offset">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+					</Vector3>
+					<Vector3 name="Scale">
+						<X>1</X>
+						<Y>1</Y>
+						<Z>1</Z>
+					</Vector3>
+					<Content name="TextureId"><url>http://www.roblox.com/asset?id=233692333</url></Content>
+					<Vector3 name="VertexColor">
+						<X>1</X>
+						<Y>1</Y>
+						<Z>1</Z>
+					</Vector3>
+				</Properties>
+			</Item>
+		</Item>
+		<Item class="LocalScript" referent="RBXDAD7766ED91C4EDF927B673062012C27">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">MouseIcon</string>
+				<string name="ScriptGuid"></string>
+				<ProtectedString name="Source"><![CDATA[--Made by Luckymaxer
+
+Mouse_Icon = "rbxasset://textures/GunCursor.png"
+Reloading_Icon = "rbxasset://textures/GunWaitCursor.png"
+
+Tool = script.Parent
+
+Mouse = nil
+
+function UpdateIcon()
+	if Mouse then
+		Mouse.Icon = Tool.Enabled and Mouse_Icon or Reloading_Icon
+	end
+end
+
+function OnEquipped(ToolMouse)
+	Mouse = ToolMouse
+	UpdateIcon()
+end
+
+function OnChanged(Property)
+	if Property == "Enabled" then
+		UpdateIcon()
+	end
+end
+
+Tool.Equipped:connect(OnEquipped)
+Tool.Changed:connect(OnChanged)]]></ProtectedString>
+			</Properties>
+		</Item>
+		<Item class="Script" referent="RBX9ACA81F00C5540B0B164E19D0C7E4448">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">Script</string>
+				<string name="ScriptGuid">{C46AB340-60B4-410E-AAEF-572C8DF1C8A7}</string>
+				<ProtectedString name="Source"><![CDATA[--Made by Luckymaxer
+--Updated for R15 avatar by StarWars
+
+Tool = script.Parent
+Handle = Tool:WaitForChild("Handle")
+
+Players = game:GetService("Players")
+Debris = game:GetService("Debris")
+
+Functions = require(script:WaitForChild("Functions"))
+Remover = script:WaitForChild("Remover")
+
+Damage = 5
+MaxEnemyDistance = 100
+
+Boundaries = {
+	Target = Ray.new(Vector3.new(-10, -3, -10), Vector3.new(10, 7, 10)),
+	Follow = Ray.new(Vector3.new(-10, 14, -10), Vector3.new(10, 18, 10)),
+}
+
+Gravity = 196.20
+
+Seagulls = {}
+
+SeagullTarget = nil
+SeagullBoundaries = nil
+
+BaseSeagull = Handle:Clone()
+BaseSeagull.Name = "Seagull"
+BaseSeagull.Transparency = 0
+BaseSeagull.Size = Vector3.new(2.75, 0.25, 0.5625)
+BaseSeagull.Mesh.Scale = Vector3.new(0.5, 0.5, 0.5)
+BaseSeagull.CanCollide = false
+
+ToolEquipped = false
+
+ServerControl = (Tool:FindFirstChild("ServerControl") or Instance.new("RemoteFunction"))
+ServerControl.Name = "ServerControl"
+ServerControl.Parent = Tool
+
+ClientControl = (Tool:FindFirstChild("ClientControl") or Instance.new("RemoteFunction"))
+ClientControl.Name = "ClientControl"
+ClientControl.Parent = Tool
+
+DisplayModel = Tool:FindFirstChild("DisplayModel")
+if DisplayModel then
+	DisplayModel:Destroy()
+end
+
+Handle.Transparency = 0
+Tool.Enabled = true
+
+function SetTarget(Object)
+	if not Object or not Object.Parent then
+		return
+	end
+	if TargetRemoved then
+		TargetRemoved:disconnect()
+	end
+	TargetRemoved = Object.Changed:connect(function(Property)
+		if Property == "Parent" and not Object.Parent then
+			SetTarget(((Head and Head.Parent) and Head) or nil)
+		end
+	end)
+	SeagullTarget = Object
+	SeagullBoundaries = ((SeagullTarget == Head and Boundaries.Follow) or Boundaries.Target)
+end
+
+function CreateSeagulls()
+	for i = 1, 8 do
+		local Seagull = BaseSeagull:Clone()
+		local BodyGyro = Instance.new("BodyGyro")
+		BodyGyro.maxTorque = Vector3.new(math.huge, math.huge, math.huge)
+		BodyGyro.Parent = Seagull
+		local Mass = (Seagull:GetMass() * Gravity * 1.25)
+		local BodyPosition = Instance.new("BodyPosition")
+		BodyPosition.D = 10000
+		BodyPosition.P = 20000
+		BodyPosition.maxForce = Vector3.new(Mass, Mass, Mass)
+		BodyPosition.Parent = Seagull
+		Seagull.Touched:connect(function(Hit)
+			if not Hit or not Hit.Parent or not ToolEquipped or not CheckIfAlive() then
+				return
+			end
+			local character = Hit.Parent
+			if character:IsA("Hat") then
+				character = character.Parent
+			end
+			if character ~= SeagullTarget.Parent then
+				return
+			end
+			local humanoid = character:FindFirstChild("Humanoid")
+			if not humanoid or humanoid.Health == 0 then
+				return
+			end
+			local player = Players:GetPlayerFromCharacter(character)
+			if player and (player == Player or Functions.IsTeamMate(Player, player)) then
+				return
+			end
+			Functions.UntagHumanoid(humanoid)
+			Functions.TagHumanoid(humanoid, Player)
+			humanoid:TakeDamage(Damage)
+		end)
+		table.insert(Seagulls, {Seagull = Seagull, BodyGyro = BodyGyro, BodyPosition = BodyPosition, Origin = {CFrame = nil, Nearby = false, Traveling = false}, TargetPoint = nil})
+	end
+end
+
+function PlaceSeagulls()
+	if SeagullModel and SeagullModel.Parent then
+		SeagullModel:Destroy()
+	end
+	SeagullModel = Instance.new("Model")
+	SeagullModel.Name = Player.Name .. "'s Seagulls"
+	local RemoverClone = Remover:Clone()
+	local CreatorValue = Instance.new("ObjectValue")
+	CreatorValue.Name = "Creator"
+	CreatorValue.Value = Player
+	CreatorValue.Parent = RemoverClone
+	local ToolValue = Instance.new("ObjectValue")
+	ToolValue.Name = "Tool"
+	ToolValue.Value = Tool
+	ToolValue.Parent = RemoverClone
+	RemoverClone.Disabled = false
+	RemoverClone.Parent = SeagullModel
+	for i, v in pairs(Seagulls) do
+		if v.Seagull and v.BodyGyro and v.BodyPosition then
+			PositionSeagulls(SeagullTarget)
+			v.Seagull.Transparency = 0
+			v.Seagull.Parent = SeagullModel
+		end
+	end
+	SeagullModel.Parent = game:GetService("Workspace")
+	for i, v in pairs(Seagulls) do
+		v.Seagull.CFrame = v.Origin.CFrame --Enables Seagulls to appear flying around already when you equip this tool
+		v.Seagull.Anchored = false
+	end
+	SeagullsReady = false
+	SeagullsReady = true
+end
+
+function PositionSeagulls(Origin)
+	for i, v in pairs(Seagulls) do
+		if (not v.Origin.Nearby and not v.Traveling) or not v.Origin.CFrame then
+			v.Origin.Traveling = true
+			local TargetPoint = (Origin.CFrame * CFrame.new(math.random(SeagullBoundaries.Origin.X, SeagullBoundaries.Direction.X), math.random(SeagullBoundaries.Origin.Y, SeagullBoundaries.Direction.Y), math.random(SeagullBoundaries.Origin.Z, SeagullBoundaries.Direction.Z)) * CFrame.Angles(math.random(-math.pi, math.pi), math.random(-math.pi, math.pi), math.random(-math.pi, math.pi)))
+			TargetPoint = TargetPoint * CFrame.Angles(((Functions.IsFlipped(TargetPoint) and math.pi) or 0), 0, 0)
+			v.Origin.CFrame = TargetPoint
+			v.BodyGyro.cframe = CFrame.new(v.Seagull.Position, TargetPoint.p)
+			v.BodyPosition.position = (v.Seagull.Position + (CFrame.new(v.Seagull.Position, TargetPoint.p).lookVector * ((SeagullTarget ~= Head and 25) or 15)))
+			if v.Origin.CFrame and (v.Seagull.Position - v.Origin.CFrame.p).magnitude <= 6 then
+				v.Traveling = false
+				v.Origin.Nearby = true
+			end
+		else
+			v.Origin.Nearby = false
+		end
+	end
+end
+
+function FunctionSeagulls()
+	while SeagullModel and SeagullModel.Parent do
+		if not SeagullTarget then
+			SetTarget(Head)
+		elseif SeagullTarget ~= Head then
+			local character = SeagullTarget.Parent
+			local humanoid = character:FindFirstChild("Humanoid")
+			local Distance = (Head.Position - SeagullTarget.Position).magnitude
+			if not humanoid or humanoid.Health == 0 or Distance > MaxEnemyDistance then
+				SetTarget(Head)
+			end
+		end
+		PositionSeagulls(SeagullTarget)
+		wait(0.25)
+	end
+end
+
+function SetUpSeagulls()
+	Spawn(function()
+		if SeagullModel and SeagullModel.Parent then
+			SeagullModel:Destroy()
+		end
+		for i, v in pairs(Seagulls) do
+			if v.Seagull and v.Seagull.Parent then
+				v.Seagull:Destroy()
+			end
+		end
+		Seagulls = {}
+		SetTarget(Head)
+		CreateSeagulls()
+		PlaceSeagulls()
+		FunctionSeagulls()
+	end)
+end
+
+function CheckIfAlive(Current)
+	return (((Character and Character.Parent and Player and Player.Parent and Humanoid and Humanoid.Parent and Humanoid.Health > 0 and Head and Head.Parent) and true) or false)
+end
+
+function Equipped(Mouse)
+	Character = Tool.Parent
+	Player = Players:GetPlayerFromCharacter(Character)
+	Humanoid = Character:FindFirstChild("Humanoid")
+	Head = Character:FindFirstChild("Head")
+	if not CheckIfAlive() then
+		return
+	end
+	ToolEquipped = true
+	Handle.Transparency = 1
+	Spawn(SetUpSeagulls)
+end
+
+function Unequipped()
+	if SeagullModel and SeagullModel.Parent then
+		SeagullModel:Destroy()
+	end
+	Seagulls = {}
+	SeagullTarget = nil
+	SeagullBoundaries = nil
+	SeagullsReady = false
+	Handle.Transparency = 0
+	ToolEquipped = false
+end
+
+function InvokeClient(Mode, Value)
+	local ReturnValue = nil
+	pcall(function()
+		ReturnValue = ClientControl:InvokeClient(Player, Mode, Value)
+	end)
+	return ReturnValue
+end
+
+ServerControl.OnServerInvoke = (function(player, Mode, Value)
+	if player ~= Player or not ToolEquipped or not CheckIfAlive() or not SeagullsReady or not Mode or not Value then
+		return
+	end
+	if Mode == "Button1Click" then
+		local Down = Value.Down
+		local Target = Value.Target
+		if Down then
+			if not Target or not Target.Parent then return end
+			local character = Target.Parent
+			if character:IsA("Hat") or character:IsA("Tool") then
+				character = character.Parent
+			end
+			local player = Players:GetPlayerFromCharacter(character)
+			if player and (player == Player or Functions.IsTeamMate(Player, player)) then
+				return
+			end
+			local humanoid = character:FindFirstChild("Humanoid")
+			local head = character:FindFirstChild("Head")
+			if humanoid and humanoid.Health > 0 and head and (head.Position - Head.Position).magnitude <= MaxEnemyDistance then
+				SetTarget(head)
+			else
+				SetTarget(Head)
+			end
+		end
+	end
+end)
+
+Tool.Equipped:connect(Equipped)
+Tool.Unequipped:connect(Unequipped)]]></ProtectedString>
+			</Properties>
+			<Item class="Script" referent="RBXABB2C0188853429581719A7A60BAC095">
+				<Properties>
+					<bool name="Disabled">true</bool>
+					<Content name="LinkedSource"><null></null></Content>
+					<string name="Name">Remover</string>
+					<string name="ScriptGuid"></string>
+					<ProtectedString name="Source"><![CDATA[--Made by Luckymaxer
+
+Model = script.Parent
+
+Debris = game:GetService("Debris")
+
+Creator = script:FindFirstChild("Creator")
+Tool = script:FindFirstChild("Tool")
+
+function DestroyModel()
+	Debris:AddItem(Model, 2)
+end
+
+if not Creator or not Creator.Value or not Creator.Value.Parent or not Tool or not Tool.Value or not Tool.Value.Parent then
+	DestroyModel()
+	return
+end
+
+ToolObject = Tool.Value
+Player = Creator.Value
+
+if not Player or not Player:IsA("Player") then
+	DestroyModel()
+	return
+end
+
+Character = Player.Character
+if not Character or not Character.Parent then
+	DestroyModel()
+	return
+end
+
+Humanoid = Character:FindFirstChild("Humanoid")
+if not Humanoid or Humanoid.Health == 0 then
+	DestroyModel()
+	return
+end
+
+Humanoid.Died:connect(function()
+	DestroyModel()
+end)
+
+Player.Changed:connect(function(Property)
+	if Property == "Character" then
+		DestroyModel()
+	end
+end)
+
+ToolObject.Changed:connect(function(Property)
+	if Property == "Parent" and not ToolObject.Parent then
+		DestroyModel()
+	end
+end)]]></ProtectedString>
+				</Properties>
+			</Item>
+			<Item class="ModuleScript" referent="RBX86B017F7AB8F40AEBEBB2BA9F1390B14">
+				<Properties>
+					<Content name="LinkedSource"><null></null></Content>
+					<string name="Name">Functions</string>
+					<string name="ScriptGuid"></string>
+					<ProtectedString name="Source"><![CDATA[Debris = game:GetService("Debris")
+
+Functions = {
+	
+	IsTeamMate = (function(Player1, Player2)
+		return (Player1 and Player2 and not Player1.Neutral and not Player2.Neutral and Player1.TeamColor == Player2.TeamColor)
+	end),
+	
+	TagHumanoid = (function(humanoid, player)
+		local Creator_Tag = Instance.new("ObjectValue")
+		Creator_Tag.Name = "creator"
+		Creator_Tag.Value = player
+		Debris:AddItem(Creator_Tag, 2)
+		Creator_Tag.Parent = humanoid
+	end),
+	
+	UntagHumanoid = (function(humanoid)
+		for i, v in pairs(humanoid:GetChildren()) do
+			if v:IsA("ObjectValue") and v.Name == "creator" then
+				v:Destroy()
+			end
+		end
+	end),
+	
+	IsFlipped = (function(CFrame)
+		local V1 = CFrame:vectorToWorldSpace(Vector3.FromNormalId(Enum.NormalId.Top))
+		local V2 = Vector3.new(0, 1, 0)
+		local Angle = math.acos(V1:Dot(V2))
+		return (Angle > 2)
+	end),
+	
+}
+
+return Functions]]></ProtectedString>
+				</Properties>
+			</Item>
+		</Item>
+		<Item class="LocalScript" referent="RBX2D65F0F7C5384DE9B7EB4E5D0F808877">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">LocalScript</string>
+				<string name="ScriptGuid">{C6A46F75-3ECE-4DD6-ACCC-0A9F08828361}</string>
+				<ProtectedString name="Source"><![CDATA[--Made by Luckymaxer
+
+Tool = script.Parent
+Handle = Tool:WaitForChild("Handle")
+
+Players = game:GetService("Players")
+RunService = game:GetService("RunService")
+
+Animations = {}
+LocalObjects = {}
+
+ServerControl = Tool:WaitForChild("ServerControl")
+ClientControl = Tool:WaitForChild("ClientControl")
+
+ToolEquipped = false
+
+function SetAnimation(mode, value)
+	if mode == "PlayAnimation" and value and ToolEquipped and Humanoid then
+		for i, v in pairs(Animations) do
+			if v.Animation == value.Animation then
+				v.AnimationTrack:Stop()
+				table.remove(Animations, i)
+			end
+		end
+		local AnimationTrack = Humanoid:LoadAnimation(value.Animation)
+		table.insert(Animations, {Animation = value.Animation, AnimationTrack = AnimationTrack})
+		AnimationTrack:Play(value.FadeTime, value.Weight, value.Speed)
+	elseif mode == "StopAnimation" and value then
+		for i, v in pairs(Animations) do
+			if v.Animation == value.Animation then
+				v.AnimationTrack:Stop(value.FadeTime)
+				table.remove(Animations, i)
+			end
+		end
+	end
+end
+
+function DisableJump(Boolean)
+	if PreventJump then
+		PreventJump:disconnect()
+	end
+	if Boolean then
+		PreventJump = Humanoid.Changed:connect(function(Property)
+			if Property ==  "Jump" then
+				Humanoid.Jump = false
+			end
+		end)
+	end
+end
+
+function CheckIfAlive()
+	return (((Character and Character.Parent and Humanoid and Humanoid.Parent and Humanoid.Health > 0 and Player and Player.Parent) and true) or false)
+end
+
+function Equipped(Mouse)
+	Character = Tool.Parent
+	Player = Players:GetPlayerFromCharacter(Character)
+	Humanoid = Character:FindFirstChild("Humanoid")
+	ToolEquipped = true
+	if not CheckIfAlive() then
+		return
+	end
+	PlayerMouse = Player:GetMouse()
+	Mouse.Button1Down:connect(function()
+		InvokeServer("Button1Click", {Down = true, Target = Mouse.Target, Position = Mouse.Hit.p})
+	end)
+	Mouse.Button1Up:connect(function()
+		InvokeServer("Button1Click", {Down = false, Target = Mouse.Target, Position = Mouse.Hit.p})
+	end)
+	Mouse.KeyDown:connect(function(Key)
+		InvokeServer("KeyPress", {Key = Key, Down = true})
+	end)
+	Mouse.KeyUp:connect(function(Key)
+		InvokeServer("KeyPress", {Key = Key, Down = false})
+	end)
+end
+
+function Unequipped()
+	ToolEquipped = false
+	LocalObjects = {}
+	for i, v in pairs(Animations) do
+		if v and v.AnimationTrack then
+			v.AnimationTrack:Stop()
+		end
+	end
+	for i, v in pairs({PreventJump, ObjectLocalTransparencyModifier}) do
+		if v then
+			v:disconnect()
+		end
+	end
+	Animations = {}
+end
+
+function InvokeServer(mode, value)
+	local ServerReturn
+	pcall(function()
+		ServerReturn = ServerControl:InvokeServer(mode, value)
+	end)
+	return ServerReturn
+end
+
+function OnClientInvoke(mode, value)
+	if mode == "PlayAnimation" and value and ToolEquipped and Humanoid then
+		SetAnimation("PlayAnimation", value)
+	elseif mode == "StopAnimation" and value then
+		SetAnimation("StopAnimation", value)
+	elseif mode == "PlaySound" and value then
+		value:Play()
+	elseif mode == "StopSound" and value then
+		value:Stop()
+	elseif mode == "MousePosition" then
+		return {Position = PlayerMouse.Hit.p, Target = PlayerMouse.Target}
+	elseif mode == "DisableJump" then
+		DisableJump(value)
+	elseif mode == "SetLocalTransparencyModifier" and value and ToolEquipped then
+		pcall(function()
+			local ObjectFound = false
+			for i, v in pairs(LocalObjects) do
+				if v == value then
+					ObjectFound = true
+				end
+			end
+			if not ObjectFound then
+				table.insert(LocalObjects, value)
+				if ObjectLocalTransparencyModifier then
+					ObjectLocalTransparencyModifier:disconnect()
+				end
+				ObjectLocalTransparencyModifier = RunService.RenderStepped:connect(function()
+					for i, v in pairs(LocalObjects) do
+						if v.Object and v.Object.Parent then
+							local CurrentTransparency = v.Object.LocalTransparencyModifier
+							if ((not v.AutoUpdate and (CurrentTransparency == 1 or  CurrentTransparency == 0)) or v.AutoUpdate) then
+								v.Object.LocalTransparencyModifier = v.Transparency
+							end
+						else
+							table.remove(LocalObjects, i)
+						end
+					end
+				end)
+			end
+		end)
+	end
+end
+
+ClientControl.OnClientInvoke = OnClientInvoke
+Tool.Equipped:connect(Equipped)
+Tool.Unequipped:connect(Unequipped)]]></ProtectedString>
+			</Properties>
+		</Item>
+		<Item class="Model" referent="RBXE99FC988BBE246A2A9AEB880F1F21BBD">
+			<Properties>
+				<CoordinateFrame name="ModelInPrimary">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+					<R00>1</R00>
+					<R01>0</R01>
+					<R02>0</R02>
+					<R10>0</R10>
+					<R11>1</R11>
+					<R12>0</R12>
+					<R20>0</R20>
+					<R21>0</R21>
+					<R22>1</R22>
+				</CoordinateFrame>
+				<string name="Name">DisplayModel</string>
+				<Ref name="PrimaryPart">null</Ref>
+			</Properties>
+			<Item class="Part" referent="RBX3AB2C2D9016F44D293BB663AC19EDDB7">
+				<Properties>
+					<bool name="Anchored">false</bool>
+					<float name="BackParamA">-0.5</float>
+					<float name="BackParamB">0.5</float>
+					<token name="BackSurface">0</token>
+					<token name="BackSurfaceInput">0</token>
+					<float name="BottomParamA">-0.5</float>
+					<float name="BottomParamB">0.5</float>
+					<token name="BottomSurface">0</token>
+					<token name="BottomSurfaceInput">0</token>
+					<int name="BrickColor">194</int>
+					<CoordinateFrame name="CFrame">
+						<X>0.714624286</X>
+						<Y>3.91270256</Y>
+						<Z>1.55089438</Z>
+						<R00>0.962889612</R00>
+						<R01>0.0210737027</R01>
+						<R02>0.269067198</R02>
+						<R10>-0.0201037936</R10>
+						<R11>0.999777675</R11>
+						<R12>-0.00635994738</R12>
+						<R20>-0.269141406</R20>
+						<R21>0.000714478549</R21>
+						<R22>0.963099182</R22>
+					</CoordinateFrame>
+					<bool name="CanCollide">false</bool>
+					<PhysicalProperties name="CustomPhysicalProperties">
+						<CustomPhysics>false</CustomPhysics>
+					</PhysicalProperties>
+					<float name="Elasticity">0.5</float>
+					<float name="Friction">0.300000012</float>
+					<float name="FrontParamA">-0.5</float>
+					<float name="FrontParamB">0.5</float>
+					<token name="FrontSurface">0</token>
+					<token name="FrontSurfaceInput">0</token>
+					<float name="LeftParamA">-0.5</float>
+					<float name="LeftParamB">0.5</float>
+					<token name="LeftSurface">0</token>
+					<token name="LeftSurfaceInput">0</token>
+					<bool name="Locked">true</bool>
+					<token name="Material">256</token>
+					<string name="Name">Seagull</string>
+					<float name="Reflectance">0</float>
+					<float name="RightParamA">-0.5</float>
+					<float name="RightParamB">0.5</float>
+					<token name="RightSurface">0</token>
+					<token name="RightSurfaceInput">0</token>
+					<Vector3 name="RotVelocity">
+						<X>-4.10003948</X>
+						<Y>-3.54081821</Y>
+						<Z>-0.89109236</Z>
+					</Vector3>
+					<float name="TopParamA">-0.5</float>
+					<float name="TopParamB">0.5</float>
+					<token name="TopSurface">0</token>
+					<token name="TopSurfaceInput">0</token>
+					<float name="Transparency">0</float>
+					<Vector3 name="Velocity">
+						<X>-0.268418312</X>
+						<Y>0.206426144</Y>
+						<Z>-7.82982159</Z>
+					</Vector3>
+					<token name="formFactorRaw">3</token>
+					<token name="shape">1</token>
+					<Vector3 name="size">
+						<X>2.75</X>
+						<Y>0.25</Y>
+						<Z>0.5625</Z>
+					</Vector3>
+				</Properties>
+				<Item class="SpecialMesh" referent="RBX4D04F4E55B754A95A5508168FCFB913F">
+					<Properties>
+						<token name="LODX">2</token>
+						<token name="LODY">2</token>
+						<Content name="MeshId"><url>http://www.roblox.com/asset?id=233692108</url></Content>
+						<token name="MeshType">5</token>
+						<string name="Name">Mesh</string>
+						<Vector3 name="Offset">
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</Vector3>
+						<Vector3 name="Scale">
+							<X>0.5</X>
+							<Y>0.5</Y>
+							<Z>0.5</Z>
+						</Vector3>
+						<Content name="TextureId"><url>http://www.roblox.com/asset?id=233692333</url></Content>
+						<Vector3 name="VertexColor">
+							<X>1</X>
+							<Y>1</Y>
+							<Z>1</Z>
+						</Vector3>
+					</Properties>
+				</Item>
+				<Item class="Weld" referent="RBX602933D08254436D9FC6C3DCA9DB8E53">
+					<Properties>
+						<CoordinateFrame name="C0">
+							<X>-1.50000024</X>
+							<Y>-4.70101738</Y>
+							<Z>1.49135315</Z>
+							<R00>1</R00>
+							<R01>3.01650689e-005</R01>
+							<R02>-3.08644994e-005</R02>
+							<R10>-3.08644994e-005</R10>
+							<R11>0.999737382</R11>
+							<R12>-0.0229168404</R12>
+							<R20>3.01650689e-005</R20>
+							<R21>0.0229168404</R21>
+							<R22>0.999737382</R22>
+						</CoordinateFrame>
+						<CoordinateFrame name="C1">
+							<X>-1.01857221</X>
+							<Y>-8.17529488</Y>
+							<Z>-0.263724983</Z>
+							<R00>0.926526368</R00>
+							<R01>0.0360434167</R01>
+							<R02>-0.374495596</R02>
+							<R10>-0.0296686869</R10>
+							<R11>0.999300241</R11>
+							<R12>0.022775311</R12>
+							<R20>0.375054449</R20>
+							<R21>-0.00999089051</R21>
+							<R22>0.926947474</R22>
+						</CoordinateFrame>
+						<string name="Name">Weld</string>
+						<Ref name="Part0">RBX42D7DDF0DDAA47CE8D54DB73E4E658DA</Ref>
+						<Ref name="Part1">RBX3AB2C2D9016F44D293BB663AC19EDDB7</Ref>
+					</Properties>
+				</Item>
+			</Item>
+			<Item class="Part" referent="RBX9FB00F1604D34E22BD68DC434066A8F7">
+				<Properties>
+					<bool name="Anchored">false</bool>
+					<float name="BackParamA">-0.5</float>
+					<float name="BackParamB">0.5</float>
+					<token name="BackSurface">0</token>
+					<token name="BackSurfaceInput">0</token>
+					<float name="BottomParamA">-0.5</float>
+					<float name="BottomParamB">0.5</float>
+					<token name="BottomSurface">0</token>
+					<token name="BottomSurfaceInput">0</token>
+					<int name="BrickColor">194</int>
+					<CoordinateFrame name="CFrame">
+						<X>-2.10886431</X>
+						<Y>3.42923737</Y>
+						<Z>-1.41821516</Z>
+						<R00>0.88719517</R00>
+						<R01>0.0774294138</R01>
+						<R02>0.454835445</R02>
+						<R10>-0.0263407491</R10>
+						<R11>0.992710233</R11>
+						<R12>-0.11760819</R12>
+						<R20>-0.460626513</R20>
+						<R21>0.0923591256</R21>
+						<R22>0.882767439</R22>
+					</CoordinateFrame>
+					<bool name="CanCollide">false</bool>
+					<PhysicalProperties name="CustomPhysicalProperties">
+						<CustomPhysics>false</CustomPhysics>
+					</PhysicalProperties>
+					<float name="Elasticity">0.5</float>
+					<float name="Friction">0.300000012</float>
+					<float name="FrontParamA">-0.5</float>
+					<float name="FrontParamB">0.5</float>
+					<token name="FrontSurface">0</token>
+					<token name="FrontSurfaceInput">0</token>
+					<float name="LeftParamA">-0.5</float>
+					<float name="LeftParamB">0.5</float>
+					<token name="LeftSurface">0</token>
+					<token name="LeftSurfaceInput">0</token>
+					<bool name="Locked">true</bool>
+					<token name="Material">256</token>
+					<string name="Name">Seagull</string>
+					<float name="Reflectance">0</float>
+					<float name="RightParamA">-0.5</float>
+					<float name="RightParamB">0.5</float>
+					<token name="RightSurface">0</token>
+					<token name="RightSurfaceInput">0</token>
+					<Vector3 name="RotVelocity">
+						<X>-4.10003948</X>
+						<Y>-3.54081821</Y>
+						<Z>-0.89109236</Z>
+					</Vector3>
+					<float name="TopParamA">-0.5</float>
+					<float name="TopParamB">0.5</float>
+					<token name="TopSurface">0</token>
+					<token name="TopSurfaceInput">0</token>
+					<float name="Transparency">0</float>
+					<Vector3 name="Velocity">
+						<X>9.81384659</X>
+						<Y>-9.45105076</Y>
+						<Z>-15.8450556</Z>
+					</Vector3>
+					<token name="formFactorRaw">3</token>
+					<token name="shape">1</token>
+					<Vector3 name="size">
+						<X>2.75</X>
+						<Y>0.25</Y>
+						<Z>0.5625</Z>
+					</Vector3>
+				</Properties>
+				<Item class="SpecialMesh" referent="RBXD328A50BE1BD43EE9F02CF59626EAD34">
+					<Properties>
+						<token name="LODX">2</token>
+						<token name="LODY">2</token>
+						<Content name="MeshId"><url>http://www.roblox.com/asset?id=233692108</url></Content>
+						<token name="MeshType">5</token>
+						<string name="Name">Mesh</string>
+						<Vector3 name="Offset">
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</Vector3>
+						<Vector3 name="Scale">
+							<X>0.5</X>
+							<Y>0.5</Y>
+							<Z>0.5</Z>
+						</Vector3>
+						<Content name="TextureId"><url>http://www.roblox.com/asset?id=233692333</url></Content>
+						<Vector3 name="VertexColor">
+							<X>1</X>
+							<Y>1</Y>
+							<Z>1</Z>
+						</Vector3>
+					</Properties>
+				</Item>
+				<Item class="Weld" referent="RBX52D4562D1896416183DCF5AAA518238C">
+					<Properties>
+						<CoordinateFrame name="C0">
+							<X>-1.50000024</X>
+							<Y>-4.70101738</Y>
+							<Z>1.49135315</Z>
+							<R00>1</R00>
+							<R01>3.01650689e-005</R01>
+							<R02>-3.08644994e-005</R02>
+							<R10>-3.08644994e-005</R10>
+							<R11>0.999737382</R11>
+							<R12>-0.0229168404</R12>
+							<R20>3.01650689e-005</R20>
+							<R21>0.0229168404</R21>
+							<R22>0.999737382</R22>
+						</CoordinateFrame>
+						<CoordinateFrame name="C1">
+							<X>0.245467663</X>
+							<Y>-7.2117548</Y>
+							<Z>4.26467371</Z>
+							<R00>0.830304503</R00>
+							<R01>0.0293660965</R01>
+							<R02>-0.556527793</R02>
+							<R10>0.0370012969</R10>
+							<R11>0.993502676</R11>
+							<R12>0.107624285</R12>
+							<R20>0.556072295</R20>
+							<R21>-0.109953247</R21>
+							<R22>0.823823214</R22>
+						</CoordinateFrame>
+						<string name="Name">Weld</string>
+						<Ref name="Part0">RBX42D7DDF0DDAA47CE8D54DB73E4E658DA</Ref>
+						<Ref name="Part1">RBX9FB00F1604D34E22BD68DC434066A8F7</Ref>
+					</Properties>
+				</Item>
+			</Item>
+			<Item class="Part" referent="RBXC5FF8C35F4774DBAA7C4598DBADD582F">
+				<Properties>
+					<bool name="Anchored">false</bool>
+					<float name="BackParamA">-0.5</float>
+					<float name="BackParamB">0.5</float>
+					<token name="BackSurface">0</token>
+					<token name="BackSurfaceInput">0</token>
+					<float name="BottomParamA">-0.5</float>
+					<float name="BottomParamB">0.5</float>
+					<token name="BottomSurface">0</token>
+					<token name="BottomSurfaceInput">0</token>
+					<int name="BrickColor">194</int>
+					<CoordinateFrame name="CFrame">
+						<X>-1.18315566</X>
+						<Y>4.50037193</Y>
+						<Z>1.95211565</Z>
+						<R00>-0.966848612</R00>
+						<R01>0.0284211636</R01>
+						<R02>-0.253802031</R02>
+						<R10>0.219749466</R10>
+						<R11>0.598945379</R11>
+						<R12>-0.770051003</R12>
+						<R20>0.130128413</R20>
+						<R21>-0.800287843</R21>
+						<R22>-0.585338831</R22>
+					</CoordinateFrame>
+					<bool name="CanCollide">false</bool>
+					<PhysicalProperties name="CustomPhysicalProperties">
+						<CustomPhysics>false</CustomPhysics>
+					</PhysicalProperties>
+					<float name="Elasticity">0.5</float>
+					<float name="Friction">0.300000012</float>
+					<float name="FrontParamA">-0.5</float>
+					<float name="FrontParamB">0.5</float>
+					<token name="FrontSurface">0</token>
+					<token name="FrontSurfaceInput">0</token>
+					<float name="LeftParamA">-0.5</float>
+					<float name="LeftParamB">0.5</float>
+					<token name="LeftSurface">0</token>
+					<token name="LeftSurfaceInput">0</token>
+					<bool name="Locked">true</bool>
+					<token name="Material">256</token>
+					<string name="Name">Seagull</string>
+					<float name="Reflectance">0</float>
+					<float name="RightParamA">-0.5</float>
+					<float name="RightParamB">0.5</float>
+					<token name="RightSurface">0</token>
+					<token name="RightSurfaceInput">0</token>
+					<Vector3 name="RotVelocity">
+						<X>-4.10003948</X>
+						<Y>-3.54081821</Y>
+						<Z>-0.89109236</Z>
+					</Vector3>
+					<float name="TopParamA">-0.5</float>
+					<float name="TopParamB">0.5</float>
+					<token name="TopSurface">0</token>
+					<token name="TopSurfaceInput">0</token>
+					<float name="Transparency">0</float>
+					<Vector3 name="Velocity">
+						<X>-1.16540241</X>
+						<Y>3.54254627</Y>
+						<Z>-16.9589806</Z>
+					</Vector3>
+					<token name="formFactorRaw">3</token>
+					<token name="shape">1</token>
+					<Vector3 name="size">
+						<X>2.75</X>
+						<Y>0.25</Y>
+						<Z>0.5625</Z>
+					</Vector3>
+				</Properties>
+				<Item class="SpecialMesh" referent="RBX493E582E7A4B4566A75CF9DBBCE33174">
+					<Properties>
+						<token name="LODX">2</token>
+						<token name="LODY">2</token>
+						<Content name="MeshId"><url>http://www.roblox.com/asset?id=233692108</url></Content>
+						<token name="MeshType">5</token>
+						<string name="Name">Mesh</string>
+						<Vector3 name="Offset">
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</Vector3>
+						<Vector3 name="Scale">
+							<X>0.5</X>
+							<Y>0.5</Y>
+							<Z>0.5</Z>
+						</Vector3>
+						<Content name="TextureId"><url>http://www.roblox.com/asset?id=233692333</url></Content>
+						<Vector3 name="VertexColor">
+							<X>1</X>
+							<Y>1</Y>
+							<Z>1</Z>
+						</Vector3>
+					</Properties>
+				</Item>
+				<Item class="Weld" referent="RBX0F9C2BBBE2EC41BE8424095F86C067A8">
+					<Properties>
+						<CoordinateFrame name="C0">
+							<X>-1.50000024</X>
+							<Y>-4.70101738</Y>
+							<Z>1.49135315</Z>
+							<R00>1</R00>
+							<R01>3.01650689e-005</R01>
+							<R02>-3.08644994e-005</R02>
+							<R10>-3.08644994e-005</R10>
+							<R11>0.999737382</R11>
+							<R12>-0.0229168404</R12>
+							<R20>3.01650689e-005</R20>
+							<R21>0.0229168404</R21>
+							<R22>0.999737382</R22>
+						</CoordinateFrame>
+						<CoordinateFrame name="C1">
+							<X>-2.62231493</X>
+							<Y>-4.90543413</Y>
+							<Z>6.78492546</Z>
+							<R00>-0.956152022</R00>
+							<R01>0.165918663</R01>
+							<R02>0.241338521</R02>
+							<R10>-0.0912018046</R10>
+							<R11>0.614386559</R11>
+							<R12>-0.7837165</R12>
+							<R20>-0.278308272</R20>
+							<R21>-0.771362603</R21>
+							<R22>-0.572314858</R22>
+						</CoordinateFrame>
+						<string name="Name">Weld</string>
+						<Ref name="Part0">RBX42D7DDF0DDAA47CE8D54DB73E4E658DA</Ref>
+						<Ref name="Part1">RBXC5FF8C35F4774DBAA7C4598DBADD582F</Ref>
+					</Properties>
+				</Item>
+			</Item>
+			<Item class="Part" referent="RBX2075E7E8130649A5B666820B496A94B9">
+				<Properties>
+					<bool name="Anchored">false</bool>
+					<float name="BackParamA">-0.5</float>
+					<float name="BackParamB">0.5</float>
+					<token name="BackSurface">0</token>
+					<token name="BackSurfaceInput">0</token>
+					<float name="BottomParamA">-0.5</float>
+					<float name="BottomParamB">0.5</float>
+					<token name="BottomSurface">0</token>
+					<token name="BottomSurfaceInput">0</token>
+					<int name="BrickColor">194</int>
+					<CoordinateFrame name="CFrame">
+						<X>0.605945706</X>
+						<Y>3.34499192</Y>
+						<Z>-1.54689825</Z>
+						<R00>0.263555944</R00>
+						<R01>0.103823364</R01>
+						<R02>-0.959031165</R02>
+						<R10>0.0484486669</R10>
+						<R11>0.991511762</R11>
+						<R12>0.120652117</R12>
+						<R20>0.963417232</R20>
+						<R21>-0.0782618448</R21>
+						<R22>0.256288767</R22>
+					</CoordinateFrame>
+					<bool name="CanCollide">false</bool>
+					<PhysicalProperties name="CustomPhysicalProperties">
+						<CustomPhysics>false</CustomPhysics>
+					</PhysicalProperties>
+					<float name="Elasticity">0.5</float>
+					<float name="Friction">0.300000012</float>
+					<float name="FrontParamA">-0.5</float>
+					<float name="FrontParamB">0.5</float>
+					<token name="FrontSurface">0</token>
+					<token name="FrontSurfaceInput">0</token>
+					<float name="LeftParamA">-0.5</float>
+					<float name="LeftParamB">0.5</float>
+					<token name="LeftSurface">0</token>
+					<token name="LeftSurfaceInput">0</token>
+					<bool name="Locked">true</bool>
+					<token name="Material">256</token>
+					<string name="Name">Seagull</string>
+					<float name="Reflectance">0</float>
+					<float name="RightParamA">-0.5</float>
+					<float name="RightParamB">0.5</float>
+					<token name="RightSurface">0</token>
+					<token name="RightSurfaceInput">0</token>
+					<Vector3 name="RotVelocity">
+						<X>-4.10003948</X>
+						<Y>-3.54081821</Y>
+						<Z>-0.89109236</Z>
+					</Vector3>
+					<float name="TopParamA">-0.5</float>
+					<float name="TopParamB">0.5</float>
+					<token name="TopSurface">0</token>
+					<token name="TopSurfaceInput">0</token>
+					<float name="Transparency">0</float>
+					<Vector3 name="Velocity">
+						<X>10.1944199</X>
+						<Y>-12.3978033</Y>
+						<Z>-5.88699627</Z>
+					</Vector3>
+					<token name="formFactorRaw">3</token>
+					<token name="shape">1</token>
+					<Vector3 name="size">
+						<X>2.75</X>
+						<Y>0.25</Y>
+						<Z>0.5625</Z>
+					</Vector3>
+				</Properties>
+				<Item class="SpecialMesh" referent="RBXE48401ED32704C2298AF91F323F837FA">
+					<Properties>
+						<token name="LODX">2</token>
+						<token name="LODY">2</token>
+						<Content name="MeshId"><url>http://www.roblox.com/asset?id=233692108</url></Content>
+						<token name="MeshType">5</token>
+						<string name="Name">Mesh</string>
+						<Vector3 name="Offset">
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</Vector3>
+						<Vector3 name="Scale">
+							<X>0.5</X>
+							<Y>0.5</Y>
+							<Z>0.5</Z>
+						</Vector3>
+						<Content name="TextureId"><url>http://www.roblox.com/asset?id=233692333</url></Content>
+						<Vector3 name="VertexColor">
+							<X>1</X>
+							<Y>1</Y>
+							<Z>1</Z>
+						</Vector3>
+					</Properties>
+				</Item>
+				<Item class="Weld" referent="RBX319422C4E4FF4436A730FE7C3835B795">
+					<Properties>
+						<CoordinateFrame name="C0">
+							<X>-1.50000024</X>
+							<Y>-4.70101738</Y>
+							<Z>1.49135315</Z>
+							<R00>1</R00>
+							<R01>3.01650689e-005</R01>
+							<R02>-3.08644994e-005</R02>
+							<R10>-3.08644994e-005</R10>
+							<R11>0.999737382</R11>
+							<R12>-0.0229168404</R12>
+							<R20>3.01650689e-005</R20>
+							<R21>0.0229168404</R21>
+							<R22>0.999737382</R22>
+						</CoordinateFrame>
+						<CoordinateFrame name="C1">
+							<X>2.33742452</X>
+							<Y>-7.87832451</Y>
+							<Z>0.953320146</Z>
+							<R00>0.366867989</R00>
+							<R01>0.0444061719</R01>
+							<R02>0.92921263</R02>
+							<R10>0.0439548753</R10>
+							<R11>0.996917129</R11>
+							<R12>-0.0649957806</R12>
+							<R20>-0.929234087</R20>
+							<R21>0.0646882951</R21>
+							<R22>0.363785058</R22>
+						</CoordinateFrame>
+						<string name="Name">Weld</string>
+						<Ref name="Part0">RBX42D7DDF0DDAA47CE8D54DB73E4E658DA</Ref>
+						<Ref name="Part1">RBX2075E7E8130649A5B666820B496A94B9</Ref>
+					</Properties>
+				</Item>
+			</Item>
+			<Item class="Part" referent="RBX2EE121CAC4FD47CCAC15DB4E81CA1027">
+				<Properties>
+					<bool name="Anchored">false</bool>
+					<float name="BackParamA">-0.5</float>
+					<float name="BackParamB">0.5</float>
+					<token name="BackSurface">0</token>
+					<token name="BackSurfaceInput">0</token>
+					<float name="BottomParamA">-0.5</float>
+					<float name="BottomParamB">0.5</float>
+					<token name="BottomSurface">0</token>
+					<token name="BottomSurfaceInput">0</token>
+					<int name="BrickColor">194</int>
+					<CoordinateFrame name="CFrame">
+						<X>2.25140047</X>
+						<Y>4.47127485</Y>
+						<Z>-0.166014344</Z>
+						<R00>-0.438138336</R00>
+						<R01>-0.46302247</R01>
+						<R02>-0.770483673</R02>
+						<R10>-0.194029287</R10>
+						<R11>0.885641456</R11>
+						<R12>-0.421891063</R12>
+						<R20>0.877717137</R20>
+						<R21>-0.0353502557</R21>
+						<R22>-0.477873385</R22>
+					</CoordinateFrame>
+					<bool name="CanCollide">false</bool>
+					<PhysicalProperties name="CustomPhysicalProperties">
+						<CustomPhysics>false</CustomPhysics>
+					</PhysicalProperties>
+					<float name="Elasticity">0.5</float>
+					<float name="Friction">0.300000012</float>
+					<float name="FrontParamA">-0.5</float>
+					<float name="FrontParamB">0.5</float>
+					<token name="FrontSurface">0</token>
+					<token name="FrontSurfaceInput">0</token>
+					<float name="LeftParamA">-0.5</float>
+					<float name="LeftParamB">0.5</float>
+					<token name="LeftSurface">0</token>
+					<token name="LeftSurfaceInput">0</token>
+					<bool name="Locked">true</bool>
+					<token name="Material">256</token>
+					<string name="Name">Seagull</string>
+					<float name="Reflectance">0</float>
+					<float name="RightParamA">-0.5</float>
+					<float name="RightParamB">0.5</float>
+					<token name="RightSurface">0</token>
+					<token name="RightSurfaceInput">0</token>
+					<Vector3 name="RotVelocity">
+						<X>-4.10003948</X>
+						<Y>-3.54081821</Y>
+						<Z>-0.89109236</Z>
+					</Vector3>
+					<float name="TopParamA">-0.5</float>
+					<float name="TopParamB">0.5</float>
+					<token name="TopSurface">0</token>
+					<token name="TopSurfaceInput">0</token>
+					<float name="Transparency">0</float>
+					<Vector3 name="Velocity">
+						<X>6.30858278</X>
+						<Y>-8.20237732</Y>
+						<Z>-4.678545</Z>
+					</Vector3>
+					<token name="formFactorRaw">3</token>
+					<token name="shape">1</token>
+					<Vector3 name="size">
+						<X>2.75</X>
+						<Y>0.25</Y>
+						<Z>0.5625</Z>
+					</Vector3>
+				</Properties>
+				<Item class="SpecialMesh" referent="RBX0F23406D5D4844578006AB09D94F117C">
+					<Properties>
+						<token name="LODX">2</token>
+						<token name="LODY">2</token>
+						<Content name="MeshId"><url>http://www.roblox.com/asset?id=233692108</url></Content>
+						<token name="MeshType">5</token>
+						<string name="Name">Mesh</string>
+						<Vector3 name="Offset">
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</Vector3>
+						<Vector3 name="Scale">
+							<X>0.5</X>
+							<Y>0.5</Y>
+							<Z>0.5</Z>
+						</Vector3>
+						<Content name="TextureId"><url>http://www.roblox.com/asset?id=233692333</url></Content>
+						<Vector3 name="VertexColor">
+							<X>1</X>
+							<Y>1</Y>
+							<Z>1</Z>
+						</Vector3>
+					</Properties>
+				</Item>
+				<Item class="Weld" referent="RBX921A9A655FD9427BB4C28027DFFC1E1D">
+					<Properties>
+						<CoordinateFrame name="C0">
+							<X>-1.50000024</X>
+							<Y>-4.70101738</Y>
+							<Z>1.49135315</Z>
+							<R00>1</R00>
+							<R01>3.01650689e-005</R01>
+							<R02>-3.08644994e-005</R02>
+							<R10>-3.08644994e-005</R10>
+							<R11>0.999737382</R11>
+							<R12>-0.0229168404</R12>
+							<R20>3.01650689e-005</R20>
+							<R21>0.0229168404</R21>
+							<R22>0.999737382</R22>
+						</CoordinateFrame>
+						<CoordinateFrame name="C1">
+							<X>4.41817331</X>
+							<Y>-6.49588823</Y>
+							<Z>4.9762969</Z>
+							<R00>-0.326849967</R00>
+							<R01>-0.233200878</R01>
+							<R02>0.915852904</R02>
+							<R10>-0.50864017</R10>
+							<R11>0.860162318</R11>
+							<R12>0.0374968275</R12>
+							<R20>-0.796526372</R20>
+							<R21>-0.453583747</R21>
+							<R22>-0.399759352</R22>
+						</CoordinateFrame>
+						<string name="Name">Weld</string>
+						<Ref name="Part0">RBX42D7DDF0DDAA47CE8D54DB73E4E658DA</Ref>
+						<Ref name="Part1">RBX2EE121CAC4FD47CCAC15DB4E81CA1027</Ref>
+					</Properties>
+				</Item>
+			</Item>
+			<Item class="Part" referent="RBX1DBA51E86F414EE4AE3C40EB171F2DF7">
+				<Properties>
+					<bool name="Anchored">false</bool>
+					<float name="BackParamA">-0.5</float>
+					<float name="BackParamB">0.5</float>
+					<token name="BackSurface">0</token>
+					<token name="BackSurfaceInput">0</token>
+					<float name="BottomParamA">-0.5</float>
+					<float name="BottomParamB">0.5</float>
+					<token name="BottomSurface">0</token>
+					<token name="BottomSurfaceInput">0</token>
+					<int name="BrickColor">194</int>
+					<CoordinateFrame name="CFrame">
+						<X>-0.887410283</X>
+						<Y>3.76731968</Y>
+						<Z>-0.117652863</Z>
+						<R00>0.771832824</R00>
+						<R01>0.042865403</R01>
+						<R02>0.634379029</R02>
+						<R10>-0.03980086</R10>
+						<R11>0.999025524</R11>
+						<R12>-0.019080108</R12>
+						<R20>-0.634578705</R20>
+						<R21>-0.0105221756</R21>
+						<R22>0.772786736</R22>
+					</CoordinateFrame>
+					<bool name="CanCollide">false</bool>
+					<PhysicalProperties name="CustomPhysicalProperties">
+						<CustomPhysics>false</CustomPhysics>
+					</PhysicalProperties>
+					<float name="Elasticity">0.5</float>
+					<float name="Friction">0.300000012</float>
+					<float name="FrontParamA">-0.5</float>
+					<float name="FrontParamB">0.5</float>
+					<token name="FrontSurface">0</token>
+					<token name="FrontSurfaceInput">0</token>
+					<float name="LeftParamA">-0.5</float>
+					<float name="LeftParamB">0.5</float>
+					<token name="LeftSurface">0</token>
+					<token name="LeftSurfaceInput">0</token>
+					<bool name="Locked">true</bool>
+					<token name="Material">256</token>
+					<string name="Name">Seagull</string>
+					<float name="Reflectance">0</float>
+					<float name="RightParamA">-0.5</float>
+					<float name="RightParamB">0.5</float>
+					<token name="RightSurface">0</token>
+					<token name="RightSurfaceInput">0</token>
+					<Vector3 name="RotVelocity">
+						<X>-4.10003948</X>
+						<Y>-3.54081821</Y>
+						<Z>-0.89109236</Z>
+					</Vector3>
+					<float name="TopParamA">-0.5</float>
+					<float name="TopParamB">0.5</float>
+					<token name="TopSurface">0</token>
+					<token name="TopSurfaceInput">0</token>
+					<float name="Transparency">0</float>
+					<Vector3 name="Velocity">
+						<X>5.51005459</X>
+						<Y>-5.2071228</Y>
+						<Z>-12.9062586</Z>
+					</Vector3>
+					<token name="formFactorRaw">3</token>
+					<token name="shape">1</token>
+					<Vector3 name="size">
+						<X>2.75</X>
+						<Y>0.25</Y>
+						<Z>0.5625</Z>
+					</Vector3>
+				</Properties>
+				<Item class="SpecialMesh" referent="RBX86698F4BDC5E474EB8D6FE6533666652">
+					<Properties>
+						<token name="LODX">2</token>
+						<token name="LODY">2</token>
+						<Content name="MeshId"><url>http://www.roblox.com/asset?id=233692108</url></Content>
+						<token name="MeshType">5</token>
+						<string name="Name">Mesh</string>
+						<Vector3 name="Offset">
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</Vector3>
+						<Vector3 name="Scale">
+							<X>0.5</X>
+							<Y>0.5</Y>
+							<Z>0.5</Z>
+						</Vector3>
+						<Content name="TextureId"><url>http://www.roblox.com/asset?id=233692333</url></Content>
+						<Vector3 name="VertexColor">
+							<X>1</X>
+							<Y>1</Y>
+							<Z>1</Z>
+						</Vector3>
+					</Properties>
+				</Item>
+				<Item class="Weld" referent="RBX93DCCC78C4B84769A561CB40B5AFE691">
+					<Properties>
+						<CoordinateFrame name="C0">
+							<X>-2.00000024</X>
+							<Y>-4.71257257</Y>
+							<Z>1.99121952</Z>
+							<R00>1</R00>
+							<R01>3.01650689e-005</R01>
+							<R02>-3.08644994e-005</R02>
+							<R10>-3.08644994e-005</R10>
+							<R11>0.999737382</R11>
+							<R12>-0.0229168404</R12>
+							<R20>3.01650689e-005</R20>
+							<R21>0.0229168404</R21>
+							<R22>0.999737382</R22>
+						</CoordinateFrame>
+						<CoordinateFrame name="C1">
+							<X>-1.1651963</X>
+							<Y>-7.99037647</Y>
+							<Z>1.68364859</Z>
+							<R00>0.697050571</R00>
+							<R01>0.0130161392</R01>
+							<R02>-0.716896296</R02>
+							<R10>-0.00919199269</R10>
+							<R11>0.999915242</R11>
+							<R12>0.00921707135</R12>
+							<R20>0.716955543</R20>
+							<R21>0.000165108591</R21>
+							<R22>0.69711113</R22>
+						</CoordinateFrame>
+						<string name="Name">Weld</string>
+						<Ref name="Part0">RBX42D7DDF0DDAA47CE8D54DB73E4E658DA</Ref>
+						<Ref name="Part1">RBX1DBA51E86F414EE4AE3C40EB171F2DF7</Ref>
+					</Properties>
+				</Item>
+			</Item>
+			<Item class="Part" referent="RBX3B6577BAAB4C4AAD8E0FC92BC58C9660">
+				<Properties>
+					<bool name="Anchored">false</bool>
+					<float name="BackParamA">-0.5</float>
+					<float name="BackParamB">0.5</float>
+					<token name="BackSurface">0</token>
+					<token name="BackSurfaceInput">0</token>
+					<float name="BottomParamA">-0.5</float>
+					<float name="BottomParamB">0.5</float>
+					<token name="BottomSurface">0</token>
+					<token name="BottomSurfaceInput">0</token>
+					<int name="BrickColor">194</int>
+					<CoordinateFrame name="CFrame">
+						<X>-2.65463257</X>
+						<Y>4.29309654</Y>
+						<Z>1.09603214</Z>
+						<R00>-0.105142057</R00>
+						<R01>0.202322587</R01>
+						<R02>-0.973658442</R02>
+						<R10>0.105961844</R10>
+						<R11>0.975790679</R11>
+						<R12>0.191323221</R12>
+						<R20>0.988795817</R20>
+						<R21>-0.0830545351</R21>
+						<R22>-0.124035127</R22>
+					</CoordinateFrame>
+					<bool name="CanCollide">false</bool>
+					<PhysicalProperties name="CustomPhysicalProperties">
+						<CustomPhysics>false</CustomPhysics>
+					</PhysicalProperties>
+					<float name="Elasticity">0.5</float>
+					<float name="Friction">0.300000012</float>
+					<float name="FrontParamA">-0.5</float>
+					<float name="FrontParamB">0.5</float>
+					<token name="FrontSurface">0</token>
+					<token name="FrontSurfaceInput">0</token>
+					<float name="LeftParamA">-0.5</float>
+					<float name="LeftParamB">0.5</float>
+					<token name="LeftSurface">0</token>
+					<token name="LeftSurfaceInput">0</token>
+					<bool name="Locked">true</bool>
+					<token name="Material">256</token>
+					<string name="Name">Seagull</string>
+					<float name="Reflectance">0</float>
+					<float name="RightParamA">-0.5</float>
+					<float name="RightParamB">0.5</float>
+					<token name="RightSurface">0</token>
+					<token name="RightSurfaceInput">0</token>
+					<Vector3 name="RotVelocity">
+						<X>-4.10003948</X>
+						<Y>-3.54081821</Y>
+						<Z>-0.89109236</Z>
+					</Vector3>
+					<float name="TopParamA">-0.5</float>
+					<float name="TopParamB">0.5</float>
+					<token name="TopSurface">0</token>
+					<token name="TopSurfaceInput">0</token>
+					<float name="Transparency">0</float>
+					<Vector3 name="Velocity">
+						<X>1.68113208</X>
+						<Y>1.34379196</Y>
+						<Z>-21.3193779</Z>
+					</Vector3>
+					<token name="formFactorRaw">3</token>
+					<token name="shape">1</token>
+					<Vector3 name="size">
+						<X>2.75</X>
+						<Y>0.25</Y>
+						<Z>0.5625</Z>
+					</Vector3>
+				</Properties>
+				<Item class="SpecialMesh" referent="RBXEEF3658C027841BEA0DFA883716B9C12">
+					<Properties>
+						<token name="LODX">2</token>
+						<token name="LODY">2</token>
+						<Content name="MeshId"><url>http://www.roblox.com/asset?id=233692108</url></Content>
+						<token name="MeshType">5</token>
+						<string name="Name">Mesh</string>
+						<Vector3 name="Offset">
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</Vector3>
+						<Vector3 name="Scale">
+							<X>0.5</X>
+							<Y>0.5</Y>
+							<Z>0.5</Z>
+						</Vector3>
+						<Content name="TextureId"><url>http://www.roblox.com/asset?id=233692333</url></Content>
+						<Vector3 name="VertexColor">
+							<X>1</X>
+							<Y>1</Y>
+							<Z>1</Z>
+						</Vector3>
+					</Properties>
+				</Item>
+				<Item class="Weld" referent="RBX7DA8EB40689740169C7E0D0D5435737C">
+					<Properties>
+						<CoordinateFrame name="C0">
+							<X>-1.50000024</X>
+							<Y>-4.70101738</Y>
+							<Z>1.49135315</Z>
+							<R00>1</R00>
+							<R01>3.01650689e-005</R01>
+							<R02>-3.08644994e-005</R02>
+							<R10>-3.08644994e-005</R10>
+							<R11>0.999737382</R11>
+							<R12>-0.0229168404</R12>
+							<R20>3.01650689e-005</R20>
+							<R21>0.0229168404</R21>
+							<R22>0.999737382</R22>
+						</CoordinateFrame>
+						<CoordinateFrame name="C1">
+							<X>-0.665120482</X>
+							<Y>-7.93097544</Y>
+							<Z>-3.77783608</Z>
+							<R00>0.000954151154</R00>
+							<R01>0.0818140879</R01>
+							<R02>0.996641278</R02>
+							<R10>0.141842842</R10>
+							<R11>0.98655957</R11>
+							<R12>-0.0811209679</R12>
+							<R20>-0.989882827</R20>
+							<R21>0.141444191</R21>
+							<R22>-0.0106633902</R22>
+						</CoordinateFrame>
+						<string name="Name">Weld</string>
+						<Ref name="Part0">RBX42D7DDF0DDAA47CE8D54DB73E4E658DA</Ref>
+						<Ref name="Part1">RBX3B6577BAAB4C4AAD8E0FC92BC58C9660</Ref>
+					</Properties>
+				</Item>
+			</Item>
+			<Item class="Part" referent="RBX736EC6FC947A443E8972268924793AA2">
+				<Properties>
+					<bool name="Anchored">false</bool>
+					<float name="BackParamA">-0.5</float>
+					<float name="BackParamB">0.5</float>
+					<token name="BackSurface">0</token>
+					<token name="BackSurfaceInput">0</token>
+					<float name="BottomParamA">-0.5</float>
+					<float name="BottomParamB">0.5</float>
+					<token name="BottomSurface">0</token>
+					<token name="BottomSurfaceInput">0</token>
+					<int name="BrickColor">194</int>
+					<CoordinateFrame name="CFrame">
+						<X>0.956696689</X>
+						<Y>4.64232969</Y>
+						<Z>2.00495481</Z>
+						<R00>0.755511403</R00>
+						<R01>0.0475288369</R01>
+						<R02>0.653409243</R02>
+						<R10>-0.0855941549</R10>
+						<R11>0.995976985</R11>
+						<R12>0.0265219975</R12>
+						<R20>-0.649520099</R20>
+						<R21>-0.0759656727</R21>
+						<R22>0.75654012</R22>
+					</CoordinateFrame>
+					<bool name="CanCollide">false</bool>
+					<PhysicalProperties name="CustomPhysicalProperties">
+						<CustomPhysics>false</CustomPhysics>
+					</PhysicalProperties>
+					<float name="Elasticity">0.5</float>
+					<float name="Friction">0.300000012</float>
+					<float name="FrontParamA">-0.5</float>
+					<float name="FrontParamB">0.5</float>
+					<token name="FrontSurface">0</token>
+					<token name="FrontSurfaceInput">0</token>
+					<float name="LeftParamA">-0.5</float>
+					<float name="LeftParamB">0.5</float>
+					<token name="LeftSurface">0</token>
+					<token name="LeftSurfaceInput">0</token>
+					<bool name="Locked">true</bool>
+					<token name="Material">256</token>
+					<string name="Name">Seagull</string>
+					<float name="Reflectance">0</float>
+					<float name="RightParamA">-0.5</float>
+					<float name="RightParamB">0.5</float>
+					<token name="RightSurface">0</token>
+					<token name="RightSurfaceInput">0</token>
+					<Vector3 name="RotVelocity">
+						<X>-4.10003948</X>
+						<Y>-3.54081821</Y>
+						<Z>-0.89109236</Z>
+					</Vector3>
+					<float name="TopParamA">-0.5</float>
+					<float name="TopParamB">0.5</float>
+					<token name="TopSurface">0</token>
+					<token name="TopSurfaceInput">0</token>
+					<float name="Transparency">0</float>
+					<Vector3 name="Velocity">
+						<X>-1.22599888</X>
+						<Y>1.85238266</Y>
+						<Z>-9.96418858</Z>
+					</Vector3>
+					<token name="formFactorRaw">3</token>
+					<token name="shape">1</token>
+					<Vector3 name="size">
+						<X>2.75</X>
+						<Y>0.25</Y>
+						<Z>0.5625</Z>
+					</Vector3>
+				</Properties>
+				<Item class="SpecialMesh" referent="RBXAEBE667B452C4C51984829527A99B470">
+					<Properties>
+						<token name="LODX">2</token>
+						<token name="LODY">2</token>
+						<Content name="MeshId"><url>http://www.roblox.com/asset?id=233692108</url></Content>
+						<token name="MeshType">5</token>
+						<string name="Name">Mesh</string>
+						<Vector3 name="Offset">
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</Vector3>
+						<Vector3 name="Scale">
+							<X>0.5</X>
+							<Y>0.5</Y>
+							<Z>0.5</Z>
+						</Vector3>
+						<Content name="TextureId"><url>http://www.roblox.com/asset?id=233692333</url></Content>
+						<Vector3 name="VertexColor">
+							<X>1</X>
+							<Y>1</Y>
+							<Z>1</Z>
+						</Vector3>
+					</Properties>
+				</Item>
+				<Item class="Weld" referent="RBX1EA7987CC326435583795926C7A4BA4B">
+					<Properties>
+						<CoordinateFrame name="C0">
+							<X>-1.50000024</X>
+							<Y>-4.70101738</Y>
+							<Z>1.49135315</Z>
+							<R00>1</R00>
+							<R01>3.01650689e-005</R01>
+							<R02>-3.08644994e-005</R02>
+							<R10>-3.08644994e-005</R10>
+							<R11>0.999737382</R11>
+							<R12>-0.0229168404</R12>
+							<R20>3.01650689e-005</R20>
+							<R21>0.0229168404</R21>
+							<R22>0.999737382</R22>
+						</CoordinateFrame>
+						<CoordinateFrame name="C1">
+							<X>-0.06166327</X>
+							<Y>-8.8816843</Y>
+							<Z>-1.52507055</Z>
+							<R00>0.681527913</R00>
+							<R01>-0.0330725424</R01>
+							<R02>-0.731044412</R02>
+							<R10>-0.0117617631</R10>
+							<R11>0.998354197</R11>
+							<R12>-0.0561307594</R12>
+							<R20>0.731697619</R20>
+							<R21>0.0468530506</R21>
+							<R22>0.680017233</R22>
+						</CoordinateFrame>
+						<string name="Name">Weld</string>
+						<Ref name="Part0">RBX42D7DDF0DDAA47CE8D54DB73E4E658DA</Ref>
+						<Ref name="Part1">RBX736EC6FC947A443E8972268924793AA2</Ref>
+					</Properties>
+				</Item>
+			</Item>
+		</Item>
+	</Item>
+</roblox>

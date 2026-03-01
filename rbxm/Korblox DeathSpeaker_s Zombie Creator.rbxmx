@@ -1,0 +1,840 @@
+<roblox xmlns:xmime="http://www.w3.org/2005/05/xmlmime" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.roblox.com/roblox.xsd" version="4">
+	<External>null</External>
+	<External>nil</External>
+	<Item class="Tool" referent="RBX74D3F1B73D194286AC90981FA86CE680">
+		<Properties>
+			<bool name="CanBeDropped">true</bool>
+			<bool name="Enabled">true</bool>
+			<CoordinateFrame name="Grip">
+				<X>0</X>
+				<Y>0</Y>
+				<Z>1</Z>
+				<R00>0</R00>
+				<R01>0</R01>
+				<R02>1</R02>
+				<R10>-1</R10>
+				<R11>0</R11>
+				<R12>0</R12>
+				<R20>0</R20>
+				<R21>-1</R21>
+				<R22>0</R22>
+			</CoordinateFrame>
+			<bool name="ManualActivationOnly">false</bool>
+			<string name="Name">Korblox Dagger</string>
+			<bool name="RequiresHandle">true</bool>
+			<BinaryString name="Tags"></BinaryString>
+			<Content name="TextureId"><url>http://www.roblox.com/asset/?id=51552384</url></Content>
+			<string name="ToolTip"></string>
+		</Properties>
+		<Item class="Part" referent="RBX124CB26B005B40828FC5263C3EC16C38">
+			<Properties>
+				<bool name="Anchored">false</bool>
+				<float name="BackParamA">-0.5</float>
+				<float name="BackParamB">0.5</float>
+				<token name="BackSurface">0</token>
+				<token name="BackSurfaceInput">0</token>
+				<float name="BottomParamA">-0.5</float>
+				<float name="BottomParamB">0.5</float>
+				<token name="BottomSurface">0</token>
+				<token name="BottomSurfaceInput">0</token>
+				<CoordinateFrame name="CFrame">
+					<X>1.50000095</X>
+					<Y>5.60000801</Y>
+					<Z>-0.999997973</Z>
+					<R00>0</R00>
+					<R01>-1</R01>
+					<R02>0</R02>
+					<R10>0.707106352</R10>
+					<R11>0</R11>
+					<R12>-0.707107365</R12>
+					<R20>0.707107365</R20>
+					<R21>0</R21>
+					<R22>0.707106352</R22>
+				</CoordinateFrame>
+				<bool name="CanCollide">true</bool>
+				<int name="CollisionGroupId">0</int>
+				<Color3uint8 name="Color3uint8">4284702562</Color3uint8>
+				<PhysicalProperties name="CustomPhysicalProperties">
+					<CustomPhysics>false</CustomPhysics>
+				</PhysicalProperties>
+				<float name="Elasticity">0.5</float>
+				<float name="Friction">0.300000012</float>
+				<float name="FrontParamA">-0.5</float>
+				<float name="FrontParamB">0.5</float>
+				<token name="FrontSurface">0</token>
+				<token name="FrontSurfaceInput">0</token>
+				<float name="LeftParamA">-0.5</float>
+				<float name="LeftParamB">0.5</float>
+				<token name="LeftSurface">0</token>
+				<token name="LeftSurfaceInput">0</token>
+				<bool name="Locked">true</bool>
+				<token name="Material">256</token>
+				<string name="Name">Handle</string>
+				<float name="Reflectance">0</float>
+				<float name="RightParamA">-0.5</float>
+				<float name="RightParamB">0.5</float>
+				<token name="RightSurface">0</token>
+				<token name="RightSurfaceInput">0</token>
+				<Vector3 name="RotVelocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<BinaryString name="Tags"></BinaryString>
+				<float name="TopParamA">-0.5</float>
+				<float name="TopParamB">0.5</float>
+				<token name="TopSurface">0</token>
+				<token name="TopSurfaceInput">0</token>
+				<float name="Transparency">0</float>
+				<Vector3 name="Velocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<token name="formFactorRaw">3</token>
+				<token name="shape">1</token>
+				<Vector3 name="size">
+					<X>0.60000217</X>
+					<Y>0.400000364</Y>
+					<Z>2.52999926</Z>
+				</Vector3>
+			</Properties>
+			<Item class="SpecialMesh" referent="RBX6CE49BFB71DB4FD49284027055B9EE52">
+				<Properties>
+					<token name="LODX">2</token>
+					<token name="LODY">2</token>
+					<Content name="MeshId"><url>http://www.roblox.com/asset/?id=51552224 </url></Content>
+					<token name="MeshType">5</token>
+					<string name="Name">Mesh</string>
+					<Vector3 name="Offset">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+					</Vector3>
+					<Vector3 name="Scale">
+						<X>1</X>
+						<Y>1</Y>
+						<Z>1</Z>
+					</Vector3>
+					<BinaryString name="Tags"></BinaryString>
+					<Content name="TextureId"><url>http://www.roblox.com/asset/?id=51552338 </url></Content>
+					<Vector3 name="VertexColor">
+						<X>1</X>
+						<Y>1</Y>
+						<Z>1</Z>
+					</Vector3>
+				</Properties>
+			</Item>
+			<Item class="Attachment" referent="RBX12DA882586C34038A8091273954C59E1">
+				<Properties>
+					<CoordinateFrame name="CFrame">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0.99999994</Z>
+						<R00>-6.31088724e-30</R00>
+						<R01>0</R01>
+						<R02>1</R02>
+						<R10>-1</R10>
+						<R11>0</R11>
+						<R12>-6.31088724e-30</R12>
+						<R20>0</R20>
+						<R21>-1</R21>
+						<R22>0</R22>
+					</CoordinateFrame>
+					<string name="Name">RightGripAttachment</string>
+					<BinaryString name="Tags"></BinaryString>
+					<bool name="Visible">false</bool>
+				</Properties>
+			</Item>
+		</Item>
+		<Item class="LocalScript" referent="RBX331E7ACC61AC46C9A506F2C4E560A251">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">Local Gui</string>
+				<string name="ScriptGuid">{67108108-C7A6-4571-AD6B-02786BBCF832}</string>
+				<ProtectedString name="Source"><![CDATA[Tool = script.Parent
+
+local stillEquipped = false
+
+function onEquippedLocal(mouse)
+	stillEquipped = true
+	if mouse == nil then 
+		print("Mouse not found")
+		return
+	end
+	while stillEquipped do 
+		print("Setting Mouse to go")
+		mouse.Icon = "rbxasset://textures\\GunCursor.png"
+		while Tool.Enabled and stillEquipped do 
+			wait(0.01)
+		end
+		print("Setting Mouse to wait")
+		mouse.Icon = "rbxasset://textures\\GunWaitCursor.png"
+		while not Tool.Enabled and stillEquipped do 
+			wait(0.01)
+		end	
+	end
+end
+
+
+function onUnequippedLocal()
+	stillEquipped = false
+end
+
+Tool.Equipped:connect(onEquippedLocal)
+Tool.Unequipped:connect(onUnequippedLocal)]]></ProtectedString>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+		</Item>
+		<Item class="Script" referent="RBX70F5B906948D469D8E8D7C600AD0AE50">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">DaggerScript</string>
+				<string name="ScriptGuid">{9A41284B-D029-43B5-906B-587E81C6585C}</string>
+				<ProtectedString name="Source"><![CDATA[r = game:service("RunService")
+local sword = script.Parent.Handle
+local Tool = script.Parent
+
+local damage = 14
+
+local slash_damage = 18
+local lunge_damage = 24
+
+local SlashSound = Instance.new("Sound")
+SlashSound.SoundId = "rbxasset://sounds\\swordslash.wav"
+SlashSound.Parent = sword
+SlashSound.Volume = .7
+
+local LungeSound = Instance.new("Sound")
+LungeSound.SoundId = "rbxasset://sounds\\swordlunge.wav"
+LungeSound.Parent = sword
+LungeSound.Volume = .6
+
+local UnsheathSound = Instance.new("Sound")
+UnsheathSound.SoundId = "rbxasset://sounds\\unsheath.wav"
+UnsheathSound.Parent = sword
+UnsheathSound.Volume = 1
+
+local zombieTarget 
+
+function blow(hit)
+	tempDamage = lunge_damage
+	local humanoid = hit.Parent:findFirstChild("Humanoid")
+	local vCharacter = Tool.Parent
+	local vPlayer = game.Players:playerFromCharacter(vCharacter)
+	local hum = vCharacter:findFirstChild("Humanoid") -- non-nil if tool held by a character
+	if humanoid~=nil and humanoid ~= hum and hum ~= nil then		
+		-- final check, make sure sword is in-hand
+		local right_arm = vCharacter:FindFirstChild("Right Arm") or vCharacter:FindFirstChild("RightHand")
+		if (right_arm ~= nil) then
+			local joint = right_arm:FindFirstChild("RightGrip")
+			if (joint ~= nil and (joint.Part0 == sword or joint.Part1 == sword)) then
+				tagHumanoid(humanoid, vPlayer)				
+				if humanoid.Health - damage < 0 and humanoid.Health > 0 then 
+					targetTorso = hit.Parent:findFirstChild("Torso") or hit.Parent:FindFirstChild("UpperTorso")					
+					if targetTorso then
+						zombieTarget = Tool.ZombieScript.Target
+						zombieTarget.Value = targetTorso.Position 
+						zombieOwner = Tool.ZombieScript.Owner
+						zombieOwner.Value = hum
+					end			
+					newZombie = Tool.ZombieScript:Clone()
+					newZombie.Parent = Tool
+					newZombie.Disabled = false 
+				end
+				humanoid:TakeDamage(damage)
+				wait(1)
+				untagHumanoid(humanoid)
+				damage = tempDamage
+			end
+		end
+	end
+end
+
+
+function tagHumanoid(humanoid, player)
+	local creator_tag = Instance.new("ObjectValue")
+	creator_tag.Value = player
+	creator_tag.Name = "creator"
+	creator_tag.Parent = humanoid
+end
+
+function untagHumanoid(humanoid)
+	if humanoid ~= nil then
+		local tag = humanoid:findFirstChild("creator")
+		if tag ~= nil then
+			tag.Parent = nil
+		end
+	end
+end
+
+
+function attack()
+	damage = slash_damage
+	SlashSound:play()
+	local anim = Instance.new("StringValue")
+	anim.Name = "toolanim"
+	anim.Value = "Slash"
+	anim.Parent = Tool
+end
+
+function lunge()
+	damage = lunge_damage
+	LungeSound:play()
+
+
+	local anim = Instance.new("StringValue")
+	anim.Name = "toolanim"
+	anim.Value = "Lunge"
+	anim.Parent = Tool	
+	wait(.2)
+	swordOut()
+	wait(.2)
+	wait(.4)
+	swordUp()
+	damage = slash_damage
+end
+
+function swordUp()
+	Tool.GripForward = Vector3.new(-1,0,0)
+	Tool.GripRight = Vector3.new(0, -1, 0)
+	Tool.GripUp = Vector3.new(0, 0, -1)
+end
+
+function swordOut()
+	Tool.GripForward = Vector3.new(0, 1, 0)
+	Tool.GripRight = Vector3.new(0, 0, 1)
+	Tool.GripUp = Vector3.new(1, 0, 0)
+end
+
+function swordAcross()
+	-- parry
+end
+
+
+Tool.Enabled = true
+local last_attack = 0
+function onActivated()
+
+	if not Tool.Enabled then
+		return
+	end
+
+	Tool.Enabled = false
+
+	local character = Tool.Parent;
+	local humanoid = character.Humanoid
+	if humanoid == nil then
+		print("Humanoid not found")
+		return 
+	end
+
+	t = r.Stepped:wait()
+
+	if (t - last_attack < .2) then
+		lunge()
+	else
+		attack()
+	end
+
+	last_attack = t
+
+	--wait(0.5)
+
+	Tool.Enabled = true
+end
+
+function onEquipped()	
+	UnsheathSound:play()	
+end
+
+script.Parent.Activated:connect(onActivated)
+script.Parent.Equipped:connect(onEquipped)
+
+connection = sword.Touched:connect(blow)
+
+]]></ProtectedString>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+		</Item>
+		<Item class="Script" referent="RBX8E30A40EAD9F4547BF46D67D51B84D16">
+			<Properties>
+				<bool name="Disabled">true</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">ZombieScript</string>
+				<string name="ScriptGuid">{69A9BFE3-FE04-42FD-9A29-6FB3D30AD177}</string>
+				<ProtectedString name="Source"><![CDATA[local zombie
+local zombieOwner
+
+local target = script:FindFirstChild("Target")
+print(target.Value)
+
+local unAnchoredParts = {} 
+
+function offsetModelBy(model, offset) 
+     local childs = model:GetChildren() 
+     for i = 1, #childs do
+		if childs[i]:IsA("BasePart") then 
+			childs[i].CFrame = childs[i].CFrame + offset 					
+			if not childs[i].Anchored then table.insert(unAnchoredParts, childs[i]) end 
+			childs[i].Anchored = true -- anchor everything 
+		elseif childs[i]:IsA("Tool") or childs[i]:IsA("Accessory") or childs[i]:IsA("Model")then
+			offsetModelBy(childs[i], offset) 
+		end 
+	end 
+end 
+
+function createZombie()
+	print("Creating Zombie")
+	--model = game:GetService("InsertService"):LoadAsset(51731605)
+	model = game:GetService("InsertService"):LoadAsset(51761755)
+	if model then 
+		print("Found Model")
+		children = model:GetChildren() 
+		if children then zombie = children[1] end
+	else print("Model Fetch failed")
+	end	 
+
+	if zombie then
+		unAnchoredParts = {} 
+
+		offsetVector = (target.Value - zombie.Torso.Position) --+ Vector3.new(0, 4, 0)
+		offsetModelBy(zombie, offsetVector)
+
+		zombie.Parent = game.Workspace 
+
+		neck = zombie.Torso.Neck
+		neck.Part0 = zombie.Head
+		neck.Part1 = zombie.Torso		
+
+		-- HotThoth's Unholy Hack to prevent the zombie from dying while spawning
+		-- There is a more reliable way to do this, by making the entire Zombie in script
+		-- but of course thats ugly in its own right! 
+		for j = 1, 10 do 
+		-- Insane script below!
+		zombie.Humanoid.MaxHealth = 100 
+		zombie.Humanoid.Health = 100 
+		zombie:MakeJoints() 
+		wait(.1) 
+		end 
+
+		-- unanchor everything 
+		for u = 1, #unAnchoredParts do unAnchoredParts[u].Anchored = false end 
+
+		zombieOwner = script.Owner
+		zombieOwner.Parent = zombie
+
+		actionScript = script.ActionScript
+		actionScript.Parent = zombie
+		actionScript.Disabled = false
+		
+		animateScript = script.Animate 
+		animateScript.Parent = zombie
+		animateScript.Disabled = false
+	end
+end
+
+createZombie()
+
+wait(2.0)
+
+script:Destroy()
+
+
+]]></ProtectedString>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+			<Item class="Vector3Value" referent="RBXA5A10BC8560045C78F7DFAACE143803E">
+				<Properties>
+					<string name="Name">Target</string>
+					<BinaryString name="Tags"></BinaryString>
+					<Vector3 name="Value">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+					</Vector3>
+				</Properties>
+			</Item>
+			<Item class="Script" referent="RBX10098986485E4113A7726EDF9FA21950">
+				<Properties>
+					<bool name="Disabled">true</bool>
+					<Content name="LinkedSource"><null></null></Content>
+					<string name="Name">ActionScript</string>
+					<string name="ScriptGuid">{D6613C28-723E-4564-BDE0-60A311683CA2}</string>
+					<ProtectedString name="Source"><![CDATA[zombie = script.Parent
+local zombieHumanoid = zombie.Humanoid
+
+omnom = Instance.new("Sound") 
+omnom.Parent = zombie
+omnom.Volume = 1 
+omnom.SoundId = "http://www.roblox.com/asset/?id=35971877" 
+omnom.Name = "Omnomnom" 
+
+if zombieHumanoid then 
+	zombieHumanoid.MaxHealth = 250
+	zombieHumanoid.Health = 250
+
+	wait(0.25)
+	zombieHumanoid.Health = 250
+
+	zombieHumanoid.WalkSpeed = 18.0
+	
+	neck = zombie.Torso.Neck
+	neck.Part0 = zombie.Head
+	neck.Part1 = zombie.Torso
+end
+
+local zombieLife = 60
+
+local attacking = false
+local enemy
+
+local zombieOwner = zombie:FindFirstChild("Owner").Value	
+
+function blow(hit)
+	if hit.Parent then 
+		humanoid = hit.Parent:FindFirstChild("Humanoid")
+		if humanoid ~= nil and humanoid ~= zombieOwner and humanoid ~= zombieHumanoid and hit.Parent.Name ~= "Zombie" then 
+			omnom:Play()
+			humanoid:TakeDamage(20)	
+		end
+	end
+end
+
+connection = zombie.Torso.Touched:connect(blow)
+
+while zombieLife > 0 do
+
+	zombieOwner = zombie:FindFirstChild("Owner").Value	
+	
+	attacked = zombieOwner:GetChildren()	
+	if #attacked > 1 or attacking == true then 
+		if enemy == nil then 
+			for i = 1, #attacked do 
+				if attacked[i].Name == "creator" then 
+					print(attacked[i])
+					enemy =  attacked[i].Value 
+					enemy = enemy.Character
+				end
+			end
+		end
+		if enemy then 
+			print("Found enemy")
+			attacking = true
+			zombieHumanoid:MoveTo(enemy.Torso.Position, enemy.Torso)			
+		else 
+			attacking = false
+		end	
+
+	elseif zombieHumanoid and zombieOwner ~= nil then 
+		distance = (zombieOwner.Parent.Torso.Position - zombie.Torso.Position).magnitude
+		if distance > 5.0 then
+			zombieHumanoid:MoveTo(zombieOwner.Parent.Torso.Position + (zombie.Torso.Position - zombieOwner.Parent.Torso.Position).unit * math.random(2, 7), zombieOwner.Parent.Torso)
+		end
+	else
+		print("No owner")
+	end
+	wait(1.0)		
+	zombieLife = zombieLife - 1
+end
+
+zombie:Remove()
+]]></ProtectedString>
+					<BinaryString name="Tags"></BinaryString>
+				</Properties>
+			</Item>
+			<Item class="ObjectValue" referent="RBX3AFCDBBBD61A47DAB7B734CC8424E866">
+				<Properties>
+					<string name="Name">Owner</string>
+					<BinaryString name="Tags"></BinaryString>
+					<Ref name="Value">null</Ref>
+				</Properties>
+			</Item>
+			<Item class="Script" referent="RBX000831E468084C36A123AC0FF7B57F16">
+				<Properties>
+					<bool name="Disabled">true</bool>
+					<Content name="LinkedSource"><null></null></Content>
+					<string name="Name">Animate</string>
+					<string name="ScriptGuid">{6BB92BC4-BC04-485B-BBA9-4504FDC03CC2}</string>
+					<ProtectedString name="Source"><![CDATA[function waitForChild(parent, childName) 
+     local child = parent:findFirstChild(childName) 
+     if child then return child end 
+     while true do 
+          child = parent.ChildAdded:wait() 
+          if child.Name==childName then return child end 
+     end 
+end 
+
+-- ANIMATION 
+
+-- declarations 
+
+local Figure = script.Parent 
+local Torso = waitForChild(Figure, "Torso") 
+local RightShoulder = waitForChild(Torso, "Right Shoulder") 
+local LeftShoulder = waitForChild(Torso, "Left Shoulder") 
+local RightHip = waitForChild(Torso, "Right Hip") 
+local LeftHip = waitForChild(Torso, "Left Hip") 
+local Neck = waitForChild(Torso, "Neck") 
+local Humanoid = waitForChild(Figure, "Humanoid") 
+local pose = "Standing" 
+
+-- functions 
+
+--print("Got past the waitForChilds") 
+
+function onRunning(speed) 
+     if speed>0 then 
+          pose = "Running" 
+     else 
+          pose = "Standing" 
+     end 
+end 
+
+function onDied() 
+     pose = "Dead" 
+end 
+
+function onJumping() 
+     --print("ONJUMPING") 
+     pose = "Jumping" 
+end 
+
+function onClimbing() 
+     pose = "Climbing" 
+end 
+
+function onGettingUp() 
+     pose = "GettingUp" 
+end 
+
+function onFreeFall() 
+     pose = "FreeFall" 
+end 
+
+function onFallingDown() 
+     pose = "FallingDown" 
+end 
+
+function onSeated() 
+     pose = "Seated" 
+end 
+
+function onPlatformStanding() 
+     pose = "PlatformStanding" 
+end 
+
+function moveJump() 
+     --print("MOVEJUMP") 
+     RightShoulder.MaxVelocity = 0.5 
+     LeftShoulder.MaxVelocity = 0.5 
+     RightShoulder.DesiredAngle = 3.14 
+     LeftShoulder.DesiredAngle = -3.14 
+     RightHip.DesiredAngle = 0 
+     LeftHip.DesiredAngle = 0 
+end 
+
+
+-- same as jump for now 
+
+function moveFreeFall() 
+     RightShoulder.MaxVelocity = 0.5 
+     LeftShoulder.MaxVelocity = 0.5 
+     RightShoulder.DesiredAngle = 3.14 
+     LeftShoulder.DesiredAngle = -3.14 
+     RightHip.DesiredAngle = 0 
+     LeftHip.DesiredAngle = 0 
+end 
+
+function moveSit() 
+     RightShoulder.MaxVelocity = 0.15 
+     LeftShoulder.MaxVelocity = 0.15 
+     RightShoulder.DesiredAngle = 3.14 /2 
+     LeftShoulder.DesiredAngle = -3.14 /2 
+     RightHip.DesiredAngle = 3.14 /2 
+     LeftHip.DesiredAngle = -3.14 /2 
+end 
+
+function getTool()      
+     for _, kid in ipairs(Figure:GetChildren()) do 
+          if kid.className == "Tool" then return kid end 
+     end 
+     return nil 
+end 
+
+function getToolAnim(tool) 
+     for _, c in ipairs(tool:GetChildren()) do 
+          if c.Name == "toolanim" and c.className == "StringValue" then 
+               return c 
+          end 
+     end 
+     return nil 
+end 
+
+function animateTool() 
+      
+     if (toolAnim == "None") then 
+          RightShoulder.DesiredAngle = 1.57 
+          return 
+     end 
+
+     if (toolAnim == "Slash") then 
+          RightShoulder.MaxVelocity = 0.5 
+          RightShoulder.DesiredAngle = 0 
+          return 
+     end 
+
+     if (toolAnim == "Lunge") then 
+          RightShoulder.MaxVelocity = 0.5 
+          LeftShoulder.MaxVelocity = 0.5 
+          RightHip.MaxVelocity = 0.5 
+          LeftHip.MaxVelocity = 0.5 
+          RightShoulder.DesiredAngle = 1.57 
+          LeftShoulder.DesiredAngle = 1.0 
+          RightHip.DesiredAngle = 1.57 
+          LeftHip.DesiredAngle = 1.0 
+          return 
+     end 
+end 
+
+function move(time) 
+     local amplitude 
+     local frequency 
+
+     if (pose == "Jumping") then 
+          --print("Pose is jumping") 
+          moveJump() 
+          return 
+     end 
+
+     if (pose == "FreeFall") then 
+          moveFreeFall() 
+          return 
+     end 
+
+     if (pose == "Seated") then 
+          moveSit() 
+          return 
+     end 
+
+     local climbFudge = 0 
+      
+     if (pose == "Running") then 
+          RightShoulder.MaxVelocity = 0.15 
+          LeftShoulder.MaxVelocity = 0.15 
+          amplitude = 1 
+          frequency = 9 
+     elseif (pose == "Climbing") then 
+          RightShoulder.MaxVelocity = 0.5 
+          LeftShoulder.MaxVelocity = 0.5 
+          amplitude = 1 
+          frequency = 9 
+          climbFudge = 3.14 
+     else 
+          amplitude = 0.1 
+          frequency = 1 
+     end 
+
+     desiredAngle = amplitude * math.sin(time*frequency) 
+
+     RightShoulder.DesiredAngle = desiredAngle + climbFudge 
+     LeftShoulder.DesiredAngle = desiredAngle - climbFudge 
+     RightHip.DesiredAngle = -desiredAngle 
+     LeftHip.DesiredAngle = -desiredAngle 
+
+
+     local tool = getTool() 
+
+     if tool then 
+      
+          animStringValueObject = getToolAnim(tool) 
+
+          if animStringValueObject then 
+               toolAnim = animStringValueObject.Value 
+               -- message recieved, delete StringValue 
+               animStringValueObject.Parent = nil 
+               toolAnimTime = time + .3 
+          end 
+
+          if time > toolAnimTime then 
+               toolAnimTime = 0 
+               toolAnim = "None" 
+          end 
+
+          animateTool() 
+
+           
+     else 
+          toolAnim = "None" 
+          toolAnimTime = 0 
+     end 
+end 
+
+
+-- connect events 
+
+Humanoid.Died:connect(onDied) 
+Humanoid.Running:connect(onRunning) 
+Humanoid.Jumping:connect(onJumping) 
+Humanoid.Climbing:connect(onClimbing) 
+Humanoid.GettingUp:connect(onGettingUp) 
+Humanoid.FreeFalling:connect(onFreeFall) 
+Humanoid.FallingDown:connect(onFallingDown) 
+Humanoid.Seated:connect(onSeated) 
+Humanoid.PlatformStanding:connect(onPlatformStanding) 
+
+-- main program 
+
+local runService = game:service("RunService"); 
+
+while Figure.Parent~=nil do 
+     local _, time = wait(0.1) 
+     move(time) 
+end]]></ProtectedString>
+					<BinaryString name="Tags"></BinaryString>
+				</Properties>
+			</Item>
+		</Item>
+		<Item class="Camera" referent="RBX14830DE0EA454988898D77B265D96C45">
+			<Properties>
+				<CoordinateFrame name="CFrame">
+					<X>4.1158886</X>
+					<Y>5.83327627</Y>
+					<Z>-1.20802331</Z>
+					<R00>-0.0489058271</R00>
+					<R01>-0.0523426533</R01>
+					<R02>0.997430921</R02>
+					<R10>-2.32830671e-10</R10>
+					<R11>0.998625994</R11>
+					<R12>0.0524053574</R12>
+					<R20>-0.998803496</R20>
+					<R21>0.00256292708</R21>
+					<R22>-0.0488386154</R22>
+				</CoordinateFrame>
+				<Ref name="CameraSubject">null</Ref>
+				<token name="CameraType">0</token>
+				<float name="FieldOfView">70</float>
+				<CoordinateFrame name="Focus">
+					<X>2.12102675</X>
+					<Y>5.72846556</Y>
+					<Z>-1.11034608</Z>
+					<R00>1</R00>
+					<R01>0</R01>
+					<R02>0</R02>
+					<R10>0</R10>
+					<R11>1</R11>
+					<R12>0</R12>
+					<R20>0</R20>
+					<R21>0</R21>
+					<R22>1</R22>
+				</CoordinateFrame>
+				<bool name="HeadLocked">true</bool>
+				<float name="HeadScale">1</float>
+				<string name="Name">ThumbnailCamera</string>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+		</Item>
+	</Item>
+</roblox>

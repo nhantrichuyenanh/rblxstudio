@@ -1,0 +1,683 @@
+<roblox xmlns:xmime="http://www.w3.org/2005/05/xmlmime" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.roblox.com/roblox.xsd" version="4">
+	<External>null</External>
+	<External>nil</External>
+	<Item class="Tool" referent="RBX47D7A6CB30774A978C1107FA7BC92655">
+		<Properties>
+			<bool name="CanBeDropped">true</bool>
+			<bool name="Enabled">true</bool>
+			<CoordinateFrame name="Grip">
+				<X>-1.60000002</X>
+				<Y>-2</Y>
+				<Z>1.64999998</Z>
+				<R00>-1</R00>
+				<R01>5.95578786e-006</R01>
+				<R02>4.27407285e-005</R02>
+				<R10>4.27403102e-005</R10>
+				<R11>0.273452282</R11>
+				<R12>0.961885631</R12>
+				<R20>-5.95876145e-006</R20>
+				<R21>0.961885571</R21>
+				<R22>-0.273452312</R22>
+			</CoordinateFrame>
+			<bool name="ManualActivationOnly">false</bool>
+			<string name="Name">BunnyTailAndFeet</string>
+			<bool name="RequiresHandle">true</bool>
+			<Content name="TextureId"><url>http://www.roblox.com/asset/?id=385769198</url></Content>
+			<string name="ToolTip"></string>
+		</Properties>
+		<Item class="Part" referent="RBXA6E536BD32C94057AC0B0EE6DAC84201">
+			<Properties>
+				<bool name="Anchored">false</bool>
+				<float name="BackParamA">-0.5</float>
+				<float name="BackParamB">0.5</float>
+				<token name="BackSurface">0</token>
+				<token name="BackSurfaceInput">0</token>
+				<float name="BottomParamA">-0.5</float>
+				<float name="BottomParamB">0.5</float>
+				<token name="BottomSurface">0</token>
+				<token name="BottomSurfaceInput">0</token>
+				<int name="BrickColor">194</int>
+				<CoordinateFrame name="CFrame">
+					<X>-1.26036799</X>
+					<Y>2.66070199</Y>
+					<Z>1.11510551</Z>
+					<R00>-0.871217132</R00>
+					<R01>-0.472066879</R01>
+					<R02>0.134660944</R02>
+					<R10>2.58525815e-005</R10>
+					<R11>0.274271429</R11>
+					<R12>0.961652339</R12>
+					<R20>-0.490897864</R20>
+					<R21>0.83781147</R21>
+					<R22>-0.238937795</R22>
+				</CoordinateFrame>
+				<bool name="CanCollide">true</bool>
+				<PhysicalProperties name="CustomPhysicalProperties">
+					<CustomPhysics>false</CustomPhysics>
+				</PhysicalProperties>
+				<float name="Elasticity">0.5</float>
+				<float name="Friction">0.300000012</float>
+				<float name="FrontParamA">-0.5</float>
+				<float name="FrontParamB">0.5</float>
+				<token name="FrontSurface">0</token>
+				<token name="FrontSurfaceInput">0</token>
+				<float name="LeftParamA">-0.5</float>
+				<float name="LeftParamB">0.5</float>
+				<token name="LeftSurface">0</token>
+				<token name="LeftSurfaceInput">0</token>
+				<bool name="Locked">true</bool>
+				<token name="Material">256</token>
+				<string name="Name">Handle</string>
+				<float name="Reflectance">0</float>
+				<float name="RightParamA">-0.5</float>
+				<float name="RightParamB">0.5</float>
+				<token name="RightSurface">0</token>
+				<token name="RightSurfaceInput">0</token>
+				<Vector3 name="RotVelocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<float name="TopParamA">-0.5</float>
+				<float name="TopParamB">0.5</float>
+				<token name="TopSurface">0</token>
+				<token name="TopSurfaceInput">0</token>
+				<float name="Transparency">1</float>
+				<Vector3 name="Velocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<token name="formFactorRaw">3</token>
+				<token name="shape">1</token>
+				<Vector3 name="size">
+					<X>1</X>
+					<Y>1</Y>
+					<Z>0.75</Z>
+				</Vector3>
+			</Properties>
+			<Item class="SpecialMesh" referent="RBX81B733BA5AE544D6A69C1C616AD1ACE5">
+				<Properties>
+					<token name="LODX">2</token>
+					<token name="LODY">2</token>
+					<Content name="MeshId"><url>http://www.roblox.com/asset/?id=232544957</url></Content>
+					<token name="MeshType">5</token>
+					<string name="Name">Mesh</string>
+					<Vector3 name="Offset">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+					</Vector3>
+					<Vector3 name="Scale">
+						<X>1.125</X>
+						<Y>1.25</Y>
+						<Z>0.875</Z>
+					</Vector3>
+					<Content name="TextureId"><url>http://www.roblox.com/asset/?id=385765630</url></Content>
+					<Vector3 name="VertexColor">
+						<X>1</X>
+						<Y>1</Y>
+						<Z>1</Z>
+					</Vector3>
+				</Properties>
+			</Item>
+			<Item class="Sound" referent="RBX627494EB62D441219551D3C5A68DA031">
+				<Properties>
+					<float name="EmitterSize">0</float>
+					<bool name="Looped">false</bool>
+					<string name="Name">Hop</string>
+					<bool name="PlayOnRemove">false</bool>
+					<float name="PlaybackSpeed">2.01999998</float>
+					<bool name="Playing">false</bool>
+					<Ref name="SoundGroup">null</Ref>
+					<Content name="SoundId"><url>http://www.roblox.com/asset/?Id=228085563</url></Content>
+					<double name="TimePosition">0</double>
+					<float name="Volume">0.300000012</float>
+					<float name="xmlRead_MaxDistance_3">10000</float>
+				</Properties>
+			</Item>
+		</Item>
+		<Item class="Animation" referent="RBX089CD0FB296A4559B5B215418358C2C0">
+			<Properties>
+				<Content name="AnimationId"><url>http://www.roblox.com/asset/?id=232937965</url></Content>
+				<string name="Name">Spin</string>
+			</Properties>
+		</Item>
+		<Item class="Part" referent="RBXC6C986FF66B4412FA2CB07D8B6E220EA">
+			<Properties>
+				<bool name="Anchored">false</bool>
+				<float name="BackParamA">-0.5</float>
+				<float name="BackParamB">0.5</float>
+				<token name="BackSurface">0</token>
+				<token name="BackSurfaceInput">0</token>
+				<float name="BottomParamA">-0.5</float>
+				<float name="BottomParamB">0.5</float>
+				<token name="BottomSurface">0</token>
+				<token name="BottomSurfaceInput">0</token>
+				<int name="BrickColor">194</int>
+				<CoordinateFrame name="CFrame">
+					<X>-1.25996554</X>
+					<Y>2.66000462</Y>
+					<Z>1.1143893</Z>
+					<R00>-0.871236563</R00>
+					<R01>-0.472133338</R01>
+					<R02>0.134301677</R02>
+					<R10>4.94086271e-005</R10>
+					<R11>0.273518682</R11>
+					<R12>0.961866736</R12>
+					<R20>-0.490863264</R20>
+					<R21>0.838020146</R21>
+					<R22>-0.238276154</R22>
+				</CoordinateFrame>
+				<bool name="CanCollide">true</bool>
+				<PhysicalProperties name="CustomPhysicalProperties">
+					<CustomPhysics>false</CustomPhysics>
+				</PhysicalProperties>
+				<float name="Elasticity">0.5</float>
+				<float name="Friction">0.300000012</float>
+				<float name="FrontParamA">-0.5</float>
+				<float name="FrontParamB">0.5</float>
+				<token name="FrontSurface">0</token>
+				<token name="FrontSurfaceInput">0</token>
+				<float name="LeftParamA">-0.5</float>
+				<float name="LeftParamB">0.5</float>
+				<token name="LeftSurface">0</token>
+				<token name="LeftSurfaceInput">0</token>
+				<bool name="Locked">true</bool>
+				<token name="Material">256</token>
+				<string name="Name">Tail</string>
+				<float name="Reflectance">0</float>
+				<float name="RightParamA">-0.5</float>
+				<float name="RightParamB">0.5</float>
+				<token name="RightSurface">0</token>
+				<token name="RightSurfaceInput">0</token>
+				<Vector3 name="RotVelocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<float name="TopParamA">-0.5</float>
+				<float name="TopParamB">0.5</float>
+				<token name="TopSurface">0</token>
+				<token name="TopSurfaceInput">0</token>
+				<float name="Transparency">0</float>
+				<Vector3 name="Velocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<token name="formFactorRaw">3</token>
+				<token name="shape">1</token>
+				<Vector3 name="size">
+					<X>1</X>
+					<Y>1</Y>
+					<Z>0.75</Z>
+				</Vector3>
+			</Properties>
+			<Item class="Weld" referent="RBXDAB3024CF1E64E15A7F2975C71DD94DA">
+				<Properties>
+					<CoordinateFrame name="C0">
+						<X>6.62676668</X>
+						<Y>14.9304724</Y>
+						<Z>-6.81770468</Z>
+						<R00>-0.871237278</R00>
+						<R01>-6.87044758e-006</R01>
+						<R02>-0.490862101</R02>
+						<R10>-0.472039759</R10>
+						<R11>0.274275392</R11>
+						<R12>0.837825418</R12>
+						<R20>0.134625643</R20>
+						<R21>0.961651206</R21>
+						<R22>-0.238962173</R22>
+					</CoordinateFrame>
+					<CoordinateFrame name="C1">
+						<X>6.62676764</X>
+						<Y>14.9368849</Y>
+						<Z>-6.80536938</Z>
+						<R00>-0.871256709</R00>
+						<R01>2.48501401e-005</R01>
+						<R02>-0.49082756</R02>
+						<R10>-0.472103566</R10>
+						<R11>0.273527086</R11>
+						<R12>0.838034093</R12>
+						<R20>0.134275451</R20>
+						<R21>0.961864352</R21>
+						<R22>-0.238300577</R22>
+					</CoordinateFrame>
+					<string name="Name">Weld</string>
+					<Ref name="Part0">RBXA6E536BD32C94057AC0B0EE6DAC84201</Ref>
+					<Ref name="Part1">RBXC6C986FF66B4412FA2CB07D8B6E220EA</Ref>
+				</Properties>
+			</Item>
+			<Item class="SpecialMesh" referent="RBX674096B2243F4363AEBF45CDC305816D">
+				<Properties>
+					<token name="LODX">2</token>
+					<token name="LODY">2</token>
+					<Content name="MeshId"><url>http://www.roblox.com/asset/?id=232544957</url></Content>
+					<token name="MeshType">5</token>
+					<string name="Name">Mesh</string>
+					<Vector3 name="Offset">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+					</Vector3>
+					<Vector3 name="Scale">
+						<X>1</X>
+						<Y>1</Y>
+						<Z>1</Z>
+					</Vector3>
+					<Content name="TextureId"><url>http://www.roblox.com/asset/?id=385765630</url></Content>
+					<Vector3 name="VertexColor">
+						<X>1</X>
+						<Y>1</Y>
+						<Z>1</Z>
+					</Vector3>
+				</Properties>
+			</Item>
+		</Item>
+		<Item class="Part" referent="RBX9E92FB4BD44740FF9BCE2AFE7C40CDDB">
+			<Properties>
+				<bool name="Anchored">false</bool>
+				<float name="BackParamA">-0.5</float>
+				<float name="BackParamB">0.5</float>
+				<token name="BackSurface">0</token>
+				<token name="BackSurfaceInput">0</token>
+				<float name="BottomParamA">-0.5</float>
+				<float name="BottomParamB">0.5</float>
+				<token name="BottomSurface">0</token>
+				<token name="BottomSurfaceInput">0</token>
+				<int name="BrickColor">194</int>
+				<CoordinateFrame name="CFrame">
+					<X>-1.05857778</X>
+					<Y>0.420000315</Y>
+					<Z>-0.465249777</Z>
+					<R00>0.871198773</R00>
+					<R01>3.72627837e-005</R01>
+					<R02>-0.49092558</R02>
+					<R10>-2.17737233e-005</R10>
+					<R11>1</R11>
+					<R12>3.72627837e-005</R12>
+					<R20>0.49092558</R20>
+					<R21>-2.17737233e-005</R21>
+					<R22>0.871198773</R22>
+				</CoordinateFrame>
+				<bool name="CanCollide">true</bool>
+				<PhysicalProperties name="CustomPhysicalProperties">
+					<CustomPhysics>false</CustomPhysics>
+				</PhysicalProperties>
+				<float name="Elasticity">0.5</float>
+				<float name="Friction">0.300000012</float>
+				<float name="FrontParamA">-0.5</float>
+				<float name="FrontParamB">0.5</float>
+				<token name="FrontSurface">0</token>
+				<token name="FrontSurfaceInput">0</token>
+				<float name="LeftParamA">-0.5</float>
+				<float name="LeftParamB">0.5</float>
+				<token name="LeftSurface">0</token>
+				<token name="LeftSurfaceInput">0</token>
+				<bool name="Locked">true</bool>
+				<token name="Material">256</token>
+				<string name="Name">LeftFoot</string>
+				<float name="Reflectance">0</float>
+				<float name="RightParamA">-0.5</float>
+				<float name="RightParamB">0.5</float>
+				<token name="RightSurface">0</token>
+				<token name="RightSurfaceInput">0</token>
+				<Vector3 name="RotVelocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<float name="TopParamA">-0.5</float>
+				<float name="TopParamB">0.5</float>
+				<token name="TopSurface">0</token>
+				<token name="TopSurfaceInput">0</token>
+				<float name="Transparency">0</float>
+				<Vector3 name="Velocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<token name="formFactorRaw">3</token>
+				<token name="shape">1</token>
+				<Vector3 name="size">
+					<X>1.5</X>
+					<Y>0.75</Y>
+					<Z>2.75</Z>
+				</Vector3>
+			</Properties>
+			<Item class="Weld" referent="RBX3080F49A27464CFD9C79185455451858">
+				<Properties>
+					<CoordinateFrame name="C0">
+						<X>6.62676144</X>
+						<Y>14.93046</Y>
+						<Z>-6.81770039</Z>
+						<R00>-0.871237278</R00>
+						<R01>-6.87044758e-006</R01>
+						<R02>-0.490862101</R02>
+						<R10>-0.472039759</R10>
+						<R11>0.274275392</R11>
+						<R12>0.837825418</R12>
+						<R20>0.134625643</R20>
+						<R21>0.961651206</R21>
+						<R22>-0.238962173</R22>
+					</CoordinateFrame>
+					<CoordinateFrame name="C1">
+						<X>-6.02676725</X>
+						<Y>-0.220000029</Y>
+						<Z>17.7038002</Z>
+						<R00>0.871229768</R00>
+						<R01>2.17746565e-005</R01>
+						<R02>0.490866423</R02>
+						<R10>-3.72618524e-005</R10>
+						<R11>1</R11>
+						<R12>2.17746565e-005</R12>
+						<R20>-0.490866423</R20>
+						<R21>-3.72618524e-005</R21>
+						<R22>0.871229768</R22>
+					</CoordinateFrame>
+					<string name="Name">Weld</string>
+					<Ref name="Part0">RBXA6E536BD32C94057AC0B0EE6DAC84201</Ref>
+					<Ref name="Part1">RBX9E92FB4BD44740FF9BCE2AFE7C40CDDB</Ref>
+				</Properties>
+			</Item>
+			<Item class="SpecialMesh" referent="RBXA329AB5546DC4BC49FD33B75287E2310">
+				<Properties>
+					<token name="LODX">2</token>
+					<token name="LODY">2</token>
+					<Content name="MeshId"><url>http://www.roblox.com/asset/?id=232545016</url></Content>
+					<token name="MeshType">5</token>
+					<string name="Name">Mesh</string>
+					<Vector3 name="Offset">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+					</Vector3>
+					<Vector3 name="Scale">
+						<X>1.25</X>
+						<Y>1</Y>
+						<Z>1</Z>
+					</Vector3>
+					<Content name="TextureId"><url>http://www.roblox.com/asset/?id=385765630</url></Content>
+					<Vector3 name="VertexColor">
+						<X>1</X>
+						<Y>1</Y>
+						<Z>1</Z>
+					</Vector3>
+				</Properties>
+			</Item>
+		</Item>
+		<Item class="Part" referent="RBX73D8A220FD064A39A710CA28C8848526">
+			<Properties>
+				<bool name="Anchored">false</bool>
+				<float name="BackParamA">-0.5</float>
+				<float name="BackParamB">0.5</float>
+				<token name="BackSurface">0</token>
+				<token name="BackSurfaceInput">0</token>
+				<float name="BottomParamA">-0.5</float>
+				<float name="BottomParamB">0.5</float>
+				<token name="BottomSurface">0</token>
+				<token name="BottomSurfaceInput">0</token>
+				<int name="BrickColor">194</int>
+				<CoordinateFrame name="CFrame">
+					<X>0.161142007</X>
+					<Y>0.420001</Y>
+					<Z>0.221992999</Z>
+					<R00>0.871198773</R00>
+					<R01>3.72627837e-005</R01>
+					<R02>-0.49092558</R02>
+					<R10>-2.17737233e-005</R10>
+					<R11>1</R11>
+					<R12>3.72627837e-005</R12>
+					<R20>0.49092558</R20>
+					<R21>-2.17737233e-005</R21>
+					<R22>0.871198773</R22>
+				</CoordinateFrame>
+				<bool name="CanCollide">true</bool>
+				<PhysicalProperties name="CustomPhysicalProperties">
+					<CustomPhysics>false</CustomPhysics>
+				</PhysicalProperties>
+				<float name="Elasticity">0.5</float>
+				<float name="Friction">0.300000012</float>
+				<float name="FrontParamA">-0.5</float>
+				<float name="FrontParamB">0.5</float>
+				<token name="FrontSurface">0</token>
+				<token name="FrontSurfaceInput">0</token>
+				<float name="LeftParamA">-0.5</float>
+				<float name="LeftParamB">0.5</float>
+				<token name="LeftSurface">0</token>
+				<token name="LeftSurfaceInput">0</token>
+				<bool name="Locked">true</bool>
+				<token name="Material">256</token>
+				<string name="Name">RightFoot</string>
+				<float name="Reflectance">0</float>
+				<float name="RightParamA">-0.5</float>
+				<float name="RightParamB">0.5</float>
+				<token name="RightSurface">0</token>
+				<token name="RightSurfaceInput">0</token>
+				<Vector3 name="RotVelocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<float name="TopParamA">-0.5</float>
+				<float name="TopParamB">0.5</float>
+				<token name="TopSurface">0</token>
+				<token name="TopSurfaceInput">0</token>
+				<float name="Transparency">0</float>
+				<Vector3 name="Velocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<token name="formFactorRaw">3</token>
+				<token name="shape">1</token>
+				<Vector3 name="size">
+					<X>1.5</X>
+					<Y>0.75</Y>
+					<Z>2.75</Z>
+				</Vector3>
+			</Properties>
+			<Item class="Weld" referent="RBXC6FCBA74D8C14294A8DA7F7DF8A12A71">
+				<Properties>
+					<CoordinateFrame name="C0">
+						<X>6.62676144</X>
+						<Y>14.93046</Y>
+						<Z>-6.81770039</Z>
+						<R00>-0.871237278</R00>
+						<R01>-6.87044758e-006</R01>
+						<R02>-0.490862101</R02>
+						<R10>-0.472039759</R10>
+						<R11>0.274275392</R11>
+						<R12>0.837825418</R12>
+						<R20>0.134625643</R20>
+						<R21>0.961651206</R21>
+						<R22>-0.238962173</R22>
+					</CoordinateFrame>
+					<CoordinateFrame name="C1">
+						<X>-7.42676878</X>
+						<Y>-0.220000029</Y>
+						<Z>17.7038002</Z>
+						<R00>0.871229768</R00>
+						<R01>2.17746565e-005</R01>
+						<R02>0.490866423</R02>
+						<R10>-3.72618524e-005</R10>
+						<R11>1</R11>
+						<R12>2.17746565e-005</R12>
+						<R20>-0.490866423</R20>
+						<R21>-3.72618524e-005</R21>
+						<R22>0.871229768</R22>
+					</CoordinateFrame>
+					<string name="Name">Weld</string>
+					<Ref name="Part0">RBXA6E536BD32C94057AC0B0EE6DAC84201</Ref>
+					<Ref name="Part1">RBX73D8A220FD064A39A710CA28C8848526</Ref>
+				</Properties>
+			</Item>
+			<Item class="SpecialMesh" referent="RBX8B34C365910445AFABC96F85B513E3E4">
+				<Properties>
+					<token name="LODX">2</token>
+					<token name="LODY">2</token>
+					<Content name="MeshId"><url>http://www.roblox.com/asset/?id=232544931</url></Content>
+					<token name="MeshType">5</token>
+					<string name="Name">Mesh</string>
+					<Vector3 name="Offset">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+					</Vector3>
+					<Vector3 name="Scale">
+						<X>1.25</X>
+						<Y>1</Y>
+						<Z>1</Z>
+					</Vector3>
+					<Content name="TextureId"><url>http://www.roblox.com/asset/?id=385765630</url></Content>
+					<Vector3 name="VertexColor">
+						<X>1</X>
+						<Y>1</Y>
+						<Z>1</Z>
+					</Vector3>
+				</Properties>
+			</Item>
+		</Item>
+		<Item class="Script" referent="RBXA95855F46DA347279097CFEB2DC64B06">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">Script</string>
+				<string name="ScriptGuid">{D99981D7-C94D-4A14-A499-1B9A72F2A039}</string>
+				<ProtectedString name="Source"><![CDATA[--Made by Luckymaxer
+
+Tool = script.Parent
+Handle = Tool:WaitForChild("Handle")
+
+Players = game:GetService("Players")
+Debris = game:GetService("Debris")
+
+BaseUrl = "http://www.roblox.com/asset/?id="
+
+BasePart = Instance.new("Part")
+BasePart.Shape = Enum.PartType.Block
+BasePart.Material = Enum.Material.Plastic
+BasePart.TopSurface = Enum.SurfaceType.Smooth
+BasePart.BottomSurface = Enum.SurfaceType.Smooth
+BasePart.FormFactor = Enum.FormFactor.Custom
+BasePart.Size = Vector3.new(0.2, 0.2, 0.2)
+BasePart.CanCollide = true
+BasePart.Locked = true
+BasePart.Anchored = false
+
+Sounds = {
+	Hop = Handle:WaitForChild("Hop"),
+}
+
+Handle.Transparency = 0
+Tool.Enabled = true
+
+function CreateBunnyFeet(Create)
+	for i, v in pairs(Tool:GetChildren()) do
+		if v:IsA("BasePart") and v ~= Handle then
+			v:Destroy()
+		end
+	end
+	if HumanoidJumped then
+		HumanoidJumped:disconnect()
+	end
+	if Create and CheckIfAlive() then
+		HumanoidJumped = Humanoid.Jumping:connect(function()
+			Sounds.Hop.Pitch = (math.random(2250, 2500) * 0.001)
+			Sounds.Hop:Play()
+		end)
+		local BunnyTail = BasePart:Clone()
+		BunnyTail.Name = "Tail"
+		BunnyTail.Size = Vector3.new(1, 1, 0.75)
+		BunnyTail.CanCollide = false
+		local BunnyTailMesh = Instance.new("SpecialMesh")
+		BunnyTailMesh.Name = "Mesh"
+		BunnyTailMesh.MeshType = Enum.MeshType.FileMesh
+		BunnyTailMesh.MeshId = (BaseUrl .. "232544957")
+		BunnyTailMesh.TextureId = (BaseUrl .. "385765630")
+		BunnyTailMesh.Scale = Vector3.new(1.125, 1.25, 0.875)
+		BunnyTailMesh.VertexColor = Vector3.new(1, 1, 1)
+		BunnyTailMesh.Offset = Vector3.new(0, 0, 0)
+		BunnyTailMesh.Parent = BunnyTail
+		local BunnyFoot = BasePart:Clone()
+		BunnyFoot.Size = Vector3.new(1.5, 0.75, 2.75)
+		BunnyFoot.CanCollide = false
+		local BunnyFootMesh = Instance.new("SpecialMesh")
+		BunnyFootMesh.Name = "Mesh"
+		BunnyFootMesh.MeshType = Enum.MeshType.FileMesh
+		BunnyFootMesh.MeshId = ""
+		BunnyFootMesh.TextureId = (BaseUrl .. "385765630")
+		BunnyFootMesh.Scale = Vector3.new(1.25, 1, 1)
+		BunnyFootMesh.VertexColor = Vector3.new(1, 1, 1)
+		BunnyFootMesh.Offset = Vector3.new(0, 0, 0)
+		BunnyFootMesh.Parent = BunnyFoot
+		LeftFoot = BunnyFoot:Clone()
+		LeftFoot.Name = "LeftFoot"
+		LeftFoot.Mesh.MeshId = (BaseUrl .. "232545016")
+		RightFoot = BunnyFoot:Clone()
+		RightFoot.Name = "RightFoot"
+		RightFoot.Mesh.MeshId = (BaseUrl .. "232544931")
+		local TorsoWeld = Instance.new("Motor6D")
+		TorsoWeld.Part0 = Torso
+		TorsoWeld.Part1 = BunnyTail
+		TorsoWeld.C0 = CFrame.new(1.5, 0.5, -1.5, 1, 0, -0, 0, 0, 1, 0, -1, -0) * CFrame.Angles((math.pi / 2), 0, 0)
+		TorsoWeld.C1 = Tool.Grip
+		TorsoWeld.Parent = BunnyTail
+		BunnyTail.Parent = Tool
+		local LeftLeg = Character:FindFirstChild("Left Leg") or Character:FindFirstChild("LeftFoot")
+		local RightLeg = Character:FindFirstChild("Right Leg") or Character:FindFirstChild("RightFoot")
+		for i, v in pairs({LeftLeg, RightLeg}) do
+			if v then
+				local Foot = ((v == LeftLeg and LeftFoot) or RightFoot)
+				local Weld = Instance.new("Weld")
+				Weld.Part0 = v
+				Weld.Part1 = Foot
+				Weld.C0 = CFrame.new((0.2 * ((v == RightLeg and 1) or -1)), (Humanoid.RigType == Enum.HumanoidRigType.R6 and -0.78) or 0, -0.6)
+				Weld.C1 = CFrame.new(0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+				Weld.Parent = Foot
+				Foot.Parent = Tool
+			end
+		end
+	end
+end
+
+function CheckIfAlive()
+	return (((Player and Player.Parent and Character and Character.Parent and Humanoid and Humanoid.Parent and Humanoid.Health > 0 and Torso and Torso.Parent) and true) or false)
+end
+
+function Equipped()
+	Character = Tool.Parent
+	Player = Players:GetPlayerFromCharacter(Character)
+	Humanoid = Character:FindFirstChild("Humanoid")
+	Torso = Character:FindFirstChild("Torso") or Character:FindFirstChild("UpperTorso")
+	if not CheckIfAlive() then
+		return
+	end
+	Spawn(function()
+		CreateBunnyFeet(true)
+		Humanoid.WalkSpeed = (16 * 1.75)
+		Humanoid.JumpPower = 85
+	end)
+	Handle.Transparency = 1
+	ToolEquipped = true
+end
+
+function Unequipped()
+	if CheckIfAlive() then
+		Humanoid.WalkSpeed = 16
+		Humanoid.JumpPower = 50
+	end
+	CreateBunnyFeet(false)
+	Handle.Transparency = 0
+	ToolEquipped = false
+end
+
+CreateBunnyFeet(false)
+
+Tool.Equipped:connect(Equipped)
+Tool.Unequipped:connect(Unequipped)]]></ProtectedString>
+			</Properties>
+		</Item>
+	</Item>
+</roblox>

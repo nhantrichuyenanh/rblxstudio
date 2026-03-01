@@ -1,0 +1,1562 @@
+<roblox xmlns:xmime="http://www.w3.org/2005/05/xmlmime" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.roblox.com/roblox.xsd" version="4">
+	<Meta name="ExplicitAutoJoints">false</Meta>
+	<External>null</External>
+	<External>nil</External>
+	<Item class="Tool" referent="RBXA7AB30604404494EB5A5AFC0E7011E85">
+		<Properties>
+			<bool name="CanBeDropped">true</bool>
+			<bool name="Enabled">true</bool>
+			<CoordinateFrame name="Grip">
+				<X>0</X>
+				<Y>0</Y>
+				<Z>0</Z>
+				<R00>1</R00>
+				<R01>0</R01>
+				<R02>0</R02>
+				<R10>0</R10>
+				<R11>-1</R11>
+				<R12>0</R12>
+				<R20>0</R20>
+				<R21>0</R21>
+				<R22>-1</R22>
+			</CoordinateFrame>
+			<bool name="ManualActivationOnly">false</bool>
+			<string name="Name">KorbloxSpellBook</string>
+			<bool name="RequiresHandle">true</bool>
+			<BinaryString name="Tags"></BinaryString>
+			<Content name="TextureId"><url>http://www.roblox.com/asset/?id=59792268 </url></Content>
+			<string name="ToolTip"></string>
+		</Properties>
+		<Item class="Part" referent="RBXD200076643154EC4B62E6EF5161506C0">
+			<Properties>
+				<bool name="Anchored">false</bool>
+				<float name="BackParamA">-0.5</float>
+				<float name="BackParamB">0.5</float>
+				<token name="BackSurface">0</token>
+				<token name="BackSurfaceInput">0</token>
+				<float name="BottomParamA">-0.5</float>
+				<float name="BottomParamB">0.5</float>
+				<token name="BottomSurface">4</token>
+				<token name="BottomSurfaceInput">0</token>
+				<CoordinateFrame name="CFrame">
+					<X>0.0700009987</X>
+					<Y>1.14001298</Y>
+					<Z>2.03500104</Z>
+					<R00>-1</R00>
+					<R01>0</R01>
+					<R02>0</R02>
+					<R10>0</R10>
+					<R11>-1</R11>
+					<R12>0</R12>
+					<R20>0</R20>
+					<R21>0</R21>
+					<R22>1</R22>
+				</CoordinateFrame>
+				<bool name="CanCollide">true</bool>
+				<int name="CollisionGroupId">0</int>
+				<Color3uint8 name="Color3uint8">4288914085</Color3uint8>
+				<PhysicalProperties name="CustomPhysicalProperties">
+					<CustomPhysics>false</CustomPhysics>
+				</PhysicalProperties>
+				<float name="FrontParamA">-0.5</float>
+				<float name="FrontParamB">0.5</float>
+				<token name="FrontSurface">0</token>
+				<token name="FrontSurfaceInput">0</token>
+				<float name="LeftParamA">-0.5</float>
+				<float name="LeftParamB">0.5</float>
+				<token name="LeftSurface">0</token>
+				<token name="LeftSurfaceInput">0</token>
+				<bool name="Locked">false</bool>
+				<token name="Material">256</token>
+				<string name="Name">Handle</string>
+				<float name="Reflectance">0</float>
+				<float name="RightParamA">-0.5</float>
+				<float name="RightParamB">0.5</float>
+				<token name="RightSurface">0</token>
+				<token name="RightSurfaceInput">0</token>
+				<Vector3 name="RotVelocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<BinaryString name="Tags"></BinaryString>
+				<float name="TopParamA">-0.5</float>
+				<float name="TopParamB">0.5</float>
+				<token name="TopSurface">3</token>
+				<token name="TopSurfaceInput">0</token>
+				<float name="Transparency">0</float>
+				<Vector3 name="Velocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<token name="formFactorRaw">3</token>
+				<token name="shape">1</token>
+				<Vector3 name="size">
+					<X>0.80000031</X>
+					<Y>1.32000017</Y>
+					<Z>0.490004539</Z>
+				</Vector3>
+			</Properties>
+			<Item class="SpecialMesh" referent="RBXAC3995D330894023B4CD6FD0E2591709">
+				<Properties>
+					<token name="LODX">2</token>
+					<token name="LODY">2</token>
+					<Content name="MeshId"><url>http://www.roblox.com/asset/?id=59792082 </url></Content>
+					<token name="MeshType">5</token>
+					<string name="Name">Mesh</string>
+					<Vector3 name="Offset">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+					</Vector3>
+					<Vector3 name="Scale">
+						<X>1.5</X>
+						<Y>1.5</Y>
+						<Z>1.5</Z>
+					</Vector3>
+					<BinaryString name="Tags"></BinaryString>
+					<Content name="TextureId"><url>http://www.roblox.com/asset/?id=59792150 </url></Content>
+					<Vector3 name="VertexColor">
+						<X>1</X>
+						<Y>1</Y>
+						<Z>1</Z>
+					</Vector3>
+				</Properties>
+			</Item>
+			<Item class="Sound" referent="RBX49EFEF6E3EC1449E9AB7A97BB1C781F4">
+				<Properties>
+					<float name="EmitterSize">10</float>
+					<bool name="Looped">false</bool>
+					<string name="Name">BookSound</string>
+					<bool name="PlayOnRemove">false</bool>
+					<float name="PlaybackSpeed">1</float>
+					<bool name="Playing">false</bool>
+					<token name="RollOffMode">0</token>
+					<Ref name="SoundGroup">null</Ref>
+					<Content name="SoundId"><url>http://www.roblox.com/asset/?id=49459858 </url></Content>
+					<BinaryString name="Tags"></BinaryString>
+					<double name="TimePosition">0</double>
+					<float name="Volume">1</float>
+					<float name="xmlRead_MaxDistance_3">10000</float>
+				</Properties>
+			</Item>
+			<Item class="ParticleEmitter" referent="RBX17BB5DF6AF7341078761A73367DA9E8B">
+				<Properties>
+					<Vector3 name="Acceleration">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+					</Vector3>
+					<ColorSequence name="Color">0 0.333333 0.666667 1 0 1 1 1 1 0 </ColorSequence>
+					<float name="Drag">0</float>
+					<token name="EmissionDirection">1</token>
+					<bool name="Enabled">true</bool>
+					<NumberRange name="Lifetime">1 1 </NumberRange>
+					<float name="LightEmission">0.5</float>
+					<float name="LightInfluence">0</float>
+					<bool name="LockedToPart">true</bool>
+					<string name="Name">Smoke</string>
+					<float name="Rate">50</float>
+					<NumberRange name="RotSpeed">-360 360 </NumberRange>
+					<NumberRange name="Rotation">-360 360 </NumberRange>
+					<NumberSequence name="Size">0 0.5 0 1 0 0 </NumberSequence>
+					<NumberRange name="Speed">1 1 </NumberRange>
+					<Vector2 name="SpreadAngle">
+						<X>720</X>
+						<Y>720</Y>
+					</Vector2>
+					<BinaryString name="Tags"></BinaryString>
+					<Content name="Texture"><url>rbxasset://textures/particles/smoke_main.dds</url></Content>
+					<NumberSequence name="Transparency">0 1 0 0.1 0 0 1 1 0 </NumberSequence>
+					<float name="VelocityInheritance">0</float>
+					<float name="ZOffset">0</float>
+				</Properties>
+			</Item>
+		</Item>
+		<Item class="Script" referent="RBXB3121CBB1A754BAC8BCD62490B665BB3">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">Server</string>
+				<string name="ScriptGuid">{4F52E19E-AA21-4CB9-994C-E5022AD187E0}</string>
+				<ProtectedString name="Source"><![CDATA[--Rescripted by TakeoHonorable
+
+local Tool = script.Parent
+
+local Handle = Tool:WaitForChild("Handle")
+
+Handle:WaitForChild("Smoke").Enabled = true
+
+local SpellGui = Tool:WaitForChild("SpellGui"):Clone()
+
+local EffectsFolder = Tool:WaitForChild("Effects")
+
+local BookSound = Handle:WaitForChild("BookSound")
+
+local Remote = Tool:WaitForChild("ClientInput")
+--local MouseLoc = Tool:WaitForChild("MouseLoc")
+
+local ChosenSpellTag -- Dosen't do anything until a spell is chosen
+
+local BaseUrl = "http://www.roblox.com/asset/?id="
+
+local Properties = {
+	CurrentRadius = 45,
+	SpikeDamage = 30,
+	OrbDamage = 30,
+	MaxVineStunTime = 3.5
+}
+
+local Services = {
+	Debris = (game:FindService("Debris") or game:GetService("Debris")),
+	Players = (game:FindService("Players") or game:GetService("Players")),
+}
+
+local MyPlayer,MyCharacter,MyHumanoid,MyTorso
+
+local spikePart = Instance.new("Part")
+spikePart.Size = Vector3.new(1, 2, 1)*2
+spikePart.Shape = "Block"
+spikePart.Name = "Spike"
+spikePart.CanCollide = false
+
+local spikeMesh = Instance.new("SpecialMesh")
+spikeMesh.MeshId = "http://www.roblox.com/asset/?id=59092052"
+spikeMesh.TextureId = "http://www.roblox.com/asset/?id=59801821"
+spikeMesh.Scale = spikeMesh.Scale*3
+spikeMesh.Parent = spikePart
+
+local SmokeParticles = EffectsFolder:WaitForChild("Smoke"):Clone()
+SmokeParticles.Parent = spikePart
+SmokeParticles.Enabled = true
+
+local ropePart = Instance.new("Part")
+ropePart.Size = Vector3.new(1,1,1)*3
+ropePart.Shape = Enum.PartType.Ball
+ropePart.Material = Enum.Material.Glass
+ropePart.Transparency = 0.8
+ropePart.Name = "rope"
+ropePart.CanCollide = false
+
+local SmokeParticles = EffectsFolder:WaitForChild("Smoke"):Clone()
+SmokeParticles.Parent = ropePart
+SmokeParticles.Enabled = true
+
+
+local float = Instance.new("BodyForce")
+--float.force = Vector3.new(0.0, ropePart:GetMass() * 196.1, 0.0)
+float.Name = "Floating" 
+
+
+function IsTeamMate(Player1, Player2)
+	return (Player1 and Player2 and not Player1.Neutral and not Player2.Neutral and Player1.TeamColor == Player2.TeamColor)
+end
+	
+function TagHumanoid(humanoid, player)
+	local Creator_Tag = Instance.new("ObjectValue")
+	Creator_Tag.Name = "creator";
+	Creator_Tag.Value = player;
+	Services.Debris:AddItem(Creator_Tag, 2)
+	Creator_Tag.Parent = humanoid
+end
+	
+function UntagHumanoid(humanoid)
+	for _, v in pairs(humanoid:GetChildren()) do
+		if v:IsA("ObjectValue") and v.Name == "creator" then
+			v:Destroy()
+		end
+	end
+end
+
+function IsInTable(Table,Value)
+	for _,v in pairs(Table) do
+		if v == Value then
+			return true
+		end
+	end
+	return false
+end
+
+function Blow(Part,hit,DamageCount)
+	if not hit or not hit.Parent then return end
+	local Hum = hit.Parent:FindFirstChildOfClass("Humanoid")
+	if not Hum or Hum == MyHumanoid then return end
+	local Char = Hum.Parent
+	if IsTeamMate(MyPlayer,Services.Players:GetPlayerFromCharacter(Char)) then return end
+	UntagHumanoid(Hum)
+	TagHumanoid(Hum)
+	--print("Damaging")
+	Hum:TakeDamage(DamageCount)
+end
+
+local IconConnections = {}
+
+local function SelectSpell(ChosenSpell,SpellUI)
+	--print("Choosing Spell")
+	if not SpellGui or not ChosenSpell then return end
+	for _,v in pairs(SpellUI:GetDescendants()) do
+		if v.Name == "Flavor" then
+			v.Visible = v.Parent == ChosenSpell
+		end
+	end
+	ChosenSpellTag = ChosenSpell.Name
+end
+
+
+local Spell1,Spell2,Spell3 = true,true,true -- Allows for consecutive reloads
+
+local SpellFunctions = {
+	["Orb"] = function()
+		if not Spell1 then return end
+		Spell1 = false
+		
+		Handle:WaitForChild("BookSound"):Play()
+		
+		local Anim = MyHumanoid:LoadAnimation(Tool:FindFirstChild("BookAnim"..MyHumanoid.RigType.Name))
+		if Anim then Anim:Play() end
+		
+		local Icon = SpellGui:WaitForChild("SpellGuiFrame"):WaitForChild(ChosenSpellTag)
+		local Overlay = Icon:WaitForChild("Overlay")
+		local LastText = Overlay.Text
+		Icon.Image = BaseUrl.."59791874"
+		spawn(function()
+			for i=1,2,1 do
+				if not MyTorso then break end
+				local fireballs = {}
+				local offset = 4.0
+				for i = 1, 12 do
+					fireballs[i] = ropePart:Clone()
+					fireballs[i].Parent = workspace          		
+					if i < 4 then
+						fireballs[i].Position = MyTorso.Position + Vector3.new(i * offset, 20.0, 0.0)
+					elseif i < 7 then
+						fireballs[i].Position = MyTorso.Position + Vector3.new(0.0, 20.0, (i - 3)* offset)
+					elseif i < 10 then
+						fireballs[i].Position = MyTorso.Position + Vector3.new(0.0, 20.0, (i-6) * -offset)
+					else
+						fireballs[i].Position = MyTorso.Position + Vector3.new((i-9) * -offset, 20.0, 0.0)
+					end
+					local floatForce = Instance.new("BodyForce")
+					floatForce.Force = Vector3.new(0, fireballs[i]:GetMass() * 100.0, 0) 
+					floatForce.Parent = fireballs[i]
+			
+					Services.Debris:AddItem(fireballs[i], 3.5)          
+					fireballs[i].Anchored = true
+					fireballs[i].Touched:Connect(function(hit) Blow(fireballs[i], hit, Properties.OrbDamage) end)		
+				end
+					
+				wait(0.3)
+				
+				for i = 1, #fireballs do 
+					fireballs[i].Anchored = false 
+					fireballs[i]:SetNetworkOwner(MyPlayer)
+				end
+				wait(1.5)
+			end	
+		end)
+			
+		for timer=5,1,-1 do
+			Overlay.Text = ".."..timer..".."
+			wait(1)
+		end
+		Overlay.Text = LastText
+		Icon.Image = BaseUrl.."59791591"
+		Spell1 = true
+		end,
+		
+	["Spike"] = function()
+		if not Spell2 then return end
+		Spell2 = false
+		
+		Handle:WaitForChild("BookSound"):Play()
+		local Anim = MyHumanoid:LoadAnimation(Tool:FindFirstChild("BookAnim"..MyHumanoid.RigType.Name))
+		if Anim then Anim:Play() end
+			
+		local Icon = SpellGui:WaitForChild("SpellGuiFrame"):WaitForChild(ChosenSpellTag)
+		local Overlay = Icon:WaitForChild("Overlay")
+		local LastText = Overlay.Text
+		Icon.Image = BaseUrl.."59802033"
+		spawn(function()
+			for i = 1, 12 do
+				local pos = CFrame.Angles(0, i * math.pi/6, 0) * MyTorso.CFrame.lookVector
+
+				local spawnPos = MyTorso.CFrame.p
+				spawnPos = spawnPos + (pos * 5.0)
+		
+				local spikeProjectile = spikePart:Clone()
+				spikeProjectile.Name = "rope"
+				spikeProjectile.CFrame = CFrame.new(spawnPos, spawnPos + pos) * CFrame.Angles(-math.pi/2, 0, 0)
+				local floatForce = float:Clone()
+				floatForce.Force = Vector3.new(0, spikeProjectile:GetMass() * workspace.Gravity, 0)
+				floatForce.Parent = spikeProjectile
+				spikeProjectile.Velocity = pos * 75.0
+				spikeProjectile.Parent = workspace
+				spikeProjectile:SetNetworkOwner(MyPlayer)
+				spikeProjectile.Touched:Connect(function(hit) Blow(spikeProjectile, hit, Properties.SpikeDamage) end)
+				Services.Debris:AddItem(spikeProjectile, 4)
+			end
+		end)
+		for timer=10,1,-1 do
+			Overlay.Text = ".."..timer..".."
+			wait(1)
+		end
+		Overlay.Text = LastText
+		Icon.Image = BaseUrl.."59791072"
+		Spell2 = true
+	end,
+	["Prison"] = function()
+		if not Spell3 then return end
+		Spell3 = false
+		
+		Handle:WaitForChild("BookSound"):Play()
+		
+		local Anim = MyHumanoid:LoadAnimation(Tool:FindFirstChild("BookAnim"..MyHumanoid.RigType.Name))
+		if Anim then Anim:Play() end
+		
+		local Icon = SpellGui:WaitForChild("SpellGuiFrame"):WaitForChild(ChosenSpellTag)
+		local Overlay = Icon:WaitForChild("Overlay")
+		local LastText = Overlay.Text
+		Icon.Image = BaseUrl.."59791906"
+		spawn(function()
+			local NegativeRegion = (MyTorso.Position - Vector3.new(Properties.CurrentRadius, Properties.CurrentRadius, Properties.CurrentRadius))
+			local PositiveRegion = (MyTorso.Position + Vector3.new(Properties.CurrentRadius, Properties.CurrentRadius, Properties.CurrentRadius))
+				local Region = Region3.new(NegativeRegion, PositiveRegion)
+				local Parts = workspace:FindPartsInRegion3(Region,MyCharacter,math.huge)
+				local TaggedHumanoids = {}
+				for _,hit in pairs(Parts) do
+					local Hum = hit.Parent:FindFirstChildOfClass("Humanoid")
+					local Center = hit.Parent:FindFirstChild("Torso") or hit.Parent:FindFirstChild("HumanoidRootPart") or hit.Parent:FindFirstChild("UpperTorso")
+					if Hum and Hum.Health ~= 0 and Hum ~= MyHumanoid and not IsInTable(TaggedHumanoids,Hum) and Center and not IsTeamMate(MyPlayer,Services.Players:GetPlayerFromCharacter(Hum.Parent)) then
+						table.insert(TaggedHumanoids,Hum)
+						local VineScript = script:WaitForChild("PrisonScript"):Clone()
+						VineScript.Parent = Hum.Parent
+						VineScript:WaitForChild("creator").Value = MyPlayer
+						VineScript:WaitForChild("Duration").Value = math.clamp(((1-(Center.CFrame.p-MyTorso.CFrame.p).magnitude/Properties.CurrentRadius)),0,1)*Properties.MaxVineStunTime
+						VineScript.Disabled = false
+					end
+				end
+		end)
+		for timer=15,1,-1 do
+			Overlay.Text = ".."..timer..".."
+			wait(1)
+		end
+		Overlay.Text = LastText
+		Icon.Image = BaseUrl.."59791781"
+		Spell3 = true
+	end
+}
+
+function Equipped()
+	MyCharacter = Tool.Parent;
+	MyHumanoid = MyCharacter:FindFirstChildOfClass("Humanoid");
+	MyPlayer = Services.Players:GetPlayerFromCharacter(MyCharacter);
+	MyTorso = MyCharacter:WaitForChild("HumanoidRootPart")
+	SpellGui.Parent = MyPlayer:WaitForChild("PlayerGui")
+	IconConnections[#IconConnections+1] = SpellGui:WaitForChild("SpellGuiFrame"):WaitForChild("Spike").MouseButton1Click:Connect(function()
+		SelectSpell(SpellGui:WaitForChild("SpellGuiFrame"):WaitForChild("Spike"),SpellGui)
+	end)
+	IconConnections[#IconConnections+1] = SpellGui:WaitForChild("SpellGuiFrame"):WaitForChild("Prison").MouseButton1Click:Connect(function()
+		SelectSpell(SpellGui:WaitForChild("SpellGuiFrame"):WaitForChild("Prison"),SpellGui)
+	end)
+	IconConnections[#IconConnections+1] = SpellGui:WaitForChild("SpellGuiFrame"):WaitForChild("Orb").MouseButton1Click:Connect(function()
+		SelectSpell(SpellGui:WaitForChild("SpellGuiFrame"):WaitForChild("Orb"),SpellGui)
+	end)
+end
+
+function Unequipped()
+	--MyCharacter,MyHumanoid,MyPlayer,MyTorso = nil,nil,nil,nil
+	SpellGui.Parent = nil
+	for _,v in pairs(IconConnections) do
+		if v then
+			v:Disconnect()
+		end
+	end
+end
+
+function Activated()
+	if (MyCharacter and MyHumanoid) and MyHumanoid.Health ~= 0 and ChosenSpellTag then
+		if ChosenSpellTag then
+			--if not Tool.Enabled then return end
+			--Tool.Enabled = false
+			--print("Activated")
+
+			SpellFunctions[ChosenSpellTag]()
+			--Handle:WaitForChild("Smoke").Enabled = true
+			--Tool.Enabled = true
+		end
+	end
+end
+
+Tool.Equipped:Connect(Equipped)
+Tool.Unequipped:Connect(Unequipped)
+Tool.Activated:Connect(Activated)
+
+Remote.OnServerEvent:Connect(function(Player,KeyCode)
+	if Player ~= MyPlayer or not MyCharacter or not MyHumanoid then return end
+	
+	if KeyCode == Enum.KeyCode.Q then
+		SelectSpell(SpellGui:WaitForChild("SpellGuiFrame"):WaitForChild("Orb"),SpellGui)
+	elseif KeyCode == Enum.KeyCode.E then
+		SelectSpell(SpellGui:WaitForChild("SpellGuiFrame"):WaitForChild("Spike"),SpellGui)
+	elseif KeyCode == Enum.KeyCode.R then
+		SelectSpell(SpellGui:WaitForChild("SpellGuiFrame"):WaitForChild("Prison"),SpellGui)
+	end
+end)]]></ProtectedString>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+			<Item class="Script" referent="RBX70B50C03C61F4380AB0123DB57C08403">
+				<Properties>
+					<bool name="Disabled">true</bool>
+					<Content name="LinkedSource"><null></null></Content>
+					<string name="Name">PrisonScript</string>
+					<string name="ScriptGuid">{E393C524-1CC9-41A2-AFA7-D7697C6DDA1C}</string>
+					<ProtectedString name="Source"><![CDATA[vCharacter = script.Parent
+
+myHumanoid = vCharacter:FindFirstChildOfClass("Humanoid")
+
+myTorso = vCharacter:FindFirstChild("HumanoidRootPart") or vCharacter:FindFirstChild("Torso") or vCharacter:FindFirstChild("UpperTorso")
+local TorsoNames = {"Root","Torso"} -- Used for gathering all of the torsos
+
+
+local duration = script:WaitForChild("Duration",10).Value
+
+local creatortag = script:WaitForChild("creator",10).Value
+
+function TagHumanoid(humanoid, player)
+	local Creator_Tag = Instance.new("ObjectValue")
+	Creator_Tag.Name = "creator";
+	Creator_Tag.Value = player;
+	game:GetService("Debris"):AddItem(Creator_Tag, 2)
+	Creator_Tag.Parent = humanoid
+end
+	
+function UntagHumanoid(humanoid)
+	for _, v in pairs(humanoid:GetChildren()) do
+		if v:IsA("ObjectValue") and v.Name == "creator" then
+			v:Destroy()
+		end
+	end
+end
+
+
+if vCharacter and myHumanoid  then
+	myHumanoid.WalkSpeed = 0.0
+	
+	local AnchoredParts  = {}
+	for _,v in pairs(vCharacter:GetChildren()) do
+		for _,names in pairs(TorsoNames) do
+			if v:IsA("BasePart") and string.find(string.lower(v.Name),string.lower(names)) then
+				table.insert(AnchoredParts,v)
+				v.Anchored = true
+			end
+		end
+	end
+
+	local thorn = Instance.new("Part")
+	thorn.FormFactor = 3
+	thorn.Shape = "Block"
+	thorn.Size = Vector3.new(2, 4, 2)
+	thorn.CanCollide = true
+	thorn.Position = myTorso.Position
+	thorn.Parent = vCharacter     
+
+	local thornMesh = Instance.new("SpecialMesh")
+	thornMesh.MeshId = "http://www.roblox.com/asset/?id=54653968"
+	thornMesh.TextureId = "http://www.roblox.com/asset/?id=59793260"
+	thornMesh.Scale = Vector3.new(1.0, 1.0, 0.8)
+	thornMesh.Parent = thorn
+
+	local thornWeld = Instance.new("Weld")
+	thornWeld.Parent = myTorso
+	thornWeld.Part0 = myTorso
+	thornWeld.Part1 = thorn
+	thornWeld.C1 = CFrame.new(Vector3.new(0, 0, 0)) 
+	
+	local Smoke = script:WaitForChild("Smoke")
+	Smoke.Parent = thorn
+	Smoke.Enabled = true
+	
+	local Sparkle = Instance.new("Sparkles")
+	Sparkle.SparkleColor = Color3.fromRGB(85, 170, 255)
+	Sparkle.Parent = thorn
+	 
+	while duration > 0 do 
+		UntagHumanoid(myHumanoid)
+		TagHumanoid(myHumanoid,creatortag)
+		myHumanoid:TakeDamage(3)
+		duration = duration - wait(0.5)
+		wait(0.5)
+	end
+
+	if thorn then thorn:Destroy() end
+	if thornWeld then thornWeld:Destroy() end
+	myHumanoid.WalkSpeed = 16
+	
+	for _,v in pairs(AnchoredParts) do
+		if v then 
+			v.Anchored = false 
+		end
+	end
+end
+
+wait(2)
+script:Destroy() 
+
+]]></ProtectedString>
+					<BinaryString name="Tags"></BinaryString>
+				</Properties>
+				<Item class="NumberValue" referent="RBX0AC81A04C519483E9B6F10B92DCC2CD2">
+					<Properties>
+						<string name="Name">Duration</string>
+						<BinaryString name="Tags"></BinaryString>
+						<double name="Value">0</double>
+					</Properties>
+				</Item>
+				<Item class="ObjectValue" referent="RBX2FA48B2A5FF740D090B7D0CF7C742BA5">
+					<Properties>
+						<string name="Name">creator</string>
+						<BinaryString name="Tags"></BinaryString>
+						<Ref name="Value">null</Ref>
+					</Properties>
+				</Item>
+				<Item class="ParticleEmitter" referent="RBX9D0D9011FF1E4C31A2D231FE227DD5EA">
+					<Properties>
+						<Vector3 name="Acceleration">
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</Vector3>
+						<ColorSequence name="Color">0 0.333333 0.666667 1 0 1 1 1 1 0 </ColorSequence>
+						<float name="Drag">0</float>
+						<token name="EmissionDirection">1</token>
+						<bool name="Enabled">false</bool>
+						<NumberRange name="Lifetime">1 1 </NumberRange>
+						<float name="LightEmission">0.5</float>
+						<float name="LightInfluence">0</float>
+						<bool name="LockedToPart">false</bool>
+						<string name="Name">Smoke</string>
+						<float name="Rate">50</float>
+						<NumberRange name="RotSpeed">-360 360 </NumberRange>
+						<NumberRange name="Rotation">-360 360 </NumberRange>
+						<NumberSequence name="Size">0 2 2 1 0 0 </NumberSequence>
+						<NumberRange name="Speed">1 1 </NumberRange>
+						<Vector2 name="SpreadAngle">
+							<X>720</X>
+							<Y>720</Y>
+						</Vector2>
+						<BinaryString name="Tags"></BinaryString>
+						<Content name="Texture"><url>rbxasset://textures/particles/smoke_main.dds</url></Content>
+						<NumberSequence name="Transparency">0 1 0 0.1 0 0 1 1 0 </NumberSequence>
+						<float name="VelocityInheritance">0</float>
+						<float name="ZOffset">0</float>
+					</Properties>
+				</Item>
+			</Item>
+		</Item>
+		<Item class="LocalScript" referent="RBX28A9770F343341B389F92162712E4FC2">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">MouseIcon</string>
+				<string name="ScriptGuid">{86A7CD66-C0AD-4BB8-A890-D07059573854}</string>
+				<ProtectedString name="Source"><![CDATA[--Made by Luckymaxer
+
+Mouse_Icon = "rbxasset://textures/GunCursor.png"
+Reloading_Icon = "rbxasset://textures/GunWaitCursor.png"
+
+Tool = script.Parent
+
+Mouse = nil
+
+function UpdateIcon()
+	if Mouse then
+		Mouse.Icon = Tool.Enabled and Mouse_Icon or Reloading_Icon
+	end
+end
+
+function OnEquipped(ToolMouse)
+	Mouse = ToolMouse
+	UpdateIcon()
+end
+
+function OnChanged(Property)
+	if Property == "Enabled" then
+		UpdateIcon()
+	end
+end
+
+Tool.Equipped:Connect(OnEquipped)
+Tool.Changed:Connect(OnChanged)
+]]></ProtectedString>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+		</Item>
+		<Item class="LocalScript" referent="RBXD93B5D2C4F1841178446029A47C0A600">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">Client</string>
+				<string name="ScriptGuid">{13B04153-7C82-4733-B2E3-7D35AA4919AF}</string>
+				<ProtectedString name="Source"><![CDATA[--Rescripted by TakeoHonorable
+
+local Tool = script.Parent
+
+local Remote = Tool:WaitForChild("ClientInput")
+--local MouseLoc = Tool:WaitForChild("MouseLoc")
+
+local Input = (game:FindService("ContextActionService") or game:GetService("ContextActionService"))
+
+local function SetSpell(ActionName,InputState,InputObj)
+	if InputState == Enum.UserInputState.Begin then
+		Remote:FireServer(InputObj.KeyCode)
+	end
+end
+
+
+function Unequipped()
+	Input:UnbindAction("SetFirstSpell")
+	Input:UnbindAction("SetSecondSpell")
+	Input:UnbindAction("SetThirdSpell")
+end
+
+function Equipped()
+	Input:BindAction("SetFirstSpell",SetSpell,false,Enum.KeyCode.Q)
+	Input:BindAction("SetSecondSpell",SetSpell,false,Enum.KeyCode.E)
+	Input:BindAction("SetThirdSpell",SetSpell,false,Enum.KeyCode.R)
+end
+
+
+
+Tool.Equipped:Connect(Equipped)
+Tool.Unequipped:Connect(Unequipped)
+
+--[[function MouseLoc.OnClientInvoke()
+	return game:GetService("Players").LocalPlayer:GetMouse().Hit.p
+end]]]]></ProtectedString>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+		</Item>
+		<Item class="RemoteEvent" referent="RBX87D44E187FF14A4BA48759E42A1E3081">
+			<Properties>
+				<string name="Name">ClientInput</string>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+		</Item>
+		<Item class="ScreenGui" referent="RBXDB6B7A120A6E4554BE3D7128B1AF63A0">
+			<Properties>
+				<bool name="AutoLocalize">true</bool>
+				<int name="DisplayOrder">0</int>
+				<bool name="Enabled">true</bool>
+				<bool name="IgnoreGuiInset">false</bool>
+				<string name="Name">SpellGui</string>
+				<bool name="ResetOnSpawn">true</bool>
+				<Ref name="RootLocalizationTable">null</Ref>
+				<BinaryString name="Tags"></BinaryString>
+				<token name="ZIndexBehavior">0</token>
+			</Properties>
+			<Item class="Frame" referent="RBX1A46E23F303A4AA7A9703D17D0FB3BB5">
+				<Properties>
+					<bool name="Active">false</bool>
+					<Vector2 name="AnchorPoint">
+						<X>0</X>
+						<Y>0</Y>
+					</Vector2>
+					<bool name="AutoLocalize">true</bool>
+					<Color3 name="BackgroundColor3">4288914085</Color3>
+					<float name="BackgroundTransparency">1</float>
+					<Color3 name="BorderColor3">4279970357</Color3>
+					<int name="BorderSizePixel">1</int>
+					<bool name="ClipsDescendants">false</bool>
+					<bool name="Draggable">false</bool>
+					<int name="LayoutOrder">0</int>
+					<string name="Name">SpellGuiFrame</string>
+					<Ref name="NextSelectionDown">null</Ref>
+					<Ref name="NextSelectionLeft">null</Ref>
+					<Ref name="NextSelectionRight">null</Ref>
+					<Ref name="NextSelectionUp">null</Ref>
+					<UDim2 name="Position">
+						<XS>0</XS>
+						<XO>0</XO>
+						<YS>0.349999994</YS>
+						<YO>0</YO>
+					</UDim2>
+					<Ref name="RootLocalizationTable">null</Ref>
+					<float name="Rotation">0</float>
+					<bool name="Selectable">false</bool>
+					<Ref name="SelectionImageObject">null</Ref>
+					<UDim2 name="Size">
+						<XS>0</XS>
+						<XO>70</XO>
+						<YS>0</YS>
+						<YO>210</YO>
+					</UDim2>
+					<token name="SizeConstraint">0</token>
+					<token name="Style">0</token>
+					<BinaryString name="Tags"></BinaryString>
+					<bool name="Visible">true</bool>
+					<int name="ZIndex">1</int>
+				</Properties>
+				<Item class="ImageButton" referent="RBXCB4AA529795E4AAB9A35431293398BFF">
+					<Properties>
+						<bool name="Active">true</bool>
+						<Vector2 name="AnchorPoint">
+							<X>0</X>
+							<Y>0</Y>
+						</Vector2>
+						<bool name="AutoButtonColor">true</bool>
+						<bool name="AutoLocalize">true</bool>
+						<Color3 name="BackgroundColor3">4288914085</Color3>
+						<float name="BackgroundTransparency">0</float>
+						<Color3 name="BorderColor3">4279970357</Color3>
+						<int name="BorderSizePixel">0</int>
+						<bool name="ClipsDescendants">false</bool>
+						<bool name="Draggable">false</bool>
+						<Content name="HoverImage"><null></null></Content>
+						<Content name="Image"><url>http://www.roblox.com/asset/?id=59791591</url></Content>
+						<Color3 name="ImageColor3">4294967295</Color3>
+						<Vector2 name="ImageRectOffset">
+							<X>0</X>
+							<Y>0</Y>
+						</Vector2>
+						<Vector2 name="ImageRectSize">
+							<X>0</X>
+							<Y>0</Y>
+						</Vector2>
+						<float name="ImageTransparency">0</float>
+						<int name="LayoutOrder">0</int>
+						<bool name="Modal">false</bool>
+						<string name="Name">Orb</string>
+						<Ref name="NextSelectionDown">null</Ref>
+						<Ref name="NextSelectionLeft">null</Ref>
+						<Ref name="NextSelectionRight">null</Ref>
+						<Ref name="NextSelectionUp">null</Ref>
+						<UDim2 name="Position">
+							<XS>0</XS>
+							<XO>0</XO>
+							<YS>0</YS>
+							<YO>0</YO>
+						</UDim2>
+						<Content name="PressedImage"><null></null></Content>
+						<Ref name="RootLocalizationTable">null</Ref>
+						<float name="Rotation">0</float>
+						<token name="ScaleType">0</token>
+						<bool name="Selectable">true</bool>
+						<bool name="Selected">false</bool>
+						<Ref name="SelectionImageObject">null</Ref>
+						<UDim2 name="Size">
+							<XS>0</XS>
+							<XO>64</XO>
+							<YS>0</YS>
+							<YO>64</YO>
+						</UDim2>
+						<token name="SizeConstraint">0</token>
+						<Rect2D name="SliceCenter">
+							<min>
+								<X>0</X>
+								<Y>0</Y>
+							</min>
+							<max>
+								<X>0</X>
+								<Y>0</Y>
+							</max>
+						</Rect2D>
+						<token name="Style">0</token>
+						<BinaryString name="Tags"></BinaryString>
+						<UDim2 name="TileSize">
+							<XS>1</XS>
+							<XO>0</XO>
+							<YS>1</YS>
+							<YO>0</YO>
+						</UDim2>
+						<bool name="Visible">true</bool>
+						<int name="ZIndex">1</int>
+					</Properties>
+					<Item class="TextLabel" referent="RBXDFF6D82758CB477D9BFF073026E1156B">
+						<Properties>
+							<bool name="Active">false</bool>
+							<Vector2 name="AnchorPoint">
+								<X>0</X>
+								<Y>0.5</Y>
+							</Vector2>
+							<bool name="AutoLocalize">true</bool>
+							<Color3 name="BackgroundColor3">4288914085</Color3>
+							<float name="BackgroundTransparency">0</float>
+							<Color3 name="BorderColor3">4279970357</Color3>
+							<int name="BorderSizePixel">0</int>
+							<bool name="ClipsDescendants">false</bool>
+							<bool name="Draggable">false</bool>
+							<token name="Font">3</token>
+							<int name="LayoutOrder">0</int>
+							<float name="LineHeight">1</float>
+							<string name="Name">Flavor</string>
+							<Ref name="NextSelectionDown">null</Ref>
+							<Ref name="NextSelectionLeft">null</Ref>
+							<Ref name="NextSelectionRight">null</Ref>
+							<Ref name="NextSelectionUp">null</Ref>
+							<UDim2 name="Position">
+								<XS>1</XS>
+								<XO>0</XO>
+								<YS>0.5</YS>
+								<YO>0</YO>
+							</UDim2>
+							<Ref name="RootLocalizationTable">null</Ref>
+							<float name="Rotation">0</float>
+							<bool name="Selectable">false</bool>
+							<Ref name="SelectionImageObject">null</Ref>
+							<UDim2 name="Size">
+								<XS>2</XS>
+								<XO>0</XO>
+								<YS>0.5</YS>
+								<YO>0</YO>
+							</UDim2>
+							<token name="SizeConstraint">0</token>
+							<BinaryString name="Tags"></BinaryString>
+							<string name="Text">Orb Drop</string>
+							<Color3 name="TextColor3">4278190080</Color3>
+							<bool name="TextScaled">true</bool>
+							<float name="TextSize">14</float>
+							<Color3 name="TextStrokeColor3">4278190080</Color3>
+							<float name="TextStrokeTransparency">1</float>
+							<float name="TextTransparency">0</float>
+							<token name="TextTruncate">0</token>
+							<bool name="TextWrapped">true</bool>
+							<token name="TextXAlignment">2</token>
+							<token name="TextYAlignment">1</token>
+							<bool name="Visible">false</bool>
+							<int name="ZIndex">1</int>
+						</Properties>
+					</Item>
+					<Item class="TextLabel" referent="RBX0B348936D22B48A4BE6516ED8967C48A">
+						<Properties>
+							<bool name="Active">false</bool>
+							<Vector2 name="AnchorPoint">
+								<X>0.5</X>
+								<Y>0.5</Y>
+							</Vector2>
+							<bool name="AutoLocalize">true</bool>
+							<Color3 name="BackgroundColor3">4288914085</Color3>
+							<float name="BackgroundTransparency">1</float>
+							<Color3 name="BorderColor3">4279970357</Color3>
+							<int name="BorderSizePixel">1</int>
+							<bool name="ClipsDescendants">false</bool>
+							<bool name="Draggable">false</bool>
+							<token name="Font">1</token>
+							<int name="LayoutOrder">0</int>
+							<float name="LineHeight">1</float>
+							<string name="Name">Overlay</string>
+							<Ref name="NextSelectionDown">null</Ref>
+							<Ref name="NextSelectionLeft">null</Ref>
+							<Ref name="NextSelectionRight">null</Ref>
+							<Ref name="NextSelectionUp">null</Ref>
+							<UDim2 name="Position">
+								<XS>0.5</XS>
+								<XO>0</XO>
+								<YS>0.5</YS>
+								<YO>0</YO>
+							</UDim2>
+							<Ref name="RootLocalizationTable">null</Ref>
+							<float name="Rotation">0</float>
+							<bool name="Selectable">false</bool>
+							<Ref name="SelectionImageObject">null</Ref>
+							<UDim2 name="Size">
+								<XS>0.5</XS>
+								<XO>0</XO>
+								<YS>0.5</YS>
+								<YO>0</YO>
+							</UDim2>
+							<token name="SizeConstraint">0</token>
+							<BinaryString name="Tags"></BinaryString>
+							<string name="Text">Q</string>
+							<Color3 name="TextColor3">4294967295</Color3>
+							<bool name="TextScaled">true</bool>
+							<float name="TextSize">14</float>
+							<Color3 name="TextStrokeColor3">4278190080</Color3>
+							<float name="TextStrokeTransparency">1</float>
+							<float name="TextTransparency">0.5</float>
+							<token name="TextTruncate">0</token>
+							<bool name="TextWrapped">true</bool>
+							<token name="TextXAlignment">2</token>
+							<token name="TextYAlignment">1</token>
+							<bool name="Visible">true</bool>
+							<int name="ZIndex">3</int>
+						</Properties>
+					</Item>
+				</Item>
+				<Item class="ImageButton" referent="RBX4F10C85C302A47C79128B7101158BAD5">
+					<Properties>
+						<bool name="Active">true</bool>
+						<Vector2 name="AnchorPoint">
+							<X>0</X>
+							<Y>0</Y>
+						</Vector2>
+						<bool name="AutoButtonColor">true</bool>
+						<bool name="AutoLocalize">true</bool>
+						<Color3 name="BackgroundColor3">4288914085</Color3>
+						<float name="BackgroundTransparency">0</float>
+						<Color3 name="BorderColor3">4279970357</Color3>
+						<int name="BorderSizePixel">0</int>
+						<bool name="ClipsDescendants">false</bool>
+						<bool name="Draggable">false</bool>
+						<Content name="HoverImage"><null></null></Content>
+						<Content name="Image"><url>http://www.roblox.com/asset/?id=59791072</url></Content>
+						<Color3 name="ImageColor3">4294967295</Color3>
+						<Vector2 name="ImageRectOffset">
+							<X>0</X>
+							<Y>0</Y>
+						</Vector2>
+						<Vector2 name="ImageRectSize">
+							<X>0</X>
+							<Y>0</Y>
+						</Vector2>
+						<float name="ImageTransparency">0</float>
+						<int name="LayoutOrder">0</int>
+						<bool name="Modal">false</bool>
+						<string name="Name">Spike</string>
+						<Ref name="NextSelectionDown">null</Ref>
+						<Ref name="NextSelectionLeft">null</Ref>
+						<Ref name="NextSelectionRight">null</Ref>
+						<Ref name="NextSelectionUp">null</Ref>
+						<UDim2 name="Position">
+							<XS>0</XS>
+							<XO>0</XO>
+							<YS>0</YS>
+							<YO>70</YO>
+						</UDim2>
+						<Content name="PressedImage"><null></null></Content>
+						<Ref name="RootLocalizationTable">null</Ref>
+						<float name="Rotation">0</float>
+						<token name="ScaleType">0</token>
+						<bool name="Selectable">true</bool>
+						<bool name="Selected">false</bool>
+						<Ref name="SelectionImageObject">null</Ref>
+						<UDim2 name="Size">
+							<XS>0</XS>
+							<XO>64</XO>
+							<YS>0</YS>
+							<YO>64</YO>
+						</UDim2>
+						<token name="SizeConstraint">0</token>
+						<Rect2D name="SliceCenter">
+							<min>
+								<X>0</X>
+								<Y>0</Y>
+							</min>
+							<max>
+								<X>0</X>
+								<Y>0</Y>
+							</max>
+						</Rect2D>
+						<token name="Style">0</token>
+						<BinaryString name="Tags"></BinaryString>
+						<UDim2 name="TileSize">
+							<XS>1</XS>
+							<XO>0</XO>
+							<YS>1</YS>
+							<YO>0</YO>
+						</UDim2>
+						<bool name="Visible">true</bool>
+						<int name="ZIndex">1</int>
+					</Properties>
+					<Item class="TextLabel" referent="RBX8634CAB9D8AB4635B2E6A16ECB29BFBA">
+						<Properties>
+							<bool name="Active">false</bool>
+							<Vector2 name="AnchorPoint">
+								<X>0</X>
+								<Y>0.5</Y>
+							</Vector2>
+							<bool name="AutoLocalize">true</bool>
+							<Color3 name="BackgroundColor3">4288914085</Color3>
+							<float name="BackgroundTransparency">0</float>
+							<Color3 name="BorderColor3">4279970357</Color3>
+							<int name="BorderSizePixel">0</int>
+							<bool name="ClipsDescendants">false</bool>
+							<bool name="Draggable">false</bool>
+							<token name="Font">3</token>
+							<int name="LayoutOrder">0</int>
+							<float name="LineHeight">1</float>
+							<string name="Name">Flavor</string>
+							<Ref name="NextSelectionDown">null</Ref>
+							<Ref name="NextSelectionLeft">null</Ref>
+							<Ref name="NextSelectionRight">null</Ref>
+							<Ref name="NextSelectionUp">null</Ref>
+							<UDim2 name="Position">
+								<XS>1</XS>
+								<XO>0</XO>
+								<YS>0.5</YS>
+								<YO>0</YO>
+							</UDim2>
+							<Ref name="RootLocalizationTable">null</Ref>
+							<float name="Rotation">0</float>
+							<bool name="Selectable">false</bool>
+							<Ref name="SelectionImageObject">null</Ref>
+							<UDim2 name="Size">
+								<XS>2</XS>
+								<XO>0</XO>
+								<YS>0.5</YS>
+								<YO>0</YO>
+							</UDim2>
+							<token name="SizeConstraint">0</token>
+							<BinaryString name="Tags"></BinaryString>
+							<string name="Text">Spike Scatter</string>
+							<Color3 name="TextColor3">4278190080</Color3>
+							<bool name="TextScaled">true</bool>
+							<float name="TextSize">14</float>
+							<Color3 name="TextStrokeColor3">4278190080</Color3>
+							<float name="TextStrokeTransparency">1</float>
+							<float name="TextTransparency">0</float>
+							<token name="TextTruncate">0</token>
+							<bool name="TextWrapped">true</bool>
+							<token name="TextXAlignment">2</token>
+							<token name="TextYAlignment">1</token>
+							<bool name="Visible">false</bool>
+							<int name="ZIndex">1</int>
+						</Properties>
+					</Item>
+					<Item class="TextLabel" referent="RBXF3C80F11B25C4404842E21C5D2281968">
+						<Properties>
+							<bool name="Active">false</bool>
+							<Vector2 name="AnchorPoint">
+								<X>0.5</X>
+								<Y>0.5</Y>
+							</Vector2>
+							<bool name="AutoLocalize">true</bool>
+							<Color3 name="BackgroundColor3">4288914085</Color3>
+							<float name="BackgroundTransparency">1</float>
+							<Color3 name="BorderColor3">4279970357</Color3>
+							<int name="BorderSizePixel">1</int>
+							<bool name="ClipsDescendants">false</bool>
+							<bool name="Draggable">false</bool>
+							<token name="Font">1</token>
+							<int name="LayoutOrder">0</int>
+							<float name="LineHeight">1</float>
+							<string name="Name">Overlay</string>
+							<Ref name="NextSelectionDown">null</Ref>
+							<Ref name="NextSelectionLeft">null</Ref>
+							<Ref name="NextSelectionRight">null</Ref>
+							<Ref name="NextSelectionUp">null</Ref>
+							<UDim2 name="Position">
+								<XS>0.5</XS>
+								<XO>0</XO>
+								<YS>0.5</YS>
+								<YO>0</YO>
+							</UDim2>
+							<Ref name="RootLocalizationTable">null</Ref>
+							<float name="Rotation">0</float>
+							<bool name="Selectable">false</bool>
+							<Ref name="SelectionImageObject">null</Ref>
+							<UDim2 name="Size">
+								<XS>0.5</XS>
+								<XO>0</XO>
+								<YS>0.5</YS>
+								<YO>0</YO>
+							</UDim2>
+							<token name="SizeConstraint">0</token>
+							<BinaryString name="Tags"></BinaryString>
+							<string name="Text">E</string>
+							<Color3 name="TextColor3">4294967295</Color3>
+							<bool name="TextScaled">true</bool>
+							<float name="TextSize">14</float>
+							<Color3 name="TextStrokeColor3">4278190080</Color3>
+							<float name="TextStrokeTransparency">1</float>
+							<float name="TextTransparency">0.5</float>
+							<token name="TextTruncate">0</token>
+							<bool name="TextWrapped">true</bool>
+							<token name="TextXAlignment">2</token>
+							<token name="TextYAlignment">1</token>
+							<bool name="Visible">true</bool>
+							<int name="ZIndex">3</int>
+						</Properties>
+					</Item>
+				</Item>
+				<Item class="TextLabel" referent="RBXF1608AED105948C0B8A8055C5077AEEB">
+					<Properties>
+						<bool name="Active">false</bool>
+						<Vector2 name="AnchorPoint">
+							<X>0</X>
+							<Y>0</Y>
+						</Vector2>
+						<bool name="AutoLocalize">true</bool>
+						<Color3 name="BackgroundColor3">4288914085</Color3>
+						<float name="BackgroundTransparency">1</float>
+						<Color3 name="BorderColor3">4279970357</Color3>
+						<int name="BorderSizePixel">1</int>
+						<bool name="ClipsDescendants">false</bool>
+						<bool name="Draggable">false</bool>
+						<token name="Font">1</token>
+						<int name="LayoutOrder">0</int>
+						<float name="LineHeight">1</float>
+						<string name="Name">SText</string>
+						<Ref name="NextSelectionDown">null</Ref>
+						<Ref name="NextSelectionLeft">null</Ref>
+						<Ref name="NextSelectionRight">null</Ref>
+						<Ref name="NextSelectionUp">null</Ref>
+						<UDim2 name="Position">
+							<XS>0</XS>
+							<XO>0</XO>
+							<YS>0</YS>
+							<YO>70</YO>
+						</UDim2>
+						<Ref name="RootLocalizationTable">null</Ref>
+						<float name="Rotation">0</float>
+						<bool name="Selectable">false</bool>
+						<Ref name="SelectionImageObject">null</Ref>
+						<UDim2 name="Size">
+							<XS>0</XS>
+							<XO>64</XO>
+							<YS>0</YS>
+							<YO>64</YO>
+						</UDim2>
+						<token name="SizeConstraint">0</token>
+						<BinaryString name="Tags"></BinaryString>
+						<string name="Text"></string>
+						<Color3 name="TextColor3">4279970357</Color3>
+						<bool name="TextScaled">false</bool>
+						<float name="TextSize">14</float>
+						<Color3 name="TextStrokeColor3">4278190080</Color3>
+						<float name="TextStrokeTransparency">1</float>
+						<float name="TextTransparency">0</float>
+						<token name="TextTruncate">0</token>
+						<bool name="TextWrapped">false</bool>
+						<token name="TextXAlignment">2</token>
+						<token name="TextYAlignment">1</token>
+						<bool name="Visible">false</bool>
+						<int name="ZIndex">1</int>
+					</Properties>
+				</Item>
+				<Item class="ImageButton" referent="RBX150F2B71056D452793DB40BECABCA78A">
+					<Properties>
+						<bool name="Active">true</bool>
+						<Vector2 name="AnchorPoint">
+							<X>0</X>
+							<Y>0</Y>
+						</Vector2>
+						<bool name="AutoButtonColor">true</bool>
+						<bool name="AutoLocalize">true</bool>
+						<Color3 name="BackgroundColor3">4288914085</Color3>
+						<float name="BackgroundTransparency">0</float>
+						<Color3 name="BorderColor3">4279970357</Color3>
+						<int name="BorderSizePixel">0</int>
+						<bool name="ClipsDescendants">false</bool>
+						<bool name="Draggable">false</bool>
+						<Content name="HoverImage"><null></null></Content>
+						<Content name="Image"><url>http://www.roblox.com/asset/?id=59791781</url></Content>
+						<Color3 name="ImageColor3">4294967295</Color3>
+						<Vector2 name="ImageRectOffset">
+							<X>0</X>
+							<Y>0</Y>
+						</Vector2>
+						<Vector2 name="ImageRectSize">
+							<X>0</X>
+							<Y>0</Y>
+						</Vector2>
+						<float name="ImageTransparency">0</float>
+						<int name="LayoutOrder">0</int>
+						<bool name="Modal">false</bool>
+						<string name="Name">Prison</string>
+						<Ref name="NextSelectionDown">null</Ref>
+						<Ref name="NextSelectionLeft">null</Ref>
+						<Ref name="NextSelectionRight">null</Ref>
+						<Ref name="NextSelectionUp">null</Ref>
+						<UDim2 name="Position">
+							<XS>0</XS>
+							<XO>0</XO>
+							<YS>0</YS>
+							<YO>140</YO>
+						</UDim2>
+						<Content name="PressedImage"><null></null></Content>
+						<Ref name="RootLocalizationTable">null</Ref>
+						<float name="Rotation">0</float>
+						<token name="ScaleType">0</token>
+						<bool name="Selectable">true</bool>
+						<bool name="Selected">false</bool>
+						<Ref name="SelectionImageObject">null</Ref>
+						<UDim2 name="Size">
+							<XS>0</XS>
+							<XO>64</XO>
+							<YS>0</YS>
+							<YO>64</YO>
+						</UDim2>
+						<token name="SizeConstraint">0</token>
+						<Rect2D name="SliceCenter">
+							<min>
+								<X>0</X>
+								<Y>0</Y>
+							</min>
+							<max>
+								<X>0</X>
+								<Y>0</Y>
+							</max>
+						</Rect2D>
+						<token name="Style">0</token>
+						<BinaryString name="Tags"></BinaryString>
+						<UDim2 name="TileSize">
+							<XS>1</XS>
+							<XO>0</XO>
+							<YS>1</YS>
+							<YO>0</YO>
+						</UDim2>
+						<bool name="Visible">true</bool>
+						<int name="ZIndex">1</int>
+					</Properties>
+					<Item class="TextLabel" referent="RBX1758D6DB04484B3B92431B00A8E8C3BD">
+						<Properties>
+							<bool name="Active">false</bool>
+							<Vector2 name="AnchorPoint">
+								<X>0</X>
+								<Y>0.5</Y>
+							</Vector2>
+							<bool name="AutoLocalize">true</bool>
+							<Color3 name="BackgroundColor3">4288914085</Color3>
+							<float name="BackgroundTransparency">0</float>
+							<Color3 name="BorderColor3">4279970357</Color3>
+							<int name="BorderSizePixel">0</int>
+							<bool name="ClipsDescendants">false</bool>
+							<bool name="Draggable">false</bool>
+							<token name="Font">3</token>
+							<int name="LayoutOrder">0</int>
+							<float name="LineHeight">1</float>
+							<string name="Name">Flavor</string>
+							<Ref name="NextSelectionDown">null</Ref>
+							<Ref name="NextSelectionLeft">null</Ref>
+							<Ref name="NextSelectionRight">null</Ref>
+							<Ref name="NextSelectionUp">null</Ref>
+							<UDim2 name="Position">
+								<XS>1</XS>
+								<XO>0</XO>
+								<YS>0.5</YS>
+								<YO>0</YO>
+							</UDim2>
+							<Ref name="RootLocalizationTable">null</Ref>
+							<float name="Rotation">0</float>
+							<bool name="Selectable">false</bool>
+							<Ref name="SelectionImageObject">null</Ref>
+							<UDim2 name="Size">
+								<XS>2</XS>
+								<XO>0</XO>
+								<YS>0.5</YS>
+								<YO>0</YO>
+							</UDim2>
+							<token name="SizeConstraint">0</token>
+							<BinaryString name="Tags"></BinaryString>
+							<string name="Text">Vine Trap</string>
+							<Color3 name="TextColor3">4278190080</Color3>
+							<bool name="TextScaled">true</bool>
+							<float name="TextSize">14</float>
+							<Color3 name="TextStrokeColor3">4278190080</Color3>
+							<float name="TextStrokeTransparency">1</float>
+							<float name="TextTransparency">0</float>
+							<token name="TextTruncate">0</token>
+							<bool name="TextWrapped">true</bool>
+							<token name="TextXAlignment">2</token>
+							<token name="TextYAlignment">1</token>
+							<bool name="Visible">false</bool>
+							<int name="ZIndex">1</int>
+						</Properties>
+					</Item>
+					<Item class="TextLabel" referent="RBX5343567B75234EFF9CB6B5DCE7CF9270">
+						<Properties>
+							<bool name="Active">false</bool>
+							<Vector2 name="AnchorPoint">
+								<X>0.5</X>
+								<Y>0.5</Y>
+							</Vector2>
+							<bool name="AutoLocalize">true</bool>
+							<Color3 name="BackgroundColor3">4288914085</Color3>
+							<float name="BackgroundTransparency">1</float>
+							<Color3 name="BorderColor3">4279970357</Color3>
+							<int name="BorderSizePixel">1</int>
+							<bool name="ClipsDescendants">false</bool>
+							<bool name="Draggable">false</bool>
+							<token name="Font">1</token>
+							<int name="LayoutOrder">0</int>
+							<float name="LineHeight">1</float>
+							<string name="Name">Overlay</string>
+							<Ref name="NextSelectionDown">null</Ref>
+							<Ref name="NextSelectionLeft">null</Ref>
+							<Ref name="NextSelectionRight">null</Ref>
+							<Ref name="NextSelectionUp">null</Ref>
+							<UDim2 name="Position">
+								<XS>0.5</XS>
+								<XO>0</XO>
+								<YS>0.5</YS>
+								<YO>0</YO>
+							</UDim2>
+							<Ref name="RootLocalizationTable">null</Ref>
+							<float name="Rotation">0</float>
+							<bool name="Selectable">false</bool>
+							<Ref name="SelectionImageObject">null</Ref>
+							<UDim2 name="Size">
+								<XS>0.5</XS>
+								<XO>0</XO>
+								<YS>0.5</YS>
+								<YO>0</YO>
+							</UDim2>
+							<token name="SizeConstraint">0</token>
+							<BinaryString name="Tags"></BinaryString>
+							<string name="Text">R</string>
+							<Color3 name="TextColor3">4294967295</Color3>
+							<bool name="TextScaled">true</bool>
+							<float name="TextSize">14</float>
+							<Color3 name="TextStrokeColor3">4278190080</Color3>
+							<float name="TextStrokeTransparency">1</float>
+							<float name="TextTransparency">0.5</float>
+							<token name="TextTruncate">0</token>
+							<bool name="TextWrapped">true</bool>
+							<token name="TextXAlignment">2</token>
+							<token name="TextYAlignment">1</token>
+							<bool name="Visible">true</bool>
+							<int name="ZIndex">3</int>
+						</Properties>
+					</Item>
+				</Item>
+				<Item class="TextLabel" referent="RBX70D17577724F49D2994336D65F0201DC">
+					<Properties>
+						<bool name="Active">false</bool>
+						<Vector2 name="AnchorPoint">
+							<X>0</X>
+							<Y>0</Y>
+						</Vector2>
+						<bool name="AutoLocalize">true</bool>
+						<Color3 name="BackgroundColor3">4288914085</Color3>
+						<float name="BackgroundTransparency">1</float>
+						<Color3 name="BorderColor3">4279970357</Color3>
+						<int name="BorderSizePixel">1</int>
+						<bool name="ClipsDescendants">false</bool>
+						<bool name="Draggable">false</bool>
+						<token name="Font">1</token>
+						<int name="LayoutOrder">0</int>
+						<float name="LineHeight">1</float>
+						<string name="Name">RText</string>
+						<Ref name="NextSelectionDown">null</Ref>
+						<Ref name="NextSelectionLeft">null</Ref>
+						<Ref name="NextSelectionRight">null</Ref>
+						<Ref name="NextSelectionUp">null</Ref>
+						<UDim2 name="Position">
+							<XS>0</XS>
+							<XO>0</XO>
+							<YS>0</YS>
+							<YO>140</YO>
+						</UDim2>
+						<Ref name="RootLocalizationTable">null</Ref>
+						<float name="Rotation">0</float>
+						<bool name="Selectable">false</bool>
+						<Ref name="SelectionImageObject">null</Ref>
+						<UDim2 name="Size">
+							<XS>0</XS>
+							<XO>64</XO>
+							<YS>0</YS>
+							<YO>64</YO>
+						</UDim2>
+						<token name="SizeConstraint">0</token>
+						<BinaryString name="Tags"></BinaryString>
+						<string name="Text"></string>
+						<Color3 name="TextColor3">4279970357</Color3>
+						<bool name="TextScaled">false</bool>
+						<float name="TextSize">14</float>
+						<Color3 name="TextStrokeColor3">4278190080</Color3>
+						<float name="TextStrokeTransparency">1</float>
+						<float name="TextTransparency">0</float>
+						<token name="TextTruncate">0</token>
+						<bool name="TextWrapped">false</bool>
+						<token name="TextXAlignment">2</token>
+						<token name="TextYAlignment">1</token>
+						<bool name="Visible">false</bool>
+						<int name="ZIndex">1</int>
+					</Properties>
+				</Item>
+			</Item>
+		</Item>
+		<Item class="Animation" referent="RBX8E9A2BB5D827433092AE09B2C6A4B878">
+			<Properties>
+				<Content name="AnimationId"><url>rbxassetid://2421137358</url></Content>
+				<string name="Name">BookAnimR15</string>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+		</Item>
+		<Item class="Animation" referent="RBX433D8459076E45DBB668FE88479C7826">
+			<Properties>
+				<Content name="AnimationId"><url>http://www.roblox.com/Asset?ID=49456429</url></Content>
+				<string name="Name">BookAnimR6</string>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+		</Item>
+		<Item class="Folder" referent="RBX7C9AE5F9873D4AE9A7E0FE211E99558A">
+			<Properties>
+				<string name="Name">Effects</string>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+			<Item class="ParticleEmitter" referent="RBXE2822C072A6646E9ADEB2FD7926697FA">
+				<Properties>
+					<Vector3 name="Acceleration">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+					</Vector3>
+					<ColorSequence name="Color">0 0.333333 0.666667 1 0 1 1 1 1 0 </ColorSequence>
+					<float name="Drag">0</float>
+					<token name="EmissionDirection">1</token>
+					<bool name="Enabled">false</bool>
+					<NumberRange name="Lifetime">1 1 </NumberRange>
+					<float name="LightEmission">0.5</float>
+					<float name="LightInfluence">0</float>
+					<bool name="LockedToPart">false</bool>
+					<string name="Name">Smoke</string>
+					<float name="Rate">50</float>
+					<NumberRange name="RotSpeed">-360 360 </NumberRange>
+					<NumberRange name="Rotation">-360 360 </NumberRange>
+					<NumberSequence name="Size">0 2 2 1 0 0 </NumberSequence>
+					<NumberRange name="Speed">1 1 </NumberRange>
+					<Vector2 name="SpreadAngle">
+						<X>720</X>
+						<Y>720</Y>
+					</Vector2>
+					<BinaryString name="Tags"></BinaryString>
+					<Content name="Texture"><url>rbxasset://textures/particles/smoke_main.dds</url></Content>
+					<NumberSequence name="Transparency">0 1 0 0.1 0 0 1 1 0 </NumberSequence>
+					<float name="VelocityInheritance">0</float>
+					<float name="ZOffset">0</float>
+				</Properties>
+			</Item>
+		</Item>
+		<Item class="Camera" referent="RBXF304FC1EA08F42B5A3BC1BDC55DCE8AA">
+			<Properties>
+				<CoordinateFrame name="CFrame">
+					<X>0.851776004</X>
+					<Y>1.2661922</Y>
+					<Z>3.8683548</Z>
+					<R00>0.919124782</R00>
+					<R01>-0.0247327667</R01>
+					<R02>0.39318949</R02>
+					<R10>-0</R10>
+					<R11>0.998027503</R11>
+					<R12>0.062778838</R12>
+					<R20>-0.393966615</R20>
+					<R21>-0.057701584</R21>
+					<R22>0.917311788</R22>
+				</CoordinateFrame>
+				<Ref name="CameraSubject">null</Ref>
+				<token name="CameraType">0</token>
+				<float name="FieldOfView">70</float>
+				<CoordinateFrame name="Focus">
+					<X>0.065395616</X>
+					<Y>1.1406343</Y>
+					<Z>2.03372788</Z>
+					<R00>1</R00>
+					<R01>0</R01>
+					<R02>0</R02>
+					<R10>0</R10>
+					<R11>1</R11>
+					<R12>0</R12>
+					<R20>0</R20>
+					<R21>0</R21>
+					<R22>1</R22>
+				</CoordinateFrame>
+				<bool name="HeadLocked">true</bool>
+				<float name="HeadScale">1</float>
+				<string name="Name">ThumbnailCamera</string>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+		</Item>
+	</Item>
+</roblox>

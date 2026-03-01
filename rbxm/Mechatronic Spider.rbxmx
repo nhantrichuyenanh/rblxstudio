@@ -1,0 +1,491 @@
+<roblox xmlns:xmime="http://www.w3.org/2005/05/xmlmime" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.roblox.com/roblox.xsd" version="4">
+	<External>null</External>
+	<External>nil</External>
+	<Item class="Tool" referent="RBX0">
+		<Properties>
+			<bool name="CanBeDropped">true</bool>
+			<bool name="Enabled">true</bool>
+			<CoordinateFrame name="Grip">
+				<X>0.099999994</X>
+				<Y>-0.300000012</Y>
+				<Z>0</Z>
+				<R00>1</R00>
+				<R01>0</R01>
+				<R02>0</R02>
+				<R10>0</R10>
+				<R11>1</R11>
+				<R12>0</R12>
+				<R20>0</R20>
+				<R21>0</R21>
+				<R22>1</R22>
+			</CoordinateFrame>
+			<bool name="ManualActivationOnly">false</bool>
+			<string name="Name">Metatronic Spider</string>
+			<bool name="RequiresHandle">true</bool>
+			<BinaryString name="Tags"></BinaryString>
+			<Content name="TextureId"><url>http://www.roblox.com/asset/?id=115973732</url></Content>
+			<string name="ToolTip">Metatronic Spider</string>
+		</Properties>
+		<Item class="Part" referent="RBX1">
+			<Properties>
+				<bool name="Anchored">false</bool>
+				<float name="BackParamA">-0.5</float>
+				<float name="BackParamB">0.5</float>
+				<token name="BackSurface">0</token>
+				<token name="BackSurfaceInput">0</token>
+				<float name="BottomParamA">-0.5</float>
+				<float name="BottomParamB">0.5</float>
+				<token name="BottomSurface">4</token>
+				<token name="BottomSurfaceInput">0</token>
+				<CoordinateFrame name="CFrame">
+					<X>2.35999703</X>
+					<Y>1.27999997</Y>
+					<Z>3.45999908</Z>
+					<R00>-1</R00>
+					<R01>0</R01>
+					<R02>0</R02>
+					<R10>0</R10>
+					<R11>1</R11>
+					<R12>0</R12>
+					<R20>0</R20>
+					<R21>0</R21>
+					<R22>-1</R22>
+				</CoordinateFrame>
+				<bool name="CanCollide">true</bool>
+				<int name="CollisionGroupId">0</int>
+				<Color3uint8 name="Color3uint8">4284702562</Color3uint8>
+				<PhysicalProperties name="CustomPhysicalProperties">
+					<CustomPhysics>false</CustomPhysics>
+				</PhysicalProperties>
+				<float name="Elasticity">0.5</float>
+				<float name="Friction">0.300000012</float>
+				<float name="FrontParamA">-0.5</float>
+				<float name="FrontParamB">0.5</float>
+				<token name="FrontSurface">0</token>
+				<token name="FrontSurfaceInput">0</token>
+				<float name="LeftParamA">-0.5</float>
+				<float name="LeftParamB">0.5</float>
+				<token name="LeftSurface">0</token>
+				<token name="LeftSurfaceInput">0</token>
+				<bool name="Locked">true</bool>
+				<token name="Material">256</token>
+				<string name="Name">Handle</string>
+				<float name="Reflectance">0.349999994</float>
+				<float name="RightParamA">-0.5</float>
+				<float name="RightParamB">0.5</float>
+				<token name="RightSurface">0</token>
+				<token name="RightSurfaceInput">0</token>
+				<Vector3 name="RotVelocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<BinaryString name="Tags"></BinaryString>
+				<float name="TopParamA">-0.5</float>
+				<float name="TopParamB">0.5</float>
+				<token name="TopSurface">3</token>
+				<token name="TopSurfaceInput">0</token>
+				<float name="Transparency">0</float>
+				<Vector3 name="Velocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<token name="formFactorRaw">3</token>
+				<token name="shape">1</token>
+				<Vector3 name="size">
+					<X>1.76000023</X>
+					<Y>0.979999781</Y>
+					<Z>2.13999987</Z>
+				</Vector3>
+			</Properties>
+			<Item class="SpecialMesh" referent="RBX2">
+				<Properties>
+					<token name="LODX">2</token>
+					<token name="LODY">2</token>
+					<Content name="MeshId"><url>http://www.roblox.com/asset/?id=115973891</url></Content>
+					<token name="MeshType">5</token>
+					<string name="Name">Mesh</string>
+					<Vector3 name="Offset">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+					</Vector3>
+					<Vector3 name="Scale">
+						<X>1.5</X>
+						<Y>1.5</Y>
+						<Z>1.5</Z>
+					</Vector3>
+					<BinaryString name="Tags"></BinaryString>
+					<Content name="TextureId"><url>http://www.roblox.com/asset/?id=115973812</url></Content>
+					<Vector3 name="VertexColor">
+						<X>1</X>
+						<Y>1</Y>
+						<Z>1</Z>
+					</Vector3>
+				</Properties>
+			</Item>
+			<Item class="Attachment" referent="RBXA86FD983108C45ACAD1DD965C9FA4637">
+				<Properties>
+					<CoordinateFrame name="CFrame">
+						<X>0.100000001</X>
+						<Y>-0.300000012</Y>
+						<Z>0</Z>
+						<R00>1</R00>
+						<R01>0</R01>
+						<R02>0</R02>
+						<R10>0</R10>
+						<R11>1</R11>
+						<R12>0</R12>
+						<R20>0</R20>
+						<R21>0</R21>
+						<R22>1</R22>
+					</CoordinateFrame>
+					<string name="Name">RightGripAttachment</string>
+					<BinaryString name="Tags"></BinaryString>
+					<bool name="Visible">false</bool>
+				</Properties>
+			</Item>
+		</Item>
+		<Item class="Script" referent="RBXC7AC0EF7DEE54C718DC61F5E2158916D">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">Script</string>
+				<string name="ScriptGuid">{6D199A5A-55F0-41E9-B5CA-2DA8EB12B789}</string>
+				<ProtectedString name="Source"><![CDATA[-- // Rescripted by StarWars
+local Debris = game:GetService("Debris")
+
+local GearService = require(1075123174)
+local Tool = script.Parent
+local Handle = Tool.Handle
+
+local Gear = GearService:BindGear(Tool)
+Gear:SetupLocalScript("MouseIcon")
+
+local COOLDOWN = 25
+
+function CreateSpiderModel()
+	local NewModel = Instance.new("Model")
+	NewModel.Name = "Metatronic Spider"
+	
+	local NewPart = Handle:Clone()
+	NewPart.Friction = 0.2
+	NewPart.Name = "Torso"
+	NewPart.Transparency = 0
+	NewPart.CanCollide = true
+	local RandomVector = Vector3.new((math.random() - 0.5) * 15, (math.random() - 0.5) * 5, (math.random() - 0.5) * 15)
+	NewPart.CFrame = CFrame.new(Handle.CFrame.p) * CFrame.new(RandomVector)
+	NewPart.Velocity = RandomVector
+	NewPart.Parent = NewModel
+	
+	local Head = Instance.new("Part")
+	Head.Name = "Head"
+	Head.Transparency = 1
+	Head.Size = Vector3.new(0,0,0)
+	Head.Parent = NewModel
+	
+	local NeckMotor = Instance.new("Motor6D")
+	NeckMotor.Name = "Neck"
+	NeckMotor.Part0 = NewPart
+	NeckMotor.Part1 = Head
+	NeckMotor.Parent = NewPart
+	
+	local Humanoid = Instance.new("Humanoid")
+	Humanoid.MaxHealth = 5
+	Humanoid.Health = 5
+	Humanoid.WalkSpeed = 20
+	Humanoid.Parent = NewModel
+	
+	local CreatorObject = Instance.new("ObjectValue")
+	CreatorObject.Value = Gear.Player
+	CreatorObject.Name = "creator"
+	CreatorObject.Parent = NewModel
+	
+	local NewScript = script.SpiderAI:Clone()
+	NewScript.Parent = NewModel
+	NewScript.Disabled = false
+	
+	Debris:AddItem(NewModel, math.random(20, 30))
+	NewModel.Parent = workspace
+	
+	return NewModel
+end
+
+Gear:BindActivateFunction("spider_activate", function()
+	CreateSpiderModel()
+	wait(COOLDOWN)
+end)]]></ProtectedString>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+			<Item class="Script" referent="RBX4">
+				<Properties>
+					<bool name="Disabled">true</bool>
+					<Content name="LinkedSource"><null></null></Content>
+					<string name="Name">SpiderAI</string>
+					<string name="ScriptGuid">{2797BCF2-08BC-4425-9320-E3348446101D}</string>
+					<ProtectedString name="Source"><![CDATA[--Made by Stickmasterluke
+-- Fixed for R15 avatars by StarWars
+
+
+sp=script.Parent
+
+
+damage=3
+range=300
+
+meshes={115977511,115975859}
+standingmesh=115973891
+--Accidental mesh with no legs. Maybe someone wants it anyways -> 115975800
+
+
+local head=sp:WaitForChild("Head")
+local hum=sp:WaitForChild("Humanoid")
+local torso=sp:WaitForChild("Torso")
+local mesh=torso:WaitForChild("Mesh")
+local ct=sp:WaitForChild("creator")
+local debris=game:GetService("Debris")
+
+
+alive=true
+currentmesh=0
+nextmove=0
+
+
+torso.Touched:connect(function(hit)
+	if hit and hit.Parent and hit.Parent.Name~=sp.Name and alive then
+		local h=hit.Parent:FindFirstChild("Humanoid")
+		if h~=nil then
+			local plr=game.Players:GetPlayerFromCharacter(hit.Parent)
+			if plr then
+				if plr==ct.Value then
+					return
+				end
+			end
+			for i,v in pairs(h:GetChildren()) do
+				if v.Name=="creator" then
+					v:Destroy()
+				end
+			end
+			local newct=ct:clone()
+			debris:AddItem(newct,1)
+			newct.Parent=h
+			h:TakeDamage(damage)
+		end
+	end
+end)
+
+hum.Changed:connect(function(prop)
+	if hum then
+		if hum.Health<=0 then
+			alive=false
+			if torso then
+				hum:Destroy()
+				local f=Instance.new("Fire")
+				f.Parent=torso
+				if head then
+					head:Destroy()
+				end
+				wait(4)
+			end
+			sp:Destroy()
+		end
+	else
+		alive=false
+		sp:Destroy()
+	end
+end)
+
+while alive do
+	local t1,t2=wait(.1)
+	if t2>nextmove then
+		nextmove=t2+.5+math.random()
+		closest=range
+		target=nil
+		for i,v in ipairs(game.Workspace:GetChildren()) do				--targets every thing named humanoid that is in a model in workspace and is not another spide
+			if v and v.className=="Model" and v.Name~=sp.Name then
+				local t=v:FindFirstChild("Torso") or v:FindFirstChild("UpperTorso")
+				local h=v:FindFirstChild("Humanoid")
+				if t~=nil and h~=nil and h.Health>0 then
+					safe=false
+					local plr=game.Players:GetPlayerFromCharacter(v)
+					if plr then
+						if plr==ct.Value then
+							safe=true
+						end
+					end
+					if not safe then
+						local mag=(t.Position-torso.Position).magnitude
+						if mag<closest then
+							target=t
+							closest=mag
+						end
+					end
+				end
+			end
+		end
+		if target then
+			point=target.Position+(Vector3.new(math.random()-.5,math.random()-.5,math.random()-.5)*6)
+			--hum.WalkToPoint=point
+			hum:MoveTo(point,target)
+			if math.random()<.15 then
+				hum.Jump=true
+			end
+		end
+	end
+	if torso and mesh then
+		if torso.Velocity.magnitude>3 then
+			currentmesh=currentmesh+1
+			mesh.MeshId="http://www.roblox.com/asset/?id="..tostring(meshes[(currentmesh%(#meshes))+1])
+		else
+			mesh.MeshId="http://www.roblox.com/asset/?id="..tostring(standingmesh)
+		end
+	end
+end
+
+
+]]></ProtectedString>
+					<BinaryString name="Tags"></BinaryString>
+				</Properties>
+			</Item>
+		</Item>
+		<Item class="Keyframe" referent="RBXDFA05FBEB7C942B3A0C44064582BCE4B">
+			<Properties>
+				<string name="Name">ThumbnailPose</string>
+				<BinaryString name="Tags"></BinaryString>
+				<float name="Time">0</float>
+			</Properties>
+			<Item class="Pose" referent="RBX63D380BC58244992AF47D67F7CCB29DF">
+				<Properties>
+					<CoordinateFrame name="CFrame">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+						<R00>1</R00>
+						<R01>0</R01>
+						<R02>0</R02>
+						<R10>0</R10>
+						<R11>1</R11>
+						<R12>0</R12>
+						<R20>0</R20>
+						<R21>0</R21>
+						<R22>1</R22>
+					</CoordinateFrame>
+					<token name="EasingDirection">1</token>
+					<token name="EasingStyle">0</token>
+					<string name="Name">UpperTorso</string>
+					<BinaryString name="Tags"></BinaryString>
+					<float name="Weight">0</float>
+				</Properties>
+				<Item class="Pose" referent="RBX9D863907B2724B6F973B9706504DF72A">
+					<Properties>
+						<CoordinateFrame name="CFrame">
+							<X>0</X>
+							<Y>-6.70552254e-08</Y>
+							<Z>-5.96046448e-08</Z>
+							<R00>1</R00>
+							<R01>0</R01>
+							<R02>0</R02>
+							<R10>0</R10>
+							<R11>0.173648193</R11>
+							<R12>-0.98480773</R12>
+							<R20>0</R20>
+							<R21>0.98480773</R21>
+							<R22>0.173648193</R22>
+						</CoordinateFrame>
+						<token name="EasingDirection">1</token>
+						<token name="EasingStyle">0</token>
+						<string name="Name">RightUpperArm</string>
+						<BinaryString name="Tags"></BinaryString>
+						<float name="Weight">1</float>
+					</Properties>
+					<Item class="Pose" referent="RBXC89F0CF977C34886A77CB3EB179FC472">
+						<Properties>
+							<CoordinateFrame name="CFrame">
+								<X>0</X>
+								<Y>-1.49011612e-08</Y>
+								<Z>3.7252903e-09</Z>
+								<R00>1</R00>
+								<R01>0</R01>
+								<R02>0</R02>
+								<R10>0</R10>
+								<R11>0.98480773</R11>
+								<R12>-0.173648179</R12>
+								<R20>0</R20>
+								<R21>0.173648179</R21>
+								<R22>0.98480773</R22>
+							</CoordinateFrame>
+							<token name="EasingDirection">1</token>
+							<token name="EasingStyle">0</token>
+							<string name="Name">RightLowerArm</string>
+							<BinaryString name="Tags"></BinaryString>
+							<float name="Weight">1</float>
+						</Properties>
+						<Item class="Pose" referent="RBXC690E28BA20143EBB9E63173A2EABA39">
+							<Properties>
+								<CoordinateFrame name="CFrame">
+									<X>0</X>
+									<Y>0</Y>
+									<Z>0</Z>
+									<R00>1</R00>
+									<R01>0</R01>
+									<R02>0</R02>
+									<R10>0</R10>
+									<R11>1</R11>
+									<R12>0</R12>
+									<R20>0</R20>
+									<R21>0</R21>
+									<R22>1</R22>
+								</CoordinateFrame>
+								<token name="EasingDirection">1</token>
+								<token name="EasingStyle">0</token>
+								<string name="Name">RightHand</string>
+								<BinaryString name="Tags"></BinaryString>
+								<float name="Weight">1</float>
+							</Properties>
+						</Item>
+					</Item>
+				</Item>
+			</Item>
+		</Item>
+		<Item class="Camera" referent="RBX002F0D4496D34EC48F8F6C4505B4FFA9">
+			<Properties>
+				<CoordinateFrame name="CFrame">
+					<X>3.30153084</X>
+					<Y>2.21271372</Y>
+					<Z>4.95258808</Z>
+					<R00>0.845843911</R00>
+					<R01>-0.248369113</R01>
+					<R02>0.472081363</R02>
+					<R10>-0</R10>
+					<R11>0.884991527</R11>
+					<R12>0.465607345</R12>
+					<R20>-0.533430398</R20>
+					<R21>-0.393831134</R21>
+					<R22>0.74856472</R22>
+				</CoordinateFrame>
+				<Ref name="CameraSubject">null</Ref>
+				<token name="CameraType">0</token>
+				<float name="FieldOfView">70</float>
+				<CoordinateFrame name="Focus">
+					<X>2.35736775</X>
+					<Y>1.28149867</Y>
+					<Z>3.45545816</Z>
+					<R00>1</R00>
+					<R01>0</R01>
+					<R02>0</R02>
+					<R10>0</R10>
+					<R11>1</R11>
+					<R12>0</R12>
+					<R20>0</R20>
+					<R21>0</R21>
+					<R22>1</R22>
+				</CoordinateFrame>
+				<bool name="HeadLocked">true</bool>
+				<float name="HeadScale">1</float>
+				<string name="Name">ThumbnailCamera</string>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+		</Item>
+	</Item>
+</roblox>

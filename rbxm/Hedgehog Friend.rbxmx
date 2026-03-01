@@ -1,0 +1,257 @@
+<roblox xmlns:xmime="http://www.w3.org/2005/05/xmlmime" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.roblox.com/roblox.xsd" version="4">
+	<External>null</External>
+	<External>nil</External>
+	<Item class="Tool" referent="RBX1582F3C8AFAC4DA1AE9BEA41B3BA7D1E">
+		<Properties>
+			<bool name="CanBeDropped">true</bool>
+			<bool name="Enabled">true</bool>
+			<CoordinateFrame name="Grip">
+				<X>0</X>
+				<Y>0.400000006</Y>
+				<Z>-0.800000012</Z>
+				<R00>1</R00>
+				<R01>0</R01>
+				<R02>0</R02>
+				<R10>0</R10>
+				<R11>0</R11>
+				<R12>-1</R12>
+				<R20>0</R20>
+				<R21>1</R21>
+				<R22>0</R22>
+			</CoordinateFrame>
+			<bool name="ManualActivationOnly">false</bool>
+			<string name="Name">Hedgehog</string>
+			<bool name="RequiresHandle">true</bool>
+			<Content name="TextureId"><url>http://www.roblox.com/asset/?id=75931707</url></Content>
+			<string name="ToolTip"></string>
+		</Properties>
+		<Item class="Part" referent="RBXE37913A3178B4B049B5C00D7CCFA410F">
+			<Properties>
+				<bool name="Anchored">false</bool>
+				<float name="BackParamA">-0.5</float>
+				<float name="BackParamB">0.5</float>
+				<token name="BackSurface">0</token>
+				<token name="BackSurfaceInput">0</token>
+				<float name="BottomParamA">-0.5</float>
+				<float name="BottomParamB">0.5</float>
+				<token name="BottomSurface">0</token>
+				<token name="BottomSurfaceInput">0</token>
+				<int name="BrickColor">199</int>
+				<CoordinateFrame name="CFrame">
+					<X>42.4767647</X>
+					<Y>4.59862709</Y>
+					<Z>18.5660744</Z>
+					<R00>0.00264412141</R00>
+					<R01>0.999996066</R01>
+					<R02>0.000796262408</R02>
+					<R10>2.50201211e-08</R10>
+					<R11>-0.000796265318</R11>
+					<R12>0.999999642</R12>
+					<R20>0.999996305</R20>
+					<R21>-0.00264412072</R21>
+					<R22>-2.13044245e-06</R22>
+				</CoordinateFrame>
+				<bool name="CanCollide">true</bool>
+				<int name="CollisionGroupId">0</int>
+				<PhysicalProperties name="CustomPhysicalProperties">
+					<CustomPhysics>false</CustomPhysics>
+				</PhysicalProperties>
+				<float name="Elasticity">0.5</float>
+				<float name="Friction">0.300000012</float>
+				<float name="FrontParamA">-0.5</float>
+				<float name="FrontParamB">0.5</float>
+				<token name="FrontSurface">0</token>
+				<token name="FrontSurfaceInput">0</token>
+				<float name="LeftParamA">-0.5</float>
+				<float name="LeftParamB">0.5</float>
+				<token name="LeftSurface">0</token>
+				<token name="LeftSurfaceInput">0</token>
+				<bool name="Locked">false</bool>
+				<token name="Material">256</token>
+				<string name="Name">Handle</string>
+				<float name="Reflectance">0.400000006</float>
+				<float name="RightParamA">-0.5</float>
+				<float name="RightParamB">0.5</float>
+				<token name="RightSurface">0</token>
+				<token name="RightSurfaceInput">0</token>
+				<Vector3 name="RotVelocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<float name="TopParamA">-0.5</float>
+				<float name="TopParamB">0.5</float>
+				<token name="TopSurface">0</token>
+				<token name="TopSurfaceInput">0</token>
+				<float name="Transparency">0</float>
+				<Vector3 name="Velocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<token name="formFactorRaw">3</token>
+				<token name="shape">1</token>
+				<Vector3 name="size">
+					<X>1</X>
+					<Y>1.20000005</Y>
+					<Z>2</Z>
+				</Vector3>
+			</Properties>
+			<Item class="SpecialMesh" referent="RBX84323F496D8840399F13FFF73CC5E599">
+				<Properties>
+					<token name="LODX">2</token>
+					<token name="LODY">2</token>
+					<Content name="MeshId"><url>http://www.roblox.com/asset/?id=75931575</url></Content>
+					<token name="MeshType">5</token>
+					<string name="Name">Mesh</string>
+					<Vector3 name="Offset">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+					</Vector3>
+					<Vector3 name="Scale">
+						<X>2</X>
+						<Y>2</Y>
+						<Z>2</Z>
+					</Vector3>
+					<Content name="TextureId"><url>http://www.roblox.com/asset/?id=75931783</url></Content>
+					<Vector3 name="VertexColor">
+						<X>1</X>
+						<Y>1</Y>
+						<Z>1</Z>
+					</Vector3>
+				</Properties>
+			</Item>
+			<Item class="Attachment" referent="RBXCE4F40F785904942A4B10D909A79D02A">
+				<Properties>
+					<CoordinateFrame name="CFrame">
+						<X>-2.93559879e-08</X>
+						<Y>0.649996936</Y>
+						<Z>-0.749999583</Z>
+						<R00>0</R00>
+						<R01>1</R01>
+						<R02>-0</R02>
+						<R10>-1</R10>
+						<R11>0</R11>
+						<R12>0</R12>
+						<R20>0</R20>
+						<R21>0</R21>
+						<R22>1</R22>
+					</CoordinateFrame>
+					<string name="Name">RightGripAttachment</string>
+					<bool name="Visible">false</bool>
+				</Properties>
+			</Item>
+		</Item>
+		<Item class="Script" referent="RBX3D238D71EA57487C8D1F1FF5E94D2E68">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">Script</string>
+				<string name="ScriptGuid">{FB736484-58C5-4C68-98F2-31A78F42D8EF}</string>
+				<ProtectedString name="Source"><![CDATA[--Stickmasterluke
+
+
+sp=script.Parent
+
+
+check=true
+
+s1=Instance.new("Sound")
+s1.SoundId="http://www.roblox.com/asset/?id=76115411"
+s1.Parent=sp.Handle
+
+s2=Instance.new("Sound")
+s2.SoundId="http://www.roblox.com/asset/?id=76115431"
+s2.Parent=sp.Handle
+
+s3=Instance.new("Sound")
+s3.SoundId="http://www.roblox.com/asset/?id=76115441"
+s3.Parent=sp.Handle
+
+s4=Instance.new("Sound")
+s4.SoundId="http://www.roblox.com/asset/?id=76115450"
+s4.Parent=sp.Handle
+
+local sounds={s1, s2, s3, s4}
+lastsound=2
+newsound=1
+
+local initGrip 
+
+function onActivated()
+	if check then
+		check=false
+		sp.Grip=CFrame.new(-2,-.8,0.65)*CFrame.Angles(0,math.pi,-.3)
+		while lastsound==newsound do
+			newsound=math.random(1,#sounds)
+		end
+		lastsound=newsound
+		sounds[newsound]:Play()
+		wait(2)
+		--sp.Grip=CFrame.new(-.2,-.2,0.2)*CFrame.Angles(math.pi/2,-math.pi/2,1.2)
+		sp.Grip = initGrip 
+		check=true
+	end
+end
+
+function onEquipped()
+	initGrip = sp.Grip 
+	for i=1,#sounds do
+		sounds[i].Volume = 1
+	end
+end
+
+function onUnequipped()
+	for i=1,#sounds do
+		sounds[i].Volume = 0
+	end
+end
+
+sp.Activated:connect(onActivated)
+sp.Equipped:connect(onEquipped)
+sp.Unequipped:connect(onUnequipped)
+]]></ProtectedString>
+			</Properties>
+		</Item>
+		<Item class="LocalScript" referent="RBX80FCE2F534F4407FB75BF56DB8498E60">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">Local Gui</string>
+				<string name="ScriptGuid">{AC628324-675F-4F8D-A35A-5FAFFAF0B0F4}</string>
+				<ProtectedString name="Source"><![CDATA[Tool = script.Parent
+
+local stillEquipped = false
+
+function onEquippedLocal(mouse)
+	stillEquipped = true
+	if mouse == nil then 
+		print("Mouse not found")
+		return
+	end
+	while stillEquipped do 
+		print("Setting Mouse to go")
+		mouse.Icon = "rbxasset://textures\\GunCursor.png"
+		while Tool.Enabled and stillEquipped do 
+			wait(0.01)
+		end
+		print("Setting Mouse to wait")
+		mouse.Icon = "rbxasset://textures\\GunWaitCursor.png"
+		while not Tool.Enabled and stillEquipped do 
+			wait(0.01)
+		end	
+	end
+end
+
+
+function onUnequippedLocal()
+	stillEquipped = false
+end
+
+Tool.Equipped:connect(onEquippedLocal)
+Tool.Unequipped:connect(onUnequippedLocal)]]></ProtectedString>
+			</Properties>
+		</Item>
+	</Item>
+</roblox>

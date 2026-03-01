@@ -1,0 +1,376 @@
+<roblox xmlns:xmime="http://www.w3.org/2005/05/xmlmime" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.roblox.com/roblox.xsd" version="4">
+	<External>null</External>
+	<External>nil</External>
+	<Item class="Tool" referent="RBXFDF4ED57A2454B269496BBA13792DE05">
+		<Properties>
+			<bool name="CanBeDropped">true</bool>
+			<bool name="Enabled">true</bool>
+			<CoordinateFrame name="Grip">
+				<X>0</X>
+				<Y>0</Y>
+				<Z>0</Z>
+				<R00>1</R00>
+				<R01>0</R01>
+				<R02>0</R02>
+				<R10>0</R10>
+				<R11>1</R11>
+				<R12>0</R12>
+				<R20>0</R20>
+				<R21>0</R21>
+				<R22>1</R22>
+			</CoordinateFrame>
+			<bool name="ManualActivationOnly">false</bool>
+			<string name="Name">AnAlpacaYouKnow</string>
+			<bool name="RequiresHandle">true</bool>
+			<Content name="TextureId"><url>rbxassetid://273347998</url></Content>
+			<string name="ToolTip"></string>
+		</Properties>
+		<Item class="Part" referent="RBX9B6F7157AB854C139B6FC317ECA3946B">
+			<Properties>
+				<bool name="Anchored">false</bool>
+				<float name="BackParamA">-0.5</float>
+				<float name="BackParamB">0.5</float>
+				<token name="BackSurface">0</token>
+				<token name="BackSurfaceInput">0</token>
+				<float name="BottomParamA">-0.5</float>
+				<float name="BottomParamB">0.5</float>
+				<token name="BottomSurface">0</token>
+				<token name="BottomSurfaceInput">0</token>
+				<int name="BrickColor">194</int>
+				<CoordinateFrame name="CFrame">
+					<X>0.200000003</X>
+					<Y>4.20001221</Y>
+					<Z>-0.200000003</Z>
+					<R00>1</R00>
+					<R01>0</R01>
+					<R02>0</R02>
+					<R10>0</R10>
+					<R11>1</R11>
+					<R12>0</R12>
+					<R20>0</R20>
+					<R21>0</R21>
+					<R22>1</R22>
+				</CoordinateFrame>
+				<bool name="CanCollide">true</bool>
+				<PhysicalProperties name="CustomPhysicalProperties">
+					<CustomPhysics>false</CustomPhysics>
+				</PhysicalProperties>
+				<float name="Elasticity">0.5</float>
+				<float name="Friction">0.300000012</float>
+				<float name="FrontParamA">-0.5</float>
+				<float name="FrontParamB">0.5</float>
+				<token name="FrontSurface">0</token>
+				<token name="FrontSurfaceInput">0</token>
+				<float name="LeftParamA">-0.5</float>
+				<float name="LeftParamB">0.5</float>
+				<token name="LeftSurface">0</token>
+				<token name="LeftSurfaceInput">0</token>
+				<bool name="Locked">true</bool>
+				<token name="Material">256</token>
+				<string name="Name">Handle</string>
+				<float name="Reflectance">0</float>
+				<float name="RightParamA">-0.5</float>
+				<float name="RightParamB">0.5</float>
+				<token name="RightSurface">0</token>
+				<token name="RightSurfaceInput">0</token>
+				<Vector3 name="RotVelocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<float name="TopParamA">-0.5</float>
+				<float name="TopParamB">0.5</float>
+				<token name="TopSurface">0</token>
+				<token name="TopSurfaceInput">0</token>
+				<float name="Transparency">0</float>
+				<Vector3 name="Velocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<token name="formFactorRaw">3</token>
+				<token name="shape">1</token>
+				<Vector3 name="size">
+					<X>0.600000024</X>
+					<Y>1.4000001</Y>
+					<Z>1</Z>
+				</Vector3>
+			</Properties>
+			<Item class="Script" referent="RBXE8A00C21225A48C6B49411A4F0EFD0A6">
+				<Properties>
+					<bool name="Disabled">true</bool>
+					<Content name="LinkedSource"><null></null></Content>
+					<string name="Name">Alpaca</string>
+					<string name="ScriptGuid"></string>
+					<ProtectedString name="Source"><![CDATA[local Alpaca = script.Parent
+
+local originSize = Alpaca.Size
+local originScale = Alpaca.Mesh.Scale
+
+
+Alpaca.CanCollide = true
+Alpaca.Rumble:play()
+Alpaca.Grow:play()
+
+for i = 1, 12, 0.1 do
+	local cf = Alpaca.CFrame
+	
+	Alpaca.Size = originSize * i
+	Alpaca.Mesh.Scale = originScale * i
+	
+	Alpaca.CFrame = cf
+
+	Alpaca.Grow.Pitch = 2.2 - i / 100 * 2
+	
+	for _, Sound in pairs(Alpaca:GetChildren()) do
+		if Sound:IsA("Sound") and not(Sound == Alpaca.Rumble or Sound == Alpaca.Grow) then
+			Sound.Pitch = 1.3 - i / 100 * 1.05
+		end
+	end
+	wait()
+end
+
+
+for i = Alpaca.Rumble.Volume, 0, -0.1 do
+	Alpaca.Rumble.Volume = i
+	Alpaca.Grow.Volume = i
+
+	wait()
+end
+
+Alpaca.Rumble:stop()
+Alpaca.Grow:stop()]]></ProtectedString>
+				</Properties>
+			</Item>
+			<Item class="Sound" referent="RBXC020384DD11D48779DC2123D6781A242">
+				<Properties>
+					<bool name="Looped">true</bool>
+					<string name="Name">Rumble</string>
+					<float name="Pitch">1</float>
+					<bool name="PlayOnRemove">false</bool>
+					<bool name="Playing">false</bool>
+					<Content name="SoundId"><url>rbxassetid://277207322</url></Content>
+					<double name="TimePosition">0</double>
+					<float name="Volume">1</float>
+					<float name="xmlRead_MaxDistance_3">10000</float>
+					<float name="xmlRead_MinDistance_3">10</float>
+				</Properties>
+			</Item>
+			<Item class="SpecialMesh" referent="RBX9AA9659BBA7C44BD9BDF817F6048E5E9">
+				<Properties>
+					<token name="LODX">2</token>
+					<token name="LODY">2</token>
+					<Content name="MeshId"><url>rbxassetid://273347765</url></Content>
+					<token name="MeshType">5</token>
+					<string name="Name">Mesh</string>
+					<Vector3 name="Offset">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+					</Vector3>
+					<Vector3 name="Scale">
+						<X>1</X>
+						<Y>1</Y>
+						<Z>1</Z>
+					</Vector3>
+					<Content name="TextureId"><url>rbxassetid://273347862</url></Content>
+					<Vector3 name="VertexColor">
+						<X>1</X>
+						<Y>1</Y>
+						<Z>1</Z>
+					</Vector3>
+				</Properties>
+			</Item>
+			<Item class="Folder" referent="RBX0C3F2EEA164D46D1B4C70A3384661775">
+				<Properties>
+					<string name="Name">AnimalSounds</string>
+				</Properties>
+				<Item class="Sound" referent="RBXB11E38DE8F5B40948184F9F07A0A2D5E">
+					<Properties>
+						<bool name="Looped">false</bool>
+						<string name="Name">Ribbet</string>
+						<float name="Pitch">1.29999995</float>
+						<bool name="PlayOnRemove">false</bool>
+						<bool name="Playing">false</bool>
+						<Content name="SoundId"><url>rbxassetid://277352920</url></Content>
+						<double name="TimePosition">0</double>
+						<float name="Volume">1</float>
+						<float name="xmlRead_MaxDistance_3">10000</float>
+						<float name="xmlRead_MinDistance_3">10</float>
+					</Properties>
+				</Item>
+				<Item class="Sound" referent="RBX8FA7BC7964DA40CF8E389E042577265A">
+					<Properties>
+						<bool name="Looped">false</bool>
+						<string name="Name">Oink</string>
+						<float name="Pitch">1.29999995</float>
+						<bool name="PlayOnRemove">false</bool>
+						<bool name="Playing">false</bool>
+						<Content name="SoundId"><url>rbxassetid://277352870</url></Content>
+						<double name="TimePosition">0</double>
+						<float name="Volume">1</float>
+						<float name="xmlRead_MaxDistance_3">10000</float>
+						<float name="xmlRead_MinDistance_3">10</float>
+					</Properties>
+				</Item>
+				<Item class="Sound" referent="RBX5C0379F4C5DE4B6EBD549554AF6B927C">
+					<Properties>
+						<bool name="Looped">false</bool>
+						<string name="Name">Neigh</string>
+						<float name="Pitch">1.29999995</float>
+						<bool name="PlayOnRemove">false</bool>
+						<bool name="Playing">false</bool>
+						<Content name="SoundId"><url>rbxassetid://277352807</url></Content>
+						<double name="TimePosition">0</double>
+						<float name="Volume">1</float>
+						<float name="xmlRead_MaxDistance_3">10000</float>
+						<float name="xmlRead_MinDistance_3">10</float>
+					</Properties>
+				</Item>
+				<Item class="Sound" referent="RBX89127DDC826E4C139668C0B69D6E6089">
+					<Properties>
+						<bool name="Looped">false</bool>
+						<string name="Name">Moo</string>
+						<float name="Pitch">1.29999995</float>
+						<bool name="PlayOnRemove">false</bool>
+						<bool name="Playing">false</bool>
+						<Content name="SoundId"><url>rbxassetid://277352774</url></Content>
+						<double name="TimePosition">0</double>
+						<float name="Volume">1</float>
+						<float name="xmlRead_MaxDistance_3">10000</float>
+						<float name="xmlRead_MinDistance_3">10</float>
+					</Properties>
+				</Item>
+				<Item class="Sound" referent="RBX84DF225F32624EB1B27FA9A3BD250C28">
+					<Properties>
+						<bool name="Looped">false</bool>
+						<string name="Name">Meow</string>
+						<float name="Pitch">1.29999995</float>
+						<bool name="PlayOnRemove">false</bool>
+						<bool name="Playing">false</bool>
+						<Content name="SoundId"><url>rbxassetid://277352709</url></Content>
+						<double name="TimePosition">0</double>
+						<float name="Volume">1</float>
+						<float name="xmlRead_MaxDistance_3">10000</float>
+						<float name="xmlRead_MinDistance_3">10</float>
+					</Properties>
+				</Item>
+				<Item class="Sound" referent="RBX0856B0D6B6D5497B8E39DAF3A54EEA78">
+					<Properties>
+						<bool name="Looped">false</bool>
+						<string name="Name">Bark</string>
+						<float name="Pitch">1.29999995</float>
+						<bool name="PlayOnRemove">false</bool>
+						<bool name="Playing">false</bool>
+						<Content name="SoundId"><url>rbxassetid://277352650</url></Content>
+						<double name="TimePosition">0</double>
+						<float name="Volume">1</float>
+						<float name="xmlRead_MaxDistance_3">10000</float>
+						<float name="xmlRead_MinDistance_3">10</float>
+					</Properties>
+				</Item>
+				<Item class="Sound" referent="RBX9EC6EADEB3E245A588219F5A37E25208">
+					<Properties>
+						<bool name="Looped">false</bool>
+						<string name="Name">Baa</string>
+						<float name="Pitch">1.29999995</float>
+						<bool name="PlayOnRemove">false</bool>
+						<bool name="Playing">false</bool>
+						<Content name="SoundId"><url>rbxassetid://277352609</url></Content>
+						<double name="TimePosition">0</double>
+						<float name="Volume">1</float>
+						<float name="xmlRead_MaxDistance_3">10000</float>
+						<float name="xmlRead_MinDistance_3">10</float>
+					</Properties>
+				</Item>
+			</Item>
+			<Item class="Sound" referent="RBX8CBF75D6BAD44189AAC60350C3CBC51C">
+				<Properties>
+					<bool name="Looped">true</bool>
+					<string name="Name">Grow</string>
+					<float name="Pitch">1</float>
+					<bool name="PlayOnRemove">false</bool>
+					<bool name="Playing">false</bool>
+					<Content name="SoundId"><url>rbxassetid://277355933</url></Content>
+					<double name="TimePosition">0</double>
+					<float name="Volume">1</float>
+					<float name="xmlRead_MaxDistance_3">10000</float>
+					<float name="xmlRead_MinDistance_3">10</float>
+				</Properties>
+			</Item>
+			<Item class="Script" referent="RBX1CAA14CCBE754F89B4F4434E3A552BBE">
+				<Properties>
+					<bool name="Disabled">false</bool>
+					<Content name="LinkedSource"><null></null></Content>
+					<string name="Name">PlayAnimalSounds</string>
+					<string name="ScriptGuid"></string>
+					<ProtectedString name="Source"><![CDATA[local Alpaca = script.Parent
+local Sounds = Alpaca.AnimalSounds:GetChildren()
+
+for _, Sound in pairs(Sounds) do
+	Sound.Parent = Alpaca
+end
+
+while true do
+	wait(math.random() * 5 + 1)
+	Sounds[math.random(1, #Sounds)]:Play()
+end]]></ProtectedString>
+				</Properties>
+			</Item>
+		</Item>
+		<Item class="Script" referent="RBX91B7F60597144458831046971562767C">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">Tool</string>
+				<string name="ScriptGuid"></string>
+				<ProtectedString name="Source"><![CDATA[local Tool = script.Parent
+local Handle = Tool.Handle
+
+Tool.Activated:connect(function()
+	Handle.Parent = workspace
+	Handle.Alpaca.Disabled = false
+	Tool:Destroy()
+end)]]></ProtectedString>
+			</Properties>
+		</Item>
+		<Item class="Camera" referent="RBXAA066B006DA646AE97BD1C4157803E61">
+			<Properties>
+				<CoordinateFrame name="CFrame">
+					<X>-1.77985024</X>
+					<Y>4.41504717</Y>
+					<Z>-1.38964486</Z>
+					<R00>-0.488250077</R00>
+					<R01>0.0789323375</R01>
+					<R02>-0.869126976</R02>
+					<R10>-0</R10>
+					<R11>0.995901465</R11>
+					<R12>0.0904457346</R12>
+					<R20>0.872703791</R20>
+					<R21>0.0441601351</R21>
+					<R22>-0.48624894</R22>
+				</CoordinateFrame>
+				<Ref name="CameraSubject">null</Ref>
+				<token name="CameraType">0</token>
+				<float name="FieldOfView">40</float>
+				<CoordinateFrame name="Focus">
+					<X>0.132226348</X>
+					<Y>4.21606684</Y>
+					<Z>-0.319898725</Z>
+					<R00>1</R00>
+					<R01>0</R01>
+					<R02>0</R02>
+					<R10>0</R10>
+					<R11>1</R11>
+					<R12>0</R12>
+					<R20>0</R20>
+					<R21>0</R21>
+					<R22>1</R22>
+				</CoordinateFrame>
+				<bool name="HeadLocked">true</bool>
+				<float name="HeadScale">1</float>
+				<string name="Name">ThumbnailCamera</string>
+			</Properties>
+		</Item>
+	</Item>
+</roblox>

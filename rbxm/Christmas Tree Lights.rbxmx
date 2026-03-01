@@ -1,0 +1,419 @@
+<roblox xmlns:xmime="http://www.w3.org/2005/05/xmlmime" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.roblox.com/roblox.xsd" version="4">
+	<External>null</External>
+	<External>nil</External>
+	<Item class="Tool" referent="RBX0DA262D9AEBE43B09002F58799027102">
+		<Properties>
+			<bool name="CanBeDropped">true</bool>
+			<bool name="Enabled">true</bool>
+			<CoordinateFrame name="Grip">
+				<X>0</X>
+				<Y>-0.5</Y>
+				<Z>0</Z>
+				<R00>1</R00>
+				<R01>-0</R01>
+				<R02>0</R02>
+				<R10>0</R10>
+				<R11>0.286980897</R11>
+				<R12>-0.957936287</R12>
+				<R20>0</R20>
+				<R21>0.957936287</R21>
+				<R22>0.286980897</R22>
+			</CoordinateFrame>
+			<bool name="ManualActivationOnly">false</bool>
+			<string name="Name">XmasLights</string>
+			<bool name="RequiresHandle">true</bool>
+			<Content name="TextureId"><url>http://www.roblox.com/asset/?id=19701317</url></Content>
+			<string name="ToolTip"></string>
+		</Properties>
+		<Item class="Part" referent="RBXD0176EBDF618490AA18CDA9016D42C09">
+			<Properties>
+				<bool name="Anchored">false</bool>
+				<float name="BackParamA">-0.5</float>
+				<float name="BackParamB">0.5</float>
+				<token name="BackSurface">0</token>
+				<token name="BackSurfaceInput">0</token>
+				<float name="BottomParamA">-0.5</float>
+				<float name="BottomParamB">0.5</float>
+				<token name="BottomSurface">0</token>
+				<token name="BottomSurfaceInput">0</token>
+				<int name="BrickColor">1004</int>
+				<CoordinateFrame name="CFrame">
+					<X>11.5</X>
+					<Y>9.39435863</Y>
+					<Z>73.5</Z>
+					<R00>1</R00>
+					<R01>-1.16600587e-017</R01>
+					<R02>6.05396395e-022</R02>
+					<R10>1.16600587e-017</R10>
+					<R11>1</R11>
+					<R12>-1.16603532e-017</R12>
+					<R20>-6.05396395e-022</R20>
+					<R21>1.16603532e-017</R21>
+					<R22>1</R22>
+				</CoordinateFrame>
+				<bool name="CanCollide">true</bool>
+				<PhysicalProperties name="CustomPhysicalProperties">
+					<CustomPhysics>false</CustomPhysics>
+				</PhysicalProperties>
+				<float name="Elasticity">0.5</float>
+				<float name="Friction">0.300000012</float>
+				<float name="FrontParamA">-0.5</float>
+				<float name="FrontParamB">0.5</float>
+				<token name="FrontSurface">0</token>
+				<token name="FrontSurfaceInput">0</token>
+				<float name="LeftParamA">-0.5</float>
+				<float name="LeftParamB">0.5</float>
+				<token name="LeftSurface">0</token>
+				<token name="LeftSurfaceInput">0</token>
+				<bool name="Locked">true</bool>
+				<token name="Material">256</token>
+				<string name="Name">Handle</string>
+				<float name="Reflectance">0</float>
+				<float name="RightParamA">-0.5</float>
+				<float name="RightParamB">0.5</float>
+				<token name="RightSurface">0</token>
+				<token name="RightSurfaceInput">0</token>
+				<Vector3 name="RotVelocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<float name="TopParamA">-0.5</float>
+				<float name="TopParamB">0.5</float>
+				<token name="TopSurface">0</token>
+				<token name="TopSurfaceInput">0</token>
+				<float name="Transparency">0</float>
+				<Vector3 name="Velocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<token name="formFactorRaw">0</token>
+				<token name="shape">0</token>
+				<Vector3 name="size">
+					<X>1</X>
+					<Y>1</Y>
+					<Z>1</Z>
+				</Vector3>
+			</Properties>
+			<Item class="Sound" referent="RBX46B1DFF0901F46DA80BF557E1CBF2BBA">
+				<Properties>
+					<float name="EmitterSize">10</float>
+					<bool name="Looped">false</bool>
+					<string name="Name">Fire</string>
+					<bool name="PlayOnRemove">false</bool>
+					<float name="PlaybackSpeed">1</float>
+					<bool name="Playing">false</bool>
+					<token name="RollOffMode">0</token>
+					<Ref name="SoundGroup">null</Ref>
+					<Content name="SoundId"><url>rbxasset://sounds/swoosh.wav</url></Content>
+					<double name="TimePosition">0</double>
+					<float name="Volume">0.699999988</float>
+					<float name="xmlRead_MaxDistance_3">10000</float>
+				</Properties>
+			</Item>
+			<Item class="SpecialMesh" referent="RBXCD04079C8E074BD0A1A02990925D9ABF">
+				<Properties>
+					<token name="LODX">2</token>
+					<token name="LODY">2</token>
+					<Content name="MeshId"><url>http://www.roblox.com/asset/?id=19646248</url></Content>
+					<token name="MeshType">5</token>
+					<string name="Name">Mesh</string>
+					<Vector3 name="Offset">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+					</Vector3>
+					<Vector3 name="Scale">
+						<X>0.5</X>
+						<Y>0.5</Y>
+						<Z>0.5</Z>
+					</Vector3>
+					<Content name="TextureId"><url>http://www.roblox.com/asset/?id=19646263</url></Content>
+					<Vector3 name="VertexColor">
+						<X>1</X>
+						<Y>0</Y>
+						<Z>0</Z>
+					</Vector3>
+				</Properties>
+			</Item>
+			<Item class="Attachment" referent="RBXABDC81AF306843D89D4F4FA0AC6EDAF4">
+				<Properties>
+					<CoordinateFrame name="CFrame">
+						<X>-0</X>
+						<Y>-0.50000304</Y>
+						<Z>-4.37116547e-008</Z>
+						<R00>-0</R00>
+						<R01>1</R01>
+						<R02>8.74227766e-008</R02>
+						<R10>-1</R10>
+						<R11>7.64274186e-015</R11>
+						<R12>-8.74227766e-008</R12>
+						<R20>-8.74227766e-008</R20>
+						<R21>-8.74227766e-008</R21>
+						<R22>1</R22>
+					</CoordinateFrame>
+					<string name="Name">RightGripAttachment</string>
+					<bool name="Visible">false</bool>
+				</Properties>
+			</Item>
+		</Item>
+		<Item class="Script" referent="RBXEF09B8729B87456AA9C404A091823881">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">XmasLights</string>
+				<string name="ScriptGuid">{E581DC0A-30C2-4E30-9178-4EFA83F5F43D}</string>
+				<ProtectedString name="Source"><![CDATA[--Updated for R15 avatars by StarWars
+Tool = script.Parent
+VELOCITY = 80 -- constant
+loaded=false
+
+local Pellet = Tool.Handle:Clone()
+
+
+local colors = {Vector3.new(1,0,0),Vector3.new(1,1,0),Vector3.new(1,.5,0),Vector3.new(0,1,0),Vector3.new(0,1,1),Vector3.new(0,0,1),Vector3.new(0,.5,1),Vector3.new(0,1,.5), Vector3.new(1,0,1)}
+
+
+
+function fire(mouse_pos)
+	local Character = Tool.Parent
+	local Torso = Character:FindFirstChild("Torso") or Character:FindFirstChild("UpperTorso")
+	local RightArm = Character:FindFirstChild("Right Arm") or Character:FindFirstChild("RightUpperArm")
+	local RightShoulder = Torso:FindFirstChild("Right Shoulder") or RightArm:FindFirstChild("RightShoulder")
+	Pellet = Tool.Handle:Clone()
+	Tool.LightScript:clone().Parent = Pellet
+
+	RightShoulder.MaxVelocity = 0.7
+	RightShoulder.DesiredAngle = 3.6
+	wait(.1)
+	RightShoulder.MaxVelocity = 1
+	Tool.Handle.Transparency=1
+	Tool.Handle.Fire:play()
+
+-- find player's head pos
+
+	local vCharacter = Tool.Parent
+	local vPlayer = game.Players:playerFromCharacter(vCharacter)
+
+	--local head = vCharacter:findFirstChild("Head")
+
+	local head = locateHead()
+	if head == nil then return end
+
+
+	--computes a the intended direction of the projectile based on where the mouse was clicked in reference to the head
+	local dir = mouse_pos - head.Position
+	dir = computeDirection(dir)
+
+	local launch = head.Position + 3 * dir
+
+	local delta = mouse_pos - launch
+	
+	local dy = delta.y
+	
+	local new_delta = Vector3.new(delta.x, 0, delta.z)
+	delta = new_delta
+
+	local dx = delta.magnitude
+	local unit_delta = delta.unit
+	
+	-- acceleration due to gravity in RBX units
+	local g = (-9.81 * 20)
+
+	local theta = computeLaunchAngle( dx, dy, g)
+
+	local vy = math.sin(theta)
+	local xz = math.cos(theta)
+	local vx = unit_delta.x * xz
+	local vz = unit_delta.z * xz
+	
+
+	local missile = Pellet:clone()
+        
+
+	missile.CanCollide = true
+	missile.RotVelocity = Vector3.new(math.random(), math.random(), math.random()) * 10
+	missile.Position = launch
+	missile.Velocity = Vector3.new(vx,vy,vz) * VELOCITY
+
+	
+	missile.LightScript.Disabled = false
+
+	local creator_tag = Instance.new("ObjectValue")
+	creator_tag.Value = vPlayer
+	creator_tag.Name = "creator"
+	creator_tag.Parent = missile
+	
+	missile.Parent = game.Workspace
+
+end
+
+function locateHead()
+	local vCharacter = Tool.Parent
+	local vPlayer = game.Players:playerFromCharacter(vCharacter)
+
+	return vCharacter:findFirstChild("Head")
+end
+	
+
+function computeLaunchAngle(dx,dy,grav)
+	-- arcane
+	-- http://en.wikipedia.org/wiki/Trajectory_of_a_projectile
+	
+	local g = math.abs(grav)
+	local inRoot = (VELOCITY*VELOCITY*VELOCITY*VELOCITY) - (g * ((g*dx*dx) + (2*dy*VELOCITY*VELOCITY)))
+	if inRoot <= 0 then
+		return .25 * math.pi
+	end
+	local root = math.sqrt(inRoot)
+	local inATan1 = ((VELOCITY*VELOCITY) + root) / (g*dx)
+
+	local inATan2 = ((VELOCITY*VELOCITY) - root) / (g*dx)
+	local answer1 = math.atan(inATan1)
+	local answer2 = math.atan(inATan2)
+	if answer1 < answer2 then return answer1 end
+	return answer2
+end
+
+function computeDirection(vec)
+	local lenSquared = vec.magnitude * vec.magnitude
+	local invSqrt = 1 / math.sqrt(lenSquared)
+	return Vector3.new(vec.x * invSqrt, vec.y * invSqrt, vec.z * invSqrt)
+end
+
+
+
+
+Tool.Enabled = true
+function onActivated()
+
+	if not Tool.Enabled then
+		return
+	end
+
+	Tool.Enabled = false
+
+	local character = Tool.Parent;
+	local humanoid = character.Humanoid
+	if humanoid == nil then
+		print("Humanoid not found")
+		return 
+	end
+
+	local targetPos = humanoid.TargetPoint
+
+	fire(targetPos)
+
+	wait(.3)
+
+	Tool.Enabled = true
+	Tool.Handle.Transparency=0
+	Tool.Handle.Mesh.VertexColor = colors[math.random(1,#colors)]
+end
+
+script.Parent.Activated:connect(onActivated)
+]]></ProtectedString>
+			</Properties>
+		</Item>
+		<Item class="LocalScript" referent="RBX9B794C88725C40AFB3C217AF02197D4E">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">Local Gui</string>
+				<string name="ScriptGuid"></string>
+				<ProtectedString name="Source"><![CDATA[Tool=script.Parent
+function onEquippedLocal(mouse)
+	if mouse == nil then
+		print("Mouse not found")
+		return 
+	end
+	mouse.Icon = "rbxasset://textures\\GunCursor.png"
+end
+
+Tool.Equipped:connect(onEquippedLocal)]]></ProtectedString>
+			</Properties>
+		</Item>
+		<Item class="Sound" referent="RBXA1369B2FB88A4F1B9D28121F33DE61BE">
+			<Properties>
+				<float name="EmitterSize">10</float>
+				<bool name="Looped">false</bool>
+				<string name="Name">HitSound</string>
+				<bool name="PlayOnRemove">false</bool>
+				<float name="PlaybackSpeed">1</float>
+				<bool name="Playing">false</bool>
+				<token name="RollOffMode">0</token>
+				<Ref name="SoundGroup">null</Ref>
+				<Content name="SoundId"><url>http://www.roblox.com/asset/?id=19344409</url></Content>
+				<double name="TimePosition">0</double>
+				<float name="Volume">0.699999988</float>
+				<float name="xmlRead_MaxDistance_3">10000</float>
+			</Properties>
+		</Item>
+		<Item class="Script" referent="RBX0E9C28418A9C48038300C6C7CEDD53DF">
+			<Properties>
+				<bool name="Disabled">true</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">LightScript</string>
+				<string name="ScriptGuid">{DBD9A4C4-18ED-42BA-B337-4019159284EA}</string>
+				<ProtectedString name="Source"><![CDATA[local debris = game:service("Debris")
+arrow = script.Parent
+
+local HitSound = Instance.new("Sound")
+HitSound.SoundId = "http://www.roblox.com/asset/?id=19344409"
+HitSound.Parent = arrow
+HitSound.Volume = .7
+
+
+function stick(hit)
+	-- joint myself to the thing i hit
+
+	local weld = Instance.new("Weld")
+
+	weld.Part0 = arrow
+	weld.Part1 = hit
+
+
+
+	-- correction term to account for average skew between physics update and heartbeat
+	local HitPos = arrow.Position + (-arrow.Velocity.unit * 1)  --+ (-arrow.Velocity * (1/60)) --+ (arrow.CFrame.lookVector * .5)
+
+	local CJ = CFrame.new(HitPos)
+	local C0 = arrow.CFrame:inverse() *CJ
+	local C1 = hit.CFrame:inverse() * CJ
+	
+	weld.C0 = C0
+	weld.C1 = C1
+
+	weld.Parent = game.Workspace
+
+	-- light up
+
+	local s = Instance.new("Sparkles")
+	s.SparkleColor = Color3.new(arrow.Mesh.VertexColor.x,arrow.Mesh.VertexColor.y,arrow.Mesh.VertexColor.z)
+	s.Parent = arrow
+
+end
+
+
+function onTouched(hit)
+
+	connection:disconnect()
+
+	--print(hit.Name)
+	if hit.Name == "XMAS" then
+		HitSound:Play()
+		stick(hit)
+		debris:AddItem(arrow, 300)
+	else
+		debris:AddItem(arrow, 30)
+	end
+	
+end
+
+
+connection = arrow.Touched:connect(onTouched)]]></ProtectedString>
+			</Properties>
+		</Item>
+	</Item>
+</roblox>

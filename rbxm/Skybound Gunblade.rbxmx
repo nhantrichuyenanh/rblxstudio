@@ -1,0 +1,667 @@
+<roblox xmlns:xmime="http://www.w3.org/2005/05/xmlmime" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.roblox.com/roblox.xsd" version="4">
+	<External>null</External>
+	<External>nil</External>
+	<Item class="Tool" referent="RBX5F79FC6E104C4A0890E01D42CB052D57">
+		<Properties>
+			<bool name="CanBeDropped">true</bool>
+			<bool name="Enabled">true</bool>
+			<CoordinateFrame name="Grip">
+				<X>0</X>
+				<Y>-0.25</Y>
+				<Z>1.75</Z>
+				<R00>1</R00>
+				<R01>0</R01>
+				<R02>0</R02>
+				<R10>0</R10>
+				<R11>1</R11>
+				<R12>0</R12>
+				<R20>0</R20>
+				<R21>0</R21>
+				<R22>1</R22>
+			</CoordinateFrame>
+			<bool name="ManualActivationOnly">false</bool>
+			<string name="Name">Gunblade</string>
+			<bool name="RequiresHandle">true</bool>
+			<Content name="TextureId"><url>rbxassetid://900718531</url></Content>
+			<string name="ToolTip"></string>
+		</Properties>
+		<Item class="Part" referent="RBX09924D36516144F4808292D1880BA088">
+			<Properties>
+				<bool name="Anchored">false</bool>
+				<float name="BackParamA">-0.5</float>
+				<float name="BackParamB">0.5</float>
+				<token name="BackSurface">0</token>
+				<token name="BackSurfaceInput">0</token>
+				<float name="BottomParamA">-0.5</float>
+				<float name="BottomParamB">0.5</float>
+				<token name="BottomSurface">4</token>
+				<token name="BottomSurfaceInput">0</token>
+				<CoordinateFrame name="CFrame">
+					<X>-0.899999976</X>
+					<Y>0.905004978</Y>
+					<Z>-0.91999799</Z>
+					<R00>0.569087386</R00>
+					<R01>5.45701869e-06</R01>
+					<R02>-0.822275758</R02>
+					<R10>-0.318038732</R10>
+					<R11>0.922175705</R11>
+					<R12>-0.220101446</R12>
+					<R20>0.758285284</R20>
+					<R21>0.386770964</R21>
+					<R22>0.524802148</R22>
+				</CoordinateFrame>
+				<bool name="CanCollide">true</bool>
+				<int name="CollisionGroupId">0</int>
+				<Color3uint8 name="Color3uint8">4288914085</Color3uint8>
+				<PhysicalProperties name="CustomPhysicalProperties">
+					<CustomPhysics>false</CustomPhysics>
+				</PhysicalProperties>
+				<float name="Elasticity">0.5</float>
+				<float name="Friction">0.300000012</float>
+				<float name="FrontParamA">-0.5</float>
+				<float name="FrontParamB">0.5</float>
+				<token name="FrontSurface">0</token>
+				<token name="FrontSurfaceInput">0</token>
+				<float name="LeftParamA">-0.5</float>
+				<float name="LeftParamB">0.5</float>
+				<token name="LeftSurface">0</token>
+				<token name="LeftSurfaceInput">0</token>
+				<bool name="Locked">false</bool>
+				<token name="Material">256</token>
+				<string name="Name">Handle</string>
+				<float name="Reflectance">0</float>
+				<float name="RightParamA">-0.5</float>
+				<float name="RightParamB">0.5</float>
+				<token name="RightSurface">0</token>
+				<token name="RightSurfaceInput">0</token>
+				<Vector3 name="RotVelocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<float name="TopParamA">-0.5</float>
+				<float name="TopParamB">0.5</float>
+				<token name="TopSurface">3</token>
+				<token name="TopSurfaceInput">0</token>
+				<float name="Transparency">0</float>
+				<Vector3 name="Velocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<token name="formFactorRaw">1</token>
+				<token name="shape">1</token>
+				<Vector3 name="size">
+					<X>0.699999988</X>
+					<Y>1.4000001</Y>
+					<Z>4</Z>
+				</Vector3>
+			</Properties>
+			<Item class="SpecialMesh" referent="RBX767080AF7BFB4CECA2CD62979917D1E1">
+				<Properties>
+					<token name="LODX">2</token>
+					<token name="LODY">2</token>
+					<Content name="MeshId"><url>rbxassetid://900718136</url></Content>
+					<token name="MeshType">5</token>
+					<string name="Name">Mesh</string>
+					<Vector3 name="Offset">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+					</Vector3>
+					<Vector3 name="Scale">
+						<X>1</X>
+						<Y>1</Y>
+						<Z>1</Z>
+					</Vector3>
+					<Content name="TextureId"><url>rbxassetid://900718745</url></Content>
+					<Vector3 name="VertexColor">
+						<X>1</X>
+						<Y>1</Y>
+						<Z>1</Z>
+					</Vector3>
+				</Properties>
+			</Item>
+			<Item class="Attachment" referent="RBX90FF57451FF4428B926400C37129416C">
+				<Properties>
+					<CoordinateFrame name="CFrame">
+						<X>0</X>
+						<Y>0.600000024</Y>
+						<Z>0.599999905</Z>
+						<R00>1</R00>
+						<R01>0</R01>
+						<R02>0</R02>
+						<R10>0</R10>
+						<R11>1</R11>
+						<R12>0</R12>
+						<R20>0</R20>
+						<R21>0</R21>
+						<R22>1</R22>
+					</CoordinateFrame>
+					<string name="Name">Muzzle</string>
+					<bool name="Visible">false</bool>
+				</Properties>
+			</Item>
+			<Item class="Attachment" referent="RBX93784860104F4B96B9BB08F7BA27E04F">
+				<Properties>
+					<CoordinateFrame name="CFrame">
+						<X>0</X>
+						<Y>-0.25</Y>
+						<Z>1.75</Z>
+						<R00>1</R00>
+						<R01>0</R01>
+						<R02>6.31088724e-30</R02>
+						<R10>0</R10>
+						<R11>1</R11>
+						<R12>-0</R12>
+						<R20>-6.31088724e-30</R20>
+						<R21>0</R21>
+						<R22>1</R22>
+					</CoordinateFrame>
+					<string name="Name">RightGripAttachment</string>
+					<bool name="Visible">false</bool>
+				</Properties>
+			</Item>
+		</Item>
+		<Item class="LocalScript" referent="RBXA96AE5C72315423897650B6489BBC257">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">LocalScript</string>
+				<string name="ScriptGuid">{2BB71811-BBFE-40A3-AC4F-AA3B3EE634E6}</string>
+				<ProtectedString name="Source"><![CDATA[Tool = script.Parent
+Handle = Tool:WaitForChild("Handle")
+
+Players = game:GetService("Players")
+RunService = game:GetService("RunService")
+UserInputService = game:GetService("UserInputService")
+
+Animations = {}
+LocalObjects = {}
+
+ServerControl = Tool:WaitForChild("ServerControl")
+ClientControl = Tool:WaitForChild("ClientControl")
+
+InputCheck = Instance.new("ScreenGui")
+InputCheck.Name = "InputCheck"
+InputButton = Instance.new("ImageButton")
+InputButton.Name = "InputButton"
+InputButton.Image = ""
+InputButton.BackgroundTransparency = 1
+InputButton.ImageTransparency = 1
+InputButton.Size = UDim2.new(1, 0, 1, 0)
+InputButton.Parent = InputCheck
+
+ToolEquipped = false
+
+function SetAnimation(mode, value)
+	if mode == "PlayAnimation" and value and ToolEquipped and Humanoid then
+		local Edited = false
+		for i, v in pairs(Animations) do
+			if v.Animation == value.Animation then
+				v.AnimationTrack:AdjustSpeed(value.Speed)
+				--v.AnimationTrack:AdjustWeight(value.Weight, value.FadeTime)
+				Edited = true
+				break
+			end
+		end
+		if Edited then
+			return
+		end
+		local AnimationTrack = Humanoid:LoadAnimation(value.Animation)
+		table.insert(Animations, {Animation = value.Animation, AnimationTrack = AnimationTrack})
+		AnimationTrack:Play(value.FadeTime, value.Weight, value.Speed)
+	elseif mode == "StopAnimation" and value then
+		for i, v in pairs(Animations) do
+			if v.Animation == value.Animation then
+				v.AnimationTrack:Stop(value.FadeTime)
+				table.remove(Animations, i)
+			end
+		end
+	end
+end
+
+function DisableJump(Boolean)
+	if PreventJump then
+		PreventJump:disconnect()
+	end
+	if Boolean then
+		PreventJump = Humanoid.Changed:connect(function(Property)
+			if Property ==  "Jump" then
+				Humanoid.Jump = false
+			end
+		end)
+	end
+end
+
+function CheckIfAlive()
+	return (((Character and Character.Parent and Humanoid and Humanoid.Parent and Humanoid.Health > 0 and Player and Player.Parent) and true) or false)
+end
+
+function Equipped(Mouse)
+	Character = Tool.Parent
+	Player = Players:GetPlayerFromCharacter(Character)
+	Humanoid = Character:FindFirstChild("Humanoid")
+	ToolEquipped = true
+	if not CheckIfAlive() then
+		return
+	end
+	Spawn(function()
+		PlayerMouse = Player:GetMouse()
+		Mouse.Button1Down:connect(function()
+			InvokeServer("MouseClick", {Down = true})
+		end)
+		Mouse.Button1Up:connect(function()
+			InvokeServer("MouseClick", {Down = false})
+		end)
+		Mouse.KeyDown:connect(function(Key)
+			InvokeServer("KeyPress", {Key = Key, Down = true})
+		end)
+		Mouse.KeyUp:connect(function(Key)
+			InvokeServer("KeyPress", {Key = Key, Down = false})
+		end)
+		Mouse.Move:connect(function()
+			InvokeServer("MouseMove", {Position = Mouse.Hit.p, Target = Mouse.Target})
+		end)
+		local PlayerGui = Player:FindFirstChild("PlayerGui")
+		if PlayerGui then
+			if UserInputService.TouchEnabled then
+				InputCheckClone = InputCheck:Clone()
+				InputCheckClone.InputButton.InputBegan:connect(function()
+					InvokeServer("MouseClick", {Down = true})
+				end)
+				InputCheckClone.InputButton.InputEnded:connect(function()
+					InvokeServer("MouseClick", {Down = false})
+				end)
+				InputCheckClone.Parent = PlayerGui
+			end
+		end
+	end)
+end
+
+function Unequipped()
+	LocalObjects = {}
+	if InputCheckClone and InputCheckClone.Parent then
+		InputCheckClone:Destroy()
+	end
+	for i, v in pairs(Animations) do
+		if v and v.AnimationTrack then
+			v.AnimationTrack:Stop()
+		end
+	end
+	for i, v in pairs({PreventJump, ObjectLocalTransparencyModifier}) do
+		if v then
+			v:disconnect()
+		end
+	end
+	Animations = {}
+	ToolEquipped = false
+end
+
+function InvokeServer(mode, value)
+	pcall(function()
+		local ServerReturn = ServerControl:InvokeServer(mode, value)
+		return ServerReturn
+	end)
+end
+
+function OnClientInvoke(mode, value)
+	if mode == "PlayAnimation" and value and ToolEquipped and Humanoid then
+		SetAnimation("PlayAnimation", value)
+	elseif mode == "StopAnimation" and value then
+		SetAnimation("StopAnimation", value)
+	elseif mode == "PlaySound" and value then
+		value:Play()
+	elseif mode == "StopSound" and value then
+		value:Stop()
+	elseif mode == "MousePosition" then
+		return {Position = PlayerMouse.Hit.p, Target = PlayerMouse.Target}
+	elseif mode == "DisableJump" then
+		DisableJump(value)
+	elseif mode == "SetLocalTransparencyModifier" and value and ToolEquipped then
+		pcall(function()
+			local ObjectFound = false
+			for i, v in pairs(LocalObjects) do
+				if v == value then
+					ObjectFound = true
+				end
+			end
+			if not ObjectFound then
+				table.insert(LocalObjects, value)
+				if ObjectLocalTransparencyModifier then
+					ObjectLocalTransparencyModifier:disconnect()
+				end
+				ObjectLocalTransparencyModifier = RunService.RenderStepped:connect(function()
+					for i, v in pairs(LocalObjects) do
+						if v.Object and v.Object.Parent then
+							local CurrentTransparency = v.Object.LocalTransparencyModifier
+							if ((not v.AutoUpdate and (CurrentTransparency == 1 or  CurrentTransparency == 0)) or v.AutoUpdate) then
+								v.Object.LocalTransparencyModifier = v.Transparency
+							end
+						else
+							table.remove(LocalObjects, i)
+						end
+					end
+				end)
+			end
+		end)
+	end
+end
+
+ClientControl.OnClientInvoke = OnClientInvoke
+Tool.Equipped:connect(Equipped)
+Tool.Unequipped:connect(Unequipped)]]></ProtectedString>
+			</Properties>
+		</Item>
+		<Item class="Script" referent="RBXF836E80F7DDB48358384F78BF5BFE216">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">Script</string>
+				<string name="ScriptGuid">{E899FA86-DFFD-405C-8B40-09E81CC539C6}</string>
+				<ProtectedString name="Source"><![CDATA[Tool = script.Parent
+Handle = Tool:WaitForChild("Handle")
+
+Players = game:GetService("Players")
+Debris = game:GetService("Debris")
+TweenService = game:GetService("TweenService")
+
+LaserTweenInfo = TweenInfo.new(
+	1, 
+	Enum.EasingStyle.Elastic,
+	Enum.EasingDirection.Out
+)
+
+BaseUrl = "rbxassetid://"
+
+Animations = {
+	LeftSwing = {Animation = Tool.Animations.R6:WaitForChild("LeftSwing"), FadeTime = nil, Weight = nil, Speed = nil},
+	RightSwing = {Animation = Tool.Animations.R6:WaitForChild("RightSwing"), FadeTime = nil, Weight = nil, Speed = nil},
+	R15LeftSwing = {Animation = Tool.Animations.R15:WaitForChild("LeftSwing"), FadeTime = nil, Weight = nil, Speed = nil},
+	R15RightSwing = {Animation = Tool.Animations.R15:WaitForChild("RightSwing"), FadeTime = nil, Weight = nil, Speed = nil},	
+}
+
+Sounds = {
+
+}
+
+Damage = {Min = 5, Max = 20}
+
+CurrentDamage = 0
+
+ReloadTime = 5
+ToolEquipped = false
+
+Rate = (1 / 60)
+
+ServerControl = (Tool:FindFirstChild("ServerControl") or Instance.new("RemoteFunction"))
+ServerControl.Name = "ServerControl"
+ServerControl.Parent = Tool
+
+ClientControl = (Tool:FindFirstChild("ClientControl") or Instance.new("RemoteFunction"))
+ClientControl.Name = "ClientControl"
+ClientControl.Parent = Tool
+
+Handle.Transparency = 0
+Tool.Enabled = true
+
+Swinging = false 
+
+OnTouchedConn = nil
+
+function GetPercentage(Start, End, Number)
+	return (((Number - Start) / (End - Start)) * 100)
+end
+
+function Round(Number, RoundDecimal)
+	local WholeNumber, Decimal = math.modf(Number)
+	return ((Decimal >= RoundDecimal and math.ceil(Number)) or (Decimal < RoundDecimal and math.floor(Number)))
+end
+
+function CheckIfAlive()
+	return (((Player and Player.Parent and Character and Character.Parent and Humanoid and Humanoid.Parent and Humanoid.Health > 0) and true) or false)
+end
+
+function CreateLaser(start, endPoint)
+	local Distance = (start - endPoint).Magnitude
+	local NewPart = Instance.new("Part")
+	NewPart.Name = "Laser"
+	NewPart.CanCollide = false
+	NewPart.Anchored = true
+	NewPart.Locked = true 
+	NewPart.Material = Enum.Material.Neon
+	NewPart.BrickColor = BrickColor.new("Bright blue")
+	NewPart.Size = Vector3.new(0.2, 0.2, Distance)
+	NewPart.CFrame = CFrame.new(start, endPoint) * CFrame.new(0, 0, -Distance * 0.5)
+	NewPart.Parent = Tool 
+
+	local LaserGoals = {
+		Size = Vector3.new(0, 0, Distance);
+		Transparency = 1;
+	}
+
+	local LaserTween = TweenService:Create(NewPart, LaserTweenInfo, LaserGoals)
+
+	LaserTween:Play() 
+	Debris:AddItem(NewPart, 1)
+end 
+
+function OnTouched(hitPart)
+	if hitPart and hitPart.Parent then
+		local HitHumanoid = hitPart.Parent:FindFirstChildOfClass("Humanoid")
+		if HitHumanoid and HitHumanoid ~= Humanoid then 
+			HitHumanoid:TakeDamage(CurrentDamage)
+		end 
+	end 
+end 
+
+
+function Activated()
+	if Tool.Enabled then 
+		Tool.Enabled = false 
+
+		local TargetPosition = InvokeClient("MousePosition").Position
+		
+		local NewRay = Ray.new(RootPart.Position, (TargetPosition - RootPart.Position).Unit*999)
+		local Hit, EndPoint = workspace:FindPartOnRayWithIgnoreList(NewRay, {Character, Tool})
+		if Hit then
+			if Hit.Parent then
+				local HitHumanoid = Hit.Parent:FindFirstChildOfClass("Humanoid")
+				if HitHumanoid then
+					HitHumanoid:TakeDamage(Damage.Max)
+				end
+			end
+		end
+
+		CreateLaser(Handle.Muzzle.WorldPosition, EndPoint)
+		
+		wait(ReloadTime)
+		Tool.Enabled = true 
+	elseif not Swinging then  
+		Swinging = true 
+		CurrentDamage = Damage.Min 
+		local LeftSwing = Animations.LeftSwing 
+		local RightSwing = Animations.RightSwing
+		if Humanoid and Humanoid.RigType == Enum.HumanoidRigType.R15 then
+			LeftSwing = Animations.R15LeftSwing 
+			RightSwing = Animations.R15RightSwing
+		end 
+
+		InvokeClient("PlayAnimation", LeftSwing)
+		wait(1)
+		InvokeClient("StopAnimation", LeftSwing)
+		InvokeClient("PlayAnimation", RightSwing)
+		wait(1) 
+		InvokeClient("StopAnimation", RightSwing)
+		Swinging = false 
+	end 
+end
+
+function Equipped()
+	if OnTouchedConn then
+		OnTouchedConn:Disconnect()
+	end 
+
+	OnTouchedConn = Tool.Handle.Touched:Connect(OnTouched)
+	Character = Tool.Parent
+	Player = Players:GetPlayerFromCharacter(Character)
+	RootPart = Character:FindFirstChild("HumanoidRootPart")
+	Humanoid = Character:FindFirstChildOfClass("Humanoid")
+	if not CheckIfAlive() then
+		return
+	end
+	Spawn(function()		
+		local Limbs = {"Left Arm", "Right Arm", "LeftHand", "RightHand", "LeftLowerArm", "RightLowerArm", "LeftUpperArm", "RightUpperArm"}
+		for i, v in pairs(Limbs) do
+			local Limb = Character:FindFirstChild(v)
+			if Limb then
+				Spawn(function()
+					InvokeClient("SetLocalTransparencyModifier", {Object = Limb, Transparency = 0, AutoUpdate = false})
+				end)
+			end
+		end
+	end)
+	ToolEquipped = true
+end
+
+function Unequipped()
+	for i, v in pairs(Sounds) do
+		v:Stop()
+	end
+
+	if OnTouchedConn then
+		OnTouchedConn:Disconnect()
+	end 
+
+	ToolEquipped = false
+end
+
+function InvokeClient(Mode, Value)
+	local ClientReturn = nil
+	pcall(function()
+		ClientReturn = ClientControl:InvokeClient(Player, Mode, Value)
+	end)
+	return ClientReturn
+end
+
+ServerControl.OnServerInvoke = (function(player, Mode, Value)
+	if player ~= Player or not ToolEquipped or not CheckIfAlive() or not Mode or not Value then
+		return
+	end
+	if Mode == "MouseClick" then
+
+	end
+end)
+
+Tool.Equipped:connect(Equipped)
+Tool.Unequipped:connect(Unequipped)
+Tool.Activated:connect(Activated)]]></ProtectedString>
+			</Properties>
+		</Item>
+		<Item class="Folder" referent="RBXA4174B66CB5245E189EFB475080B60B0">
+			<Properties>
+				<string name="Name">Animations</string>
+			</Properties>
+			<Item class="Folder" referent="RBX2E88290782CB499CB16EB5A9A55F8C7F">
+				<Properties>
+					<string name="Name">R15</string>
+				</Properties>
+				<Item class="Animation" referent="RBX68F0AD6B109047388AFD15DE8F7400F6">
+					<Properties>
+						<Content name="AnimationId"><url>rbxassetid://902593457</url></Content>
+						<string name="Name">RightSwing</string>
+					</Properties>
+				</Item>
+				<Item class="Animation" referent="RBXF9681C59E4B947799B18FA0EE9ED1357">
+					<Properties>
+						<Content name="AnimationId"><url>rbxassetid://902594149</url></Content>
+						<string name="Name">LeftSwing</string>
+					</Properties>
+				</Item>
+			</Item>
+			<Item class="Folder" referent="RBX4AA4BA64EF644FF89D7CB2AEE20F4339">
+				<Properties>
+					<string name="Name">R6</string>
+				</Properties>
+				<Item class="Animation" referent="RBX21CF65B81DC94AA191D74AA2C0103888">
+					<Properties>
+						<Content name="AnimationId"><url>rbxassetid://902631810</url></Content>
+						<string name="Name">RightSwing</string>
+					</Properties>
+				</Item>
+				<Item class="Animation" referent="RBX5127C2747ED248B1922E7242CEF8DA68">
+					<Properties>
+						<Content name="AnimationId"><url>rbxassetid://902630927</url></Content>
+						<string name="Name">LeftSwing</string>
+					</Properties>
+				</Item>
+			</Item>
+		</Item>
+		<Item class="LocalScript" referent="RBX28989944632A445CB4E73F93B9EB4B30">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">MouseIcon</string>
+				<string name="ScriptGuid">{991A5034-EA1B-48D7-B7C0-EA1D86102FF5}</string>
+				<ProtectedString name="Source"><![CDATA[Mouse_Icon = "rbxasset://textures/GunCursor.png"
+Reloading_Icon = "rbxasset://textures/GunWaitCursor.png"
+
+Tool = script.Parent
+
+Mouse = nil
+
+function UpdateIcon()
+	if Mouse then
+		Mouse.Icon = Tool.Enabled and Mouse_Icon or Reloading_Icon
+	end
+end
+
+function OnEquipped(ToolMouse)
+	Mouse = ToolMouse
+	UpdateIcon()
+end
+
+Tool:GetPropertyChangedSignal("Enabled"):Connect(UpdateIcon)
+Tool.Equipped:connect(OnEquipped)]]></ProtectedString>
+			</Properties>
+		</Item>
+		<Item class="Camera" referent="RBX91347E31FB094A94A37302128A2572DE">
+			<Properties>
+				<CoordinateFrame name="CFrame">
+					<X>-3.28603625</X>
+					<Y>2.25035</Y>
+					<Z>-3.38866687</Z>
+					<R00>-0.719038367</R00>
+					<R01>0.253554404</R01>
+					<R02>-0.647065639</R02>
+					<R10>-2.98023259e-08</R10>
+					<R11>0.931069374</R11>
+					<R12>0.364842087</R12>
+					<R20>0.694970369</R20>
+					<R21>0.262335479</R21>
+					<R22>-0.669474602</R22>
+				</CoordinateFrame>
+				<Ref name="CameraSubject">null</Ref>
+				<token name="CameraType">0</token>
+				<float name="FieldOfView">70</float>
+				<CoordinateFrame name="Focus">
+					<X>-0.899999917</X>
+					<Y>0.905004978</Y>
+					<Z>-0.919997931</Z>
+					<R00>1</R00>
+					<R01>0</R01>
+					<R02>0</R02>
+					<R10>0</R10>
+					<R11>1</R11>
+					<R12>0</R12>
+					<R20>0</R20>
+					<R21>0</R21>
+					<R22>1</R22>
+				</CoordinateFrame>
+				<bool name="HeadLocked">true</bool>
+				<float name="HeadScale">1</float>
+				<string name="Name">ThumbnailCamera</string>
+			</Properties>
+		</Item>
+	</Item>
+</roblox>

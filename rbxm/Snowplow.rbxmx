@@ -1,0 +1,826 @@
+<roblox xmlns:xmime="http://www.w3.org/2005/05/xmlmime" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.roblox.com/roblox.xsd" version="4">
+	<External>null</External>
+	<External>nil</External>
+	<Item class="Tool" referent="RBXF2F86CFDF1974AA8AFC40C819D9F0C85">
+		<Properties>
+			<bool name="CanBeDropped">true</bool>
+			<bool name="Enabled">true</bool>
+			<CoordinateFrame name="Grip">
+				<X>4</X>
+				<Y>2.375</Y>
+				<Z>-1</Z>
+				<R00>0.969680786</R00>
+				<R01>-0</R01>
+				<R02>0.244375199</R02>
+				<R10>0</R10>
+				<R11>1</R11>
+				<R12>0</R12>
+				<R20>-0.244375199</R20>
+				<R21>0</R21>
+				<R22>0.969680786</R22>
+			</CoordinateFrame>
+			<bool name="ManualActivationOnly">false</bool>
+			<string name="Name">DeployableSnowPlow</string>
+			<bool name="RequiresHandle">true</bool>
+			<Content name="TextureId"><url>http://www.roblox.com/asset?id=189741841</url></Content>
+			<string name="ToolTip"></string>
+		</Properties>
+		<Item class="Part" referent="RBX2220BF297DAC46429FFFFE9D350839E5">
+			<Properties>
+				<bool name="Anchored">false</bool>
+				<float name="BackParamA">-0.5</float>
+				<float name="BackParamB">0.5</float>
+				<token name="BackSurface">0</token>
+				<token name="BackSurfaceInput">0</token>
+				<float name="BottomParamA">-0.5</float>
+				<float name="BottomParamB">0.5</float>
+				<token name="BottomSurface">0</token>
+				<token name="BottomSurfaceInput">0</token>
+				<int name="BrickColor">194</int>
+				<CoordinateFrame name="CFrame">
+					<X>57.0889664</X>
+					<Y>1.18906868</Y>
+					<Z>121.494621</Z>
+					<R00>0.99582839</R00>
+					<R01>-0.0080556944</R01>
+					<R02>0.0908895731</R02>
+					<R10>0.00593693089</R10>
+					<R11>0.999704838</R11>
+					<R12>0.0235577412</R12>
+					<R20>-0.0910525173</R20>
+					<R21>-0.0229198616</R21>
+					<R22>0.995582283</R22>
+				</CoordinateFrame>
+				<bool name="CanCollide">true</bool>
+				<PhysicalProperties name="CustomPhysicalProperties">
+					<CustomPhysics>false</CustomPhysics>
+				</PhysicalProperties>
+				<float name="Elasticity">0.5</float>
+				<float name="Friction">0.300000012</float>
+				<float name="FrontParamA">-0.5</float>
+				<float name="FrontParamB">0.5</float>
+				<token name="FrontSurface">0</token>
+				<token name="FrontSurfaceInput">0</token>
+				<float name="LeftParamA">-0.5</float>
+				<float name="LeftParamB">0.5</float>
+				<token name="LeftSurface">0</token>
+				<token name="LeftSurfaceInput">0</token>
+				<bool name="Locked">true</bool>
+				<token name="Material">256</token>
+				<string name="Name">Handle</string>
+				<float name="Reflectance">0</float>
+				<float name="RightParamA">-0.5</float>
+				<float name="RightParamB">0.5</float>
+				<token name="RightSurface">0</token>
+				<token name="RightSurfaceInput">0</token>
+				<Vector3 name="RotVelocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<float name="TopParamA">-0.5</float>
+				<float name="TopParamB">0.5</float>
+				<token name="TopSurface">0</token>
+				<token name="TopSurfaceInput">0</token>
+				<float name="Transparency">0</float>
+				<Vector3 name="Velocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<token name="formFactorRaw">3</token>
+				<token name="shape">1</token>
+				<Vector3 name="size">
+					<X>2.625</X>
+					<Y>2.25</Y>
+					<Z>4.875</Z>
+				</Vector3>
+			</Properties>
+			<Item class="SpecialMesh" referent="RBXF03F5B9FF2C94565BC0D70394AE76528">
+				<Properties>
+					<token name="LODX">2</token>
+					<token name="LODY">2</token>
+					<Content name="MeshId"><url>http://www.roblox.com/asset?id=189741802</url></Content>
+					<token name="MeshType">5</token>
+					<string name="Name">Mesh</string>
+					<Vector3 name="Offset">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+					</Vector3>
+					<Vector3 name="Scale">
+						<X>1.5</X>
+						<Y>1.5</Y>
+						<Z>1.5</Z>
+					</Vector3>
+					<Content name="TextureId"><url>http://www.roblox.com/asset?id=189741825</url></Content>
+					<Vector3 name="VertexColor">
+						<X>1</X>
+						<Y>1</Y>
+						<Z>1</Z>
+					</Vector3>
+				</Properties>
+			</Item>
+		</Item>
+		<Item class="LocalScript" referent="RBX72B3CF63A35748DBBFE317A8CCD2F297">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">LocalScript</string>
+				<string name="ScriptGuid"></string>
+				<ProtectedString name="Source"><![CDATA[--Made by Luckymaxer
+
+Tool = script.Parent
+Handle = Tool:WaitForChild("Handle")
+
+Players = game:GetService("Players")
+ContentProvider = game:GetService("ContentProvider")
+RunService = game:GetService("RunService")
+
+Camera = game:GetService("Workspace").CurrentCamera
+
+Animations = {}
+LocalObjects = {}
+
+ServerControl = Tool:WaitForChild("ServerControl")
+ClientControl = Tool:WaitForChild("ClientControl")
+
+ToolEquipped = false
+
+ClientControl.OnClientInvoke = (function(Mode, Value)
+	if Mode == "PlayAnimation" and Value and ToolEquipped and Humanoid then
+		SetAnimation("PlayAnimation", Value)
+	elseif Mode == "StopAnimation" and Value then
+		SetAnimation("StopAnimation", Value)
+	elseif Mode == "Preload" and Value then
+		ContentProvider:Preload(Value)
+	elseif Mode == "PlaySound" and Value then
+		Value:Play()
+	elseif Mode == "StopSound" and Value then
+		Value:Stop()
+	elseif Mode == "MousePosition" then
+		return PlayerMouse.Hit.p
+	elseif Mode == "DisableJump" then
+		DisableJump(Value)
+	elseif Mode == "SetMouseIcon" and Value then
+		PlayerMouse.Icon = Value
+	elseif Mode == "SetLocalTransparencyModifier" and Value and ToolEquipped then
+		pcall(function()
+			local ObjectFound = false
+			for i, v in pairs(LocalObjects) do
+				if v == Value then
+					ObjectFound = true
+				end
+			end
+			if not ObjectFound then
+				table.insert(LocalObjects, Value)
+				if ObjectLocalTransparencyModifier then
+					ObjectLocalTransparencyModifier:disconnect()
+				end
+				ObjectLocalTransparencyModifier = RunService.RenderStepped:connect(function()
+					for i, v in pairs(LocalObjects) do
+						if v.Object and v.Object.Parent and ((not v.AutoUpdate and (v.Object.LocalTransparencyModifier == 1 or  v.Object.LocalTransparencyModifier == 0)) or v.AutoUpdate) then
+							v.Object.LocalTransparencyModifier = v.Transparency
+						end
+					end
+				end)
+			end
+		end)
+	elseif Mode == "GetCamera" and Value then
+		local PropertyValue = nil
+		if Value.Property then
+			pcall(function()
+				PropertyValue = Camera[Value.Property]
+			end)
+		end
+		return PropertyValue
+	elseif Mode == "SetCamera" and Value then
+		if Value.Property and Value.Value then
+			pcall(function()
+				Camera[Value.Property] = Value.Value
+			end)
+		end
+	elseif Mode == "SetMouseSensitivity" and Value then
+		if Value.Sensitivity == 1 then
+			if MouseSensivityConnection then
+				MouseSensivityConnection:disconnect()
+			end
+		else
+			SetMouseSensitivity(Value.Sensitivity)
+		end
+	end
+end)
+
+function InvokeServer(Mode, Value)
+	pcall(function()
+		local ServerReturn = ServerControl:InvokeServer(Mode, Value)
+		return ServerReturn
+	end)
+end
+
+function SetAnimation(Mode, Value)
+	if Mode == "PlayAnimation" and Value and ToolEquipped and Humanoid then
+		for i, v in pairs(Animations) do
+			if v.Animation == Value.Animation then
+				v.AnimationTrack:Stop()
+				table.remove(Animations, i)
+			end
+		end
+		local AnimationTrack = Humanoid:LoadAnimation(Value.Animation)
+		table.insert(Animations, {Animation = Value.Animation, AnimationTrack = AnimationTrack})
+		AnimationTrack:Play(Value.FadeTime, Value.Weight, Value.Speed)
+	elseif Mode == "StopAnimation" and Value then
+		for i, v in pairs(Animations) do
+			if v.Animation == Value.Animation then
+				v.AnimationTrack:Stop()
+				table.remove(Animations, i)
+			end
+		end
+	end
+end
+
+function DisableJump(Boolean)
+	if PreventJump then
+		PreventJump:disconnect()
+	end
+	if Boolean then
+		PreventJump = Humanoid.Changed:connect(function(Property)
+			if Property ==  "Jump" then
+				Humanoid.Jump = false
+			end
+		end)
+	end
+end
+
+function SetMouseSensitivity(Sensitivity)
+
+	if MouseSensivityConnection then
+		MouseSensivityConnection:disconnect()
+	end	
+	
+	local function EulerAnglesYX(cframe)
+		local X, Y, Z, R00, R01, R02, R10, R11, R12, R20, R21, R22 = cframe:components(cframe)
+		return -math.asin(R12), ((math.abs(R12) > 0.99999 and -math.atan2(-R20, R00)) or -math.atan2(-R02, R22))
+	end
+	
+	local DirectionX, DirectionY = EulerAnglesYX(Camera.CoordinateFrame)
+	
+	local function UpdateSensitivity()
+		local CFrameX, CFrameY = EulerAnglesYX(Camera.CoordinateFrame)
+		DirectionX = (DirectionX * (1 - Sensitivity) + (CFrameX + (math.pi * 2) * math.floor((DirectionX - CFrameX) / (math.pi * 2) + 0.5)) * Sensitivity)
+		DirectionY = (DirectionY * (1 - Sensitivity) + (CFrameY + (math.pi * 2) * math.floor((DirectionY - CFrameY) / (math.pi * 2) + 0.5)) * Sensitivity)
+		Camera.CoordinateFrame = CFrame.Angles(0, DirectionY, 0) * CFrame.Angles(DirectionX, 0, 0) * CFrame.new(0, 0, 0.5) + Camera.Focus.p
+	end
+	
+	MouseSensivityConnection = RunService.RenderStepped:connect(UpdateSensitivity)
+	
+end
+
+function CheckIfAlive()
+	return (Player and Player.Parent and Humanoid and Humanoid.Parent and Humanoid.Health > 0)
+end
+
+function Equipped(Mouse)
+	Character = Tool.Parent
+	Player = Players:GetPlayerFromCharacter(Character)
+	Humanoid = Character:FindFirstChild("Humanoid")
+	ToolEquipped = true
+	if not CheckIfAlive() then
+		return
+	end
+	PlayerMouse = Player:GetMouse()
+	Mouse.Button1Down:connect(function()
+		InvokeServer("MouseClick", {Down = true, Target = PlayerMouse.Target})
+	end)
+	Mouse.KeyDown:connect(function(Key)
+		InvokeServer("KeyPress", {Key = Key, Down = true})
+	end)
+	Mouse.KeyUp:connect(function(Key)
+		InvokeServer("KeyPress", {Key = Key, Down = false})
+	end)
+	Mouse.WheelForward:connect(function()
+		InvokeServer("WheelMoved", {Forward = true})
+	end)
+	Mouse.WheelBackward:connect(function()
+		InvokeServer("WheelMoved", {Forward = false})
+	end)
+end
+
+function Unequipped()
+	ToolEquipped = false
+	LocalObjects = {}
+	for i, v in pairs(Animations) do
+		if v and v.AnimationTrack then
+			v.AnimationTrack:Stop()
+		end
+	end
+	for i, v in pairs({PreventJump, MouseSensivityConnection, ObjectLocalTransparencyModifier}) do
+		if v then
+			v:disconnect()
+		end
+	end
+	PlayerMouse.Icon = ""
+	Animations = {}
+end
+
+Tool.Equipped:connect(Equipped)
+Tool.Unequipped:connect(Unequipped)]]></ProtectedString>
+			</Properties>
+		</Item>
+		<Item class="Script" referent="RBXD970C9C0010C4855A43616635401017D">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">Script</string>
+				<string name="ScriptGuid">{7761D59C-C133-4E26-9CD9-1031B719ADFA}</string>
+				<ProtectedString name="Source"><![CDATA[--Made by Luckymaxer
+--Updated for R15 avatars by StarWars
+
+Tool = script.Parent
+Handle = Tool:WaitForChild("Handle")
+
+Players = game:GetService("Players")
+Debris = game:GetService("Debris")
+InsertService = game:GetService("InsertService")
+
+Movement = script:WaitForChild("Movement")
+Remover = script:WaitForChild("Remover")
+
+DeployableSnowPlowModel = InsertService:LoadAsset(189802551)
+DeployableSnowPlow = DeployableSnowPlowModel:GetChildren()[1]:Clone()
+if DeployableSnowPlowModel and DeployableSnowPlowModel.Parent then
+	DeployableSnowPlowModel:Destroy()
+end
+
+ClientControl = (Tool:FindFirstChild("ClientControl") or Instance.new("RemoteFunction"))
+ClientControl.Name = "ClientControl"
+ClientControl.Parent = Tool
+
+ServerControl = (Tool:FindFirstChild("ServerControl") or Instance.new("RemoteFunction"))
+ServerControl.Name = "ServerControl"
+ServerControl.Parent = Tool
+
+Handle.Transparency = 0
+Tool.Enabled = true
+
+ServerControl.OnServerInvoke = (function(Player, Mode, Value)
+	if Mode == "MouseClick" and CheckIfAlive() then
+		local Down = Value.Down
+		local Target = Value.Target
+		if TargetValue and TargetValue.Parent then
+			if Down and Target and Target.Parent then
+				local character = Target.Parent
+				local humanoid = character:FindFirstChild("Humanoid")
+				local torso = character:FindFirstChild("Torso") or character:FindFirstChild("UpperTorso")
+				if humanoid and humanoid.Health > 0 and torso then
+					local DistanceApart = (Torso.Position - torso.Position).magnitude
+					if DistanceApart <= 30 then
+						TargetValue.Value = character
+					end
+				else
+					TargetValue.Value = nil
+				end
+			else
+				TargetValue.Value = nil
+			end
+		end
+	end
+end)
+
+function InvokeClient(Mode, Value)
+	local ClientReturn = nil
+	pcall(function()
+		ClientReturn = ClientControl:InvokeClient(Player, Mode, Value)
+	end)
+	return ClientReturn
+end
+
+function MakeDeployableSnowPlow()
+	if PlayerDeployableSnowPlow and PlayerDeployableSnowPlow.Parent then
+		PlayerDeployableSnowPlow:Destroy()
+	end
+	PlayerDeployableSnowPlow = DeployableSnowPlow:Clone()
+	DeployableSnowPlowHumanoid = PlayerDeployableSnowPlow:FindFirstChild("Humanoid")
+	DeployableSnowPlowTorso = PlayerDeployableSnowPlow:FindFirstChild("Torso")
+	if not DeployableSnowPlowHumanoid or not DeployableSnowPlowTorso then
+		return
+	end
+	local humanoid = PlayerDeployableSnowPlow:FindFirstChild("Humanoid")
+	if humanoid then
+		humanoid.Died:connect(function()
+			for i, v in pairs(PlayerDeployableSnowPlow:GetChildren()) do
+				if v:IsA("BasePart") then
+					v.Name = "Part"
+					v.CanCollide = false
+				end
+			end
+			Debris:AddItem(PlayerDeployableSnowPlow, 3)
+		end)
+	end
+	local SnowModel = Instance.new("Model")
+	SnowModel.Name = "SnowModel"
+	SnowModel.Parent = PlayerDeployableSnowPlow
+	local BodyGyro = Instance.new("BodyGyro")
+	BodyGyro.maxTorque = Vector3.new(math.huge, 0, math.huge)
+	BodyGyro.Parent = DeployableSnowPlowTorso
+	local CreatorValue = Instance.new("ObjectValue")
+	CreatorValue.Name = "Creator"
+	CreatorValue.Value = Player
+	CreatorValue.Parent = PlayerDeployableSnowPlow
+	local ToolValue = Instance.new("ObjectValue")
+	ToolValue.Name = "Tool"
+	ToolValue.Value = Tool
+	ToolValue.Parent = PlayerDeployableSnowPlow
+	TargetValue = Instance.new("ObjectValue")
+	TargetValue.Name = "Target"
+	TargetValue.Parent = PlayerDeployableSnowPlow
+	local MovementClone = Movement:Clone()
+	MovementClone.Disabled = false
+	MovementClone.Parent = PlayerDeployableSnowPlow
+	local RemoverClone = Remover:Clone()
+	RemoverClone.Disabled = false
+	RemoverClone.Parent = PlayerDeployableSnowPlow
+	PlayerDeployableSnowPlow.Parent = game:GetService("Workspace")
+	local TorsoCFrame = Torso.CFrame
+	local TorsoPosition = (TorsoCFrame + TorsoCFrame.lookVector * (Torso.Size.Z * -0.25))
+	TorsoPosition = (TorsoPosition + (TorsoPosition * CFrame.Angles(0, (math.pi / 2), 0)).lookVector * (Torso.Size.X * 1.5))
+	TorsoPosition = TorsoPosition - Vector3.new(0, ((PlayerDeployableSnowPlow:GetModelSize().Y / 2) - (Torso.Size.Y / 2)), 0)
+	DeployableSnowPlowTorso.CFrame = TorsoPosition
+	local DeployableSnowPlowAnimation = PlayerDeployableSnowPlow:FindFirstChild("Animation")
+	if DeployableSnowPlowAnimation then
+		DeployableSnowPlowAnimation.Disabled = true
+		Delay(0.25, function()
+			if DeployableSnowPlowAnimation and DeployableSnowPlowAnimation.Parent then
+				DeployableSnowPlowAnimation.Disabled = false
+			end
+		end)
+	end
+end
+
+function CheckIfAlive()
+	return (Player and Player.Parent and Humanoid and Humanoid.Parent and Humanoid.Health > 0 and Torso and Torso.Parent)
+end
+
+function Equipped()
+	Character = Tool.Parent
+	Player = Players:GetPlayerFromCharacter(Character)
+	Humanoid = Character:FindFirstChild("Humanoid")
+	Torso = Character:FindFirstChild("Torso") or Character:FindFirstChild("UpperTorso")
+	Handle.Transparency = 0
+	if not CheckIfAlive() then
+		return
+	end
+	Spawn(function()
+		Handle.Transparency = 1
+		MakeDeployableSnowPlow()
+	end)
+end
+
+function Unequipped()
+	for i, v in pairs({PlayerDeployableSnowPlow}) do
+		if v and v.Parent then
+			v:Destroy()
+		end
+	end
+	Handle.Transparency = 0
+end
+
+Tool.Equipped:connect(Equipped)
+Tool.Unequipped:connect(Unequipped)]]></ProtectedString>
+			</Properties>
+			<Item class="Script" referent="RBXDFCD5CB978CD4C57B27AF540E75EF87D">
+				<Properties>
+					<bool name="Disabled">true</bool>
+					<Content name="LinkedSource"><null></null></Content>
+					<string name="Name">Movement</string>
+					<string name="ScriptGuid">{4E93C2E9-4332-4521-B426-C51091B9A070}</string>
+					<ProtectedString name="Source"><![CDATA[--Made by Luckymaxer
+--Updated for R15 avatars by StarWars
+
+Figure = script.Parent
+Humanoid = Figure:WaitForChild("Humanoid")
+Torso = Figure:WaitForChild("Torso")
+Plow = Figure:WaitForChild("Plow")
+
+Players = game:GetService("Players")
+RunService = game:GetService("RunService")
+Debris = game:GetService("Debris")
+
+SnowModel = Figure:WaitForChild("SnowModel")
+
+Creator = Figure:WaitForChild("Creator")
+Target = Figure:WaitForChild("Target")
+
+NormalSurfaceModule = require(script:WaitForChild("NormalSurfaceModule"))
+
+FollowingPath = false
+WalkRadius = 25
+
+BasePart = Instance.new("Part")
+BasePart.Material = Enum.Material.Plastic
+BasePart.Shape = Enum.PartType.Block
+BasePart.TopSurface = Enum.SurfaceType.Smooth
+BasePart.BottomSurface = Enum.SurfaceType.Smooth
+BasePart.FormFactor = Enum.FormFactor.Custom
+BasePart.Size = Vector3.new(0.2, 0.2, 0.2)
+BasePart.CanCollide = true
+BasePart.Locked = true
+
+Humanoid.Health = Humanoid.MaxHealth
+
+function RayCast(Position, Direction, MaxDistance, IgnoreList)
+	return game:GetService("Workspace"):FindPartOnRayWithIgnoreList(Ray.new(Position, Direction.unit * (MaxDistance or 999.999)), IgnoreList) 
+end
+
+function IsFlipped(Object)
+	local Vector1 = Object.CFrame:vectorToWorldSpace(Vector3.FromNormalId(Enum.NormalId.Top))
+	local Vector2 = Vector3.new(0, 1, 0)
+	local Angle = math.acos(Vector1:Dot(Vector2))
+	return (Angle > 0.05)
+end
+
+function MoveAround(TargetPoint)
+	TargetPoint = ((not TargetPoint and (Torso.Position + Vector3.new(math.random(-WalkRadius, WalkRadius), 0, math.random(-WalkRadius, WalkRadius))) or TargetPoint))
+	Humanoid:MoveTo(TargetPoint)
+end
+
+function CreateSnow()
+	local CurrentPlayers = {Figure}
+	for i, v in pairs(Players:GetChildren()) do
+		if v:IsA("Player") and v.Character then
+			table.insert(CurrentPlayers, v.Character)
+		end
+	end
+	local RayHit, RayPos = RayCast(Torso.Position, Vector3.new(0, -1, 0), (Torso.Size * 1.5), CurrentPlayers)
+	if RayHit and not IsFlipped(Torso) and RayHit.Name ~= "Snow" then
+		local Normal = NormalSurfaceModule(RayHit, RayPos)
+		local Snow = BasePart:Clone()
+		Snow.Size = Vector3.new(2, 0.2, 2)
+		Snow.Name = "Snow"
+		Snow.BrickColor = BrickColor.new("Institutional white")
+		Snow.TopSurface = Enum.SurfaceType.SmoothNoOutlines
+		Snow.BottomSurface = Enum.SurfaceType.SmoothNoOutlines
+		Snow.Anchored = true
+		Snow.CanCollide = false
+		Debris:AddItem(Snow, 1)
+		Snow.Parent = SnowModel
+		local StickCFrame = CFrame.new(RayPos, (RayPos + Normal)) * CFrame.Angles((math.pi / 2), 0, 0)
+		Snow.CFrame = StickCFrame
+	end
+end
+
+Plow.Touched:connect(function(Hit)
+	if not Hit or not Hit.Parent then
+		return
+	end
+	local character = Hit.Parent
+	local humanoid = character:FindFirstChild("Humanoid")
+	local torso = character:FindFirstChild("Torso") or character:FindFirstChild("UpperTorso")
+	if not Target or not Target.Value or character ~= Target.Value then
+		return
+	end
+	if humanoid and humanoid.Health > 0 and torso then
+		torso.Velocity = CFrame.new(Vector3.new(Plow.Position.X, torso.Position.Y, Plow.Position.Z), torso.Position).lookVector * 100
+	end
+end)
+
+RunService.Heartbeat:connect(function()
+	Spawn(function()
+		
+		if not Humanoid or Humanoid.Health == 0 then
+			return
+		end
+		
+		local CreatorValue = Creator.Value
+		local CreatorCharacter, CreatorHumanoid, TorsoPosition, CreatorTorso, TargetTorso
+		
+		if CreatorValue and CreatorValue:IsA("Player") and CreatorValue.Character then
+			CreatorCharacter = CreatorValue.Character
+			CreatorHumanoid = CreatorCharacter:FindFirstChild("Humanoid")
+			CreatorTorso = CreatorCharacter:FindFirstChild("Torso") or CreatorCharacter:FindFirstChild("UpperTorso")
+		else
+			return
+		end
+
+		local TargetAlive = false
+		if Target and Target.Value then
+			local character = Target.Value
+			local humanoid = character:FindFirstChild("Humanoid")
+			TargetTorso = character:FindFirstChild("Torso") or character:FindFirstChild("UpperTorso")
+			if humanoid and humanoid.Health > 0 and TargetTorso then
+				local Distance = (CreatorTorso.Position - TargetTorso.Position).magnitude
+				if Distance >= 50 then
+					Target.Value = nil
+				end
+				TargetAlive = true
+			end
+		end
+		
+		if not TargetAlive then
+			if CreatorTorso then
+				local TorsoCFrame = CreatorTorso.CFrame
+				TorsoPosition = (TorsoCFrame + TorsoCFrame.lookVector * (CreatorTorso.Size.Z * -0.25))
+				TorsoPosition = (TorsoPosition + (TorsoPosition * CFrame.Angles(0, (math.pi / 2), 0)).lookVector * (CreatorTorso.Size.X * 1.5))
+				TorsoCFrame = TorsoPosition
+				TorsoPosition = TorsoPosition.p
+				if (CreatorTorso.Position - Torso.Position).magnitude >= 55 then
+					Torso.CFrame = TorsoCFrame
+				end
+			end
+		else
+			local TorsoCFrame = TargetTorso.CFrame
+			local Direction = TorsoCFrame.lookVector
+			TorsoCFrame = TorsoCFrame + Direction * 1
+			TorsoPosition = TorsoCFrame.p
+		end
+				
+		CreateSnow()
+		
+		local WalkSpeed = 24
+		if CreatorHumanoid and CreatorHumanoid.Parent then
+			WalkSpeed = (CreatorHumanoid.WalkSpeed * 1.5)
+		end
+		Humanoid.WalkSpeed = WalkSpeed
+		
+		MoveAround(TorsoPosition)
+	end)
+end)]]></ProtectedString>
+				</Properties>
+				<Item class="ModuleScript" referent="RBXF0FE7A1D009D4B598AF1C33C59DB286A">
+					<Properties>
+						<Content name="LinkedSource"><null></null></Content>
+						<string name="Name">NormalSurfaceModule</string>
+						<string name="ScriptGuid"></string>
+						<ProtectedString name="Source"><![CDATA[--Normal Surface Retrieval by xXxMoNkEyMaNxXx
+
+Terrain = game:GetService("Workspace").Terrain
+GetCell = Terrain.GetCell
+CellCenterToWorld = Terrain.CellCenterToWorld
+WorldToCellPreferSolid = Terrain.WorldToCellPreferSolid
+
+IdentityVector = Vector3.new()
+IdentityCFrame = CFrame.new()
+
+--Returns:
+--Index of closest plane to p
+--Distance to surface from p
+function ClosestNormalVector(p, planes)
+	local best_d = -math.huge
+	local best_i
+	for i = 1, #planes do
+		local plane = planes[i]
+		local d = IdentityVector.Dot(plane[1], (p - plane[2]))
+		if d > best_d then
+			best_i, best_d = i, d
+		end
+	end
+	return best_i, best_d
+end
+
+--Part geometry data
+UnitaryConvexPlaneMeshes = { --Each component of the normal vector dependent on every component of the size using matrices
+	WedgePart = {{Vector3.new(0, -1, 0), Vector3.new(0, -0.5, 0)}, {Vector3.new(0, 0, 1), Vector3.new(0, 0, 0.5)}, {CFrame.new(0, 0, 0, 0, 0, 0, 0, 0, 1, 0, -1, 0), Vector3.new(0, 0, 0)}, {Vector3.new(1, 0, 0), Vector3.new(0.5, 0, 0)}, {Vector3.new(-1, 0, 0), Vector3.new(-0.5, 0, 0)}}, 
+	CornerWedgePart = {{Vector3.new(0, -1, 0), Vector3.new(0, -0.5, 0)}, {Vector3.new(1, 0, 0), Vector3.new(0.5, 0, 0)}, {Vector3.new(0, 0, -1), Vector3.new(0, 0, -0.5)}, {CFrame.new(0, 0, 0, 0, -1, 0, 1, 0, 0, 0, 0, 0), Vector3.new(0, 0, 0)}, {CFrame.new(0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0), Vector3.new(0, 0, 0)}}, 
+	Part = {{Vector3.new(1, 0, 0), Vector3.new(0.5, 0, 0)}, {Vector3.new(0, 1, 0), Vector3.new(0, 0.5, 0)}, {Vector3.new(0, 0, 1), Vector3.new(0, 0, 0.5)}, {Vector3.new(-1, 0, 0), Vector3.new(-0.5, 0, 0)}, {Vector3.new(0, -1, 0), Vector3.new(0, -0.5, 0)}, {Vector3.new(0, 0, -1), Vector3.new(0, 0, -0.5)}}
+}
+
+--Terrain geometry data
+TerrainCellSize = Vector3.new(4, 4, 4) --Arbitrary size input
+TerrainCellOrientations = {
+	[0] = CFrame.new(0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1), 
+	CFrame.new(0, 0, 0, 0, 0, 1, 0, 1, 0, -1, 0, 0), 
+	CFrame.new(0, 0, 0, -1, 0, 0, 0, 1, 0, 0, 0, -1), 
+	CFrame.new(0, 0, 0, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+}
+TerrainCellBlockUnitaryConvexPlaneMeshes = {
+	[0] = {{Vector3.new(1, 0, 0), Vector3.new(0.5, 0, 0)}, {Vector3.new(0, 1, 0), Vector3.new(0, 0.5, 0)}, {Vector3.new(0, 0, 1), Vector3.new(0, 0, 0.5)}, {Vector3.new(-1, 0, 0), Vector3.new(-0.5, 0, 0)}, {Vector3.new(0, -1, 0), Vector3.new(0, -0.5, 0)}, {Vector3.new(0, 0, -1), Vector3.new(0, 0, -0.5)}}, 
+	{{Vector3.new(1, 0, 0), Vector3.new(0.5, 0, 0)}, {Vector3.new(-1, 0, 0), Vector3.new(-0.5, 0, 0)}, {Vector3.new(0, -1, 0), Vector3.new(0, -0.5, 0)}, {Vector3.new(0, 0, -1), Vector3.new(0, 0, -0.5)}, {CFrame.new(0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0), Vector3.new(0, 0, 0)}}, 
+	{{Vector3.new(1, 0, 0), Vector3.new(0.5, 0, 0)}, {Vector3.new(0, -1, 0), Vector3.new(0, -0.5, 0)}, {Vector3.new(0, 0, -1), Vector3.new(0, 0, -0.5)}, {CFrame.new(0, 0, 0, 0, -1, -1, 1, 0, 1, 1, 1, 0), Vector3.new(0.5, -0.5, -0.5)/3}}, 
+	{{Vector3.new(1, 0, 0), Vector3.new(0.5, 0, 0)}, {Vector3.new(0, 1, 0), Vector3.new(0, 0.5, 0)}, {Vector3.new(0, 0, 1), Vector3.new(0, 0, 0.5)}, {Vector3.new(-1, 0, 0), Vector3.new(-0.5, 0, 0)}, {Vector3.new(0, -1, 0), Vector3.new(0, -0.5, 0)}, {Vector3.new(0, 0, -1), Vector3.new(0, 0, -0.5)}, {CFrame.new(0, 0, 0, 0, -1, -1, 1, 0, 1, 1, 1, 0), Vector3.new(-0.5, 0.5, 0.5)/3}}, 
+	{{Vector3.new(1, 0, 0), Vector3.new(0.5, 0, 0)}, {Vector3.new(0, 1, 0), Vector3.new(0, 0.5, 0)}, {Vector3.new(0, -1, 0), Vector3.new(0, -0.5, 0)}, {Vector3.new(0, 0, -1), Vector3.new(0, 0, -0.5)}, {CFrame.new(0, 0, 0, 0, 0, -1, 0, 0, 0, 1, 0, 0), Vector3.new(0, 0, 0)}}
+}
+
+function NormalVector(part, point)
+	if part.ClassName == "Part" and (part.Shape == Enum.PartType.Ball or part.Shape == Enum.PartType.Cylinder) then
+		return IdentityCFrame.vectorToWorldSpace(part.CFrame, IdentityCFrame.pointToObjectSpace(part.CFrame, point).unit)
+	else
+		local partCFrame, partSize = part.CFrame, part.Size
+		local UCPM
+		if part.ClassName == "Terrain" then
+			local CellGridLocation = WorldToCellPreferSolid(part, Vector3.new(point.x, (point.y - 1e-5), point.z))--Ugly floating point fix
+			local CellMaterial, CellBlock, CellOrientation = GetCell(part, CellGridLocation.x, CellGridLocation.y, CellGridLocation.z)
+			partCFrame = (TerrainCellOrientations[CellOrientation.Value] + CellCenterToWorld(part, CellGridLocation.x, CellGridLocation.y, CellGridLocation.z))
+			partSize = TerrainCellSize
+			UCPM = TerrainCellBlockUnitaryConvexPlaneMeshes[CellBlock.Value]
+		else
+			UCPM = UnitaryConvexPlaneMeshes[part.ClassName] or UnitaryConvexPlaneMeshes.Part --Trusses, SpawnLocations, etc.
+		end
+		local CPM = {}
+		for i = 1, #UCPM do
+			local plane = UCPM[i]
+			CPM[i] = {(plane[1] * partSize).unit, plane[2] * partSize}
+		end
+		local PlaneIndex, DistanceToSurface = ClosestNormalVector(IdentityCFrame.pointToObjectSpace(partCFrame, point), CPM)
+		if PlaneIndex then
+			return IdentityCFrame.vectorToWorldSpace(partCFrame, CPM[PlaneIndex][1])
+		else
+			return IdentityVector --Dead code unless the tables are tampered with
+		end
+	end
+end
+
+return NormalVector]]></ProtectedString>
+					</Properties>
+				</Item>
+			</Item>
+			<Item class="Script" referent="RBX84E710D57BB2405FA8FAF6B033FAC0B1">
+				<Properties>
+					<bool name="Disabled">true</bool>
+					<Content name="LinkedSource"><null></null></Content>
+					<string name="Name">Remover</string>
+					<string name="ScriptGuid"></string>
+					<ProtectedString name="Source"><![CDATA[--Made by Luckymaxer
+
+Model = script.Parent
+
+Debris = game:GetService("Debris")
+
+Creator = Model:FindFirstChild("Creator")
+Tool = Model:FindFirstChild("Tool")
+
+function DestroyModel()
+	Debris:AddItem(Model, 2)
+end
+
+if not Creator or not Creator.Value or not Creator.Value:IsA("Player") or not Creator.Value.Parent or not Tool or not Tool.Value or not Tool.Value.Parent then
+	DestroyModel()
+	return
+end
+
+Creator = Creator.Value
+Tool = Tool.Value
+
+Character = Creator.Character
+if not Character then
+	DestroyModel()
+	return
+end
+
+Creator.Changed:connect(function(Property)
+	if Property == "Parent" and not Creator.Parent then
+		DestroyModel()
+	end
+end)
+
+Character.Changed:connect(function(Property)
+	if Property == "Parent" and not Character.Parent then
+		DestroyModel()
+	end
+end)
+
+Tool.Changed:connect(function(Property)
+	if Property == "Parent" then
+		DestroyModel()
+	end
+end)]]></ProtectedString>
+				</Properties>
+			</Item>
+		</Item>
+		<Item class="LocalScript" referent="RBX4E99DE5BF570487B99049E0C24D2253A">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">MouseIcon</string>
+				<string name="ScriptGuid"></string>
+				<ProtectedString name="Source"><![CDATA[--Made by Luckymaxer
+
+Mouse_Icon = "rbxasset://textures/GunCursor.png"
+Reloading_Icon = "rbxasset://textures/GunWaitCursor.png"
+
+Tool = script.Parent
+
+Mouse = nil
+
+function UpdateIcon()
+	if Mouse then
+		Mouse.Icon = Tool.Enabled and Mouse_Icon or Reloading_Icon
+	end
+end
+
+function OnEquipped(ToolMouse)
+	Mouse = ToolMouse
+	UpdateIcon()
+end
+
+function OnChanged(Property)
+	if Property == "Enabled" then
+		UpdateIcon()
+	end
+end
+
+Tool.Equipped:connect(OnEquipped)
+Tool.Changed:connect(OnChanged)]]></ProtectedString>
+			</Properties>
+		</Item>
+	</Item>
+</roblox>

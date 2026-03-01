@@ -1,0 +1,424 @@
+<roblox xmlns:xmime="http://www.w3.org/2005/05/xmlmime" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.roblox.com/roblox.xsd" version="4">
+	<External>null</External>
+	<External>nil</External>
+	<Item class="Tool" referent="RBX20F56F3981524D2187147C7804DA985B">
+		<Properties>
+			<bool name="CanBeDropped">true</bool>
+			<bool name="Enabled">true</bool>
+			<CoordinateFrame name="Grip">
+				<X>0</X>
+				<Y>0</Y>
+				<Z>-1.5</Z>
+				<R00>0</R00>
+				<R01>0</R01>
+				<R02>1</R02>
+				<R10>1</R10>
+				<R11>0</R11>
+				<R12>0</R12>
+				<R20>0</R20>
+				<R21>1</R21>
+				<R22>0</R22>
+			</CoordinateFrame>
+			<bool name="ManualActivationOnly">false</bool>
+			<string name="Name">BluesteelMidasHand</string>
+			<Content name="TextureId"><url>http://www.roblox.com/asset/?id=161119323 </url></Content>
+			<string name="ToolTip">Bluesteel Midas Hand</string>
+		</Properties>
+		<Item class="Part" referent="RBX79F15CFA9ECB4B9AB16BD0B1C7EC6235">
+			<Properties>
+				<bool name="Anchored">false</bool>
+				<float name="BackParamA">-0.5</float>
+				<float name="BackParamB">0.5</float>
+				<token name="BackSurface">0</token>
+				<token name="BackSurfaceInput">0</token>
+				<float name="BottomParamA">-0.5</float>
+				<float name="BottomParamB">0.5</float>
+				<token name="BottomSurface">0</token>
+				<token name="BottomSurfaceInput">0</token>
+				<int name="BrickColor">199</int>
+				<CoordinateFrame name="CFrame">
+					<X>0.008278016</X>
+					<Y>2.5700469</Y>
+					<Z>0.0404459983</Z>
+					<R00>-0.626531541</R00>
+					<R01>0.0493193008</R01>
+					<R02>0.7778337</R02>
+					<R10>0.483845055</R10>
+					<R11>-0.757789552</R11>
+					<R12>0.437777907</R12>
+					<R20>0.611024559</R20>
+					<R21>0.650633097</R21>
+					<R22>0.450918168</R22>
+				</CoordinateFrame>
+				<bool name="CanCollide">true</bool>
+				<float name="Elasticity">0.5</float>
+				<float name="Friction">0.300000012</float>
+				<float name="FrontParamA">-0.5</float>
+				<float name="FrontParamB">0.5</float>
+				<token name="FrontSurface">0</token>
+				<token name="FrontSurfaceInput">0</token>
+				<float name="LeftParamA">-0.5</float>
+				<float name="LeftParamB">0.5</float>
+				<token name="LeftSurface">0</token>
+				<token name="LeftSurfaceInput">0</token>
+				<bool name="Locked">true</bool>
+				<token name="Material">800</token>
+				<string name="Name">Handle</string>
+				<float name="Reflectance">0</float>
+				<float name="RightParamA">-0.5</float>
+				<float name="RightParamB">0.5</float>
+				<token name="RightSurface">0</token>
+				<token name="RightSurfaceInput">0</token>
+				<Vector3 name="RotVelocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<float name="TopParamA">-0.5</float>
+				<float name="TopParamB">0.5</float>
+				<token name="TopSurface">0</token>
+				<token name="TopSurfaceInput">0</token>
+				<float name="Transparency">0</float>
+				<Vector3 name="Velocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<token name="formFactorRaw">2</token>
+				<token name="shape">1</token>
+				<Vector3 name="size">
+					<X>1</X>
+					<Y>0.800000012</Y>
+					<Z>5</Z>
+				</Vector3>
+			</Properties>
+			<Item class="SpecialMesh" referent="RBX4BB696EAE2B543749A3AAC04D7CCC96F">
+				<Properties>
+					<token name="LODX">2</token>
+					<token name="LODY">2</token>
+					<Content name="MeshId"><url>http://www.roblox.com/asset/?id=17384164</url></Content>
+					<token name="MeshType">5</token>
+					<string name="Name">Mesh</string>
+					<Vector3 name="Offset">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+					</Vector3>
+					<Vector3 name="Scale">
+						<X>1</X>
+						<Y>1</Y>
+						<Z>1</Z>
+					</Vector3>
+					<Content name="TextureId"><url>http://www.roblox.com/asset/?id=161119143 </url></Content>
+					<Vector3 name="VertexColor">
+						<X>1</X>
+						<Y>1</Y>
+						<Z>1</Z>
+					</Vector3>
+				</Properties>
+			</Item>
+			<Item class="Sound" referent="RBXAB59CEB562854511B4D5C6DEAEFF67CB">
+				<Properties>
+					<bool name="Looped">false</bool>
+					<string name="Name">Midas1</string>
+					<float name="Pitch">1</float>
+					<bool name="PlayOnRemove">false</bool>
+					<Content name="SoundId"><url>http://www.roblox.com/asset/?id=17385513</url></Content>
+					<float name="Volume">1</float>
+				</Properties>
+			</Item>
+			<Item class="Sound" referent="RBX69CA1DC4422C4446B74142102175FFD1">
+				<Properties>
+					<bool name="Looped">false</bool>
+					<string name="Name">Midas2</string>
+					<float name="Pitch">1</float>
+					<bool name="PlayOnRemove">false</bool>
+					<Content name="SoundId"><url>http://www.roblox.com/asset/?id=17385522</url></Content>
+					<float name="Volume">1</float>
+				</Properties>
+			</Item>
+			<Item class="Sound" referent="RBX14A36F64E0144492ACF659701CF16034">
+				<Properties>
+					<bool name="Looped">false</bool>
+					<string name="Name">Midas3</string>
+					<float name="Pitch">1</float>
+					<bool name="PlayOnRemove">false</bool>
+					<Content name="SoundId"><url>http://www.roblox.com/asset/?id=17385529</url></Content>
+					<float name="Volume">1</float>
+				</Properties>
+			</Item>
+		</Item>
+		<Item class="LocalScript" referent="RBX57EF59355B2A4437B7FEF8D68C27AB00">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">MouseIcon</string>
+				<ProtectedString name="Source"><![CDATA[--Made by Luckymaxer
+
+Mouse_Icon = "rbxasset://textures/GunCursor.png"
+Reloading_Icon = "rbxasset://textures/GunWaitCursor.png"
+
+Tool = script.Parent
+
+Mouse = nil
+
+function UpdateIcon()
+	if Mouse then
+		Mouse.Icon = Tool.Enabled and Mouse_Icon or Reloading_Icon
+	end
+end
+
+function OnEquipped(ToolMouse)
+	Mouse = ToolMouse
+	UpdateIcon()
+end
+
+function OnChanged(Property)
+	if Property == "Enabled" then
+		UpdateIcon()
+	end
+end
+
+Tool.Equipped:connect(OnEquipped)
+Tool.Changed:connect(OnChanged)
+]]></ProtectedString>
+			</Properties>
+		</Item>
+		<Item class="Animation" referent="RBX91C4EDCB964549A1895F243C18018EA5">
+			<Properties>
+				<Content name="AnimationId"><url>http://www.roblox.com/asset?id=162787112</url></Content>
+				<string name="Name">Swing</string>
+			</Properties>
+		</Item>
+		<Item class="Script" referent="RBXA7597A2A5CF74AC59B292CC737A9B21E">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">Script</string>
+				<ProtectedString name="Source"><![CDATA[--Made by Luckymaxer
+--[[
+	Fixed by ArceusInator
+	- Works in FE
+--]]
+
+Tool = script.Parent
+Handle = Tool:WaitForChild("Handle")
+
+local GLib = require(206209239)
+GLib.Script.Parent = Tool
+
+Players = game:GetService("Players")
+Debris = game:GetService("Debris")
+
+Sounds = {
+	Handle:WaitForChild("Midas1"),
+	Handle:WaitForChild("Midas2"),
+	Handle:WaitForChild("Midas3")
+}
+
+ReloadTime = 2
+
+PrimaryColor = "Pastel Blue"
+SecondaryColor = "Sand blue"
+
+Part = Instance.new("Part")
+Part.Name = "Part"
+Part.BrickColor = BrickColor.new("Pastel Blue")
+Part.Material = Enum.Material.Granite
+Part.TopSurface = Enum.SurfaceType.Smooth
+Part.BottomSurface = Enum.SurfaceType.Smooth
+Part.Shape = Enum.PartType.Block
+Part.FormFactor = Enum.FormFactor.Custom
+Part.Size = Vector3.new(1, 0.4, 1)
+
+TextureId = 136803121
+
+function FindCharacterAncestor(Parent)
+	if Parent and Parent ~= game:GetService("Workspace") then
+		local humanoid = Parent:FindFirstChild("Humanoid")
+		if humanoid then
+			return Parent, humanoid
+		else
+			return FindCharacterAncestor(Parent.Parent)
+		end
+	end
+	return nil
+end
+
+function GetRandomSound()
+	local Sound = Sounds[math.random(1, #Sounds)]
+	if not Sound.IsPlaying then
+		return Sound
+	else
+		GetRandomSound()
+	end
+end
+
+function MakeColorShavings(Position)
+	for i = 1, 3 do
+		local PartClone = Part:Clone()
+		local a = (math.random() * 6.28)
+		local d = Vector3.new(math.cos(a), 0, math.sin(a)).unit
+		PartClone.Velocity = (d * 25)
+		PartClone.RotVelocity = d
+		Debris:AddItem(PartClone, 60)
+		PartClone.Parent = game:GetService("Workspace")
+		PartClone.CFrame = Position + Vector3.new(0, (math.random() * 3), 0) + (d * 2)
+	end
+end
+
+function Blow(Hit)
+	if Hit and Hit.Parent then
+		local character, humanoid = FindCharacterAncestor(Hit.Parent)
+		if not character or character ~= Character  and Humanoid and Humanoid.Health > 0 and RightArm then
+			local RightGrip = RightArm:FindFirstChild("RightGrip")
+			if RightGrip and (RightGrip.Part0 == Handle or RightGrip.Part1 == Handle) then
+				if Hit:GetMass() < (Handle:GetMass() * 10) and (character or not Hit.Locked) then
+					Hit.BrickColor = Part.BrickColor
+					Hit.Material = Part.Material
+					for i, v in pairs(Hit:GetChildren()) do
+						if v:IsA("SpecialMesh") then
+							if v.MeshType == Enum.MeshType.FileMesh then
+								v.TextureId = "http://www.roblox.com/asset/?id=" .. TextureId
+							else
+								Hit.BrickColor = BrickColor.new(SecondaryColor)
+							end
+						end
+					end
+					if character then
+						for i, v in pairs(character:GetChildren()) do
+							if v:IsA("BodyColors") or v:IsA("Clothing") then
+								v:Destroy()
+							elseif v:IsA("CharacterMesh") and v.BodyPart.Name == string.gsub(Hit.Name, " ", "") then
+								v.BaseTextureId = TextureId
+								v.OverlayTextureId = TextureId
+							end
+						end
+					end
+				end
+			end
+		end
+	end
+end
+
+function Activated()
+	local Character, Player, Humanoid = GLib.GetCharacter(Tool)
+	local Torso = Humanoid.Torso
+	
+	if Player and Humanoid and Humanoid.Health > 0 and Torso then
+		MakeColorShavings(Torso.CFrame + (Torso.CFrame.lookVector * 3))
+	end
+end
+
+function Equipped()
+	Character = Tool.Parent
+	Player = Players:GetPlayerFromCharacter(Character)
+	Humanoid = Character:FindFirstChild("Humanoid")
+	Torso = Character:FindFirstChild("Torso")
+	RightArm = Character:FindFirstChild("Right Arm")
+	if not Player or not Humanoid or Humanoid.Health == 0 or not Torso or not RightArm then
+		return
+	end
+	if not Tool.Enabled then
+		wait(ReloadTime)
+		Tool.Enabled = true
+	end
+end
+
+function Unequipped()
+end
+
+Handle.Touched:connect(Blow)
+
+-- Tool.Activated:connect(Activated)
+Tool:WaitForChild'ActivatedRemote'.OnServerEvent:connect(function(client)
+	if client.Character == Tool.Parent then
+		Activated()
+	end
+end)
+Tool.Equipped:connect(Equipped)
+Tool.Unequipped:connect(Unequipped)]]></ProtectedString>
+			</Properties>
+		</Item>
+		<Item class="LocalScript" referent="RBX9F59ECDA62CC418395003E62A28C92F7">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">LocalSwing</string>
+				<ProtectedString name="Source"><![CDATA[Tool = script.Parent
+local GLib = require(Tool:WaitForChild'GLib')
+Swing = Tool:WaitForChild("Swing")
+ReloadTime = 2
+
+function Activated()
+	local Character, Player, Humanoid = GLib.GetCharacter(Tool)
+	local Torso = Humanoid.Torso
+	
+	if Tool.Enabled and Player and Humanoid and Humanoid.Health > 0 and Torso then
+		Tool.Enabled = false
+		SwingAnim = Humanoid:LoadAnimation(Swing)
+		if SwingAnim then
+			SwingAnim:Play()
+		end
+		Tool.ActivatedRemote:FireServer()
+		wait(0.4)
+		if SwingAnim then
+			SwingAnim:Stop()
+		end
+		wait(ReloadTime)
+		Tool.Enabled = true
+	end
+end
+function Unequipped()
+	if SwingAnim then
+		SwingAnim:Stop()
+	end
+end
+
+Tool.Activated:connect(Activated)
+Tool.Unequipped:connect(Unequipped)]]></ProtectedString>
+			</Properties>
+		</Item>
+		<Item class="RemoteEvent" referent="RBX9C9F4416AC2248A3B30D3D17876F2F44">
+			<Properties>
+				<string name="Name">ActivatedRemote</string>
+			</Properties>
+		</Item>
+		<Item class="Camera" referent="RBXF7EAF6A8C7C04200AA3C9BD68696A2C2">
+			<Properties>
+				<Ref name="CameraSubject">null</Ref>
+				<token name="CameraType">0</token>
+				<CoordinateFrame name="CoordinateFrame">
+					<X>-17.6512089</X>
+					<Y>9.76036835</Y>
+					<Z>4.98001766</Z>
+					<R00>0.269394785</R00>
+					<R01>0.348345041</R01>
+					<R02>-0.89782083</R02>
+					<R10>-0</R10>
+					<R11>0.932287753</R11>
+					<R12>0.36171779</R12>
+					<R20>0.963029921</R20>
+					<R21>-0.0974448845</R21>
+					<R22>0.251153409</R22>
+				</CoordinateFrame>
+				<float name="FieldOfView">10</float>
+				<CoordinateFrame name="Focus">
+					<X>0.0345116854</X>
+					<Y>2.63507128</Y>
+					<Z>0.0326730609</Z>
+					<R00>1</R00>
+					<R01>0</R01>
+					<R02>0</R02>
+					<R10>0</R10>
+					<R11>1</R11>
+					<R12>0</R12>
+					<R20>0</R20>
+					<R21>0</R21>
+					<R22>1</R22>
+				</CoordinateFrame>
+				<string name="Name">ThumbnailCamera</string>
+			</Properties>
+		</Item>
+	</Item>
+</roblox>

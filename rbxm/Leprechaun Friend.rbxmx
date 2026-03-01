@@ -1,0 +1,878 @@
+<roblox xmlns:xmime="http://www.w3.org/2005/05/xmlmime" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.roblox.com/roblox.xsd" version="4">
+	<External>null</External>
+	<External>nil</External>
+	<Item class="Tool" referent="RBX49CDAE4834784CFFAF5DF800252C68A9">
+		<Properties>
+			<bool name="CanBeDropped">true</bool>
+			<bool name="Enabled">true</bool>
+			<CoordinateFrame name="Grip">
+				<X>0</X>
+				<Y>-0.5</Y>
+				<Z>0.25</Z>
+				<R00>1</R00>
+				<R01>0</R01>
+				<R02>0</R02>
+				<R10>0</R10>
+				<R11>1</R11>
+				<R12>0</R12>
+				<R20>0</R20>
+				<R21>0</R21>
+				<R22>1</R22>
+			</CoordinateFrame>
+			<bool name="ManualActivationOnly">false</bool>
+			<string name="Name">LeprechaunDoll</string>
+			<bool name="RequiresHandle">true</bool>
+			<BinaryString name="Tags"></BinaryString>
+			<Content name="TextureId"><url>http://www.roblox.com/asset/?id=74899368 </url></Content>
+			<string name="ToolTip"></string>
+		</Properties>
+		<Item class="Part" referent="RBX67976024C9394D50B5D916B4D184CC47">
+			<Properties>
+				<bool name="Anchored">false</bool>
+				<float name="BackParamA">-0.5</float>
+				<float name="BackParamB">0.5</float>
+				<token name="BackSurface">0</token>
+				<token name="BackSurfaceInput">0</token>
+				<float name="BottomParamA">-0.5</float>
+				<float name="BottomParamB">0.5</float>
+				<token name="BottomSurface">4</token>
+				<token name="BottomSurfaceInput">0</token>
+				<CoordinateFrame name="CFrame">
+					<X>1.50000095</X>
+					<Y>-0.282496005</Y>
+					<Z>0.937507987</Z>
+					<R00>1</R00>
+					<R01>0</R01>
+					<R02>0</R02>
+					<R10>0</R10>
+					<R11>1</R11>
+					<R12>0</R12>
+					<R20>0</R20>
+					<R21>0</R21>
+					<R22>1</R22>
+				</CoordinateFrame>
+				<bool name="CanCollide">true</bool>
+				<int name="CollisionGroupId">0</int>
+				<Color3uint8 name="Color3uint8">4288914085</Color3uint8>
+				<PhysicalProperties name="CustomPhysicalProperties">
+					<CustomPhysics>false</CustomPhysics>
+				</PhysicalProperties>
+				<float name="Elasticity">0.5</float>
+				<float name="Friction">0.300000012</float>
+				<float name="FrontParamA">-0.5</float>
+				<float name="FrontParamB">0.5</float>
+				<token name="FrontSurface">0</token>
+				<token name="FrontSurfaceInput">0</token>
+				<float name="LeftParamA">-0.5</float>
+				<float name="LeftParamB">0.5</float>
+				<token name="LeftSurface">0</token>
+				<token name="LeftSurfaceInput">0</token>
+				<bool name="Locked">false</bool>
+				<token name="Material">256</token>
+				<string name="Name">Handle</string>
+				<float name="Reflectance">0</float>
+				<float name="RightParamA">-0.5</float>
+				<float name="RightParamB">0.5</float>
+				<token name="RightSurface">0</token>
+				<token name="RightSurfaceInput">0</token>
+				<Vector3 name="RotVelocity">
+					<X>1</X>
+					<Y>1</Y>
+					<Z>1</Z>
+				</Vector3>
+				<BinaryString name="Tags"></BinaryString>
+				<float name="TopParamA">-0.5</float>
+				<float name="TopParamB">0.5</float>
+				<token name="TopSurface">3</token>
+				<token name="TopSurfaceInput">0</token>
+				<float name="Transparency">0</float>
+				<Vector3 name="Velocity">
+					<X>-1.40129846e-45</X>
+					<Y>0</Y>
+					<Z>1.40129846e-45</Z>
+				</Vector3>
+				<token name="formFactorRaw">3</token>
+				<token name="shape">1</token>
+				<Vector3 name="size">
+					<X>0.979999483</X>
+					<Y>2.69999862</Y>
+					<Z>0.590004444</Z>
+				</Vector3>
+			</Properties>
+			<Item class="SpecialMesh" referent="RBXDFA49855B4074F75A994D323F0ADC878">
+				<Properties>
+					<token name="LODX">2</token>
+					<token name="LODY">2</token>
+					<Content name="MeshId"><url>http://www.roblox.com/asset/?id=74899078 </url></Content>
+					<token name="MeshType">5</token>
+					<string name="Name">Mesh</string>
+					<Vector3 name="Offset">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+					</Vector3>
+					<Vector3 name="Scale">
+						<X>0.75</X>
+						<Y>0.75</Y>
+						<Z>0.75</Z>
+					</Vector3>
+					<BinaryString name="Tags"></BinaryString>
+					<Content name="TextureId"><url>http://www.roblox.com/asset/?id=74899143 </url></Content>
+					<Vector3 name="VertexColor">
+						<X>1</X>
+						<Y>1</Y>
+						<Z>1</Z>
+					</Vector3>
+				</Properties>
+			</Item>
+			<Item class="Sound" referent="RBXF694A766608D4215BC30345EE0C5C4ED">
+				<Properties>
+					<float name="EmitterSize">10</float>
+					<bool name="Looped">false</bool>
+					<string name="Name">LetItBegin</string>
+					<bool name="PlayOnRemove">false</bool>
+					<float name="PlaybackSpeed">1</float>
+					<bool name="Playing">false</bool>
+					<token name="RollOffMode">0</token>
+					<Ref name="SoundGroup">null</Ref>
+					<Content name="SoundId"><url>http://www.roblox.com/asset/?id=74931284</url></Content>
+					<BinaryString name="Tags"></BinaryString>
+					<double name="TimePosition">0</double>
+					<float name="Volume">1</float>
+					<float name="xmlRead_MaxDistance_3">10000</float>
+				</Properties>
+			</Item>
+			<Item class="Attachment" referent="RBXF0AB81D0CBF84B7B92DF289E6CC4A6D9">
+				<Properties>
+					<CoordinateFrame name="CFrame">
+						<X>0</X>
+						<Y>-0.49999997</Y>
+						<Z>0.25</Z>
+						<R00>1</R00>
+						<R01>0</R01>
+						<R02>6.31088724e-30</R02>
+						<R10>0</R10>
+						<R11>1</R11>
+						<R12>-0</R12>
+						<R20>-6.31088724e-30</R20>
+						<R21>0</R21>
+						<R22>1</R22>
+					</CoordinateFrame>
+					<string name="Name">RightGripAttachment</string>
+					<BinaryString name="Tags"></BinaryString>
+					<bool name="Visible">false</bool>
+				</Properties>
+			</Item>
+		</Item>
+		<Item class="LocalScript" referent="RBXA83E0F7C59234405A751F4AB8CAEAD31">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">Local Gui</string>
+				<string name="ScriptGuid">{D279667A-6CCE-42BE-9900-80A1CA37E053}</string>
+				<ProtectedString name="Source"><![CDATA[Tool = script.Parent
+
+local stillEquipped = false
+
+function onEquippedLocal(mouse)
+	stillEquipped = true
+	if mouse == nil then 
+		print("Mouse not found")
+		return
+	end
+	while stillEquipped do 
+		print("Setting Mouse to go")
+		mouse.Icon = "rbxasset://textures\\GunCursor.png"
+		while Tool.Enabled and stillEquipped do 
+			wait(0.01)
+		end
+		print("Setting Mouse to wait")
+		mouse.Icon = "rbxasset://textures\\GunWaitCursor.png"
+		while not Tool.Enabled and stillEquipped do 
+			wait(0.01)
+		end	
+	end
+end
+
+
+function onUnequippedLocal()
+	stillEquipped = false
+end
+
+Tool.Equipped:connect(onEquippedLocal)
+Tool.Unequipped:connect(onUnequippedLocal)]]></ProtectedString>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+		</Item>
+		<Item class="Script" referent="RBX9E3AA2AA94C14671BFE2DC6EF8AB9EAD">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">LeprechaunScript</string>
+				<string name="ScriptGuid">{9BF11B7B-572B-4C13-9404-88C0DC0DC3FD}</string>
+				<ProtectedString name="Source"><![CDATA[local Tool = script.Parent 
+local Leprechaun = Tool.Handle
+
+local vCharacter
+local myTorso 
+local myHumanoid 
+
+Tool.Enabled = true 
+
+local petLeprechaun
+
+local debris = game:GetService("Debris")
+
+local summonSound 
+
+function summonLeprechaun()
+	if myTorso and myHumanoid then
+		summonSound = Leprechaun:FindFirstChild("LetItBegin")
+		if summonSound then summonSound:Play() end 
+		petLeprechaun = game:GetService("InsertService"):LoadAsset(74900154 ):GetChildren()[1] 
+		if petLeprechaun then 
+			debris:AddItem(petLeprechaun, 60) -- Make sure that it will get deleted 
+			petLeprechaun:MoveTo(myTorso.Position + Vector3.new(math.random(-3, 3), 0, math.random(-3, 3)))
+
+			local leprechaunAIScript = Tool.LeprechaunAIScript:Clone()
+		
+			while leprechaunAIScript:FindFirstChild("Leprechaun") == nil do 			
+				wait()
+			end 
+			
+			leprechaunAIScript.Leprechaun.Value = petLeprechaun 
+			leprechaunAIScript.Parent = vCharacter
+
+			local target = Instance.new("ObjectValue")
+			target.Name = "Target"
+			target.Value = nil 
+			target.Parent = petLeprechaun
+
+			wait()
+			leprechaunAIScript.Disabled = false 
+
+			debris:AddItem(leprechaunAIScript, 60)
+		
+			petLeprechaun.Parent = game.Workspace
+			petLeprechaun:MoveTo(myTorso.Position + Vector3.new(math.random(-3, 3), 0, math.random(-3, 3)))
+			Leprechaun.Transparency = 1.0
+
+			coroutine.resume(coroutine.create(function()
+				wait(60.0)
+				Leprechaun.Transparency = 0.0
+			end)) 
+
+			if petLeprechaun:FindFirstChild("Humanoid") then 
+				petLeprechaun.Humanoid.Died:connect(function()					
+					debris:AddItem(petLeprechaun, 4) 
+					Leprechaun.Transparency = 0.0
+					wait(3.5)					
+				end)
+			end 
+		end 
+	end 
+end 
+
+function onActivated()
+	if Tool.Enabled == false then 
+		return 
+	end 
+
+	if myTorso == nil or myHumanoid == nil then 
+		return 
+	end 
+	
+
+	Tool.Enabled = false 
+
+	if not petLeprechaun or not petLeprechaun.Parent then 
+		summonLeprechaun()
+	end 
+
+	local target = myHumanoid.TargetPoint
+	local direction = (target - myTorso.Position).unit
+	
+	local hit = game.Workspace:FindPartOnRay(Ray.new(myTorso.Position, direction * 150), vCharacter)
+	if hit then 
+		local enemyHumanoid = hit.Parent:FindFirstChild("Humanoid")
+		if enemyHumanoid then 
+			if petLeprechaun and petLeprechaun:FindFirstChild("Target") then 
+				petLeprechaun.Target.Value = enemyHumanoid
+			end 
+		end 
+	end 
+
+	wait(2.0)
+		
+	Tool.Enabled = true
+end 
+
+function onEquipped()
+	vCharacter = Tool.Parent 
+	myTorso = vCharacter:FindFirstChild("Torso") or vCharacter:FindFirstChild("UpperTorso")
+	myHumanoid = vCharacter:FindFirstChild("Humanoid")
+end 
+
+function onUnequipped()
+	if petLeprechaun then petLeprechaun:Destroy() end 	
+	Leprechaun.Transparency = 0.0
+	if summonSound then summonSound:Stop() end 
+end 
+
+Tool.Activated:connect(onActivated)
+Tool.Equipped:connect(onEquipped)
+Tool.Unequipped:connect(onUnequipped)]]></ProtectedString>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+		</Item>
+		<Item class="LocalScript" referent="RBXAC0998A3DD8140AD9F9B5AEF5065A80E">
+			<Properties>
+				<bool name="Disabled">true</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">LeprechaunAIScript</string>
+				<string name="ScriptGuid">{1F8F910B-9B81-42F4-B668-B11D46BA95A4}</string>
+				<ProtectedString name="Source"><![CDATA[while script:FindFirstChild("Leprechaun") == nil do 
+	wait()
+end
+
+local projectile = Instance.new("Part")
+projectile.FormFactor = 3
+projectile.Size = Vector3.new(1, 1, 1)
+projectile.Name = "Projectile"
+projectile.CanCollide = false
+
+local projectileMesh = Instance.new("SpecialMesh")
+projectileMesh.MeshId = "http://www.roblox.com/asset/?id=28937301"
+projectileMesh.TextureId = "http://www.roblox.com/asset/?id=28937670"
+projectileMesh.Parent = projectile 
+
+local treasureChest = Instance.new("Part")
+treasureChest.FormFactor = 3 
+treasureChest.Size = Vector3.new(2, 1.2, 2)
+treasureChest.Name = "Treasure Chest"
+treasureChest.CanCollide = true 
+
+local chestMesh = Instance.new("SpecialMesh")
+chestMesh.MeshId = "http://www.roblox.com/asset/?id=23723701"
+chestMesh.TextureId = "http://www.roblox.com/asset/?id=23723666"
+chestMesh.Scale = Vector3.new(0.75, 0.75, 0.75)
+chestMesh.Parent = treasureChest 
+
+local treasureAssets = {29100449, 24015579, 41457719, 59190534} 
+
+local petLeprechaun = script.Leprechaun
+
+while petLeprechaun.Value == nil do 
+	wait()
+end 
+
+petLeprechaun = petLeprechaun.Value
+
+while petLeprechaun:FindFirstChild("Target") == nil do 
+	wait()
+end
+
+local target = petLeprechaun.Target
+
+if target.Value == nil then 
+	--petLeprechaun:Remove()
+end 
+
+local damage = 5
+
+-- Best part about doing this from the character 
+local vCharacter = script.Parent
+local myTorso = vCharacter:FindFirstChild("Torso") or vCharacter:FindFirstChild("UpperTorso")
+local myHumanoid = vCharacter:FindFirstChild("Humanoid")
+local vPlayer = game.Players:GetPlayerFromCharacter(vCharacter)
+
+if myHumanoid then 
+	myHumanoid.Died:connect(function() petLeprechaun:Destroy() end)
+end 
+
+local petLeprechaunHumanoid = petLeprechaun:FindFirstChild("Humanoid")
+local petLeprechaunTorso = petLeprechaun:FindFirstChild("Torso")
+
+local debris = game:GetService("Debris")
+
+local enemyHumanoid = target.Value 
+
+if petLeprechaunHumanoid then 	
+	petLeprechaunHumanoid.WalkSpeed = 24.0
+	
+	while petLeprechaunHumanoid.MaxHealth < 350 do 
+		petLeprechaunHumanoid.MaxHealth = 350 
+		wait()
+	end
+
+	while petLeprechaunHumanoid.Health < 350 do 
+		petLeprechaunHumanoid.Health = 350 
+		wait()
+	end
+end 
+
+local healCount = 0
+
+function tagHumanoid(humanoid, player)
+	if humanoid ~= nil and player ~= nil then
+		local creatorTag = Instance.new("ObjectValue")
+		creatorTag.Name = "creator"
+		creatorTag.Value = player
+		creatorTag.Parent = humanoid
+		debris:AddItem(creatorTag, 1)
+	end
+end 
+
+function blow(hit)
+	local humanoid = hit.Parent:FindFirstChild("Humanoid")	 
+	if humanoid ~= nil and myHumanoid ~= nil and humanoid ~= myHumanoid then           
+		tagHumanoid(humanoid, vPlayer)                    
+		humanoid:TakeDamage(damage)                              
+	end     
+end 
+
+function shoot(target, direction, distance)
+	if petLeprechaunTorso == nil or petLeprechaunHumanoid == nil then return end
+	local projectileClone = projectile:Clone()
+
+	local speed = 50
+
+	local upVector = Vector3.new(0, 1, 0)
+	local dy = direction.Y
+	direction = (direction * Vector3.new(1, 0, 1))
+	local dxz = direction.magnitude
+	local xzVelocity = direction.unit * speed
+	local yVelocity = ((speed * dy / dxz) + ((workspace.Gravity * dxz)/(2 * speed))) * upVector
+
+	print(dy, dxz)
+
+	local spawnPos = petLeprechaunTorso.Position
+
+	print(yVelocity)
+
+	yVelocity = yVelocity * 10.0
+
+	projectileClone.CFrame = CFrame.new(spawnPos, spawnPos + petLeprechaunTorso.CFrame.lookVector)
+	projectileClone.Velocity = xzVelocity + yVelocity     
+	--projectileClone.RotVelocity = Vector3.new(0, 10, 0)
+
+	local floatForce = Instance.new("BodyForce")      
+	floatForce.force = Vector3.new(0, projectileClone:GetMass() * workspace.Gravity * 0.95, 0)     
+
+	projectileClone.Parent = game.Workspace
+	projectileClone.Touched:connect(blow)
+	debris:AddItem(projectileClone, 4)
+
+	wait(0.5)
+	projectileClone.CanCollide = true
+end 
+
+function slash(hit)
+end 
+
+local petLeprechaunLeftArm = petLeprechaun:FindFirstChild("Left Arm")
+local petLeprechaunRightArm = petLeprechaun:FindFirstChild("Right Arm")
+local petLeprechaunLeftLeg = petLeprechaun:FindFirstChild("Left Leg")
+local petLeprechaunRightLeg = petLeprechaun:FindFirstChild("Right Leg")
+
+if petLeprechaunLeftArm then
+	petLeprechaunLeftArm.Touched:connect(slash)
+end
+
+if petLeprechaunRightArm then 
+	petLeprechaunRightArm.Touched:connect(slash)
+end 
+
+if petLeprechaunRightLeg then 
+	petLeprechaunRightLeg.Touched:connect(slash)
+end 
+
+if petLeprechaunLeftLeg then 
+	petLeprechaunLeftLeg.Touched:connect(slash)
+end
+
+petLeprechaunTorso.Touched:connect(slash)
+
+local children = petLeprechaun:GetChildren()
+for i = 1, #children do 
+	if children[i]:IsA("Tool") then 
+		if children[i]:FindFirstChild("Handle") then 
+			children[i].Handle.Touched:connect(slash) 
+		end 
+	end 
+end 
+
+
+local targetEnemy 
+if enemyHumanoid then targetEnemy = enemyHumanoid.Parent end
+local targetEnemyTorso 
+
+if targetEnemy then 
+	targetEnemyTorso = targetEnemy:FindFirstChild("Torso") or targetEnemy:FindFirstChild("UpperTorso")
+	if targetEnemyTorso == nil then
+		--petLeprechaun:Remove()
+	end 
+else 
+	--petLeprechaun:Remove() 
+end 
+
+target.Changed:connect(function()
+	if target.Value then 
+		enemyHumanoid = target.Value 
+		targetEnemy = enemyHumanoid.Parent 
+		if targetEnemy then 
+			targetEnemyTorso = targetEnemy:FindFirstChild("Torso") or targetEnemy:FindFirstChild("UpperTorso")
+		end 
+	end 
+end) 
+
+local animating = false
+
+local checkAOE = Vector3.new(15, 15, 15)
+
+local treasure = treasureChest:Clone() 
+
+coroutine.resume(coroutine.create(function()
+	wait(4.0)
+	while petLeprechaun and myTorso do 		
+		if math.random() < 0.25 and treasure.Parent == nil then 			
+			treasure = treasureChest:Clone() 
+			treasure.CFrame = myTorso.CFrame + Vector3.new(math.random(15, 25), 3, math.random(10, 35)) 
+			treasure.Transparency = 1.0
+			treasure.Parent = game.Workspace 
+			debris:AddItem(treasure, 15) 
+			print(treasure)
+		end 
+		wait(6.0)
+	end 
+end)) 
+
+while true do     
+	local ray = game.Workspace:FindPartOnRay(Ray.new(petLeprechaunTorso.Position, petLeprechaunTorso.CFrame.lookVector * 3.0), nil)
+	if ray and petLeprechaunHumanoid and ray.Parent ~= targetEnemy and ray.Parent ~= vCharacter and ray.Name ~= "Treasure Chest" and not animating then		
+		petLeprechaunHumanoid.Jump = true
+	end     
+	if targetEnemyTorso then           
+		shoot(targetEnemyTorso.Position, (targetEnemyTorso.Position - petLeprechaunTorso.Position).unit, (targetEnemyTorso.Position - petLeprechaunTorso.Position).magnitude) 
+		targetEnemyTorso = nil
+		wait(0.5) 
+	else
+		if myTorso then 
+			petLeprechaunHumanoid:MoveTo(myTorso.Position + Vector3.new(4, 0, 4), myTorso)
+		end 
+	end
+	if treasure and treasure.Parent and treasure.Transparency == 1.0 then 		
+		local distance = (treasure.Position - petLeprechaunTorso.Position).magnitude
+		if distance < 90 then 			
+			petLeprechaunHumanoid:MoveTo(treasure.Position, treasure) 
+			if distance < 2 and not animating then
+				local findSound = script:FindFirstChild("HereYaGo")
+				if findSound then findSound:Play() end 
+				treasure.Transparency = 0.0 
+				local sparkles = Instance.new("Sparkles")
+				sparkles.Parent = treasure 
+				debris:AddItem(sparkles, 1.0) 
+				animating = true 
+				local liftAnim = petLeprechaunHumanoid:LoadAnimation(script.LiftAnim)
+				if liftAnim then liftAnim:Play() end 
+				wait(1.5) 
+				animating = false
+				treasure.Touched:connect(function(hit) 
+					if hit and hit.Parent and hit.Parent:FindFirstChild("Humanoid") and hit.Parent == vCharacter and not animating then 
+						animating = true
+						-- Do st00f here 
+						petLeprechaunHumanoid.WalkSpeed = 0.0 
+						petLeprechaunTorso.CFrame = CFrame.new(petLeprechaunTorso.Position, petLeprechaunTorso.Position + ((myTorso.Position - petLeprechaunTorso.Position) * Vector3.new(1, 0, 1) )) 
+						local bowAnim = petLeprechaunHumanoid:LoadAnimation(script.BowAnim)						
+						if bowAnim then bowAnim:Play() end 
+						if vPlayer then 
+							local backpack = vPlayer:FindFirstChild("Backpack") 
+							if backpack then 
+								local item = game:GetService("InsertService"):LoadAsset(treasureAssets[math.random(1, #treasureAssets)]):GetChildren()[1]
+								if item then item.Parent = backpack end 
+							end 
+						end 
+						local yaySound = script:FindFirstChild("Yay")
+						if yaySound then yaySound:Play() end 
+						if treasure then treasure:Destroy() end 
+						wait(2.0) 						
+						petLeprechaunHumanoid.WalkSpeed = 24.0
+						animating = false 
+					end 
+				end) 
+			end 
+		end 
+	end 
+	wait()
+end 
+]]></ProtectedString>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+			<Item class="ObjectValue" referent="RBX3996BD9DD7244E0D8B3E0894E02C1009">
+				<Properties>
+					<string name="Name">Leprechaun</string>
+					<BinaryString name="Tags"></BinaryString>
+					<Ref name="Value">null</Ref>
+				</Properties>
+			</Item>
+			<Item class="Sound" referent="RBX6BFA7EC11C9F4E819776E4039377DBBD">
+				<Properties>
+					<float name="EmitterSize">10</float>
+					<bool name="Looped">false</bool>
+					<string name="Name">HereYaGo</string>
+					<bool name="PlayOnRemove">false</bool>
+					<float name="PlaybackSpeed">0.649999976</float>
+					<bool name="Playing">false</bool>
+					<token name="RollOffMode">0</token>
+					<Ref name="SoundGroup">null</Ref>
+					<Content name="SoundId"><url>http://www.roblox.com/asset/?id=74931398</url></Content>
+					<BinaryString name="Tags"></BinaryString>
+					<double name="TimePosition">0</double>
+					<float name="Volume">1</float>
+					<float name="xmlRead_MaxDistance_3">10000</float>
+				</Properties>
+			</Item>
+			<Item class="Animation" referent="RBX7DE7DD4D83C145A8AE99E6346CC0AC11">
+				<Properties>
+					<Content name="AnimationId"><url>http://www.roblox.com/Asset?ID=74936776</url></Content>
+					<string name="Name">LiftAnim</string>
+					<BinaryString name="Tags"></BinaryString>
+				</Properties>
+			</Item>
+			<Item class="Animation" referent="RBX5A43FE7753AA43F8B14DF4DA8983998A">
+				<Properties>
+					<Content name="AnimationId"><url>http://www.roblox.com/Asset?ID=74937763</url></Content>
+					<string name="Name">BowAnim</string>
+					<BinaryString name="Tags"></BinaryString>
+				</Properties>
+			</Item>
+			<Item class="Sound" referent="RBX5A01AA23AB0347CAB5088199684892D6">
+				<Properties>
+					<float name="EmitterSize">10</float>
+					<bool name="Looped">false</bool>
+					<string name="Name">Yay</string>
+					<bool name="PlayOnRemove">false</bool>
+					<float name="PlaybackSpeed">1</float>
+					<bool name="Playing">false</bool>
+					<token name="RollOffMode">0</token>
+					<Ref name="SoundGroup">null</Ref>
+					<Content name="SoundId"><url>http://www.roblox.com/asset/?id=74941183</url></Content>
+					<BinaryString name="Tags"></BinaryString>
+					<double name="TimePosition">0</double>
+					<float name="Volume">1</float>
+					<float name="xmlRead_MaxDistance_3">10000</float>
+				</Properties>
+			</Item>
+		</Item>
+		<Item class="LocalScript" referent="RBXFB1F580A88EC4208ACAA3A30735D7B72">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">GuiScript</string>
+				<string name="ScriptGuid">{AC4767F2-D460-40E0-8863-FBE4F7B1D5F2}</string>
+				<ProtectedString name="Source"><![CDATA[local Tool = script.Parent 
+local Lantern = Tool.Handle
+
+local vCharacter 
+local vPlayer 
+
+local sg 
+local frame 
+
+function onEquipped()
+	vCharacter = Tool.Parent
+	vPlayer = game.Players:GetPlayerFromCharacter(vCharacter)
+	if vPlayer then 
+		local playerGui = vPlayer:FindFirstChild("PlayerGui")
+		if playerGui and playerGui:FindFirstChild("LanternGui") == nil then 
+			sg = Instance.new("ScreenGui")
+			sg.Name = "LanternGui"
+			sg.Parent = playerGui 
+
+			frame = Instance.new("Frame")
+			frame.Parent = sg 
+			frame.Size = UDim2.new(0, 220, 0, 30)
+			frame.Position = UDim2.new(0.5, -110, 1, -130) 
+			frame.Style = Enum.FrameStyle.RobloxRound
+
+			local genericTextLabel = Instance.new("TextLabel")
+			genericTextLabel.BackgroundTransparency = 1.0
+			genericTextLabel.Size = UDim2.new(1, 0, 1, 0)
+			genericTextLabel.Visible = true 
+			genericTextLabel.ZIndex = 10 
+			genericTextLabel.FontSize = Enum.FontSize.Size10 
+			genericTextLabel.Font = Enum.Font.Legacy
+			genericTextLabel.TextColor3 = Color3.new(1, 1, 0)
+			genericTextLabel.TextXAlignment = Enum.TextXAlignment.Center
+			genericTextLabel.TextYAlignment = Enum.TextYAlignment.Top
+			genericTextLabel.Parent = frame
+			genericTextLabel.Text = "Summon the Leprechaun!" 
+		end 
+	end 
+end 
+
+function onUnequipped()
+	if sg then sg:Remove() end 
+end 
+
+Tool.Equipped:connect(onEquipped)
+Tool.Unequipped:connect(onUnequipped)
+
+while true do 
+	if vCharacter and genericTextLabel then 
+		if vCharacter:FindFirstChild("MonkeyAIScript") then 
+			genericTextLabel.Text = "Command him onto your enemies!" 
+		else 
+			genericTextLabel.Text = "Summon the Monkey!" 
+		end 
+	end 
+	wait()
+end 
+]]></ProtectedString>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+		</Item>
+		<Item class="Keyframe" referent="RBXFEE42D9ECF9941B68D0B85B7936A0AF7">
+			<Properties>
+				<string name="Name">ThumbnailPose</string>
+				<BinaryString name="Tags"></BinaryString>
+				<float name="Time">0</float>
+			</Properties>
+			<Item class="Pose" referent="RBXFAFB73BD4CCE46B0B12C0F1D27E75DCD">
+				<Properties>
+					<CoordinateFrame name="CFrame">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+						<R00>1</R00>
+						<R01>0</R01>
+						<R02>0</R02>
+						<R10>0</R10>
+						<R11>1</R11>
+						<R12>0</R12>
+						<R20>0</R20>
+						<R21>0</R21>
+						<R22>1</R22>
+					</CoordinateFrame>
+					<token name="EasingDirection">1</token>
+					<token name="EasingStyle">0</token>
+					<float name="MaskWeight">0</float>
+					<string name="Name">UpperTorso</string>
+					<BinaryString name="Tags"></BinaryString>
+					<float name="Weight">0</float>
+				</Properties>
+				<Item class="Pose" referent="RBXECB3FF8BBECE475C8B8B9BB02155A71D">
+					<Properties>
+						<CoordinateFrame name="CFrame">
+							<X>0</X>
+							<Y>-6.70552254e-08</Y>
+							<Z>-5.96046448e-08</Z>
+							<R00>1</R00>
+							<R01>0</R01>
+							<R02>0</R02>
+							<R10>0</R10>
+							<R11>0.173648193</R11>
+							<R12>-0.98480773</R12>
+							<R20>0</R20>
+							<R21>0.98480773</R21>
+							<R22>0.173648193</R22>
+						</CoordinateFrame>
+						<token name="EasingDirection">1</token>
+						<token name="EasingStyle">0</token>
+						<float name="MaskWeight">0</float>
+						<string name="Name">RightUpperArm</string>
+						<BinaryString name="Tags"></BinaryString>
+						<float name="Weight">1</float>
+					</Properties>
+					<Item class="Pose" referent="RBX96EE25F2D70E4ADDA4347008566ED60C">
+						<Properties>
+							<CoordinateFrame name="CFrame">
+								<X>0</X>
+								<Y>-1.49011612e-08</Y>
+								<Z>3.7252903e-09</Z>
+								<R00>1</R00>
+								<R01>0</R01>
+								<R02>0</R02>
+								<R10>0</R10>
+								<R11>0.98480773</R11>
+								<R12>-0.173648179</R12>
+								<R20>0</R20>
+								<R21>0.173648179</R21>
+								<R22>0.98480773</R22>
+							</CoordinateFrame>
+							<token name="EasingDirection">1</token>
+							<token name="EasingStyle">0</token>
+							<float name="MaskWeight">0</float>
+							<string name="Name">RightLowerArm</string>
+							<BinaryString name="Tags"></BinaryString>
+							<float name="Weight">1</float>
+						</Properties>
+						<Item class="Pose" referent="RBX92DFE059402B4CC2A4700A4F7CC7B599">
+							<Properties>
+								<CoordinateFrame name="CFrame">
+									<X>0</X>
+									<Y>0</Y>
+									<Z>0</Z>
+									<R00>1</R00>
+									<R01>0</R01>
+									<R02>0</R02>
+									<R10>0</R10>
+									<R11>1</R11>
+									<R12>0</R12>
+									<R20>0</R20>
+									<R21>0</R21>
+									<R22>1</R22>
+								</CoordinateFrame>
+								<token name="EasingDirection">1</token>
+								<token name="EasingStyle">0</token>
+								<float name="MaskWeight">0</float>
+								<string name="Name">RightHand</string>
+								<BinaryString name="Tags"></BinaryString>
+								<float name="Weight">1</float>
+							</Properties>
+						</Item>
+					</Item>
+				</Item>
+			</Item>
+		</Item>
+		<Item class="Camera" referent="RBX8374EBC82FCB44DA93DC1CA6BAEBAC18">
+			<Properties>
+				<CoordinateFrame name="CFrame">
+					<X>3.22532272</X>
+					<Y>0.559791446</Y>
+					<Z>-2.87844586</Z>
+					<R00>-0.913572609</R00>
+					<R01>-0.0824974924</R01>
+					<R02>0.398220092</R02>
+					<R10>-0</R10>
+					<R11>0.979208112</R11>
+					<R12>0.202858225</R12>
+					<R20>-0.406675607</R20>
+					<R21>0.185325712</R21>
+					<R22>-0.894577742</R22>
+				</CoordinateFrame>
+				<Ref name="CameraSubject">null</Ref>
+				<token name="CameraType">0</token>
+				<float name="FieldOfView">70</float>
+				<CoordinateFrame name="Focus">
+					<X>2.42888236</X>
+					<Y>0.154074907</Y>
+					<Z>-1.0892899</Z>
+					<R00>1</R00>
+					<R01>0</R01>
+					<R02>0</R02>
+					<R10>0</R10>
+					<R11>1</R11>
+					<R12>0</R12>
+					<R20>0</R20>
+					<R21>0</R21>
+					<R22>1</R22>
+				</CoordinateFrame>
+				<bool name="HeadLocked">true</bool>
+				<float name="HeadScale">1</float>
+				<string name="Name">ThumbnailCamera</string>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+		</Item>
+	</Item>
+</roblox>
