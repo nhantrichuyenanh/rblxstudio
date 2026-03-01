@@ -1,3 +1,5 @@
+https://www.lualearning.org/tutorials/7c77db98-b155-4ac3-a252-0d6e5b3919b9/tables
+
 >❖  **Prelude**
 > This guide assumes you have little knowledge of tables.
 > I highly recommend **you thoroughly read the comments in code blocks** for in-depth detail.
