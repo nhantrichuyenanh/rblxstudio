@@ -64,6 +64,7 @@
     - [Global Metatable Functions](https://www.lualearning.org/tutorials/AED06AF1-3FC9-4B95-BBB9-D201EDEC8D42/global-metatable-functions)
     - [Classes in Lua](https://www.lualearning.org/tutorials/3CA23C8C-B08F-4B9F-B12E-3A4EED260073/classes-in-lua)
     - [How can I run a function from a table?](https://devforum.roblox.com/t/how-can-i-run-a-function-from-a-table/1725269/3)
+    - [All Of Object Oriented Programming In Lua(u) in 23 Minutes](https://youtu.be/adKVnh_VWu4)
 - Rblx Studio:
     - [RBXTax](https://rbxtax.com/)
     - [An introduction to Luau](https://luau-lang.org/getting-started)
