@@ -23,7 +23,6 @@
     - [`[WB] Shooting Range`](https://roblox.com/games/4806434866)
     - [Endorsed Weapons Review](https://roblox.com/games/5232179171)
     - [🕊️ Tranquility](https://roblox.com/games/1696139323)
-    - [ℭ𝔞𝔰𝔱𝔩𝔢](https://roblox.com/games/5016378956)
 - [@Megaflame7000](https://roblox.com/users/2687185393): [`[WIP] Five Nights at Freddy's: Roleplay Saga`](https://roblox.com/games/13132720910)
 - [@7cease](https://roblox.com/users/2387678731) / [Luxe Development](https://roblox.com/communities/33007953):
     - [🏝️ Donation Island](https://roblox.com/games/14598130576)
