@@ -1,4 +1,4 @@
-https://www.lualearning.org/tutorials/043d2777-1297-43bf-bc8b-434418e92658/player-joinedleft-message
+https://www.lualearning.org/tutorials/043d2777-1297-43bf-bc8b-434418e92658
 
 Most tutorials on YouTube are outdated (using `LegacyChatService`), so I decided to make one using updated methods (using `TextChatService`).
 **If you don't know why these steps are carried out, please watch/read scripting tutorials on YT/DevForum.**
