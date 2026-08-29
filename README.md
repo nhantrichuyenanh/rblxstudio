@@ -1,10 +1,13 @@
 ## AI Assistant
-- `Search for every SoundId that references any of the provided moderated asset IDs. Report every match with its full instance path, property/Attribute name, referenced ID, and apparent asset type; do not modify anything. Report them to me and do not modify anything.`
-- `Review all Instance.new() call in scripts under Workspace and ServerScriptService and verify that the final property assignment sets Instance.Parent, with Parent assigned only after all other properties. Report any violations with the script path and relevant code; do not modify anything.`
-- `Review all Scripts for opportunities to consolidate duplicate logic into a ModuleScript. Only suggest consolidation when three or more scripts use the exact same logic 1:1; do not code or modify anything, and include the script paths and duplicated logic.`
-- `Review all Script in Workspace and ServerScriptService for pairs vs ipairs usage. Identify cases where the other iterator is more correct based on the table’s structure and intended behavior, and explain why; do not modify anything.`
-- `Review all Scripts in Workspace and ServerScriptService for expensive operations inside loops, Heartbeat, Stepped, RenderStepped, or frequent events. Report only cases that could meaningfully affect performance, with the script path and reason.`
-- `Review all Scripts for connections to events that may never be disconnected or cleaned up, especially temporary connections, character connections, and connections created repeatedly. Report the likely leak risk and script path; do not modify anything.`
+```
+- Search for every SoundId that references any of the provided moderated asset IDs. Report every match with its full instance path, property/Attribute name, referenced ID, and apparent asset type; do not modify anything. Report them to me and do not modify anything.
+- Review all Instance.new() call in scripts under Workspace and ServerScriptService and verify that the final property assignment sets Instance.Parent, with Parent assigned only after all other properties. Report any violations with the script path and relevant code; do not modify anything.
+- Review all Scripts for opportunities to consolidate duplicate logic into a ModuleScript. Only suggest consolidation when three or more scripts use the exact same logic 1:1; do not code or modify anything, and include the script paths and duplicated logic.
+- Review all Script in Workspace and ServerScriptService for pairs vs ipairs usage. Identify cases where the other iterator is more correct based on the table’s structure and intended behavior, and explain why; do not modify anything.
+- Review all Scripts in Workspace and ServerScriptService for expensive operations inside loops, Heartbeat, Stepped, RenderStepped, or frequent events. Report only cases that could meaningfully affect performance, with the script path and reason.
+- Review all Scripts for connections to events that may never be disconnected or cleaned up, especially temporary connections, character connections, and connections created repeatedly. Report the likely leak risk and script path; do not modify anything.
+- Review the entire DataModel for deprecated, legacy, or superseded APIs, classes, properties, and objects. Read the current official Roblox documentation before making any recommendations. Identify which deprecated/legacy systems should be preserved because replacing them could break behavior or compatibility, which are safe to modernize, and which should be monitored for future changes. Pay particular attention to legacy physics/movement objects such as BodyMovers. Report the full Instance/script path, relevant API/object, current documentation status, recommended action, and reason. Do not modify anything.
+```
 
 ## Lua Learning
 - [Player Joined/Left Message](md/PlayerJoinedorLeftMessage.md)
