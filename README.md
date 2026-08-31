@@ -14,6 +14,68 @@
 - [Player Joined/Left Message](md/PlayerJoinedorLeftMessage.md)
 - [Everything about Tables (seriously)](md/EverythingaboutTables(seriously).md)
 
+## Idioms and patterns I don't see much while reading other people's code in free models from Toolbox
+some examples taken from my InventoryGui
+- Multiple assignment: `local variable1, variable2 = value1, value2`
+- `for _, v in`
+- `continue`: 
+Solution 1:
+```
+for _, Tool in ipairs(Backpack:GetChildren()) do
+    if Tool:IsA("Tool") then
+        AddTool(Tool)
+    end
+end
+```
+Solution 2:
+```
+for _, Tool in ipairs(Backpack:GetChildren()) do
+    if not Tool:IsA("Tool") then
+        continue
+    end
+
+    AddTool(Tool)
+end
+```
+- Compound assignment: `Count += 1`
+- `and` / `or` expressions
+```
+local Name = Tool and Tool.Name or "Unknown"
+```
+=
+```
+This is roughly equivalent to:
+local Name
+
+if Tool then
+    Name = Tool.Name
+else
+    Name = "Unknown"
+end
+```
+- `WaitForChild()` with a timeout: `local Inventory = PlayerGui:WaitForChild("Inventory", 5)`
+- Early `return`
+Solution 1:
+```
+if Tool:IsA("Tool") then
+    if Tool.Enabled then
+        EquipTool(Tool)
+    end
+end
+```
+Solution 2:
+```
+if not Tool:IsA("Tool") then
+    return
+end
+
+if not Tool.Enabled then
+    return
+end
+
+EquipTool(Tool)
+```
+
 ---
 
 ## Bookmarks 
