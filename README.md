@@ -15,7 +15,7 @@
 - [Everything about Tables (seriously)](md/EverythingaboutTables(seriously).md)
 
 ## Idioms and patterns I don't see much while reading other people's code in free models from Toolbox
-some examples taken from my InventoryGui
+some examples are taken from my InventoryGui
 - Multiple assignment: `local variable1, variable2 = value1, value2`
 - `for _, v in`
 - `continue`: 
