@@ -19,7 +19,6 @@ some examples are taken from my InventoryGui
 - Multiple assignment: `local variable1, variable2 = value1, value2`
 - `for _, v in`
 - `continue`: 
-Solution 1:
 ```
 for _, Tool in ipairs(Backpack:GetChildren()) do
     if Tool:IsA("Tool") then
@@ -27,7 +26,6 @@ for _, Tool in ipairs(Backpack:GetChildren()) do
     end
 end
 ```
-Solution 2:
 ```
 for _, Tool in ipairs(Backpack:GetChildren()) do
     if not Tool:IsA("Tool") then
@@ -42,9 +40,7 @@ end
 ```
 local Name = Tool and Tool.Name or "Unknown"
 ```
-=
 ```
-This is roughly equivalent to:
 local Name
 
 if Tool then
@@ -55,7 +51,6 @@ end
 ```
 - `WaitForChild()` with a timeout: `local Inventory = PlayerGui:WaitForChild("Inventory", 5)`
 - Early `return`
-Solution 1:
 ```
 if Tool:IsA("Tool") then
     if Tool.Enabled then
@@ -63,7 +58,6 @@ if Tool:IsA("Tool") then
     end
 end
 ```
-Solution 2:
 ```
 if not Tool:IsA("Tool") then
     return
