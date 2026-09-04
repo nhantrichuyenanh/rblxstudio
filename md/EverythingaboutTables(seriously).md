@@ -1,336 +1,104 @@
 https://www.lualearning.org/tutorials/7c77db98-b155-4ac3-a252-0d6e5b3919b9/tables
 
->❖  **Prelude**
-> This guide assumes you have little knowledge of tables.
-> I highly recommend **you thoroughly read the comments in code blocks** for in-depth detail.
+❖  **Reason to read this tutorial**
+
+In most, if not all tutorials, tables are taught in a theoretical sense like what is array vs dictionary and table operations like `table.insert`. Even Roblox's documentation approaches tables this way.
+**All of them underplay the role of tables. You use it all the time, even if you don't realize it.**
+
+**Read the description of this tutorial!** They're not just something you create yourself with `{}`. **Roblox APIs constantly return tables as you work with Instances, services, and data.**
+
 ```
---[[  Reference Websites:
-create.roblox.com/docs/luau/tables
-create.roblox.com/docs/reference/engine/libraries/table
-lua.org/pil/2.5.html
-]]
-```
->❖  **Reason**
-> **to read this tutorial**
-> During my self-learning, I read lots of DevForum topics and watched numerous tutorials on YouTube. **It's one thing to read and watch, but quite another to fully understand.** One of these is tables.
->----
-> **Most of them underplay the role of tables.** The overemphasis on theory and little to no coverage of applications irked me. I write this tutorial in part to compensate just that.
-
->❖  **Disclaimer**
-> **Tables are a complex and multifaceted topic**. Take for instance, *multi-dimensional array* (or matrix) and *Serialization*. I can't provide examples for them. Furthermore, there are too many applications for tables for me to cover them all.
->
->----
-> Moreover, **they are objects**, stored in specific regions of memory and their references (or pointers) can only be manipulated. They can have multiple references, are created (not declared), and more. They're related to *Object-oriented programming*, which is a whole new ball game.
->
->----
->**Therefore, this tutorial will only cover the main and essential parts.**
-------
-## ❖  Theory
->◆  **Definition**
->**Tables are objects that can store multiple values.** They are a collection of data values (i.e.: numbers, strings, boolean, nil, functions, Roblox objects). 
-> *With that, it opens the door to endless possibilities.*
->----
-> Why are they a big deal? **Well, to put it bluntly, it's ubiquitous. It is a must-have.** Higher-order scripting makes use of large amounts of data, and that data often exists in the form of tables.
-> *It may sound intimidating, especially when you barely know tables. However, once you read the entire guide, I'm confident you find tables indispensable.*
-
->◆  **Features**
->- You can retrieve, manipulate, add, and remove values from a table.
->- Those values can be *anything*, from **numbers, strings, userdata (Roblox objects and Services), tables (essentially a table in another table), and even functions**.
-```
---> Values: number, string, objects, functions
-local UserId, PlayerUsername, Players = 1, "Roblox", game:GetService("Players")
-local function checkPlayerAmount() 
-	print("Number of players in the server: "..#Players:GetPlayers())
-end
-
---| try print(type()) the values above and check the Output
---> Tables are *constructed* in the form of curly brackets.
-local t = {} --> A common reference name for a table.
-print(type(t)) --> table
-```
-> Table is divided into two forms: **array and dictionary.**
-> Constructing a table is as easy as pie. *Read the code blocks below and you'll get the hang of it.*
-
->- Array contains index and value (commonly written as **i**, **v**).
-> 	◇  As aforementioned, table can contain values. 
-> 	◇  **These values are associated by their order**, or in other words: index. 
-> 	◇  Whether they're ordered through numerical order or unspecified will be mentioned later.
-```
---> Format: local t = {v1, v2, v3, ..., vn}
-local appurtenances = {"Real Estate", "Legal", "Household",  "Educational", "Financial"}
-print(appurtenances)
---[[
-Output: [1], [2], [3], [4], [5] are indices while "Real Estate", "Legal", "Household", "Educational", and "Financial" are values.
-[1] = "Real Estate",
-[2] = "Legal",
-[3] = "Household",
-[4] = "Educational",
-[5] = "Financial"
-]]
-```
->- Dictionary, or associative array, contains key and value (commonly written as **k**, **v**).
->	◇  This time, **these values are associated by their keys**, which are sorted by alphabetical order.
->	◇  The key simply holds the value, to which it can be referred to retrieve the value.
-```
---[[ Format:
-local t = { --> Comma or semicolon to seperate each pair key-value.
-	["k"] = v;
---| String key ["k"]
-	k = v; --| Key k
-	[p] = j; --| Variable value [p]
-}
-local t = {["k"] = v, k = v, [p] = j} --> Format can be like array.
-]]
-local timeline = { --> Numeric key [n]
-	[2020] = "Introduction of Universal Windows Platform (UWP) Support, Roblox Education";
-	[2021] = "Roblox IPO, Roblox Studio Improvements:";
-	[2022] = "Introduction of Roblox Cloud, Advanced Scripting Capabilities";
-	[2023] = "Roblox Metaverse Expansion, Enhanced Graphics and Rendering"
-}
-print(timeline)
---> Output: [2020], [2021], [2022], [2023] are keys while the strings are values.
-
---| Creating an associative array using the values from earlier; string key ["k"]
-local PlayerInfo = {["UserId"] = UserId, ["PlayerUsername"] = PlayerUsername, ["Players"] = Players, ["checkPlayerAmount"] = checkPlayerAmount}
-print(PlayerInfo) --[[ Output: sorts the keys by alphabetical order.
-["PlayerUsername"] = "Roblox",
-["Players"] = Players,
-["UserId"] = 1,
-["checkPlayerAmount"] = "function"
-]]
-```
->◆  Manipulation
-> **Table's values can be modified**, just like variables with operators for numbers and properties for Roblox objects.
->
->----
->- Get, modify, add & remove value.
-> It's just like variables but with a bit more typing. **Feel free to skip this part.**
-```
---[[ Get:
-Array: t[i]
-Dictionary: t["k"] or t.k
-In Lua(u), index starts at 1, unlike most programming languages which start at 0.
-]]
-print(appurtenances[2]) --> array with index
-print(timeline[2023]) --> associative array with numeric key
-print(PlayerInfo.checkPlayerAmount) --> function: [adress]
-print(PlayerInfo.checkPlayerAmount()) --> Number of players in the server: number
-
---[[ Modify:
-Array: t[i] = v
-Dictionary: t["k"] = v or t.k = v
-]]
-appurtenances[1] = "Gardening"
-
---[[ Add:
-table.insert(t, v) or table.insert(t, i, v) and t[#t + 1]
-Functions from the table library. More on that later on.
-]]
-table.insert(PlayerInfo, 1000) --> table.insert(array, value); dictionary would work but value would be assigned with an index.
-print(PlayerInfo) --[[ Output:
-[1] = 1000,
-["PlayerUsername"] = "Roblox",
-["Players"] = Players,
-["UserId"] = 1,
-["checkPlayerAmount"] = "function"
-]]
-
---[[ Remove:
-table.remove(t, v) and t["k"] = nil or t.k = nil
-Again, more on that later on.
-]]
-table.remove(PlayerInfo, 1) --> table.remove(array, index); table.remove(PlayerInfo, 2) doesn't work since there's no index 2 in dictionary PlayerInfo.
-print(PlayerInfo) --[[ Output:
-["PlayerUsername"] = "Roblox",
-["Players"] = Players,
-["UserId"] = 1,
-["checkPlayerAmount"] = "function"
-]]
-```
->- **Iterate value.**
->	◇  Iteration is commonplace in Luau and is also the main way to **get a specific value or all of the values in a table**.
->	◇  For loop has two variables: **index or key and value.**
->	◇  **It's used extensively in table applications.**
-```
---[[ Template:
-
---| Array:
-for i, v in t do
-	--> Two variables to employ.
-	--| You can use if statement, modify value, or whatever you want depending on your project.
-	print(i, v)
-end
-	-- or --
-for i = 1, #t do
-	--> If you want to simply loop the table from one to the length of the table, or #t
-	print(i, t[i])
-	--> t[i] = v as covered before.
-end
-
---| Dictionary:
-for k, v in pairs(t) do
-	--| Since dictionary has key and value, for loop statement must be typed with two variables and pairs() or ipairs().
-	--| pairs() returns key-value pairs while ipairs() returns index-value pairs:
-	--> create.roblox.com/docs/tutorials/fundamentals/coding-5/pairs-and-ipairs
-end
---| For loops variables can be modifed in any situation, making them flexible.
-]]
-
-for _, name in appurtenances do --> I don't need the order, just the name. Underscore does just that.
-	if name == "Legal" then
-		print("Getting legal advice...")
-	end
-end
-for year, desc in pairs(timeline) do --> ipairs wouldn't work in this case.
-	if year == 2021 then
-		print(desc)
-	end
-end
-```
->- **table.**
-
-> **The table library has inbuilt functions, allowing us to manupulate tables.**
-> **A lot of these functions aren't important to know anyways.** They're only useful for very specfic use cases, which I won't delve into  that.
->----
-> *Not all table functions work both on array and associative array.*
-```
---> create.roblox.com/docs/reference/engine/libraries/table
-
-print(table.concat(appurtenances, "; ")) --> Real Estate; Legal; Household; Educational; Financial
-print(table.unpack(timeline)) --> for array; unpack(t) = table.unpack(t)
-table.clear(PlayerInfo) print(PlayerInfo) --> {}
-
-local leaderboards = { --| array example with table values in which each one store two keys
-	{Name = "Builderman", Score = 75},
-	{Name = "Stickmasterluke", Score = 90},
-	{Name = "Shedletsky", Score = 67},
-	{Name = "Berezaa", Score = 49},
-	{Name = "Gusmanak", Score = 88}
-}
-
---> table.insert(array, value) or table.insert(dictionary, {key, value})
-table.insert(leaderboards, {Name = "Cindering", Score = 50})
-
-for i, participant in ipairs(leaderboards) do
-	if participant.Score < 50 then
-		table.remove(leaderboards, i)
-		break
-	end
-end
-
-table.sort(leaderboards, function(a, b) return a.Score > b.Score end)
---| try print(leaderboards) and check the Output
-
---> table.find(t, v, i) only works on arrays, etc...
-```
-----
-## ❖  Practice
-> **In Roblox Studio, everything is a table.** To remind you, table can store data values. In fact, everything in Roblox Studio is an *object*.
->
->----
->For example, in a brand new Baseplate experience, workspace is a table.
-```
-print(type(workspace)) --> userdata (aka object)
 print(type(workspace:GetChildren())) --> table
-workspace.Baseplate --> Baseplate is also userdata (which is also an object)
-	-- or --
-workspace["Baseplate"] --> same as workspace.Baseplate
-Baseplate = workspace.Baseplate
-Baseplate.Name = "idk" --> Modifying object's property. 
---| You get the idea.
+workspace.Baseplate --> indexing the Workspace Instance to get its "Baseplate" child, keep the word "indexing" in mind at the end of this tutorial
+    -- or --
+workspace["Baseplate"] --> same as workspace.Baseplate, same syntax as dictionary["key"]
 
+--[[
+Roblox Instances can have child Instances, forming a parent-child hierarchy.
+GetChildren() returns an array-like table containing the Instance's direct children.
+GetDescendants() returns an array-like table containing every descendant of the Instance.
+]]
 print(game:GetService("Lighting"):GetChildren(), workspace:GetDescendants())
---[[ 
-Every parent-child hierarchy is essentially an array, with its values are the children.
-GetChildren() enables us to get all the children (or elements) in a table. An object's method.
-GetDescendants() gets not just the elements but also the children of those elements.
-
+--[[
 Output:
-▼  {
+▼ {
     [1] = Sky,
     [2] = SunRays,
     [3] = Atmosphere,
     [4] = Bloom,
     [5] = DepthOfField
-    }  
-▼  {
+}
+▼ {
     [1] = Camera,
     [2] = Baseplate,
     [3] = Texture,
     [4] = Terrain,
     [5] = SpawnLocation,
     [6] = Decal
-    }
+}
 ]]
 ```
-> The theoretical knowledge aims to explain and lay the foundations of tables, their features, and usages.
-> **The following code blocks below bring those features and usages into play.**
-◆  **Dance Floor**:
+
+---
+
+❖ **Practical examples**
+
+◆  **Dance Floor**
 ```
---| You can also use for loop statements for every KillPart if you want to.
 local Tiles = script.Parent:FindFirstChild("Tiles"):GetChildren() 
 
 while task.wait(1) do
-	for _,Tile in pairs(Tiles) do
+	for _, Tile in ipairs(Tiles) do -- ipairs because Tiles is an array.
 		Tile.Color = Color3.new(math.random(), math.random(), math.random())
-		--> Assigning a variable with math.random() makes it a constant, meaning its value won't change.
-		--> Since Dance Floor's tiles are intended to change color every second, I'd rather not use a variable.
 	end
 end
---> pairs() is optional for arrays.
 ```
-◆  **Get Random Item**:
+◆  **Get Random Tool**
 ```
-local ProximityPrompt = Instance.new("ProximityPrompt", script.Parent)
-ProximityPrompt.Name = "ObtainTool"
-ProximityPrompt.ObjectText = ""
-ProximityPrompt.ActionText = ""
-ProximityPrompt.KeyboardKeyCode = Enum.KeyCode.E
-ProximityPrompt.ClickablePrompt = false
-ProximityPrompt.HoldDuration = 1.5
-ProximityPrompt.Exclusivity = 1
-ProximityPrompt.RequiresLineOfSight = true
-ProximityPrompt.MaxActivationDistance = 5
+local Part = script.Parent
 
-local Items = game:GetService("ServerStorage"):FindFirstChild("Items"):GetChildren()
+local ProximityPrompt = Instance.new("ProximityPrompt")
+ProximityPrompt.ActionText = ""
+ProximityPrompt.ClickablePrompt = false
+ProximityPrompt.Exclusivity = 1
+ProximityPrompt.HoldDuration = .5
+ProximityPrompt.KeyboardKeyCode = Enum.KeyCode.E
+ProximityPrompt.MaxActivationDistance = 5
+ProximityPrompt.Name = Part.Name
+ProximityPrompt.ObjectText = ""
+ProximityPrompt.RequiresLineOfSight = true
+ProximityPrompt.Parent = Part
+
+local Tools = game:GetService("ServerStorage"):FindFirstChild("Tools"):GetChildren()
 
 ProximityPrompt.TriggerEnded:Connect(function(Player)
-	for i = 1, #Items do
-		Items[math.random(i, #Items)]:Clone().Parent = Player.Backpack
-			--[[
-			The script loops through the Items folder and picks a random Item. How come?
-			Remember t[i] = v? Well, t[math.random(i, #t)] = random v
-			Why random v? Because from index 1 to the last index (which is the length of t or #t), math.random(1, #t) picks a random index, therefore t[math.random(i, #t)] = random v
-			And v is just an item in this case, since item is value in table Items
-			Essentially, a random item is cloned and then Parented under the Player's Backpack.
-			]]
-		script.Parent:FindFirstChildOfClass("Sound"):Play() --> This is optional.
-	end
+	Tools[math.random(1, #Tools)]:Clone().Parent = Player.Backpack
+	Part:FindFirstChildOfClass("Sound"):Play()
 end)
---> The same method of picking random v also applies for Sky Changer.
+
+--[[
+table[index] = value
+table[math.random(1, #table)] = random value
+
+The same method of picking a random value from an array also applies for a sky changer script, for example.
+]]
 ```
-◆  **Rotate Model**:
+◆  **Rotate Model**
 ```
 local Speed = 1
 local Rotation = 1
 local Model = script.Parent:FindFirstChild("Parts")
 local ModelCFrame = Model:GetModelCFrame()
- --> const; assuming model stays in one place
 
 function Rotate(model, paramCFrame)
 	local BaseParts = {}
-	local function FindBaseParts(array)
-		for _, v in pairs(array:GetChildren()) do
-			if v:IsA("BasePart") then
-				table.insert(BaseParts, v) --> one use case of table.insert()
-			end
-			FindBaseParts(v) --> getting BasePart descendants in Model
-		end
+
+	for _, v in ipairs(model:GetChildren()) do
+		if v:IsA("BasePart") then table.insert(BaseParts, v) end
 	end
 
-	FindBaseParts(model)
-	for _, v in pairs(BaseParts)do 
-		v.CFrame = paramCFrame * ModelCFrame:ToObjectSpace(v.CFrame) --> actually rotating the model
+	for _, v in ipairs(BaseParts) do 
+		v.CFrame = paramCFrame * ModelCFrame:ToObjectSpace(v.CFrame)
 	end
 end
 
@@ -340,23 +108,21 @@ while task.wait() do
 	Rotate(Model, ModelCFrame * CFrame.Angles(0, math.rad(Rotation), 0))
 end
 ```
-◆  **Data Storage / Saving Data**:
+◆  **Data Storage / Saving Data**
 ```
 --[[
-DataStoreService is by far and away the simplest example and official way of saving data.
-There are also DataStore2, ProfileService, and Suphi's DataStore Module, which are far superior to it. 
-Besides those are Object Storage and Inventory System.
-Each of them are a topic of their own. Look up on the DevForum or YouTube to know more.
-This code block is a demonstration of how data storage works.
-
-Adapted from GnomeCode's "Save Player Data with Roblox Datastores": youtu.be/H-cDbjd5-bs?si=ELs0mVZ1JIV350P8
+DataStoreService is the simplest example and official way of saving data.
+Adapted from GnomeCode's "Save Player Data with Roblox Datastores": youtu.be/H-cDbjd5-bs
 ]]
+
 local Players = game:GetService("Players")
 local DataStoreService = game:GetService("DataStoreService")
 local Database = DataStoreService:GetDataStore("PlayerData")
-local SessionData = {} --> t; stores PlayerData while on session, aka playing.
 
---> Retrieving PlayerData from Database.
+-- A dictionary that keeps each player's data in memory while they are in the server.
+local SessionData = {}
+
+-- Load PlayerData from the DataStore.
 Players.PlayerAdded:Connect(function(Player)
 	local leaderstats = Instance.new("Folder", Player)
 	leaderstats.Name = "leaderstats"
@@ -366,89 +132,383 @@ Players.PlayerAdded:Connect(function(Player)
 	
 	local Success, PlayerData
 	local Attempt = 1
+
 	repeat
-		Success, PlayerData = pcall(function() --> Database:GetAsync(k) = p
+		Success, PlayerData = pcall(function()
 			return Database:GetAsync(Player.UserId)
 		end)
 		Attempt += 1
 	until Success or Attempt == 5
 	
 	if Success then
-		if not PlayerData then --> Newbie, hence no pre-exisiting data to retrieve. Therefore, assign a default value.
-			PlayerData = { --> p; self-explanatory.
-				["Coins"] = 0; --> j
+		-- No saved data means this is a new player, so give them default data.
+		if not PlayerData then
+			PlayerData = {
+				Coins = 0
 			}
 		end
-		SessionData[Player.UserId] = PlayerData --> t[k] = p
+
+		-- Store the player's data in our SessionData dictionary.
+		-- The player's UserId is the key, and their PlayerData table is the value.
+		SessionData[Player.UserId] = PlayerData
 	else
 		Player:Kick("Your data couldn't be loaded.")
 	end
 	
-	Coins.Value = SessionData[Player.UserId].Coins --> IntValue.Value = t[k].j; updating PlayerData based on Database.
-	Coins.Changed:Connect(function() --> When Int.Value changes, t[k].j updates.
+	-- Get the player's Coins from their data table.
+	Coins.Value = SessionData[Player.UserId].Coins
+
+	-- Keep the data table updated whenever the leaderstat changes.
+	Coins.Changed:Connect(function()
 		SessionData[Player.UserId].Coins = Coins.Value
 	end)
 end)
 
---> Saving PlayerData to Database.
-function PlayerRemoving(Player)
-	if SessionData[Player.UserId] then --> If t[k] then Database:SetAsync(k, t[k]) end
+
+-- Save PlayerData to the DataStore when a player leaves.
+local function PlayerRemoving(Player)
+	-- Only save if we successfully loaded data for this player.
+	if SessionData[Player.UserId] then
 		local Success, ErrorMessage
 		local Attempt = 1
+
 		repeat
 			Success, ErrorMessage = pcall(function()
-				Database:SetAsync(Player.UserId, SessionData[Player.UserId])
+				Database:SetAsync(
+					Player.UserId,
+					SessionData[Player.UserId]
+				)
 			end)
 			Attempt += 1
 		until Success or Attempt == 5
 	end
 end
 
-Players.PlayerRemoving:Connect(function(Player)
-	PlayerRemoving(Player)
-end)
+Players.PlayerRemoving:Connect(PlayerRemoving)
 
---> Saving all Players' PlayerData to Database when server shuts down.
+
+-- Save all players' data when the server shuts down.
 game:BindToClose(function()
-	if game:GetService("RunService"):IsStudio() then 
-		return --> When test playing in Studio.
+	if game:GetService("RunService"):IsStudio() then
+		return
 	end
+
 	for _, Player in ipairs(Players:GetPlayers()) do
 		task.spawn(function()
 			PlayerRemoving(Player)
 		end)
 	end
 end)
-```
-◆   **Configuaration Settings**:
-	◇  One example is **HD Admin**. If you've ever used it before, you most likely have opened *Settings* to configure admin powers.
-	◇  Another one is **Warbound**. By opening Resource → SettingsModule → *ClientConfig* or *ServerConfig*, you can adjust the weapon's settings or animation.
-	◇  ...
-> This leads us to ModuleScript. Besides Scripts and LocalScripts, tables are mostly used in it. **In fact, ModuleScripts are another representation of tables, called packages or libraries.** If you insert a new one and open it, you'll be greeted by:
-```
-local module = {}
 
-return module
+--[[
+SessionData
+[261]        PlayerData
+               └── Coins = 100
+[100022]     PlayerData
+               └── Coins = 250
+[14413460]   PlayerData
+               └── Coins = 50
+]]
+```
+
+---
+
+❖ **Roblox services**
+
+◆ **CollectionService**
+```
+--> From Dot Product's "STOP PUTTING SCRIPTS IN PARTS! | Roblox CollectionService Scripting Tutorial (2024)": youtu.be/80z3Xg8Sy_g
+
+local CollectionService = game:GetService("CollectionService")
+
+for _, part in CollectionService:GetTagged("KillBrick") do
+	part.Touched:Connect(function(hit)
+		if hit.Parent:FindFirstChild("Humanoid") then
+			hit.Parent.Humanoid.Health = 0
+		end
+	end)
+end
+
+-- Or you can use GetAttribute no need for CollectionService :P
+```
+◆ **Players** (Murder Mystery 2, Piggy, Flee the Facility, Hide and Seek Extreme)
+```
+local Players = game:GetService("Players")
+
+local Maps = game:GetService("ServerStorage"):WaitForChild("Maps")
+local MIN_PLAYERS, ROUND_TIME, INTERMISSION_TIME = 2, 120, 15
+
+while true do
+	-- Wait until there are enough players to start a round.
+	repeat task.wait(1)
+	until #Players:GetPlayers() >= MIN_PLAYERS
+
+	-- Intermission
+	for Time = INTERMISSION_TIME, 0, -1 do
+		print("Round starting in:", Time)
+		task.wait(1)
+	end
+
+	-- Pick a random map.
+	local AvailableMaps = Maps:GetChildren()
+	local Map = AvailableMaps[math.random(1, #AvailableMaps)]:Clone()
+	Map.Parent = workspace
+
+	local PlayersInRound = Players:GetPlayers()
+
+	-- Pick one random player to be the Seeker.
+	local Seeker = PlayersInRound[math.random(1, #PlayersInRound)]
+
+	for _, Player in ipairs(PlayersInRound) do
+		local Character = Player.Character
+
+		if Character then
+			if Player == Seeker then
+				Player:SetAttribute("Role", "Seeker")
+				Character:PivotTo(Map.SeekerSpawn.CFrame)
+			else
+				Player:SetAttribute("Role", "Hider")
+				Character:PivotTo(Map.HiderSpawn.CFrame)
+			end
+		end
+	end
+
+	-- Run the round timer.
+	for Time = ROUND_TIME, 0, -1 do
+		task.wait(1)
+
+		if Time % 10 == 0 then
+			print("Time remaining:", Time)
+		end
+	end
+
+	Map:Destroy()
+
+	-- Players return to the lobby here.
+end
+```
+◆ **GroupService**
+```
+local GroupService = game:GetService("GroupService")
+
+local ADMIN_GROUP_ID = 1200769
+local STAR_GROUP_ID = 4199740
+
+game:GetService("Players").PlayerAdded:Connect(function(Player)
+	local Groups = GroupService:GetGroupsAsync(Player.UserId)
+	--[[ Assuming Player joined 5 groups.
+	   ▼  {
+    		[1] =  ▼  {
+       		["EmblemId"] = 123456789,
+       		["EmblemUrl"] = "http://www.roblox.com/asset/?id=123456789",
+       		["Id"] = 123456789,
+       		["IsInClan"] = false,
+       		["IsPrimary"] = false,
+       		["Name"] = "Example",
+      		 ["Rank"] = 1,
+       		["Role"] = "Fan"
+    		},
+    		[2] =  ▶ {...},
+    		[3] =  ▶ {...},
+    		[4] =  ▶ {...},
+    		[5] =  ▶ {...},
+		  } 
+	]]
+
+	for _, Group in ipairs(Groups) do
+		if Group.Id == ADMIN_GROUP_ID then
+			print(Player.Name, "is Roblox staff!")
+			break
+		elseif Group.Id == STAR_GROUP_ID then
+			print(Player.Name, "is a Star Creator!")
+			break
+		end
+	end
+end)
+```
+◆ **MarketplaceService**
+```
+local MarketplaceService = game:GetService("MarketplaceService")
+
+local Button = script.Parent
+local Name = Button.NameLabel
+local Price = Button.PriceLabel
+
+local GAMEPASS_ID = 123456789
+
+local GamePassInfo = MarketplaceService:GetProductInfoAsync(GAMEPASS_ID, Enum.InfoType.GamePass)
+
+Name.Text = GamePassInfo.Name
+Price.Text = utf8.char(0xE002).." "..GamePassInfo.PriceInRobux
+Button.Image = "rbxthumb://type=GamePass&id=" .. GAMEPASS_ID .. "&w=150&h=150"
+
+Button.Activated:Connect(function()
+	MarketplaceService:PromptGamePassPurchase(
+		game:GetService("Players").LocalPlayer,
+		GAMEPASS_ID
+	)
+end)
+```
+
+---
+
+❖ **They are really everywhere.**
+
+◆  **ModuleScript** (a table that other scripts can use via `require()`)
 
 ```
->**In practically every high-level programming languages, you need libraries. They make them useful and applicable.**
->
->----
->*We can program bespoke libraries tailored for our desired needs*, whether making a game or a Community Resource on the DevForum.
->e.g: DataStore2, Roblox Weapons Kit, Satchel, TopbarPlus, etc...
->----
->There're heaps of ModuleScript tutorials and examples and they're all varying. More on that at the end.
-> Speaking of libraries, check out Roblox Engine Libraries:
-> *⇒ create.roblox.com/docs/en-us/reference/engine/libraries*
-◆  **and so on...**
-------
->❖  **Conclusion**
->**Tables are omnipresent in Lua(u).**
-> It is an integral part of it, *simple yet so powerful*.
-> I hope my code blocks have made you guys realize the true potential of tables and help gain know-how.
->----
-> Learning it is a stepping stone.
-> But to make the most out of it, you must not only know all the nitty-gritty details of it but apply it to pratical usages in Roblox Studio as well, aka making a full-fledge experience.
->----
-> **If you have any suggestion or feedback, comment down below.** 💖 
-> I'm sincerely sorry if some parts aren't well defined. If you need futher explanation, just comment and I'll try my best to help out. 💝
+-- TopbarPlus v3.4.0
+local Icon = require(game:GetService("ReplicatedStorage").Icon)
+
+local FPSIndicator = Icon.new():align("Right")
+local Frames, Elapsed = 0, 0
+
+game:GetService("RunService").RenderStepped:Connect(function(deltaTime)
+	Frames += 1
+	Elapsed += deltaTime
+
+	if Elapsed >= 0.5 then
+		FPSIndicator:setLabel(("%d FPS"):format(math.round(Frames / Elapsed)))
+		Frames = 0
+		Elapsed = 0
+	end
+end)
+```
+
+```
+-- In one of my games, I have a lot of consumable tools that behave the same way.
+
+-- ModuleScript:
+local ConsumableTools = {}
+
+local function ApplyGrip(Tool, Grip)
+	Tool.GripForward = Grip.Forward
+	Tool.GripPos = Grip.Position
+	Tool.GripRight = Grip.Right
+	Tool.GripUp = Grip.Up
+end
+
+function ConsumableTools.Activated(Tool, Config)
+	local Enabled = true
+
+	Tool.Activated:Connect(function()
+		if not Enabled then return end
+		Enabled = false
+
+		ApplyGrip(Tool, Config.ActiveGrip)
+
+		local Handle = Tool:FindFirstChild("Handle")
+		local Sound = Handle and Handle:FindFirstChild(Config.SoundName or "DrinkSound")
+
+		if Sound then Sound:Play() end
+
+		task.wait(Config.ConsumeTime or 1)
+
+		ApplyGrip(Tool, Config.IdleGrip)
+
+		Enabled = true
+	end)
+
+	if Config.EquippedSoundName then
+		Tool.Equipped:Connect(function()
+			local Handle = Tool:FindFirstChild("Handle")
+			local Sound = Handle and Handle:FindFirstChild(Config.EquippedSoundName)
+
+			if Sound then Sound:Play() end
+		end)
+	end
+end
+
+return ConsumableTools
+
+-- In a Tool's Script:
+local ConsumableTools = require(game:GetService("ReplicatedStorage").ToolModules.ConsumableTools)
+local Tool = script.Parent
+
+ConsumableTools.Activated(Tool, {
+	SoundName = "DrinkSound",
+	EquippedSoundName = "OpenSound",
+	ConsumeTime = 1.3,
+	ActiveGrip = {
+		Forward = Vector3.new(-1, 0, 0),
+		Position = Vector3.new(-0.2, 0, -1.5),
+		Right = Vector3.new(0, 0, -1),
+		Up = Vector3.new(0, 1, 0),
+	},
+	IdleGrip = {
+		Forward = Vector3.new(-1, 0, 0),
+		Position = Vector3.new(0.25, 0, 0),
+		Right = Vector3.new(0, 0, -1),
+		Up = Vector3.new(0, 1, 0),
+	},
+})
+```
+
+> **ModuleScript adds another layer of abstraction.** If you write a lot of repetitive code that follows the same logic, then you might benefit from it, especially if you're making a complex game with multiple systems or work with other developers.
+>ㅤ
+> FYI: I'm just a hobbyist developer, so I intentionally keep my game architecture simple. **Adding more abstractions can sometimes make a project harder to understand and maintain**, so I only use them when they provide a clear benefit.
+>ㅤ
+> Just because professional developers on DevForum and YouTube frequently use these abstractions doesn't mean you need them for every project. Sometimes, a bit of duplication or a simple `for loop` is good enough.
+
+
+◆ **Output** (yes you read that right)
+```
+local Player = game:GetService("Players").LocalPlayer
+
+print(Player.Character.Humanoid.Health) --> attempt to index nil with 'Humanoid'
+```
+
+> Remember the word "indexing" at the start? It's basically accessing something using a key (`dictionary["key"]`). Pretty similar to indexing tables, huh? That's not all.
+
+◆ **__index in OOP**
+> At its core, OOP is built out of tables. `MobBehavior`, `Zombie`, and `Skeleton` are all tables created with `{}`.
+```
+local MobBehavior = {}
+
+function MobBehavior:TakeDamage(amount)
+	self.Health -= amount
+end
+
+function MobBehavior:MoveTo(position)
+	print(self.Name .. " is moving to", position)
+end
+
+
+local Zombie = {
+	Name = "Zombie",
+	Health = 100,
+}
+
+local Skeleton = {
+	Name = "Skeleton",
+	Health = 75,
+}
+
+setmetatable(Zombie, {__index = MobBehavior})
+setmetatable(Skeleton, {__index = MobBehavior})
+
+Zombie:TakeDamage(20)
+Skeleton:MoveTo(Vector3.new(0, 0, 0))
+```
+> `Zombie` and `Skeleton` don't actually contain `TakeDamage` or `MoveTo`. When Lua tries to index `Zombie` with `TakeDamage` and can't find it, `__index` tells it to look in `MobBehavior` instead. The same thing happens with `Skeleton`. **This lets many objects share the same methods without copying the same code into every object.**
+>ㅤ
+> Even though `Zombie` and `Skeleton` are tables, we think of them as objects, `TakeDamage` and `MoveTo` as methods, and `MobBehavior` as a prototype. These terms **abstract away the underlying tables** and **help us reason about what the code represents** without having to think about the tables themselves.
+>ㅤ
+> Sounds similar to ModuleScript? **OOP is another layer of abstraction.** It can make systems in a complex game easier to organize, but it also introduces more concepts and indirection. **If you're already dealing with a large codebase and/or working with many developers, that tradeoff is worth it.**
+>ㅤ
+> Again, like ModuleScript, adding more abstractions can sometimes make a project harder to understand and maintain. **This is an example of when not to use OOP**: (no disrespect to the poster)
+```
+devforum.roblox.com/t/how-to-make-a-simple-round-system-with-object-oriented-programming/3126614
+```
+
+---
+
+❖ **Recap**
+
+The reason why I wrote this tutorial is because most, if not all tutorials fail to emphasize the importance of tables. They introduce what tables are and what you can do with them, much like how school teaches a subject without really showing how often you'll actually encounter them in real development.
+
+To be clear, I don't mean any disrespect toward the people who made those tutorials or the way subjects are taught in school. They're teaching the fundamentals, which are important.
+
+I genuinely hope this tutorial gives you a new perspective on scripting in Roblox Studio, helps you feel more comfortable with abstractions, and makes advanced topics like metatables and OOP feel less intimidating.
+
+Have a good day scripting!
