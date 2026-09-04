@@ -11,8 +11,8 @@
 ```
 
 ## Lua Learning
-- [Player Joined/Left Message](md/PlayerJoinedorLeftMessage.md)
-- [Everything about Tables (seriously)](md/EverythingaboutTables(seriously).md)
+- [Player Joined/Left Message](md/PlayerJoinedOrLeftMessage.md)
+- [Everything about Tables (seriously)](md/TablesInPractice.md)
 
 ## Idioms and patterns I don't see much while reading other people's code in free models from Toolbox
 Some examples are taken from my [InventoryGui](https://create.roblox.com/store/asset/6831304252/InventoryGui).
