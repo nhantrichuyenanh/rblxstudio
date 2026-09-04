@@ -2,14 +2,15 @@ https://www.lualearning.org/tutorials/7c77db98-b155-4ac3-a252-0d6e5b3919b9
 
 ❖  **Reason to read this tutorial**
 
-In most, if not all tutorials, tables are taught in a theoretical sense like what is array vs dictionary and table operations like `table.insert`. Even Roblox's documentation approaches tables this way.
-**All of them underplay the role of tables. You use it all the time, even if you don't realize it.**
+In most tutorials, tables are taught in a theoretical sense, such as array vs dictionary and table operations like `table.insert`. Even Roblox's documentation approaches tables this way.
+
+**All of them underplay the role of tables. You use them all the time, even if you don't realize it, and understanding them explains a surprising amount of Luau.**
 
 **Read the description of this tutorial!** They're not just something you create yourself with `{}`. **Roblox APIs constantly return tables as you work with Instances, services, and data.**
 
 ```
 print(type(workspace:GetChildren())) --> table
-workspace.Baseplate --> indexing the Workspace Instance to get its "Baseplate" child, keep the word "indexing" in mind at the end of this tutorial
+workspace.Baseplate --> indexing the Workspace Instance to get its "Baseplate" child, keep the word "indexing" in mind
     -- or --
 workspace["Baseplate"] --> same as workspace.Baseplate, same syntax as dictionary["key"]
 
@@ -19,8 +20,7 @@ GetChildren() returns an array-like table containing the Instance's direct child
 GetDescendants() returns an array-like table containing every descendant of the Instance.
 ]]
 print(game:GetService("Lighting"):GetChildren(), workspace:GetDescendants())
---[[
-Output:
+--[[ Output:
 ▼ {
     [1] = Sky,
     [2] = SunRays,
@@ -71,41 +71,41 @@ ProximityPrompt.Parent = Part
 
 local Tools = game:GetService("ServerStorage"):FindFirstChild("Tools"):GetChildren()
 
-ProximityPrompt.TriggerEnded:Connect(function(Player)
+ProximityPrompt.Triggered:Connect(function(Player)
 	Tools[math.random(1, #Tools)]:Clone().Parent = Player.Backpack
 	Part:FindFirstChildOfClass("Sound"):Play()
 end)
 
 --[[
 table[index] = value
-table[math.random(1, #table)] = random value
+table[math.random(1, #table)] = a random value from table
 
 The same method of picking a random value from an array also applies for a sky changer script, for example.
 ]]
 ```
 ◆  **Rotate Model**
 ```
-local Speed = 1
-local Rotation = 1
 local Model = script.Parent:FindFirstChild("Parts")
-local ModelCFrame = Model:GetModelCFrame()
+local ModelCFrame = Model:GetPivot()
 
-function Rotate(model, paramCFrame)
+local SPEED, ROTATION = 1, 1
+
+while task.wait() do
+	ROTATION += (SPEED / 5)
+	if ROTATION > 360 then ROTATION = 0 end
+	
 	local BaseParts = {}
 
-	for _, v in ipairs(model:GetChildren()) do
+	for _, v in ipairs(Model:GetChildren()) do
 		if v:IsA("BasePart") then table.insert(BaseParts, v) end
 	end
 
 	for _, v in ipairs(BaseParts) do 
-		v.CFrame = paramCFrame * ModelCFrame:ToObjectSpace(v.CFrame)
+		v.CFrame =
+			ModelCFrame
+			* CFrame.Angles(0, math.rad(ROTATION), 0)
+			* ModelCFrame:ToObjectSpace(v.CFrame)
 	end
-end
-
-while task.wait() do
-	Rotation += (Speed/5)
-	if Rotation > 360 then Rotation = 0 end
-	Rotate(Model, ModelCFrame * CFrame.Angles(0, math.rad(Rotation), 0))
 end
 ```
 ◆  **Data Storage / Saving Data**
@@ -124,11 +124,13 @@ local SessionData = {}
 
 -- Load PlayerData from the DataStore.
 Players.PlayerAdded:Connect(function(Player)
-	local leaderstats = Instance.new("Folder", Player)
+	local leaderstats = Instance.new("Folder")
 	leaderstats.Name = "leaderstats"
-	
-	local Coins = Instance.new("IntValue", leaderstats)
+	leaderstats.Parent = Player	
+
+	local Coins = Instance.new("IntValue")
 	Coins.Name = "Coins"
+	Coins.Parent = leaderstats
 	
 	local Success, PlayerData
 	local Attempt = 1
@@ -200,7 +202,7 @@ game:BindToClose(function()
 	end
 end)
 
---[[
+--[[ Example:
 SessionData
 [261]        PlayerData
                └── Coins = 100
@@ -229,13 +231,75 @@ for _, part in CollectionService:GetTagged("KillBrick") do
 	end)
 end
 
--- Or you can use GetAttribute no need for CollectionService :P
+-- Or you can use GetAttribute instead :P
 ```
-◆ **Players** (Murder Mystery 2, Piggy, Flee the Facility, Hide and Seek Extreme)
+◆ **GroupService**
+```
+local GroupService = game:GetService("GroupService")
+
+local ADMIN_GROUP_ID = 1200769
+local STAR_GROUP_ID = 4199740
+
+game:GetService("Players").PlayerAdded:Connect(function(Player)
+	local Groups = GroupService:GetGroupsAsync(Player.UserId)
+
+	for _, Group in ipairs(Groups) do
+		if Group.Id == ADMIN_GROUP_ID then
+			print(Player.Name, "is Roblox staff!")
+			break
+		elseif Group.Id == STAR_GROUP_ID then
+			print(Player.Name, "is a Star Creator!")
+			break
+		end
+	end
+end)
+
+--[[ Output:
+▼  {
+	[1] =  ▼  {
+	   ["EmblemId"] = 6811439979,
+	   ["EmblemUrl"] = "http://www.roblox.com/asset/?id=6811439979",
+	   ["Id"] = 7,
+	   ["IsInClan"] = false,
+	   ["IsPrimary"] = false,
+	   ["Name"] = "Roblox",
+	   ["Rank"] = 1,
+	   ["Role"] = "Member"
+	},
+	[2] =  ▶ {...},
+	[3] =  ▶ {...},
+	[4] =  ▶ {...},
+	[5] =  ▶ {...}
+}
+]]
+```
+◆ **MarketplaceService**
+```
+local MarketplaceService = game:GetService("MarketplaceService")
+
+local Button = script.Parent
+local Name = Button.NameLabel
+local Price = Button.PriceLabel
+
+local GAMEPASS_ID = 123456789
+
+local GamePassInfo = MarketplaceService:GetProductInfoAsync(GAMEPASS_ID, Enum.InfoType.GamePass)
+
+Name.Text = GamePassInfo.Name
+Price.Text = string.format("%s %d", utf8.char(0xE002), GamePassInfo.PriceInRobux)
+Button.Image = "rbxthumb://type=GamePass&id="..GAMEPASS_ID.."&w=150&h=150"
+
+Button.Activated:Connect(function()
+	MarketplaceService:PromptGamePassPurchase(
+		game:GetService("Players").LocalPlayer,
+		GAMEPASS_ID
+	)
+end)
+```
+◆ **Players** (Murder Mystery 2, Piggy, Flee the Facility, Hide and Seek Extreme, etc.)
 ```
 local Players = game:GetService("Players")
 
-local Maps = game:GetService("ServerStorage"):WaitForChild("Maps")
 local MIN_PLAYERS, ROUND_TIME, INTERMISSION_TIME = 2, 120, 15
 
 while true do
@@ -250,7 +314,7 @@ while true do
 	end
 
 	-- Pick a random map.
-	local AvailableMaps = Maps:GetChildren()
+	local AvailableMaps = game:GetService("ServerStorage"):WaitForChild("Maps"):GetChildren()
 	local Map = AvailableMaps[math.random(1, #AvailableMaps)]:Clone()
 	Map.Parent = workspace
 
@@ -283,71 +347,17 @@ while true do
 	end
 
 	Map:Destroy()
+	
+	-- Players return to the lobby.
+	local LobbySpawn = workspace:WaitForChild("LobbySpawn")
 
-	-- Players return to the lobby here.
-end
-```
-◆ **GroupService**
-```
-local GroupService = game:GetService("GroupService")
+	for _, Player in ipairs(Players:GetPlayers()) do
+		Player:SetAttribute("Role", nil)
 
-local ADMIN_GROUP_ID = 1200769
-local STAR_GROUP_ID = 4199740
-
-game:GetService("Players").PlayerAdded:Connect(function(Player)
-	local Groups = GroupService:GetGroupsAsync(Player.UserId)
-	--[[ Assuming Player joined 5 groups.
-	   ▼  {
-    		[1] =  ▼  {
-       		["EmblemId"] = 123456789,
-       		["EmblemUrl"] = "http://www.roblox.com/asset/?id=123456789",
-       		["Id"] = 123456789,
-       		["IsInClan"] = false,
-       		["IsPrimary"] = false,
-       		["Name"] = "Example",
-      		 ["Rank"] = 1,
-       		["Role"] = "Fan"
-    		},
-    		[2] =  ▶ {...},
-    		[3] =  ▶ {...},
-    		[4] =  ▶ {...},
-    		[5] =  ▶ {...},
-		  } 
-	]]
-
-	for _, Group in ipairs(Groups) do
-		if Group.Id == ADMIN_GROUP_ID then
-			print(Player.Name, "is Roblox staff!")
-			break
-		elseif Group.Id == STAR_GROUP_ID then
-			print(Player.Name, "is a Star Creator!")
-			break
-		end
+		local Character = Player.Character
+		if Character then Character:PivotTo(LobbySpawn.CFrame) end
 	end
-end)
-```
-◆ **MarketplaceService**
-```
-local MarketplaceService = game:GetService("MarketplaceService")
-
-local Button = script.Parent
-local Name = Button.NameLabel
-local Price = Button.PriceLabel
-
-local GAMEPASS_ID = 123456789
-
-local GamePassInfo = MarketplaceService:GetProductInfoAsync(GAMEPASS_ID, Enum.InfoType.GamePass)
-
-Name.Text = GamePassInfo.Name
-Price.Text = utf8.char(0xE002).." "..GamePassInfo.PriceInRobux
-Button.Image = "rbxthumb://type=GamePass&id=" .. GAMEPASS_ID .. "&w=150&h=150"
-
-Button.Activated:Connect(function()
-	MarketplaceService:PromptGamePassPurchase(
-		game:GetService("Players").LocalPlayer,
-		GAMEPASS_ID
-	)
-end)
+end
 ```
 
 ---
@@ -355,7 +365,6 @@ end)
 ❖ **They are really everywhere.**
 
 ◆  **ModuleScript** (a table that other scripts can use via `require()`)
-
 ```
 -- TopbarPlus v3.4.0
 local Icon = require(game:GetService("ReplicatedStorage").Icon)
@@ -443,13 +452,11 @@ ConsumableTools.Activated(Tool, {
 	},
 })
 ```
-
 > **ModuleScript adds another layer of abstraction.** If you write a lot of repetitive code that follows the same logic, then you might benefit from it, especially if you're making a complex game with multiple systems or work with other developers.
 >ㅤ
 > FYI: I'm just a hobbyist developer, so I intentionally keep my game architecture simple. **Adding more abstractions can sometimes make a project harder to understand and maintain**, so I only use them when they provide a clear benefit.
 >ㅤ
 > Just because professional developers on DevForum and YouTube frequently use these abstractions doesn't mean you need them for every project. Sometimes, a bit of duplication or a simple `for loop` is good enough.
-
 
 ◆ **Output** (yes you read that right)
 ```
@@ -457,7 +464,6 @@ local Player = game:GetService("Players").LocalPlayer
 
 print(Player.Character.Humanoid.Health) --> attempt to index nil with 'Humanoid'
 ```
-
 > Remember the word "indexing" at the start? It's basically accessing something using a key (`dictionary["key"]`). Pretty similar to indexing tables, huh? That's not all.
 
 ◆ **__index in OOP**
@@ -496,7 +502,7 @@ Skeleton:MoveTo(Vector3.new(0, 0, 0))
 >ㅤ
 > Sounds similar to ModuleScript? **OOP is another layer of abstraction.** It can make systems in a complex game easier to organize, but it also introduces more concepts and indirection. **If you're already dealing with a large codebase and/or working with many developers, that tradeoff is worth it.**
 >ㅤ
-> Again, like ModuleScript, adding more abstractions can sometimes make a project harder to understand and maintain. **This is an example of when not to use OOP**: (no disrespect to the poster)
+> Again, like ModuleScript, adding more abstractions can sometimes make a project harder to understand and maintain. **This is an example of when not to use OOP**: 
 ```
 devforum.roblox.com/t/how-to-make-a-simple-round-system-with-object-oriented-programming/3126614
 ```
@@ -505,10 +511,10 @@ devforum.roblox.com/t/how-to-make-a-simple-round-system-with-object-oriented-pro
 
 ❖ **Recap**
 
-The reason why I wrote this tutorial is because most, if not all tutorials fail to emphasize the importance of tables. They introduce what tables are and what you can do with them, much like how school teaches a subject without really showing how often you'll actually encounter them in real development.
+At the start of this tutorial, I said _"In most tutorials, tables are taught in a theoretical sense [...]"_ To be clear, **I don't mean any disrespect toward the people who made those tutorials**. **They're teaching the fundamentals, which are important.**
 
-To be clear, I don't mean any disrespect toward the people who made those tutorials or the way subjects are taught in school. They're teaching the fundamentals, which are important.
+This is exactly why I wrote this tutorial: to shine a light on the role tables actually play beyond simply storing and manipulating arrays and dictionaries.
 
-I genuinely hope this tutorial gives you a new perspective on scripting in Roblox Studio, helps you feel more comfortable with abstractions, and makes advanced topics like metatables and OOP feel less intimidating.
+I genuinely hope this tutorial gives you **a new perspective on scripting in Roblox Studio**, helps you **feel more comfortable with abstractions**, and makes advanced topics like **metatables and OOP feel less intimidating**.
 
 Have a good day scripting!
