@@ -38,6 +38,7 @@ print(game:GetService("Lighting"):GetChildren(), workspace:GetDescendants())
 }
 ]]
 ```
+> Because this tutorial is _Tables In Practice_ (duh), **I’m assuming you already understand the basic theory of tables**. If you don't know the fundamentals, click out of this tutorial.
 
 ---
 
@@ -202,8 +203,12 @@ game:BindToClose(function()
 	end
 end)
 
---[[ Example:
-SessionData
+--[[
+for UserId, PlayerData in pairs(SessionData) do
+	print(UserId, PlayerData.Coins)
+end
+
+Output of SessionData:
 [261]        PlayerData
                └── Coins = 100
 [100022]     PlayerData
@@ -246,15 +251,13 @@ game:GetService("Players").PlayerAdded:Connect(function(Player)
 	for _, Group in ipairs(Groups) do
 		if Group.Id == ADMIN_GROUP_ID then
 			print(Player.Name, "is Roblox staff!")
-			break
 		elseif Group.Id == STAR_GROUP_ID then
 			print(Player.Name, "is a Star Creator!")
-			break
 		end
 	end
 end)
 
---[[ Output:
+--[[ Example output of print(GroupService:GetGroupsAsync(Player.UserId)):
 ▼  {
 	[1] =  ▼  {
 	   ["EmblemId"] = 6811439979,
@@ -479,7 +482,6 @@ function MobBehavior:MoveTo(position)
 	print(self.Name .. " is moving to", position)
 end
 
-
 local Zombie = {
 	Name = "Zombie",
 	Health = 100,
@@ -511,7 +513,7 @@ devforum.roblox.com/t/how-to-make-a-simple-round-system-with-object-oriented-pro
 
 ❖ **Recap**
 
-At the start of this tutorial, I said _"In most tutorials, tables are taught in a theoretical sense [...]"_ To be clear, **I don't mean any disrespect toward the people who made those tutorials**. **They're teaching the fundamentals, which are important.**
+At the start of this tutorial, I claimed that _"In most tutorials, tables are taught in a theoretical sense [...]"_ To be clear, **I don't mean any disrespect toward the people who made those tutorials**. **They teach the fundamentals, which are important.**
 
 This is exactly why I wrote this tutorial: to shine a light on the role tables actually play beyond simply storing and manipulating arrays and dictionaries.
 
