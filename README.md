@@ -70,6 +70,24 @@ end
 EquipTool(Tool)
 ```
 
+## Shortcuts
+| Hotkey | Action |
+| --- | --- |
+| F5 | Start Game |
+| Shift + F5 | Stop Game |
+| Ctrl + P | Search Object/Script |
+| Ctrl + Alt + P | Insert Script |
+| Ctrl + Alt + O | Open Output Window |
+| Ctrl + Shift + R | Rename Variable/Object |
+| Ctrl + Shift + D | Duplicate Line |
+| Ctrl + D | Multi-Select Next Match |
+| Ctrl + Shift + [ | Collapse Current Fold |
+| Ctrl + Shift + E | Collapse All Folds |
+| Ctrl + E | Expand All Folds |
+| Ctrl + Plus (+) | Zoom In |
+| Ctrl + Minus (-) | Zoom Out |
+| Ctrl + 0 | Reset Zoom |
+
 ---
 
 ## Bookmarks 
