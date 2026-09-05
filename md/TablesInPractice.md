@@ -1,6 +1,8 @@
-https://www.lualearning.org/tutorials/7c77db98-b155-4ac3-a252-0d6e5b3919b9
+> https://www.lualearning.org/tutorials/7c77db98-b155-4ac3-a252-0d6e5b3919b9
 
-❖  **Reason to read this tutorial**
+> Reformatted for GFM.
+
+❖  **Reason to read this tutorial**
 
 In most tutorials, tables are taught in a theoretical sense, such as array vs dictionary and table operations like `table.insert`. Even Roblox's documentation approaches tables this way.
 
@@ -11,7 +13,7 @@ In most tutorials, tables are taught in a theoretical sense, such as array vs di
 ```
 print(type(workspace:GetChildren())) --> table
 workspace.Baseplate --> indexing the Workspace Instance to get its "Baseplate" child, keep the word "indexing" in mind
-    -- or --
+    -- or --
 workspace["Baseplate"] --> same as workspace.Baseplate, same syntax as dictionary["key"]
 
 --[[
@@ -22,19 +24,19 @@ GetDescendants() returns an array-like table containing every descendant of the 
 print(game:GetService("Lighting"):GetChildren(), workspace:GetDescendants())
 --[[ Output:
 ▼ {
-    [1] = Sky,
-    [2] = SunRays,
-    [3] = Atmosphere,
-    [4] = Bloom,
-    [5] = DepthOfField
+    [1] = Sky,
+    [2] = SunRays,
+    [3] = Atmosphere,
+    [4] = Bloom,
+    [5] = DepthOfField
 }
 ▼ {
-    [1] = Camera,
-    [2] = Baseplate,
-    [3] = Texture,
-    [4] = Terrain,
-    [5] = SpawnLocation,
-    [6] = Decal
+    [1] = Camera,
+    [2] = Baseplate,
+    [3] = Texture,
+    [4] = Terrain,
+    [5] = SpawnLocation,
+    [6] = Decal
 }
 ]]
 ```
@@ -44,17 +46,17 @@ print(game:GetService("Lighting"):GetChildren(), workspace:GetDescendants())
 
 ❖ **Practical examples**
 
-◆  **Dance Floor**
+◆  **Dance Floor**
 ```
 local Tiles = script.Parent:FindFirstChild("Tiles"):GetChildren() 
 
 while task.wait(1) do
-	for _, Tile in ipairs(Tiles) do -- ipairs because Tiles is an array.
-		Tile.Color = Color3.new(math.random(), math.random(), math.random())
-	end
+    for _, Tile in ipairs(Tiles) do -- ipairs because Tiles is an array.
+        Tile.Color = Color3.new(math.random(), math.random(), math.random())
+    end
 end
 ```
-◆  **Get Random Tool**
+◆  **Get Random Tool**
 ```
 local Part = script.Parent
 
@@ -73,8 +75,8 @@ ProximityPrompt.Parent = Part
 local Tools = game:GetService("ServerStorage"):FindFirstChild("Tools"):GetChildren()
 
 ProximityPrompt.Triggered:Connect(function(Player)
-	Tools[math.random(1, #Tools)]:Clone().Parent = Player.Backpack
-	Part:FindFirstChildOfClass("Sound"):Play()
+    Tools[math.random(1, #Tools)]:Clone().Parent = Player.Backpack
+    Part:FindFirstChildOfClass("Sound"):Play()
 end)
 
 --[[
@@ -84,7 +86,7 @@ table[math.random(1, #table)] = a random value from table
 The same method of picking a random value from an array also applies for a sky changer script, for example.
 ]]
 ```
-◆  **Rotate Model**
+◆  **Rotate Model**
 ```
 local Model = script.Parent:FindFirstChild("Parts")
 local ModelCFrame = Model:GetPivot()
@@ -92,24 +94,24 @@ local ModelCFrame = Model:GetPivot()
 local SPEED, ROTATION = 1, 1
 
 while task.wait() do
-	ROTATION += (SPEED / 5)
-	if ROTATION > 360 then ROTATION = 0 end
-	
-	local BaseParts = {}
+    ROTATION += (SPEED / 5)
+    if ROTATION > 360 then ROTATION = 0 end
+    
+    local BaseParts = {}
 
-	for _, v in ipairs(Model:GetChildren()) do
-		if v:IsA("BasePart") then table.insert(BaseParts, v) end
-	end
+    for _, v in ipairs(Model:GetChildren()) do
+        if v:IsA("BasePart") then table.insert(BaseParts, v) end
+    end
 
-	for _, v in ipairs(BaseParts) do 
-		v.CFrame =
-			ModelCFrame
-			* CFrame.Angles(0, math.rad(ROTATION), 0)
-			* ModelCFrame:ToObjectSpace(v.CFrame)
-	end
+    for _, v in ipairs(BaseParts) do 
+        v.CFrame =
+            ModelCFrame
+            * CFrame.Angles(0, math.rad(ROTATION), 0)
+            * ModelCFrame:ToObjectSpace(v.CFrame)
+    end
 end
 ```
-◆  **Data Storage / Saving Data**
+◆  **Data Storage / Saving Data**
 ```
 --[[
 DataStoreService is the simplest example and official way of saving data.
@@ -125,66 +127,66 @@ local SessionData = {}
 
 -- Load PlayerData from the DataStore.
 Players.PlayerAdded:Connect(function(Player)
-	local leaderstats = Instance.new("Folder")
-	leaderstats.Name = "leaderstats"
-	leaderstats.Parent = Player	
+    local leaderstats = Instance.new("Folder")
+    leaderstats.Name = "leaderstats"
+    leaderstats.Parent = Player 
 
-	local Coins = Instance.new("IntValue")
-	Coins.Name = "Coins"
-	Coins.Parent = leaderstats
-	
-	local Success, PlayerData
-	local Attempt = 1
+    local Coins = Instance.new("IntValue")
+    Coins.Name = "Coins"
+    Coins.Parent = leaderstats
+    
+    local Success, PlayerData
+    local Attempt = 1
 
-	repeat
-		Success, PlayerData = pcall(function()
-			return Database:GetAsync(Player.UserId)
-		end)
-		Attempt += 1
-	until Success or Attempt == 5
-	
-	if Success then
-		-- No saved data means this is a new player, so give them default data.
-		if not PlayerData then
-			PlayerData = {
-				Coins = 0
-			}
-		end
+    repeat
+        Success, PlayerData = pcall(function()
+            return Database:GetAsync(Player.UserId)
+        end)
+        Attempt += 1
+    until Success or Attempt == 5
+    
+    if Success then
+        -- No saved data means this is a new player, so give them default data.
+        if not PlayerData then
+            PlayerData = {
+                Coins = 0
+            }
+        end
 
-		-- Store the player's data in our SessionData dictionary.
-		-- The player's UserId is the key, and their PlayerData table is the value.
-		SessionData[Player.UserId] = PlayerData
-	else
-		Player:Kick("Your data couldn't be loaded.")
-	end
-	
-	-- Get the player's Coins from their data table.
-	Coins.Value = SessionData[Player.UserId].Coins
+        -- Store the player's data in our SessionData dictionary.
+        -- The player's UserId is the key, and their PlayerData table is the value.
+        SessionData[Player.UserId] = PlayerData
+    else
+        Player:Kick("Your data couldn't be loaded.")
+    end
+    
+    -- Get the player's Coins from their data table.
+    Coins.Value = SessionData[Player.UserId].Coins
 
-	-- Keep the data table updated whenever the leaderstat changes.
-	Coins.Changed:Connect(function()
-		SessionData[Player.UserId].Coins = Coins.Value
-	end)
+    -- Keep the data table updated whenever the leaderstat changes.
+    Coins.Changed:Connect(function()
+        SessionData[Player.UserId].Coins = Coins.Value
+    end)
 end)
 
 
 -- Save PlayerData to the DataStore when a player leaves.
 local function PlayerRemoving(Player)
-	-- Only save if we successfully loaded data for this player.
-	if SessionData[Player.UserId] then
-		local Success, ErrorMessage
-		local Attempt = 1
+    -- Only save if we successfully loaded data for this player.
+    if SessionData[Player.UserId] then
+        local Success, ErrorMessage
+        local Attempt = 1
 
-		repeat
-			Success, ErrorMessage = pcall(function()
-				Database:SetAsync(
-					Player.UserId,
-					SessionData[Player.UserId]
-				)
-			end)
-			Attempt += 1
-		until Success or Attempt == 5
-	end
+        repeat
+            Success, ErrorMessage = pcall(function()
+                Database:SetAsync(
+                    Player.UserId,
+                    SessionData[Player.UserId]
+                )
+            end)
+            Attempt += 1
+        until Success or Attempt == 5
+    end
 end
 
 Players.PlayerRemoving:Connect(PlayerRemoving)
@@ -192,29 +194,29 @@ Players.PlayerRemoving:Connect(PlayerRemoving)
 
 -- Save all players' data when the server shuts down.
 game:BindToClose(function()
-	if game:GetService("RunService"):IsStudio() then
-		return
-	end
+    if game:GetService("RunService"):IsStudio() then
+        return
+    end
 
-	for _, Player in ipairs(Players:GetPlayers()) do
-		task.spawn(function()
-			PlayerRemoving(Player)
-		end)
-	end
+    for _, Player in ipairs(Players:GetPlayers()) do
+        task.spawn(function()
+            PlayerRemoving(Player)
+        end)
+    end
 end)
 
 --[[
 for UserId, PlayerData in pairs(SessionData) do
-	print(UserId, PlayerData.Coins)
+    print(UserId, PlayerData.Coins)
 end
 
 Output of SessionData:
-[261]        PlayerData
-               └── Coins = 100
-[100022]     PlayerData
-               └── Coins = 250
-[14413460]   PlayerData
-               └── Coins = 50
+[261]        PlayerData
+               └── Coins = 100
+[100022]     PlayerData
+               └── Coins = 250
+[14413460]   PlayerData
+               └── Coins = 50
 ]]
 ```
 
@@ -229,11 +231,11 @@ Output of SessionData:
 local CollectionService = game:GetService("CollectionService")
 
 for _, part in CollectionService:GetTagged("KillBrick") do
-	part.Touched:Connect(function(hit)
-		if hit.Parent:FindFirstChild("Humanoid") then
-			hit.Parent.Humanoid.Health = 0
-		end
-	end)
+    part.Touched:Connect(function(hit)
+        if hit.Parent:FindFirstChild("Humanoid") then
+            hit.Parent.Humanoid.Health = 0
+        end
+    end)
 end
 
 -- Or you can use GetAttribute instead :P
@@ -246,33 +248,33 @@ local ADMIN_GROUP_ID = 1200769
 local STAR_GROUP_ID = 4199740
 
 game:GetService("Players").PlayerAdded:Connect(function(Player)
-	local Groups = GroupService:GetGroupsAsync(Player.UserId)
+    local Groups = GroupService:GetGroupsAsync(Player.UserId)
 
-	for _, Group in ipairs(Groups) do
-		if Group.Id == ADMIN_GROUP_ID then
-			print(Player.Name, "is Roblox staff!")
-		elseif Group.Id == STAR_GROUP_ID then
-			print(Player.Name, "is a Star Creator!")
-		end
-	end
+    for _, Group in ipairs(Groups) do
+        if Group.Id == ADMIN_GROUP_ID then
+            print(Player.Name, "is Roblox staff!")
+        elseif Group.Id == STAR_GROUP_ID then
+            print(Player.Name, "is a Star Creator!")
+        end
+    end
 end)
 
 --[[ Output of print(GroupService:GetGroupsAsync(Player.UserId)):
-▼  {
-	[1] =  ▼  {
-	   ["EmblemId"] = 6811439979,
-	   ["EmblemUrl"] = "http://www.roblox.com/asset/?id=6811439979",
-	   ["Id"] = 7,
-	   ["IsInClan"] = false,
-	   ["IsPrimary"] = false,
-	   ["Name"] = "Roblox",
-	   ["Rank"] = 1,
-	   ["Role"] = "Member"
-	},
-	[2] =  ▶ {...},
-	[3] =  ▶ {...},
-	[4] =  ▶ {...},
-	[5] =  ▶ {...}
+▼  {
+    [1] =  ▼  {
+       ["EmblemId"] = 6811439979,
+       ["EmblemUrl"] = "http://www.roblox.com/asset/?id=6811439979",
+       ["Id"] = 7,
+       ["IsInClan"] = false,
+       ["IsPrimary"] = false,
+       ["Name"] = "Roblox",
+       ["Rank"] = 1,
+       ["Role"] = "Member"
+    },
+    [2] =  ▶ {...},
+    [3] =  ▶ {...},
+    [4] =  ▶ {...},
+    [5] =  ▶ {...}
 }
 ]]
 ```
@@ -293,10 +295,10 @@ Price.Text = string.format("%s %d", utf8.char(0xE002), GamePassInfo.PriceInRobux
 Button.Image = "rbxthumb://type=GamePass&id="..GAMEPASS_ID.."&w=150&h=150"
 
 Button.Activated:Connect(function()
-	MarketplaceService:PromptGamePassPurchase(
-		game:GetService("Players").LocalPlayer,
-		GAMEPASS_ID
-	)
+    MarketplaceService:PromptGamePassPurchase(
+        game:GetService("Players").LocalPlayer,
+        GAMEPASS_ID
+    )
 end)
 ```
 ◆ **Players** (Murder Mystery 2, Piggy, Flee the Facility, Hide and Seek Extreme, etc.)
@@ -306,60 +308,60 @@ local Players = game:GetService("Players")
 local MIN_PLAYERS, ROUND_TIME, INTERMISSION_TIME = 2, 120, 15
 
 while true do
-	-- Wait until there are enough players to start a round.
-	repeat task.wait(1)
-	until #Players:GetPlayers() >= MIN_PLAYERS
+    -- Wait until there are enough players to start a round.
+    repeat task.wait(1)
+    until #Players:GetPlayers() >= MIN_PLAYERS
 
-	-- Intermission
-	for Time = INTERMISSION_TIME, 0, -1 do
-		print("Round starting in:", Time)
-		task.wait(1)
-	end
+    -- Intermission
+    for Time = INTERMISSION_TIME, 0, -1 do
+        print("Round starting in:", Time)
+        task.wait(1)
+    end
 
-	-- Pick a random map.
-	local AvailableMaps = game:GetService("ServerStorage"):WaitForChild("Maps"):GetChildren()
-	local Map = AvailableMaps[math.random(1, #AvailableMaps)]:Clone()
-	Map.Parent = workspace
+    -- Pick a random map.
+    local AvailableMaps = game:GetService("ServerStorage"):WaitForChild("Maps"):GetChildren()
+    local Map = AvailableMaps[math.random(1, #AvailableMaps)]:Clone()
+    Map.Parent = workspace
 
-	local PlayersInRound = Players:GetPlayers()
+    local PlayersInRound = Players:GetPlayers()
 
-	-- Pick one random player to be the Seeker.
-	local Seeker = PlayersInRound[math.random(1, #PlayersInRound)]
+    -- Pick one random player to be the Seeker.
+    local Seeker = PlayersInRound[math.random(1, #PlayersInRound)]
 
-	for _, Player in ipairs(PlayersInRound) do
-		local Character = Player.Character
+    for _, Player in ipairs(PlayersInRound) do
+        local Character = Player.Character
 
-		if Character then
-			if Player == Seeker then
-				Player:SetAttribute("Role", "Seeker")
-				Character:PivotTo(Map.SeekerSpawn.CFrame)
-			else
-				Player:SetAttribute("Role", "Hider")
-				Character:PivotTo(Map.HiderSpawn.CFrame)
-			end
-		end
-	end
+        if Character then
+            if Player == Seeker then
+                Player:SetAttribute("Role", "Seeker")
+                Character:PivotTo(Map.SeekerSpawn.CFrame)
+            else
+                Player:SetAttribute("Role", "Hider")
+                Character:PivotTo(Map.HiderSpawn.CFrame)
+            end
+        end
+    end
 
-	-- Run the round timer.
-	for Time = ROUND_TIME, 0, -1 do
-		task.wait(1)
+    -- Run the round timer.
+    for Time = ROUND_TIME, 0, -1 do
+        task.wait(1)
 
-		if Time % 10 == 0 then
-			print("Time remaining:", Time)
-		end
-	end
+        if Time % 10 == 0 then
+            print("Time remaining:", Time)
+        end
+    end
 
-	Map:Destroy()
-	
-	-- Players return to the lobby.
-	local LobbySpawn = workspace:WaitForChild("LobbySpawn")
+    Map:Destroy()
+    
+    -- Players return to the lobby.
+    local LobbySpawn = workspace:WaitForChild("LobbySpawn")
 
-	for _, Player in ipairs(Players:GetPlayers()) do
-		Player:SetAttribute("Role", nil)
+    for _, Player in ipairs(Players:GetPlayers()) do
+        Player:SetAttribute("Role", nil)
 
-		local Character = Player.Character
-		if Character then Character:PivotTo(LobbySpawn.CFrame) end
-	end
+        local Character = Player.Character
+        if Character then Character:PivotTo(LobbySpawn.CFrame) end
+    end
 end
 ```
 
@@ -367,7 +369,7 @@ end
 
 ❖ **They are really everywhere.**
 
-◆  **ModuleScript** (a table that other scripts can use via `require()`)
+◆  **ModuleScript** (a table that other scripts can use via `require()`)
 ```
 -- TopbarPlus v3.4.0
 local Icon = require(game:GetService("ReplicatedStorage").Icon)
@@ -376,14 +378,14 @@ local FPSIndicator = Icon.new():align("Right")
 local Frames, Elapsed = 0, 0
 
 game:GetService("RunService").RenderStepped:Connect(function(deltaTime)
-	Frames += 1
-	Elapsed += deltaTime
+    Frames += 1
+    Elapsed += deltaTime
 
-	if Elapsed >= 0.5 then
-		FPSIndicator:setLabel(("%d FPS"):format(math.round(Frames / Elapsed)))
-		Frames = 0
-		Elapsed = 0
-	end
+    if Elapsed >= 0.5 then
+        FPSIndicator:setLabel(("%d FPS"):format(math.round(Frames / Elapsed)))
+        Frames = 0
+        Elapsed = 0
+    end
 end)
 ```
 
@@ -394,41 +396,41 @@ end)
 local ConsumableTools = {}
 
 local function ApplyGrip(Tool, Grip)
-	Tool.GripForward = Grip.Forward
-	Tool.GripPos = Grip.Position
-	Tool.GripRight = Grip.Right
-	Tool.GripUp = Grip.Up
+    Tool.GripForward = Grip.Forward
+    Tool.GripPos = Grip.Position
+    Tool.GripRight = Grip.Right
+    Tool.GripUp = Grip.Up
 end
 
 function ConsumableTools.Activated(Tool, Config)
-	local Enabled = true
+    local Enabled = true
 
-	Tool.Activated:Connect(function()
-		if not Enabled then return end
-		Enabled = false
+    Tool.Activated:Connect(function()
+        if not Enabled then return end
+        Enabled = false
 
-		ApplyGrip(Tool, Config.ActiveGrip)
+        ApplyGrip(Tool, Config.ActiveGrip)
 
-		local Handle = Tool:FindFirstChild("Handle")
-		local Sound = Handle and Handle:FindFirstChild(Config.SoundName or "DrinkSound")
+        local Handle = Tool:FindFirstChild("Handle")
+        local Sound = Handle and Handle:FindFirstChild(Config.SoundName or "DrinkSound")
 
-		if Sound then Sound:Play() end
+        if Sound then Sound:Play() end
 
-		task.wait(Config.ConsumeTime or 1)
+        task.wait(Config.ConsumeTime or 1)
 
-		ApplyGrip(Tool, Config.IdleGrip)
+        ApplyGrip(Tool, Config.IdleGrip)
 
-		Enabled = true
-	end)
+        Enabled = true
+    end)
 
-	if Config.EquippedSoundName then
-		Tool.Equipped:Connect(function()
-			local Handle = Tool:FindFirstChild("Handle")
-			local Sound = Handle and Handle:FindFirstChild(Config.EquippedSoundName)
+    if Config.EquippedSoundName then
+        Tool.Equipped:Connect(function()
+            local Handle = Tool:FindFirstChild("Handle")
+            local Sound = Handle and Handle:FindFirstChild(Config.EquippedSoundName)
 
-			if Sound then Sound:Play() end
-		end)
-	end
+            if Sound then Sound:Play() end
+        end)
+    end
 end
 
 return ConsumableTools
@@ -438,27 +440,27 @@ local ConsumableTools = require(game:GetService("ReplicatedStorage").ToolModules
 local Tool = script.Parent
 
 ConsumableTools.Activated(Tool, {
-	SoundName = "DrinkSound",
-	EquippedSoundName = "OpenSound",
-	ConsumeTime = 1.3,
-	ActiveGrip = {
-		Forward = Vector3.new(-1, 0, 0),
-		Position = Vector3.new(-0.2, 0, -1.5),
-		Right = Vector3.new(0, 0, -1),
-		Up = Vector3.new(0, 1, 0),
-	},
-	IdleGrip = {
-		Forward = Vector3.new(-1, 0, 0),
-		Position = Vector3.new(0.25, 0, 0),
-		Right = Vector3.new(0, 0, -1),
-		Up = Vector3.new(0, 1, 0),
-	},
+    SoundName = "DrinkSound",
+    EquippedSoundName = "OpenSound",
+    ConsumeTime = 1.3,
+    ActiveGrip = {
+        Forward = Vector3.new(-1, 0, 0),
+        Position = Vector3.new(-0.2, 0, -1.5),
+        Right = Vector3.new(0, 0, -1),
+        Up = Vector3.new(0, 1, 0),
+    },
+    IdleGrip = {
+        Forward = Vector3.new(-1, 0, 0),
+        Position = Vector3.new(0.25, 0, 0),
+        Right = Vector3.new(0, 0, -1),
+        Up = Vector3.new(0, 1, 0),
+    },
 })
 ```
 > **ModuleScript adds another layer of abstraction.** If you write a lot of repetitive code that follows the same logic, then you might benefit from it, especially if you're making a complex game with multiple systems or work with other developers.
->ㅤ
+
 > FYI: I'm just a hobbyist developer, so I intentionally keep my game architecture simple. **Adding more abstractions can sometimes make a project harder to understand and maintain**, so I only use them when they provide a clear benefit.
->ㅤ
+
 > Just because professional developers on DevForum and YouTube frequently use these abstractions doesn't mean you need them for every project. Sometimes, a bit of duplication or a simple `for loop` is good enough.
 
 ◆ **Output** (yes you read that right)
@@ -475,21 +477,21 @@ print(Player.Character.Humanoid.Health) --> attempt to index nil with 'Humanoid'
 local MobBehavior = {}
 
 function MobBehavior:TakeDamage(amount)
-	self.Health -= amount
+    self.Health -= amount
 end
 
 function MobBehavior:MoveTo(position)
-	print(self.Name .. " is moving to", position)
+    print(self.Name .. " is moving to", position)
 end
 
 local Zombie = {
-	Name = "Zombie",
-	Health = 100,
+    Name = "Zombie",
+    Health = 100,
 }
 
 local Skeleton = {
-	Name = "Skeleton",
-	Health = 75,
+    Name = "Skeleton",
+    Health = 75,
 }
 
 setmetatable(Zombie, {__index = MobBehavior})
@@ -499,11 +501,11 @@ Zombie:TakeDamage(20)
 Skeleton:MoveTo(Vector3.new(0, 0, 0))
 ```
 > `Zombie` and `Skeleton` don't actually contain `TakeDamage` or `MoveTo`. When Lua tries to index `Zombie` with `TakeDamage` and can't find it, `__index` tells it to look in `MobBehavior` instead. The same thing happens with `Skeleton`. **This lets many objects share the same methods without copying the same code into every object.**
->ㅤ
+
 > Even though `Zombie` and `Skeleton` are tables, we think of them as objects, `TakeDamage` and `MoveTo` as methods, and `MobBehavior` as a prototype. These terms **abstract away the underlying tables** and **help us reason about what the code represents** without having to think about the tables themselves.
->ㅤ
+
 > Sounds similar to ModuleScript? **OOP is another layer of abstraction.** It can make systems in a complex game easier to organize, but it also introduces more concepts and indirection. **If you're already dealing with a large codebase and/or working with many developers, that tradeoff is worth it.**
->ㅤ
+
 > Again, like ModuleScript, adding more abstractions can sometimes make a project harder to understand and maintain. **This is an example of when not to use OOP**: 
 ```
 devforum.roblox.com/t/how-to-make-a-simple-round-system-with-object-oriented-programming/3126614
