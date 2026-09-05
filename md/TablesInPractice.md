@@ -257,7 +257,7 @@ game:GetService("Players").PlayerAdded:Connect(function(Player)
 	end
 end)
 
---[[ Example output of print(GroupService:GetGroupsAsync(Player.UserId)):
+--[[ Output of print(GroupService:GetGroupsAsync(Player.UserId)):
 ▼  {
 	[1] =  ▼  {
 	   ["EmblemId"] = 6811439979,
