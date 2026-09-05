@@ -18,57 +18,11 @@
 Some examples are taken from my [InventoryGui](https://create.roblox.com/store/asset/6831304252/InventoryGui).
 - Multiple assignment: `local variable1, variable2 = value1, value2`
 - `for _, v in`
-- `continue`: 
-```
-for _, Tool in ipairs(Backpack:GetChildren()) do
-    if Tool:IsA("Tool") then
-        AddTool(Tool)
-    end
-end
-```
-```
-for _, Tool in ipairs(Backpack:GetChildren()) do
-    if not Tool:IsA("Tool") then
-        continue
-    end
-
-    AddTool(Tool)
-end
-```
+- `continue`
 - Compound assignment: `Count += 1`
 - `and` / `or` expressions
-```
-local Name = Tool and Tool.Name or "Unknown"
-```
-```
-local Name
-
-if Tool then
-    Name = Tool.Name
-else
-    Name = "Unknown"
-end
-```
 - `WaitForChild()` with a timeout: `local Inventory = PlayerGui:WaitForChild("Inventory", 5)`
 - Early `return`
-```
-if Tool:IsA("Tool") then
-    if Tool.Enabled then
-        EquipTool(Tool)
-    end
-end
-```
-```
-if not Tool:IsA("Tool") then
-    return
-end
-
-if not Tool.Enabled then
-    return
-end
-
-EquipTool(Tool)
-```
 
 ## Shortcuts
 | Hotkey | Action |
