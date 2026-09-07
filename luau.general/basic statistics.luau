@@ -34,7 +34,7 @@ local Results = {
 	"Q3: "..Q3;
 	"Range: "..R;
 	"Interquartile Range (?Q): "..DeltaQ;
-	"Variance (S²): "..Variance;
+	"Variance (SÂ²): "..Variance;
 	"Standard Deviation (S): "..StandardDeviation;
 }
 
