@@ -28,15 +28,19 @@ Review the entire DataModel for deprecated, legacy, or superseded APIs, classes,
 - [Player Joined/Left Message](md/PlayerJoinedOrLeftMessage.md)
 - [Tables In Practice](md/TablesInPractice.md)
 
-## Idioms and patterns I don't see much while reading other people's code in free models from Toolbox
-Some examples are taken from my [InventoryGui](https://create.roblox.com/store/asset/6831304252/InventoryGui).
+## Uncommon/rare idioms and pattern
 - Multiple assignment: `local variable1, variable2 = value1, value2`
-- `for _, v in`
+- Short-circuit evaluation: `local something = value1 and value2 or value3`
+- Leading underscore variable: `local _unused = value`
+- Global environment table: `_G`
+- `WaitForChild()` with a timeout
+- `do end` block
+- `repeat until` block
 - `continue`
-- Compound assignment: `Count += 1`
-- `and` / `or` expressions
-- `WaitForChild()` with a timeout: `local Inventory = PlayerGui:WaitForChild("Inventory", 5)`
-- Early `return`
+- `assert()`
+- `next()`
+- `select()`
+- `:Once()`
 
 ## Shortcuts
 | Hotkey | Action |
