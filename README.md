@@ -64,19 +64,14 @@ Review the entire DataModel for deprecated, legacy, or superseded APIs, classes,
 
 ## Bookmarks 
 - DevForum:
+    - [OpenTextChatService - Open-Source Implementation of TextChatService](https://devforum.roblox.com/t/opentextchatservice-open-source-implementation-of-textchatservice/3605944)
+    - [Client CoreScripts GitHub Repository & Semi-Comprehensive Overview](https://devforum.roblox.com/t/client-corescripts-github-repository-semi-comprehensive-overview/296518)
     - [Roblox Lua Style Guide](https://roblox.github.io/lua-style-guide)
     - [Roblox Code Samples](https://create.roblox.com/store/models?creatorName=Roblox%20Code%20Samples)
-    - [Exploiting Explained](https://devforum.roblox.com/t/exploiting-explained/170977)
-    - [Cmdr: A fully extensible and type safe command console for Roblox Developers](https://devforum.roblox.com/t/cmdr-a-fully-extensible-and-type-safe-command-console-for-roblox-developers/182815)
-    - [NeoHotbar - A modern, customizable backpack](https://devforum.roblox.com/t/neohotbar-a-modern-flexible-hotbar-for-roblox/2738850)
-    - [Knightmare Server-side Anti-Cheat Service](https://devforum.roblox.com/t/knightmare-server-side-anti-cheat-service-updated-182024/2223732)
-    - [BridgeNet2, v1.0.0 | A blazing fast networking library for Roblox](https://devforum.roblox.com/t/bridgenet2-v100-a-blazing-fast-networking-library-for-roblox/2189165)
-    - [Warp - very fast & powerful networking library](https://devforum.roblox.com/t/warp-very-fast-powerful-networking-library/2779813)
-    - [DataPredict™ - Revenue & Game Optimizations Using Machine Learning, Deep Learning And Reinforcement Learning (100 Models)](https://devforum.roblox.com/t/release-113curiosity-stimulation-datapredict-machine-and-deep-learning-library-learning-ais-and-more/2196446)
-    - [Neural Network Library 2.0](https://devforum.roblox.com/t/neural-network-library-20/869557)
-    - [BezierPath, an easy to use and optimized spline path module for TD games and general paths](https://devforum.roblox.com/t/bezierpath-an-easy-to-use-and-optimized-spline-path-module-for-td-games-and-general-paths/2742194)
-    - [UI Design Starter Guide](https://devforum.roblox.com/t/ui-design-starter-guide/53461/1)
-    - [MobileControls - Module for editing mobile controls](https://devforum.roblox.com/t/mobilecontrols-module-for-editing-mobile-controls/1856926)
+    - [RoProxy.com - A free, rotating proxy for Roblox APIs](https://devforum.roblox.com/t/roproxycom-a-free-rotating-proxy-for-roblox-apis/1508367)
+    - [`“Pls Donate” gamepass fetch method [OPEN-SOURCE]`](https://devforum.roblox.com/t/pls-donate-gamepass-fetch-method-open-source/4545260)
+    - [Your Name Color in Chat — History and How It Works](https://devforum.roblox.com/t/your-name-color-in-chat-%E2%80%94-history-and-how-it-works/2702247)
+    - [A guide to decorate your posts in forum!](https://devforum.roblox.com/t/a-guide-to-decorate-your-posts-in-forum/1762987)
 
 # YouTube
 - [HOW to add CHAT TAGS into your ROBLOX GAME!](https://www.youtube.com/watch?v=4vrM-YUceoY)
