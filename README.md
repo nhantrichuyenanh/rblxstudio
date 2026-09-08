@@ -2,7 +2,7 @@
 - [Player Joined/Left Message](md/PlayerJoinedOrLeftMessage.md)
 - [Tables In Practice](md/TablesInPractice.md)
 
-## Uncommon/rare idioms and pattern
+## Uncommon/rare idioms and patterns
 - Multiple assignment: `local variable1, variable2 = value1, value2`
 - Short-circuit evaluation: `local something = value1 and value2 or value3`
 - Leading underscore variable: `local _unused = value`
