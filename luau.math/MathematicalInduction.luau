@@ -1,8 +1,12 @@
 --[[
-Phuong pháp quy n?p toán h?c có hai di?u ki?n sau:
-1. Tru?ng h?p co b?n: M?nh d? du?c d? xu?t dúng so v?i giá tr? ban d?u (thu?ng là 0 ho?c 1).
-2. Bu?c quy n?p: M?nh d? du?c d? xu?t dúng so v?i m?t giá tr? c? th? d?ng nghia v?i vi?c nó cung dúng cho giá tr? ti?p theo (k? ti?p).
-Trong tru?ng hop này, ch?ng minh m?nh d? P = 1 + 2 + 3 + ... + n = [n * (n + 1)] / 2 dúng v?i ?n ?N*.
+Mathematical induction has two conditions:
+- Base Case: The statement is shown to be true for the initial value (usually 0 or 1).
+- Inductive Step: The statement is shown to be true for a particular value, which means it is also true for the next consecutive value.
+In this case, prove that the statement
+
+P(n): 1 + 2 + 3 + ... + n = [n(n + 1)] / 2[n(n + 1)] / 2
+
+is true for all n âˆˆ N* (positive natural numbers).
 ]]
 
 --> Base Case
