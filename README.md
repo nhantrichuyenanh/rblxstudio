@@ -1,7 +1,7 @@
 ## [Lua Learning](https://devforum.roblox.com/t/lua-learning-official-website/496330)
 - [Player Joined/Left Message](md/PlayerJoinedOrLeftMessage.md)
 - [Tables In Practice](md/TablesInPractice.md)
-- [Many Ways to Create a Rainbow Effect]
+- [Many Ways to Create a Rainbow Effect](md.Lua Learning/ManyWaysToCreateARainbowEffect.md)
 
 ## Uncommon/rare idioms and patterns
 - Multiple assignment: `local variable1, variable2 = value1, value2`
