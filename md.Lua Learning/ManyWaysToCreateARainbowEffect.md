@@ -2,9 +2,9 @@
 
 When scripting something in Luau, or programming in any language, a particular task can often be approached in several different ways, with each approach relying on specific APIs or programming concepts.
 
-However, some tasks can be accomplished in many different ways, like creating a rainbow effect. If you've learned about colors in school, you may know that **a rainbow is made up of a continuous spectrum of colors rather than a single color**.
+However, some tasks can be accomplished in many different ways, like creating a rainbow effect. If you've learned about color in school, you may know that **a rainbow consists of a continuous spectrum of colors rather than a single color**.
 
-To recreate that effect in Roblox or any program, the color has to continuously transition through that spectrum, which is why **time is involved in determining the progression and duration of the transition**, and why there are **many ways to represent and control the continuous progression of color** through the spectrum, whether by using a clock, interpolating between colors, or using mathematical functions.
+To recreate that effect in Roblox or any program, the color has to continuously transition through that range, which is why **time is involved in determining the progression and duration of the transition**, and why there are **many ways to represent and control the continuous progression of color** through the spectrum, whether by using a clock, interpolating between colors, or applying mathematical functions.
 
 This tutorial assumes you've already learned the basics of `Color3`.
 
@@ -12,7 +12,7 @@ This tutorial assumes you've already learned the basics of `Color3`.
 
 ## ◎ Practical examples (time-based approaches)
 
-All (*) examples in this tutorial use `local Part = script.Parent`, but the same logic applies to any Instance with a color property.
+*All examples in this tutorial use `local Part = script.Parent`, but the same logic applies to any Instance with a color property.
 
 ##### ● Time-based hue
 ```
@@ -38,7 +38,7 @@ while task.wait() do
 end
 ```
 ##### ● Fixed hue increment
-> A full rainbow cycle lasts around 4.25 seconds for both versions, depending on the timing of task.wait().
+> A full rainbow cycle lasts around 4.25 seconds in both versions, depending on the timing of task.wait().
 ```
 -- Version A
 local hue = 0
@@ -101,7 +101,7 @@ end)
 
 ## ◎ Less ideal examples (interpolation approaches)
 
-If you watch any YouTube tutorials, read any DevForum posts, or ask popular LLMs like ChatGPT, the most common solution you will find is the **time-based hue**, with some minor variations. In the Toolbox, however, they tend to be RGB-based and much more verbose.
+If you watch any YouTube tutorials, read any DevForum posts, or ask popular LLMs like ChatGPT, the most common solution you'll find is the **time-based hue**, with some minor variations. In the Toolbox, however, rainbow effects tend to be RGB-based and much more verbose.
 
 ##### ○ Tweened color sequence
 ```
@@ -217,7 +217,7 @@ end
 
 ## ◎ Technical examples (mathematical approaches)
 
-Throwback to the very first sentence of this tutorial: _“When scripting something in Luau, or programming in any language, [...]”_ Programmers have come up with all sorts of mathematical ways to create a rainbow effect. **They're pretty interesting to know about, even if you don't plan to use any of them.**
+Throwback to the very first sentence of this tutorial: _“When scripting something in Luau, or programming in any language, [...]”_ Programmers have developed all sorts of mathematical ways to create a rainbow effect. **They're pretty interesting to know about, even if you don't plan to use any of them.**
 ##### ⦿ Triangular Wave Hue
 > I found this in Toolbox.
 ```
