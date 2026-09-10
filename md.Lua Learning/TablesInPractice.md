@@ -1,6 +1,6 @@
 > Reformatted for GFM.
 
-### ❖  **Reason to read this tutorial**
+❖  **Reason to read this tutorial**
 
 In most tutorials, tables are taught in a theoretical sense, such as array vs dictionary and table operations like `table.insert`. Even Roblox's documentation approaches tables this way.
 
@@ -42,7 +42,7 @@ print(game:GetService("Lighting"):GetChildren(), workspace:GetDescendants())
 
 ---
 
-#### ❖ **Practical examples**
+❖ **Practical examples**
 
 ◆  **Dance Floor**
 ```
@@ -220,7 +220,7 @@ Representation of SessionData:
 
 ---
 
-#### ❖ **Roblox services**
+❖ **Roblox services**
 
 ◆ **CollectionService**
 ```
@@ -365,7 +365,7 @@ end
 
 ---
 
-#### ❖ **They really are everywhere.**
+❖ **They really are everywhere.**
 
 ◆  **ModuleScript** (a table that other scripts can use via `require()`)
 ```
@@ -511,7 +511,7 @@ devforum.roblox.com/t/how-to-make-a-simple-round-system-with-object-oriented-pro
 
 ---
 
-### ❖ **Why read this tutorial**
+❖ **Why read this tutorial**
 
 At the start of this tutorial, I claimed that _"In most tutorials, tables are taught in a theoretical sense [...]"_ To be clear, **I don't mean any disrespect toward the people who made those tutorials**. **They teach the fundamentals, which are important.**
 
