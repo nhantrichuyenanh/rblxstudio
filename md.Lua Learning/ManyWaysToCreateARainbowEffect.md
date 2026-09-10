@@ -1,4 +1,4 @@
-## ◎ Why are there many ways of creating a rainbow effect?
+## ◎ Why are there many ways to create a rainbow effect?
 
 When scripting something in Luau, or programming in any language, a particular task can often be approached in several different ways, with each approach relying on specific APIs or programming concepts.
 
@@ -6,7 +6,7 @@ However, some tasks can be accomplished in many different ways, like creating a 
 
 To recreate that effect in Roblox or any program, the color has to continuously transition through that spectrum, which is why **time is involved in determining the progression and duration of the transition**, and why there are **many ways to represent and control the continuous progression of color** through the spectrum, whether by using a clock, interpolating between colors, or using mathematical functions.
 
-This tutorial assumes you already learned the basics of `Color3`.
+This tutorial assumes you've already learned the basics of `Color3`.
 
 ---
 
