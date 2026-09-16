@@ -58,7 +58,7 @@
 - [Test 101](https://www.roblox.com/games/6354289354/Test-101)
 - [`[WB] my cringey game`](https://www.roblox.com/games/4806434866/my-cringey-game)
 
-## AI Assistant
+## [AI Assistant](https://create.roblox.com/docs/assistant)
 ```
 Search for every SoundId that references any of the provided moderated asset IDs. Report every match with its full instance path. Report them to me and do not modify anything.
 ```
@@ -83,9 +83,51 @@ Review all Scripts and identify unnecessary abstractions or overhead, unnecessar
 ```
 Review the entire DataModel for deprecated, legacy, or superseded APIs, classes, properties, and objects. Read the current official Roblox documentation before making any recommendations. Identify which deprecated/legacy systems should be preserved because replacing them could break behavior or compatibility, which are safe to modernize, and which should be monitored for future changes. Pay particular attention to legacy physics/movement objects such as BodyMovers. Report the full Instance/script path, relevant API/object, current documentation status, recommended action, and reason. Do not modify anything.
 ```
+
 ## Why?
 - Programming/CS: Because it taught me client-server communication (`RemoteEvent`), modular programming (`ModuleScript`), object-oriented programming (`metatable`), event-driven programming (`RBXScriptSignal`), resource management (`RBXScriptConnection`/`:Disconnect()`), data persistence (`DataStoreService`), and concurrency (`task` library).
 - Software engineering: Because it taught me [code organization](https://www.youtube.com/watch?v=waVoVpspazI "TheMyzta"), [code review](https://www.youtube.com/watch?v=wiZ4OQN43ns "Paul1Rb"), [type annotation](https://www.youtube.com/watch?v=gowHu-r-zXg "Crusherfire"), [debugging](https://www.youtube.com/watch?v=yOmPc2g8tbY "Roblox Learn"), and [version control](https://www.youtube.com/watch?v=IJDg6tRJmHo "Leif").
 - Video game development: Because it taught me world building (`workspace`, `Lighting`), [gameplay systems](https://www.youtube.com/@DevBuildStudios/videos "DevBuild"), [UI development](https://www.youtube.com/playlist?list=PLQ1Qd31Hmi3Xnlu8u9hCYClLurMQYJIrz "BrawlDev"), input handling (`UserInputService`, `ContextActionService`), and [playtesting](https://www.youtube.com/watch?v=XpQaWyaMn_Y "Roblox Studio in a Minute").
 
 It's what sparked my interest in programming.
+
+## Philosophy
+This is an addendum to my [Tables In Practice](md.Lua%20Learning/TablesInPractice.md). I've spent much of my junior high and high school years scripting using Luau, and I've noticed that programming is less concerned with individual instructions and more concerned with the design of systems, abstractions, and their interactions.
+```
+local Coin = workspace.Coin
+
+Coin.Touched:Connect(function()
+    Coin.Transparency = 1
+    task.wait(3)
+    Coin.Transparency = 0
+end)
+```
+The code above directly specifies what happens when an event occurs. As programs become larger, directly managing every object and operation becomes increasingly difficult. Responsibility can instead be moved into the systems being created. For example, an object can manage its own resources.
+```
+local Coin = {}
+Coin.__index = Coin
+
+function Coin.new(position)
+    local self = setmetatable({}, Coin)
+
+    local coin = Instance.new("Part")
+    coin.Name = "Coin"
+    coin.Shape = Enum.PartType.Cylinder
+    coin.Size = Vector3.new(0.6, 8, 4)
+    coin.BrickColor = BrickColor.new("Gold")
+    coin.Anchored = true
+    coin.Position = position
+    coin.Parent = workspace
+
+    self.Instance = coin
+
+    return self
+end
+
+function Coin:Destroy()
+    self.Instance:Destroy()
+end
+```
+Similar principles can be applied to event connections, resources, state, and other parts of a system. Instead of specifying every individual action, the programmer defines the relationships, responsibilities, and rules under which the system operates.
+
+If you think about it, the same principle applies to abstraction. High-level languages like Luau or Python provide abstractions that hide implementation details, while lower-level languages such as C++ expose more of those details. Understanding lower-level mechanisms can make it possible to reason about the behavior and cost of higher-level abstractions.
