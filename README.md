@@ -38,7 +38,8 @@
 ## Bookmarks 
 - DevForum:
     - [Data structures](https://create.roblox.com/docs/luau#data-structures)
-    - [Organizing code](https://create.roblox.com/docs/en-us/tutorials/fundamentals/coding-6/landing)
+    - [Coding concept - abstraction](https://create.roblox.com/docs/en-us/tutorials/fundamentals/coding-6/coding-concept-abstraction)
+    - [Coding concept - algorithms](https://create.roblox.com/docs/en-us/tutorials/fundamentals/coding-6/coding-concept-algorithms)
     - [OpenTextChatService - Open-Source Implementation of TextChatService](https://devforum.roblox.com/t/opentextchatservice-open-source-implementation-of-textchatservice/3605944)
     - [Client CoreScripts GitHub Repository & Semi-Comprehensive Overview](https://devforum.roblox.com/t/client-corescripts-github-repository-semi-comprehensive-overview/296518)
     - [Roblox Lua Style Guide](https://roblox.github.io/lua-style-guide)
