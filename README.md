@@ -45,7 +45,16 @@
     - [`“Pls Donate” gamepass fetch method [OPEN-SOURCE]`](https://devforum.roblox.com/t/pls-donate-gamepass-fetch-method-open-source/4545260)
     - [Your Name Color in Chat — History and How It Works](https://devforum.roblox.com/t/your-name-color-in-chat-%E2%80%94-history-and-how-it-works/2702247)
     - [A guide to decorate your posts in forum!](https://devforum.roblox.com/t/a-guide-to-decorate-your-posts-in-forum/1762987)
- 
+
+## Creations
+- [Testing Tools](https://www.roblox.com/games/6107155983/Testing-Tools)
+- [Chillax](https://www.roblox.com/games/2689231458/Chillax)
+- [roux land](https://www.roblox.com/games/6129595366/roux-land)
+- [Coolin'](https://www.roblox.com/games/5376010497/Coolin)
+- [Éclaircie](https://www.roblox.com/games/1696139323/claircie)
+- [Test 101](https://www.roblox.com/games/6354289354/Test-101)
+- [`[WB] my cringey game`](https://www.roblox.com/games/4806434866/my-cringey-game)
+
 ## AI Assistant
 ```
 Search for every SoundId that references any of the provided moderated asset IDs. Report every match with its full instance path. Report them to me and do not modify anything.
