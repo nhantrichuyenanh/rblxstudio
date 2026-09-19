@@ -1,9 +1,11 @@
 ## [Lua Learning](https://devforum.roblox.com/t/lua-learning-official-website/496330)
+Tutorials I've written since I was in 9th grade.
 - [Player Joined/Left Message](md.Lua%20Learning/PlayerJoinedOrLeftMessage.md)
 - [Tables In Practice](md.Lua%20Learning/TablesInPractice.md)
 - [Many Ways to Create a Rainbow Effect](md.Lua%20Learning/ManyWaysToCreateARainbowEffect.md)
 
 ## Uncommon/rare idioms and patterns
+I spent an ungodly amount of time reading Luau code.
 - Multiple assignment: `local variable1, variable2 = value1, value2`
 - Short-circuit evaluation: `local something = value1 and value2 or value3`
 - Leading underscore variable: `local _unused = value`
@@ -130,4 +132,6 @@ end
 ```
 Similar principles can be applied to event connections, resources, state, and other parts of a system. Instead of specifying every individual action, the programmer defines the relationships, responsibilities, and rules under which the system operates.
 
-If you think about it, the same principle applies to abstraction. High-level languages like Luau or Python provide abstractions that hide implementation details, while lower-level languages such as C++ expose more of those details. Understanding lower-level mechanisms can make it possible to reason about the behavior and cost of higher-level abstractions.
+The programming language itself also reflects this principle.
+> In a high-level language, you can often simply declare a variable or use an object without needing to describe how it is constructed internally.
+> In a lower-level language, more of those mechanisms are exposed, so the programmer is more often responsible for defining the structures and abstractions that make those operations possible.
