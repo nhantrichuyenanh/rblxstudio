@@ -134,4 +134,4 @@ Similar principles can be applied to event connections, resources, state, and ot
 
 The programming language itself also reflects this principle:
 - In a high-level language like Python or Luau, you can often simply declare a variable or use an object without needing to describe how it is constructed internally.
-- In a lower-level language such as C, more of those mechanisms are exposed, so the programmer is more often responsible for defining the structures and abstractions that make those operations possible.
+- In a low-level language such as C, more of those mechanisms are exposed, so the programmer is more often responsible for defining the structures and abstractions that make those operations possible.
