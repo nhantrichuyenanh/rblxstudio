@@ -1,4 +1,5 @@
 > Reformatted for GFM.
+> https://www.lualearning.org/tutorials/7c77db98-b155-4ac3-a252-0d6e5b3919b9 (please read the one below, not the link which is cringey and unprofessional 😭)
 
 ❖  **Reason to read this tutorial**
 
